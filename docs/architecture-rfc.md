@@ -14,7 +14,7 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 4. **Payments:** Peer-to-peer money transfer, community treasury with transparent ledger. Multi-currency, multi-country.
 5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
 6. **Communication:** Text messaging, voice/video calls. Encrypted.
-7. **Translation:** Real-time contextual translation across all content. Post in any language, read in any language.
+7. **Translation:** Built-in translation across content. Language should never be a barrier to participation.
 8. **Contracts:** Template library, digital signatures, storage, dispute tracking.
 
 ## Non-Negotiable Requirements
