@@ -183,6 +183,12 @@ export default function Home() {
             Reddit
           </a>
           <a
+            href="https://discord.gg/MAeXwTcxh"
+            className="hover:text-zinc-100 transition-colors"
+          >
+            Discord
+          </a>
+          <a
             href="https://github.com/thecounterweight/platform/blob/main/PRINCIPLES.md"
             className="hover:text-zinc-100 transition-colors"
           >

@@ -22,7 +22,7 @@ This is not one person's vision. It's a starting point. The community discusses,
 
 - **Website:** [thecounterweight.org](https://thecounterweight.org)
 - **Reddit:** r/TheCounterweight
-- **Discord:** (coming soon)
+- **Discord:** [Join](https://discord.gg/MAeXwTcxh)
 
 ## What We Need
 
