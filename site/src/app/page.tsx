@@ -214,7 +214,7 @@ export default function Home() {
           </a>
         </div>
         <p className="mt-6 text-sm text-zinc-600">
-          Open-source. AGPL-3.0. Fork it, improve it, make it yours. test
+          Open-source. AGPL-3.0. Fork it, improve it, make it yours. test1
         </p>
       </footer>
     </div>
