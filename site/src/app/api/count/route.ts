@@ -15,8 +15,8 @@ export async function GET(request: NextRequest) {
       getVisitorCount(),
     ]);
 
-    return NextResponse.json({ count: signups, visitors });
+    return NextResponse.json({ count: signups, visitors, ok: true });
   } catch {
-    return NextResponse.json({ count: 0, visitors: 0 });
+    return NextResponse.json({ count: null, visitors: null, ok: false });
   }
 }

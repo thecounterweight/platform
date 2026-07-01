@@ -5,19 +5,36 @@ import { useEffect, useState } from "react";
 export function Counter() {
   const [count, setCount] = useState<number | null>(null);
   const [visitors, setVisitors] = useState<number | null>(null);
+  const [limitHit, setLimitHit] = useState(false);
 
   useEffect(() => {
     fetch("/api/count")
       .then((res) => res.json())
       .then((data) => {
-        setCount(data.count);
-        setVisitors(data.visitors);
+        if (data.ok) {
+          setCount(data.count);
+          setVisitors(data.visitors);
+        } else {
+          setLimitHit(true);
+        }
       })
-      .catch(() => {
-        setCount(0);
-        setVisitors(0);
-      });
+      .catch(() => setLimitHit(true));
   }, []);
+
+  if (limitHit) {
+    return (
+      <div className="mt-10 text-center">
+        <p className="text-zinc-400 text-lg">
+          We had so many visitors today that we hit our database limit.
+          That&apos;s a good problem to have.
+        </p>
+        <p className="text-zinc-500 text-sm mt-2">
+          Counters reset daily. Come back tomorrow or sign up below — signups
+          still work.
+        </p>
+      </div>
+    );
+  }
 
   if (count === null) {
     return (
