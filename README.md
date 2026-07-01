@@ -11,6 +11,7 @@ This is an open-source project to build a platform and a movement where:
 - Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
 - Built-in contextual translation. Language is never a barrier to participation.
+- Chat, voice, and video — individual and group. No need for a separate app to talk to your community.
 - Communities invest together, fund businesses together, and share the returns.
 - Small shops get bulk purchasing power that only big chains have today.
 - A marketplace lets people buy and sell without middlemen taking 30%. Community experts certify quality.

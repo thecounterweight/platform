@@ -59,6 +59,13 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">
+                Chat, voice, and video.
+              </strong>{" "}
+              Individual and group. No need for a separate app to talk to your
+              community.
+            </li>
+            <li>
+              <strong className="text-zinc-100">
                 Communities invest together.
               </strong>{" "}
               Pool money. Fund local businesses. Returns flow back. The community
