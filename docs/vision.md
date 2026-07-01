@@ -4,7 +4,7 @@
 
 The platforms we use every day were built to extract from us. Our attention, our data, our money. We are the product.
 
-Banks sit on our savings, lend it out at 10x, and give us back almost nothing. Middlemen take 15-30% of every transaction on Amazon, Upwork, Uber. Social media is overrun with bots shaping public opinion. Governments are unresponsive. When you fall, you fall alone.
+Middlemen take 15-30% of every transaction on Amazon, Upwork, Uber. When you want to invest, the options are either complex financial instruments designed for the wealthy, or handing your money to fund managers who charge fees whether they make you money or not. Social media is overrun with bots shaping public opinion. Governments are unresponsive. When you fall, you fall alone.
 
 The tools to fix this already exist — internet, instant payments, open-source software, cryptographic identity. We're just not using them for ourselves.
 
