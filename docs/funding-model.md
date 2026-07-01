@@ -104,11 +104,19 @@ Spending is transparent and publicly auditable. The community can see where ever
 - **For users**: the platform stays community-owned. No permanent extraction. Users have equal blocking power on any deal that's too generous to investors.
 - **For the platform**: capital flows in without giving up ownership. Time-bounded obligations mean the platform eventually runs fully self-sustaining.
 
+## Revenue Share Ceiling
+
+Total revenue share across all active rounds can never exceed 40% of platform revenue at any point in time. This is a hard cap — non-negotiable, not subject to vote.
+
+If existing rounds already consume 35% and a new round wants 15%, it doesn't happen. The platform's ability to operate, pay builders, and fund community programs is protected.
+
 ## Open Questions
 
 - Should revenue share positions be transferable? (Current stance: no — prevents speculation and secondary markets forming around the platform's revenue)
-- How do we handle multiple active rounds with overlapping share periods?
-- What's the maximum total revenue share across all active rounds? (e.g., never more than 40% of revenue going to investors at any point)
+- What's the minimum and maximum investment per person per round? (Prevents one investor from dominating the investor block)
+- If someone is both an investor and a user, which block do they vote in? (Likely: investor block for rounds they're invested in, user block for others)
+- How is the independent expert body selected? How do we prevent capture?
+- What happens if the platform shuts down? (Likely: investors lose remaining — same as any failed venture. Remaining funds go to wind-down costs, not payouts)
 - How are disputes about revenue calculation resolved?
 
 ---
