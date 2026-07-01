@@ -1,7 +1,9 @@
-import { promises as fs } from "fs";
-import path from "path";
+import { Redis } from "@upstash/redis";
 
-const DATA_FILE = path.join(process.cwd(), "data", "signups.json");
+const redis = new Redis({
+  url: process.env.UPSTASH_REDIS_REST_URL!,
+  token: process.env.UPSTASH_REDIS_REST_TOKEN!,
+});
 
 export interface Signup {
   email: string;
@@ -9,34 +11,20 @@ export interface Signup {
   timestamp: string;
 }
 
-async function ensureDataFile() {
-  try {
-    await fs.access(DATA_FILE);
-  } catch {
-    await fs.mkdir(path.dirname(DATA_FILE), { recursive: true });
-    await fs.writeFile(DATA_FILE, JSON.stringify([]));
-  }
-}
-
-export async function getSignups(): Promise<Signup[]> {
-  await ensureDataFile();
-  const data = await fs.readFile(DATA_FILE, "utf-8");
-  return JSON.parse(data);
-}
-
 export async function addSignup(email: string, role: string): Promise<boolean> {
-  const signups = await getSignups();
+  const exists = await redis.sismember("signup_emails", email);
+  if (exists) return false;
 
-  if (signups.some((s) => s.email === email)) {
-    return false;
-  }
-
-  signups.push({ email, role, timestamp: new Date().toISOString() });
-  await fs.writeFile(DATA_FILE, JSON.stringify(signups, null, 2));
+  await redis.sadd("signup_emails", email);
+  await redis.lpush(
+    "signups",
+    JSON.stringify({ email, role, timestamp: new Date().toISOString() })
+  );
+  await redis.incr("signup_count");
   return true;
 }
 
 export async function getCount(): Promise<number> {
-  const signups = await getSignups();
-  return signups.length;
+  const count = await redis.get<number>("signup_count");
+  return count || 0;
 }
