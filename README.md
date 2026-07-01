@@ -12,7 +12,7 @@ This is an open-source project to build a platform and movement where:
 - Community experts certify quality — not algorithms, not fake reviews.
 - Small shops get bulk purchasing power that only big chains have today.
 - When someone falls, the community catches them.
-- Leaders are chosen from below and removable by simple majority. Any day.
+- Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
 - Your data is yours. Never sold. Never mined. Never exploited.
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
 

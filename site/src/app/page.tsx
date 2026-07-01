@@ -65,9 +65,10 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">
-                You choose your leaders.
+                Democratic governance at every level.
               </strong>{" "}
-              And you can remove them. Any day. Simple majority.
+              Platform moderators, movement leaders, fund managers — all elected,
+              all removable by simple majority. Any day.
             </li>
             <li>
               <strong className="text-zinc-100">
