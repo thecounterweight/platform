@@ -13,7 +13,7 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 3. **Marketplace:** Listings (goods/services), search, categories, verified reviews, expert certification, collective purchasing coordination.
 4. **Payments:** Peer-to-peer money transfer, community treasury with transparent ledger. Multi-currency, multi-country.
 5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
-6. **Communication:** Text messaging, voice/video calls. Encrypted.
+6. **Communication:** Discussion boards (threaded), group chat, voice/video calls, video meetings and webinars. Encrypted.
 7. **Translation:** Built-in translation across content. Language should never be a barrier to participation.
 8. **Contracts:** Template library, digital signatures, storage, dispute tracking.
 

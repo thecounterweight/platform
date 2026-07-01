@@ -23,7 +23,7 @@ An app where:
 - **Every person is real.** One account per human. Verified. No bots, no sock puppets. You choose to speak as yourself or anonymously — but either way, the system and other users know it's a real person.
 - **You own your data.** No ads. No tracking. No selling to third parties. Opt-in analytics only. Full export and delete at any time. Open-source code so anyone can verify.
 - **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote. No CEO deciding what 2 billion people see.
-- **Communication is built in.** Text, voice, video. Encrypted. Not scanned for ad targeting.
+- **Communication is built in.** Discussion boards, group chat, video meetings, webinars. Encrypted. Not scanned for ad targeting.
 - **Money moves transparently.** Send and receive peer-to-peer. Community funds visible to all members. Personal transactions stay private.
 - **Translation is built in.** Post in any language, read in any language. Contextual, real-time. No one is excluded because of the language they were born into.
 - **Contracts are accessible.** Templates for revenue sharing, employment, rental, partnerships. Designed by lawyers, free to use. Digitally signed and stored.

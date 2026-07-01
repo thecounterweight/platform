@@ -60,10 +60,10 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">
-                Chat, voice, and video.
+                Discussion, chat, and video meetings.
               </strong>{" "}
-              Individual and group. No need for a separate app to talk to your
-              community.
+              Threaded discussions. Group chat. Video calls and webinars for
+              coordination. No need for five separate apps.
             </li>
             <li>
               <strong className="text-zinc-100">
