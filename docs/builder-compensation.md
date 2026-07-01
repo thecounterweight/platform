@@ -73,7 +73,25 @@ Early risk = early reward. That's fair.
 - Peer review is required — you can't assign units to yourself.
 - Contribution quality matters, not just hours. 10 hours of brilliant architecture work can be worth more than 40 hours of trivial fixes. The community decides what's valuable.
 
-**Note:** The unit assignment rubric (how complexity and impact are measured) is one of the first governance decisions the builder community will ratify together. Until then, assignments are based on peer consensus and publicly challengeable.
+### Unit Assignment Rubric (Starting Proposal)
+
+This is a starting framework. The builder community will ratify or adjust it.
+
+| Factor | Multiplier |
+|--------|-----------|
+| Base rate | 1 unit per hour |
+| High complexity (architecture, security, legal research) | 2x |
+| Critical path (blocks others without it) | 1.5x |
+| First-of-kind (no existing pattern to follow) | 1.5x |
+
+Multipliers stack. Examples:
+
+- 10 hours of auth system design (high complexity + critical path) = 10 × 2 × 1.5 = **30 units**
+- 10 hours of documentation = 10 × 1 = **10 units**
+- 20 hours of legal research for a new jurisdiction (high complexity + first-of-kind) = 20 × 2 × 1.5 = **60 units**
+- 15 hours of UI design for a core flow (critical path) = 15 × 1.5 = **22.5 units**
+
+All assignments are public and challengeable for 14 days. If challenged, peer vote decides.
 
 ### Before Revenue Exists
 
@@ -81,8 +99,25 @@ In the early days, there's no cash. Your work is recorded from day one. The mome
 
 This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
 
+### Time-Weighted Multiplier
+
+Units earned earlier are worth more — because early builders took more risk.
+
+| When earned | Multiplier on units |
+|-------------|-------------------|
+| Year 1 | 3x |
+| Year 2 | 2x |
+| Year 3 | 1.5x |
+| Year 4+ | 1x |
+
+So if you earn 100 units in year 1, they count as 300 in the pool. Someone earning 100 units in year 4 holds exactly 100. This protects early builders from being diluted into irrelevance as the pool grows.
+
+This is a starting proposal — the builder community will ratify or adjust the multipliers.
+
 ## The Honest Truth
 
 This is a bet. If the platform never generates revenue, the units are worth nothing. That's the risk of being early.
 
-But if it works — and the marketplace model is proven, the economics are sound — early contributors are compensated well above market rate for their time, because they took the risk when nobody else would.
+But if it works — early builders are compensated well for the risk they took. The time-weighted multiplier ensures that the people who showed up when nothing existed aren't drowned out by those who show up once it's safe. Early risk earns a permanent structural advantage.
+
+The risk is real. The upside is also real.
