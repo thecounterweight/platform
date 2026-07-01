@@ -32,7 +32,7 @@ export function SignupForm() {
       }
     } catch {
       setStatus("error");
-      setMessage("Something went wrong. Try again.");
+      setMessage("We're experiencing heavy traffic right now. Try again in a few hours.");
     }
   }
 
