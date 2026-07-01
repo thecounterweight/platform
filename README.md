@@ -4,17 +4,17 @@ The world is tilted. Money, power, voice — it all flows one direction. Upward.
 
 A counterweight doesn't break the machine. It balances it.
 
-This is an open-source project to build a platform and movement where:
+This is an open-source project to build a platform and a movement where:
 
 - Every person is verified real. One human, one voice.
-- Communities invest together, fund businesses together, and share the returns.
-- A marketplace lets people buy and sell without middlemen taking 30%.
-- Community experts certify quality — not algorithms, not fake reviews.
-- Small shops get bulk purchasing power that only big chains have today.
-- When someone falls, the community catches them.
-- Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
 - Your data is yours. Never sold. Never mined. Never exploited.
+- Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
+- When someone falls, the community catches them. Mutual aid funded by the system itself.
+- Communities invest together, fund businesses together, and share the returns.
+- Small shops get bulk purchasing power that only big chains have today.
+- A marketplace lets people buy and sell without middlemen taking 30%. Community experts certify quality.
+
 
 This is not one person's vision. It's a starting point. The community discusses, debates, and shapes the direction together. What you see here is version zero. The people who show up write version one.
 
