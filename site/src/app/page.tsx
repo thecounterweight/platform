@@ -9,6 +9,9 @@ export default function Home() {
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">
           The Counterweight
         </h1>
+        <p className="mt-4 text-lg md:text-xl text-zinc-500 italic">
+          Just a pebble trying to start an avalanche.
+        </p>
         <p className="mt-6 text-xl md:text-2xl text-zinc-400 max-w-2xl">
           The world is tilted. Money, power, voice — it all flows one direction.
           We&apos;re the weight on the other side.
