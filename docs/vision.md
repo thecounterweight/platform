@@ -2,11 +2,15 @@
 
 ## The Problem
 
-The platforms we use every day were built to extract from us. Our attention, our data, our money. We are the product.
+The platforms we rely on are broken.
 
-Middlemen take 15-30% of every transaction on Amazon, Upwork, Uber. When you want to invest, the options are either complex financial instruments designed for the wealthy, or handing your money to fund managers who charge fees whether they make you money or not. Social media is overrun with bots shaping public opinion. Governments are unresponsive. When you fall, you fall alone.
+Social media decides what you think. Shopping platforms bury small sellers and push you toward whoever pays for visibility. Middleman platforms take massive cuts for connecting a buyer to a seller. A handful of billionaires control all of it — what you see, what you pay, who gets a voice, who gets buried.
 
-The tools to fix this already exist — internet, instant payments, open-source software, cryptographic identity. We're just not using them for ourselves.
+You can't trust a review, a comment, or a trending topic — because you never know what's real and what's a bot farm.
+
+The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by people who profit from keeping us divided.
+
+Isn't it time we take it back?
 
 ## What We're Building
 
