@@ -31,6 +31,8 @@ export default function Home() {
             <li>
               <strong className="text-zinc-100">Every person is real.</strong>{" "}
               One human, one account. No bots. No fake reviews. No manipulation.
+              How we verify this without surveillance is one of the first
+              problems we&apos;re solving together.
             </li>
             <li>
               <strong className="text-zinc-100">Your data stays yours.</strong>{" "}

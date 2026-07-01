@@ -38,7 +38,7 @@ Why this works better than index funds:
 - The community IS the customer base. A business funded by 500 people has 500 people with reason to buy from it.
 - Returns stay local. The money grows businesses in your neighbourhood, not some distant corporation's share price.
 
-Risk is managed through diversification across many businesses, not through market instruments. Back 20 businesses, 5 fail, 15 succeed — the portfolio returns are strong because the winners more than cover the losses. And with community vetting, the failure rate is significantly lower than typical startups.
+Risk is managed through diversification across many businesses, not through market instruments. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
 
 How community-backed businesses work:
 
@@ -113,13 +113,15 @@ This is investment. Real investment carries real risk.
 
 We mitigate through: backing many businesses (not putting everything in one), rigorous community vetting before funding, built-in demand validation through the platform, and democratic oversight of all investment decisions. But risk is never zero. Every member should understand this.
 
-## Legal Structure (India — Proposed)
+## Legal Structure (India — Proposed, Unvalidated)
+
+We are exploring:
 
 - **Cooperative Society** (Multi-State Cooperative Societies Act, 2002) for governance
 - **Nidhi Company** (Companies Act 2013, Section 406) for the financial engine — accepts deposits from members, lends to members, no RBI license required
 - Both entities interlinked — members of one are members of the other
 
-This needs a lawyer to confirm and implement. If you're a lawyer who knows Indian cooperative or securities law — we need you.
+This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows Indian cooperative or securities law — this is one of the highest-value contributions you can make right now.
 
 ## Legal Structure (Other Countries)
 

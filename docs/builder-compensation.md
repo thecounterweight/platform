@@ -63,6 +63,8 @@ Early risk = early reward. That's fair.
 - Peer review is required — you can't assign units to yourself.
 - Contribution quality matters, not just hours. 10 hours of brilliant architecture work can be worth more than 40 hours of trivial fixes. The community decides what's valuable.
 
+**Note:** The unit assignment rubric (how complexity and impact are measured) is one of the first governance decisions the builder community will ratify together. Until then, assignments are based on peer consensus and publicly challengeable.
+
 ### Before Revenue Exists
 
 In the early days, there's no cash. Your work is recorded from day one. The moment revenue starts flowing, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.

@@ -38,7 +38,7 @@ Good leaders stay for decades because people want them there. Bad leaders are go
 
 ## 6. We build businesses, not charities
 
-This is an investment vehicle. People put in money and expect returns. That's not greed — that's sustainability. Charity runs out. Investment compounds.
+This is an investment vehicle. People put in money and expect returns. Charity runs out. Investment compounds.
 
 Communities fund businesses. Businesses grow. Returns flow back. The community funds more businesses. This cycle has to work economically or it doesn't work at all.
 
@@ -66,7 +66,7 @@ How we enforce them without becoming a surveillance machine — that's a design 
 
 ## 11. Borders are a problem to solve, not a reason to stop
 
-A person in Rajasthan should be able to invest in a community business in Nairobi. Money, help, and voice should move across borders. The legal complexity is real. We'll solve it. We won't accept "it's too hard" as a reason to stop.
+A person in Rajasthan should be able to invest in a community business in Nairobi — within applicable legal frameworks in each jurisdiction. Money, help, and voice should move across borders. The legal complexity is real. We'll solve it country by country. We won't accept "it's too hard" as a reason to stop.
 
 ## 12. The platform adapts to communities. Not the other way around.
 

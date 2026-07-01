@@ -4,6 +4,8 @@
 
 Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-owned.
 
+**Legal entity:** TBD — exploring cooperative models across jurisdictions. Defining the legal structure is one of the first decisions we need legal expertise for.
+
 ## The Deal Structure
 
 Every funding round has three variables:
@@ -90,6 +92,8 @@ Raised capital goes toward infrastructure, operations, and development — what 
 - Operational expenses
 
 Spending is transparent and publicly auditable. The community can see where every dollar goes.
+
+**Payment infrastructure:** Pending. Early options include UPI (India), SEPA (EU), and ACH (US). Deciding on payment rails is an early technical decision that needs input from engineers and legal.
 
 ## What Investors Don't Get
 
