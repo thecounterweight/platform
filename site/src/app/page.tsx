@@ -24,8 +24,8 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">What we&apos;re building</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            A platform owned by its users. Not by shareholders. Not by
-            advertisers. By the people on it.
+            A platform and a movement. Owned by its users. Not by shareholders.
+            Not by advertisers. By the people on it.
           </p>
           <ul className="space-y-3 list-none">
             <li>
@@ -35,33 +35,6 @@ export default function Home() {
             <li>
               <strong className="text-zinc-100">Your data stays yours.</strong>{" "}
               No ads. No tracking. No selling to third parties. Ever.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                A marketplace without middlemen.
-              </strong>{" "}
-              Sell goods and services with proportional fees — not 30% cuts.
-              Community experts certify quality. Verified purchase reviews only.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                Collective purchasing power.
-              </strong>{" "}
-              Small shops buy direct from manufacturers at bulk prices. The same
-              power big chains have — without losing independence.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                Communities invest together.
-              </strong>{" "}
-              Pool money. Fund local businesses. Returns flow back. The community
-              grows stronger.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                When someone falls, the community catches them.
-              </strong>{" "}
-              Mutual aid funded by the system itself. Not charity. Structure.
             </li>
             <li>
               <strong className="text-zinc-100">
@@ -76,6 +49,33 @@ export default function Home() {
               </strong>{" "}
               One person, one vote on governance and leadership. Investment
               decisions weighted by stake — your money, your proportional say.
+            </li>
+            <li>
+              <strong className="text-zinc-100">
+                When someone falls, the community catches them.
+              </strong>{" "}
+              Mutual aid funded by the system itself. Not charity. Structure.
+            </li>
+            <li>
+              <strong className="text-zinc-100">
+                Communities invest together.
+              </strong>{" "}
+              Pool money. Fund local businesses. Returns flow back. The community
+              grows stronger.
+            </li>
+            <li>
+              <strong className="text-zinc-100">
+                Collective purchasing power.
+              </strong>{" "}
+              Small shops buy direct from manufacturers at bulk prices. The same
+              power big chains have — without losing independence.
+            </li>
+            <li>
+              <strong className="text-zinc-100">
+                A marketplace without middlemen.
+              </strong>{" "}
+              Sell goods and services with proportional fees — not 30% cuts.
+              Community experts certify quality. Verified purchase reviews only.
             </li>
           </ul>
         </div>
