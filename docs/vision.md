@@ -44,7 +44,6 @@ Not ads shoved in your face. A dedicated space you enter when YOU want to buy or
 What becomes possible when millions of verified real people have transparent money and democratic governance on the same platform:
 
 - **Community investment.** Pool money. Back local businesses vetted by the community. Revenue share flows back. The community funds more businesses. Flywheel.
-- **Mutual aid.** Part of the fund covers emergencies. Someone falls, the community catches them. Within 48 hours. Not a GoFundMe prayer. A structural guarantee.
 - **Political power.** 5,000 organized, engaged people in a city who vote together on local issues are a serious voting block. Politicians come to you.
 - **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. Simple majority removes them. Any day. No waiting for the next election.
 

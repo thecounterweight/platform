@@ -20,14 +20,15 @@ When a member contributes to their community fund:
 
 | Allocation | Purpose |
 |-----------|---------|
-| 80% | Community businesses (vetted and backed by the community) |
-| 10% | Mutual aid (emergency response, no return expected) |
-| 5% | Cash reserve (liquidity buffer for withdrawals) |
+| 85% | Community businesses (vetted and backed by the community) |
+| 10% | Cash reserve (liquidity buffer for withdrawals) |
 | 5% | Operations (legal, admin, platform fees) |
 
 These percentages are set at the network level as a framework. Local communities can adjust within bands based on their needs.
 
-## Community Businesses (80%)
+**Note:** This is the allocation of member investment contributions — money people put into the community fund. This is separate from platform revenue (marketplace fees, listing fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
+
+## Community Businesses (85%)
 
 The majority of pooled capital goes directly into backing community businesses. Not stocks. Not bonds. Real businesses run by real people you can see and talk to.
 
@@ -132,16 +133,6 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 | Political endorsements | One person, one vote |
 | No-confidence motions | One person, one vote |
 
-## Mutual Aid (10%)
-
-Not investment. Not charity. Structural insurance.
-
-- Member in crisis → posts a request
-- Community reviews (real people who know the situation)
-- Fund disburses within 48 hours for emergencies
-- No repayment required. This is what the 10% allocation is for.
-
-Kept as a separate reserve. Minimum 3 months of historical average disbursement must be maintained. If the mutual aid fund runs low, the community votes to temporarily increase its allocation.
 
 ## Member Contributions
 
@@ -168,7 +159,7 @@ This is investment. Real investment carries real risk.
 
 - Community businesses can fail. Not all of them will succeed.
 - Returns depend on the businesses the community chooses to back.
-- The mutual aid fund could be depleted by extraordinary events.
+- Regulatory changes in any country could limit operations.
 - Regulatory changes in any country could affect operations.
 
 We mitigate through: backing many businesses (not putting everything in one), rigorous community vetting before funding, built-in demand validation through the platform, and democratic oversight of all investment decisions. But risk is never zero. Every member should understand this.

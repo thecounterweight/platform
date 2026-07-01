@@ -23,12 +23,12 @@ Whatever architecture we choose must satisfy:
 
 - **Horizontally scalable.** Add servers, handle more users. No single bottleneck.
 - **Federated-ready.** Communities can run sovereign instances that communicate with the network. No single server holds everything.
-- **Self-hostable.** Any community can deploy their own instance. Connect to the network or run standalone.
+- **Self-hostable.** Communities with technical capacity can deploy their own instance. The stack is complex — this isn't one-click deployment. But the option exists for those who want sovereignty over their data.
 - **No single point of failure.** Database replication, multi-region capability, graceful degradation.
 - **No vendor lock-in.** Every component can be swapped. No proprietary dependency that can be pulled from under us.
 - **Data sovereignty.** User data stays in their region unless explicitly moved.
 - **Open-source throughout.** Every component is auditable.
-- **Works in India and globally.** No dependency on services that are blocked or unreliable in key regions (e.g., Supabase is blocked in India as of 2024-25).
+- **Works globally.** No dependency on services that are unreliable or restricted in key regions.
 
 ## Proposed Architecture
 
