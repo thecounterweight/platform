@@ -16,7 +16,7 @@ This is an open-source project to build a platform and movement where:
 - Your data is yours. Never sold. Never mined. Never exploited.
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
 
-This is version zero. The community writes version one.
+This is not one person's vision. It's a starting point. The community discusses, debates, and shapes the direction together. What you see here is version zero. The people who show up write version one.
 
 ## Get Involved
 
