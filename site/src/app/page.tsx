@@ -52,9 +52,10 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">
-                When someone falls, the community catches them.
+                Built-in translation.
               </strong>{" "}
-              Mutual aid funded by the system itself. Not charity. Structure.
+              Not word-for-word machine output. Contextual, cultural, human-reviewed.
+              Language should never be a barrier to participation.
             </li>
             <li>
               <strong className="text-zinc-100">

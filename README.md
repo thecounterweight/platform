@@ -10,7 +10,7 @@ This is an open-source project to build a platform and a movement where:
 - Your data is yours. Never sold. Never mined. Never exploited.
 - Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
-- When someone falls, the community catches them. Mutual aid funded by the system itself.
+- Built-in contextual translation. Language is never a barrier to participation.
 - Communities invest together, fund businesses together, and share the returns.
 - Small shops get bulk purchasing power that only big chains have today.
 - A marketplace lets people buy and sell without middlemen taking 30%. Community experts certify quality.
