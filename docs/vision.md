@@ -10,7 +10,7 @@ You can't trust a review, a comment, or a trending topic — because you never k
 
 The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by people who profit from keeping us divided.
 
-Isn't it time we take it back?
+Let's take it back.
 
 ## What We're Building
 
