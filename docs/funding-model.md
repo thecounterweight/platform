@@ -46,6 +46,20 @@ Decisions this large need broad participation, not just whoever shows up.
 
 These are total voters across both blocks. If quorum isn't met, the vote doesn't count.
 
+## Early Capital (Pre-Quorum)
+
+If someone offers money before the platform has enough users to meet quorum — we take it. The money goes to work immediately (infrastructure, development, operations).
+
+The agreement: revenue share is guaranteed, but the exact terms (percentage, duration, cap) are decided later — when quorum is met and a proper vote can happen. The investor accepts this condition upfront.
+
+This means:
+- Early capital isn't blocked by lack of users
+- Investors can't dictate terms unilaterally just because they showed up first
+- Terms are still decided democratically once the community is large enough
+- The investor's risk (undefined terms) is offset by being earliest in — which historically means better terms when the vote happens
+
+No revenue-share payments begin until terms are voted on and agreed.
+
 ## Tiered Rounds
 
 Early investors take more risk (nothing is built, no revenue, no users). Later investors join a proven platform. Terms should reflect that.
