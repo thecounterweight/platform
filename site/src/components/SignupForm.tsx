@@ -32,7 +32,7 @@ export function SignupForm() {
       }
     } catch {
       setStatus("error");
-      setMessage("We're experiencing heavy traffic right now. Try again in a few hours.");
+      setMessage("We hit our free-tier database limit. Working on a solution — check back soon.");
     }
   }
 

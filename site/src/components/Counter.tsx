@@ -25,12 +25,10 @@ export function Counter() {
     return (
       <div className="mt-10 text-center">
         <p className="text-zinc-400 text-lg">
-          We had so many visitors today that we hit our database limit.
-          That&apos;s a good problem to have.
+          We hit our free-tier database limit. Working on a solution.
         </p>
         <p className="text-zinc-500 text-sm mt-2">
-          Counters reset daily. Come back tomorrow or sign up below — signups
-          still work.
+          Sign up below — signups still work.
         </p>
       </div>
     );

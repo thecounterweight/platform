@@ -26,7 +26,7 @@ export async function POST(request: NextRequest) {
     return NextResponse.json({ success: true }, { status: 201 });
   } catch {
     return NextResponse.json(
-      { error: "Something went wrong" },
+      { error: "We hit our free-tier database limit. Working on a solution." },
       { status: 500 }
     );
   }
