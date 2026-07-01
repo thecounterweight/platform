@@ -80,6 +80,8 @@ For the MVP, a modular monolith might ship faster. But the architecture should b
 
 **Pragmatic approach:** Start as a modular monolith (clear module boundaries, separate databases) with the intent to split into services when team size and traffic demand it.
 
+**MVP scope:** See [MVP](mvp.md) for what gets built first. The MVP is a PWA (Progressive Web App) covering identity, discussion boards, chat, marketplace (listing + reviews only), skill certification, and talent pool.
+
 ## Open Questions (Need Community Input)
 
 1. **Identity verification:** What method? Government ID? Web-of-trust? Zero-knowledge proofs? Biometric? Multiple options per region? This is the hardest unsolved problem.
