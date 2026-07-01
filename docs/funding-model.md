@@ -34,6 +34,10 @@ If the two blocks can't agree, nothing happens. No money moves. Investors don't 
 
 There is no fallback. No override. No tiebreaker. Both sides have skin in the game — investors want returns, users want the platform to grow. That mutual need is what breaks deadlocks. If it doesn't, the round simply doesn't happen until terms emerge that both sides accept.
 
+## Appeals
+
+Any party — investor block or user block — can appeal a decision to an independent body of experts (financial, legal, cooperative governance). The appeal body reviews whether the terms are reasonable and fair to both sides. Their recommendation is non-binding but public, creating pressure toward fairness. The vote still has to pass through both blocks — the appeal body can't override democracy, but they can shine a light on bad-faith positions.
+
 ## Quorum
 
 Decisions this large need broad participation, not just whoever shows up.
