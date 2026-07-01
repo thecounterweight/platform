@@ -22,7 +22,7 @@ Two blocks. Equal weight. Both must agree.
 | Investor block | 50% | Everyone putting money into that round | One person, one vote among investors |
 | User block | 50% | Verified platform members (non-investors in this round) | One person, one vote among users |
 
-Each block votes internally and produces a single position. The two positions must align for terms to pass.
+Each block votes internally and produces a single position by **supermajority** (two-thirds). The two positions must align for terms to pass.
 
 **Why blocks, not individual votes?**
 
@@ -61,6 +61,17 @@ Each round's terms are voted on independently. Previous rounds don't set precede
 - Returns proportional to their investment within the round
 - Voting power on financial decisions (stake-weighted within the investor block)
 - Full transparency — revenue numbers are public, distributions are auditable
+
+## How Funds Are Used
+
+Raised capital goes toward infrastructure, operations, and development — what the platform needs to run and grow. Builders (engineers, designers, lawyers, etc.) draw from this as needed for:
+
+- Server infrastructure and hosting
+- Development tools and services
+- Legal and compliance costs
+- Operational expenses
+
+Spending is transparent and publicly auditable. The community can see where every dollar goes.
 
 ## What Investors Don't Get
 
