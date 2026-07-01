@@ -136,6 +136,31 @@ export default function Home() {
         </p>
       </section>
 
+      {/* Funding */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-6">How we fund this</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            No venture capital. No equity. Investors get a time-bounded share of
+            platform revenue — then it ends. The platform stays community-owned.
+          </p>
+          <p>
+            Terms are decided democratically. Investors vote as one block, users
+            vote as another. Both must agree by supermajority. Neither side can
+            override the other.
+          </p>
+          <p className="text-zinc-400">
+            Total revenue share across all rounds is capped at 40%. Non-negotiable.{" "}
+            <a
+              href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md"
+              className="text-zinc-100 underline hover:text-white"
+            >
+              Full funding model.
+            </a>
+          </p>
+        </div>
+      </section>
+
       {/* Signup */}
       <section className="max-w-3xl mx-auto px-6 py-16 w-full">
         <h2 className="text-2xl font-bold mb-6">Join us</h2>
