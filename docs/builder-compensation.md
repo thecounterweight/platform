@@ -29,15 +29,25 @@ Total pool: 930 units. Engineer A owns 43% of the builder pool. When revenue flo
 
 When the platform generates revenue (marketplace fees, listing fees, certification fees):
 
+**Fixed costs (always):**
+
 | Allocation | Share |
 |-----------|-------|
-| Builder pool | 40% |
 | Operations (hosting, security, legal, compliance) | 20% |
-| Community fund (mutual aid, investment seed) | 20% |
-| Early investor pool (time-bounded, expires after set period) | 10% |
 | Reserve (runway, emergencies) | 10% |
 
-These numbers are a starting proposal. The community will ratify or adjust them.
+**The remaining 70% splits between builders and investors:**
+
+| Phase | Builders | Investors |
+|-------|----------|-----------|
+| Pre-investor (early revenue) | 70% | 0% |
+| Active investor deal (e.g., 30% negotiated) | 40% | 30% |
+| Active investor deal (max cap) | 30% | 40% |
+| After investor agreements expire | 70% | 0% |
+
+Builders get paid first — from the earliest revenue. When investors come in (via the bicameral voting process described in the funding model), they share from the same 70% pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
+
+The investor share is never more than 40% of total revenue. That's the hard cap, non-negotiable.
 
 ### Early Contributor Advantage
 
