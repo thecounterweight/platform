@@ -62,8 +62,8 @@ export default function Home() {
               <strong className="text-zinc-100">
                 Discussion, chat, and video meetings.
               </strong>{" "}
-              Threaded discussions. Group chat. Video calls and webinars for
-              coordination. No need for five separate apps.
+              Threaded discussions. Group chat. Video calls for coordination.
+              No need for five separate apps.
             </li>
             <li>
               <strong className="text-zinc-100">
