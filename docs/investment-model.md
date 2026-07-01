@@ -40,20 +40,80 @@ Why this works better than index funds:
 
 Risk is managed through diversification across many businesses, not through market instruments. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
 
-How community-backed businesses work:
+### How businesses get funded
+
+Two paths:
+
+**Pooled fund** — Investors coordinate, vet proposals together, select businesses from a shared pool. More structured, shared due diligence. Works well for larger investments.
+
+**Crowdfunding** — A business posts a fundraiser with a target amount. People commit individually. When it hits the threshold, money releases. More organic, lower barrier. Works well for smaller community businesses.
+
+Both can coexist. Early stage will likely be mostly crowdfunding. As pools grow, coordinated investment becomes possible.
+
+### How it works
 
 1. A member (or group) has a business idea.
 2. They pitch it on the platform — business plan, capital needed, projected revenue.
 3. The community asks questions, evaluates (marketplace experts can weigh in on viability).
-4. The community votes. Majority approval = funded.
-5. Capital is deployed from the business fund.
-6. In return, the business signs a revenue share agreement: X% of revenue flows back to the community fund for Y years.
+4. Funding happens via pooled decision or crowdfunding threshold.
+5. Capital is deployed.
+6. In return, the business offers one of three deal structures (see below).
 
-**Revenue share, not equity.** The community doesn't own the business. It backs it and receives a return as the business grows. After the agreement period ends, the business is fully independent.
+### Deal structures
 
-**If the business fails:** The loss is absorbed by the fund. Diversified across many businesses, so no single failure is catastrophic. No debt to the founder. They tried, it didn't work, the community took that risk knowingly.
+The business chooses what to offer. Investors choose what they want.
 
-**If the business succeeds and refuses to honor the agreement:** Social accountability first (public discussion, reputation impact). If that fails — contract is enforceable through community arbitration or, as a last resort, the legal system. The agreement is a signed contract on the platform.
+**Tier 1 — Revenue share (default)**
+
+Business pays X% of revenue for Y years, capped at Z total return. No ownership changes hands. Simple, low legal complexity. Works for most small businesses — a shop, a service, a restaurant. Available everywhere from day one.
+
+After the agreement period ends, the business is fully independent.
+
+**Tier 2 — Equity (opt-in)**
+
+Business offers actual ownership to the community. The people who funded it own a piece of it. If the business grows, they grow with it.
+
+This requires: proper valuation (community-nominated evaluators assess), legal structuring per jurisdiction, minimum investment threshold to keep the cap table manageable, and a buyback/exit mechanism (the business or the platform facilitates resale to other community members).
+
+More complex. More upside. Available where local law allows.
+
+**Tier 3 — Convertible (hybrid)**
+
+Start with revenue share. If the business hits agreed milestones (revenue target, years in operation, community satisfaction), the revenue share converts to equity at a pre-agreed valuation. The community gets to see the business prove itself before taking ownership. The founder gets simpler terms early on and gives up equity only when the business is stable enough to support shareholders.
+
+### Why this is a hard problem
+
+Equity sounds simple — you fund it, you own a piece. But:
+
+- How do you value a chai stall? There's no VC-style valuation framework for small businesses.
+- 500 people own 30% of a bakery. One person wants out. Who buys their 0.06%?
+- Securities law in most countries requires registration to offer equity to the public. Cross-border multiplies the complexity.
+- Small amounts create impractical ownership. ₹500 invested = 0.001% ownership. What does that mean in practice?
+- Equity requires audited financials, annual reports, shareholder rights. Most small businesses don't have that infrastructure.
+
+Revenue share avoids all of this. But it also means the community misses the upside when something they funded becomes massive. That's why we offer both — and the convertible model bridges the gap.
+
+### Examples
+
+A local carpenter needs ₹2 lakh for better equipment. Revenue share — 5% for 3 years. Simple. Done.
+
+A group wants to start a community grocery store. Equity — 200 people each put in ₹10,000, collectively own 40%. They vote on store decisions proportional to their stake.
+
+A tech startup comes out of the community. Starts with revenue share, proves product-market fit, then converts to equity for early backers at a pre-agreed price. Early risk = early reward.
+
+### If the business fails
+
+The loss is absorbed by the fund (pooled model) or by individual investors (crowdfunding model). Diversified across many businesses, so no single failure is catastrophic. No debt to the founder. They tried, it didn't work, the investors took that risk knowingly.
+
+### If the business succeeds and refuses to honor the agreement
+
+Social accountability first (public discussion, reputation impact). If that fails — the agreement is a signed contract, enforceable through community arbitration or, as a last resort, the legal system.
+
+### Important distinction
+
+The **platform itself** has no equity. Nobody owns it. It's a utility built by the people, for the people.
+
+**Businesses funded by the community** are different. If people pooled their money to build something, they have every right to own a piece of it. That's not the same as owning the platform — it's owning the things the platform helped create.
 
 ## Voting on Investment Decisions
 
