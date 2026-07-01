@@ -28,3 +28,12 @@ export async function getCount(): Promise<number> {
   const count = await redis.get<number>("signup_count");
   return count || 0;
 }
+
+export async function trackVisitor(ip: string): Promise<void> {
+  await redis.pfadd("unique_visitors", ip);
+}
+
+export async function getVisitorCount(): Promise<number> {
+  const count = await redis.pfcount("unique_visitors");
+  return count || 0;
+}
