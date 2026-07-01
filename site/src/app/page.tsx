@@ -200,6 +200,18 @@ export default function Home() {
           >
             Architecture RFC
           </a>
+          <a
+            href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md"
+            className="hover:text-zinc-100 transition-colors"
+          >
+            Funding Model
+          </a>
+          <a
+            href="https://github.com/thecounterweight/platform/blob/main/docs/community-certification.md"
+            className="hover:text-zinc-100 transition-colors"
+          >
+            Community Certification
+          </a>
         </div>
         <p className="mt-6 text-sm text-zinc-600">
           Open-source. AGPL-3.0. Fork it, improve it, make it yours.

@@ -45,6 +45,7 @@ Every contribution is tracked publicly. When revenue flows, contributors get pai
 - [Builder Compensation](docs/builder-compensation.md) — how contributors get paid
 - [Investment Model](docs/investment-model.md) — how community economics work
 - [Funding Model](docs/funding-model.md) — how we raise capital and who decides the terms
+- [Community Certification](docs/community-certification.md) — how quality is verified without corporations
 - [Contributing Guide](CONTRIBUTING.md) — how to get started
 
 ## License
