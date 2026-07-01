@@ -20,6 +20,10 @@ function isBot(request: NextRequest): boolean {
   return botPatterns.some((p) => p.test(ua));
 }
 
+// Cache count values for 30 seconds to reduce Redis calls
+let cachedCount: { signups: number; visitors: number; timestamp: number } | null = null;
+const CACHE_TTL = 30_000;
+
 export async function GET(request: NextRequest) {
   try {
     const ip =
@@ -31,10 +35,21 @@ export async function GET(request: NextRequest) {
       await trackVisitor(ip);
     }
 
+    // Serve cached counts if fresh
+    if (cachedCount && Date.now() - cachedCount.timestamp < CACHE_TTL) {
+      return NextResponse.json({
+        count: cachedCount.signups,
+        visitors: cachedCount.visitors,
+        ok: true,
+      });
+    }
+
     const [signups, visitors] = await Promise.all([
       getCount(),
       getVisitorCount(),
     ]);
+
+    cachedCount = { signups, visitors, timestamp: Date.now() };
 
     return NextResponse.json({ count: signups, visitors, ok: true });
   } catch {

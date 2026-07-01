@@ -47,17 +47,22 @@ export function SignupForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
+        <label htmlFor="signup-email" className="sr-only">Email address</label>
         <input
+          id="signup-email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
           placeholder="Your email"
           required
+          aria-required="true"
           className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-zinc-600"
         />
       </div>
       <div>
+        <label htmlFor="signup-role" className="sr-only">Your role</label>
         <select
+          id="signup-role"
           value={role}
           onChange={(e) => setRole(e.target.value)}
           className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-100 focus:outline-none focus:border-zinc-600"
