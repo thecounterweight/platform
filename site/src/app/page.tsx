@@ -54,7 +54,6 @@ export default function Home() {
               <strong className="text-zinc-100">
                 Built-in translation.
               </strong>{" "}
-              Not word-for-word machine output. Contextual, cultural, human-reviewed.
               Language should never be a barrier to participation.
             </li>
             <li>
