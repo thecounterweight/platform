@@ -69,6 +69,13 @@ export default function Home() {
               </strong>{" "}
               And you can remove them. Any day. Simple majority.
             </li>
+            <li>
+              <strong className="text-zinc-100">
+                Fair voting.
+              </strong>{" "}
+              One person, one vote on governance and leadership. Investment
+              decisions weighted by stake — your money, your proportional say.
+            </li>
           </ul>
         </div>
       </section>

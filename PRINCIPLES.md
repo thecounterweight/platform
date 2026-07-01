@@ -6,9 +6,11 @@ These are non-negotiable. Everything else is open for discussion.
 
 ## 1. Every person matters equally
 
-Not based on how much money they have. Not based on where they were born. Not based on who they know. One person, one voice. Always.
+Not based on how much money they have. Not based on where they were born. Not based on who they know. One person, one voice — on governance, leadership, platform decisions, and politics.
 
-If you put in 500 rupees or 5 million dollars — your vote counts the same. Wealth buys you returns on investment. It does not buy you power over other people.
+For investment decisions — which businesses to fund, how community capital is allocated — voting weight is proportional to your stake. If you have more money at risk, you get more say over how it's deployed. This prevents small coordinated groups from directing other people's money.
+
+Wealth never buys you power over people. But it does earn you proportional say over shared capital you contributed to.
 
 ## 2. Everyone belongs, not just those with money
 

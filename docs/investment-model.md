@@ -55,6 +55,23 @@ How community-backed businesses work:
 
 **If the business succeeds and refuses to honor the agreement:** Social accountability first (public discussion, reputation impact). If that fails — contract is enforceable through community arbitration or, as a last resort, the legal system. The agreement is a signed contract on the platform.
 
+## Voting on Investment Decisions
+
+Investment decisions — which businesses to fund, allocation changes, fund structure — use stake-weighted voting. Your vote is proportional to your contribution in the fund.
+
+This is different from governance. Leadership elections, platform decisions, political coordination — those are one person, one vote regardless of wealth.
+
+Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not fair for them to have equal say over how your money is deployed. But it's also not fair for wealth to buy political or social power. So financial decisions are stake-weighted. Everything else is democratic.
+
+| Decision type | Voting rule |
+|---------------|------------|
+| Which businesses to fund | Proportional to stake |
+| Fund allocation changes | Proportional to stake |
+| Leadership elections | One person, one vote |
+| Platform governance | One person, one vote |
+| Political endorsements | One person, one vote |
+| No-confidence motions | One person, one vote |
+
 ## Mutual Aid (10%)
 
 Not investment. Not charity. Structural insurance.
