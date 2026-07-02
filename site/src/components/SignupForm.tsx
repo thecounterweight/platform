@@ -1,23 +1,66 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
+
+declare global {
+  interface Window {
+    turnstile?: {
+      render: (container: string | HTMLElement, options: Record<string, unknown>) => string;
+      reset: (widgetId: string) => void;
+    };
+  }
+}
 
 export function SignupForm() {
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [message, setMessage] = useState("");
+  const [turnstileToken, setTurnstileToken] = useState("");
+  const [formLoadedAt] = useState(Date.now());
+  const turnstileRef = useRef<HTMLDivElement>(null);
+  const widgetIdRef = useRef<string | null>(null);
+
+  useEffect(() => {
+    // Load Turnstile script
+    const script = document.createElement("script");
+    script.src = "https://challenges.cloudflare.com/turnstile/v0/api.js?render=explicit";
+    script.async = true;
+    script.onload = () => {
+      if (window.turnstile && turnstileRef.current) {
+        widgetIdRef.current = window.turnstile.render(turnstileRef.current, {
+          sitekey: process.env.NEXT_PUBLIC_TURNSTILE_SITE_KEY || "",
+          theme: "dark",
+          callback: (token: string) => setTurnstileToken(token),
+        });
+      }
+    };
+    document.head.appendChild(script);
+    return () => { document.head.removeChild(script); };
+  }, []);
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
     if (!email) return;
+
+    if (!turnstileToken) {
+      setStatus("error");
+      setMessage("Please complete the verification.");
+      return;
+    }
 
     setStatus("loading");
     try {
       const res = await fetch("/api/signup", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ email, role }),
+        body: JSON.stringify({
+          email,
+          role,
+          token: turnstileToken,
+          loadedAt: formLoadedAt,
+          website: "", // honeypot
+        }),
       });
 
       if (res.ok) {
@@ -29,6 +72,11 @@ export function SignupForm() {
         const data = await res.json();
         setStatus("error");
         setMessage(data.error || "Something went wrong. Try again.");
+        // Reset turnstile on failure
+        if (window.turnstile && widgetIdRef.current) {
+          window.turnstile.reset(widgetIdRef.current);
+          setTurnstileToken("");
+        }
       }
     } catch {
       setStatus("error");
@@ -80,6 +128,13 @@ export function SignupForm() {
           <option value="just-here">Just here for the movement</option>
         </select>
       </div>
+      {/* Honeypot — hidden from real users, bots fill it */}
+      <div aria-hidden="true" style={{ position: "absolute", left: "-9999px" }}>
+        <label htmlFor="website">Website</label>
+        <input type="text" id="website" name="website" tabIndex={-1} autoComplete="off" />
+      </div>
+      {/* Cloudflare Turnstile */}
+      <div ref={turnstileRef}></div>
       <button
         type="submit"
         disabled={status === "loading"}
