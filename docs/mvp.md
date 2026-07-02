@@ -65,13 +65,21 @@ This is the strongest early revenue source. Companies currently pay recruiters 1
 | Translation | Complex AI problem — add once core platform is stable |
 | Federation | Architecture is designed for it, but single instance first |
 
+## Marketplace Listing Policy
+
+Listings are free. Always.
+
+- Verified real people already prevents spam — no bots, no duplicate scam listings.
+- Charging to list kills the cold start. We need sellers to make the marketplace useful.
+- If abuse happens (someone listing thousands of items), cap free listings at a reasonable number per person. Beyond that, charge. But the default is free.
+
 ## Revenue Model (MVP Phase)
 
 | Source | When it kicks in |
 |--------|-----------------|
 | Talent pool access fees (companies) | As soon as certified professionals exist |
 | Certification fees (small, from candidates or company-sponsored) | Once certifiers are active |
-| Marketplace listing fees | Only once there's meaningful traffic — not day one |
+| Transaction fees (proportional, small) | When on-platform payments are added later |
 | Referral/influence fees from companies | Scale play — needs tens of thousands of users driving purchases |
 
 ## Technical Approach
@@ -86,7 +94,7 @@ This is the strongest early revenue source. Companies currently pay recruiters 1
 2. Marketplace activates. People list goods and services. Reviews accumulate. Trust builds.
 3. Skill certification starts. Domain experts evaluate people. Talent pool forms.
 4. Companies start paying for talent access. First revenue.
-5. As traffic grows, marketplace listing fees and referral deals become viable.
+5. As traffic grows, referral deals and transaction fees become viable.
 6. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
 
 ## What Success Looks Like (MVP)

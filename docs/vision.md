@@ -32,8 +32,8 @@ An app where:
 
 Not ads shoved in your face. A dedicated space you enter when YOU want to buy or sell.
 
-- **List anything.** Goods, services, skills, time.
-- **Proportional fees.** Small transaction, small fee. Never 15-30% like existing platforms.
+- **List anything — for free.** Goods, services, skills, time. Listing costs nothing.
+- **Proportional transaction fees.** When on-platform payments exist, small transaction, small fee. Never 15-30% like existing platforms.
 - **Verified reviews.** Only people with proof of purchase can review. Every review is from a real human who actually used the product.
 - **Community certification.** Expert evaluators — selected by the community — independently assess and certify quality. Products, services, and people's skills. A small artisan can get certified quality without paying for expensive ISO certification.
 - **Talent pool.** Experts evaluate and certify people's skills. Companies pay a fair fee to access pre-vetted professionals. Way less than a recruiter. Way more reliable than keyword-matching algorithms.

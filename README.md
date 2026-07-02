@@ -14,7 +14,7 @@ This is an open-source project to build a platform and a movement where:
 - Discussion boards, chat, and video calls — threaded conversations, group messaging, video coordination. No need for five separate apps.
 - Communities invest together, fund businesses together, and share the returns.
 - Small shops get bulk purchasing power that only big chains have today.
-- A marketplace lets people buy and sell without middlemen taking 30%. Community experts certify quality.
+- A marketplace where listing is free and transaction fees are proportional — not 30%. Community experts certify quality.
 
 
 This is not one person's vision. It's a starting point. The community discusses, debates, and shapes the direction together. What you see here is version zero. The people who show up write version one.
