@@ -37,6 +37,7 @@ const DOC_META: Record<string, { title: string; description: string }> = {
   "investment-model": { title: "Investment Model", description: "How community economics work" },
   "funding-model": { title: "Funding Model", description: "How we raise capital and who decides the terms" },
   "community-certification": { title: "Community Certification", description: "How quality is verified by real experts" },
+  "collective-purchasing": { title: "Collective Purchasing", description: "How small shops get bulk pricing power" },
 };
 
 export function getAllDocs(): DocMeta[] {

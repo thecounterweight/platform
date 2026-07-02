@@ -12,6 +12,7 @@ const docLinks = [
   { href: "/docs/investment-model", label: "Invest Together" },
   { href: "/docs/funding-model", label: "Funding" },
   { href: "/docs/community-certification", label: "Certification" },
+  { href: "/docs/collective-purchasing", label: "Bulk Buying" },
 ];
 
 const externalLinks = [

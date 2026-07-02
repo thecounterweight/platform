@@ -48,6 +48,7 @@ Every contribution is tracked publicly. When revenue flows, contributors get pai
 - [Investment Model](docs/investment-model.md) — how community economics work
 - [Funding Model](docs/funding-model.md) — how we raise capital and who decides the terms
 - [Community Certification](docs/community-certification.md) — how quality is verified without corporations
+- [Collective Purchasing](docs/collective-purchasing.md) — how small shops get bulk pricing power
 - [Contributing Guide](CONTRIBUTING.md) — how to get started
 
 ## License

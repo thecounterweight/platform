@@ -146,18 +146,6 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 - **Exit:** Sell your position to another member on the secondary market. The fund doesn't do withdrawals — your money is invested, not sitting in a vault. You find a buyer, you're out.
 - **Returns:** Distributed periodically (quarterly or annually — community decides). Proportional to your contribution.
 
-## Collective Purchasing
-
-Separate from the investment fund. This is a service the platform provides:
-
-1. Small shopkeepers list what products they need to stock.
-2. Platform aggregates demand across many shops in a region.
-3. When aggregate demand hits manufacturer minimums, platform places a bulk order directly.
-4. Logistics partner delivers to individual shops.
-5. Platform charges an operational fee (proportional, much less than distributor margins).
-
-**Result:** Shopkeepers get products at near-manufacturer prices. They keep their independence. The platform fee sustains the logistics coordination. Big chains lose their only structural advantage.
-
 ## Risk Disclosure
 
 This is investment. Real investment carries real risk.
