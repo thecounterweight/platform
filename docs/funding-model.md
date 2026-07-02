@@ -64,7 +64,9 @@ This means:
 - Terms are still decided democratically once the community is large enough
 - The investor's risk (undefined terms) is offset by being earliest in — which historically means better terms when the vote happens
 
-No revenue-share payments begin until terms are voted on and agreed.
+If the bicameral vote cannot agree on terms for a pre-quorum investor's deal — i.e., both blocks fail to reach supermajority — the decision is referred to an independent body with expertise in investment, finance, and cooperative economics. Their ruling is binding. This ensures early investors aren't left in limbo indefinitely.
+
+No revenue-share payments begin until terms are decided — either by vote or by the independent body.
 
 ## Tiered Rounds
 
