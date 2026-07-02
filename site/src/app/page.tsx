@@ -177,59 +177,16 @@ export default function Home() {
         <SignupForm />
       </section>
 
-      {/* Links */}
-      <footer className="max-w-3xl mx-auto px-6 py-16 w-full border-t border-zinc-800">
-        <div className="flex flex-wrap gap-6 text-zinc-400">
-          <a
-            href="https://github.com/thecounterweight/platform"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            GitHub
-          </a>
-          <a
-            href="https://reddit.com/r/TheCounterweight"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Reddit
-          </a>
-          <a
-            href="https://discord.gg/MAeXwTcxh"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Discord
-          </a>
-          <a
-            href="/docs"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Docs
-          </a>
-          <a
-            href="/docs/principles"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Principles
-          </a>
-          <a
-            href="/docs/vision"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Vision
-          </a>
-          <a
-            href="/docs/mvp"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            MVP
-          </a>
-          <a
-            href="/docs/funding-model"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Funding Model
-          </a>
+      {/* Footer */}
+      <footer className="max-w-3xl mx-auto px-6 py-12 w-full border-t border-zinc-800">
+        <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
+          <a href="/docs/principles" className="hover:text-zinc-300 transition-colors">Principles</a>
+          <a href="/docs/vision" className="hover:text-zinc-300 transition-colors">Vision</a>
+          <a href="/docs/mvp" className="hover:text-zinc-300 transition-colors">MVP</a>
+          <a href="/docs/builder-compensation" className="hover:text-zinc-300 transition-colors">Builder Compensation</a>
+          <a href="/docs/funding-model" className="hover:text-zinc-300 transition-colors">Funding Model</a>
         </div>
-        <p className="mt-6 text-sm text-zinc-600">
+        <p className="mt-4 text-sm text-zinc-600">
           Open-source. AGPL-3.0. Fork it, improve it, make it yours.
         </p>
       </footer>
