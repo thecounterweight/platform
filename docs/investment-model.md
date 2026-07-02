@@ -59,11 +59,13 @@ Both can coexist. Early stage will likely be mostly crowdfunding. As pools grow,
 ### How it works
 
 1. A member (or group) has a business idea.
-2. They pitch it on the platform — business plan, capital needed, projected revenue.
-3. The community asks questions, evaluates (marketplace experts can weigh in on viability).
-4. Funding happens via pooled decision or crowdfunding threshold.
-5. Capital is deployed.
-6. In return, the business offers one of three deal structures (see below).
+2. They present their plan on the platform — what they're building, capital needed, projected revenue. This is a pitch, not a solicitation. The platform never says "invest here."
+3. Community members who are interested reach out. They ask questions, evaluate, poke holes.
+4. Interested parties enter a binding contract with the pitcher — directly, between named individuals. The platform provides the contract template and facilitates signing, but is not a party to the deal.
+5. Capital flows directly between parties per the contract.
+6. The contract specifies one of three deal structures (see below).
+
+**The platform is a contract facilitation layer, not a fund manager.** It provides templates, digital signatures, transparent record-keeping, and dispute resolution infrastructure. It does not hold funds, make investment decisions, or recommend deals.
 
 ### Deal structures
 
@@ -87,17 +89,39 @@ More complex. More upside. Available where local law allows.
 
 Start with revenue share. If the business hits agreed milestones (revenue target, years in operation, community satisfaction), the revenue share converts to equity at a pre-agreed valuation. The community gets to see the business prove itself before taking ownership. The founder gets simpler terms early on and gives up equity only when the business is stable enough to support shareholders.
 
-### Why this is a hard problem
+### Legal structure
+
+This is not a securities offering. Here's why:
+
+- Pitches are only visible to verified community members, not the public.
+- No guaranteed returns are promised in any pitch. No "invest X and earn Y%" language.
+- Contracts are between specific named individuals — not between a fund and the public.
+- The platform facilitates but doesn't manage funds or recommend deals.
+- Interested parties initiate the contract, not the pitcher.
+
+This is how angel networks and syndicates already work legally — a founder presents, interested parties self-select, contracts happen privately.
+
+**Recommended structure by group size:**
+
+| Pool size | Recommended structure |
+|-----------|---------------------|
+| 2-10 people | Simple revenue share contract or partnership agreement |
+| 10-50 people | LLP or structured multi-party contract |
+| 50-200 people | Private placement rules apply — needs specific legal formatting per jurisdiction |
+| 200+ people | Restructure into smaller groups, or seek legal counsel for compliance |
+
+The platform recommends appropriate contract templates based on pool size, capital amount, and jurisdiction. All contracts are transparent, auditable, and legally enforceable.
+
+### Why equity is harder than revenue share
 
 Equity sounds simple — you fund it, you own a piece. But:
 
 - How do you value a coffee shop? There's no VC-style valuation framework for small businesses.
-- 500 people own 30% of a bakery. One person wants out. Who buys their 0.06%?
-- Securities law in most countries requires registration to offer equity to the public. Cross-border multiplies the complexity.
-- Small amounts create impractical ownership. ₹500 invested = 0.001% ownership. What does that mean in practice?
+- 200 people own 30% of a bakery. One person wants out. Who buys their 0.15%?
+- Small amounts create impractical ownership. ₹500 invested = 0.001% ownership.
 - Equity requires audited financials, annual reports, shareholder rights. Most small businesses don't have that infrastructure.
 
-Revenue share avoids all of this. But it also means the community misses the upside when something they funded becomes massive. That's why we offer both — and the convertible model bridges the gap.
+Revenue share avoids all of this. The convertible model bridges the gap — start simple, convert to equity only when the business is stable enough to support shareholders.
 
 ### Examples
 
