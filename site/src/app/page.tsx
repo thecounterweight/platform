@@ -42,7 +42,7 @@ export default function Home() {
               <strong className="text-zinc-100">
                 Democratic governance at every level.
               </strong>{" "}
-              Platform moderators, movement leaders, fund managers — all elected,
+              Platform moderators, movement leaders, investment pool managers — all elected,
               all removable by simple majority. Any day.
             </li>
             <li>

@@ -7,54 +7,66 @@ This is how the community economics work. It's the engine that makes everything 
 ## The Core Loop
 
 ```
-Members invest → Fund grows → Fund backs businesses + diversified assets
-                                         │
-                        Returns flow back to the fund
-                                         │
-                        Fund grows larger → backs more businesses
-                                         │
-                        Community thrives → more members join
+Members back businesses → Businesses generate revenue
+                                    │
+                     Returns flow back to members
+                                    │
+                     Members back more businesses
+                                    │
+                     Community thrives → more members join
 ```
 
-## Where the Money Goes
+## Two Paths
 
-When a member contributes to their community fund:
+Communities can coordinate investment in two ways. Both coexist on the platform.
+
+**Path 1 — Pooled investment (community-governed)**
+
+Members contribute to a shared pool governed by the community (not the platform). The community decides collectively which businesses to back. Members vote proportional to their stake. The pool is managed by elected community leaders, accountable to the members.
+
+**Path 2 — Direct deals (individual contracts)**
+
+A business posts a pitch. Interested members reach out directly. Contracts are signed between named individuals. No pool, no collective decision — just people choosing to back a business they believe in.
+
+The platform facilitates both — providing contract templates, transparent record-keeping, and dispute resolution. It does not manage funds, make investment decisions, or hold capital.
+
+## Where the Money Goes (Pooled Path)
+
+When a community chooses to pool resources:
 
 | Allocation | Purpose |
 |-----------|---------|
 | 95% | Community businesses (vetted and backed by the community) |
 | 5% | Operations (legal, admin, platform fees) |
 
-No idle cash reserve. All investment capital goes to work.
+No idle cash reserve. All capital goes to work.
 
-**Liquidity:** If a member wants out, they sell their position to another member on a secondary market within the platform. The fund stays fully invested. The seller finds a buyer at whatever price the market supports — the fund itself doesn't need to honor withdrawals from a reserve.
+**Liquidity:** If a member wants out, they sell their position to another member on a secondary market within the platform. The pool stays fully invested. The seller finds a buyer at whatever price the market supports — no withdrawals from a reserve.
 
-These percentages are set at the network level as a framework. Local communities can adjust within bands based on their needs.
+These percentages are a suggested framework. Communities can adjust within bands based on their needs.
 
-**Note:** This is the allocation of member investment contributions — money people put into the community fund. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
+**Note:** This is the allocation of member investment contributions — money people put into community-backed businesses. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
 
 ## Community Businesses (95%)
 
-The majority of pooled capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community votes to fund. Businesses accountable to the community that funded them.
+The majority of capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community decides to back. Businesses accountable to the people who funded them.
 
-Why this works better than index funds:
+Why this works:
 
-- Every business is vetted by the community before funding. Real people evaluating real plans — not a blind algorithm picking stocks.
+- Every business is vetted by real people evaluating real plans before funding.
 - The platform provides built-in demand signals. You can see whether buyers exist before the business launches.
 - The community IS the customer base. A business funded by 500 people has 500 people with reason to buy from it.
-- Returns stay within the community. The money grows businesses that community members chose to back — not some distant corporation's share price.
+- Returns stay within the community rather than flowing to distant corporations.
 
-Risk is managed through diversification across many businesses, not through market instruments. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
+Risk is managed through diversification across many businesses. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
 
 ### How businesses get funded
 
-Two paths:
+**Through a pool** — Community members coordinate, vet proposals together, select businesses from a shared pool. More structured, shared due diligence. Works well for larger investments where the community governs the capital collectively.
 
-**Pooled fund** — Investors coordinate, vet proposals together, select businesses from a shared pool. More structured, shared due diligence. Works well for larger investments.
+**Through direct deals** — A business posts a pitch with a target amount. Interested people commit individually via contracts with the business. More organic, lower barrier. Works well for smaller businesses or when individuals want to choose their own deals.
 
-**Crowdfunding** — A business posts a fundraiser with a target amount. People commit individually. When it hits the threshold, money releases. More organic, lower barrier. Works well for smaller community businesses.
-
-Both can coexist. Early stage will likely be mostly crowdfunding. As pools grow, coordinated investment becomes possible.
+Both coexist. Early stage will likely be mostly direct deals. As communities grow and build trust, pooled investment becomes possible.
 
 ### How it works
 
@@ -95,7 +107,7 @@ This is not a securities offering. Here's why:
 
 - Pitches are only visible to verified community members, not the public.
 - No guaranteed returns are promised in any pitch. No "invest X and earn Y%" language.
-- Contracts are between specific named individuals — not between a fund and the public.
+- Contracts are between specific named individuals — not between an entity and the public.
 - The platform facilitates but doesn't manage funds or recommend deals.
 - Interested parties initiate the contract, not the pitcher.
 
@@ -133,7 +145,7 @@ A tech startup comes out of the community. Starts with revenue share, proves pro
 
 ### If the business fails
 
-The loss is absorbed by the fund (pooled model) or by individual investors (crowdfunding model). Diversified across many businesses, so no single failure is catastrophic. No debt to the founder. They tried, it didn't work, the investors took that risk knowingly.
+The loss is absorbed by the pool (pooled model) or by the individual investors who signed the contract (direct deal model). Diversified across many businesses, so no single failure is catastrophic. No debt to the founder. They tried, it didn't work, the investors took that risk knowingly.
 
 ### If the business succeeds and refuses to honor the agreement
 
@@ -141,13 +153,13 @@ Social accountability first (public discussion, reputation impact). If that fail
 
 ### Important distinction
 
-The **platform itself** has no equity. Nobody owns it. It's a utility built by the people, for the people.
+The **platform itself** has no equity. Nobody owns it. It's a utility — open-source, community-governed.
 
 **Businesses funded by the community** are different. If people pooled their money to build something, they have every right to own a piece of it. That's not the same as owning the platform — it's owning the things the platform helped create.
 
 ## Voting on Investment Decisions
 
-Investment decisions — which businesses to fund, allocation changes, fund structure — use stake-weighted voting. Your vote is proportional to your contribution in the fund.
+For pooled investments, decisions — which businesses to back, allocation changes, pool governance — use stake-weighted voting. Your vote is proportional to your contribution. For direct deals, each person makes their own decision.
 
 This is different from governance. Leadership elections, platform decisions, political coordination — those are one person, one vote regardless of wealth.
 
@@ -155,8 +167,8 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 
 | Decision type | Voting rule |
 |---------------|------------|
-| Which businesses to fund | Proportional to stake |
-| Fund allocation changes | Proportional to stake |
+| Which businesses to back (pooled) | Proportional to stake |
+| Pool allocation changes | Proportional to stake |
 | Leadership elections | One person, one vote |
 | Platform governance | One person, one vote |
 | Political endorsements | One person, one vote |
@@ -167,7 +179,7 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 
 - **No fixed amount.** Invest what you can, when you can.
 - **No minimum that prices people out.** Whether it's 500 rupees or 50,000 — you're a member with equal voice.
-- **Exit:** Sell your position to another member on the secondary market. The fund doesn't do withdrawals — your money is invested, not sitting in a vault. You find a buyer, you're out.
+- **Exit:** Sell your position to another member on the secondary market. No withdrawals from the pool — your money is invested, not sitting in a vault. You find a buyer, you're out.
 - **Returns:** Distributed periodically (quarterly or annually — community decides). Proportional to your contribution.
 
 ## Risk Disclosure
@@ -176,8 +188,7 @@ This is investment. Real investment carries real risk.
 
 - Community businesses can fail. Not all of them will succeed.
 - Returns depend on the businesses the community chooses to back.
-- Regulatory changes in any country could limit operations.
-- Regulatory changes in any country could affect operations.
+- Regulatory changes in any country could limit or alter operations.
 
 We mitigate through: backing many businesses (not putting everything in one), rigorous community vetting before funding, built-in demand validation through the platform, and democratic oversight of all investment decisions. But risk is never zero. Every member should understand this.
 
