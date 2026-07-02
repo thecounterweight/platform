@@ -2,6 +2,8 @@
 
 This is how the community economics work. It's the engine that makes everything sustainable.
 
+**What is a "community" here?** Any group of verified people who choose to pool resources together. It could be geographic (people in your city), professional (engineers, doctors, graduates), interest-based (sustainability, education), or global (investors connected across countries who share values). The platform doesn't define what a community is — people do.
+
 ## The Core Loop
 
 ```
@@ -40,7 +42,7 @@ Why this works better than index funds:
 - Every business is vetted by the community before funding. Real people evaluating real plans — not a blind algorithm picking stocks.
 - The platform provides built-in demand signals. You can see whether buyers exist before the business launches.
 - The community IS the customer base. A business funded by 500 people has 500 people with reason to buy from it.
-- Returns stay local. The money grows businesses in your neighbourhood, not some distant corporation's share price.
+- Returns stay within the community. The money grows businesses that community members chose to back — not some distant corporation's share price.
 
 Risk is managed through diversification across many businesses, not through market instruments. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
 
