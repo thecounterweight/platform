@@ -129,6 +129,16 @@ In the early days, there's no cash. Your work is recorded from day one. The mome
 
 This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
 
+### How the Ledger Works
+
+| Stage | Technology | Why |
+|-------|-----------|-----|
+| Now (1-20 builders) | YAML file in the git repo | Simple, transparent. Every unit assignment is a PR — reviewable, challengeable. Git history provides immutability. |
+| Growth (20-100 builders) | YAML in git + periodic hash anchored to a public blockchain | Same simple workflow, but with cryptographic proof that records existed at a specific time — independent of any single entity. |
+| Scale (100+ builders, real revenue flowing) | Dedicated on-chain ledger or regular anchoring | Full trustless guarantee. No single party (not even the repo owner) can alter historical records. |
+
+The blockchain anchoring is infrastructure, not product. Contributors never interact with it. It exists so that no one — not a future maintainer, not a compromised account, not even GitHub going down — can erase or alter your recorded contributions.
+
 ### Time-Weighted Multiplier
 
 Units earned earlier are worth more — because early builders took more risk.

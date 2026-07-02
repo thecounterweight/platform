@@ -58,4 +58,6 @@ Small → large. Local → global.
 
 ## What This Is Not
 
-There are no tokens, no blockchain, no NFTs. There is no venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.
+There are no tokens, no NFTs, no speculation. No venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.
+
+Blockchain may be used as infrastructure (anchoring the contribution ledger for immutability) — but never as a product feature, never as speculation, and never as something users need to understand or interact with.
