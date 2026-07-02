@@ -1,9 +1,5 @@
 # The Counterweight
 
-The world is tilted. Money, power, voice — it all flows one direction. Upward. Away from you.
-
-A counterweight doesn't break the machine. It balances it.
-
 This is an open-source project to build a platform and a movement where:
 
 - Every person is verified real. One human, one voice.
