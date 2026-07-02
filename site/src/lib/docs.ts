@@ -1,8 +1,26 @@
 import fs from "fs";
 import path from "path";
 
-const DOCS_DIR = path.join(process.cwd(), "..", "docs");
-const PRINCIPLES_PATH = path.join(process.cwd(), "..", "PRINCIPLES.md");
+// On Vercel, cwd is the site/ directory but the full repo is cloned.
+// Try both relative paths to handle local dev and Vercel deployment.
+function resolveDocsDir(): string {
+  const fromParent = path.join(process.cwd(), "..", "docs");
+  const fromCwd = path.join(process.cwd(), "docs");
+  if (fs.existsSync(fromParent)) return fromParent;
+  if (fs.existsSync(fromCwd)) return fromCwd;
+  return fromParent;
+}
+
+function resolvePrinciplesPath(): string {
+  const fromParent = path.join(process.cwd(), "..", "PRINCIPLES.md");
+  const fromCwd = path.join(process.cwd(), "PRINCIPLES.md");
+  if (fs.existsSync(fromParent)) return fromParent;
+  if (fs.existsSync(fromCwd)) return fromCwd;
+  return fromParent;
+}
+
+const DOCS_DIR = resolveDocsDir();
+const PRINCIPLES_PATH = resolvePrinciplesPath();
 
 export interface DocMeta {
   slug: string;

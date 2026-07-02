@@ -4,12 +4,17 @@ import ReactMarkdown from "react-markdown";
 import Link from "next/link";
 import type { Metadata } from "next";
 
+type Props = {
+  params: Promise<{ slug: string }>;
+};
+
 export function generateStaticParams() {
   return getAllSlugs().map((slug) => ({ slug }));
 }
 
-export function generateMetadata({ params }: { params: { slug: string } }): Metadata {
-  const meta = getDocMeta(params.slug);
+export async function generateMetadata({ params }: Props): Promise<Metadata> {
+  const { slug } = await params;
+  const meta = getDocMeta(slug);
   if (!meta) return {};
   return {
     title: `${meta.title} — The Counterweight`,
@@ -17,9 +22,10 @@ export function generateMetadata({ params }: { params: { slug: string } }): Meta
   };
 }
 
-export default function DocPage({ params }: { params: { slug: string } }) {
-  const content = getDocContent(params.slug);
-  const meta = getDocMeta(params.slug);
+export default async function DocPage({ params }: Props) {
+  const { slug } = await params;
+  const content = getDocContent(slug);
+  const meta = getDocMeta(slug);
 
   if (!content || !meta) {
     notFound();
