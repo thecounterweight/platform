@@ -1,6 +1,6 @@
 # Builder Compensation
 
-You are not volunteering. You are investing your skills. You will be compensated.
+Every contribution is an investment of your skills. You will be compensated.
 
 ## How It Works
 
@@ -53,7 +53,7 @@ The investor share is never more than 40% of total revenue. That's the hard cap,
 
 The earlier you contribute, the more your units are worth relative to the total pool. When there are only 1,000 total units and you hold 200, that's 20%. When the pool grows to 100,000 units, your 200 is 0.2% — but the revenue has also grown massively.
 
-Early risk = early reward. That's fair.
+Early risk = early reward.
 
 ### What Counts as Contribution
 
@@ -136,5 +136,3 @@ This is a starting proposal — the builder community will ratify or adjust the 
 This is a bet. If the platform never generates revenue, the units are worth nothing. That's the risk of being early.
 
 But if it works — early builders are compensated well for the risk they took. The time-weighted multiplier ensures that the people who showed up when nothing existed aren't drowned out by those who show up once it's safe. Early risk earns a permanent structural advantage.
-
-The risk is real. The upside is also real.

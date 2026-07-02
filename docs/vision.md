@@ -10,8 +10,6 @@ You can't trust a review, a comment, or a trending topic — because you never k
 
 The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by people who profit from keeping us divided.
 
-Let's take it back.
-
 ## What We're Building
 
 A platform and a movement. They reinforce each other.
@@ -60,8 +58,4 @@ Small → large. Local → global.
 
 ## What This Is Not
 
-- Not crypto. No tokens. No NFTs. No blockchain hype.
-- Not VC-funded. No investors demanding growth at all costs.
-- Not a charity. This is an investment vehicle. People expect returns.
-- Not a single company. Open-source, forkable, federated. No single entity controls it.
-- Not utopian. This is hard. Parts will fail. We'll rebuild them. But the direction is clear.
+There are no tokens, no blockchain, no NFTs. There is no venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.

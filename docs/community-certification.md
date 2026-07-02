@@ -74,9 +74,8 @@ Certifications aren't permanent.
 
 Companies can access the certified talent pool. What they get:
 
-- Profiles of people whose skills are independently verified by domain experts
-- Not keyword matching. Not self-reported LinkedIn skills. Actual assessed capability.
-- This is worth serious money to companies (they spend lakhs on recruiters who offer less certainty).
+- Profiles of people whose skills are independently verified by domain experts — not keyword matching or self-reported claims.
+- Companies currently spend lakhs on recruiters who offer less certainty.
 
 **Companies pay a fee to access the pool.** This is a revenue stream for the platform. The fee is fair — significantly less than a recruitment agency — and the quality is higher.
 

@@ -35,7 +35,7 @@ These percentages are set at the network level as a framework. Local communities
 
 ## Community Businesses (95%)
 
-The majority of pooled capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community votes to fund. Not stocks. Not bonds. Real businesses run by real people accountable to the community.
+The majority of pooled capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community votes to fund. Businesses accountable to the community that funded them.
 
 Why this works better than index funds:
 
