@@ -86,7 +86,7 @@ Start with revenue share. If the business hits agreed milestones (revenue target
 
 Equity sounds simple — you fund it, you own a piece. But:
 
-- How do you value a chai stall? There's no VC-style valuation framework for small businesses.
+- How do you value a coffee shop? There's no VC-style valuation framework for small businesses.
 - 500 people own 30% of a bakery. One person wants out. Who buys their 0.06%?
 - Securities law in most countries requires registration to offer equity to the public. Cross-border multiplies the complexity.
 - Small amounts create impractical ownership. ₹500 invested = 0.001% ownership. What does that mean in practice?
