@@ -20,9 +20,12 @@ When a member contributes to their community fund:
 
 | Allocation | Purpose |
 |-----------|---------|
-| 85% | Community businesses (vetted and backed by the community) |
-| 10% | Cash reserve (liquidity buffer for withdrawals) |
+| 95% | Community businesses (vetted and backed by the community) |
 | 5% | Operations (legal, admin, platform fees) |
+
+No idle cash reserve. All investment capital goes to work.
+
+**Liquidity:** If a member wants out, they sell their position to another member on a secondary market within the platform. The fund stays fully invested. The seller finds a buyer at whatever price the market supports — the fund itself doesn't need to honor withdrawals from a reserve.
 
 These percentages are set at the network level as a framework. Local communities can adjust within bands based on their needs.
 
