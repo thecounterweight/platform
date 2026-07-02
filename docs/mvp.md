@@ -24,20 +24,39 @@ Threaded discussion boards and group chat. Every participant is verified real.
 
 This is the daily engagement layer. People come for the conversations.
 
-### 3. Marketplace (Discovery + Reviews)
+### 3. Marketplace (Reviews + Discovery)
 
-A space where people list goods and services. **No on-platform transactions in the MVP.** The platform doesn't handle purchasing or delivery — that's a massive infrastructure problem solved later.
+A trusted review layer on top of existing platforms — plus a space for community sellers to list directly.
 
-How it works:
+**Aggregated listings (day one value):**
 
-1. Sellers list what they offer (goods, services, skills, time)
-2. Buyers browse, discover, and purchase through whatever channel works (existing platforms, direct contact, in person)
-3. Buyers upload proof of purchase back to the platform
-4. Buyers rate and review — verified purchase reviews only
+Products from major platforms (Amazon, Flipkart, etc.) are pulled via their official affiliate APIs. Users don't need to wait for sellers to list — millions of products are browsable immediately.
 
-Every review is from a real human with proof they actually bought the thing. That alone makes this more trustworthy than any existing review platform.
+**How it works:**
 
-**Future revenue angle:** As the platform grows and demonstrably influences purchasing decisions, we negotiate referral fees with companies that benefit from our reviews driving their sales. This is a scale play — not day-one revenue.
+1. Products aggregated from major platforms via affiliate APIs (Amazon Product Advertising API, Flipkart Affiliate API, etc.)
+2. Community sellers also list their own goods and services directly (free to list)
+3. Verified users review products — only real humans, verified purchase
+4. Community evaluators certify quality on top of reviews
+5. Users click through to buy on the source platform, or buy directly from community sellers
+
+**Why this works:**
+
+- Solves cold-start — marketplace is useful from day one without waiting for sellers
+- Reviews are trustworthy because every reviewer is a verified real human
+- Community certification adds an expert quality layer that no existing platform has
+- Affiliate commissions generate revenue immediately (Amazon: 1-10%, Flipkart: 4-12%)
+- Community sellers join because the audience is already there
+
+**The progression:**
+
+1. Start as the place for trusted reviews (aggregated products)
+2. Community sellers list alongside — they have a built-in advantage (community backing, local trust)
+3. As community sellers grow, users prefer buying direct (lower prices, community accountability)
+4. On-platform transactions added later — transaction fees kick in
+5. Existing platform listings become less relevant as the community marketplace matures
+
+**Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms. No need to wait for scale.
 
 ### 4. Skill Certification
 
@@ -69,20 +88,20 @@ This is the strongest early revenue source. Companies currently pay recruiters 1
 
 ## Marketplace Listing Policy
 
-Listings are free. Always.
+Community seller listings are free. Always.
 
-- Verified real people already prevents spam — no bots, no duplicate scam listings.
-- Charging to list kills the cold start. We need sellers to make the marketplace useful.
+- Aggregated products (from Amazon, Flipkart, etc.) are pulled automatically via affiliate APIs — no manual listing needed.
+- Community sellers list their own products for free. Verified real people already prevents spam — no bots, no duplicate scam listings.
 - If abuse happens (someone listing thousands of items), cap free listings at a reasonable number per person. Beyond that, charge. But the default is free.
 
 ## Revenue Model (MVP Phase)
 
 | Source | When it kicks in |
 |--------|-----------------|
+| Affiliate commissions (Amazon, Flipkart, etc.) | As soon as users review and click through to buy |
 | Talent pool access fees (companies) | As soon as certified professionals exist |
 | Certification fees (small, from candidates or company-sponsored) | Once certifiers are active |
 | Transaction fees (proportional, small) | When on-platform payments are added later |
-| Referral/influence fees from companies | Scale play — needs tens of thousands of users driving purchases |
 
 ## Technical Approach
 
@@ -93,10 +112,10 @@ Listings are free. Always.
 ## How It Grows
 
 1. Discussion boards launch. People have a space with verified real humans. No bots, no manipulation.
-2. Marketplace activates. People list goods and services. Reviews accumulate. Trust builds.
-3. Skill certification starts. Domain experts evaluate people. Talent pool forms.
-4. Companies start paying for talent access. First revenue.
-5. As traffic grows, referral deals and transaction fees become viable.
+2. Marketplace activates with aggregated products. People review and certify. Affiliate revenue starts immediately.
+3. Community sellers list alongside aggregated products. Trusted reviews drive buyers to them.
+4. Skill certification starts. Domain experts evaluate people. Talent pool forms.
+5. Companies start paying for talent access. Revenue grows.
 6. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
 
 ## What Success Looks Like (MVP)

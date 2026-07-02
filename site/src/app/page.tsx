@@ -83,8 +83,8 @@ export default function Home() {
               <strong className="text-zinc-100">
                 A marketplace without middlemen.
               </strong>{" "}
-              List goods and services for free. Proportional transaction fees — not 30% cuts.
-              Community experts certify quality. Verified purchase reviews only.
+              Products from major platforms + community sellers listing free. Reviews from verified humans only.
+              Community experts certify quality. No fake reviews. No bots.
             </li>
           </ul>
         </div>

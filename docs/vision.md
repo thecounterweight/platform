@@ -30,9 +30,9 @@ An app where:
 
 Not ads shoved in your face. A dedicated space you enter when YOU want to buy or sell.
 
-- **List anything — for free.** Goods, services, skills, time. Listing costs nothing.
+- **Products from everywhere, reviews you can trust.** Products aggregated from major platforms via affiliate APIs — plus community sellers listing directly for free. Every review is from a verified real human with proof of purchase.
 - **Proportional transaction fees.** When on-platform payments exist, small transaction, small fee. Never 15-30% like existing platforms.
-- **Verified reviews.** Only people with proof of purchase can review. Every review is from a real human who actually used the product.
+- **Community sellers list free.** Goods, services, skills, time. Listing costs nothing. Community sellers sit alongside aggregated products with the advantage of local trust and community backing.
 - **Community certification.** Expert evaluators — selected by the community — independently assess and certify quality. Products, services, and people's skills. A small artisan can get certified quality without paying for expensive ISO certification.
 - **Talent pool.** Experts evaluate and certify people's skills. Companies pay a fair fee to access pre-vetted professionals. Way less than a recruiter. Way more reliable than keyword-matching algorithms.
 - **Collective purchasing.** Shopkeepers need the same products. The platform aggregates demand, buys direct from manufacturers at bulk price, handles logistics. Small shops get the same pricing power as Walmart or Reliance. They stay independent. They just don't get crushed on cost anymore.
