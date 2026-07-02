@@ -63,7 +63,7 @@ This is the strongest early revenue source. Companies currently pay recruiters 1
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
 | Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |
 | Translation | Complex AI problem — add once core platform is stable |
-| Federation | Architecture is designed for it, but single instance first |
+| Federation | Single instance first — federation is a goal, not yet designed |
 
 ## Marketplace Listing Policy
 
