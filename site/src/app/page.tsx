@@ -138,7 +138,7 @@ export default function Home() {
           Every contribution is tracked publicly. When revenue flows,
           contributors get paid proportionally.{" "}
           <a
-            href="https://github.com/thecounterweight/platform/blob/main/docs/builder-compensation.md"
+            href="/docs/builder-compensation"
             className="text-zinc-100 underline hover:text-white"
           >
             See how it works.
@@ -162,7 +162,7 @@ export default function Home() {
           <p className="text-zinc-400">
             Total revenue share across all rounds is capped at 40%. Non-negotiable.{" "}
             <a
-              href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md"
+              href="/docs/funding-model"
               className="text-zinc-100 underline hover:text-white"
             >
               Full funding model.
@@ -199,34 +199,34 @@ export default function Home() {
             Discord
           </a>
           <a
-            href="https://github.com/thecounterweight/platform/blob/main/PRINCIPLES.md"
+            href="/docs"
+            className="hover:text-zinc-100 transition-colors"
+          >
+            Docs
+          </a>
+          <a
+            href="/docs/principles"
             className="hover:text-zinc-100 transition-colors"
           >
             Principles
           </a>
           <a
-            href="https://github.com/thecounterweight/platform/blob/main/docs/vision.md"
+            href="/docs/vision"
             className="hover:text-zinc-100 transition-colors"
           >
-            Full Vision
+            Vision
           </a>
           <a
-            href="https://github.com/thecounterweight/platform/blob/main/docs/architecture-rfc.md"
+            href="/docs/mvp"
             className="hover:text-zinc-100 transition-colors"
           >
-            Architecture RFC
+            MVP
           </a>
           <a
-            href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md"
+            href="/docs/funding-model"
             className="hover:text-zinc-100 transition-colors"
           >
             Funding Model
-          </a>
-          <a
-            href="https://github.com/thecounterweight/platform/blob/main/docs/community-certification.md"
-            className="hover:text-zinc-100 transition-colors"
-          >
-            Community Certification
           </a>
         </div>
         <p className="mt-6 text-sm text-zinc-600">
