@@ -81,11 +81,13 @@ This is a starting framework. The builder community will ratify or adjust it.
 
 | Level | Multiplier | Description |
 |-------|-----------|-------------|
-| Routine | 1x | Straightforward tasks — typo fixes, simple config, basic docs, minor bug fixes |
-| Standard | 2x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
-| Complex | 3x | New feature design, integration across systems, legal research, non-trivial security work |
-| Highly complex | 4x | Payment systems, identity architecture, complex legal structuring, cryptographic design |
-| Foundational | 5x | Platform-level architecture, technical vision that constrains everything downstream, economic model design, decisions that are expensive to reverse |
+| Trivial | 1x | Typo fixes, formatting, simple config changes |
+| Routine | 2x | Basic docs, minor bug fixes, small UI tweaks following existing patterns |
+| Standard | 3x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
+| Complex | 4x | New feature design, integration across systems, legal research, non-trivial security work |
+| Highly complex | 5x | Payment systems, identity verification, complex legal structuring, cryptographic design |
+| Architectural | 6x | System-level design, defining interfaces between major components, data model design, infrastructure decisions |
+| Foundational | 7x | Platform-level architecture and technical vision, economic model design, decisions that constrain everything downstream and are expensive to reverse |
 
 **Additional multipliers (stack with complexity):**
 
@@ -97,10 +99,12 @@ This is a starting framework. The builder community will ratify or adjust it.
 All multipliers stack. Examples:
 
 - 10 hours of fixing typos and formatting = 10 × 1 = **10 units**
-- 10 hours of implementing a feature following existing patterns = 10 × 2 = **20 units**
-- 20 hours of legal research for a new jurisdiction (complex + first-of-kind) = 20 × 3 × 1.5 = **90 units**
-- 15 hours of payment system design (highly complex + critical path) = 15 × 4 × 1.5 = **90 units**
-- 20 hours of platform architecture (foundational + critical path + first-of-kind) = 20 × 5 × 1.5 × 1.5 = **225 units**
+- 10 hours of writing documentation (routine) = 10 × 2 = **20 units**
+- 10 hours of implementing a feature following existing patterns (standard) = 10 × 3 = **30 units**
+- 20 hours of legal research for a new jurisdiction (complex + first-of-kind) = 20 × 4 × 1.5 = **120 units**
+- 15 hours of payment system design (highly complex + critical path) = 15 × 5 × 1.5 = **112.5 units**
+- 20 hours of defining the service communication layer (architectural + critical path) = 20 × 6 × 1.5 = **180 units**
+- 20 hours of platform architecture (foundational + critical path + first-of-kind) = 20 × 7 × 1.5 × 1.5 = **315 units**
 
 The key distinction between levels 4 and 5: level 4 requires deep expertise. Level 5 shapes what everyone else builds on top of — get it wrong and everything downstream is wrong.
 
