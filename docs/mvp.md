@@ -14,9 +14,9 @@ Verification method is an open design problem — likely some combination of fac
 
 ### 2. Discussion Boards + Chat
 
-Threaded discussion boards (Reddit-style) and group chat. Every participant is verified real.
+Threaded discussion boards and group chat. Every participant is verified real.
 
-- Board creators moderate their boards (Reddit model)
+- Board creators moderate their boards
 - Board communities can elect moderators as they grow
 - Group chat for real-time coordination within communities
 
@@ -90,7 +90,7 @@ Listings are free. Always.
 
 ## How It Grows
 
-1. Discussion boards launch. People have a space with verified real humans. Already better than Reddit.
+1. Discussion boards launch. People have a space with verified real humans. No bots, no manipulation.
 2. Marketplace activates. People list goods and services. Reviews accumulate. Trust builds.
 3. Skill certification starts. Domain experts evaluate people. Talent pool forms.
 4. Companies start paying for talent access. First revenue.
