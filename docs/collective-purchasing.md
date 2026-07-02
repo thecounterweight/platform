@@ -41,7 +41,7 @@ Any verified member who sells goods and needs to stock inventory. This includes:
 - Critical mass of shopkeepers in the same region (or same product category) to hit manufacturer minimums
 - Logistics partnerships for delivery coordination
 - A product catalog system where participants list what they need
-- Payment infrastructure to collect and distribute funds
+- Payment coordination (participants pay manufacturers directly via existing rails — UPI, bank transfer, etc.)
 
 This feature activates once the platform has enough participants in overlapping demand categories. It's not MVP — it requires scale to work.
 

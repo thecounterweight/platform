@@ -1,0 +1,89 @@
+# Payments
+
+How money moves on the platform without the platform becoming a payment processor.
+
+## Core Principle
+
+The platform does not hold, route, or process money. It verifies identities, facilitates contracts, and records that transactions happened. Money moves between verified parties through existing infrastructure.
+
+This means: no money transmission license needed. No funds held in escrow. No regulatory burden of being a payment processor.
+
+## The Split Approach
+
+Different transaction types use different rails based on what makes sense.
+
+### Small Transactions (Marketplace Purchases)
+
+Use the cheapest country-specific rail available:
+
+| Country/Region | Rail | Approximate cost |
+|---------------|------|-----------------|
+| India | UPI | Free (person-to-person) |
+| EU | SEPA | Pennies per transfer |
+| US | ACH | $0.20-0.50 flat |
+| Others | Best available local rail | Varies |
+
+For countries where only card processors (Stripe, Razorpay) are available, use them. On a small purchase, 2% is a few rupees — not ideal, but not the 15-30% that existing platforms take.
+
+The platform's own transaction fee (its revenue) sits on top of the rail cost. Total cost to the user stays well under 5% everywhere.
+
+### Large Transactions (Investment Contracts, Business Funding)
+
+Direct bank transfer between parties. Zero processing fee.
+
+How it works:
+1. Contract is signed on the platform between named, verified parties.
+2. Platform shows payment details (bank account of the receiving party).
+3. Sender transfers directly — via their own bank, UPI, wire, whatever they prefer.
+4. Receiving party confirms receipt on the platform.
+5. Platform records the transaction as complete.
+
+The money never touches the platform. This is how angel investments, property deals, and large B2B transactions already work.
+
+### Cross-Border
+
+| Type | Recommended rail | Cost |
+|------|-----------------|------|
+| Small marketplace purchase | Wise, or local equivalent | 0.5-1.5% |
+| Large investment contract | International wire or Wise | User chooses their own method |
+
+Cross-border investment contracts are direct transfers — the platform provides the contract and identity verification, the parties choose how to move the money.
+
+## What the Platform Charges
+
+| Transaction type | Platform fee |
+|-----------------|--------------|
+| Marketplace purchase | Proportional transaction fee (small — scales with transaction size) |
+| Investment contracts | Nothing on money movement |
+| Collective purchasing orders | Operational fee built into the coordinated price |
+
+Platform revenue from payments comes only from marketplace transaction fees. Investment and business funding are facilitated for free — the platform earns from certification fees, talent pool access, and collective purchasing instead.
+
+## Why This Works
+
+- **No money held = no money transmission license.** The platform is a contract and identity layer, not a payment processor.
+- **KYC already handled.** The three-layer identity verification (government ID + face scan + OTP) satisfies any processor's KYC requirements. See [Identity Verification](identity-verification.md).
+- **AML is a software problem.** With verified identities on both sides, transaction monitoring for suspicious patterns (rapid cycling, unusual amounts) is straightforward.
+- **Cheapest possible cost per country.** No single expensive processor forced on everyone. Each country uses its own near-free infrastructure.
+- **Large amounts pay nothing.** The transactions where fees hurt most (₹2 lakh investment, ₹50 lakh business funding) go direct bank-to-bank. Zero intermediary.
+
+## What About Disputes?
+
+For marketplace purchases where money has already moved:
+
+- Buyer and seller are both verified real humans.
+- The contract/receipt exists on the platform.
+- Dispute resolution follows the same process as any other contract dispute — community arbitration first, legal system as last resort. See [Investment Model](investment-model.md) for the dispute process.
+- For small marketplace disputes, buyer/seller reputation and community pressure usually resolve it. Persistent bad actors lose their verified status.
+
+## Implementation Phases
+
+1. **MVP:** No on-platform payments. Marketplace is listing + reviews only. Buyers contact sellers directly.
+2. **Phase 2:** Integrate country-specific rails for marketplace (UPI first for India). Direct bank transfer for investment contracts (just recording, no processing).
+3. **Phase 3:** Cross-border marketplace payments via Wise API or equivalent. Expand rail integrations to more countries.
+
+## Open Questions
+
+- Which countries to prioritize after India for rail integration?
+- Should the platform offer optional escrow for marketplace purchases (via a licensed partner, not holding funds itself)?
+- How to handle refunds when money moved directly between parties?

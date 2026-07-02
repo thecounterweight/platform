@@ -11,7 +11,7 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 1. **Identity:** Verify unique humans without becoming a surveillance tool. One person, one account.
 2. **Discussion:** Posts, comments, voting (agree/disagree), topic communities. Real-time updates.
 3. **Marketplace:** Listings (goods/services), search, categories, verified reviews, expert certification, collective purchasing coordination.
-4. **Payments:** Peer-to-peer money transfer, community treasury with transparent ledger. Multi-currency, multi-country.
+4. **Payments:** Platform does not process money. It records transactions between verified parties who use existing rails (UPI, SEPA, ACH, direct bank transfer). See [Payments](payments.md).
 5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
 6. **Communication:** Discussion boards (threaded), group chat, voice/video calls. Encrypted.
 7. **Translation:** Built-in translation across content. Language should never be a barrier to participation.
@@ -90,7 +90,7 @@ For the MVP, a modular monolith might ship faster. But the architecture should b
 
 3. **Translation approach:** Run local AI models (LLaMA variants)? Use API services? How do we handle context and cultural nuance? Cost at scale?
 
-4. **Payment integration:** Country-specific rails (UPI for India, SEPA for Europe) vs unified layer? How do we handle cross-border? Compliance per jurisdiction?
+4. **Payment integration:** Proposed design exists — split approach using country-specific rails for marketplace, direct bank transfer for investment contracts. See [Payments](payments.md). Open questions: escrow for marketplace disputes, refund handling, country prioritization after India.
 
 5. **Moderation architecture:** Centralized rules + local enforcement? Fully local? How does moderation work across federated instances?
 

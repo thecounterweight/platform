@@ -95,7 +95,7 @@ Raised capital goes toward infrastructure, operations, and development — what 
 
 Spending is transparent and publicly auditable. The community can see where every dollar goes.
 
-**Payment infrastructure:** Pending. Early options include UPI (India), SEPA (EU), and ACH (US). Deciding on payment rails is an early technical decision that needs input from engineers and legal.
+**Payment infrastructure:** Proposed design exists. Country-specific rails for marketplace (UPI, SEPA, ACH), direct bank transfer for investment contracts. The platform records transactions but does not process or hold money. See [Payments](payments.md).
 
 ## What Investors Don't Get
 

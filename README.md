@@ -40,6 +40,7 @@ Every contribution is tracked publicly. When revenue flows, contributors get pai
 - [Vision](docs/vision.md) — the full picture
 - [MVP](docs/mvp.md) — what gets built first
 - [Identity Verification](docs/identity-verification.md) — how one-person-one-account works without compromising privacy
+- [Payments](docs/payments.md) — how money moves without the platform being a payment processor
 - [Architecture RFC](docs/architecture-rfc.md) — proposed technical design (open for debate)
 - [Builder Compensation](docs/builder-compensation.md) — how contributors get paid
 - [Investment Model](docs/investment-model.md) — how community economics work
