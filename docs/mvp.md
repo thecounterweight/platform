@@ -16,8 +16,8 @@ Verification method is an open design problem — likely some combination of fac
 
 Threaded discussion boards and group chat. Every participant is verified real.
 
-- Board creators moderate their boards
-- Board communities can elect moderators as they grow
+- Board creators moderate their boards initially
+- As a board's community grows, members elect moderators democratically — simple majority, removable any day
 - Group chat for real-time coordination within communities
 
 This is the daily engagement layer. People come for the conversations.
