@@ -1,5 +1,9 @@
 # The Counterweight
 
+Publicly owned infrastructure. Community-governed. Open-source.
+
+![System Diagram](docs/assets/system-diagram.svg)
+
 This is an open-source project to build a platform and a movement where:
 
 - Every person is verified real. One human, one voice.
