@@ -68,10 +68,23 @@ Early risk = early reward.
 
 ### What Prevents Gaming
 
-- All unit assignments are public. Every member can see who got what and why.
-- Any assignment can be challenged. If the community agrees it's unfair, it gets adjusted.
-- Peer review is required — you can't assign units to yourself.
-- Contribution quality matters, not just hours. 10 hours of brilliant architecture work can be worth more than 40 hours of trivial fixes. The community decides what's valuable.
+**Verifiable artifacts required:**
+
+Every unit claim must correspond to visible output. Code has git commits and PRs. Design has files and mockups. Legal has documents produced. Strategy has written proposals and documented decisions. You cannot claim hours without corresponding artifacts.
+
+**Permanently public, retroactively challengeable:**
+
+All unit assignments are public forever. The standard 14-day challenge window applies to current members, but new builders who join later can challenge historical assignments at any time during their first year. If the community later determines early assignments were inflated, they vote to adjust. Nothing is ever permanently locked in.
+
+**Market-rate sanity check:**
+
+Unit claims should pass a gut check: would this work cost roughly this much on the open market? If someone claims 50 hours of highly-complex work for something a freelancer would do in 10 hours at standard complexity, that's a flag. Not a hard rule — a reference point for peer reviewers.
+
+**Time-weighted multiplier reduces the incentive:**
+
+The 3x Year 1 multiplier already rewards early builders disproportionately. The system accounts for early risk = early reward by design. This reduces the incentive to inflate units because being early is already structurally advantageous.
+
+**Peer review is still required** — you can't assign units to yourself. Contribution quality matters, not just hours.
 
 ### Unit Assignment Rubric (Starting Proposal)
 
