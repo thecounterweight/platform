@@ -26,7 +26,7 @@ An app where:
 - **Communication is built in.** Discussion boards, group chat, video calls. Encrypted. Not scanned for ad targeting.
 - **Money moves transparently.** Send and receive peer-to-peer. Community funds visible to all members. Personal transactions stay private.
 - **Translation is built in.** Post in any language, read in any language. Contextual, real-time. No one is excluded because of the language they were born into.
-- **Contracts are accessible.** Templates for revenue sharing, employment, rental, partnerships. Designed by lawyers, free to use. Digitally signed and stored.
+- **Legal infrastructure is built in.** Every action that needs legal backing — investment deals, business funding agreements, revenue sharing contracts, employment terms, rental agreements, certification standards, governance decisions, dispute resolution — has templates designed by lawyers, processes to follow, and digital signatures. No one needs to hire a lawyer just to participate in the economy. Contracts are stored, timestamped, and enforceable.
 
 ### The Marketplace
 

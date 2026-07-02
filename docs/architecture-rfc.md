@@ -15,7 +15,7 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
 6. **Communication:** Discussion boards (threaded), group chat, voice/video calls. Encrypted.
 7. **Translation:** Built-in translation across content. Language should never be a barrier to participation.
-8. **Contracts:** Template library, digital signatures, storage, dispute tracking.
+8. **Legal infrastructure:** Contract templates (investment, revenue sharing, employment, rental, partnerships), digital signatures, storage, dispute tracking, arbitration processes. Every feature that involves money or agreements needs legal backing built into the platform.
 
 ## Non-Negotiable Requirements
 

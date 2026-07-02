@@ -61,7 +61,7 @@ This is the strongest early revenue source. Companies currently pay recruiters 1
 | Community investment funds | Legal complexity, requires established trust and governance |
 | Political coordination | Emerges naturally once membership hits critical mass |
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
-| Contract templates | Useful but not what gets people in the door |
+| Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |
 | Translation | Complex AI problem — add once core platform is stable |
 | Federation | Architecture is designed for it, but single instance first |
 
