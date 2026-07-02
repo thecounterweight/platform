@@ -31,9 +31,9 @@ These percentages are set at the network level as a framework. Local communities
 
 **Note:** This is the allocation of member investment contributions — money people put into the community fund. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
 
-## Community Businesses (85%)
+## Community Businesses (95%)
 
-The majority of pooled capital goes directly into backing community businesses. Not stocks. Not bonds. Real businesses run by real people you can see and talk to.
+The majority of pooled capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community votes to fund. Not stocks. Not bonds. Real businesses run by real people accountable to the community.
 
 Why this works better than index funds:
 
