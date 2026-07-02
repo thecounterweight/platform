@@ -34,20 +34,27 @@ This is not one person's vision. It's a starting point. The community discusses,
 
 Every contribution is tracked publicly. When revenue flows, contributors get paid proportionally. Early contributors earn more. See [Builder Compensation](docs/builder-compensation.md).
 
+## Start Here
+
+**New? Read the [Overview](docs/overview.md)** — the entire system in one page with a diagram.
+
+Then pick what interests you:
+
 ## Documentation
 
-- [Principles](PRINCIPLES.md) — what we stand for, non-negotiable
+- [Overview](docs/overview.md) — the whole system at a glance (start here)
 - [Vision](docs/vision.md) — the full picture
 - [MVP](docs/mvp.md) — what gets built first
-- [Identity Verification](docs/identity-verification.md) — how one-person-one-account works without compromising privacy
-- [Payments](docs/payments.md) — how money moves without the platform being a payment processor
+- [Principles](PRINCIPLES.md) — what we stand for, non-negotiable
+- [Identity Verification](docs/identity-verification.md) — how one-person-one-account works
+- [Payments](docs/payments.md) — how money moves without the platform being a processor
 - [Architecture RFC](docs/architecture-rfc.md) — proposed technical design (open for debate)
 - [Builder Compensation](docs/builder-compensation.md) — how contributors get paid
 - [Investment Model](docs/investment-model.md) — how community economics work
 - [Funding Model](docs/funding-model.md) — how we raise capital and who decides the terms
 - [Community Certification](docs/community-certification.md) — how quality is verified without corporations
 - [Collective Purchasing](docs/collective-purchasing.md) — how small shops get bulk pricing power
-- [Contributing Guide](CONTRIBUTING.md) — how to get started
+- [Contributing Guide](CONTRIBUTING.md) — how to get started (concrete tasks listed)
 
 ## License
 

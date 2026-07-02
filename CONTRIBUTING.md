@@ -11,22 +11,46 @@
 
 ## What We Need Right Now
 
-**Engineering:**
-- Frontend (React Native / Flutter — community to decide)
-- Backend (Node.js/TypeScript or Go — community to decide)
-- Infrastructure and DevOps
-- Security and cryptography
-- Database design
+### Immediate Tasks (Start This Weekend)
 
-**Non-Engineering:**
-- Legal research (cooperative law, securities, data protection — any country)
-- Economic modeling (investment returns, risk analysis, sustainability projections)
-- UX/UI design
-- Trust & safety (moderation system design, abuse prevention)
-- Community organizing
-- Translation
-- Documentation
-- Domain expertise (for building certification criteria)
+**Backend:**
+- [ ] Set up the project scaffold — Next.js app with PostgreSQL, auth skeleton, API structure
+- [ ] Identity verification service — integrate with DigiLocker/Aadhaar eKYC sandbox API
+- [ ] Discussion boards — CRUD for boards, posts, comments, upvotes. Real-time updates via WebSockets
+- [ ] User profiles — verified badge, pseudonym support, contribution history
+
+**Frontend:**
+- [ ] Discussion board UI — board list, threaded posts, reply, vote
+- [ ] Marketplace UI — product cards, category browse, review submission form with parameter-based ratings
+- [ ] User profile pages — verified status, reviews written, trust score display
+- [ ] Mobile-responsive PWA shell — installable, offline-capable
+
+**Marketplace:**
+- [ ] Amazon Product Advertising API integration — fetch products by category, cache locally
+- [ ] Flipkart Affiliate API integration — same
+- [ ] Review system — parameter-based reviews, trust score calculation, post-purchase feedback loop
+- [ ] Affiliate link tracking — attribute clicks to reviewers for commission calculation
+
+**Design:**
+- [ ] System architecture diagram (visual — the text diagram in overview.md, but as a proper image)
+- [ ] User journey flows (signup → verification → first review → first commission)
+- [ ] UI mockups for discussion boards and marketplace
+
+**Legal (Any Jurisdiction):**
+- [ ] Research: does the affiliate review + commission model comply with your country's advertising/disclosure laws?
+- [ ] Research: what entity structure works for community investment pools in your country?
+- [ ] Draft: revenue share contract template for your jurisdiction
+
+**Domain Experts:**
+- [ ] Define certification criteria for your field (what does "senior frontend engineer" actually mean? What should the test cover?)
+- [ ] Volunteer as one of the first evaluators
+
+### Skills Needed
+
+**Engineering:** TypeScript, Next.js, PostgreSQL, WebSockets, API integrations
+**Design:** UI/UX, user research, visual design
+**Legal:** Securities law, cooperative law, data protection — any country
+**Domain expertise:** Any field where you can define what "certified quality" means
 
 ## How Decisions Are Made
 
@@ -44,7 +68,7 @@ Contributions include: code, design, documentation, legal research, community mo
 
 ## Code Standards
 
-- TypeScript with strict mode
+- TypeScript with strict mode (Next.js + PWA)
 - Tests required for new features
 - PRs require at least one approval before merge
 - CI must pass (lint + tests)

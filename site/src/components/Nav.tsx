@@ -4,6 +4,7 @@ import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
 const docLinks = [
+  { href: "/docs/overview", label: "Start Here" },
   { href: "/docs/vision", label: "Vision" },
   { href: "/docs/mvp", label: "What's First" },
   { href: "/docs/principles", label: "Principles" },

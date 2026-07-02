@@ -29,6 +29,7 @@ export interface DocMeta {
 }
 
 const DOC_META: Record<string, { title: string; description: string }> = {
+  overview: { title: "Overview", description: "The entire system in one page — start here" },
   vision: { title: "Vision", description: "The full picture — what we're building and why" },
   mvp: { title: "MVP", description: "What gets built first" },
   principles: { title: "Principles", description: "Non-negotiable values that guide everything" },
