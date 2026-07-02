@@ -10,7 +10,9 @@ Everything else in the vision comes after this works.
 
 Every user is a verified real human. One person, one account.
 
-Verification method is an open design problem — likely some combination of face scan, one-time password, and identity document. Different approaches may work for different regions. The principle is non-negotiable; the method is what we figure out together.
+Three layers: government identity API (DigiLocker, eIDAS, etc.) proves you're real, face scan proves you're the account holder for high-stakes actions, OTP pins it to a device. The user pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
+
+The principle is non-negotiable. The implementation is a proposed design — open to improvement.
 
 ### 2. Discussion Boards + Chat
 

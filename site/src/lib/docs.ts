@@ -32,6 +32,7 @@ const DOC_META: Record<string, { title: string; description: string }> = {
   vision: { title: "Vision", description: "The full picture — what we're building and why" },
   mvp: { title: "MVP", description: "What gets built first" },
   principles: { title: "Principles", description: "Non-negotiable values that guide everything" },
+  "identity-verification": { title: "Identity Verification", description: "How one-person-one-account works without compromising privacy" },
   "architecture-rfc": { title: "Architecture RFC", description: "Proposed technical design — open for debate" },
   "builder-compensation": { title: "Builder Compensation", description: "How contributors get paid" },
   "investment-model": { title: "Investment Model", description: "How community economics work" },

@@ -7,6 +7,7 @@ const docLinks = [
   { href: "/docs/vision", label: "Vision" },
   { href: "/docs/mvp", label: "What's First" },
   { href: "/docs/principles", label: "Principles" },
+  { href: "/docs/identity-verification", label: "Identity" },
   { href: "/docs/architecture-rfc", label: "Architecture" },
   { href: "/docs/builder-compensation", label: "Get Paid" },
   { href: "/docs/investment-model", label: "Invest Together" },
