@@ -143,7 +143,7 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 
 - **No fixed amount.** Invest what you can, when you can.
 - **No minimum that prices people out.** Whether it's 500 rupees or 50,000 — you're a member with equal voice.
-- **Withdrawal:** 30-day notice. Your share of the fund is yours. But this isn't a bank account — the notice period protects against bank-run scenarios.
+- **Exit:** Sell your position to another member on the secondary market. The fund doesn't do withdrawals — your money is invested, not sitting in a vault. You find a buyer, you're out.
 - **Returns:** Distributed periodically (quarterly or annually — community decides). Proportional to your contribution.
 
 ## Collective Purchasing
