@@ -90,6 +90,37 @@ export default function Home() {
         </div>
       </section>
 
+      {/* Read more tiles */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-6">Read more</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <a href="/docs/vision" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Full Vision</h3>
+            <p className="text-sm text-zinc-400 mt-1">The complete picture — platform, marketplace, movement.</p>
+          </a>
+          <a href="/docs/mvp" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">What&apos;s First</h3>
+            <p className="text-sm text-zinc-400 mt-1">The MVP — what we build before anything else.</p>
+          </a>
+          <a href="/docs/builder-compensation" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Get Paid</h3>
+            <p className="text-sm text-zinc-400 mt-1">How builders earn from day one. Early risk, early reward.</p>
+          </a>
+          <a href="/docs/investment-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Invest Together</h3>
+            <p className="text-sm text-zinc-400 mt-1">Communities pool capital, fund businesses, share returns.</p>
+          </a>
+          <a href="/docs/funding-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Funding</h3>
+            <p className="text-sm text-zinc-400 mt-1">How we raise capital. No VC. Terms decided democratically.</p>
+          </a>
+          <a href="/docs/community-certification" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Certification</h3>
+            <p className="text-sm text-zinc-400 mt-1">Real experts verify quality. No fake reviews. No pay-to-rank.</p>
+          </a>
+        </div>
+      </section>
+
       {/* How to help */}
       <section className="max-w-3xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-6">What we need</h2>
