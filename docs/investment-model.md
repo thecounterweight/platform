@@ -26,7 +26,7 @@ When a member contributes to their community fund:
 
 These percentages are set at the network level as a framework. Local communities can adjust within bands based on their needs.
 
-**Note:** This is the allocation of member investment contributions — money people put into the community fund. This is separate from platform revenue (marketplace fees, listing fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
+**Note:** This is the allocation of member investment contributions — money people put into the community fund. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a different split: 20% operations, 10% reserve, 70% shared between builders and investors. See [Funding Model](funding-model.md) and [Builder Compensation](builder-compensation.md) for details. Investor share of platform revenue is capped at 40%, non-negotiable.
 
 ## Community Businesses (85%)
 

@@ -83,7 +83,7 @@ export default function Home() {
               <strong className="text-zinc-100">
                 A marketplace without middlemen.
               </strong>{" "}
-              Sell goods and services with proportional fees — not 30% cuts.
+              List goods and services for free. Proportional transaction fees — not 30% cuts.
               Community experts certify quality. Verified purchase reviews only.
             </li>
           </ul>

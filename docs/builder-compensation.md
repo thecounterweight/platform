@@ -27,7 +27,7 @@ Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue f
 
 ### Revenue Split
 
-When the platform generates revenue (marketplace fees, listing fees, certification fees):
+When the platform generates revenue (transaction fees, certification fees, talent pool access fees):
 
 **Fixed costs (always):**
 

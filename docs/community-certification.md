@@ -47,9 +47,10 @@ Community-selected experts independently evaluate and certify products, services
 
 ## How Evaluators Get Paid
 
-- Fixed fee per certification, taken from the seller's listing fee.
+- Fixed fee per certification, paid by the person or business requesting it (or sponsored by a company hiring from the talent pool).
 - Rate is transparent and standard within each category.
 - Higher-complexity evaluations (e.g., certifying a manufacturing process vs. certifying a jar of honey) pay proportionally more.
+- For skill certifications, the fee can also be covered by the hiring company as part of their talent pool access fee.
 
 ## Preventing Corruption
 
