@@ -84,7 +84,7 @@ For the MVP, a modular monolith might ship faster. But the architecture should b
 
 ## Open Questions (Need Community Input)
 
-1. **Identity verification:** What method? Government ID? Web-of-trust? Zero-knowledge proofs? Biometric? Multiple options per region? This is the hardest unsolved problem.
+1. **Identity verification:** Proposed design exists — government ID APIs + face scan + OTP. See [Identity Verification](identity-verification.md). Open questions remain: integration specifics per country, fallback for people without government ID, cost optimization at scale.
 
 2. **Federation protocol:** ActivityPub (Mastodon uses this)? Matrix protocol? Custom sync? How do sovereign instances discover and communicate with each other?
 
