@@ -18,12 +18,12 @@ Your payout share = your units / total units in the pool.
 
 ### Example
 
-- Engineer A builds the auth system. 80 hours, high complexity. Assigned 400 units.
-- Designer B creates the brand and landing page. 40 hours, medium complexity. Assigned 150 units.
-- Lawyer C researches Indian cooperative law and writes legal docs. 30 hours, high complexity. Assigned 200 units.
-- Community manager D moderates Discord for 3 months. Assigned 180 units.
+- Engineer A designs the auth system architecture. 80 hours, highly complex (5x) + critical path (1.5x) = 80 × 5 × 1.5 = **600 units.**
+- Designer B creates the brand and landing page. 40 hours, standard (3x) = 40 × 3 = **120 units.**
+- Lawyer C researches Indian cooperative law and writes legal docs. 30 hours, complex (4x) + first-of-kind (1.5x) = 30 × 4 × 1.5 = **180 units.**
+- Community manager D moderates Discord for 3 months. 120 hours, routine (2x) = 120 × 2 = **240 units.**
 
-Total pool: 930 units. Engineer A owns 43% of the builder pool. When revenue flows, they get 43% of the builder allocation.
+Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue flows, they get 53% of the builder allocation.
 
 ### Revenue Split
 
