@@ -11,7 +11,7 @@ Revenue-share agreements. Not equity. Not donations. Investors put money in, get
 Every funding round has three variables:
 1. **Revenue share percentage** — what portion of revenue goes to investors
 2. **Duration** — how long the share lasts
-3. **Cap** — maximum total return (e.g., 2.5x investment), after which the share stops regardless of time remaining
+3. **Cap** — maximum total return, after which the share stops regardless of time remaining. The cap is negotiated per deal — higher risk justifies a higher cap. There is no universal number; the bicameral vote decides what's fair for each investment.
 
 These are not set by founders or a board. They're voted on.
 
