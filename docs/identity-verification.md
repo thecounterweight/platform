@@ -88,11 +88,11 @@ This prevents someone from creating a second account under the guise of "recover
 
 ## Age Threshold
 
-- Basic community features (discussion, marketplace browsing): 16+
-- Investment features (backing businesses, pooled funds): 18+ (or legal age of contract in jurisdiction)
-- Evaluator/certifier roles: 18+
+- Community features (discussion, marketplace, reviews, certification): No platform-imposed age minimum.
+- Investment and contract features (backing businesses, pooled funds, signing agreements): 18+ or legal age of contract in the user's jurisdiction.
+- Where local law imposes age restrictions on platform access (e.g., France requires parental consent for under-15 on social platforms), the platform complies with those requirements.
 
-Age is verified through the government ID layer during registration.
+Age is verified through the government ID layer during registration. Jurisdictional restrictions are applied based on the user's verified location.
 
 ## People Without Government ID
 
