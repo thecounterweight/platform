@@ -77,19 +77,32 @@ Early risk = early reward. That's fair.
 
 This is a starting framework. The builder community will ratify or adjust it.
 
+**Complexity levels:**
+
+| Level | Multiplier | Description |
+|-------|-----------|-------------|
+| Routine | 1x | Straightforward tasks — typo fixes, simple config, basic docs, minor bug fixes |
+| Standard | 2x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
+| Complex | 3x | New feature design, integration across systems, legal research, non-trivial security work |
+| Highly complex | 4x | Payment systems, identity architecture, complex legal structuring, cryptographic design |
+| Foundational | 5x | Platform-level architecture, technical vision that constrains everything downstream, economic model design, decisions that are expensive to reverse |
+
+**Additional multipliers (stack with complexity):**
+
 | Factor | Multiplier |
 |--------|-----------|
-| Base rate | 1 unit per hour |
-| High complexity (architecture, security, legal research) | 2x |
 | Critical path (blocks others without it) | 1.5x |
 | First-of-kind (no existing pattern to follow) | 1.5x |
 
-Multipliers stack. Examples:
+All multipliers stack. Examples:
 
-- 10 hours of auth system design (high complexity + critical path) = 10 × 2 × 1.5 = **30 units**
-- 10 hours of documentation = 10 × 1 = **10 units**
-- 20 hours of legal research for a new jurisdiction (high complexity + first-of-kind) = 20 × 2 × 1.5 = **60 units**
-- 15 hours of UI design for a core flow (critical path) = 15 × 1.5 = **22.5 units**
+- 10 hours of fixing typos and formatting = 10 × 1 = **10 units**
+- 10 hours of implementing a feature following existing patterns = 10 × 2 = **20 units**
+- 20 hours of legal research for a new jurisdiction (complex + first-of-kind) = 20 × 3 × 1.5 = **90 units**
+- 15 hours of payment system design (highly complex + critical path) = 15 × 4 × 1.5 = **90 units**
+- 20 hours of platform architecture (foundational + critical path + first-of-kind) = 20 × 5 × 1.5 × 1.5 = **225 units**
+
+The key distinction between levels 4 and 5: level 4 requires deep expertise. Level 5 shapes what everyone else builds on top of — get it wrong and everything downstream is wrong.
 
 All assignments are public and challengeable for 14 days. If challenged, peer vote decides.
 
