@@ -81,12 +81,14 @@ Decisions this large need broad participation, not just whoever shows up.
 
 These are total voters across both blocks. If quorum isn't met, the vote doesn't count.
 
+**Transition trigger:** Once the platform has enough verified members to meet the quorum for a given round size, new funding rounds of that size must go through the bicameral voting process. The pre-quorum regime ends automatically when the membership threshold is met.
+
 ## Early Capital (Pre-Quorum)
 
 Anyone can contribute any amount, at any time. Every contribution is recorded permanently — amount, timestamp, contributor identity. The money goes to work immediately (infrastructure, development, operations).
 
 **What contributors know upfront (constitutional bounds, non-negotiable):**
-- Investor share will never exceed 40% of the builders+investors pool
+- Investor share will never exceed 30% of total revenue under $20M, or 40% of total revenue at $20M+
 - All agreements are time-bounded (max duration set before governance activates)
 - Returns are proportional to contribution
 - Time-held factor gives structural advantage to earlier contributors

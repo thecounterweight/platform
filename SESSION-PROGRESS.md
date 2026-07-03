@@ -99,7 +99,7 @@ Potentially missing:
 
 ## Additional Decisions (July 3)
 
-11. **Graduated revenue split** — Builder share reduces as revenue grows. Under $20M: 70%. $20M-$100M: 55%. $100M-$500M: 35%. $500M+: community votes. Based on market-rate analysis of required work ($300-500K/year engineers leaving jobs to build for free).
+11. **Graduated revenue split** — Builder+investor share reduces as revenue grows. Under $20M: 60% (30% operations). $20M-$100M: 55% (20% operations). $100M-$500M: 35% (20% operations). $500M+: community votes. Investor cap: 30% of total revenue under $20M, 40% at $20M+.
 12. **Community reinvestment** — Grows with scale. Funds: subsidized verification, business grants, infrastructure expansion, fee reduction, open-source adjacent tools.
 13. **Investor capital vs revenue** — Investor money is operational runway (infrastructure, development). Not subject to revenue split. Revenue split applies only to platform revenue once it exists.
 14. **Moderator/evaluator compensation path** — Volunteer → reputation → elected → paid from operations budget. Not builder units.

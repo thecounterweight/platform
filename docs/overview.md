@@ -57,7 +57,7 @@ The split changes as the platform grows — these are rules, not projections. No
 | $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split |
 
-Within the builders+investors share, investor portion is capped at 40% and time-bounded.
+Within the builders+investors share, investor portion is capped at 30% of total revenue (under $20M) or 40% of total revenue ($20M+), and is time-bounded.
 
 ## How Contributors Get Paid
 

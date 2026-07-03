@@ -191,7 +191,7 @@ export default function Home() {
             override the other.
           </p>
           <p className="text-zinc-400">
-            Total revenue share across all rounds is capped at 40%. Non-negotiable.{" "}
+            Total investor revenue share is capped at 30% (early stage) to 40% (at scale). Non-negotiable.{" "}
             <a
               href="/docs/funding-model"
               className="text-zinc-100 underline hover:text-white"

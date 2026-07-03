@@ -88,7 +88,7 @@ Early risk = early reward.
 
 Some roles create value but aren't platform-building work. They follow a different path:
 
-**Moderators** — Volunteer early. Build reputation and trust through demonstrated good work. Once platform revenue is healthy, the community elects paid moderators from the operations budget (20%). No shortcuts — you earn the role, the community decides who deserves it.
+**Moderators** — Volunteer early. Build reputation and trust through demonstrated good work. Once platform revenue is healthy, the community elects paid moderators from the operations budget. No shortcuts — you earn the role, the community decides who deserves it.
 
 **Evaluators/Certifiers** — Volunteer early to establish credibility and define certification criteria for their field. Once certification fees flow, they're paid per assessment. Early evaluators built the standards everyone else follows.
 
