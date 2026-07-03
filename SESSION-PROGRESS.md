@@ -90,7 +90,23 @@ Potentially missing:
 4. **Referrers** — Risky (incentivizes spam), probably skip
 5. **Content creators** — Indirect value, monetizing posts risks karma farming
 
-User said "I'll go through this right after" — resume this discussion next.
+**Resolved:**
+- Moderators: volunteer early (reputation/trust), elected + paid from operations once revenue is healthy
+- Evaluators: same pattern — volunteer early, paid per certification once fees flow
+- Arbitrators: same pattern — volunteer, paid per case from operations later
+- Referrers: skip (incentivizes spam)
+- Content creators: skip (monetizing posts risks karma farming)
+
+## Additional Decisions (July 3)
+
+11. **Graduated revenue split** — Builder share reduces as revenue grows. Under $20M: 70%. $20M-$100M: 55%. $100M-$500M: 35%. $500M+: community votes. Based on market-rate analysis of required work ($300-500K/year engineers leaving jobs to build for free).
+12. **Community reinvestment** — Grows with scale. Funds: subsidized verification, business grants, infrastructure expansion, fee reduction, open-source adjacent tools.
+13. **Investor capital vs revenue** — Investor money is operational runway (infrastructure, development). Not subject to revenue split. Revenue split applies only to platform revenue once it exists.
+14. **Moderator/evaluator compensation path** — Volunteer → reputation → elected → paid from operations budget. Not builder units.
+15. **Blockchain as infrastructure** — Contribution ledger anchored to chain at scale for immutability. Never as product, never as speculation.
+16. **Pitch framing** — "Publicly owned infrastructure." Community-owned, not government-owned.
+17. **Light mode default** — Site/app uses light mode default, dark mode optional.
+18. **No platform age minimum** — 18+ for contracts only. Comply with local law where it applies.
 
 ## Commits (this session)
 - 1dd29dd: Consistent investment language: two paths, no fund-as-noun
@@ -106,3 +122,8 @@ User said "I'll go through this right after" — resume this discussion next.
 - 6ddfe1d: Link diagram in README and overview
 - c82b5d2: Blockchain as infrastructure clarification
 - e93949d: "Why This Scope" section
+- 555e009: Session progress file
+- 33792f8: Compensation clarity for moderators/evaluators/arbitrators
+- 92fd523: Investor capital is operational runway
+- b976838: Graduated revenue split (gut feeling version)
+- 68e3a7d: Revenue split thresholds based on market-rate analysis
