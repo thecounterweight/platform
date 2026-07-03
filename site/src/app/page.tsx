@@ -43,7 +43,7 @@ export default function Home() {
                 Democratic governance at every level.
               </strong>{" "}
               Platform moderators, movement leaders, investment pool managers — all elected,
-              all removable by simple majority. Any day.
+              all removable via no-confidence (7-day discussion + 60% vote).
             </li>
             <li>
               <strong className="text-zinc-100">

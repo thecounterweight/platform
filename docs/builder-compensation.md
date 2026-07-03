@@ -29,18 +29,20 @@ Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue f
 
 When the platform generates revenue (transaction fees, certification fees, talent pool access fees, affiliate commissions):
 
-**The split changes as the platform grows:**
+**The split changes as the platform grows. These are rules, not projections — no timeline is assumed. When revenue reaches a threshold, the corresponding split applies:**
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
-| Under $20M | 70% | 20% | 10% (reserve) |
+| Under $20M | 60% | 30% | 10% (reserve) |
 | $20M - $100M | 55% | 20% | 25% |
 | $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split at this threshold |
 
+Operations can draw additional funds from community reinvestment if needed, with community approval. This ensures compliance, infrastructure, and security are never underfunded at any scale.
+
 **Why these thresholds:**
 
-Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 70% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 70%. Once investors negotiate a share (capped at 40% of the pool), builders still get the majority — at minimum 42% of total revenue (70% × 60%). At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
+Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 60% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 60%. Once investors negotiate a share (capped at 40% of the pool), builders still get the majority — at minimum 36% of total revenue (60% × 60%). The higher operations budget (30%) at this stage reflects the reality that compliance, infrastructure, and security cost more relative to revenue when you're still scaling. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
 
 Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
 
@@ -90,7 +92,7 @@ Some roles create value but aren't platform-building work. They follow a differe
 
 **Dispute arbitrators** — Same pattern. Volunteer early, demonstrate fairness and judgement. Paid per case from operations budget once revenue supports it.
 
-All these roles are elected, accountable, and removable any day by simple majority. The incentive: volunteer now → build reputation → community elects you → paid position once revenue flows.
+All these roles are elected, accountable, and removable via no-confidence (7-day discussion + 60% vote). The incentive: volunteer now → build reputation → community elects you → paid position once revenue flows.
 
 ### What Prevents Gaming
 
@@ -134,6 +136,9 @@ This is a starting framework. The builder community will ratify or adjust it.
 |--------|-----------|
 | Critical path (blocks others without it) | 1.5x |
 | First-of-kind (no existing pattern to follow) | 1.5x |
+| Ongoing maintenance (keeps systems running — monitoring, upgrades, incident response) | Floor: 3x minimum |
+
+The maintenance floor exists because unglamorous work that keeps the platform alive is at least as valuable as building new things. Without it, the incentive is to build and move on, leaving systems to rot.
 
 All multipliers stack. Examples:
 

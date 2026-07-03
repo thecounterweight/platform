@@ -96,13 +96,23 @@ Age is verified through the government ID layer during registration. Jurisdictio
 
 ## People Without Government ID
 
-This is an open question for the community to decide. Options include:
+An estimated 850 million people globally lack government-issued ID. The platform must still be useful to them without compromising the trust guarantees that verified identity provides.
 
-- Community vouching (N existing verified members vouch for a person) for basic access
-- NGO-issued identity documents accepted in specific regions
-- Limited access tier (can participate in discussion, cannot invest or vote)
+**Access tiers:**
 
-The principle is clear: one real person, one account. The method for people outside government ID systems needs community input and may vary by region.
+| Tier | Requirement | Can do | Cannot do |
+|------|-------------|--------|-----------|
+| Verified | Government ID + OTP | Everything — review, vote, invest, sell, certify, govern | — |
+| Vouched | N verified members vouch + OTP | Discussion, chat, browse marketplace, buy (not sell) | Review, vote, invest, sell, certify, govern |
+| Unverified | Email/phone only | Browse, read, search | Participate in any way that requires trust |
+
+**Why three tiers:**
+
+The platform's value comes from verified identity — trusted reviews, one-person-one-vote, no bots. Weakening this weakens everything. But reading, browsing, and buying don't require the same trust guarantees as reviewing, voting, or investing. People without ID can still benefit from the platform. They just can't do things that require others to trust their uniqueness.
+
+**Vouched tier:** If N verified members (community decides the threshold — likely 3-5) personally vouch for someone, that person gains limited participation rights. This isn't full verification — it's a social trust layer. Vouchers are accountable: if the vouched person turns out to be a duplicate or bot, vouchers lose reputation.
+
+**Path to full access:** As governments expand digital ID systems (India went from ~50% to ~95% Aadhaar coverage in a decade), more people gain access to full verification. The platform doesn't solve the ID gap — it works within it while remaining useful to those affected.
 
 ## What This Is
 

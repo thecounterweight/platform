@@ -8,7 +8,7 @@ This is an open-source project to build a platform and a movement where:
 
 - Every person is verified real. One human, one voice.
 - Your data is yours. Never sold. Never mined. Never exploited.
-- Democratic governance at every level — platform moderators, movement leaders, fund managers. All elected, all removable by simple majority. Any day.
+- Democratic governance at every level — platform moderators, movement leaders, investment pool managers. All elected, all removable via no-confidence (7-day discussion + 60% vote).
 - The platform is governed by the people on it. Not by a CEO, not by shareholders.
 - Built-in contextual translation. Language is never a barrier to participation.
 - Discussion boards, chat, and video calls — threaded conversations, group messaging, video coordination. No need for five separate apps.

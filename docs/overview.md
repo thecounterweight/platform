@@ -4,17 +4,21 @@ A community-governed platform where verified real people invest together, trade 
 
 ## Why This Scope
 
-This looks like many products. It's one system. The pieces need each other:
+This looks like many products. It's one system. The pieces reinforce each other — but they don't all need to exist on day one.
 
-Identity enables trusted reviews → trusted reviews make the marketplace useful → marketplace generates revenue → revenue pays builders → builders build certification → certification creates the talent pool → talent pool fees generate more revenue → investment facilitation becomes possible because trust is established → investment returns attract more members → more members make collective purchasing viable → growth.
+**Load-bearing (must exist for the platform to function):**
 
-Remove any piece and the loop breaks.
+Identity → trusted reviews → marketplace → revenue → builders → more features
+
+**Amplifiers (strengthen the system, added when the foundation is solid):**
+
+Certification → talent pool → more revenue → investment facilitation → collective purchasing → governance at scale → translation → federation
+
+The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
 Each feature exists somewhere already. Affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums — all proven. Nowhere do they exist together, under community ownership, with one verified identity connecting them all. That's the gap.
 
-Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest.
-
-The MVP is three things. Each phase generates the revenue that funds the next.
+Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest. But it doesn't all ship at once.
 
 ## What It Does (One Sentence Each)
 
@@ -27,7 +31,7 @@ The MVP is three things. Each phase generates the revenue that funds the next.
 | Talent Pool | Companies pay to access expert-certified professionals. Cheaper than recruiters, more reliable than LinkedIn. |
 | Investment | Communities back businesses via signed contracts. Revenue share or equity. Platform facilitates, doesn't manage. |
 | Collective Purchasing | Small shops pool demand, buy direct from manufacturers at bulk prices. Platform coordinates. |
-| Governance | One person, one vote on leadership and policy. Stake-weighted on investment decisions. Leaders removable any day. |
+| Governance | One person, one vote on leadership and policy. Stake-weighted on investment decisions. Leaders removable via no-confidence (7-day discussion + 60% vote). |
 | Payments | Money moves through existing rails (UPI, SEPA, bank transfer). Platform records, never holds or processes. |
 
 ## How It Makes Money
@@ -44,11 +48,11 @@ No ads. No data selling. No VC demanding growth at all costs.
 
 ## How Money Flows
 
-The split changes as the platform grows — more flows to community reinvestment at scale:
+The split changes as the platform grows — these are rules, not projections. No timeline assumed. When revenue hits a threshold, the split changes:
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
-| Under $20M | 70% | 20% | 10% |
+| Under $20M | 60% | 30% | 10% |
 | $20M - $100M | 55% | 20% | 25% |
 | $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split |

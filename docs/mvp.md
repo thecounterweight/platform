@@ -19,25 +19,19 @@ The principle is non-negotiable. The implementation is a proposed design — ope
 Threaded discussion boards and group chat. Every participant is verified real.
 
 - Board creators moderate their boards initially (volunteer — builds reputation and trust)
-- As a board's community grows, members elect moderators democratically — simple majority, removable any day
+- As a board's community grows, members elect moderators democratically — removable via no-confidence (7-day discussion + 60% vote)
 - Once platform revenue is healthy, elected moderators are paid from operations budget
 - Group chat for real-time coordination within communities
 
 **Proposed moderation model (community can decide another approach later):**
 
 Two flag types:
-- **Regular flag** — When enough verified users flag content (threshold), it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
-- **Urgent flag** — Goes directly to elected safety team for immediate removal. For illegal content, doxxing, active threats. Community reviews within 48 hours.
-
-Verified identity makes this viable — one person one flag, no brigading with fake accounts. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
-
-**Proposed moderation model (community can decide another approach later):**
-
-Two flag types:
-- **Regular flag** — Content accumulates flags from verified users. When threshold is reached, community votes: stays or goes. Simple majority. This handles spam, low-quality content, and policy violations.
+- **Regular flag** — Content accumulates flags from verified users. When threshold is reached, it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
 - **Urgent flag** — Goes directly to elected safety team for immediate action. For illegal content, doxxing, active threats. Safety team removes first, community reviews within 48 hours (confirms or reverses).
 
 Verified identity makes this viable — one person one flag, no brigading with fake accounts. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
+
+**Open design question:** How does the flag threshold scale with community size? A fixed number doesn't work — too high for small boards (harmful content stays up too long), too low for large boards (a few people can suppress speech). Likely percentage-based with a minimum floor, but the exact formula needs to be designed during implementation.
 
 This is the daily engagement layer. People come for the conversations.
 
@@ -67,11 +61,12 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 
 **The progression:**
 
-1. Start as the place for trusted reviews (aggregated products)
+1. Start as the place for trusted reviews (aggregated products from major platforms)
 2. Community sellers list alongside — they have a built-in advantage (community backing, local trust)
-3. As community sellers grow, users prefer buying direct (lower prices, community accountability)
-4. On-platform transactions added later — transaction fees kick in
-5. Existing platform listings become less relevant as the community marketplace matures
+3. On-platform transactions added later for community sellers — transaction fees kick in
+4. Revenue diversifies across affiliate commissions, transaction fees, talent pool, and certification
+
+Aggregated products and community sellers coexist. They serve different needs — aggregated products give breadth and convenience, community sellers offer local trust and direct relationships. The platform grows by adding value for buyers and sellers, not by removing options.
 
 **Default sort order:**
 
@@ -84,6 +79,8 @@ Products are ranked by review activity and quality combined:
 This rewards both quality (high stars) and engagement (many reviews). A well-reviewed product rises naturally. An unreviewed product sits at the bottom until someone reviews it — which incentivizes reviewing.
 
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms. No need to wait for scale.
+
+**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — talent pool fees, certification fees, and transaction fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers. Anti-monopoly laws (Competition Act 2002 in India, Article 102 TFEU in EU, Sherman Act in US) provide legal recourse against discriminatory termination of access.
 
 **Reviewer earnings:**
 
@@ -107,6 +104,8 @@ Domain experts interview and assess people's skills. Real evaluations by real ex
 ### 5. Talent Pool
 
 Companies pay a fee to access pre-vetted, expert-certified professionals.
+
+**How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
 
 This is the strongest early revenue source. Companies currently pay recruiters 15-25% of annual salary. We offer the same vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
 

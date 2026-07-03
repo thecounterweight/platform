@@ -4,7 +4,14 @@
 
 Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-owned.
 
-**Legal entity:** TBD — exploring cooperative models across jurisdictions. Defining the legal structure is one of the first decisions we need legal expertise for.
+**Legal entity:** A legal entity is required — something must sign contracts, hold the domain, and be the counterparty to revenue-share agreements. The entity will be a cooperative or equivalent (members collectively own it, no individual extracts equity). The specific structure is jurisdiction-dependent:
+
+- **India:** Multi-State Cooperative Society (MSCS Act, 2002) or Nidhi Company (Section 406, Companies Act 2013)
+- **EU:** European Cooperative Society (SCE) or national cooperative forms
+- **US:** Cooperative corporation or LLC structured as cooperative
+- **Others:** Whatever local cooperative/mutual framework exists
+
+The principle: the entity exists to hold infrastructure and sign agreements. It has members, not shareholders. No individual owns it. No individual can sell it. Members govern it democratically. This needs legal validation per jurisdiction before launch.
 
 ## The Deal Structure
 
@@ -36,9 +43,31 @@ If the two blocks can't agree, nothing happens. No money moves. Investors don't 
 
 There is no fallback. No override. No tiebreaker. Both sides have skin in the game — investors want returns, users want the platform to grow. That mutual need is what breaks deadlocks. If it doesn't, the round simply doesn't happen until terms emerge that both sides accept.
 
-## Appeals
+## Appeals and the Independent Body
 
-Any party — investor block or user block — can appeal a decision to an independent body of experts (financial, legal, cooperative governance). The appeal body reviews whether the terms are reasonable and fair to both sides. Their recommendation is non-binding but public, creating pressure toward fairness. The vote still has to pass through both blocks — the appeal body can't override democracy, but they can shine a light on bad-faith positions.
+Any party can invoke an independent professional body when negotiations deadlock or when one side believes terms are unfair.
+
+**What qualifies as an independent body:**
+
+These already exist in every country. No need to invent one:
+
+- Chartered accountants / CPAs (ICAI in India, ACCA in UK, AICPA in US)
+- Registered valuers (IBBI-registered in India)
+- Arbitration centers (Indian Council of Arbitration, SIAC, ICC, LCIA)
+- Institute of Company Secretaries (ICSI)
+- Court-accredited mediators
+- SEBI-registered independent advisors (India)
+- University commerce/law departments (as neutral academic assessors)
+
+**Their role:**
+1. Review contribution records, time held, market rates, and risk taken
+2. Recommend terms based on evidence — not decide
+3. Recommendation is public and detailed (reasoning visible to all)
+4. Both parties vote on the recommendation (stake-weighted within their group)
+
+The independent body cannot override a democratic vote. They provide an evidence-based reference point that makes bad-faith positions visible. If both sides reject the recommendation, they negotiate further or invoke a different body.
+
+**How the body is selected:** Either party can propose a body. Both must agree on which one. If they can't agree on the body either, each side picks one and the two bodies collaborate on a joint recommendation.
 
 ## Quorum
 
@@ -54,19 +83,28 @@ These are total voters across both blocks. If quorum isn't met, the vote doesn't
 
 ## Early Capital (Pre-Quorum)
 
-If someone offers money before the platform has enough users to meet quorum — we take it. The money goes to work immediately (infrastructure, development, operations).
+Anyone can contribute any amount, at any time. Every contribution is recorded permanently — amount, timestamp, contributor identity. The money goes to work immediately (infrastructure, development, operations).
 
-The agreement: revenue share is guaranteed, but the exact terms (percentage, duration, cap) are decided later — when quorum is met and a proper vote can happen. The investor accepts this condition upfront.
+**What contributors know upfront (constitutional bounds, non-negotiable):**
+- Investor share will never exceed 40% of the builders+investors pool
+- All agreements are time-bounded (max duration set before governance activates)
+- Returns are proportional to contribution
+- Time-held factor gives structural advantage to earlier contributors
 
-This means:
-- Early capital isn't blocked by lack of users
-- Investors can't dictate terms unilaterally just because they showed up first
-- Terms are still decided democratically once the community is large enough
-- The investor's risk (undefined terms) is offset by being earliest in — which historically means better terms when the vote happens
+**What gets decided later (once governance activates):**
+- Exact revenue share percentage within the 40% cap
+- Exact duration
+- Payout schedule
 
-If the bicameral vote cannot agree on terms for a pre-quorum investor's deal — i.e., both blocks fail to reach supermajority — the decision is referred to an independent body with expertise in investment, finance, and cooperative economics. Their ruling is binding. This ensures early investors aren't left in limbo indefinitely.
+**How terms get decided:**
 
-No revenue-share payments begin until terms are decided — either by vote or by the independent body.
+Contributors vote on their own terms — proportional to stake. Builders vote on builder terms. Both share the same pool, so it's a negotiation between two parties with opposing interests. Neither side can unilaterally set terms that gut the other.
+
+**Constitutional bounds prevent self-dealing:** Contributors can't vote themselves 100% of revenue because the 40% cap exists before anyone invests. They vote on specifics within bounds, not on whether bounds exist.
+
+**If deadlocked** — either side can invoke an independent professional body (see below). The body recommends terms based on contribution records, market rates, and time held. Both parties vote on the recommendation (stake-weighted within their group).
+
+No revenue-share payments begin until terms are decided — either by negotiation or by independent recommendation.
 
 ## Tiered Rounds
 
@@ -123,7 +161,7 @@ If existing rounds already consume 35% and a new round wants 15%, it doesn't hap
 - Should revenue share positions be transferable? (Current stance: no — prevents speculation and secondary markets forming around the platform's revenue)
 - What's the minimum and maximum investment per person per round? (Prevents one investor from dominating the investor block)
 - If someone is both an investor and a user, which block do they vote in? (Likely: investor block for rounds they're invested in, user block for others)
-- How is the independent expert body selected? How do we prevent capture?
+- How do we prevent capture of the independent body selection process?
 - What happens if the platform shuts down? (Likely: investors lose remaining — same as any failed venture. Remaining funds go to wind-down costs, not payouts)
 - How are disputes about revenue calculation resolved?
 

@@ -35,7 +35,7 @@ Not ads shoved in your face. A dedicated space you enter when YOU want to buy or
 - **Community sellers list free.** Goods, services, skills, time. Listing costs nothing. Community sellers sit alongside aggregated products with the advantage of local trust and community backing.
 - **Community certification.** Expert evaluators — selected by the community — independently assess and certify quality. Products, services, and people's skills. A small artisan can get certified quality without paying for expensive ISO certification.
 - **Talent pool.** Experts evaluate and certify people's skills. Companies pay a fair fee to access pre-vetted professionals. Way less than a recruiter. Way more reliable than keyword-matching algorithms.
-- **Collective purchasing.** Shopkeepers need the same products. The platform aggregates demand, buys direct from manufacturers at bulk price, handles logistics. Small shops get the same pricing power as Walmart or Reliance. They stay independent. They just don't get crushed on cost anymore.
+- **Collective purchasing.** Shopkeepers need the same products. The platform aggregates demand and coordinates bulk orders direct from manufacturers. Participants pay manufacturers directly — the platform coordinates, never holds the money. Small shops get the same pricing power as Walmart or Reliance. They stay independent. They just don't get crushed on cost anymore.
 
 ### The Movement
 
@@ -43,7 +43,7 @@ What becomes possible when millions of verified real people have transparent mon
 
 - **Community investment.** Pool money. Back businesses vetted by the community — local or global. Revenue share flows back. The community funds more businesses. Flywheel.
 - **Political power.** 5,000 organized, engaged people in a city who vote together on local issues are a serious voting block. Politicians come to you.
-- **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. Simple majority removes them. Any day. No waiting for the next election.
+- **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them. No waiting for the next election cycle — but enough friction to prevent mob-driven instability.
 
 ## How It Grows
 
@@ -58,12 +58,17 @@ Small → large. Local → global.
 
 ## Why This Scope
 
-This is not ten separate products bolted together. It's one system where each piece enables the next:
+This is not ten separate products bolted together. It's one system where each piece strengthens the others. But it ships in phases — each phase generates the revenue and trust that funds the next.
+
+**Load-bearing (the MVP — must exist for the platform to function):**
 
 - **Identity** makes reviews trustworthy (verified humans, not bots)
 - **Trusted reviews** make the marketplace useful (people come for honest information)
 - **Marketplace** generates revenue from day one (affiliate commissions)
 - **Revenue** pays builders (who build more features)
+
+**Amplifiers (added when the foundation supports them):**
+
 - **Certification** creates the talent pool (experts verify skills)
 - **Talent pool** generates more revenue (companies pay for access)
 - **Established trust** makes investment facilitation possible (people know each other)
@@ -72,9 +77,7 @@ This is not ten separate products bolted together. It's one system where each pi
 
 Each feature exists independently somewhere — affiliate review sites, angel networks, cooperatives, certification bodies, forums. All proven models. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
 
-Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest.
-
-The MVP is three things. Each phase generates the revenue that funds the next.
+Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest. But it doesn't all ship at once.
 
 ## What This Is Not
 

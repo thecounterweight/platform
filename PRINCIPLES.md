@@ -32,9 +32,11 @@ You can export everything we know about you. You can delete it permanently. Gone
 
 ## 5. Leaders serve. They don't rule.
 
-Anyone in a position of responsibility is there because the people below them chose them. The moment those people change their mind — simple majority — the leader steps down.
+Anyone in a position of responsibility is there because the people below them chose them. The moment those people change their mind, the leader steps down.
 
-No term limits. No bureaucratic removal process. Simple majority, any day. Do the people you serve still want you? Yes or no.
+No term limits. No-confidence motion filed, 7-day discussion period, then a vote. 60% majority removes. This isn't bureaucracy — it's preventing mob-driven instability while keeping leaders genuinely accountable. A leader who has lost the trust of 60% of their community is gone within a week. A leader facing a temporary controversy gets 7 days for the facts to come out.
+
+During the 7-day period, the leader continues routine operations but cannot make irreversible decisions — no appointments, no rule changes, no removals, no financial decisions above routine thresholds. This prevents damage without fully paralyzing operations.
 
 ## 6. We build businesses, not charities
 
@@ -48,7 +50,7 @@ Experts don't just certify — they teach. Seniors mentor. The community invests
 
 ## 8. We resolve our own conflicts
 
-Fairly, transparently, without courts most people can't afford. Elected mediators. Structured process. Binding within the platform. Cheaper, faster, and fairer than the legal system — built on trust relationships that already exist.
+Fairly, transparently, and accessibly. Elected mediators. Structured process. Cheaper, faster, and more accessible than courts — built on trust relationships that already exist. Community arbitration doesn't replace legal rights — either party can go to court at any time. The goal is to make courts unnecessary for most disputes, not to prevent access to them.
 
 ## 9. We don't hide from the dark side
 
@@ -60,7 +62,7 @@ How we enforce them without becoming a surveillance machine — that's a design 
 
 ## 10. Borders are a problem to solve, not a reason to stop
 
-A person in Rajasthan should be able to invest in a community business in Nairobi — within applicable legal frameworks in each jurisdiction. Money, help, and voice should move across borders. The legal complexity is real. We'll solve it country by country. We won't accept "it's too hard" as a reason to stop.
+A person in Rajasthan should be able to invest in a community business in Nairobi. That's the goal. The reality: foreign exchange laws (FEMA in India, Capital Markets Act in Kenya, and equivalents everywhere) restrict cross-border retail investment in unregistered businesses. The platform starts with domestic investment only. Cross-border activates country-pair by country-pair, only where local law permits. We solve it incrementally — not by ignoring the law, but by finding legal paths in each jurisdiction. "It's too hard" is not a reason to stop. "It's currently illegal" is a reason to do the legal work first.
 
 ## 11. The platform adapts to communities. Not the other way around.
 

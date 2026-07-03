@@ -122,9 +122,11 @@ This is how angel networks and syndicates already work legally — a founder pre
 | 2-10 people | Simple revenue share contract or partnership agreement |
 | 10-50 people | LLP or structured multi-party contract |
 | 50-200 people | Private placement rules apply — needs specific legal formatting per jurisdiction |
-| 200+ people | Restructure into smaller groups, or seek legal counsel for compliance |
+| 200+ people | Seek legal counsel for compliance in your jurisdiction |
 
 The platform recommends appropriate contract templates based on pool size, capital amount, and jurisdiction. All contracts are transparent, auditable, and legally enforceable.
+
+**Legal reality:** Pooled investment may constitute a security in some jurisdictions regardless of how it's structured. The platform will not activate pooled investment (Path 1) in any country without jurisdiction-specific legal review confirming compliance. Direct deals between named individuals (Path 2) are the default — this is how angel investing already works legally. The platform facilitates the connection and provides contract infrastructure. It does not pool capital, manage funds, or make investment decisions.
 
 ### Why equity is harder than revenue share
 
@@ -151,7 +153,13 @@ The loss is absorbed by the pool (pooled model) or by the individual investors w
 
 ### If the business succeeds and refuses to honor the agreement
 
-Social accountability first (public discussion, reputation impact). If that fails — the agreement is a signed contract, enforceable through community arbitration or, as a last resort, the legal system.
+Resolution layers, in order:
+
+1. **Direct resolution** — Parties talk it out. Most disputes end here.
+2. **Community arbitration** — Elected arbitrators mediate. Fast, free, accessible. This is a resolution mechanism, not a replacement for legal rights.
+3. **Legal system** — The agreement is a signed contract, enforceable in court. Either party can go to court at any time — community arbitration doesn't waive legal rights.
+
+The goal is to resolve most disputes without courts (which are slow, expensive, and inaccessible to most people). But legal enforceability is never taken off the table.
 
 ### Important distinction
 
@@ -204,6 +212,25 @@ We are exploring:
 
 This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows Indian cooperative or securities law — this is one of the highest-value contributions you can make right now.
 
+## Cross-Border Investment
+
+Cross-border retail investment in unregistered businesses is restricted or illegal in most countries (FEMA in India, Capital Markets Act in Kenya, FATF guidelines globally).
+
+**The rule:** Cross-border investment is facilitated only for **registered entities** in sectors where the receiving country permits foreign investment. This means:
+
+| Business type | Cross-border eligible | Why |
+|---------------|----------------------|-----|
+| Registered company (Private Ltd, LLC, etc.) | Yes — where FDI rules permit | Most countries allow FDI in registered entities through automatic routes |
+| Government-recognized startup (DPIIT in India, EIS in UK, etc.) | Yes | Specific frameworks exist for startup investment |
+| Cooperatives with international membership frameworks | Yes — where structure allows | EU's SCE, some multi-state cooperatives |
+| Unregistered sole proprietorship | No | No legal pathway for foreign investment |
+| Informal business without entity status | No | Cannot receive foreign capital legally |
+| Individual-to-individual "investment" | No | Not investment — it's a personal transfer |
+
+**Domestic investment has no such restriction** — a community can back a local carpenter via revenue share regardless of entity registration. Cross-border requires the legal wrapper because foreign exchange laws demand it.
+
+The platform starts domestic-only. Cross-border activates country-pair by country-pair, only for registered entities, only where local law permits. This is a long-term goal, not a launch feature.
+
 ## Legal Structure (Other Countries)
 
 Open questions. We need people in each jurisdiction to research:
@@ -212,5 +239,6 @@ Open questions. We need people in each jurisdiction to research:
 - What securities regulations apply?
 - What cooperative/mutual frameworks exist?
 - What tax implications do members face?
+- What foreign exchange controls restrict cross-border investment?
 
 If you're a lawyer anywhere in the world — pick your country, research this, and contribute to the docs. This is one of the highest-value contributions possible right now.
