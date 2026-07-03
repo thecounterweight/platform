@@ -19,76 +19,89 @@ export default function Home() {
         <Counter />
       </section>
 
-      {/* What makes this different */}
+      {/* The problem */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What makes this different</h2>
+        <h2 className="text-2xl font-bold mb-6">The problem is structural</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            One verified identity connects everything. Every person on the platform
-            is a real, unique human — no bots, no duplicates, no manipulation.
-            That single fact makes trusted reviews possible, makes democratic
-            governance real, makes investment accountable, and makes moderation
-            effective.
+            Every platform you use is owned by someone who profits from your attention,
+            your data, or both. Reviews are fake. Moderation is arbitrary. Governance
+            is whatever the founder decides today. You are the product — and you have
+            no recourse.
           </p>
           <p>
-            Your data is your sovereignty. Not ours to sell. Not ours to mine.
-            Not ours to hand to governments or advertisers.
-            We store the minimum needed to prove you&apos;re real — then nothing else
-            belongs to us.
+            This isn&apos;t fixable with better policies or nicer executives. The
+            incentive structure is the problem. If the platform is owned by capital,
+            it will serve capital. Always.
+          </p>
+        </div>
+      </section>
+
+      {/* One decision, everything follows */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-6">One decision changes everything</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            Every person on the platform is a verified, unique human. One person,
+            one account. No bots. No duplicates. No sock puppets. We prove this
+            via government ID APIs and store only a non-reversible hash — your
+            data is your sovereignty, not ours.
+          </p>
+          <p>
+            That single architectural choice cascades:
           </p>
           <ul className="space-y-3 list-none">
             <li>
-              <strong className="text-zinc-100">Verified identity without surveillance.</strong>{" "}
-              Government ID APIs prove you&apos;re real. We store a non-reversible hash — not your data.
-              One person, one account. Privacy preserved.
+              <strong className="text-zinc-100">Reviews become trustable.</strong>{" "}
+              Every reviewer is a real human with proof of purchase. Ranked by
+              accuracy over time. No one can buy placement.
             </li>
             <li>
-              <strong className="text-zinc-100">
-                Reviews you can trust.
-              </strong>{" "}
-              Every reviewer is a verified human with proof of purchase.
-              Ranked by accuracy, not by who paid for placement.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                No permanent authority.
-              </strong>{" "}
+              <strong className="text-zinc-100">Governance becomes real.</strong>{" "}
               Every role with power — moderators, community leads, pool managers —
-              is elected and removable. 60% vote removes anyone, after 7-day
-              discussion. Every role re-confirmed every 2 years.
+              is elected by real people and removable by them. 60% vote, 7-day
+              discussion. Re-confirmed every 2 years. No permanent authority.
             </li>
             <li>
-              <strong className="text-zinc-100">
-                Builders get paid.
-              </strong>{" "}
-              Every contribution tracked on a public ledger. When revenue flows,
-              it flows back to the people who built this — proportional to what they contributed.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                Investment without extraction.
-              </strong>{" "}
+              <strong className="text-zinc-100">Investment becomes accountable.</strong>{" "}
               Communities back businesses via signed contracts between named individuals.
-              Revenue share or equity. The platform facilitates — it doesn&apos;t manage your money.
+              Every transaction recorded. The platform facilitates — it never holds your money.
+            </li>
+            <li>
+              <strong className="text-zinc-100">Builders get paid fairly.</strong>{" "}
+              Every contribution tracked on a public ledger. When revenue flows,
+              it flows to the people who built this — proportional, transparent,
+              no middleman deciding who deserves what.
+            </li>
+            <li>
+              <strong className="text-zinc-100">Moderation actually works.</strong>{" "}
+              When every account is a real person with something to lose, the
+              calculus of bad behavior changes. No disposable accounts. No bot armies.
             </li>
           </ul>
         </div>
       </section>
 
-      {/* What exists now */}
+      {/* Where we are */}
       <section className="max-w-3xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-6">Where we are</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            The system is proposed. Identity verification, payments, governance,
-            investment model, marketplace strategy, builder compensation — all
-            documented and internally consistent. Ready to be challenged.
+            Everything above is proposed, documented, and internally consistent —
+            identity verification, payments, governance, investment model,
+            marketplace strategy, builder compensation. The design is open.
+            Ready to be challenged, broken, and rebuilt by the people who
+            will use it.
           </p>
-          <p className="text-zinc-400">
+          <p>
             What gets built first: identity + discussion boards + marketplace
             (aggregated products from existing platforms + community sellers +
             verified reviews). Revenue from day one via affiliate commissions.
             No VC needed to survive.
+          </p>
+          <p className="text-zinc-400">
+            This isn&apos;t a whitepaper waiting for funding. It&apos;s a codebase
+            waiting for contributors.
           </p>
         </div>
       </section>
