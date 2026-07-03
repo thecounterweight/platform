@@ -48,9 +48,9 @@ The split changes as the platform grows — more flows to community reinvestment
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
-| Under $5M | 70% | 20% | 10% |
-| $5M - $50M | 60% | 20% | 20% |
-| $50M - $500M | 45% | 20% | 35% |
+| Under $20M | 70% | 20% | 10% |
+| $20M - $100M | 55% | 20% | 25% |
+| $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split |
 
 Within the builders+investors share, investor portion is capped at 40% and time-bounded.

@@ -33,12 +33,14 @@ When the platform generates revenue (transaction fees, certification fees, talen
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
-| Under $5M | 70% | 20% | 10% (reserve) |
-| $5M - $50M | 60% | 20% | 20% |
-| $50M - $500M | 45% | 20% | 35% |
+| Under $20M | 70% | 20% | 10% (reserve) |
+| $20M - $100M | 55% | 20% | 25% |
+| $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split at this threshold |
 
-At early stages, the majority flows to the people who built the platform and the investors who funded it — they took real risk. As the platform matures, more flows to community reinvestment: subsidizing verification fees, grants for community businesses, infrastructure in underserved regions, reducing costs for users.
+**Why these thresholds:**
+
+Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are leaving $300-500K/year positions to build without pay. The 70% share stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
 
 Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
 
