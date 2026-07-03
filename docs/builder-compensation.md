@@ -138,6 +138,8 @@ All assignments are public and challengeable for 14 days. If challenged, peer vo
 
 In the early days, there's no cash. Your work is recorded from day one. The moment revenue starts flowing, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.
 
+Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 20% first. Builder payouts come from the remaining 70% pool. The platform keeps the lights on before distributing to anyone.
+
 This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
 
 ### How the Ledger Works

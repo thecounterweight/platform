@@ -95,6 +95,8 @@ Raised capital goes toward infrastructure, operations, and development — what 
 
 Spending is transparent and publicly auditable. The community can see where every dollar goes.
 
+**Important distinction:** Investor capital is operational runway — it funds infrastructure and development until the platform is self-sustaining. It is not subject to the 20/10/70 revenue split. That split (20% operations, 10% reserve, 70% builders + investors) applies only to platform revenue once it exists. Early investor money keeps the lights on so revenue can start flowing in the first place.
+
 **Payment infrastructure:** Proposed design exists. Country-specific rails for marketplace (UPI, SEPA, ACH), direct bank transfer for investment contracts. The platform records transactions but does not process or hold money. See [Payments](payments.md).
 
 ## What Investors Don't Get
