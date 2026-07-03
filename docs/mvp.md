@@ -23,6 +23,22 @@ Threaded discussion boards and group chat. Every participant is verified real.
 - Once platform revenue is healthy, elected moderators are paid from operations budget
 - Group chat for real-time coordination within communities
 
+**Proposed moderation model (community can decide another approach later):**
+
+Two flag types:
+- **Regular flag** — When enough verified users flag content (threshold), it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
+- **Urgent flag** — Goes directly to elected safety team for immediate removal. For illegal content, doxxing, active threats. Community reviews within 48 hours.
+
+Verified identity makes this viable — one person one flag, no brigading with fake accounts. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
+
+**Proposed moderation model (community can decide another approach later):**
+
+Two flag types:
+- **Regular flag** — Content accumulates flags from verified users. When threshold is reached, community votes: stays or goes. Simple majority. This handles spam, low-quality content, and policy violations.
+- **Urgent flag** — Goes directly to elected safety team for immediate action. For illegal content, doxxing, active threats. Safety team removes first, community reviews within 48 hours (confirms or reverses).
+
+Verified identity makes this viable — one person one flag, no brigading with fake accounts. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
+
 This is the daily engagement layer. People come for the conversations.
 
 ### 3. Marketplace (Reviews + Discovery)
