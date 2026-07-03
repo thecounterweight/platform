@@ -88,7 +88,7 @@ For the MVP, a modular monolith might ship faster. But the architecture should b
 
 2. **Federation protocol:** ActivityPub (Mastodon uses this)? Matrix protocol? Custom sync? How do sovereign instances discover and communicate with each other?
 
-3. **Translation approach:** Run local AI models (LLaMA variants)? Use API services? How do we handle context and cultural nuance? Cost at scale?
+3. **Translation approach:** Proposed: AI generates first pass (DeepL or Google Translate API), bilingual community members correct and improve — Wikipedia model. Machine-translated content flagged as such; community-verified translations get a badge. Critical content (contracts, governance proposals) requires human review before publishing. Casual content (chat, comments) tolerates rough translation. Open questions: which API provider, cost at scale, whether corrections can feed back to improve future translations.
 
 4. **Payment integration:** Proposed design exists — split approach using country-specific rails for marketplace, direct bank transfer for investment contracts. See [Payments](payments.md). Open questions: escrow for marketplace disputes, refund handling, country prioritization after India.
 
