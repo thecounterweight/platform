@@ -73,6 +73,16 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 4. On-platform transactions added later — transaction fees kick in
 5. Existing platform listings become less relevant as the community marketplace matures
 
+**Default sort order:**
+
+Products are ranked by review activity and quality combined:
+
+1. Reviewed products always appear above unreviewed products
+2. Among reviewed products, rank by **aggregate score** = sum of all star ratings (e.g., 5 five-star reviews = 25, 3 four-star reviews = 12)
+3. Unreviewed products sorted by recency
+
+This rewards both quality (high stars) and engagement (many reviews). A well-reviewed product rises naturally. An unreviewed product sits at the bottom until someone reviews it — which incentivizes reviewing.
+
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms. No need to wait for scale.
 
 **Reviewer earnings:**
