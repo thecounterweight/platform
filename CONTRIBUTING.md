@@ -1,107 +1,186 @@
 # Contributing
 
-## Quick Start
+## 5-Minute Orientation
 
-1. Find an issue labeled `good first issue` or `help wanted`
-2. Comment on it to claim it
-3. Fork the repo, create a branch, do the work
-4. Submit a PR referencing the issue
-5. Get reviewed, iterate, get merged
-6. Your contribution is recorded on the public ledger from day one
+1. Read the [one-page overview](docs/overview.md) — understand what this is
+2. Pick a workstream below that matches your skills
+3. Claim an existing issue or propose one
+4. Fork, branch, build, PR
+5. Your contribution is recorded on the public ledger from day one
 
-## What We Need Right Now
+That's it. No meetings. No approval to start. Show up, do the work, get credited.
 
-### Immediate Tasks (Start This Weekend)
+## Workstreams
 
-**Backend:**
-- [ ] Set up the project scaffold — Next.js app with PostgreSQL, auth skeleton, API structure
-- [ ] Identity verification service — integrate with DigiLocker/Aadhaar eKYC sandbox API
-- [ ] Discussion boards — CRUD for boards, posts, comments, upvotes. Real-time updates via WebSockets
-- [ ] User profiles — verified badge, pseudonym support, contribution history
+The project has four active workstreams. Each is independent enough to build in parallel. Pick the one that fits you.
 
-**Frontend:**
-- [ ] Discussion board UI — board list, threaded posts, reply, vote
-- [ ] Marketplace UI — product cards, category browse, review submission form with parameter-based ratings
-- [ ] User profile pages — verified status, reviews written, trust score display
-- [ ] Mobile-responsive PWA shell — installable, offline-capable
+### Identity
 
-**Marketplace:**
-- [ ] Amazon Product Advertising API integration — fetch products by category, cache locally
-- [ ] Flipkart Affiliate API integration — same
-- [ ] Review system — parameter-based reviews, trust score calculation, post-purchase feedback loop
-- [ ] Affiliate link tracking — attribute clicks to reviewers for commission calculation
+**What's decided:** Three-layer verification (government ID API + face scan for high-stakes + OTP). Non-reversible hash stored — no raw data. Three access tiers (verified/vouched/unverified). User pays verification fee. See [identity-verification.md](docs/identity-verification.md).
 
-**Design:**
-- [ ] System architecture diagram (visual — the text diagram in overview.md, but as a proper image)
-- [ ] User journey flows (signup → verification → first review → first commission)
-- [ ] UI mockups for discussion boards and marketplace
+**What needs building:**
+- DigiLocker / Aadhaar eKYC sandbox integration (India)
+- Face liveness detection for high-stakes actions
+- Hash generation and storage layer
+- Vouching system (verified users vouch for others, accountability chain)
+- Account recovery flow without storing personal data
 
-**Legal (Any Jurisdiction):**
-- [ ] Research: does the affiliate review + commission model comply with your country's advertising/disclosure laws?
-- [ ] Research: what entity structure works for community investment pools in your country?
-- [ ] Draft: revenue share contract template for your jurisdiction
+**Skills needed:** Backend (Node.js/TypeScript), cryptography basics, government API integration, security mindset.
 
-**Domain Experts:**
-- [ ] Define certification criteria for your field (what does "senior frontend engineer" actually mean? What should the test cover?)
-- [ ] Volunteer as one of the first evaluators
+**Key constraint:** Privacy is non-negotiable. If your design requires storing personal data, it's wrong. Start over.
 
-### Skills Needed
+### Marketplace
 
-**Engineering:** TypeScript, Next.js, PostgreSQL, WebSockets, API integrations
-**Design:** UI/UX, user research, visual design
-**Legal:** Securities law, cooperative law, data protection — any country
-**Domain expertise:** Any field where you can define what "certified quality" means
+**What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by aggregate score. Reviewer commission from affiliate revenue. See [mvp.md](docs/mvp.md).
 
-## How Decisions Are Made
+**What needs building:**
+- Amazon Product Advertising API integration
+- Flipkart Affiliate API integration
+- Product aggregation and caching layer
+- Review system (parameter-based, trust score, post-purchase verification)
+- Affiliate link tracking and commission attribution
+- Community seller listing flow
+- Search and category browsing
+
+**Skills needed:** Full-stack TypeScript, API integrations, search/filtering, UI/UX for e-commerce.
+
+**Key constraint:** Aggregate score (sum of star ratings) determines sort order. No paid placement. No algorithmic manipulation. The code must make this obvious and auditable.
+
+### Discussion
+
+**What's decided:** Threaded discussion boards. Real people only. Moderation via two-flag system (community flags + moderator action). See [mvp.md](docs/mvp.md) moderation section.
+
+**What needs building:**
+- Board/category CRUD
+- Posts, comments, threaded replies
+- Upvotes/downvotes (one person one vote, verified)
+- Real-time updates (WebSockets)
+- Moderation tools (flag, review queue, action log)
+- User profiles with contribution history
+
+**Skills needed:** Full-stack TypeScript, WebSockets, UI for discussion (threading, nesting), moderation tooling.
+
+**Key constraint:** Every action is traceable to a verified human. Anonymous posting is allowed (you choose your display) but the system knows who you are. This makes moderation fundamentally different from Reddit/Twitter.
+
+### Frontend & Design
+
+**What's decided:** Next.js, TypeScript, Tailwind. Mobile-first PWA. Dark theme. Minimal, fast, accessible.
+
+**What needs building:**
+- Mobile-responsive PWA shell
+- Discussion board UI
+- Marketplace UI (product cards, reviews, search)
+- User profile pages
+- Verification flow UI (step-by-step, reassuring about privacy)
+- Design system / component library
+
+**Skills needed:** React/Next.js, TypeScript, Tailwind, responsive design, accessibility, UX thinking.
+
+**Key constraint:** This has to work on a cheap Android phone on a slow connection. If it doesn't work there, it doesn't work.
+
+## Roles
+
+### First Contribution
+
+You just showed up. You want to help.
+
+1. Look at issues labeled `good first issue` in any workstream
+2. Comment to claim it
+3. Ask questions if anything is unclear — no one will judge you
+4. Ship the PR. Get reviewed. Get merged. Get credited.
+
+You don't need permission. You don't need to understand the whole system. Pick one thing, do it well.
+
+### Workstream Lead
+
+You own a workstream. This means:
+
+- You've shipped multiple contributions in this area
+- You break the big picture into scoped issues others can pick up
+- You review PRs in your workstream
+- You mentor newcomers — answer questions, unblock people
+- You make small architectural decisions (library choice, module structure)
+- You don't gatekeep. If someone shows up with good work, it gets merged.
+
+**How you become one:** Show up first. Do the most work. That's it. No appointment. If two people both want to lead, the one with more shipped contributions leads. If there's genuine disagreement, the community votes.
+
+**How you lose it:** Stop showing up for 30 days without notice, or the community votes you out (same no-confidence mechanism as everything else: 60% + 7-day discussion).
+
+### Architect
+
+Cross-workstream decisions. Technical design docs. Making sure identity integrates cleanly with marketplace, marketplace with discussion, etc.
+
+**How you become one:** Lead a workstream well enough that people trust your judgment across boundaries.
+
+## How Work Gets Created
+
+This is the most important part. A project dies when there's work to do but no one knows what it is.
+
+**Workstream leads create work for others:**
+1. Take the "what needs building" list above
+2. Break it into issues sized for 1-3 days of work
+3. Write clear acceptance criteria (what does "done" look like?)
+4. Label by difficulty: `starter` (first contribution), `medium` (familiar with codebase), `hard` (deep expertise needed)
+5. Post it. Someone will claim it.
+
+**Anyone can propose work:**
+- See something missing? Open an issue.
+- The workstream lead validates scope and assigns complexity
+- If there's no lead yet, the community discusses
+
+**The rule:** No issue should require reading more than one doc to understand. If it does, it's too big — break it down.
+
+## How Seniors Help Juniors
+
+If you're experienced:
+- Write issues that teach. Include context: "this connects to X because Y"
+- Review with kindness. Explain the *why* behind requested changes.
+- Pair on hard problems. A 30-minute call saves days of frustration.
+- Break your expertise into transferable pieces. Don't just build — enable others to build.
+
+If you're learning:
+- Claim `starter` issues. They're designed for you.
+- Ask questions in the issue thread — the answer helps the next person too
+- Your PR doesn't have to be perfect. That's what review is for.
+- "I'm stuck" is a valid message. Say it early.
+
+## Decision Making
 
 **Small decisions** (library choice, implementation detail): Whoever's doing the work decides.
 
-**Medium decisions** (module architecture, design approach): Post in the relevant discussion channel. No objections in 48 hours = approved. Disagreement = GitHub Discussion + vote after one week.
+**Medium decisions** (module architecture, API design): Post in the relevant discussion. No objections in 48 hours = approved. Disagreement = GitHub Discussion + vote after one week.
 
-**Large decisions** (overall architecture, governance model, compensation structure): Formal RFC in GitHub Discussions. Minimum one-week discussion. Vote by active contributors (at least 1 contribution in past 30 days). Simple majority wins.
-
-## What "Active Contributor" Means
-
-You're an active contributor if you've made at least one meaningful contribution in the past 30 days. This earns you voting rights on project decisions.
-
-Contributions include: code, design, documentation, legal research, community moderation, PR reviews, or any other tracked work.
+**Large decisions** (overall architecture, governance, compensation): Formal RFC in GitHub Discussions. Minimum one-week discussion. Vote by active contributors (at least 1 contribution in past 30 days). Simple majority wins.
 
 ## Code Standards
 
-- TypeScript with strict mode (Next.js + PWA)
+- TypeScript with strict mode
 - Tests required for new features
 - PRs require at least one approval before merge
 - CI must pass (lint + tests)
 - Write code that others can read. If it needs a comment to explain, it might need a rewrite.
-
-## PR Process
-
-1. Keep PRs focused. One feature or fix per PR.
-2. Write a clear description: what you did, why, how to test it.
-3. Link the relevant issue.
-4. Respond to review feedback. Disagreements are fine — discuss, don't ignore.
-5. Once approved and CI passes — squash and merge.
+- Keep PRs focused. One feature or fix per PR.
 
 ## Compensation
 
-All contributions are tracked. When revenue flows, contributors get paid proportionally. Read [Builder Compensation](docs/builder-compensation.md) for the full details.
+Every contribution is tracked on a public ledger. When revenue flows, contributors get paid proportional to what they built. Not just code — reviews, design, documentation, moderation, mentoring all count.
 
-Reviewing PRs counts as contribution. Moderation counts. Documentation counts. Not just code.
+Early contributors take more risk. They get multiplied units (up to 7x for the hardest foundational work). Read [Builder Compensation](docs/builder-compensation.md) for the full model.
 
 ## Communication
 
-- **Real-time chat:** Discord (link in README)
-- **Persistent discussions:** GitHub Discussions
-- **Video calls:** Jitsi Meet (links posted in Discord for scheduled sessions)
+- **Real-time:** Discord (link in README)
+- **Persistent decisions:** GitHub Discussions
+- **Video calls:** Jitsi Meet (links posted in Discord)
 
-Rule of thumb: chat on Discord, decide on GitHub. If a Discord conversation reaches a conclusion — someone writes it up as a GitHub Discussion or issue. Otherwise it's lost.
+Rule: chat on Discord, decide on GitHub. If a Discord conversation reaches a conclusion, someone writes it up as an issue or discussion post. Otherwise it's lost.
 
 ## Code of Conduct
 
 - Treat people with respect. Disagree with ideas, not people.
 - No harassment, discrimination, or personal attacks. Zero tolerance.
-- This is a global, multicultural project. Assume good intent across language and cultural barriers.
-- If someone's behavior is a problem — report to maintainers. It'll be handled.
+- This is global and multicultural. Assume good intent across language and cultural barriers.
+- Problems? Report to maintainers. It'll be handled.
 
 ## Questions?
 
