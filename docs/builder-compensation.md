@@ -40,7 +40,7 @@ When the platform generates revenue (transaction fees, certification fees, talen
 
 **Why these thresholds:**
 
-Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are leaving $300-500K/year positions to build without pay. The 70% share stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
+Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 70% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 70%. Once investors negotiate a share (capped at 40% of the pool), builders still get the majority — at minimum 42% of total revenue (70% × 60%). At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
 
 Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
 
@@ -153,7 +153,7 @@ All assignments are public and challengeable for 14 days. If challenged, peer vo
 
 In the early days, there's no cash. Your work is recorded from day one. The moment revenue starts flowing, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.
 
-Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 20% first. Builder payouts come from the remaining 70% pool. The platform keeps the lights on before distributing to anyone.
+Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 20% first. The remaining 70% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
 
 This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
 
