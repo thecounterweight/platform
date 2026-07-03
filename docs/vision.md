@@ -56,6 +56,26 @@ Small → large. Local → global.
 5. Political coordination emerges naturally once membership hits critical mass.
 6. Other communities see it working. They spin up their own. Connected to the network but sovereign in their own decisions.
 
+## Why This Scope
+
+This is not ten separate products bolted together. It's one system where each piece enables the next:
+
+- **Identity** makes reviews trustworthy (verified humans, not bots)
+- **Trusted reviews** make the marketplace useful (people come for honest information)
+- **Marketplace** generates revenue from day one (affiliate commissions)
+- **Revenue** pays builders (who build more features)
+- **Certification** creates the talent pool (experts verify skills)
+- **Talent pool** generates more revenue (companies pay for access)
+- **Established trust** makes investment facilitation possible (people know each other)
+- **Investment returns** attract more members (it visibly works)
+- **More members** make collective purchasing viable (critical mass)
+
+Each feature exists independently somewhere — affiliate review sites, angel networks, cooperatives, certification bodies, forums. All proven models. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
+
+Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest.
+
+The MVP is three things. Each phase generates the revenue that funds the next.
+
 ## What This Is Not
 
 There are no tokens, no NFTs, no speculation. No venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.

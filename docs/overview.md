@@ -2,6 +2,20 @@
 
 A community-governed platform where verified real people invest together, trade together, and govern together. No bots. No billionaire owners. No VC. Open-source.
 
+## Why This Scope
+
+This looks like many products. It's one system. The pieces need each other:
+
+Identity enables trusted reviews → trusted reviews make the marketplace useful → marketplace generates revenue → revenue pays builders → builders build certification → certification creates the talent pool → talent pool fees generate more revenue → investment facilitation becomes possible because trust is established → investment returns attract more members → more members make collective purchasing viable → growth.
+
+Remove any piece and the loop breaks.
+
+Each feature exists somewhere already. Affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums — all proven. Nowhere do they exist together, under community ownership, with one verified identity connecting them all. That's the gap.
+
+Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest.
+
+The MVP is three things. Each phase generates the revenue that funds the next.
+
 ## What It Does (One Sentence Each)
 
 | Module | What it does |
