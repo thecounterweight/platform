@@ -1,65 +1,44 @@
 # The Counterweight
 
-Publicly owned infrastructure. Community-governed. Open-source.
+Publicly owned infrastructure. Community-governed. Open-source. No billionaire owners. No VC. No ads. No data mining.
 
-![System Diagram](docs/assets/system-diagram.svg)
+**One architectural decision — every user is a verified, unique human — makes trusted reviews, democratic governance, accountable investment, and fair compensation possible.**
 
-This is an open-source project to build a platform and a movement where:
+→ [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/overview.md)
 
-- Every person is verified real. One human, one voice.
-- Your data is yours. Never sold. Never mined. Never exploited.
-- Democratic governance at every level — platform moderators, movement leaders, investment pool managers. All elected, all removable via no-confidence (7-day discussion + 60% vote).
-- The platform is governed by the people on it. Not by a CEO, not by shareholders.
-- Built-in contextual translation. Language is never a barrier to participation.
-- Discussion boards, chat, and video calls — threaded conversations, group messaging, video coordination. No need for five separate apps.
-- Communities invest together, fund businesses together, and share the returns.
-- Small shops get bulk purchasing power that only big chains have today.
-- A marketplace with products aggregated from major platforms + community sellers listing free. Reviews from verified humans only. Community experts certify quality.
+## What This Is
 
+A platform where identity verification is open infrastructure. Anyone can build on it — freelance marketplaces, lending platforms, co-op tools, local classifieds. If it needs "every user is a real person," it plugs into this network.
 
-This is not one person's vision. It's a starting point. The community discusses, debates, and shapes the direction together. What you see here is version zero. The people who show up write version one.
-
-## Get Involved
-
-- **Website:** [thecounterweight.org](https://thecounterweight.org)
-- **Reddit:** r/TheCounterweight
-- **Discord:** [Join](https://discord.gg/MAeXwTcxh)
-
-## What We Need
-
-- Engineers (backend, frontend, mobile, security, infra)
-- Designers (UX/UI, brand, product)
-- Lawyers (securities, cooperatives, data protection — any jurisdiction)
-- Economists (investment models, sustainability)
-- Trust & safety experts (moderation, abuse prevention)
-- Domain experts willing to be community evaluators
-- Translators
-- Regular people who know what's broken because they live it
-
-Every contribution is tracked publicly. When revenue flows, contributors get paid proportionally. Early contributors earn more. See [Builder Compensation](docs/builder-compensation.md).
+We build the load-bearing layer. The ecosystem builds everything else.
 
 ## Start Here
 
-**New? Read the [Overview](docs/overview.md)** — the entire system in one page with a diagram.
-
-Then pick what interests you:
+1. [Overview](docs/overview.md) — the entire system in one page
+2. [Contributing](CONTRIBUTING.md) — pick a workstream, start building
+3. [Principles](PRINCIPLES.md) — what doesn't move
 
 ## Documentation
 
-- [Overview](docs/overview.md) — the whole system at a glance (start here)
-- [Vision](docs/vision.md) — the full picture
-- [MVP](docs/mvp.md) — what gets built first
-- [Principles](PRINCIPLES.md) — what we stand for, non-negotiable
-- [Identity Verification](docs/identity-verification.md) — how one-person-one-account works
-- [Payments](docs/payments.md) — how money moves without the platform being a processor
-- [Architecture RFC](docs/architecture-rfc.md) — proposed technical design (open for debate)
-- [Builder Compensation](docs/builder-compensation.md) — how contributors get paid
-- [Investment Model](docs/investment-model.md) — how community economics work
-- [Funding Model](docs/funding-model.md) — how we raise capital and who decides the terms
-- [Community Certification](docs/community-certification.md) — how quality is verified without corporations
-- [Collective Purchasing](docs/collective-purchasing.md) — how small shops get bulk pricing power
-- [Contributing Guide](CONTRIBUTING.md) — how to get started (concrete tasks listed)
+| Document | Purpose |
+|----------|---------|
+| [Vision](docs/vision.md) | Full picture + ecosystem |
+| [MVP](docs/mvp.md) | What gets built first |
+| [Identity Verification](docs/identity-verification.md) | One person, one account |
+| [Payments](docs/payments.md) | Money moves without platform holding it |
+| [Builder Compensation](docs/builder-compensation.md) | How contributors get paid |
+| [Investment Model](docs/investment-model.md) | Community-backed businesses |
+| [Funding Model](docs/funding-model.md) | No VC, terms decided democratically |
+| [Collective Purchasing](docs/collective-purchasing.md) | Bulk pricing for small shops |
+| [Community Certification](docs/community-certification.md) | Quality verified by experts |
+| [Architecture RFC](docs/architecture-rfc.md) | Technical design (open for debate) |
+
+## Community
+
+- [GitHub Discussions](https://github.com/thecounterweight/platform/discussions) — ask questions, shape the design
+- [Discord](https://discord.gg/MAeXwTcxh) — real-time chat
+- [Reddit](https://reddit.com/r/TheCounterweight) — broader conversation
 
 ## License
 
-AGPL-3.0 — you can fork this, modify it, run your own instance. But you must keep it open-source. No proprietary forks.
+AGPL-3.0 — fork it, modify it, run your own instance. But keep it open-source. No proprietary forks.

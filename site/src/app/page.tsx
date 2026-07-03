@@ -144,6 +144,11 @@ export default function Home() {
             <p className="text-sm text-zinc-400 mt-1">What we believe. What doesn&apos;t move.</p>
           </a>
         </div>
+        <p className="mt-6 text-center">
+          <a href="/docs" className="text-sm text-zinc-400 underline hover:text-zinc-200 transition-colors">
+            All documentation →
+          </a>
+        </p>
       </section>
 
       {/* CTAs for different people */}
