@@ -1,0 +1,119 @@
+// The Counterweight — Platform Schema
+// This is a starting point. Each module team owns their models.
+// Schema will evolve as workstreams build out their features.
+
+generator client {
+  provider = "prisma-client"
+  output   = "../src/generated/prisma"
+}
+
+datasource db {
+  provider = "postgresql"
+}
+
+// ============================================================
+// IDENTITY MODULE
+// Owner: Identity workstream lead
+// Doc: /docs/identity-verification.md
+// ============================================================
+
+model User {
+  id            String   @id @default(cuid())
+  displayName   String
+  email         String?  @unique
+  tier          UserTier @default(UNVERIFIED)
+  identityHash  String?  @unique // Non-reversible hash of gov ID verification
+  createdAt     DateTime @default(now())
+  updatedAt     DateTime @updatedAt
+
+  // Relations — will grow as modules build out
+  posts         Post[]
+  reviews       Review[]
+
+  @@map("users")
+}
+
+enum UserTier {
+  VERIFIED   // Gov ID verified
+  VOUCHED    // Vouched by verified users
+  UNVERIFIED // Browse only
+}
+
+// ============================================================
+// DISCUSSION MODULE
+// Owner: Discussion workstream lead
+// Doc: /docs/mvp.md (moderation section)
+// ============================================================
+
+model Post {
+  id        String   @id @default(cuid())
+  title     String
+  body      String
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
+  boardId   String
+  board     Board    @relation(fields: [boardId], references: [id])
+  parentId  String?  // For threaded replies
+  createdAt DateTime @default(now())
+  updatedAt DateTime @updatedAt
+
+  @@map("posts")
+}
+
+model Board {
+  id          String @id @default(cuid())
+  name        String @unique
+  description String
+  posts       Post[]
+
+  @@map("boards")
+}
+
+// ============================================================
+// MARKETPLACE MODULE
+// Owner: Marketplace workstream lead
+// Doc: /docs/mvp.md (marketplace section)
+// ============================================================
+
+model Product {
+  id           String        @id @default(cuid())
+  name         String
+  description  String
+  source       ProductSource
+  externalId   String?       // Affiliate API product ID
+  affiliateUrl String?
+  createdAt    DateTime      @default(now())
+  reviews      Review[]
+
+  @@map("products")
+}
+
+enum ProductSource {
+  AMAZON
+  FLIPKART
+  COMMUNITY // Listed by a verified community seller
+}
+
+model Review {
+  id        String   @id @default(cuid())
+  productId String
+  product   Product  @relation(fields: [productId], references: [id])
+  authorId  String
+  author    User     @relation(fields: [authorId], references: [id])
+  rating    Int      // 1-5
+  body      String
+  createdAt DateTime @default(now())
+
+  @@unique([productId, authorId]) // One review per person per product
+  @@map("reviews")
+}
+
+// ============================================================
+// GOVERNANCE MODULE
+// Owner: TBD (needs workstream lead)
+// Doc: /PRINCIPLES.md
+// ============================================================
+
+// TODO: Governance models (proposals, votes, elections)
+// Deferred until identity + discussion are stable.
+// The governance workstream will design this schema.
