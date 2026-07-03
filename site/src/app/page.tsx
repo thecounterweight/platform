@@ -99,6 +99,15 @@ export default function Home() {
             verified reviews). Revenue from day one via affiliate commissions.
             No VC needed to survive.
           </p>
+          <p>
+            The identity layer is open infrastructure. Anyone can run their own
+            instance — a lending platform, a freelance marketplace, a co-op
+            management tool, a local classifieds board. If it needs &quot;every
+            user is a real person,&quot; it plugs into the same network. Free for
+            community-serving projects. Revenue-generating services pay a
+            proportional fee back — sustaining the infrastructure without
+            extracting from it.
+          </p>
           <p className="text-zinc-400">
             This isn&apos;t a whitepaper waiting for funding. It&apos;s a codebase
             waiting for contributors.

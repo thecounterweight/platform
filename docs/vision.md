@@ -79,6 +79,35 @@ Each feature exists independently somewhere — affiliate review sites, angel ne
 
 Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest. But it doesn't all ship at once.
 
+## Bigger Than One Platform
+
+The identity layer is open infrastructure. We provide the load-bearing services — verified identity, governance primitives, payment rails. Technically capable people host their own instances and build whatever they need on top.
+
+If your service requires "every user is a provably real, unique human," you plug into this network. No permission needed. No API key from a corporation that can revoke it.
+
+**What becomes possible when identity is open infrastructure:**
+
+- **P2P lending** — real people, real reputations, enforceable contracts
+- **Freelance marketplaces** — portable reputation across instances, no 20% platform cut
+- **Local classifieds** — no scams when every seller is verified and accountable
+- **Co-op management** — legitimate one-person-one-vote for any organization
+- **Mutual aid networks** — pool resources with people who are provably real
+- **Skill exchange** — teach and learn between verified humans
+- **Citizen journalism** — accountable sources, verifiable reporters
+- **Cooperative ownership** — fractional ownership of anything, governed democratically
+- **Whistleblowing** — verified (you're real) but anonymous (we don't reveal who)
+
+Each of these is someone else's project, running on their own server, using the shared identity network. The Counterweight doesn't control them. It just makes them possible by solving the hardest problem they all share: proving their users are real.
+
+**Infrastructure isn't free to run.** Identity verification costs money. Storage costs money. Maintaining the network costs money. So:
+
+- **Community-serving instances** (mutual aid, co-op governance, skill exchange, whistleblowing, non-profits) — free. They strengthen the network. They don't extract from it.
+- **Revenue-generating instances** (freelance marketplaces, lending platforms, commercial classifieds) — pay a percentage of revenue back to the network. Proportional to what they extract. Small enough to never be extractive itself.
+
+The ceiling on that percentage is a constitutional bound — set in the principles, changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically by the community. Same governance pattern as investor caps and revenue splits.
+
+This is what changes for the tech world. Today, every platform must solve identity independently — and most don't bother because surveillance is more profitable than verification. An open, community-owned identity layer removes the excuse. It makes "trust by design" the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables — not from mining its users.
+
 ## What This Is Not
 
 There are no tokens, no NFTs, no speculation. No venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.
