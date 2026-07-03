@@ -16,6 +16,19 @@ The project has four active workstreams. Each is independent enough to build in 
 
 ### Identity
 
+```mermaid
+flowchart LR
+    A[User] --> B[Gov ID API]
+    B --> C[Hash Generated]
+    C --> D[Hash Stored]
+    D --> E{Tier Assigned}
+    E --> F[Verified — full access]
+    E --> G[Vouched — limited]
+    E --> H[Unverified — browse only]
+    A --> I[Face Scan]
+    I -->|high-stakes actions| C
+```
+
 **What's decided:** Three-layer verification (government ID API + face scan for high-stakes + OTP). Non-reversible hash stored — no raw data. Three access tiers (verified/vouched/unverified). User pays verification fee. See [identity-verification.md](docs/identity-verification.md).
 
 **What needs building:**
@@ -30,6 +43,21 @@ The project has four active workstreams. Each is independent enough to build in 
 **Key constraint:** Privacy is non-negotiable. If your design requires storing personal data, it's wrong. Start over.
 
 ### Marketplace
+
+```mermaid
+flowchart LR
+    A[Affiliate APIs] --> B[Product Cache]
+    C[Community Sellers] --> D[Listing]
+    B --> E[Browse / Search]
+    D --> E
+    E --> F[Purchase via affiliate link]
+    F --> G[Commission Pool]
+    H[Verified User] --> I[Review — parameter-based]
+    I --> J[Trust Score]
+    G --> K[Reviewer Paid]
+    J --> K
+    E -->|sort by| L[Aggregate Score — sum of stars]
+```
 
 **What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by aggregate score. Reviewer commission from affiliate revenue. See [mvp.md](docs/mvp.md).
 
@@ -48,6 +76,17 @@ The project has four active workstreams. Each is independent enough to build in 
 
 ### Discussion
 
+```mermaid
+flowchart LR
+    A[Verified User] --> B[Post / Reply]
+    B --> C[Upvote / Downvote]
+    C -->|one person one vote| D[Ranking]
+    B --> E[Community Flags]
+    E -->|threshold reached| F[Mod Queue]
+    F --> G[Moderator Action]
+    G --> H[Public Action Log]
+```
+
 **What's decided:** Threaded discussion boards. Real people only. Moderation via two-flag system (community flags + moderator action). See [mvp.md](docs/mvp.md) moderation section.
 
 **What needs building:**
@@ -63,6 +102,20 @@ The project has four active workstreams. Each is independent enough to build in 
 **Key constraint:** Every action is traceable to a verified human. Anonymous posting is allowed (you choose your display) but the system knows who you are. This makes moderation fundamentally different from Reddit/Twitter.
 
 ### Frontend & Design
+
+```mermaid
+flowchart LR
+    A[Next.js + TypeScript] --> B[PWA Shell]
+    B --> C[Discussion UI]
+    B --> D[Marketplace UI]
+    B --> E[Identity / Verification Flow]
+    B --> F[User Profiles]
+    G[Tailwind + Component Library] --> C
+    G --> D
+    G --> E
+    G --> F
+    H[Target: cheap Android, slow connection]
+```
 
 **What's decided:** Next.js, TypeScript, Tailwind. Mobile-first PWA. Dark theme. Minimal, fast, accessible.
 
