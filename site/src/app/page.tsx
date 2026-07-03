@@ -80,10 +80,9 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">Where we are</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            The system is designed. Identity verification, payments, governance,
+            The system is proposed. Identity verification, payments, governance,
             investment model, marketplace strategy, builder compensation — all
-            documented, reviewed, and internally consistent. Four rounds of
-            critical review. Zero contradictions remaining.
+            documented and internally consistent. Ready to be challenged.
           </p>
           <p className="text-zinc-400">
             What gets built first: identity + discussion boards + marketplace
