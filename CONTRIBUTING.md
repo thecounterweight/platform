@@ -117,7 +117,7 @@ flowchart LR
     H[Target: cheap Android, slow connection]
 ```
 
-**What's decided:** Next.js, TypeScript, Tailwind. Mobile-first PWA. Dark theme. Minimal, fast, accessible.
+**What's decided:** Next.js, TypeScript, Tailwind. Mobile-first PWA. Light theme. Minimal, fast, accessible.
 
 **What needs building:**
 - Mobile-responsive PWA shell
