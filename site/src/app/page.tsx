@@ -51,11 +51,11 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">
-                Governance that&apos;s actually accountable.
+                No permanent authority.
               </strong>{" "}
-              Leaders serve their constituency. Removable via no-confidence
-              (7-day discussion, 60% vote, 30% quorum). Automatic confidence
-              vote every 2 years. No permanent power.
+              Every role with power — moderators, community leads, pool managers —
+              is elected and removable. 60% vote removes anyone, after 7-day
+              discussion. Every role re-confirmed every 2 years.
             </li>
             <li>
               <strong className="text-zinc-100">
