@@ -47,10 +47,18 @@ Community-selected experts independently evaluate and certify products, services
 
 ## How Evaluators Get Paid
 
+**Early stage (before certification revenue flows):**
+
+Evaluators volunteer. They define certification criteria for their field, conduct the first assessments, and build the credibility that makes the system trustworthy. This is how they establish reputation — the community sees who does rigorous, fair evaluations.
+
+**Once certification fees flow:**
+
 - Fixed fee per certification, paid by the person or business requesting it (or sponsored by a company hiring from the talent pool).
 - Rate is transparent and standard within each category.
 - Higher-complexity evaluations (e.g., certifying a manufacturing process vs. certifying a jar of honey) pay proportionally more.
 - For skill certifications, the fee can also be covered by the hiring company as part of their talent pool access fee.
+
+Early evaluators who volunteered when there was no pay built the standards everyone else follows. Their reputation is what makes the system credible.
 
 ## Preventing Corruption
 

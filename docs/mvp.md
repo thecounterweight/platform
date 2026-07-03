@@ -18,8 +18,9 @@ The principle is non-negotiable. The implementation is a proposed design — ope
 
 Threaded discussion boards and group chat. Every participant is verified real.
 
-- Board creators moderate their boards initially
+- Board creators moderate their boards initially (volunteer — builds reputation and trust)
 - As a board's community grows, members elect moderators democratically — simple majority, removable any day
+- Once platform revenue is healthy, elected moderators are paid from operations budget
 - Group chat for real-time coordination within communities
 
 This is the daily engagement layer. People come for the conversations.

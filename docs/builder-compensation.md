@@ -60,11 +60,22 @@ Early risk = early reward.
 - Code (features, bug fixes, infrastructure, tests)
 - Design (UI/UX, branding, user research)
 - Legal work (entity structuring, compliance, contract templates)
-- Community work (moderation, onboarding, support, organizing)
+- Community organizing (onboarding, support, growing communities during the build phase)
 - Content (documentation, tutorials, translations)
-- Evaluation/certification (expert assessments)
 - PR reviews and quality assurance
 - Strategic work (partnerships, fundraising, outreach)
+
+### What Doesn't Earn Builder Units
+
+Some roles create value but aren't platform-building work. They follow a different path:
+
+**Moderators** — Volunteer early. Build reputation and trust through demonstrated good work. Once platform revenue is healthy, the community elects paid moderators from the operations budget (20%). No shortcuts — you earn the role, the community decides who deserves it.
+
+**Evaluators/Certifiers** — Volunteer early to establish credibility and define certification criteria for their field. Once certification fees flow, they're paid per assessment. Early evaluators built the standards everyone else follows.
+
+**Dispute arbitrators** — Same pattern. Volunteer early, demonstrate fairness and judgement. Paid per case from operations budget once revenue supports it.
+
+All these roles are elected, accountable, and removable any day by simple majority. The incentive: volunteer now → build reputation → community elects you → paid position once revenue flows.
 
 ### What Prevents Gaming
 
