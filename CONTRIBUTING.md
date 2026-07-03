@@ -129,7 +129,7 @@ flowchart LR
 
 **Skills needed:** React/Next.js, TypeScript, Tailwind, responsive design, accessibility, UX thinking.
 
-**Key constraint:** This has to work on a cheap Android phone on a slow connection. If it doesn't work there, it doesn't work.
+**Key constraint:** Optimize for low-end Android phones on slow connections. Most of our users will be there.
 
 ## Roles
 
