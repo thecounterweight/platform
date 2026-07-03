@@ -12,6 +12,7 @@ declare global {
 }
 
 export function SignupForm() {
+  const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [role, setRole] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
@@ -41,7 +42,7 @@ export function SignupForm() {
 
   async function handleSubmit(e: React.FormEvent) {
     e.preventDefault();
-    if (!email) return;
+    if (!name) return;
 
     if (!turnstileToken) {
       setStatus("error");
@@ -55,7 +56,8 @@ export function SignupForm() {
         method: "POST",
         headers: { "Content-Type": "application/json" },
         body: JSON.stringify({
-          email,
+          name,
+          email: email || null,
           role,
           token: turnstileToken,
           loadedAt: formLoadedAt,
@@ -65,7 +67,8 @@ export function SignupForm() {
 
       if (res.ok) {
         setStatus("success");
-        setMessage("You're in. We'll be in touch.");
+        setMessage("You're in. Welcome to The Counterweight.");
+        setName("");
         setEmail("");
         setRole("");
       } else {
@@ -95,15 +98,26 @@ export function SignupForm() {
   return (
     <form onSubmit={handleSubmit} className="space-y-4">
       <div>
-        <label htmlFor="signup-email" className="sr-only">Email address</label>
+        <label htmlFor="signup-name" className="sr-only">Your name</label>
+        <input
+          id="signup-name"
+          type="text"
+          value={name}
+          onChange={(e) => setName(e.target.value)}
+          placeholder="Your name"
+          required
+          aria-required="true"
+          className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-zinc-600"
+        />
+      </div>
+      <div>
+        <label htmlFor="signup-email" className="sr-only">Email (optional)</label>
         <input
           id="signup-email"
           type="email"
           value={email}
           onChange={(e) => setEmail(e.target.value)}
-          placeholder="Your email"
-          required
-          aria-required="true"
+          placeholder="Email (optional — for launch updates only)"
           className="w-full px-4 py-3 bg-zinc-900 border border-zinc-800 rounded-lg text-zinc-100 placeholder-zinc-500 focus:outline-none focus:border-zinc-600"
         />
       </div>
@@ -140,7 +154,7 @@ export function SignupForm() {
         disabled={status === "loading"}
         className="w-full px-4 py-3 bg-white text-zinc-950 font-semibold rounded-lg hover:bg-zinc-200 transition-colors disabled:opacity-50"
       >
-        {status === "loading" ? "..." : "Join The Counterweight"}
+        {status === "loading" ? "..." : "I'm in"}
       </button>
       {status === "error" && (
         <p className="text-red-400 text-sm">{message}</p>

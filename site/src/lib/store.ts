@@ -13,20 +13,24 @@ function getRedis(): Redis {
 }
 
 export interface Signup {
-  email: string;
+  name: string;
+  email: string | null;
   role: string;
   timestamp: string;
 }
 
-export async function addSignup(email: string, role: string): Promise<boolean> {
+export async function addSignup(name: string, email: string | null, role: string): Promise<boolean> {
   const redis = getRedis();
-  const exists = await redis.sismember("signup_emails", email);
+
+  // Deduplicate by email if provided, otherwise by normalized name
+  const dedupeKey = email || name.toLowerCase();
+  const exists = await redis.sismember("signup_ids", dedupeKey);
   if (exists) return false;
 
-  await redis.sadd("signup_emails", email);
+  await redis.sadd("signup_ids", dedupeKey);
   await redis.lpush(
     "signups",
-    JSON.stringify({ email, role, timestamp: new Date().toISOString() })
+    JSON.stringify({ name, email, role, timestamp: new Date().toISOString() })
   );
   await redis.incr("signup_count");
   return true;

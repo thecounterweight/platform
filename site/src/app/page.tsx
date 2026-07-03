@@ -12,199 +12,168 @@ export default function Home() {
         <p className="mt-4 text-lg md:text-xl text-zinc-500 italic">
           Just a pebble trying to start an avalanche.
         </p>
-        <p className="mt-6 text-xl md:text-2xl text-zinc-400 max-w-2xl">
-          The world is tilted. Money, power, voice — it all flows one direction.
-          We&apos;re the weight on the other side.
+        <p className="mt-6 text-xl md:text-2xl text-zinc-300 max-w-2xl">
+          Publicly owned infrastructure. Community-governed. Open-source.
+          No billionaire owners. No VC. No ads. No data mining.
         </p>
         <Counter />
       </section>
 
-      {/* What this is */}
+      {/* What makes this different */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What we&apos;re building</h2>
+        <h2 className="text-2xl font-bold mb-6">What makes this different</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            A platform and a movement. Owned by its users. Not by shareholders.
-            Not by advertisers. By the people on it.
+            One verified identity connects everything. Every person on the platform
+            is a real, unique human — no bots, no duplicates, no manipulation.
+            That single fact makes trusted reviews possible, makes democratic
+            governance real, makes investment accountable, and makes moderation
+            effective.
+          </p>
+          <p>
+            Your data is your sovereignty. Not ours to sell. Not ours to mine.
+            Not ours to hand to governments or advertisers.
+            We store the minimum needed to prove you&apos;re real — then nothing else
+            belongs to us.
           </p>
           <ul className="space-y-3 list-none">
             <li>
-              <strong className="text-zinc-100">Every person is real.</strong>{" "}
-              One human, one account. No bots. No fake reviews. No manipulation.
-              How we verify this without surveillance is one of the first
-              problems we&apos;re solving together.
-            </li>
-            <li>
-              <strong className="text-zinc-100">Your data stays yours.</strong>{" "}
-              No ads. No tracking. No selling to third parties. Ever.
+              <strong className="text-zinc-100">Verified identity without surveillance.</strong>{" "}
+              Government ID APIs prove you&apos;re real. We store a non-reversible hash — not your data.
+              One person, one account. Privacy preserved.
             </li>
             <li>
               <strong className="text-zinc-100">
-                Democratic governance at every level.
+                Reviews you can trust.
               </strong>{" "}
-              Platform moderators, movement leaders, investment pool managers — all elected,
-              all removable via no-confidence (7-day discussion + 60% vote).
+              Every reviewer is a verified human with proof of purchase.
+              Ranked by accuracy, not by who paid for placement.
             </li>
             <li>
               <strong className="text-zinc-100">
-                Fair voting.
+                Governance that&apos;s actually accountable.
               </strong>{" "}
-              One person, one vote on governance and leadership. Investment
-              decisions weighted by stake — your money, your proportional say.
+              Leaders serve their constituency. Removable via no-confidence
+              (7-day discussion, 60% vote, 30% quorum). Automatic confidence
+              vote every 2 years. No permanent power.
             </li>
             <li>
               <strong className="text-zinc-100">
-                Built-in translation.
+                Builders get paid.
               </strong>{" "}
-              Language should never be a barrier to participation.
+              Every contribution tracked on a public ledger. When revenue flows,
+              it flows back to the people who built this — proportional to what they contributed.
             </li>
             <li>
               <strong className="text-zinc-100">
-                Discussion, chat, and video meetings.
+                Investment without extraction.
               </strong>{" "}
-              Threaded discussions. Group chat. Video calls for coordination.
-              No need for five separate apps.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                Communities invest together.
-              </strong>{" "}
-              Pool money. Fund local businesses. Returns flow back. The community
-              grows stronger.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                Collective purchasing power.
-              </strong>{" "}
-              Small shops buy direct from manufacturers at bulk prices. The same
-              power big chains have — without losing independence.
-            </li>
-            <li>
-              <strong className="text-zinc-100">
-                A marketplace without middlemen.
-              </strong>{" "}
-              Products from major platforms + community sellers listing free. Reviews from verified humans only.
-              Community experts certify quality. No fake reviews. No bots.
+              Communities back businesses via signed contracts between named individuals.
+              Revenue share or equity. The platform facilitates — it doesn&apos;t manage your money.
             </li>
           </ul>
         </div>
       </section>
 
+      {/* What exists now */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-6">Where we are</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            The system is designed. Identity verification, payments, governance,
+            investment model, marketplace strategy, builder compensation — all
+            documented, reviewed, and internally consistent. Four rounds of
+            critical review. Zero contradictions remaining.
+          </p>
+          <p className="text-zinc-400">
+            What gets built first: identity + discussion boards + marketplace
+            (aggregated products from existing platforms + community sellers +
+            verified reviews). Revenue from day one via affiliate commissions.
+            No VC needed to survive.
+          </p>
+        </div>
+      </section>
+
       {/* Read more tiles */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Read more</h2>
+        <h2 className="text-2xl font-bold mb-6">Go deeper</h2>
         <div className="grid md:grid-cols-3 gap-4">
-          <a href="/docs/vision" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">Full Vision</h3>
-            <p className="text-sm text-zinc-400 mt-1">The complete picture — platform, marketplace, movement.</p>
+          <a href="/docs/overview" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Start Here</h3>
+            <p className="text-sm text-zinc-400 mt-1">One-page overview of the entire system.</p>
           </a>
           <a href="/docs/mvp" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">What&apos;s First</h3>
-            <p className="text-sm text-zinc-400 mt-1">The MVP — what we build before anything else.</p>
+            <h3 className="font-semibold text-zinc-100">The MVP</h3>
+            <p className="text-sm text-zinc-400 mt-1">What we build first and why.</p>
           </a>
           <a href="/docs/builder-compensation" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Get Paid</h3>
-            <p className="text-sm text-zinc-400 mt-1">How builders earn from day one. Early risk, early reward.</p>
+            <p className="text-sm text-zinc-400 mt-1">How builders earn. Early risk, early reward.</p>
           </a>
           <a href="/docs/investment-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Invest Together</h3>
-            <p className="text-sm text-zinc-400 mt-1">Communities pool capital, fund businesses, share returns.</p>
+            <p className="text-sm text-zinc-400 mt-1">Communities back businesses via contracts.</p>
           </a>
           <a href="/docs/funding-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Funding</h3>
-            <p className="text-sm text-zinc-400 mt-1">How we raise capital. No VC. Terms decided democratically.</p>
+            <p className="text-sm text-zinc-400 mt-1">No VC. Terms decided democratically.</p>
           </a>
-          <a href="/docs/community-certification" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">Certification</h3>
-            <p className="text-sm text-zinc-400 mt-1">Real experts verify quality. No fake reviews. No pay-to-rank.</p>
+          <a href="/docs/principles" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Principles</h3>
+            <p className="text-sm text-zinc-400 mt-1">What we believe. What doesn&apos;t move.</p>
           </a>
         </div>
       </section>
 
-      {/* How to help */}
+      {/* CTAs for different people */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What we need</h2>
-        <div className="grid md:grid-cols-2 gap-4 text-zinc-300">
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Engineers</h3>
-            <p className="text-sm mt-1">
-              Backend, frontend, mobile, security, infrastructure. Hard problems
-              worth solving.
+        <h2 className="text-2xl font-bold mb-6">Get involved</h2>
+        <div className="grid md:grid-cols-3 gap-4">
+          <div className="border border-zinc-800 rounded-lg p-5">
+            <h3 className="font-semibold text-zinc-100">Build</h3>
+            <p className="text-sm text-zinc-400 mt-2">
+              Pick an issue. Ship code. Earn units from day one.
             </p>
+            <a
+              href="https://github.com/thecounterweight/platform/issues"
+              className="inline-block mt-3 text-sm text-zinc-100 underline hover:text-white"
+            >
+              Browse open issues
+            </a>
           </div>
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Designers</h3>
-            <p className="text-sm mt-1">
-              UX/UI, product thinking. Make something complex feel simple.
+          <div className="border border-zinc-800 rounded-lg p-5">
+            <h3 className="font-semibold text-zinc-100">Invest</h3>
+            <p className="text-sm text-zinc-400 mt-2">
+              Any amount. Recorded permanently. Terms decided together.
             </p>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Lawyers</h3>
-            <p className="text-sm mt-1">
-              Securities, cooperatives, data protection. Any jurisdiction.
-            </p>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Economists</h3>
-            <p className="text-sm mt-1">
-              Investment models, risk analysis, sustainability.
-            </p>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Trust & Safety</h3>
-            <p className="text-sm mt-1">
-              Moderation design, abuse prevention. Build safety without
-              surveillance.
-            </p>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-4">
-            <h3 className="font-semibold text-zinc-100">Everyone else</h3>
-            <p className="text-sm mt-1">
-              If you know what&apos;s broken because you live it — your
-              perspective matters most.
-            </p>
-          </div>
-        </div>
-        <p className="mt-6 text-zinc-400">
-          Every contribution is tracked publicly. When revenue flows,
-          contributors get paid proportionally.{" "}
-          <a
-            href="/docs/builder-compensation"
-            className="text-zinc-100 underline hover:text-white"
-          >
-            See how it works.
-          </a>
-        </p>
-      </section>
-
-      {/* Funding */}
-      <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">How we fund this</h2>
-        <div className="space-y-4 text-zinc-300 text-lg">
-          <p>
-            No venture capital. No equity. Investors get a time-bounded share of
-            platform revenue — then it ends. The platform stays community-owned.
-          </p>
-          <p>
-            Terms are decided democratically. Investors vote as one block, users
-            vote as another. Both must agree by supermajority. Neither side can
-            override the other.
-          </p>
-          <p className="text-zinc-400">
-            Total investor revenue share is capped at 30% (early stage) to 40% (at scale). Non-negotiable.{" "}
             <a
               href="/docs/funding-model"
-              className="text-zinc-100 underline hover:text-white"
+              className="inline-block mt-3 text-sm text-zinc-100 underline hover:text-white"
             >
-              Full funding model.
+              Read the funding model
             </a>
-          </p>
+          </div>
+          <div className="border border-zinc-800 rounded-lg p-5">
+            <h3 className="font-semibold text-zinc-100">Join the conversation</h3>
+            <p className="text-sm text-zinc-400 mt-2">
+              Ask questions. Poke holes. Shape the design.
+            </p>
+            <a
+              href="https://github.com/thecounterweight/platform/discussions"
+              className="inline-block mt-3 text-sm text-zinc-100 underline hover:text-white"
+            >
+              GitHub Discussions
+            </a>
+          </div>
         </div>
       </section>
 
-      {/* Signup */}
+      {/* I'm in */}
       <section className="max-w-3xl mx-auto px-6 py-16 w-full">
-        <h2 className="text-2xl font-bold mb-6">Join us</h2>
+        <h2 className="text-2xl font-bold mb-2">I&apos;m in</h2>
+        <p className="text-zinc-400 mb-6">
+          Leave your name to show support. Email is optional — only used for launch updates, never shared.
+        </p>
         <SignupForm />
       </section>
 
@@ -212,10 +181,11 @@ export default function Home() {
       <footer className="max-w-3xl mx-auto px-6 py-12 w-full border-t border-zinc-800">
         <div className="flex flex-wrap gap-6 text-sm text-zinc-500">
           <a href="/docs/principles" className="hover:text-zinc-300 transition-colors">Principles</a>
-          <a href="/docs/vision" className="hover:text-zinc-300 transition-colors">Vision</a>
+          <a href="/docs/overview" className="hover:text-zinc-300 transition-colors">Overview</a>
           <a href="/docs/mvp" className="hover:text-zinc-300 transition-colors">MVP</a>
           <a href="/docs/builder-compensation" className="hover:text-zinc-300 transition-colors">Builder Compensation</a>
           <a href="/docs/funding-model" className="hover:text-zinc-300 transition-colors">Funding Model</a>
+          <a href="https://github.com/thecounterweight/platform" className="hover:text-zinc-300 transition-colors">GitHub</a>
         </div>
         <p className="mt-4 text-sm text-zinc-600">
           Open-source. AGPL-3.0. Fork it, improve it, make it yours.

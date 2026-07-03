@@ -44,7 +44,7 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Forbidden" }, { status: 403 });
     }
 
-    const { email, role, token, loadedAt, website } = await request.json();
+    const { name, email, role, token, loadedAt, website } = await request.json();
 
     // Honeypot check — if the hidden field is filled, it's a bot
     if (website) {
@@ -62,18 +62,27 @@ export async function POST(request: NextRequest) {
       return NextResponse.json({ error: "Verification failed. Please try again." }, { status: 403 });
     }
 
-    if (!email || typeof email !== "string") {
-      return NextResponse.json({ error: "Email is required" }, { status: 400 });
+    if (!name || typeof name !== "string" || name.trim().length === 0) {
+      return NextResponse.json({ error: "Name is required" }, { status: 400 });
     }
 
-    const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
-    if (!emailRegex.test(email) || email.length > 254) {
-      return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+    if (name.length > 100) {
+      return NextResponse.json({ error: "Name too long" }, { status: 400 });
+    }
+
+    // Email is optional but must be valid if provided
+    let sanitizedEmail: string | null = null;
+    if (email && typeof email === "string" && email.trim().length > 0) {
+      const emailRegex = /^[a-zA-Z0-9._%+-]+@[a-zA-Z0-9.-]+\.[a-zA-Z]{2,}$/;
+      if (!emailRegex.test(email) || email.length > 254) {
+        return NextResponse.json({ error: "Invalid email" }, { status: 400 });
+      }
+      sanitizedEmail = email.toLowerCase().trim();
     }
 
     const sanitizedRole = VALID_ROLES.includes(role) ? role : "";
 
-    const added = await addSignup(email.toLowerCase().trim(), sanitizedRole);
+    const added = await addSignup(name.trim(), sanitizedEmail, sanitizedRole);
 
     if (!added) {
       return NextResponse.json(
