@@ -211,6 +211,12 @@ export default function Home() {
         <p className="mt-4 text-sm text-zinc-600">
           Open-source. AGPL-3.0. Fork it, improve it, make it yours.
         </p>
+        <p className="mt-2 text-sm text-zinc-600">
+          Permanently archived at{" "}
+          <a href="https://web.archive.org/web/*/thecounterweight.org" className="hover:text-zinc-300 transition-colors underline">archive.org</a>
+          {" "}and{" "}
+          <a href="https://archive.softwareheritage.org/browse/origin/?origin_url=https://github.com/thecounterweight/platform" className="hover:text-zinc-300 transition-colors underline">Software Heritage</a>.
+        </p>
       </footer>
     </div>
   );
