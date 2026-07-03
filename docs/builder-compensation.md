@@ -42,22 +42,24 @@ Operations can draw additional funds from community reinvestment if needed, with
 
 **Why these thresholds:**
 
-Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 60% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 60%. Once investors negotiate a share (capped at 40% of the pool), builders still get the majority — at minimum 36% of total revenue (60% × 60%). The higher operations budget (30%) at this stage reflects the reality that compliance, infrastructure, and security cost more relative to revenue when you're still scaling. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
+Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 60% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 60%. Once investors negotiate a share (capped at 30% of total revenue at this tier), builders still get at least 30% of total revenue. The higher operations budget (30%) at this stage reflects the reality that compliance, infrastructure, and security cost more relative to revenue when you're still scaling. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
 
 Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
 
 **Within the builders + investors share:**
 
-| Phase | Builders | Investors |
-|-------|----------|-----------|
-| Pre-investor (early revenue) | 100% of the pool | 0% |
-| Active investor deal (e.g., 30% negotiated) | 70% of the pool | 30% of the pool |
-| Active investor deal (max cap) | 60% of the pool | 40% of the pool |
-| After investor agreements expire | 100% of the pool | 0% |
+| Phase | Builders | Investors | Investor cap (of total revenue) |
+|-------|----------|-----------|-------------------------------|
+| Pre-investor (early revenue) | 100% of the pool | 0% | 0% |
+| Under $20M (active investor deal) | Min 50% of pool | Max 50% of pool | Max 30% of total revenue |
+| $20M+ (active investor deal) | Min 60% of pool | Max 40% of pool | Max 40% of total revenue |
+| After investor agreements expire | 100% of the pool | 0% | 0% |
 
 Builders get paid first — from the earliest revenue. When investors come in (via the bicameral voting process described in the funding model), they share from the same pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
 
-The investor share is never more than 40% of the builders+investors pool. That's the hard cap, non-negotiable.
+**Investor caps scale with revenue:**
+- Under $20M: investors can take up to 50% of the pool, but never more than 30% of total revenue. This ensures builders always get at least 30% of total revenue at the early stage.
+- $20M+: investors can take up to 40% of the pool, capped at 40% of total revenue. At this stage the platform is proven and can attract capital on tighter terms for investors.
 
 **Community reinvestment funds:**
 - Subsidized identity verification for low-income users
@@ -158,7 +160,7 @@ All assignments are public and challengeable for 14 days. If challenged, peer vo
 
 In the early days, there's no cash. Your work is recorded from day one. The moment revenue starts flowing, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.
 
-Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 20% first. The remaining 70% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
+Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 30% first (at the under-$20M tier). The remaining 60% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
 
 This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
 

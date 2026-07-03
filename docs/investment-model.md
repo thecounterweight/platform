@@ -45,7 +45,7 @@ No idle cash reserve. All capital goes to work.
 
 **Secondary market reality:** This is illiquid investment. There is no guarantee of an immediate buyer. The platform provides tools to help — price discovery (list and lower until someone bites), new member matching (people joining the community are natural buyers), and fractional positions (split a large position into smaller affordable pieces). But this is investing in real businesses, not trading public stocks. If you need money you can't afford to lock up, don't invest it. The platform does not guarantee buybacks or create artificial liquidity.
 
-These percentages are a suggested framework. Communities can adjust within bands based on their needs.
+These percentages are a suggested framework. Communities can adjust based on their needs. There is no hard band — but all allocation decisions are public, auditable, and comparable across communities. If one community charges 30% operations and another charges 3%, every member can see the difference and choose accordingly. Transparency is the guardrail.
 
 **Note:** This is the allocation of member investment contributions — money people put into community-backed businesses. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a graduated split that shifts toward community reinvestment as revenue grows. See [Builder Compensation](builder-compensation.md) for the full breakdown.
 

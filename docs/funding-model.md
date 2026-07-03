@@ -142,7 +142,9 @@ Spending is transparent and publicly auditable. The community can see where ever
 - Equity or ownership
 - Permanent revenue share
 - Governance power over non-financial decisions
-- The ability to sell or transfer their revenue-share position (prevents speculation)
+- The ability to sell or transfer their platform revenue-share position (prevents speculation on the platform's revenue stream)
+
+**Note:** This applies to platform investors (people investing in the platform itself). It does NOT apply to community business investments (people backing a bakery or startup) — those positions can be sold to other members via the secondary market described in the [Investment Model](investment-model.md).
 
 ## Why This Is Fair
 
@@ -152,9 +154,16 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 ## Revenue Share Ceiling
 
-Total revenue share across all active rounds can never exceed 40% of platform revenue at any point in time. This is a hard cap — non-negotiable, not subject to vote.
+Investor share is capped at two levels:
 
-If existing rounds already consume 35% and a new round wants 15%, it doesn't happen. The platform's ability to operate, pay builders, and fund community programs is protected.
+| Revenue tier | Max investor share (of total revenue) |
+|---|---|
+| Under $20M | 30% |
+| $20M+ | 40% |
+
+These are hard caps — non-negotiable, not subject to vote.
+
+If existing rounds already consume the cap and a new round wants more, it doesn't happen. The platform's ability to operate, pay builders, and fund community programs is protected. Builders always retain the majority of the builders+investors pool.
 
 ## Open Questions
 

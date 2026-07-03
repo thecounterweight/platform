@@ -34,7 +34,11 @@ You can export everything we know about you. You can delete it permanently. Gone
 
 Anyone in a position of responsibility is there because the people below them chose them. The moment those people change their mind, the leader steps down.
 
-No term limits. No-confidence motion filed, 7-day discussion period, then a vote. 60% majority removes. This isn't bureaucracy — it's preventing mob-driven instability while keeping leaders genuinely accountable. A leader who has lost the trust of 60% of their community is gone within a week. A leader facing a temporary controversy gets 7 days for the facts to come out.
+No term limits. No-confidence motion filed, 7-day discussion period, then a vote. 60% majority removes. Only the constituency the leader serves can vote (board moderator → board members, platform-wide leader → all verified users, pool manager → pool members). Minimum 30% of the constituency must participate for the vote to be valid.
+
+Every 2 years, leaders face an automatic confidence vote — no motion needed. If they fail (less than 50% confidence with 30% quorum), a new election is triggered. This prevents apathy-based permanence without forcing out leaders who still have genuine support.
+
+This isn't bureaucracy — it's preventing mob-driven instability while keeping leaders genuinely accountable. A leader who has lost the trust of 60% of their community is gone within a week. A leader facing a temporary controversy gets 7 days for the facts to come out.
 
 During the 7-day period, the leader continues routine operations but cannot make irreversible decisions — no appointments, no rule changes, no removals, no financial decisions above routine thresholds. This prevents damage without fully paralyzing operations.
 
@@ -80,4 +84,4 @@ The best ideas will come from people we haven't met yet.
 
 ---
 
-*This document is version 0.1. Amendments require a supermajority of active members. They are hard to change on purpose.*
+*This document is version 0.1. Amendments require 75% approval with at least 30% of all verified members participating. They are hard to change on purpose.*
