@@ -27,27 +27,40 @@ Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue f
 
 ### Revenue Split
 
-When the platform generates revenue (transaction fees, certification fees, talent pool access fees):
+When the platform generates revenue (transaction fees, certification fees, talent pool access fees, affiliate commissions):
 
-**Fixed costs (always):**
+**The split changes as the platform grows:**
 
-| Allocation | Share |
-|-----------|-------|
-| Operations (hosting, security, legal, compliance) | 20% |
-| Reserve (runway, emergencies) | 10% |
+| Annual revenue | Builders + Investors | Operations | Community reinvestment |
+|---------------|---------------------|------------|----------------------|
+| Under $5M | 70% | 20% | 10% (reserve) |
+| $5M - $50M | 60% | 20% | 20% |
+| $50M - $500M | 45% | 20% | 35% |
+| $500M+ | Community votes on the split at this threshold |
 
-**The remaining 70% splits between builders and investors:**
+At early stages, the majority flows to the people who built the platform and the investors who funded it — they took real risk. As the platform matures, more flows to community reinvestment: subsidizing verification fees, grants for community businesses, infrastructure in underserved regions, reducing costs for users.
+
+Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
+
+**Within the builders + investors share:**
 
 | Phase | Builders | Investors |
 |-------|----------|-----------|
-| Pre-investor (early revenue) | 70% | 0% |
-| Active investor deal (e.g., 30% negotiated) | 40% | 30% |
-| Active investor deal (max cap) | 30% | 40% |
-| After investor agreements expire | 70% | 0% |
+| Pre-investor (early revenue) | 100% of the pool | 0% |
+| Active investor deal (e.g., 30% negotiated) | 70% of the pool | 30% of the pool |
+| Active investor deal (max cap) | 60% of the pool | 40% of the pool |
+| After investor agreements expire | 100% of the pool | 0% |
 
-Builders get paid first — from the earliest revenue. When investors come in (via the bicameral voting process described in the funding model), they share from the same 70% pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
+Builders get paid first — from the earliest revenue. When investors come in (via the bicameral voting process described in the funding model), they share from the same pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
 
-The investor share is never more than 40% of total revenue. That's the hard cap, non-negotiable.
+The investor share is never more than 40% of the builders+investors pool. That's the hard cap, non-negotiable.
+
+**Community reinvestment funds:**
+- Subsidized identity verification for low-income users
+- Grants for community-backed businesses
+- Infrastructure expansion to underserved regions
+- Reducing fees and costs across the board
+- Open-source development of adjacent tools
 
 ### Early Contributor Advantage
 
