@@ -41,10 +41,13 @@ export default async function DocPage({ params }: Props) {
         <ReactMarkdown
           remarkPlugins={[remarkGfm]}
           components={{
-            img: ({ src, alt, ...props }) => {
+            img: ({ src, alt }) => {
               const srcStr = typeof src === "string" ? src : "";
               const resolvedSrc = srcStr.startsWith("assets/") ? `/docs/${srcStr}` : srcStr;
-              return <img src={resolvedSrc} alt={alt || ""} className="w-full h-auto rounded-lg border border-zinc-700" {...props} />;
+              if (srcStr.endsWith(".svg")) {
+                return <object data={resolvedSrc} type="image/svg+xml" className="w-full h-auto rounded-lg border border-zinc-700" aria-label={alt || ""}>{alt}</object>;
+              }
+              return <img src={resolvedSrc} alt={alt || ""} className="w-full h-auto rounded-lg border border-zinc-700" />;
             },
           }}
         >{content}</ReactMarkdown>
