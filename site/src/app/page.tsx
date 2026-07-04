@@ -57,7 +57,7 @@ export default function Home() {
             </li>
             <li>
               <strong className="text-zinc-100">Governance becomes real.</strong>{" "}
-              Every role with power — moderators, community leads, workstream coordinators —
+              Every role with power — moderators, community leads, project leads —
               is elected by real people and removable by them. 60% vote, 7-day
               discussion. Re-confirmed every 2 years. No permanent authority.
             </li>

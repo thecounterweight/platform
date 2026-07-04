@@ -58,7 +58,7 @@ When every reviewer is a verified unique human with proof of purchase — the dy
 
 Every platform has governance. Right now, that governance is a handful of stakeholders making decisions for billions of users — it's just not democratic. Democratic governance on the internet has been extremely difficult because of Sybil attacks. One person creates a thousand accounts and outvotes everyone.
 
-When every account is one verified human, real democratic decisions become possible. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, workstream coordinators — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
+When every account is one verified human, real democratic decisions become possible. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, project leads — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
 
 ### Moderation actually works.
 
