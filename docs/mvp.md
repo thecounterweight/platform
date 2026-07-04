@@ -107,7 +107,7 @@ Companies pay a fee to access pre-vetted, expert-certified professionals.
 
 **How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
 
-This is the strongest early revenue source. Companies currently pay recruiters 15-25% of annual salary. We offer the same vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
+This is likely the strongest early revenue source. Companies currently pay recruiters 15-25% of annual salary. The goal is to offer comparable vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
 
 ## What's NOT in the MVP
 

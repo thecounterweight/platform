@@ -2,7 +2,7 @@
 
 Small businesses can't compete on price with big chains. Walmart, Reliance, Amazon — they buy direct from manufacturers at massive bulk discounts. A small shopkeeper buys through distributors at 2-3x the price. This is the single biggest structural disadvantage small retail faces.
 
-We fix it.
+This is designed to address it.
 
 ## How It Works
 
@@ -16,7 +16,7 @@ We fix it.
 
 Shopkeepers get products at near-manufacturer prices. They keep their independence. They keep their customer relationships. They keep their shops.
 
-Big chains lose their only structural advantage: buying power.
+Big chains lose one of their key structural advantages: buying power.
 
 ## Revenue
 
@@ -49,4 +49,4 @@ This feature activates once the platform has enough participants in overlapping 
 
 This is one of the most tangible, immediately valuable things the platform can offer. The moment a shopkeeper saves 15-20% on their inventory costs, the platform has proven its value in hard cash. That's not abstract. That's rent money. That's the difference between surviving and closing.
 
-And once they're saving money through the platform, they're not leaving. Collective purchasing creates real, defensible retention.
+And once they're saving money through the platform, there's a strong reason to stay. Collective purchasing could create real, defensible retention.

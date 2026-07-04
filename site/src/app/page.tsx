@@ -26,13 +26,12 @@ export default function Home() {
           <p>
             Every platform you use is owned by someone who profits from your attention,
             your data, or both. Reviews are fake. Moderation is arbitrary. Governance
-            is whatever the founder decides today. You are the product — and you have
-            no recourse.
+            is whatever the founder decides today. You are the product — and your options are limited.
           </p>
           <p>
             This isn&apos;t fixable with better policies or nicer executives. The
             incentive structure is the problem. If the platform is owned by capital,
-            it will serve capital. Always.
+            its incentives will serve capital.
           </p>
         </div>
       </section>
@@ -109,8 +108,7 @@ export default function Home() {
             extracting from it.
           </p>
           <p className="text-zinc-400">
-            This isn&apos;t a whitepaper waiting for funding. It&apos;s a codebase
-            waiting for contributors.
+            This isn&apos;t a whitepaper waiting for funding. It&apos;s a scaffold and documentation waiting for contributors to build it.
           </p>
         </div>
       </section>

@@ -1,6 +1,6 @@
 # Investment Model
 
-This is how the community economics work. It's the engine that makes everything sustainable.
+This is how the community economics are designed to work. It's intended to be the engine that makes everything sustainable.
 
 **What is a "community" here?** Any group of verified people who choose to pool resources together. It could be geographic (people in your city), professional (engineers, doctors, graduates), interest-based (sustainability, education), or global (investors connected across countries who share values). The platform doesn't define what a community is — people do.
 

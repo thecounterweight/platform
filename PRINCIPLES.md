@@ -60,7 +60,7 @@ Fairly, transparently, and accessibly. Elected mediators. Structured process. Ch
 
 This platform will not be used to traffic humans. Will not shelter predators. Will not enable violence. Will not facilitate money laundering. Will not be a marketplace for contraband.
 
-Those lines don't move. They're not subject to community vote. They are the ground we stand on.
+Those lines don't move. They're not subject to community vote. They are foundational constraints.
 
 How we enforce them without becoming a surveillance machine — that's a design problem we solve together. But the lines themselves are fixed.
 

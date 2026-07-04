@@ -14,7 +14,7 @@ For hiring, you trust:
 - LinkedIn endorsements that mean nothing
 - Keyword-matching algorithms that miss good people
 
-There's no reliable, independent quality signal anywhere.
+There's no widely accessible, independent quality signal for most online purchases and hiring decisions.
 
 ## The Solution
 

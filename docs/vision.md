@@ -2,13 +2,13 @@
 
 ## The Problem
 
-The platforms we rely on are broken.
+The platforms we rely on are structurally misaligned with our interests.
 
-Social media decides what you think. Shopping platforms bury small sellers and push you toward whoever pays for visibility. Middleman platforms take massive cuts for connecting a buyer to a seller. A handful of billionaires control all of it — what you see, what you pay, who gets a voice, who gets buried.
+Social media decides what you think. Shopping platforms bury small sellers and push you toward whoever pays for visibility. Middleman platforms take massive cuts for connecting a buyer to a seller. A handful of corporations control most of it — what you see, what you pay, who gets visibility.
 
 You can't trust a review, a comment, or a trending topic — because you never know what's real and what's a bot farm.
 
-The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by people who profit from keeping us divided.
+The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by entities whose profit incentives don't align with our collective wellbeing.
 
 ## What We're Building
 
@@ -42,7 +42,7 @@ Not ads shoved in your face. A dedicated space you enter when YOU want to buy or
 What becomes possible when millions of verified real people have transparent money and democratic governance on the same platform:
 
 - **Community investment.** Pool money. Back businesses vetted by the community — local or global. Revenue share flows back. The community funds more businesses. Flywheel.
-- **Political power.** 5,000 organized, engaged people in a city who vote together on local issues are a serious voting block. Politicians come to you.
+- **Political power.** 5,000 organized, engaged people in a city who vote together on local issues are a serious voting block. Politicians have a reason to engage with you.
 - **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them. No waiting for the next election cycle — but enough friction to prevent mob-driven instability.
 
 ## How It Grows
@@ -106,7 +106,7 @@ Each of these is someone else's project, running on their own server, using the 
 
 The ceiling on that percentage is a constitutional bound — set in the principles, changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically by the community. Same governance pattern as investor caps and revenue splits.
 
-This is what changes for the tech world. Today, every platform must solve identity independently — and most don't bother because surveillance is more profitable than verification. An open, community-owned identity layer removes the excuse. It makes "trust by design" the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables — not from mining its users.
+This is what could change for the tech world. Today, every platform must solve identity independently — and most don't bother because surveillance is more profitable than verification. An open, community-owned identity layer provides an alternative path. It could make "trust by design" the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables — not from mining its users.
 
 ## What This Is Not
 

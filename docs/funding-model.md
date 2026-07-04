@@ -148,7 +148,7 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 **Note:** This applies to platform investors (people investing in the platform itself). It does NOT apply to community business investments (people backing a bakery or startup) — those positions can be sold to other members via the secondary market described in the [Investment Model](investment-model.md).
 
-## Why This Is Fair
+## Why We Believe This Is Fair
 
 - **For investors**: real returns tied to real revenue. Higher risk rounds get better terms. Democratic say in the terms themselves.
 - **For users**: the platform stays community-owned. No permanent extraction. Users have equal blocking power on any deal that's too generous to investors.

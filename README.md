@@ -2,7 +2,7 @@
 
 Publicly owned infrastructure. Community-governed. Open-source. No billionaire owners. No VC. No ads. No data mining.
 
-**One architectural decision — every user is a verified, unique human — makes trusted reviews, democratic governance, accountable investment, and fair compensation possible.**
+**One architectural decision — every user is a verified, unique human — could enable trusted reviews, democratic governance, accountable investment, and fair compensation.**
 
 → [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/overview.md)
 
@@ -10,7 +10,7 @@ Publicly owned infrastructure. Community-governed. Open-source. No billionaire o
 
 A platform where identity verification is open infrastructure. Anyone can build on it — freelance marketplaces, lending platforms, co-op tools, local classifieds. If it needs "every user is a real person," it plugs into this network.
 
-We build the load-bearing layer. The ecosystem builds everything else.
+We're building the load-bearing layer. The ecosystem builds everything else.
 
 ## Start Here
 

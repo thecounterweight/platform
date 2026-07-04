@@ -1,6 +1,6 @@
 # Builder Compensation
 
-Every contribution is an investment of your skills. You will be compensated.
+Every contribution is an investment of your skills. If revenue flows, you will be compensated.
 
 ## How It Works
 
@@ -162,7 +162,7 @@ In the early days, there's no cash. Your work is recorded from day one. The mome
 
 Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 30% first (at the under-$20M tier). The remaining 60% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
 
-This isn't a promise that can be broken later. It's structural — written into the platform's constitution and enforced by the open-source code itself.
+This is designed to be structural — written into the platform's constitution and enforced by the open-source code itself.
 
 ### How the Ledger Works
 
