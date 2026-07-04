@@ -50,7 +50,7 @@ No ads. No data selling. No VC demanding growth at all costs.
 
 **Early stage:** Before revenue is healthy enough to support the full split, operations takes priority. Early revenue keeps infrastructure running and contributors retained. The full split activates once monthly revenue consistently covers operating costs with margin.
 
-The split changes as the platform grows — these are rules, not projections. No timeline assumed. When revenue hits a threshold, the split changes:
+The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, but open to revision as we learn more. No timeline assumed. When revenue hits a threshold, the split adjusts:
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
