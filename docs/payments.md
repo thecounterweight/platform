@@ -55,10 +55,13 @@ Cross-border investment contracts are direct transfers — the platform provides
 |-----------------|----------|--------------|
 | Marketplace purchase (aggregated) | Nobody | None — revenue comes from affiliate commissions |
 | Marketplace sale (community sellers) | Seller | Small commission on completed sales |
-| Investment contracts | Nobody | None |
+| Investment facilitation | Funded business | Small facilitation fee on successfully funded deals — covers legal infrastructure, contract management, and record-keeping |
+| Dispute resolution | Parties involved | Shared fee covering mediator coordination and process management |
 | Collective purchasing | Nobody | Small coordination fee covers operations and generates revenue |
 
-Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Collective purchasing coordination covers its own operational costs and generates a small revenue stream. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
+Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Businesses receiving investment capital pay a facilitation fee that covers legal infrastructure and generates a small revenue stream. Dispute resolution fees are shared by the parties involved. Collective purchasing coordination covers its own operational costs and generates a small revenue stream.
+
+All fees follow the same rubric: calculate what it costs to build and maintain the component, then add a small margin on top. Specific percentages will be determined by research into actual operational costs — not set arbitrarily. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
 
 ## Why This Works
 
