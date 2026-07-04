@@ -148,7 +148,7 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 - Equity or ownership
 - Permanent revenue share
-- Governance power over non-financial decisions
+- Governance power over platform operations, infrastructure, builder compensation, or feature decisions
 - The ability to sell or transfer their platform revenue-share position (prevents speculation on the platform's revenue stream)
 
 **Note:** This applies to platform investors (people investing in the platform itself). It does NOT apply to community business investments (people backing a bakery or startup) — those positions can be sold to other members via the secondary market described in the [Investment Model](investment-model.md).
