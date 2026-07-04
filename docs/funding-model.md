@@ -172,7 +172,7 @@ These are hard caps — non-negotiable, not subject to vote.
 
 The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk. Early investors' share doesn't grow — the pool expands to include new participants. Per-investor returns are naturally diluted as more contributors join.
 
-If existing rounds already consume the cap and a new round wants more, it doesn't happen. The platform's ability to operate, pay builders, and fund community programs is protected. Builders always retain the majority of the builders+investors pool.
+If existing rounds already consume the cap and a new round wants more, it doesn't happen until cap space frees up. Since all deals are time-bounded, cap space opens naturally as earlier rounds expire. And hitting the cap implies significant revenue already exists — the platform should be self-sustaining from operations at that point, not dependent on new investment. The cap protects the platform's ability to pay builders and fund community programs.
 
 ## Open Questions
 
