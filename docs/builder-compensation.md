@@ -27,7 +27,7 @@ Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue f
 
 ### Revenue Split
 
-When the platform generates revenue (transaction fees, certification fees, talent pool access fees, affiliate commissions):
+When the platform generates revenue (affiliate commissions, seller commissions, sponsored slots, certification fees, talent pool access fees, identity layer fees):
 
 **Before revenue is healthy:** The 60/30/10 split applies once revenue can meaningfully support all three pools. In the early stage — when revenue is minimal — operations takes priority. The goal is survival: keep infrastructure running, retain contributors, and build toward the threshold where the full split becomes meaningful. Early revenue goes primarily to operations until the platform is self-sustaining. Builder and investor payouts begin once operations are covered. The exact threshold where the full 60/30/10 activates is a governance decision — proposed as the point where monthly revenue consistently covers operating costs with margin.
 

@@ -25,7 +25,7 @@ Use the cheapest country-specific rail available:
 
 For countries where only card processors (Stripe, Razorpay) are available, use them. On a small purchase, 2% is a few rupees — not ideal, but not the 15-30% that existing platforms take.
 
-The platform's own transaction fee (its revenue) sits on top of the rail cost. Total cost to the user stays well under 5% everywhere.
+Buyers pay only what the payment rail charges — no platform fee. Sellers pay a small commission on completed sales.
 
 ### Large Transactions (Investment Contracts, Business Funding)
 
@@ -53,11 +53,12 @@ Cross-border investment contracts are direct transfers — the platform provides
 
 | Transaction type | Platform fee |
 |-----------------|--------------|
-| Marketplace purchase | Proportional transaction fee (small — scales with transaction size) |
-| Investment contracts | Nothing on money movement |
+| Marketplace purchase (aggregated) | None — revenue comes from affiliate commissions |
+| Marketplace sale (community sellers) | Small seller commission on completed sales |
+| Investment contracts | None |
 | Collective purchasing orders | Operational fee built into the coordinated price |
 
-Platform revenue from payments comes only from marketplace transaction fees. Investment and business funding are facilitated for free — the platform earns from certification fees, talent pool access, and collective purchasing instead.
+Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
 
 ## Why This Works
 

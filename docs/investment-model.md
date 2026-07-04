@@ -47,7 +47,7 @@ No idle cash reserve. All capital goes to work.
 
 These percentages are a suggested framework. Communities can adjust based on their needs. There is no hard band — but all allocation decisions are public, auditable, and comparable across communities. If one community charges 30% operations and another charges 3%, every member can see the difference and choose accordingly. Transparency is the guardrail.
 
-**Note:** This is the allocation of member investment contributions — money people put into community-backed businesses. This is separate from platform revenue (transaction fees, certification fees, talent pool access fees), which follows a graduated split that shifts toward community reinvestment as revenue grows. See [Builder Compensation](builder-compensation.md) for the full breakdown.
+**Note:** This is the allocation of member investment contributions — money people put into community-backed businesses. This is separate from platform revenue (affiliate commissions, seller commissions, sponsored slots, certification fees, talent pool access fees, identity layer fees), which follows a graduated split that shifts toward community reinvestment as revenue grows. See [Builder Compensation](builder-compensation.md) for the full breakdown.
 
 ## Community Businesses (95%)
 

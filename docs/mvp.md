@@ -63,8 +63,8 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 
 1. Start as the place for trusted reviews (aggregated products from major platforms)
 2. Community sellers list alongside — they have a built-in advantage (community backing, local trust)
-3. On-platform transactions added later for community sellers — transaction fees kick in
-4. Revenue diversifies across affiliate commissions, transaction fees, talent pool, and certification
+3. On-platform transactions added later for community sellers — buyers pay no platform fee, sellers pay a small commission on sales
+4. Revenue diversifies across affiliate commissions, seller commissions, sponsored slots, talent pool, certification fees, and identity layer fees
 
 Aggregated products and community sellers coexist. They serve different needs — aggregated products give breadth and convenience, community sellers offer local trust and direct relationships. The platform grows by adding value for buyers and sellers, not by removing options.
 
@@ -80,7 +80,7 @@ This rewards both quality (high stars) and engagement (many reviews). A well-rev
 
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms. No need to wait for scale.
 
-**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — talent pool fees, certification fees, and transaction fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers. Anti-monopoly laws (Competition Act 2002 in India, Article 102 TFEU in EU, Sherman Act in US) provide legal recourse against discriminatory termination of access.
+**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — seller commissions, talent pool fees, certification fees, sponsored slots, and identity layer fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers. Anti-monopoly laws (Competition Act 2002 in India, Article 102 TFEU in EU, Sherman Act in US) provide legal recourse against discriminatory termination of access.
 
 **Reviewer earnings:**
 
