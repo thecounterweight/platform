@@ -89,7 +89,7 @@ Reviewers earn a share of affiliate commissions when their reviews drive clicks.
 1. **Parameter-based reviews** — Each product category has specific parameters (e.g., phone: battery, camera, build, value for money). Reviewers must rate and justify each parameter. Vague "great product!" reviews don't qualify for commission.
 2. **Commission on clicks, not sentiment** — Positive or negative doesn't matter. A detailed "don't buy this" review earns the same as a positive one. The incentive is usefulness, not positivity.
 3. **Post-purchase feedback** — After buying through a reviewer's link, the buyer is asked: "Was this review accurate?" Consistent inaccuracy drops the reviewer's commission rate.
-4. **Trust score** — New reviewers don't earn immediately. After a threshold of reviews (e.g., 10), trust score activates based on: parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. Higher trust = higher commission share. Misleading reviews tank your score.
+4. **Trust score** — Anyone who bought a product can review it immediately. Commission and review weight grow as trust builds. Trust score is based on: parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. Higher trust = higher commission share and more prominent placement. Misleading reviews tank your score.
 
 Net effect: you earn by being useful and accurate, not by selling. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
 
