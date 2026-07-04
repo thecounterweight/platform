@@ -1,4 +1,4 @@
-# Session Progress — July 2-3, 2026
+# Session Progress — July 2-4, 2026
 
 This file captures all work done across sessions. If we lose context, resume from here.
 
@@ -59,19 +59,24 @@ This file captures all work done across sessions. If we lose context, resume fro
 8. **Age threshold:** No platform minimum. 18+ for contracts (legal necessity). Comply with local law where it applies.
 9. **Scope justification:** Load-bearing pieces (identity → reviews → marketplace → revenue → builders) ship as MVP. Amplifiers (certification, talent pool, investment, collective purchasing, governance at scale, translation, federation) added when foundation supports them.
 10. **Pitch framing:** "Publicly owned infrastructure" — community-owned, not government-owned.
-11. **Graduated revenue split:** Under $20M: 60% builders+investors / 30% operations / 10% community reinvestment. $20M-$100M: 55/20/25. $100M-$500M: 35/20/45. $500M+: community votes. These are rules, not projections — no timeline assumed.
+11. **Graduated revenue split:** Under $20M: 60% builders+investors / 30% operations / 10% community reinvestment. $20M-$100M: 55/20/25. $100M-$500M: 35/20/45. $500M+: community votes. Starting proposal informed by precedent — no timeline assumed.
 12. **Investor caps (tiered):** Under $20M: max 30% of total revenue. $20M+: max 40% of total revenue. Time-bounded.
 13. **Operations flexibility:** 30% under $20M, 20% at scale. Can draw from community reinvestment with community approval.
-14. **Governance:** No-confidence = 60% majority + 7-day discussion + 30% quorum + constituency-scoped. Limited powers during vote period. 2-year automatic confidence vote for all leaders.
+14. **Governance:** No-confidence = 60% majority + 7-day discussion + 15% quorum + constituency-scoped + liquid democracy delegation. Limited powers during vote period. 2-year automatic confidence vote for all leaders.
 15. **Legal entity:** Cooperative or equivalent (members collectively own, no individual equity). Jurisdiction-dependent structure.
-16. **Independent body:** Existing professional institutions (ICAI, arbitration centers, registered valuers). Recommend but don't decide. Both parties vote on recommendation.
+16. **Independent body:** Existing professional institutions (ICAI, arbitration centers, registered valuers). Post-quorum: recommend, parties vote. Pre-quorum deadlock: binding decision.
 17. **Funding model:** Open contribution (anyone, any amount, recorded permanently). Constitutional bounds set before anyone invests. Contributors vote on specifics within bounds (stake-weighted). Builders as counterweight (shared pool).
 18. **Cross-border investment:** Registered entities only, FDI-permitted sectors, domestic-first. Activates country-pair by country-pair.
 19. **Dispute resolution:** 3 layers — direct resolution → community arbitration → legal system. Arbitration doesn't replace legal rights.
 20. **Collective purchasing:** Platform coordinates, never holds money. Participants pay manufacturers directly.
 21. **Talent pool:** Anonymized profiles, contact through platform only, no bulk export.
 22. **Marketplace sort order:** Reviewed products above unreviewed. Ranked by aggregate score (sum of star ratings).
-23. **Principle amendments:** 75% approval + 30% quorum of all verified members.
+23. **Principle amendments:** 75% approval + 15% quorum of all verified members (delegated votes count).
+24. **Platform ownership:** Principle #0 — platform is owned by its users, structural, written into constitution.
+25. **Founding contributor tiers:** First 10 get 3x, 11-20 get 2x, 21-50 get 1.5x, after 50 get 1x.
+26. **No buyer fees:** Buyers never pay platform fees. Sellers pay small commission on sales.
+27. **Revenue streams:** Affiliate commissions, seller commissions, sponsored slots, certification fees, talent pool access, investment facilitation, dispute resolution, collective purchasing coordination, identity layer fees.
+28. **Fee rubric:** All fees = actual cost to build/maintain + small margin. Research-backed, not arbitrary.
 24. **Pre-quorum transition:** Automatic when platform has enough verified members to meet quorum for a given round size.
 
 ## Logical Gaps Resolved
@@ -89,6 +94,50 @@ This file captures all work done across sessions. If we lose context, resume fro
 - #12 Collective purchasing money flow ✓ (participants pay directly)
 - #13 Investor cap consistency ✓ (tiered: 30% under $20M, 40% at $20M+)
 
+## Session 3 Work (July 4, 2026)
+
+### Video Script
+- Created `video-script.md` — 9-section, 18-22 minute video pitch
+- Multiple rounds of tone adjustments: removed self-important language, made inclusive (you→we), softened claims
+- Added "Discussions become real" as first cascade item
+- Added anonymity mention (verified but can be anonymous)
+- Replaced specific percentages with "details in the docs"
+- Economics section aligned with actual funding model
+
+### Language & Tone Audit
+- Softened absolutist language across all docs (33 fixes in prior session)
+- "These are rules" → "starting proposal informed by precedent"
+- "Internally consistent" → "as far as I can tell"
+- Replaced "pool managers" → "project leads" throughout
+- Made landing page language inclusive (you→we)
+
+### Structural Fixes
+- **Principle #0 added:** "The platform is owned by its users" — foundational, structural
+- **Founding contributor tiers updated:** First 10 get 3x, 11-20 get 2x, 21-50 get 1.5x
+- **Quorum:** 30% → 15% with liquid democracy delegation (prior session, documented here)
+- **Investor block voting:** Fixed to stake-weighted (was incorrectly one-person-one-vote)
+- **Investor scope clarified:** Voting only on own terms + capital allocation, not platform ops
+- **Pre-quorum investor protection:** Binding arbitration on deadlock, share accumulates from first revenue
+- **Trust score:** Removed threshold barrier — anyone who bought can review immediately
+- **Transaction fees removed from buyers:** Platform charges sellers, not buyers
+- **Investment facilitation fee added:** Small fee on funded deals, paid by business
+- **Dispute resolution fee added:** Shared by parties involved
+- **Fee rubric:** All fees = actual cost to build/maintain + small margin
+- **Investor cap clarified:** Space frees as time-bounded deals expire
+- **Collective purchasing:** Coordination fee covers ops + generates small revenue
+- **Sponsored slots:** One or two clearly-labeled in marketplace, algorithm otherwise uninfluenced
+
+### Site Fixes
+- Added `remark-gfm` for markdown table rendering
+- Fixed SVG system diagram rendering (inline at build time)
+- Added `getAsset()` helper to docs lib
+- Landing page: inclusive language, project leads, sponsored slots mention
+
+### Consistency Fixes
+- Revenue stream list updated across all docs (affiliate, seller commissions, sponsored slots, certification, talent pool, investment facilitation, dispute resolution, identity layer fees)
+- PRINCIPLES.md examples made platform-relevant (reviews, translations, moderation)
+- "No ads" clarified: no buyer-targeted ads, but clearly-labeled sponsored marketplace slots exist
+
 ## Logical Gaps Remaining (implementation-time design)
 - Moderation threshold scaling formula
 - Escrow for marketplace disputes (via licensed partner)
@@ -97,6 +146,9 @@ This file captures all work done across sessions. If we lose context, resume fro
 - Video call cost at scale
 - Data portability format
 - Exact certification fee rates and governance
+- Specific seller commission percentage (cost-based research needed)
+- Specific investment facilitation fee percentage (cost-based research needed)
+- Dispute resolution fee structure (cost-based research needed)
 
 ## Deep Review Results
 
