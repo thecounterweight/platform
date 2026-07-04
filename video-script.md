@@ -52,7 +52,7 @@ Now — if we're not selling data, not running ads, how does this platform survi
 
 Right now, none of us can trust a single review on the internet. Fake accounts, bot farms, paid reviewers, companies manipulating their own ratings. The entire system is broken because there's no cost to creating a fake identity.
 
-When every reviewer is a verified unique human with proof of purchase — the dynamics shift significantly. No one can create ten accounts to boost their product. No one can pay a bot farm because bots can't verify. Every review is attached to a real person with a real reputation that accumulates over time. We rank reviewers by accuracy — how often their reviews align with the broader consensus over time. Not by who paid for placement. Not by who posted first.
+When every reviewer is a verified unique human with proof of purchase — the dynamics shift significantly. No one can create ten accounts to boost their product. No one can pay a bot farm because bots can't verify. Every review is attached to a real person with a real reputation that accumulates over time. We rank reviewers by accuracy — how often their reviews align with the broader consensus over time. There may be one or two clearly-labeled sponsored slots, but beyond that, the algorithm isn't influenced by who pays.
 
 ### Governance becomes real.
 

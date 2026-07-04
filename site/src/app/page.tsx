@@ -53,7 +53,7 @@ export default function Home() {
             <li>
               <strong className="text-zinc-100">Reviews become trustable.</strong>{" "}
               Every reviewer is a real human with proof of purchase. Ranked by
-              accuracy over time. No one can buy placement.
+              accuracy over time. Results are ranked by quality, not money — with one or two clearly-labeled sponsored slots. Beyond that, the algorithm isn&apos;t influenced by who pays.
             </li>
             <li>
               <strong className="text-zinc-100">Governance becomes real.</strong>{" "}
