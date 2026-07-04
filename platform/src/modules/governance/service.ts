@@ -4,7 +4,7 @@
  * Responsible for:
  * - Proposals (create, discuss, vote)
  * - Elections (nominate, vote, confirm)
- * - No-confidence motions (60% + 7-day discussion + 30% quorum)
+ * - No-confidence motions (60% + 7-day discussion + 15% quorum)
  * - Confidence vote (automatic every 2 years)
  * - Decision logging (transparent, auditable)
  *

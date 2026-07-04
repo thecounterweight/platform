@@ -61,6 +61,8 @@ Builders get paid first — from the earliest revenue. When investors come in (v
 - Under $20M: investors can take up to 50% of the pool, but never more than 30% of total revenue. This ensures builders always get at least 30% of total revenue at the early stage.
 - $20M+: investors can take up to 40% of the pool, capped at 40% of total revenue. At this stage the platform is proven and can attract capital on tighter terms for investors.
 
+The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk. Early investors' share doesn't grow — the pool expands to include new participants. Per-investor returns are naturally diluted as more contributors join.
+
 **Community reinvestment funds:**
 - Subsidized identity verification for low-income users
 - Grants for community-backed businesses
