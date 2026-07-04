@@ -18,7 +18,7 @@ Wealth never buys you power over people. But it does earn you proportional say o
 
 ## 2. Everyone belongs, not just those with money
 
-You don't need capital to join. You contribute what you can — time, skills, care, presence. A grandmother who watches neighbourhood kids contributes. A teenager who translates posts contributes. The system serves the poorest member as much as the wealthiest.
+You don't need capital to join. You contribute what you can — time, skills, care, presence. A user who writes detailed reviews contributes. A teenager who translates posts into their local language contributes. A moderator who keeps discussions civil contributes. The system serves the poorest member as much as the wealthiest.
 
 ## 3. Transparency is non-negotiable
 
