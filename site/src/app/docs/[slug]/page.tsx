@@ -1,4 +1,4 @@
-import { getDocContent, getDocMeta, getAllSlugs } from "@/lib/docs";
+import { getDocContent, getDocMeta, getAllSlugs, getAsset } from "@/lib/docs";
 import { notFound } from "next/navigation";
 import ReactMarkdown from "react-markdown";
 import remarkGfm from "remark-gfm";
@@ -43,12 +43,15 @@ export default async function DocPage({ params }: Props) {
           components={{
             img: ({ src, alt }) => {
               const srcStr = typeof src === "string" ? src : "";
+              if (srcStr.startsWith("assets/") && srcStr.endsWith(".svg")) {
+                const svgContent = getAsset(srcStr.replace("assets/", ""));
+                if (svgContent) {
+                  return <div className="w-full rounded-lg border border-zinc-700 overflow-hidden" dangerouslySetInnerHTML={{ __html: svgContent }} />;
+                }
+              }
               const resolvedSrc = srcStr.startsWith("assets/")
                 ? `/images/${srcStr.replace("assets/", "")}`
                 : srcStr;
-              if (srcStr.endsWith(".svg")) {
-                return <object data={resolvedSrc} type="image/svg+xml" className="w-full h-auto rounded-lg border border-zinc-700" aria-label={alt || ""}>{alt}</object>;
-              }
               return <img src={resolvedSrc} alt={alt || ""} className="w-full h-auto rounded-lg border border-zinc-700" />;
             },
           }}

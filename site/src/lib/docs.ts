@@ -70,3 +70,9 @@ export function getDocMeta(slug: string): DocMeta | null {
 export function getAllSlugs(): string[] {
   return Object.keys(DOC_META);
 }
+
+export function getAsset(filename: string): string | null {
+  const filePath = path.join(DOCS_DIR, "assets", filename);
+  if (!fs.existsSync(filePath)) return null;
+  return fs.readFileSync(filePath, "utf-8");
+}
