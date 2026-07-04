@@ -86,7 +86,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">Where we are</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Everything above is proposed, documented, and internally consistent —
+            Everything above is proposed, documented, and internally consistent as far as I can tell —
             identity verification, payments, governance, investment model,
             marketplace strategy, builder compensation. The design is open.
             Ready to be challenged, broken, and rebuilt by the people who
