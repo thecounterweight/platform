@@ -38,7 +38,7 @@ You can export everything we know about you. You can delete it permanently. Gone
 
 Anyone in a position of responsibility is there because the people below them chose them. The moment those people change their mind, the leader steps down.
 
-No term limits. No-confidence motion filed, 7-day discussion period, then a vote. 60% majority removes. Only the constituency the leader serves can vote (board moderator → board members, platform-wide leader → all verified users, pool manager → pool members). Minimum 15% of the constituency must participate for the vote to be valid. Members who can't research every issue can delegate their vote to a trusted representative (liquid democracy) — this counts toward quorum and ensures broad participation without requiring everyone to be an expert on everything.
+No term limits. No-confidence motion filed, 7-day discussion period, then a vote. 60% majority removes. Only the constituency the leader serves can vote (board moderator → board members, platform-wide leader → all verified users, workstream coordinator → workstream members). Minimum 15% of the constituency must participate for the vote to be valid. Members who can't research every issue can delegate their vote to a trusted representative (liquid democracy) — this counts toward quorum and ensures broad participation without requiring everyone to be an expert on everything.
 
 Every 2 years, leaders face an automatic confidence vote — no motion needed. If they fail (less than 50% confidence with 15% quorum), a new election is triggered. This prevents apathy-based permanence without forcing out leaders who still have genuine support.
 
