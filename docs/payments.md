@@ -51,14 +51,14 @@ Cross-border investment contracts are direct transfers — the platform provides
 
 ## What the Platform Charges
 
-| Transaction type | Platform fee |
-|-----------------|--------------|
-| Marketplace purchase (aggregated) | None — revenue comes from affiliate commissions |
-| Marketplace sale (community sellers) | Small seller commission on completed sales |
-| Investment contracts | None |
-| Collective purchasing orders | Operational fee built into the coordinated price |
+| Transaction type | Who pays | Platform fee |
+|-----------------|----------|--------------|
+| Marketplace purchase (aggregated) | Nobody | None — revenue comes from affiliate commissions |
+| Marketplace sale (community sellers) | Seller | Small commission on completed sales |
+| Investment contracts | Nobody | None |
+| Collective purchasing | Nobody | Small coordination fee covers operations and generates revenue |
 
-Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
+Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Collective purchasing coordination covers its own operational costs and generates a small revenue stream. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
 
 ## Why This Works
 
