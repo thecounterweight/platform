@@ -28,7 +28,7 @@ Two blocks. Equal weight. Both must agree.
 
 | Block | Weight | Who's in it | Internal voting |
 |-------|--------|-------------|-----------------|
-| Investor block | 50% | Everyone putting money into that round | One person, one vote among investors |
+| Investor block | 50% | Everyone putting money into that round | Stake-weighted voting among investors |
 | User block | 50% | Verified platform members (non-investors in this round) | One person, one vote among users |
 
 Each block votes internally and produces a single position by **supermajority** (two-thirds). The two positions must align for terms to pass.
