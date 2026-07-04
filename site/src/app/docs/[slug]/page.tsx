@@ -44,7 +44,7 @@ export default async function DocPage({ params }: Props) {
             img: ({ src, alt, ...props }) => {
               const srcStr = typeof src === "string" ? src : "";
               const resolvedSrc = srcStr.startsWith("assets/") ? `/docs/${srcStr}` : srcStr;
-              return <img src={resolvedSrc} alt={alt || ""} {...props} />;
+              return <img src={resolvedSrc} alt={alt || ""} className="w-full h-auto rounded-lg border border-zinc-700" {...props} />;
             },
           }}
         >{content}</ReactMarkdown>
