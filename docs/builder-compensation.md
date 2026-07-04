@@ -140,7 +140,8 @@ This is a starting framework. The builder community will ratify or adjust it.
 
 | Contributor number | Bonus multiplier | Effect |
 |-------------------|-----------------|--------|
-| First 20 contributors | 2x | All work earns double. A 5x task done by contributor #8 earns 10x. |
+| First 10 contributors | 3x | All work earns triple. A 5x task done by contributor #4 earns 15x. |
+| Contributors 11-20 | 2x | All work earns double. A 5x task done by contributor #15 earns 10x. |
 | Contributors 21-50 | 1.5x | All work earns 1.5x. A 5x task done by contributor #35 earns 7.5x. |
 | After 50 | 1x (standard) | No founding bonus — standard multipliers only. |
 
