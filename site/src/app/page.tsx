@@ -24,9 +24,9 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">The problem is structural</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Every platform you use is owned by someone who profits from your attention,
-            your data, or both. Reviews are fake. Moderation is arbitrary. Governance
-            is whatever the founder decides today. You are the product — and your options are limited.
+            Every platform we use is owned by someone who profits from our attention,
+            our data, or both. Reviews are fake. Moderation is arbitrary. Governance
+            is whatever the founder decides today. We are the product — and our options are limited.
           </p>
           <p>
             This isn&apos;t fixable with better policies or nicer executives. The

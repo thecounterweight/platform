@@ -6,55 +6,65 @@
 
 ## 1. Opening (30 seconds)
 
-This is The Counterweight. I'm going to explain what it is, why it needs to exist, and why I think one architectural decision — just one — could change how trust works on the internet.
+I'm building a platform and a movement. It's called The Counterweight. I want to show you the system I've designed — and explain why I think one architectural decision at the foundation could make trust work differently on the internet.
 
-This isn't a pitch deck. I'm not raising money. I'm not selling anything. This is an idea that I've designed, stress-tested, and documented. And I'm putting it in front of you because I can't build it alone.
+This is a proposal. I'm putting it in front of you because I think it could work — and because I can't build it alone. But first I want you to see the design and decide for yourself whether it's worth building.
 
 ---
 
 ## 2. The Problem (3 minutes)
 
-Every platform you use today is owned by someone who profits from your attention, your data, or both.
+Every platform we use today is owned by someone who profits from our attention, our data, or both.
 
-Think about what that means structurally. The platform's survival depends on keeping you engaged — not informed, not empowered, engaged. Every design decision flows from that incentive. The algorithm doesn't show you what's useful. It shows you what keeps you scrolling. The review system doesn't surface truth. It surfaces what drives purchases. The moderation system doesn't protect people. It protects the platform's liability.
+Think about what that means structurally. The platform's survival depends on keeping us engaged — not informed, not empowered, engaged. Every design decision flows from that incentive. The algorithm shows us what keeps us scrolling instead of what's useful. The review system surfaces what drives purchases instead of truth. The moderation system protects the platform's liability instead of people.
 
 This isn't a failure of execution. It's not that these companies hired bad people or made bad choices. The incentive structure is the problem. If the platform is owned by capital, it will serve capital. That's not a moral judgment — it's just how ownership works.
 
-And you have no recourse. You can't vote on the algorithm. You can't audit how your data is used. You can't remove a CEO who makes decisions you disagree with. You're not a citizen of these platforms. You're inventory.
+And we have no recourse. We can't vote on the algorithm. We can't audit how our data is used. We can't remove a CEO who makes decisions we disagree with. We're not citizens of these platforms. We're inventory.
 
-Now — people have tried to fix this before. Decentralized social networks. Federated protocols. Blockchain projects. Most of them failed. Not because the idea was wrong, but because they solved the wrong layer of the problem. They solved communication. They solved data portability. They solved censorship resistance. But none of them solved the most fundamental problem: you don't know if the person you're talking to is real.
+This platform will be owned by its users. Not as a slogan — structurally. Every decision about how the platform works is made by the people on it. That's written into the project's constitution.
+
+Now — people have tried to fix this before. Decentralized social networks. Federated protocols. Blockchain projects. Most of them failed. Not because the idea was wrong, but because they solved a different layer of the problem. They solved communication. They solved data portability. They solved censorship resistance. But none of them solved the most fundamental problem: we don't know if the person we're talking to is real.
 
 ---
 
 ## 3. The Insight (2 minutes)
 
-Here's the decision that changes everything: every person on the platform is a verified, unique human being. One person, one account. Proven via government ID APIs. And we store only a non-reversible hash — not your data. Not your name. Not your face. A mathematical proof that you exist and that you haven't registered before. That's it.
+Here's the foundation I'm proposing: every person on the platform is a verified, unique human being. One person, one account. Proven via government ID APIs. And we store only a non-reversible hash — not your data. Not your name. Not your face. A mathematical proof that you exist and that you haven't registered before. That's it.
 
 Your data is your sovereignty. We don't own it. We can't sell it. We can't hand it to a government or an advertiser. We store the minimum needed to prove you're real. Everything else remains yours.
 
-This sounds simple. But watch what happens when you make this one decision and follow it to its logical conclusions.
+This sounds simple. But follow it to its logical conclusions and a lot of hard problems become solvable.
 
 ---
 
 ## 4. The Cascade (5 minutes)
 
+What becomes possible when every person on a platform is real?
+
+### Discussions become real.
+
+When we know every voice in a conversation belongs to a real person, the nature of the conversation changes. No bot armies drowning out dissent. No sock puppets manufacturing consensus. If someone posts an opinion, it's a real human with a real stake. And there's no compulsion to put your name behind every opinion — you can go anonymous as well. The system knows you're real, but others don't have to know who you are. That alone changes how we talk to each other online.
+
 ### Reviews become trustable.
 
-Right now, you can't trust a single review on the internet. You know this. Fake accounts, bot farms, paid reviewers, companies manipulating their own ratings. The entire system is broken because there's no cost to creating a fake identity.
+Now — if we're not selling data, not running ads, how does this platform survive? A marketplace. But not the kind we're used to.
 
-When every reviewer is a verified unique human with proof of purchase — the dynamics shift significantly. You can't create ten accounts to boost your product. You can't pay a bot farm because bots can't verify. Every review is attached to a real person with a real reputation that accumulates over time. We rank reviewers by accuracy — how often their reviews align with the broader consensus over time. Not by who paid for placement. Not by who posted first.
+Right now, none of us can trust a single review on the internet. Fake accounts, bot farms, paid reviewers, companies manipulating their own ratings. The entire system is broken because there's no cost to creating a fake identity.
+
+When every reviewer is a verified unique human with proof of purchase — the dynamics shift significantly. No one can create ten accounts to boost their product. No one can pay a bot farm because bots can't verify. Every review is attached to a real person with a real reputation that accumulates over time. We rank reviewers by accuracy — how often their reviews align with the broader consensus over time. Not by who paid for placement. Not by who posted first.
 
 ### Governance becomes real.
 
-Every platform has governance. Right now, that governance is: one person decides, everyone else lives with it. Democratic governance on the internet has been extremely difficult, in large part because of one problem — Sybil attacks. One person creates a thousand accounts and outvotes everyone.
+Every platform has governance. Right now, that governance is a handful of stakeholders making decisions for billions of users — it's just not democratic. Democratic governance on the internet has been extremely difficult because of Sybil attacks. One person creates a thousand accounts and outvotes everyone.
 
-When every account is one verified human, you can have real elections. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, investment pool managers — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
+When every account is one verified human, real democratic decisions become possible. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, workstream coordinators — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
 
 ### Moderation actually works.
 
 Every platform struggles with moderation. Trolls create throwaway accounts. Get banned, make a new one. It costs them nothing.
 
-When every account is a real person with a real identity and a real history — the calculus of bad behavior changes fundamentally. You can't create a disposable account. If you get banned, you've lost your only account. Your reviews, your reputation, your connections — gone. The punishment is proportional because the identity is real.
+When every account is a real person with a real identity and a real history — the calculus of bad behavior changes fundamentally. No one can create a disposable account. If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections — gone. The punishment is proportional because the identity is real.
 
 ### Investment becomes accountable.
 
@@ -70,17 +80,17 @@ Every contribution to this platform is tracked on a public ledger. Code, design,
 
 ## 5. The Economics (3 minutes)
 
-Let me talk about money. Because every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital. I've designed this specifically to resist that outcome.
+Let me talk about money. Because every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital.
 
-Revenue from day one. Here's how. The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. No funding needed to survive.
+The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. We get the funding to survive.
 
 Community sellers list alongside aggregated products. Free to list. The advantage they get is real reviews from verified humans and community trust.
 
-The revenue split is simple. Under twenty million in annual revenue: sixty percent goes to builders and investors. Thirty percent goes to operations. Ten percent goes to community reinvestment. These are rules, not projections. They're constitutional — changeable only by seventy-five percent supermajority of all verified members.
+How revenue gets split — between builders, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs for anyone who wants to see the numbers.
 
-Investors get a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned permanently. Total investor share is capped — thirty percent in the early stage, forty percent at scale. Non-negotiable.
+Investors get a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned. The terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
 
-No venture capital. No equity. No one can buy this and make it serve their interests instead of yours. That's not idealism. That's architecture.
+No venture capital. No equity. No one can acquire ownership that overrides the collective. The legal entity is a cooperative — members govern it democratically. No individual owns it. No individual can sell it.
 
 ---
 
@@ -140,7 +150,7 @@ That's not inevitable. It's the result of design choices — and those choices c
 
 This is The Counterweight. Publicly owned infrastructure. Community-governed. Open-source. One person, one account. Your data, your sovereignty.
 
-If you think this should exist — the link is below. Read the docs. Break the design. Pick up an issue. Or just leave your name.
+If you think this should exist — the link is below. Read the docs. Break the design. Pick up an issue. Or just leave your name and say you're in.
 
 We're just a pebble. But pebbles start avalanches.
 
