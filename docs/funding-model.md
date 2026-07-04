@@ -122,8 +122,10 @@ Each round's terms are voted on independently. Previous rounds don't set precede
 
 - A share of platform revenue for the agreed duration
 - Returns proportional to their investment within the round
-- Voting power on financial decisions (stake-weighted within the investor block)
+- Stake-weighted voting on investor terms (share %, duration, payout schedule) and capital allocation (which businesses to fund)
 - Full transparency — revenue numbers are public, distributions are auditable
+
+Investors do not get voting power over platform operations, infrastructure, builder compensation, or feature decisions. Those are decided by the users and builders who run the platform.
 
 ## How Funds Are Used
 
