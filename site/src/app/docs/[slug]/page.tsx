@@ -43,7 +43,9 @@ export default async function DocPage({ params }: Props) {
           components={{
             img: ({ src, alt }) => {
               const srcStr = typeof src === "string" ? src : "";
-              const resolvedSrc = srcStr.startsWith("assets/") ? `/docs/${srcStr}` : srcStr;
+              const resolvedSrc = srcStr.startsWith("assets/")
+                ? `/images/${srcStr.replace("assets/", "")}`
+                : srcStr;
               if (srcStr.endsWith(".svg")) {
                 return <object data={resolvedSrc} type="image/svg+xml" className="w-full h-auto rounded-lg border border-zinc-700" aria-label={alt || ""}>{alt}</object>;
               }
