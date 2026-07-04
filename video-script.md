@@ -84,7 +84,7 @@ Let me talk about money. Because every idealistic project risks the same death �
 
 The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. We get the funding to survive.
 
-Community sellers list alongside aggregated products. Free to list. The advantage they get is real reviews from verified humans and community trust.
+Community sellers list alongside aggregated products. Free to list. They pay a small commission only when a sale happens — the platform brought them the customer. Buyers never pay a platform fee.
 
 How revenue gets split — between builders, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs for anyone who wants to see the numbers.
 
