@@ -137,6 +137,8 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 **Important distinction:** Investor capital is operational runway — it funds infrastructure and development until the platform is self-sustaining. It is not subject to the revenue split. The graduated split (see [Builder Compensation](builder-compensation.md)) applies only to platform revenue once it exists. Early investor money keeps the lights on so revenue can start flowing in the first place.
 
+**Early-stage priority:** The 60/30/10 revenue split activates once revenue can meaningfully support all three pools. Until then, early revenue goes primarily to operations — keeping infrastructure running and retaining contributors. Builder and investor payouts begin once operations are sustainably covered. The threshold where the full split activates is a governance decision, proposed as the point where monthly revenue consistently covers operating costs with margin.
+
 **Payment infrastructure:** Proposed design exists. Country-specific rails for marketplace (UPI, SEPA, ACH), direct bank transfer for investment contracts. The platform records transactions but does not process or hold money. See [Payments](payments.md).
 
 ## What Investors Don't Get

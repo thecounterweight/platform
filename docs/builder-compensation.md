@@ -29,6 +29,8 @@ Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue f
 
 When the platform generates revenue (transaction fees, certification fees, talent pool access fees, affiliate commissions):
 
+**Before revenue is healthy:** The 60/30/10 split applies once revenue can meaningfully support all three pools. In the early stage — when revenue is minimal — operations takes priority. The goal is survival: keep infrastructure running, retain contributors, and build toward the threshold where the full split becomes meaningful. Early revenue goes primarily to operations until the platform is self-sustaining. Builder and investor payouts begin once operations are covered. The exact threshold where the full 60/30/10 activates is a governance decision — proposed as the point where monthly revenue consistently covers operating costs with margin.
+
 **The split changes as the platform grows. These are rules, not projections — no timeline is assumed. When revenue reaches a threshold, the corresponding split applies:**
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
@@ -133,6 +135,16 @@ This is a starting framework. The builder community will ratify or adjust it.
 | Highly complex | 5x | Payment systems, identity verification, complex legal structuring, cryptographic design |
 | Architectural | 6x | System-level design, defining interfaces between major components, data model design, infrastructure decisions |
 | Foundational | 7x | Platform-level architecture and technical vision, economic model design, decisions that constrain everything downstream and are expensive to reverse |
+
+**Founding contributor bonus (stacks multiplicatively with complexity):**
+
+| Contributor number | Bonus multiplier | Effect |
+|-------------------|-----------------|--------|
+| First 20 contributors | 2x | All work earns double. A 5x task done by contributor #8 earns 10x. |
+| Contributors 21-50 | 1.5x | All work earns 1.5x. A 5x task done by contributor #35 earns 7.5x. |
+| After 50 | 1x (standard) | No founding bonus — standard multipliers only. |
+
+This rewards showing up when nothing existed and risk was highest. The bonus is permanent for work done while you held that contributor number — it doesn't expire. Work done after contributor #50 joins doesn't retroactively change earlier assignments.
 
 **Additional multipliers (stack with complexity):**
 

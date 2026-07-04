@@ -48,6 +48,8 @@ No ads. No data selling. No VC demanding growth at all costs.
 
 ## How Money Flows
 
+**Early stage:** Before revenue is healthy enough to support the full split, operations takes priority. Early revenue keeps infrastructure running and contributors retained. The full split activates once monthly revenue consistently covers operating costs with margin.
+
 The split changes as the platform grows — these are rules, not projections. No timeline assumed. When revenue hits a threshold, the split changes:
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
