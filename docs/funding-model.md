@@ -61,11 +61,12 @@ These already exist in every country. No need to invent one:
 
 **Their role:**
 1. Review contribution records, time held, market rates, and risk taken
-2. Recommend terms based on evidence — not decide
-3. Recommendation is public and detailed (reasoning visible to all)
-4. Both parties vote on the recommendation (stake-weighted within their group)
+2. Produce a decision based on statistical and financial analysis
+3. Decision is public and detailed (reasoning visible to all)
 
-The independent body cannot override a democratic vote. They provide an evidence-based reference point that makes bad-faith positions visible. If both sides reject the recommendation, they negotiate further or invoke a different body.
+**When invoked during active governance (post-quorum):** The body's output is a recommendation. Both parties vote on it (stake-weighted within their group). If both sides reject it, they negotiate further or invoke a different body.
+
+**When invoked during deadlock on pre-quorum terms:** The body's decision is binding. Early investors cannot be left in limbo because two sides can't agree. The independent body breaks the deadlock with a defensible, evidence-based determination that both parties must accept.
 
 **How the body is selected:** Either party can propose a body. Both must agree on which one. If they can't agree on the body either, each side picks one and the two bodies collaborate on a joint recommendation.
 
@@ -104,9 +105,9 @@ Contributors vote on their own terms — proportional to stake. Builders vote on
 
 **Constitutional bounds prevent self-dealing:** Contributors can't vote themselves 100% of revenue because the 40% cap exists before anyone invests. They vote on specifics within bounds, not on whether bounds exist.
 
-**If deadlocked** — either side can invoke an independent professional body (see below). The body recommends terms based on contribution records, market rates, and time held. Both parties vote on the recommendation (stake-weighted within their group).
+**If deadlocked** — either side can invoke an independent professional body (see above). The body analyzes contribution records, market rates, time held, and risk taken, and produces a binding decision backed by statistical and financial analysis. This isn't a recommendation — it's a final, defensible determination that both parties must accept. This protects early investors from being left in limbo indefinitely.
 
-No revenue-share payments begin until terms are decided — either by negotiation or by independent recommendation.
+**Accumulation vs payout:** Investor share accumulates from the moment revenue starts flowing. Actual payouts begin once the platform can sustain its operations — ensuring the platform doesn't pay out money it needs to survive. The accumulated share is owed and paid out once operations are stable.
 
 ## Tiered Rounds
 
