@@ -38,7 +38,16 @@ export default async function DocPage({ params }: Props) {
         &larr; All docs
       </Link>
       <article className="prose prose-invert prose-zinc max-w-none prose-headings:font-bold prose-h1:text-3xl prose-h2:text-2xl prose-h3:text-xl prose-p:text-zinc-300 prose-li:text-zinc-300 prose-strong:text-zinc-100 prose-a:text-zinc-100 prose-a:underline hover:prose-a:text-white prose-table:text-zinc-300 prose-th:text-zinc-100 prose-td:border-zinc-700 prose-th:border-zinc-700">
-        <ReactMarkdown remarkPlugins={[remarkGfm]}>{content}</ReactMarkdown>
+        <ReactMarkdown
+          remarkPlugins={[remarkGfm]}
+          components={{
+            img: ({ src, alt, ...props }) => {
+              const srcStr = typeof src === "string" ? src : "";
+              const resolvedSrc = srcStr.startsWith("assets/") ? `/docs/${srcStr}` : srcStr;
+              return <img src={resolvedSrc} alt={alt || ""} {...props} />;
+            },
+          }}
+        >{content}</ReactMarkdown>
       </article>
     </div>
   );
