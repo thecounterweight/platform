@@ -66,31 +66,7 @@ That's the core loop: identity makes reviews trustable, trustable reviews make t
 
 ---
 
-## 5. What Becomes Possible Next (4 minutes)
-
-Once that foundation is working — real people, real reviews, real revenue — here's what the same identity layer enables.
-
-### Governance becomes real.
-
-Every platform has governance. Right now, that governance is a handful of stakeholders making decisions for billions of users — it's just not democratic. Democratic governance on the internet has been extremely difficult because of Sybil attacks. One person creates a thousand accounts and outvotes everyone.
-
-When every account is one verified human, real democratic decisions become possible. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, project leads — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
-
-### Moderation actually works.
-
-Every platform struggles with moderation. Trolls create throwaway accounts. Get banned, make a new one. It costs them nothing.
-
-When every account is a real person with a real identity and a real history — the calculus of bad behavior changes fundamentally. No one can create a disposable account. If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections — gone. The punishment is proportional because the identity is real.
-
-### Investment becomes accountable.
-
-Communities pooling money to back businesses — this has always failed because of trust. Who's managing the money? Who's getting paid? Who's accountable if it goes wrong?
-
-When every participant is a verified, named individual — contracts become meaningful. The platform facilitates signed agreements between real people. Every transaction is recorded. Every return is traceable. The platform never holds your money — it just makes it possible for verified people to trust each other enough to transact directly.
-
----
-
-## 6. The Economics (3 minutes)
+## 5. Funding (3 minutes)
 
 Every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital.
 
@@ -112,7 +88,31 @@ How revenue gets split — between builders, investors, operations, and communit
 
 ---
 
-## 7. The Ecosystem (3 minutes)
+## 6. What Becomes Possible Next (3 minutes)
+
+Once we have funding and the foundation is working — real people, real reviews, real revenue — here's what the same identity layer enables.
+
+### Governance becomes real.
+
+Every platform has governance. Right now, that governance is a handful of stakeholders making decisions for billions of users — it's just not democratic. Democratic governance on the internet has been extremely difficult because of Sybil attacks. One person creates a thousand accounts and outvotes everyone.
+
+When every account is one verified human, real democratic decisions become possible. Real votes. Real accountability. Every role with power on this platform — moderators, community leads, project leads — is elected by real people. And removable by them. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No permanent authority. No one accumulates power that can't be taken away.
+
+### Moderation actually works.
+
+Every platform struggles with moderation. Trolls create throwaway accounts. Get banned, make a new one. It costs them nothing.
+
+When every account is a real person with a real identity and a real history — the calculus of bad behavior changes fundamentally. No one can create a disposable account. If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections — gone. The punishment is proportional because the identity is real.
+
+### Investment becomes accountable.
+
+Communities pooling money to back businesses — this has always failed because of trust. Who's managing the money? Who's getting paid? Who's accountable if it goes wrong?
+
+When every participant is a verified, named individual — contracts become meaningful. The platform facilitates signed agreements between real people. Every transaction is recorded. Every return is traceable. The platform never holds your money — it just makes it possible for verified people to trust each other enough to transact directly.
+
+---
+
+## 7. The Ecosystem (2 minutes)
 
 Now here's where it gets bigger than one platform.
 
