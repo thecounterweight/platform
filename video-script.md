@@ -62,11 +62,7 @@ The marketplace aggregates products from Amazon, Flipkart, and other platforms v
 
 Community sellers list alongside aggregated products. Free to list. They pay a small commission only when a sale happens — the platform brought them the customer. Buyers never pay a platform fee.
 
-### Builders get paid.
-
-Every contribution to this platform is tracked on a public ledger. Code, design, documentation, moderation, legal research — everything. When revenue flows, it flows back to the people who built this. Proportional to what they contributed. The ledger is public, auditable, and permanent.
-
-That's the core loop: identity makes reviews trustable, trustable reviews make the marketplace useful, the marketplace generates revenue, revenue pays the builders who build more. Each piece sustains the next.
+That's the core loop: identity makes reviews trustable, trustable reviews make the marketplace useful, the marketplace generates revenue, revenue pays the people who build it. Each piece sustains the next.
 
 ---
 
@@ -94,15 +90,25 @@ When every participant is a verified, named individual — contracts become mean
 
 ---
 
-## 6. The Economics (2 minutes)
+## 6. The Economics (3 minutes)
 
 Every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital.
 
-How revenue gets split — between builders, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs for anyone who wants to see the numbers.
+### How we raise money to build this.
 
-Investors get a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned. The terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
+Anyone can invest any amount. It's recorded permanently — amount, timestamp, identity. The money goes to work immediately: infrastructure, development, operations.
+
+What investors get is a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned. Early investors take more risk — they get structurally better terms for showing up when nothing existed.
+
+The terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen. If they deadlock, an independent body makes a binding decision based on evidence. No one gets left in limbo.
 
 No venture capital. No equity. No one can acquire ownership that overrides the collective. The legal entity is a cooperative — members govern it democratically. No individual owns it. No individual can sell it.
+
+### How builders get paid.
+
+Every contribution is tracked on a public ledger — code, design, documentation, legal research, moderation. Early contributors take more risk, so they earn multiplied compensation. When revenue flows, it flows to the people who built this — proportional to what they contributed.
+
+How revenue gets split — between builders, investors, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs.
 
 ---
 
