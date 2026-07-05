@@ -6,9 +6,9 @@
 
 ## 1. Opening (30 seconds)
 
-I'm building a platform and a movement. It's called The Counterweight. I want to show you the system I've designed — and explain why I think one architectural decision at the foundation could make trust work differently on the internet.
+I'm proposing a platform and a movement. It's called The Counterweight. One architectural decision at the foundation could make trust work differently on the internet — and I can't build it alone.
 
-This is a proposal. I'm putting it in front of you because I think it could work — and because I can't build it alone. But first I want you to see the design and decide for yourself whether it's worth building.
+This is a proposal. I think it could work. But first I want you to see the design and decide for yourself whether it's worth building.
 
 ---
 
@@ -22,7 +22,7 @@ This isn't a failure of execution. It's not that these companies hired bad peopl
 
 And we have no recourse. We can't vote on the algorithm. We can't audit how our data is used. We can't remove a CEO who makes decisions we disagree with. We're not citizens of these platforms. We're inventory.
 
-This platform will be owned by its users. Not as a slogan — structurally. Every decision about how the platform works is made by the people on it. That's written into the project's constitution.
+The platform I'm proposing will be owned by its users. By design, not by promise. Every decision about how the platform works is made by the people on it. That's written into the project's constitution.
 
 Now — people have tried to fix this before. Decentralized social networks. Federated protocols. Blockchain projects. Most of them failed. Not because the idea was wrong, but because they solved a different layer of the problem. They solved communication. They solved data portability. They solved censorship resistance. But none of them solved the most fundamental problem: we don't know if the person we're talking to is real.
 
@@ -34,11 +34,11 @@ Here's the foundation I'm proposing: every person on the platform is a verified,
 
 Your data is your sovereignty. We don't own it. We can't sell it. We can't hand it to a government or an advertiser. We store the minimum needed to prove you're real. Everything else remains yours.
 
-This sounds simple. But follow it to its logical conclusions and a lot of hard problems become solvable.
+This sounds simple. But follow it to its logical conclusions and we can solve a lot of hard problems.
 
 ---
 
-## 4. The Cascade (5 minutes)
+## 4. What We Build First (4 minutes)
 
 What becomes possible when every person on a platform is real?
 
@@ -46,13 +46,33 @@ What becomes possible when every person on a platform is real?
 
 When we know every voice in a conversation belongs to a real person, the nature of the conversation changes. No bot armies drowning out dissent. No sock puppets manufacturing consensus. If someone posts an opinion, it's a real human with a real stake. And there's no compulsion to put your name behind every opinion — you can go anonymous as well. The system knows you're real, but others don't have to know who you are. That alone changes how we talk to each other online.
 
-### Reviews become trustable.
+### Reviews become trustable — and that's how we survive.
 
-Now — if we're not selling data, not running ads, how does this platform survive? A marketplace. But not the kind we're used to.
+If we're not selling data and not running ads, how does this platform sustain itself?
 
-Right now, none of us can trust a single review on the internet. Fake accounts, bot farms, paid reviewers, companies manipulating their own ratings. The entire system is broken because there's no cost to creating a fake identity.
+We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can actually trust — because every reviewer is a verified human with proof of purchase. When they click through and buy, we earn an affiliate commission. Community sellers can also list their products — buyers are directed to the seller's own storefront, and the seller pays a small commission on the sale.
 
-When every reviewer is a verified unique human with proof of purchase — the dynamics shift significantly. No one can create ten accounts to boost their product. No one can pay a bot farm because bots can't verify. Every review is attached to a real person with a real reputation that accumulates over time. We rank reviewers by accuracy — how often their reviews align with the broader consensus over time. There may be one or two clearly-labeled sponsored slots, but beyond that, the algorithm isn't influenced by who pays.
+That's it. No on-platform payments to process. No inventory to manage. Just trusted reviews from real people, and the revenue that follows.
+
+Why are the reviews trustable? Because identity changes the economics. No one can create ten accounts to boost their product. No one can pay a bot farm — bots can't verify. Every review is attached to a real person whose reputation accumulates over time. Reviewers are ranked by accuracy — how often their assessments align with actual buyer experience. There may be one or two clearly-labeled sponsored slots, but beyond that, the algorithm isn't influenced by who pays.
+
+### Revenue from day one.
+
+The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. We get the funding to survive.
+
+Community sellers list alongside aggregated products. Free to list. They pay a small commission only when a sale happens — the platform brought them the customer. Buyers never pay a platform fee.
+
+### Builders get paid.
+
+Every contribution to this platform is tracked on a public ledger. Code, design, documentation, moderation, legal research — everything. When revenue flows, it flows back to the people who built this. Proportional to what they contributed. The ledger is public, auditable, and permanent.
+
+That's the core loop: identity makes reviews trustable, trustable reviews make the marketplace useful, the marketplace generates revenue, revenue pays the builders who build more. Each piece sustains the next.
+
+---
+
+## 5. What Becomes Possible Next (4 minutes)
+
+Once that foundation is working — real people, real reviews, real revenue — here's what the same identity layer enables.
 
 ### Governance becomes real.
 
@@ -72,19 +92,11 @@ Communities pooling money to back businesses — this has always failed because 
 
 When every participant is a verified, named individual — contracts become meaningful. The platform facilitates signed agreements between real people. Every transaction is recorded. Every return is traceable. The platform never holds your money — it just makes it possible for verified people to trust each other enough to transact directly.
 
-### Builders get paid fairly.
-
-Every contribution to this platform is tracked on a public ledger. Code, design, documentation, moderation, legal research — everything. When revenue flows, it flows back to the people who built this. Proportional to what they contributed. No middleman deciding who deserves what. No CEO taking a majority share. The ledger is public, auditable, and permanent.
-
 ---
 
-## 5. The Economics (3 minutes)
+## 6. The Economics (2 minutes)
 
-Let me talk about money. Because every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital.
-
-The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. We get the funding to survive.
-
-Community sellers list alongside aggregated products. Free to list. They pay a small commission only when a sale happens — the platform brought them the customer. Buyers never pay a platform fee.
+Every idealistic project risks the same death — it runs out of money and either shuts down or sells out to venture capital.
 
 How revenue gets split — between builders, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs for anyone who wants to see the numbers.
 
@@ -94,7 +106,7 @@ No venture capital. No equity. No one can acquire ownership that overrides the c
 
 ---
 
-## 6. The Ecosystem (3 minutes)
+## 7. The Ecosystem (3 minutes)
 
 Now here's where it gets bigger than one platform.
 
@@ -112,7 +124,7 @@ This is what changes for the tech world. Today, every platform must solve identi
 
 ---
 
-## 7. Where We Are (2 minutes)
+## 8. Where We Are (2 minutes)
 
 Everything I've described is proposed, documented, and internally consistent — as far as I can tell. Identity verification. Payments. Governance. Investment model. Marketplace strategy. Builder compensation. The ecosystem model. All of it is public, all of it is open, all of it is ready to be challenged.
 
@@ -124,7 +136,7 @@ But I want to be honest with you. This is a proposal. Not a finished product. No
 
 ---
 
-## 8. What I Need (1.5 minutes)
+## 9. What I Need (1.5 minutes)
 
 I need engineers. Backend, frontend, security, infrastructure. The problems here are hard and interesting — identity verification without surveillance, parameter-based review systems, real-time discussion at scale, affiliate API integration, trust score algorithms.
 
@@ -142,7 +154,7 @@ Every contribution is tracked. When revenue flows, contributors get paid proport
 
 ---
 
-## 9. Close (1 minute)
+## 10. Close (1 minute)
 
 The internet was supposed to be the great equalizer. It was supposed to give everyone a voice, a marketplace, a community. Instead it became another vehicle for concentration of power and wealth. A handful of companies decide what billions see, buy, and believe.
 
@@ -152,7 +164,7 @@ This is The Counterweight. Publicly owned infrastructure. Community-governed. Op
 
 If you think this should exist — the link is below. Read the docs. Break the design. Pick up an issue. Or just leave your name and say you're in.
 
-We're just a pebble. But pebbles start avalanches.
+If you think this should exist — help us build it.
 
 ---
 

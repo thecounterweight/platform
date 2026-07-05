@@ -49,7 +49,7 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 2. Community sellers also list their own goods and services directly (free to list)
 3. Verified users review products — only real humans, verified purchase
 4. Community evaluators certify quality on top of reviews
-5. Users click through to buy on the source platform, or buy directly from community sellers
+5. Users click through to buy on the source platform, or are directed to community sellers' own storefronts
 
 **Why this works:**
 
@@ -138,7 +138,7 @@ Community seller listings are free. Always.
 | Affiliate commissions (Amazon, Flipkart, etc.) | As soon as users review and click through to buy |
 | Talent pool access fees (companies) | As soon as certified professionals exist |
 | Certification fees (small, from candidates or company-sponsored) | Once certifiers are active |
-| Transaction fees (proportional, small) | When on-platform payments are added later |
+| Seller commissions (small, on completed sales) | When on-platform transactions are added for community sellers |
 
 ## Technical Approach
 
