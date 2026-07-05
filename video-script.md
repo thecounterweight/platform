@@ -76,7 +76,9 @@ Anyone can invest any amount. It's recorded permanently — amount, timestamp, i
 
 What investors get is a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned. Early investors take more risk — they get structurally better terms for showing up when nothing existed.
 
-The terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen. If they deadlock, an independent body makes a binding decision based on evidence. No one gets left in limbo.
+Once the platform has enough members, the terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
+
+Early on, before governance is active, investors are protected by constitutional caps and a simple guarantee: if the two sides can't agree on terms, an independent body makes a binding decision based on evidence. No early investor gets left in limbo.
 
 No venture capital. No equity. No one can acquire ownership that overrides the collective. The legal entity is a cooperative — members govern it democratically. No individual owns it. No individual can sell it.
 
