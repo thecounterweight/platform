@@ -1,16 +1,43 @@
 # The Counterweight
 
-Publicly owned infrastructure. Community-governed. Open-source. No billionaire owners. No VC. No ads. No data mining.
+A platform where every user is a verified real person — and the users own it.
 
-**One architectural decision — every user is a verified, unique human — could enable trusted reviews, democratic governance, accountable investment, and fair compensation.**
+**One architectural decision — verified identity — enables trusted reviews, democratic governance, accountable investment, and fair compensation.**
 
 → [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/overview.md)
+
+## The System
+
+```
+┌─────────────────────────────────────────────────────────────┐
+│                    VERIFIED IDENTITY                         │
+│         One person, one account. Privacy-preserving.         │
+└─────────────────────┬───────────────────────────────────────┘
+                      │
+        ┌─────────────┼─────────────┐
+        ▼             ▼             ▼
+┌──────────────┐ ┌──────────┐ ┌──────────────┐
+│  Discussion  │ │Marketplace│ │   Revenue    │
+│  Boards +    │ │Aggregated │ │  Affiliate   │
+│  Chat        │ │Products + │ │ commissions  │
+│              │ │Reviews    │ │  from day 1  │
+└──────────────┘ └──────────┘ └──────────────┘
+        MVP — what ships first
+                      │
+        ┌─────┬───────┼───────┬─────────┐
+        ▼     ▼       ▼       ▼         ▼
+┌─────┐┌─────┐┌───────┐┌──────┐┌──────────┐
+│Cert.││Talent││Govern-││Invest││Community │
+│     ││Pool  ││ance   ││ment  ││Sellers   │
+└─────┘└─────┘└───────┘└──────┘└──────────┘
+        Phase 2 — funded by MVP revenue
+```
 
 ## What This Is
 
 A platform where identity verification is open infrastructure. Anyone can build on it — freelance marketplaces, lending platforms, co-op tools, local classifieds. If it needs "every user is a real person," it plugs into this network.
 
-We're building the load-bearing layer. The ecosystem builds everything else.
+We're building the foundation. The ecosystem builds everything else.
 
 ## Start Here
 
