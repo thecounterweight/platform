@@ -49,30 +49,27 @@ export default function Home() {
           </p>
           <ul className="space-y-3 list-none">
             <li>
-              <strong className="text-zinc-100">Reviews become trustable.</strong>{" "}
-              Every reviewer is a real human with proof of purchase. Ranked by
-              accuracy over time. One or two clearly-labeled sponsored slots — beyond that, the algorithm is influenced only by quality.
+              <strong className="text-zinc-100">Trusted reviews.</strong>{" "}
+              Reviewers have proof of purchase and a reputation ranked by accuracy over time. One or two clearly-labeled sponsored slots — beyond that, the algorithm is influenced only by quality.
             </li>
             <li>
-              <strong className="text-zinc-100">Governance becomes real.</strong>{" "}
-              Every role with power — moderators, community leads, project leads —
-              is elected by real people and removable by them. 60% vote, 7-day
-              discussion. Re-confirmed every 2 years.
+              <strong className="text-zinc-100">Democratic governance.</strong>{" "}
+              Roles with power — moderators, community leads, project leads —
+              are elected and removable. 60% vote, 7-day discussion. Re-confirmed every 2 years.
             </li>
             <li>
-              <strong className="text-zinc-100">Investment becomes accountable.</strong>{" "}
+              <strong className="text-zinc-100">Accountable investment.</strong>{" "}
               Communities back businesses via signed contracts between verified individuals.
-              Every transaction recorded. The platform facilitates — it never holds your money.
+              Transactions recorded. The platform facilitates — it never holds your money.
             </li>
             <li>
-              <strong className="text-zinc-100">Builders get paid fairly.</strong>{" "}
-              Every contribution tracked on a public ledger. When revenue flows,
-              it flows to the people who built this — proportional, transparent.
+              <strong className="text-zinc-100">Fair builder compensation.</strong>{" "}
+              Contributions tracked on a public ledger. When revenue flows,
+              it flows to the people who built this — proportional and transparent.
             </li>
             <li>
-              <strong className="text-zinc-100">Moderation works differently.</strong>{" "}
-              When every account is a real person with a real history, accountability
-              is built in. One identity, one reputation, one stake in the community.
+              <strong className="text-zinc-100">Effective moderation.</strong>{" "}
+              One identity, one reputation, one stake in the community. Accountability is structural.
             </li>
           </ul>
         </div>

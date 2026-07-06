@@ -14,15 +14,15 @@ I'm proposing one. It's called The Counterweight. One architectural decision at 
 
 ## 2. The Core Idea (3 minutes)
 
-The platform I'm proposing will be owned by its users. By design, not by promise. Every decision about how the platform works is made by the people on it. That's written into the project's constitution.
+The platform I'm proposing will be owned by its users. Structurally — written into the constitution, the legal entity, and the governance model.
 
-What makes this possible is one architectural decision: every person on the platform is a verified, unique human being. One person, one account. Proven via government ID APIs. We store only a non-reversible hash — not your data, not your name, not your face. A mathematical proof that you exist and that you haven't registered before. That's it.
+What makes this possible is one architectural decision: every person on the platform is a verified, unique human being. One person, one account. Proven via government ID APIs. We store only a non-reversible hash — a mathematical proof that you exist and that you haven't registered before. No personal data retained.
 
 Your data is your sovereignty. We store the minimum needed to prove you're real. Everything else remains yours.
 
 Democratic governance on the internet has been extremely difficult because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. Decentralized social networks, federated protocols, blockchain projects — they solved communication, data portability, censorship resistance. They didn't focus on identity.
 
-This platform does. And everything else follows from it.
+This platform does. The rest follows from it.
 
 ---
 
@@ -30,17 +30,15 @@ This platform does. And everything else follows from it.
 
 What does this enable?
 
-### Discussions become real.
+### Discussion.
 
-Every voice in a conversation belongs to a real person. Every opinion comes from someone with a real stake. And there's no compulsion to put your name behind every opinion — you can go anonymous as well. The system knows you're real, but others don't have to know who you are. That alone changes how we talk to each other online.
+You're talking to real people. You know it, they know it. You can still be anonymous — the system knows you're real, but others don't have to know who you are. But there's a stake behind every voice, and that changes the nature of conversation.
 
-### Reviews become trustable — and that's how we survive.
+### Reviews — and how the platform sustains itself.
 
 If we're not selling data and not running ads, how does this platform sustain itself?
 
-We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can trust — because every reviewer has proof of purchase and a reputation that accumulates over time. When they click through and buy, we earn an affiliate commission.
-
-That's it. No on-platform payments to process. No inventory to manage. Trusted reviews, and the revenue that follows.
+We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can trust — because every reviewer has proof of purchase and a reputation that accumulates over time. When they click through and buy, we earn an affiliate commission. No on-platform payments to process. No inventory to manage.
 
 Reviewers are ranked by accuracy — how often their assessments align with actual buyer experience. Other verified buyers rate reviews as helpful, accurate, or misleading — so the best information rises naturally. There may be one or two clearly-labeled sponsored slots, but beyond that, the algorithm is influenced only by quality.
 
@@ -62,13 +60,13 @@ A platform like this needs to sustain itself without compromising its principles
 
 Anyone can invest any amount. It's recorded permanently — amount, timestamp, identity. The money goes to work immediately: infrastructure, development, operations.
 
-What investors get is a time-bounded share of revenue. Not equity. Not ownership. A percentage of revenue for a defined period, then it ends. The platform stays community-owned. Early investors take more risk — they get structurally better terms for showing up when nothing existed.
+What investors get is a time-bounded share of revenue — a percentage for a defined period, then it ends. The platform stays community-owned. Early investors take more risk, so they get structurally better terms.
 
 Once the platform has enough members, the terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
 
 Early on, before governance is active, investors are protected by constitutional caps and a simple guarantee: if the two sides can't agree on terms, an independent body makes a binding decision based on evidence. No early investor gets left in limbo.
 
-No venture capital. No equity. No one can acquire ownership that overrides the collective. The legal entity is a cooperative — members govern it democratically. No individual owns it. No individual can sell it.
+The legal entity is a cooperative. Members govern it democratically. No individual or entity can acquire ownership that overrides the collective.
 
 ### How builders get paid.
 
@@ -82,17 +80,17 @@ How revenue gets split — between builders, investors, operations, and communit
 
 Once the foundation is working — identity, reviews, revenue — the same architecture enables more.
 
-### Governance becomes real.
+### Governance.
 
-Every role with power on this platform — moderators, community leads, project leads — is elected and removable. Sixty percent vote, after a seven-day discussion period. Every role re-confirmed every two years. No one accumulates power that can't be taken away.
+Roles with power — moderators, community leads, project leads — are elected and removable. Sixty percent vote, after a seven-day discussion period. Re-confirmed every two years. Power is always temporary and always accountable.
 
-### Moderation works differently.
+### Moderation.
 
-If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections — gone. The consequence is proportional because the identity is real. One identity, one reputation, one stake in the community.
+If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections. The consequence is proportional because the identity is real.
 
-### Investment becomes accountable.
+### Community investment.
 
-The platform facilitates signed agreements between verified people. Every transaction is recorded. Every return is traceable. The platform never holds your money — it makes it possible for people to trust each other enough to transact directly.
+The platform facilitates signed agreements between verified people. Transactions are recorded. Returns are traceable. The platform never holds your money — it makes it possible for people to trust each other enough to transact directly.
 
 ---
 
@@ -102,13 +100,13 @@ Now here's where it gets bigger than one platform.
 
 The identity layer is open infrastructure. We provide the foundation — verified identity, governance primitives, payment rails. Anyone can build on top of it.
 
-What becomes possible when verified identity is a shared primitive: Peer-to-peer lending with enforceable contracts. Freelance marketplaces with portable reputation. Local classifieds where every seller is accountable. Co-op management with legitimate one-person-one-vote governance. Mutual aid networks. Citizen journalism with verifiable reporters. Whistleblowing — verified but anonymous.
+If verified identity is a shared primitive, other people can build: peer-to-peer lending with enforceable contracts, freelance marketplaces with portable reputation, local classifieds where sellers are accountable, co-op governance tools, mutual aid networks, citizen journalism, anonymous whistleblowing.
 
 Each of these is someone else's project. Running on their own server. Using the shared identity network. We don't control them. We don't decide what gets built.
 
 Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back to the network. The fee ceiling is a constitutional bound. The specific rate is decided democratically. The infrastructure sustains itself from the commercial value it enables.
 
-Any project that needs "every user is real" can plug in. Trust by design becomes available as a shared primitive.
+Any project that needs "every user is real" can plug in.
 
 ---
 
@@ -120,7 +118,7 @@ I've run four rounds of critical review against the entire system — looking fo
 
 The code scaffold exists. Next.js, TypeScript, PostgreSQL, Prisma. Four modules — identity, marketplace, discussion, governance. API routes. Database schema. A contributor can clone the repo and start building today.
 
-But I want to be honest with you. This is a proposal. Not a finished product. Not a company. Not a funded startup. It's an idea that I believe is strong enough to attract the people who can make it real. I could be wrong. But the design is open — you can read every document, poke every hole, and tell me where I'm wrong. That's the point.
+I want to be straightforward. This is a proposal — an idea that I believe is strong enough to attract the people who can make it real. I could be wrong. The design is open. You can read every document, poke every hole, and tell me where it breaks.
 
 ---
 
@@ -136,9 +134,9 @@ I need economists. People who can stress-test the revenue model, the investor ca
 
 I need domain experts. People who can define what "quality" means in their field and volunteer as the first evaluators.
 
-And I need people who just believe this should exist. Who'll leave their name and say — I'm in. Build this and I'll use it.
+I also need people who just believe this should exist. Who'll leave their name and say — I'm in. Build this and I'll use it.
 
-Every contribution is tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors take more risk. They get multiplied compensation. The details are documented and public.
+Contributions are tracked on a public ledger. When revenue flows, contributors get paid proportional to what they built. Early contributors take more risk and earn multiplied compensation. The details are in the docs.
 
 ---
 

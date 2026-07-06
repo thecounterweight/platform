@@ -6,11 +6,11 @@ These are non-negotiable. Everything else is open for discussion.
 
 ## 0. The platform is owned by its users
 
-Not by a company. Not by investors. Not by founders. The people who use this platform own it, govern it, and decide how it evolves. Every decision about how the platform works is made by the people on it. This is structural — written into the constitution, the license, and the governance model. No individual or entity can acquire ownership that overrides the collective.
+The people who use this platform own it, govern it, and decide how it evolves. This is structural — written into the constitution, the legal entity, and the governance model. No individual or entity can acquire ownership that overrides the collective.
 
 ## 1. Every person matters equally
 
-Not based on how much money they have. Not based on where they were born. Not based on who they know. One person, one voice — on governance, leadership, platform decisions, and politics.
+One person, one voice — on governance, leadership, platform decisions, and politics. Regardless of wealth, origin, or connections.
 
 For investment decisions — which businesses to fund, how community capital is allocated — voting weight is proportional to your stake. If you have more money at risk, you get more say over how it's deployed. This prevents small coordinated groups from directing other people's money.
 

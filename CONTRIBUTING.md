@@ -8,7 +8,7 @@
 4. Fork, branch, build, PR
 5. Your contribution is recorded on the public ledger from day one
 
-That's it. No meetings. No approval to start. Show up, do the work, get credited.
+No meetings. No approval to start. Show up, do the work, get credited.
 
 ## Workstreams
 
@@ -155,7 +155,7 @@ You own a workstream. This means:
 - You make small architectural decisions (library choice, module structure)
 - You don't gatekeep. If someone shows up with good work, it gets merged.
 
-**How you become one:** Show up first. Do the most work. That's it. No appointment. If two people both want to lead, the one with more shipped contributions leads. If there's genuine disagreement, the community votes.
+**How you become one:** Show up first. Do the most work. No appointment needed. If two people both want to lead, the one with more shipped contributions leads. If there's genuine disagreement, the community votes.
 
 **How you lose it:** Stop showing up for 30 days without notice, or the community votes you out (same no-confidence mechanism as everything else: 60% + 7-day discussion).
 
