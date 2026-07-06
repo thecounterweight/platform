@@ -50,26 +50,27 @@ flowchart LR
         INFRA[CI/CD + Staging]
     end
 
-    subgraph "Layer 1 (foundation)"
+    subgraph "MVP — Layer 1 (foundation)"
         IDENTITY[Identity Verification]
         DB[Database Schema]
     end
 
-    subgraph "Layer 2 (requires identity)"
+    subgraph "MVP — Layer 2 (requires identity)"
         DISCUSSION[Discussion Boards]
         MARKETPLACE[Marketplace — Aggregated Products]
-        SELLERS[Community Seller Listings]
     end
 
-    subgraph "Layer 3 (requires marketplace)"
+    subgraph "MVP — Layer 3 (requires marketplace)"
         REVIEWS[Review System + Trust Score]
         AFFILIATE[Affiliate API Integration]
     end
 
-    subgraph "Layer 4 (requires reviews + revenue)"
+    subgraph "Phase 2 (requires MVP traction + revenue)"
+        SELLERS[Community Seller Listings]
+        CERTIFICATION[Skill Certification]
+        TALENT[Talent Pool]
         GOVERNANCE[Governance]
-        MODERATION[Moderation]
-        CERTIFICATION[Community Certification]
+        MODERATION[Elected Moderation]
     end
 
     SCAFFOLD --> DB
@@ -77,13 +78,13 @@ flowchart LR
     DB --> IDENTITY
     IDENTITY --> DISCUSSION
     IDENTITY --> MARKETPLACE
-    IDENTITY --> SELLERS
     MARKETPLACE --> REVIEWS
     MARKETPLACE --> AFFILIATE
-    SELLERS --> REVIEWS
+    REVIEWS --> SELLERS
+    REVIEWS --> CERTIFICATION
+    CERTIFICATION --> TALENT
     REVIEWS --> GOVERNANCE
     REVIEWS --> MODERATION
-    REVIEWS --> CERTIFICATION
 ```
 
 ## Revenue Flow
