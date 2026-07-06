@@ -76,8 +76,8 @@ These are non-negotiable platform commitments:
 | No storage of raw documents | The platform verifies and discards. No passport scans, no Aadhaar numbers stored. |
 | No selling or sharing | Identity data never leaves the platform. Never sold to third parties. Never used for advertising. |
 | No profiling | Verification is a yes/no gate. The platform doesn't store your address, age, gender, or anything beyond "verified: yes." |
-| Minimum data principle | Only a cryptographic hash is stored — enough to prevent duplicate accounts, nothing more. |
-| Non-reversible storage | Even if the database leaks, no one can extract your government ID from the stored hash. |
+| Minimum data principle | Only a provider-issued unique identifier is stored — enough to prevent duplicate accounts, nothing more. The platform never sees or stores raw ID numbers. |
+| Non-reversible storage | Even if the database leaks, no one can extract your government ID. The stored identifier is provider-generated and cannot be reversed to an ID number. |
 | Face scan data never stored | Liveness check produces pass/fail. Biometric data is processed in real-time and discarded. |
 | Open-source verification logic | Anyone can audit exactly what data flows where. No black boxes. |
 
@@ -164,7 +164,7 @@ The platform's value comes from verified identity — trusted reviews, one-perso
 
 ## Optional Profile Data
 
-Verification only produces a pass/fail and a hash. No personal details are extracted or stored from the ID.
+Verification only produces a pass/fail and a provider-issued unique identifier (for deduplication). No personal details are extracted or stored from the ID. The platform never sees raw ID numbers — the KYC provider handles all document processing and returns only a result.
 
 Users can optionally share additional information to make the platform more useful:
 
@@ -189,7 +189,7 @@ The platform works fully without any optional data. Sharing is a user choice, no
 The platform does not process or store biometric data or government ID documents directly. KYC providers (Digio, Signzy, etc.) handle all identity document processing. They are the Data Processors for biometric/ID data and carry their own compliance burden.
 
 **What the platform stores:**
-- A non-reversible hash (for deduplication)
+- A provider-issued unique identifier (for deduplication — not a self-computed hash, not reversible to an ID number)
 - Verification status (pass/fail)
 - Timestamp
 - Optional profile data (only what the user explicitly provides)

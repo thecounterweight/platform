@@ -62,7 +62,7 @@ One person, one vote. Verified identity makes this viable — no sock puppets, n
 
 ### Full Identity Verification
 
-KYC provider handles government ID verification (DigiLocker in India via provider API, eIDAS in EU). Face scan for high-stakes actions. Non-reversible hash stored — no personal data retained.
+KYC provider handles government ID verification (DigiLocker in India via provider API, eIDAS in EU). Face scan for high-stakes actions. Provider-issued unique identifier stored for deduplication — no raw ID numbers, no personal data retained.
 
 Existing phone-verified users are invited to upgrade. Three-tier access:
 - **Verified** — full government ID. Full platform access.
