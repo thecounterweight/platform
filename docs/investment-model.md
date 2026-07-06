@@ -2,7 +2,7 @@
 
 This is how the community economics are designed to work. It's intended to be the engine that makes everything sustainable.
 
-**What is a "community" here?** Any group of verified people who choose to pool resources together. It could be geographic (people in your city), professional (engineers, doctors, graduates), interest-based (sustainability, education), or global (investors connected across countries who share values). The platform doesn't define what a community is — people do.
+**What is a "community" here?** Any group of verified people connected by geography, profession, interest, or values. The platform doesn't define what a community is — people do.
 
 ## The Core Loop
 
@@ -16,59 +16,37 @@ Members back businesses → Businesses generate revenue
                      Community thrives → more members join
 ```
 
-## Two Paths
+## How Investment Works: Direct Deals Only
 
-Communities can coordinate investment in two ways. Both coexist on the platform.
+A business posts a pitch. Interested members reach out directly. Contracts are signed between named, verified individuals. No pooling, no collective fund management — just people choosing to back a business they believe in.
 
-**Path 1 — Pooled investment (community-governed)**
+The platform provides contract templates, transparent record-keeping, and dispute resolution infrastructure. It does not pool capital, manage funds, make investment decisions, recommend deals, or hold capital.
 
-Members contribute to a shared pool governed by the community (not the platform). The community decides collectively which businesses to back. Members vote proportional to their stake. The pool is managed by elected community leaders, accountable to the members.
+**Why not pooled investment:**
 
-**Path 2 — Direct deals (individual contracts)**
+Pooled investment (multiple people contributing to a shared fund that's collectively managed) is classified as a Collective Investment Scheme under SEBI Act Section 11AA in India — and similarly regulated in most jurisdictions. Operating an unregistered CIS carries up to 10 years imprisonment and Rs 25 crore fine. The platform will not facilitate pooled investment without explicit regulatory clearance in each jurisdiction.
 
-A business posts a pitch. Interested members reach out directly. Contracts are signed between named individuals. No pool, no collective decision — just people choosing to back a business they believe in.
+**Future possibility:** If SEBI regulatory sandbox approval or AIF (Alternative Investment Fund) registration is obtained, pooled investment may be added as a feature. Until then, all investment on the platform is between named individuals via direct contracts.
 
-The platform facilitates both — providing contract templates, transparent record-keeping, and dispute resolution. It does not manage funds, make investment decisions, or hold capital.
+**What the platform does NOT do:**
+- Pool capital or manage funds (SEBI CIS risk)
+- Recommend, vet, or perform due diligence on businesses (triggers SEBI Investment Adviser registration)
+- Operate a secondary market for investment positions (stock exchange function)
+- Guarantee returns or provide price discovery
+- Act as a broker, dealer, or investment advisor
 
-## Where the Money Goes (Pooled Path)
+## Why People Back Businesses Here
 
-When a community chooses to pool resources:
-
-| Allocation | Purpose |
-|-----------|---------|
-| 95% | Community businesses (vetted and backed by the community) |
-| 5% | Operations (legal, admin, platform fees) |
-
-No idle cash reserve. All capital goes to work.
-
-**Liquidity:** If a member wants out, they sell their position to another member on a secondary market within the platform. The pool stays fully invested. The seller finds a buyer at whatever price the market supports — no withdrawals from a reserve.
-
-**Secondary market reality:** This is illiquid investment. There is no guarantee of an immediate buyer. The platform provides tools to help — price discovery (list and lower until someone bites), new member matching (people joining the community are natural buyers), and fractional positions (split a large position into smaller affordable pieces). But this is investing in real businesses, not trading public stocks. If you need money you can't afford to lock up, don't invest it. The platform does not guarantee buybacks or create artificial liquidity.
-
-These percentages are a suggested framework. Communities can adjust based on their needs. There is no hard band — but all allocation decisions are public, auditable, and comparable across communities. If one community charges 30% operations and another charges 3%, every member can see the difference and choose accordingly. Transparency is the guardrail.
-
-**Note:** This is the allocation of member investment contributions — money people put into community-backed businesses. This is separate from platform revenue (affiliate commissions, seller commissions, sponsored slots, certification fees, talent pool access fees, identity layer fees), which follows a graduated split that shifts toward community reinvestment as revenue grows. See [Builder Compensation](builder-compensation.md) for the full breakdown.
-
-## Community Businesses (95%)
-
-The majority of capital goes directly into backing businesses proposed by community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything the community decides to back. Businesses accountable to the people who funded them.
+Community members back businesses proposed by other community members. Grocery stores, clinics, workshops, SaaS startups, tech companies — anything someone in the community proposes and others choose to fund. Businesses accountable to the people who funded them.
 
 Why this works:
 
-- Every business is vetted by real people evaluating real plans before funding.
+- Every business is evaluated by real people looking at real plans before committing money.
 - The platform provides built-in demand signals. You can see whether buyers exist before the business launches.
 - The community IS the customer base. A business funded by 500 people has 500 people with reason to buy from it.
 - Returns stay within the community rather than flowing to distant corporations.
 
-Risk is managed through diversification across many businesses. Community vetting and built-in demand validation help, but startup risk is real — not every business will succeed. Diversification means no single failure is catastrophic.
-
-### How businesses get funded
-
-**Through a pool** — Community members coordinate, vet proposals together, select businesses from a shared pool. More structured, shared due diligence. Works well for larger investments where the community governs the capital collectively.
-
-**Through direct deals** — A business posts a pitch with a target amount. Interested people commit individually via contracts with the business. More organic, lower barrier. Works well for smaller businesses or when individuals want to choose their own deals.
-
-Both coexist. Early stage will likely be mostly direct deals. As communities grow and build trust, pooled investment becomes possible.
+Risk is real — not every business will succeed. Spreading investment across multiple businesses means no single failure is catastrophic. But every individual investor bears the risk of the specific deals they choose to enter.
 
 ### How it works
 
@@ -95,7 +73,7 @@ After the agreement period ends, the business is fully independent.
 
 Business offers actual ownership to the community. The people who funded it own a piece of it. If the business grows, they grow with it.
 
-This requires: proper valuation (community-nominated evaluators assess), legal structuring per jurisdiction, minimum investment threshold to keep the cap table manageable, and a buyback/exit mechanism (the business or the platform facilitates resale to other community members).
+This requires: proper valuation (parties agree on valuation method — third-party assessor, formula-based, or negotiated), legal structuring per jurisdiction, minimum investment threshold to keep the cap table manageable, and a buyback/exit mechanism defined in the contract.
 
 More complex. More upside. Available where local law allows.
 
@@ -118,18 +96,18 @@ The platform facilitates only what is legal in each jurisdiction. It does not de
 - Guarantee returns
 - Act as a broker, dealer, or investment advisor
 
-**Recommended structure by group size:**
+**Available contract templates by group size:**
 
-| Pool size | Recommended structure |
+| Investor count | Template available |
 |-----------|---------------------|
-| 2-10 people | Simple revenue share contract or partnership agreement |
+| 1-10 people | Simple revenue share contract or partnership agreement |
 | 10-50 people | LLP or structured multi-party contract |
-| 50-200 people | Private placement rules apply — needs specific legal formatting per jurisdiction |
-| 200+ people | Seek legal counsel for compliance in your jurisdiction |
+| 50-200 people | Private placement rules likely apply — jurisdiction-specific templates |
+| 200+ people | No template provided — seek legal counsel for compliance in your jurisdiction |
 
-The platform recommends appropriate contract templates based on pool size, capital amount, and jurisdiction. All contracts are transparent, auditable, and legally enforceable.
+The platform provides contract templates organized by group size, capital amount, and jurisdiction. Users select the template appropriate for their situation. All contracts are transparent, auditable, and legally enforceable.
 
-**Jurisdiction-specific activation:** Investment features activate country by country, only after legal review confirms compliance with local securities law, cooperative law, and financial regulations. Pooled investment (Path 1) requires explicit legal clearance per jurisdiction. Direct deals between named individuals (Path 2) are the default — contracts between named parties, initiated by the interested party, no public solicitation. The platform provides infrastructure. The parties make their own decisions.
+**Jurisdiction-specific activation:** Investment features activate country by country, only after legal review confirms compliance with local securities law and financial regulations. All investment on the platform is via direct deals between named individuals — contracts between named parties, initiated by the interested party, no public solicitation. The platform provides contract infrastructure. The parties make their own decisions.
 
 ### Why equity is harder than revenue share
 
@@ -146,13 +124,13 @@ Revenue share avoids all of this. The convertible model bridges the gap — star
 
 A local carpenter needs ₹2 lakh for better equipment. Revenue share — 5% for 3 years. Simple. Done.
 
-A group wants to start a community grocery store. Equity — 200 people each put in ₹10,000, collectively own 40%. They vote on store decisions proportional to their stake.
+A group wants to start a community grocery store. The store registers as a Private Limited company. Individual investors each sign equity contracts directly with the company — 200 people each put in ₹10,000, each owns their individual share. Shareholders vote on store decisions proportional to their stake per company law.
 
 A tech startup comes out of the community. Starts with revenue share, proves product-market fit, then converts to equity for early backers at a pre-agreed price. Early risk = early reward.
 
 ### If the business fails
 
-The loss is absorbed by the pool (pooled model) or by the individual investors who signed the contract (direct deal model). Diversified across many businesses, so no single failure is catastrophic. No debt to the founder. They tried, it didn't work, the investors took that risk knowingly.
+The loss is absorbed by the individual investors who signed the contract. No debt to the founder. They tried, it didn't work, the investors took that risk knowingly. Spreading investment across multiple businesses means no single failure is catastrophic — but each investor chooses their own risk.
 
 ### If the business succeeds and refuses to honor the agreement
 
@@ -166,34 +144,32 @@ The goal is to resolve most disputes without courts (which are slow, expensive, 
 
 ### Important distinction
 
-The **platform itself** has no equity. Nobody owns it. It's a utility — open-source, community-governed.
+The **platform itself** has no equity for sale. It's a member-governed LLC — open-source, community-owned.
 
-**Businesses funded by the community** are different. If people pooled their money to build something, they have every right to own a piece of it. That's not the same as owning the platform — it's owning the things the platform helped create.
+**Businesses funded through the platform** are different. If people chose to back a business, their contract gives them a claim on that business's revenue or equity. That's not the same as owning the platform — it's owning a stake in things the platform helped create.
 
-## Voting on Investment Decisions
+## Investment Decisions
 
-For pooled investments, decisions — which businesses to back, allocation changes, pool governance — use stake-weighted voting. Your vote is proportional to your contribution. For direct deals, each person makes their own decision.
+Each person makes their own investment decisions. The platform does not make collective investment decisions, manage a shared fund, or vote on which businesses to back.
 
-This is different from governance. Leadership elections, platform decisions, political coordination — those are one person, one vote regardless of wealth.
+This is different from platform governance. Leadership elections, platform decisions, political coordination — those are one person, one vote regardless of wealth. Investment is individual choice, governance is democratic.
 
-Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not fair for them to have equal say over how your money is deployed. But it's also not fair for wealth to buy political or social power. So financial decisions are stake-weighted. Everything else is democratic.
-
-| Decision type | Voting rule |
+| Decision type | Who decides |
 |---------------|------------|
-| Which businesses to back (pooled) | Proportional to stake |
-| Pool allocation changes | Proportional to stake |
+| Whether to back a specific business | Each individual investor |
+| Contract terms with a business | The parties to the contract |
 | Leadership elections | One person, one vote |
 | Platform governance | One person, one vote |
 | Political endorsements | One person, one vote |
 | No-confidence motions | One person, one vote |
 
 
-## Member Contributions
+## Participation
 
 - **No fixed amount.** Invest what you can, when you can.
-- **No minimum that prices people out.** Whether it's 500 rupees or 50,000 — you're a member with equal voice.
-- **Exit:** Sell your position to another member on the secondary market. No withdrawals from the pool — your money is invested, not sitting in a vault. Liquidity depends on community size — at small scale, finding a buyer may take time or require accepting a discount.
-- **Returns:** Distributed periodically (quarterly or annually — community decides). Proportional to your contribution.
+- **No minimum that prices people out.** Whether it's 500 rupees or 50,000 — you're a member with equal voice in governance.
+- **Liquidity:** Your money is committed per the contract you signed. Positions are illiquid until the business pays out per the contract terms (revenue share payments, equity buyback, or contract expiry). Do not invest money you cannot afford to lock up for the contract duration.
+- **Returns:** Distributed per the contract terms — typically periodic revenue share payments directly from the business to the investor.
 
 ## Risk Disclosure
 
@@ -203,7 +179,7 @@ This is investment. Real investment carries real risk.
 - Returns depend on the businesses the community chooses to back.
 - Regulatory changes in any country could limit or alter operations.
 
-We mitigate through: backing many businesses (not putting everything in one), rigorous community vetting before funding, built-in demand validation through the platform, and democratic oversight of all investment decisions. But risk is never zero. Every member should understand this.
+We mitigate through: encouraging diversification across many businesses (not putting everything in one), built-in demand validation through the platform, and transparent record-keeping of all business performance. But risk is never zero. Every investor should understand this before signing any contract.
 
 ## Legal Structure (India — Proposed, Unvalidated)
 
@@ -236,10 +212,10 @@ The platform starts domestic-only. Cross-border activates country-pair by countr
 
 Open questions. We need people in each jurisdiction to research:
 
-- What entity can legally pool member capital and invest it?
-- What securities regulations apply?
-- What cooperative/mutual frameworks exist?
-- What tax implications do members face?
+- What regulations apply to direct investment contracts between named individuals?
+- What securities regulations apply to revenue share agreements?
+- What tax implications do investors and businesses face?
 - What foreign exchange controls restrict cross-border investment?
+- At what scale or structure does a direct deal become a regulated securities offering?
 
 If you're a lawyer anywhere in the world — pick your country, research this, and contribute to the docs. This is one of the highest-value contributions possible right now.
