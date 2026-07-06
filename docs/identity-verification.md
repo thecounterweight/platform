@@ -24,6 +24,40 @@ The platform does not hold a government API license directly. We integrate with 
 
 **What this proves:** You are a real person with a government-issued identity. You are unique (no duplicate accounts).
 
+### Deduplication — How "One Person, One Account" Actually Works
+
+The one-account guarantee requires detecting if someone has already registered. Different strategies for different situations:
+
+**Primary (India — 95% of users): HMAC of Aadhaar number**
+
+1. User verifies via KYC provider (Digio/Signzy). Provider returns the Aadhaar number as part of verification.
+2. Platform immediately computes HMAC-SHA256(server_secret_key, aadhaar_number).
+3. Raw Aadhaar number is discarded — never stored, never logged.
+4. The HMAC is checked against existing records. Match = duplicate account attempt, rejected.
+5. No match = new user, HMAC stored.
+
+Why HMAC and not plain hash: Aadhaar is 12 digits (10^12 possibilities) — a plain SHA-256 hash is brute-forceable in hours. HMAC with a secret key means the hash cannot be reversed without the key. Key is stored in a hardware security module (HSM) or secrets manager, separate from the database.
+
+**Fallback (no Aadhaar, international users): Face deduplication (1:N matching)**
+
+For users verifying with non-Aadhaar documents (Voter ID, Passport, PAN, international IDs):
+
+1. User completes verification + face scan via KYC provider.
+2. Provider performs 1:N face matching — checking the new face against ALL previously registered faces in their system.
+3. Match found = duplicate account attempt, rejected.
+4. No match = new user, enrolled in provider's face registry.
+
+The platform never stores face embeddings or biometric templates. The KYC provider maintains the face registry and performs dedup checks — returning only pass/fail to the platform. This creates provider lock-in for these users (face embeddings aren't portable between providers), but since Aadhaar-based dedup covers 95% of Indian users, the lock-in affects only edge cases.
+
+**Why not use one method for everyone:**
+- HMAC-of-ID-number is simpler, cheaper, provider-portable, and privacy-preserving — but requires a single universal ID number per country.
+- Face dedup works across any document type but is more expensive (₹2-5 per 1:N check), creates provider lock-in, and depends on third-party biometric storage.
+- The combination gives robust coverage: primary method is portable and cheap, fallback handles edge cases.
+
+**International expansion:** Each country gets a primary dedup ID where one exists (SSN in US, National Insurance number in UK, BSN in Netherlands). Face dedup is the universal fallback for countries without a single dominant identifier.
+
+**Provider switching (primary path):** The HMAC is stored in your database, computed with your key. If you switch KYC providers, deduplication continues working — the HMAC doesn't depend on which provider verified the user. Only face-dedup users are affected by provider changes.
+
 ### Layer 2 — Face Scan (Liveness Check)
 
 For high-stakes actions (voting, large investments, governance decisions), communities can require a face scan that matches the government ID photo.
@@ -73,12 +107,13 @@ These are non-negotiable platform commitments:
 
 | Guarantee | What it means |
 |-----------|---------------|
-| No storage of raw documents | The platform verifies and discards. No passport scans, no Aadhaar numbers stored. |
+| No storage of raw documents | The platform verifies and discards. No passport scans, no Aadhaar numbers stored. Raw ID numbers are processed in memory and immediately discarded after HMAC computation. |
 | No selling or sharing | Identity data never leaves the platform. Never sold to third parties. Never used for advertising. |
 | No profiling | Verification is a yes/no gate. The platform doesn't store your address, age, gender, or anything beyond "verified: yes." |
-| Minimum data principle | Only a provider-issued unique identifier is stored — enough to prevent duplicate accounts, nothing more. The platform never sees or stores raw ID numbers. |
-| Non-reversible storage | Even if the database leaks, no one can extract your government ID. The stored identifier is provider-generated and cannot be reversed to an ID number. |
-| Face scan data never stored | Liveness check produces pass/fail. Biometric data is processed in real-time and discarded. |
+| Minimum data principle | Only an HMAC (keyed hash) of your ID number is stored — enough to prevent duplicate accounts, nothing more. The raw number is never persisted. |
+| Non-reversible storage | Even if the database leaks, no one can reverse the HMAC to your ID number without the secret key (stored separately in HSM/secrets manager). |
+| Face data: platform never stores | For face-dedup users, the KYC provider maintains face embeddings for 1:N matching. The platform receives only pass/fail — no biometric data touches our systems. |
+| Liveness checks not retained | Liveness checks for high-stakes actions produce pass/fail. Biometric data is processed in real-time by the provider and discarded. |
 | Open-source verification logic | Anyone can audit exactly what data flows where. No black boxes. |
 
 ## Anonymity vs Verification
@@ -164,7 +199,7 @@ The platform's value comes from verified identity — trusted reviews, one-perso
 
 ## Optional Profile Data
 
-Verification only produces a pass/fail and a provider-issued unique identifier (for deduplication). No personal details are extracted or stored from the ID. The platform never sees raw ID numbers — the KYC provider handles all document processing and returns only a result.
+Verification produces a pass/fail and allows the platform to compute a deduplication HMAC. No personal details are extracted or stored from the ID. The raw ID number is processed in memory and immediately discarded — only the irreversible HMAC is retained.
 
 Users can optionally share additional information to make the platform more useful:
 
@@ -189,15 +224,16 @@ The platform works fully without any optional data. Sharing is a user choice, no
 The platform does not process or store biometric data or government ID documents directly. KYC providers (Digio, Signzy, etc.) handle all identity document processing. They are the Data Processors for biometric/ID data and carry their own compliance burden.
 
 **What the platform stores:**
-- A provider-issued unique identifier (for deduplication — not a self-computed hash, not reversible to an ID number)
+- HMAC of the primary ID number (for deduplication — irreversible without the secret key, which is stored separately in HSM)
 - Verification status (pass/fail)
 - Timestamp
 - Optional profile data (only what the user explicitly provides)
 
 **What the platform does NOT store:**
-- Government ID numbers, documents, or images
-- Face scan data or biometric templates
-- Any data extracted from the ID document
+- Raw government ID numbers (processed in memory, discarded immediately after HMAC computation)
+- Government ID documents or images
+- Face scan data or biometric templates (provider retains these for face-dedup users only)
+- Any other data extracted from the ID document
 
 **Compliance requirements (implemented before Milestone 2 launch):**
 - Privacy policy on the site — what data is collected, why, how long it's retained, who processes it

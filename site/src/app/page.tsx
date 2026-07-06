@@ -41,8 +41,8 @@ export default function Home() {
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
             Every person on the platform is a verified, unique human. One person,
-            one account. Proven via government ID APIs. We never see your raw ID —
-            only a provider-issued identifier for deduplication. Your data is your sovereignty, not ours.
+            one account. Proven via government ID APIs. Your raw ID number is never stored —
+            only an irreversible cryptographic hash for deduplication. Your data is your sovereignty, not ours.
           </p>
           <p>
             That single architectural choice cascades:
