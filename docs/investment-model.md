@@ -144,7 +144,7 @@ The goal is to resolve most disputes without courts (which are slow, expensive, 
 
 ### Important distinction
 
-The **platform itself** has no equity for sale. It's a member-governed LLC — open-source, community-owned.
+The **platform itself** is structurally protected from capture. An irrevocable purpose trust holds a golden share preventing sale or mission change. Users have constitutional governance rights, not equity.
 
 **Businesses funded through the platform** are different. If people chose to back a business, their contract gives them a claim on that business's revenue or equity. That's not the same as owning the platform — it's owning a stake in things the platform helped create.
 
@@ -183,11 +183,11 @@ We mitigate through: encouraging diversification across many businesses (not put
 
 ## Legal Structure (India — Proposed, Unvalidated)
 
-The primary entity is a **Wyoming LLC** (member-governed, international membership, Operating Agreement encodes all governance rules). Members join by signing a Joinder Agreement upon identity verification.
+The operating company is founder-owned with an **irrevocable purpose trust** holding a golden share. The trust vetoes sale, mission change, or removal of user protections. Users have constitutional governance rights (vote, revenue share, legal standing) encoded in the company's Articles — not a Terms of Service.
 
-For Indian operations (UPI payments, local compliance), a linked Indian entity (Section 8 Company or LLP) will be added when payment volume requires it. Additional per-jurisdiction entities are added as the platform expands internationally — all linked to the root LLC by inter-entity agreements.
+For Indian operations (UPI payments, local compliance), a linked Indian entity will be added when payment volume requires it. Additional per-jurisdiction entities are added as the platform expands internationally.
 
-This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows US LLC law, Indian company law, or international cooperative structures — this is one of the highest-value contributions you can make right now.
+This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows purpose trust structuring, Indian company law, or benefit corporation statutes — this is one of the highest-value contributions you can make right now.
 
 ## Cross-Border Investment
 

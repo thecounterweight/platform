@@ -22,7 +22,7 @@ Complexity reflects skill level required. Bonuses are additive (not multiplicati
 
 - Engineer A designs the auth system architecture. 80 hours, highly complex (5x), Year 1 (+100%), first-10 (+100%), critical path (+50%) = 80 × 5 × (1 + 1 + 1 + 0.5) = 80 × 5 × 3.5 = **1,400 units.**
 - Designer B creates the brand and landing page. 40 hours, standard (3x), Year 1 (+100%), first-10 (+100%) = 40 × 3 × (1 + 1 + 1) = 40 × 3 × 3 = **360 units.**
-- Lawyer C researches US LLC law and writes legal docs. 30 hours, complex (4x), Year 1 (+100%), first-of-kind (+50%) = 30 × 4 × (1 + 1 + 0.5) = 30 × 4 × 2.5 = **300 units.**
+- Lawyer C researches purpose trust structuring and writes legal docs. 30 hours, complex (4x), Year 1 (+100%), first-of-kind (+50%) = 30 × 4 × (1 + 1 + 0.5) = 30 × 4 × 2.5 = **300 units.**
 - Community manager D moderates Discord for 3 months. 120 hours, routine (2x), Year 1 (+100%) = 120 × 2 × (1 + 1) = 120 × 2 × 2 = **480 units.**
 
 Total pool: 2,540 units. Engineer A owns 55% of the builder pool. When revenue flows, they get 55% of the builder allocation.

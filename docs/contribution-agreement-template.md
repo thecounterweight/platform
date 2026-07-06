@@ -41,7 +41,7 @@ Regardless of how governance decides specific terms:
 
 ### 5. Entity Formation
 
-When The Counterweight LLC is formed, the entity recognizes this contribution under its revenue-share framework. The Contributor's record, amount, and timestamp are preserved exactly as recorded.
+When The Counterweight's operating entity is formally incorporated, the entity recognizes this contribution under its revenue-share framework. The Contributor's record, amount, and timestamp are preserved exactly as recorded.
 
 ### 6. Record
 

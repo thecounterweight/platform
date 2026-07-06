@@ -30,7 +30,7 @@ One architectural decision: every user verifies their identity through a governm
 
 Why does this matter? Democratic governance on the internet has never worked because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. We solve that at the identity layer.
 
-The legal entity is a Wyoming LLC where every verified user is a member. You sign a Joinder Agreement at verification — this is a real legal contract that grants you co-ownership, one vote in governance, and a share of platform revenue.
+The company is founder-owned, but an irrevocable purpose trust holds a golden share — it can veto any sale, any mission change, any removal of user protections. Your rights are in the company's constitution, not a Terms of Service. You get one vote in governance and a share of platform revenue — structurally guaranteed.
 
 The rest follows from this.
 
@@ -60,9 +60,9 @@ Identity makes reviews trustable. Trustable reviews make the marketplace useful.
 
 ## 5. Funding and Ownership (3 minutes)
 
-The legal entity is a Wyoming LLC — it costs $260/year, forms in two days, and allows international membership. Every verified user signs a Joinder Agreement and becomes a member with legal co-ownership rights.
+The company is founded normally — but an irrevocable purpose trust holds a golden share. That trust's only job is to veto sale, mission change, or removal of user protections. This is the Patagonia model — proven, boring, and it actually works.
 
-The Operating Agreement — the LLC's constitution — encodes: one person one vote, revenue split formula, anti-sale clause, amendment process. No individual can sell it. No entity can acquire it. Changes require 75% supermajority.
+We explored making every user a legal co-owner — a million-member LLC. It doesn't work at scale. No precedent, tax nightmare, impossible to fund. So instead: the founder operates, the trust protects, users govern through elected positions and constitutional rights. Changes to the constitution require 75% supermajority of verified users.
 
 Anyone can invest any amount. What investors get is a time-bounded share of revenue. A percentage for a defined period, then it ends. The platform stays community-owned. Early investors take more risk, so they get better terms.
 
@@ -118,7 +118,7 @@ I need engineers. Backend, frontend, security, infrastructure. The problems are 
 
 I need designers. Someone who can make a complex system feel simple. Mobile-first. Works on a cheap phone on a slow connection.
 
-I need lawyers. US LLC law, Indian company law, data protection. Any jurisdiction.
+I need lawyers. Purpose trust structuring, Indian company law, data protection. Any jurisdiction.
 
 I need domain experts who can define what "quality" means in their field and volunteer as the first evaluators.
 

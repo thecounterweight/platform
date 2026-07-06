@@ -4,57 +4,76 @@
 
 Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-owned.
 
-**Legal entity:** A Wyoming LLC structured as a member-governed organization. The Operating Agreement (OA) encodes governance rules, revenue distribution, and anti-capture protections. Members join by signing a digital Joinder Agreement upon identity verification — this grants them membership, governance voting rights, and revenue-share rights.
+**Legal entity:** A founder-owned company (initially LLC or Private Limited) with an irrevocable purpose trust holding a golden share. The trust structurally prevents sale, mission abandonment, or removal of user protections — regardless of who runs the company or who invests.
 
-**Why a Wyoming LLC:**
-- International membership permitted (no citizenship/residency requirement)
-- Operating Agreement has full flexibility to encode one-person-one-vote, revenue formulas, and anti-sale clauses
-- Full legal personality — can own assets, sign contracts, hold bank accounts, limit liability
-- Costs ~$260/year (cheapest viable option)
-- Forms in 1-2 business days
-- No cap on number of members
+**Why not user-owned (member LLC / cooperative):**
 
-**What the Joinder Agreement grants each member:**
-- Membership in the LLC (legal co-ownership)
-- One vote in governance decisions (as defined in the OA)
-- Revenue-share rights (as defined in the OA)
+We explored user-owned models extensively (see [Legal Structure Research](../research/legal-structure-research.md)). They fail at internet scale:
+- No precedent exists for a million-member LLC — untested legal territory
+- Tax filing complexity: US LLCs issue K-1s to every member annually
+- Investor compatibility: near-zero (who puts capital into an entity governed by a million strangers?)
+- Operational paralysis: even simple decisions require member votes or delegation infrastructure
+- FEMA ambiguity: Indian members receiving distributions from a US LLC may face capital account restrictions
+
+The trust model (Patagonia, Signal, Mozilla) provides equivalent structural protection without these problems.
+
+**How the structure works:**
+
+1. **Operating company** — Founded and owned by the founder. Normal corporate operations. Can raise capital, hire, sign contracts, hold bank accounts.
+2. **Irrevocable purpose trust** — Holds a golden share with veto power. The trust's purposes are defined at creation and cannot be changed by the founder, the company, or any future owner.
+3. **User-elected advisory board** — The trust must consult this board before exercising its veto. Gives users voice without giving them operational control.
+
+**What the trust's golden share vetoes (irrevocable):**
+- Sale or acquisition of the company
+- IPO or public listing
+- Removal of constitutional user protections (data sovereignty, no-ads, transparency, governance rights)
+- Mission change away from community-serving platform
+- Dissolution without supermajority user approval
+
+**What the constitutional documents guarantee users (enforceable — in Articles/OA, not just ToS):**
+- One person, one vote in governance elections
+- Revenue-share rights (as defined in the constitution)
 - Right to stand for elected positions
-- All rights activate automatically upon identity verification
+- Data sovereignty (export, delete, no sale to third parties)
+- Transparency of all financial and governance decisions
+- Right to sue if the company violates constitutional clauses (legal standing via Articles, not ToS)
 
-**What the Operating Agreement encodes (the constitution):**
-- Revenue split formula (see below)
-- Anti-acquisition clause — the LLC cannot be sold to any individual or entity
-- Transfer restrictions — membership is personal and non-transferable
-- Amendment process — changes to constitutional provisions require supermajority (75% of voting members)
-- Dispute resolution mechanism
-- Founder authority until first election (see Revenue Authority below)
+**What the founder retains:**
+- Operational authority (product, hiring, day-to-day decisions)
+- Ability to raise capital normally (investors buy equity in the operating company)
+- Right to compensation as a contributor (per the builder unit system)
+- Subject to the constitutional constraints — cannot override the trust
 
-**Anti-capture protections in the OA:**
-- No individual or coordinated group can acquire majority control
-- Operating Agreement amendments require 75% supermajority
-- Unamendable clauses: community ownership, one-person-one-vote for governance, anti-sale (mirroring Principles 0, 4, 9)
+**Anti-capture protections:**
+- Trust is irrevocable — founder cannot dissolve it or change its purposes
+- Golden share cannot be sold, transferred, or diluted
+- If the founder dies, goes bankrupt, or wants to sell — the trust vetoes any mission-violating transfer
+- Constitutional amendments require 75% supermajority of verified users
+- Unamendable clauses mirror Principles 0, 4, 9
+
+**What happens if the founder leaves:**
+- Company continues operating under whoever the board/members elect
+- Trust continues protecting the mission regardless
+- Golden share is held by the trust, not the founder personally
 
 **Federation model (designed-in, executed later):**
 
-Start with one entity (Wyoming LLC). Add local entities only when a specific trigger forces it — not aspirationally, but because a payment processor, tax authority, or local law requires it.
+Start with one entity. Add local entities only when a specific trigger forces it.
 
 | Trigger | Action |
 |---------|--------|
-| Indian payment processor requires local entity | Register Indian Section 8 Company or LLP, linked to LLC by agreement |
-| Tax withholding on member distributions exceeds 15% for a jurisdiction | Add local entity in that jurisdiction to reduce withholding |
+| Indian payment processor requires local entity | Register Indian subsidiary, linked to parent by agreement |
+| Tax withholding on distributions exceeds 15% for a jurisdiction | Add local entity to reduce withholding |
 | Local law requires platform registration (e.g., EU Digital Services Act) | Register local entity to comply |
-| Supermajority of members votes to restructure | Restructure as voted |
+| Supermajority of users votes to restructure | Restructure as voted |
 
 **How federation works when activated:**
 - Each local entity handles jurisdiction-specific compliance (payments, tax, regulatory)
-- All entities are linked by inter-entity agreements ensuring: mutual recognition of members, shared governance rules, revenue distribution per the global formula
-- Members of any linked entity are recognized as members of the network
-- The Wyoming LLC remains the root governance entity unless a supermajority votes to restructure
+- All entities are linked by inter-entity agreements ensuring: shared governance rules, revenue distribution per the global formula
+- The root entity remains the governance parent unless a supermajority votes to restructure
 - No single local entity can unilaterally change terms or break from the network
 
-**The Operating Agreement includes this clause:** "The LLC may spawn subsidiary or sibling entities in other jurisdictions, linked by inter-entity agreements. Formation of new entities requires elected leadership approval. Dissolution of the root entity requires 90% supermajority."
-
-The principle: the entity exists to hold infrastructure and sign agreements. Members join via contract (Joinder). No individual owns it. No individual can sell it. Members govern it democratically. One entity now, federation when reality demands it.
+The principle: the entity exists to build and operate the platform. The trust exists to prevent the entity from betraying its users. Users govern through elected positions and constitutional rights — not through direct ownership of a legal entity they'd never meaningfully control anyway.
 
 ## Revenue Authority — Who Decides Where Money Goes
 

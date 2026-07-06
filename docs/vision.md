@@ -2,7 +2,7 @@
 
 ## The Core Idea
 
-Every person on the platform is a verified, unique human. The platform is owned by those people collectively.
+Every person on the platform is a verified, unique human. The platform is structurally prevented from being sold, captured, or stripped of user protections — guaranteed by an irrevocable purpose trust, not just a promise.
 
 That one decision — verified identity — enables trusted reviews, democratic governance, accountable investment, and moderation that works. The rest of this document describes what we build on top of it.
 

@@ -1,6 +1,6 @@
 # The Counterweight — Overview
 
-A community-governed platform where verified real people invest together, trade together, and govern together. Community-owned. Open-source.
+A community-governed platform where verified real people invest together, trade together, and govern together. Structurally protected from sale or capture. Open-source.
 
 ## Why This Scope
 
@@ -22,7 +22,7 @@ Each feature exists somewhere already — affiliate review sites, angel networks
 
 | Module | What it does |
 |--------|-------------|
-| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. Full government ID verification (Milestone 2) = LLC membership via Joinder Agreement = legal co-ownership. |
+| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. Full government ID verification (Milestone 2) = constitutional rights activation (governance vote, revenue share, legal standing). |
 | Discussion | Threaded boards + chat. Every participant is a verified human. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |

@@ -127,33 +127,36 @@ The platform knows you're real. Other users don't have to.
 
 This is pseudonymous participation with verified-human backing. You get privacy without enabling manipulation.
 
-## Verification = Membership
+## Verification = Constitutional Rights
 
-Completing identity verification automatically makes you a member of The Counterweight LLC (Wyoming, USA). You sign a digital Joinder Agreement as part of the verification flow — this is the legal contract that grants you membership.
+Completing identity verification grants you constitutional rights on the platform. These rights are encoded in the company's Articles of Association / Operating Agreement — legally enforceable, not just a Terms of Service promise.
 
 **What happens at verification:**
 1. KYC provider confirms your identity
-2. You're shown the Joinder Agreement: "By signing, you become a member of The Counterweight LLC. This gives you one vote in governance decisions and a share of platform revenue."
-3. You sign digitally (enforceable under the US ESIGN Act)
-4. You're enrolled as a member
+2. You're shown the platform constitution: your rights, the governance model, and what protections exist
+3. You accept the terms (digitally signed, enforceable)
+4. You're enrolled as a verified user with full constitutional rights
 
-**What membership gives you:**
-- Legal co-ownership of the platform (membership in the LLC)
+**What verification gives you:**
 - One vote in all governance decisions (elections, amendments, no-confidence)
 - Right to stand for elected positions (moderator, safety team, community lead)
-- Revenue-share rights as defined in the Operating Agreement
+- Revenue-share rights as defined in the constitutional documents
+- Legal standing to sue if the company violates its constitutional commitments
 - No citizenship or residency requirement — works for any nationality
 
 **Why this works:**
-- No separate "join" process — verification IS joining
-- Every verified user is an owner by default
-- The Operating Agreement encodes this: "All individuals who complete identity verification and sign the Joinder Agreement are automatically enrolled as members"
-- The ownership promise is legally real — enforced by Wyoming LLC law, not just words on a website
-- International by design — no FEMA restrictions, no per-country cooperative registration needed
+- No separate "join" process — verification IS activation of rights
+- Every verified user has constitutional protections by default
+- Rights are in the Articles/OA, not the Terms of Service — they cannot be unilaterally revoked
+- An irrevocable purpose trust holds a golden share preventing sale, mission change, or removal of these rights
+- International by design — no membership in a foreign entity required
+
+**Why not user ownership:**
+We explored making every user a legal co-owner (member-governed LLC). It doesn't work at scale — no precedent for million-member LLCs, tax filing nightmare (K-1s for every member), near-impossible to raise capital, FEMA ambiguity for Indian members. The trust model (proven by Patagonia, Signal, Mozilla) gives users equivalent structural protection without requiring them to be shareholders of an entity they'd never meaningfully control.
 
 ## Cost
 
-Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). A nominal membership fee (₹10-100) is bundled into the same one-time payment. This covers: verification cost + LLC membership enrollment. It also serves as a minor friction barrier against frivolous account creation.
+Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). A small fee covers the verification cost and serves as a minor friction barrier against frivolous account creation.
 
 ## Account Recovery
 

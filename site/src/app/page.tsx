@@ -14,7 +14,7 @@ export default function Home() {
           No bots. No fake reviews. No one selling your attention.
         </p>
         <p className="mt-6 text-base text-zinc-500 max-w-xl">
-          Community-owned. Open-source. Currently looking for builders.
+          Structurally protected from sale or capture. Open-source. Currently looking for builders.
         </p>
         <Counter />
       </section>
@@ -24,7 +24,7 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">What we&apos;re building</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            A platform where every user is verified as a unique real human — and the users collectively own it.
+            A platform where every user is verified as a unique real human — structurally prevented from being sold, captured, or stripped of user protections.
           </p>
           <ul className="space-y-3 list-none">
             <li>

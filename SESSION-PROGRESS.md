@@ -1,6 +1,6 @@
 # Session Progress — July 2-4, 2026
 
-> **Note (July 6, 2026):** This file is a historical log from early sessions. Many decisions recorded here have since been superseded — notably: legal entity changed from cooperative to Wyoming LLC, pooled investment removed entirely (SEBI CIS risk), arbitration renamed to mediation, secondary market removed. For current design decisions, read the docs directly.
+> **Note (July 6, 2026):** This file is a historical log from early sessions. Many decisions recorded here have since been superseded — notably: legal entity changed from cooperative → Wyoming LLC → founder-owned with irrevocable purpose trust, pooled investment removed entirely (SEBI CIS risk), arbitration renamed to mediation, secondary market removed, compensation model switched from multiplicative to additive bonuses. For current design decisions, read the docs directly.
 
 This file captures all work done across sessions. If we lose context, resume from here.
 

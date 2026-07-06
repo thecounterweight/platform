@@ -4,9 +4,11 @@ These are non-negotiable. Everything else is open for discussion.
 
 ---
 
-## 0. The platform is owned by its users
+## 0. The platform is structurally prevented from betraying its users
 
-The people who use this platform own it, govern it, and decide how it evolves. This is structural — written into the constitution, the legal entity, and the governance model. No individual or entity can acquire ownership that overrides the collective.
+An irrevocable purpose trust holds a golden share with veto power over sale, mission change, or dissolution. The company's constitutional documents encode user protections that cannot be removed by the founder, investors, or any future management. Users elect an advisory board that the trust must consult before exercising its veto.
+
+We explored user-owned models (member-governed LLC, cooperative) but found them operationally unproven at internet scale — no precedent exists for a million-member LLC, tax/filing complexity is prohibitive, and investor compatibility is near-zero. The trust model (proven by Patagonia, Signal, Mozilla) provides equivalent structural protection without requiring every user to be a legal co-owner.
 
 ## 1. Every person matters equally
 
