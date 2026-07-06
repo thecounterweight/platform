@@ -37,7 +37,7 @@ const DOC_META: Record<string, { title: string; description: string }> = {
   payments: { title: "Payments", description: "How money moves without the platform being a payment processor" },
   "architecture-rfc": { title: "Architecture RFC", description: "Proposed technical design — open for debate" },
   "builder-compensation": { title: "Builder Compensation", description: "How contributors get paid" },
-  "investment-model": { title: "Investment Model", description: "How community economics work" },
+  contracts: { title: "Contracts", description: "Contract infrastructure for verified humans" },
   "funding-model": { title: "Funding Model", description: "How we raise capital and who decides the terms" },
   "community-certification": { title: "Community Certification", description: "How quality is verified by real experts" },
   "collective-purchasing": { title: "Collective Purchasing", description: "How small shops get bulk pricing power" },

@@ -88,13 +88,13 @@ Domain experts interview and assess people's skills. Real evaluations by real ex
 
 Small shops pool demand, buy direct from manufacturers at bulk prices. The platform coordinates. Participants save 15-20% on inventory costs. This is the stickiest feature — once shopkeepers are saving real money, they don't leave.
 
-### Community investment.
+### Contract infrastructure.
 
-The platform facilitates signed agreements between verified people. Transactions are recorded. Returns are traceable. The platform never holds your money — it makes it possible for people to trust each other enough to transact directly.
+Verified identity makes contracts between strangers enforceable. Business funding, freelancer agreements, rental contracts, P2P loans — all signed digitally by verified parties, stored immutably, with dispute resolution built in. The platform never holds your money — it makes it possible for people to trust each other enough to transact directly. Think of it as a notary layer for the internet.
 
 ### The ecosystem.
 
-The identity layer is open infrastructure. Anyone can build on top: peer-to-peer lending, freelance marketplaces with portable reputation, local classifieds where sellers are accountable, co-op governance tools.
+The identity layer is open infrastructure. Anyone can build on top: lending platforms, freelance marketplaces with portable reputation, local classifieds where sellers are accountable, co-op governance tools.
 
 Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back.
 

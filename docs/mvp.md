@@ -162,7 +162,7 @@ You earn by being useful and accurate. Gaming requires consistently fooling buye
 | On-platform payments | Requires payment rail integration per country, compliance, dispute resolution |
 | Delivery/logistics | Massive infrastructure — let existing platforms handle this for now |
 | Collective purchasing | Needs critical mass of shopkeepers in same geography |
-| Community investment facilitation | Legal complexity, requires established trust and governance |
+| Contract infrastructure (business funding, rentals, loans) | Requires verified identity layer and lawyer-reviewed templates |
 | Political coordination | Emerges naturally once membership hits critical mass |
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
 | Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |

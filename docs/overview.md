@@ -12,7 +12,7 @@ Identity → trusted reviews → marketplace → revenue → builders → more f
 
 **Amplifiers (added when the foundation is solid):**
 
-Certification → talent pool → more revenue → investment facilitation → collective purchasing → governance at scale → translation → federation
+Certification → talent pool → more revenue → contract infrastructure → collective purchasing → governance at scale → translation → federation
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
@@ -27,7 +27,7 @@ Each feature exists somewhere already — affiliate review sites, angel networks
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
 | Talent Pool | Companies pay to access expert-certified professionals. |
-| Investment | Members back businesses individually via direct signed contracts. Revenue share or equity. Platform provides contract infrastructure, doesn't manage capital. |
+| Contracts | Enforceable agreements between verified humans — business funding, freelancer agreements, rental contracts, loans, partnerships. Platform provides templates, signing, storage, and dispute resolution. |
 | Collective Purchasing | Small shops pool demand, buy direct from manufacturers at bulk prices. Platform coordinates. |
 | Governance | One person, one vote on leadership and policy. Individual investment decisions are each person's own. Leaders removable via no-confidence (7-day discussion + 60% vote). |
 | Payments | Money moves through existing rails (UPI, SEPA, bank transfer). Platform records, never holds or processes. |
@@ -80,7 +80,7 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 | Status | Component |
 |--------|-----------|
 | Live | Landing page + signup (thecounterweight.org) |
-| Designed | Identity verification, payments, investment model, certification, marketplace strategy |
+| Designed | Identity verification, payments, contracts, certification, marketplace strategy |
 | Not started | All platform code (backend, frontend, mobile) |
 
 ## Tech Stack (Proposed)
@@ -102,5 +102,5 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 - [Builder Compensation](builder-compensation.md) — how you get paid
 - [Identity Verification](identity-verification.md) — how one-person-one-account works
 - [Payments](payments.md) — how money moves
-- [Investment Model](investment-model.md) — community economics
+- [Contracts](contracts.md) — contract infrastructure for verified humans
 - [Contributing](../CONTRIBUTING.md) — how to start

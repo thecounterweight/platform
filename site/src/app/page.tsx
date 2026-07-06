@@ -59,7 +59,7 @@ export default function Home() {
             Democratic governance works because one person = one vote (no sock puppets).
             Reviews are trustable because reviewers have a single reputation they can&apos;t reset.
             Moderation works because getting banned means losing your only account.
-            Investment works because every party to a contract is a known, accountable person.
+            Contracts work because every party is a known, accountable person.
           </p>
           <p className="text-zinc-400">
             Your raw ID number is never stored — only an irreversible cryptographic hash
@@ -141,7 +141,7 @@ export default function Home() {
                 <p className="font-medium text-zinc-300 text-xs">Governance</p>
               </div>
               <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
-                <p className="font-medium text-zinc-300 text-xs">Investment</p>
+                <p className="font-medium text-zinc-300 text-xs">Contracts</p>
               </div>
             </div>
           </div>

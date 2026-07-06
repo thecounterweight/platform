@@ -12,7 +12,7 @@ const docLinks = [
   { href: "/docs/payments", label: "Payments" },
   { href: "/docs/architecture-rfc", label: "Architecture" },
   { href: "/docs/builder-compensation", label: "Get Paid" },
-  { href: "/docs/investment-model", label: "Invest Together" },
+  { href: "/docs/contracts", label: "Contracts" },
   { href: "/docs/funding-model", label: "Funding" },
   { href: "/docs/community-certification", label: "Certification" },
   { href: "/docs/collective-purchasing", label: "Bulk Buying" },

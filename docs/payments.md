@@ -55,7 +55,7 @@ Cross-border investment contracts are direct transfers — the platform provides
 |-----------------|----------|--------------|
 | Marketplace purchase (aggregated) | Nobody | None — revenue comes from affiliate commissions |
 | Marketplace sale (community sellers) | Seller | Small commission on completed sales |
-| Investment facilitation | Funded business | Small facilitation fee on successfully funded deals — covers legal infrastructure, contract management, and record-keeping |
+| Contract creation + signing | Both parties (split or initiator pays) | Per-contract fee covering templates, signing infrastructure, storage, and reminders |
 | Dispute resolution | Parties involved | Shared fee covering mediator coordination and process management |
 | Collective purchasing | Nobody | Small coordination fee covers operations and generates revenue |
 
@@ -77,7 +77,7 @@ For marketplace purchases where money has already moved:
 
 - Buyer and seller are both verified real humans.
 - The contract/receipt exists on the platform.
-- Dispute resolution follows the same process as any other contract dispute — community mediation first, legal system as last resort. See [Investment Model](investment-model.md) for the dispute process.
+- Dispute resolution follows the same process as any other contract dispute — community mediation first, legal system as last resort. See [Contracts](contracts.md) for the dispute process.
 - For small marketplace disputes, buyer/seller reputation and community pressure usually resolve it. Persistent bad actors lose their verified status.
 
 ## Implementation Phases

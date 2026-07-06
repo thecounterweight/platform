@@ -58,7 +58,7 @@ We're building the foundation. The ecosystem builds everything else.
 | [Identity Verification](docs/identity-verification.md) | One person, one account |
 | [Payments](docs/payments.md) | Money moves without platform holding it |
 | [Builder Compensation](docs/builder-compensation.md) | How contributors get paid |
-| [Investment Model](docs/investment-model.md) | Community-backed businesses |
+| [Contracts](docs/contracts.md) | Contract infrastructure for verified humans |
 | [Funding Model](docs/funding-model.md) | No VC, terms decided democratically |
 | [Collective Purchasing](docs/collective-purchasing.md) | Bulk pricing for small shops |
 | [Community Certification](docs/community-certification.md) | Quality verified by experts |

@@ -18,7 +18,7 @@ A platform that enables collective action by design.
 - **Communication is built in.** Discussion boards, group chat, video calls. Encrypted.
 - **Money moves transparently.** Payments happen through existing rails (UPI, SEPA, bank transfers) — the platform records, not processes. All investment contracts are visible to all members. Personal transactions stay private.
 - **Translation is built in.** Post in any language, read in any language.
-- **Legal infrastructure is built in.** Investment deals, contracts, governance decisions, dispute resolution — templates designed by lawyers, processes to follow, digital signatures. Contracts are stored, timestamped, and enforceable.
+- **Legal infrastructure is built in.** Contracts of any type — business funding, rental, freelance, partnership, loans. Templates designed by lawyers, digital signatures, immutable storage. Contracts are timestamped and legally enforceable.
 
 ### The Marketplace
 
@@ -34,7 +34,7 @@ A dedicated space you enter when you want to buy or sell.
 
 With millions of verified people, transparent money, and democratic governance on the same platform:
 
-- **Community investment.** Back businesses directly via signed contracts. Revenue share flows back. Members back more businesses.
+- **Contracts between real people.** Business funding, freelancer agreements, rental contracts, loans — all enforceable because both parties are verified. Revenue flows, disputes are resolvable, and every agreement has a paper trail.
 - **Political power.** 5,000 organized people in a city who vote together on local issues are a serious voting block.
 - **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them.
 
@@ -64,8 +64,8 @@ One system where each piece strengthens the others. Ships in phases — each pha
 
 - Certification creates the talent pool
 - Talent pool generates more revenue
-- Established trust makes investment facilitation possible
-- Investment returns attract more members
+- Established trust makes contract infrastructure viable (business funding, P2P lending, freelance)
+- Contract revenue attracts more members
 - More members make collective purchasing viable
 
 Each feature exists independently somewhere — affiliate review sites, angel networks, cooperatives, certification bodies, forums. All proven models. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.

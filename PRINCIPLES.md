@@ -86,7 +86,7 @@ No decision is permanent if the people living under it want to change it. The sy
 
 ## 13. The people build the system
 
-These principles are the only thing decided in advance. The governance structure, investment model, platform architecture, moderation system — all designed by the people who show up.
+These principles are the only thing decided in advance. The governance structure, contract infrastructure, platform architecture, moderation system — all designed by the people who show up.
 
 The best ideas will come from people we haven't met yet.
 
