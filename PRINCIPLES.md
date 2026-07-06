@@ -80,6 +80,8 @@ Every community is different. Different cultures, languages, needs, governance s
 
 No decision is permanent if the people living under it want to change it. The system evolves. Future members aren't bound by choices they had no part in making.
 
+**Exception:** Principles 0 (user ownership), 4 (data sovereignty), and 9 (hard ethical lines) are foundational constraints. They cannot be amended or overridden by any vote, regardless of majority. Everything else — including the governance model, investment structure, and this amendment process itself — can be changed by future members.
+
 ## 13. The people build the system
 
 These principles are the only thing decided in advance. The governance structure, investment model, platform architecture, moderation system — all designed by the people who show up.
@@ -88,4 +90,4 @@ The best ideas will come from people we haven't met yet.
 
 ---
 
-*This document is version 0.1. Amendments require 75% approval with at least 15% of all verified members participating (delegated votes count toward quorum). They are hard to change on purpose.*
+*This document is version 0.1. Amendments require 75% approval with at least 15% of all verified members participating (delegated votes count toward quorum). Principles 0, 4, and 9 are unamendable. Everything else is hard to change on purpose — but changeable.*
