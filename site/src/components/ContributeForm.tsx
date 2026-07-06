@@ -62,6 +62,10 @@ export function ContributeForm() {
         },
       };
 
+      if (!window.Razorpay) {
+        throw new Error("Payment system is loading. Please try again in a moment.");
+      }
+
       const rzp = new window.Razorpay(options);
       rzp.open();
     } catch (err) {
