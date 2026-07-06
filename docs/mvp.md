@@ -13,7 +13,7 @@ The MVP ships in three milestones. Each one is independently useful and proves a
 
 ### Verification (phone/OTP)
 
-One person, one phone number. OTP verification pins an account to a device. This is not the full identity system — it's enough to prevent duplicates and make every participant a real person with something to lose.
+One phone number per account at registration. Password is the primary auth; OTP is the second factor on new devices. This is not the full identity system — it's enough to prevent bot-scale abuse and make every participant a real person with something to lose.
 
 Full government ID verification (DigiLocker, eIDAS) comes in Milestone 2 via a KYC provider (Digio, Signzy, IDfy, or similar) — no government license needed on our end.
 

@@ -35,15 +35,33 @@ For high-stakes actions (voting, large investments, governance decisions), commu
 
 **What this proves:** The person using the account right now is the person who registered it.
 
-### Layer 3 — OTP (Device Binding)
+### Layer 3 — OTP (Bot Friction + Second Factor)
 
-One phone number per account. Every login and sensitive action requires OTP verification.
+One phone number per account at registration. OTP is a second factor, not the primary auth.
 
-- Pins the account to a physical device
 - Makes scaling attacks expensive (each fake account needs a unique SIM)
+- Acts as second factor for login on new devices (not primary authentication)
 - Standard SMS or authenticator app
 
-**What this proves:** You control a unique phone number. Bot farms can't operate at scale without massive SIM acquisition.
+**What this does NOT do:** OTP alone does not grant account access. A recycled or swapped SIM cannot be used to take over an account.
+
+**Login model:**
+- Primary auth: password or passkey (set at registration)
+- Second factor: OTP on new devices only
+- Sessions: long-lived on trusted devices — no OTP required for every login
+- Sensitive actions (voting, investment, governance): face scan (Layer 2)
+
+**SIM recycling / swap protection:**
+- Login from new device requires password + OTP (not OTP alone)
+- If OTP delivery fails (number recycled), account remains accessible via password on existing sessions
+- Rebinding to a new phone number requires full re-verification (gov ID + face scan)
+
+**Shared phone households:**
+- Account is tied to person (gov ID), not to phone
+- Phone is the current login channel, not the identity anchor
+- If someone later gets their own device, they rebind via gov ID + face scan
+
+**What this proves:** Bot farms can't operate at scale without massive SIM acquisition. Legitimate users aren't locked out by SIM issues because identity lives in Layer 1, not Layer 3.
 
 ### Combined Effect
 
@@ -102,13 +120,19 @@ Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). 
 
 ## Account Recovery
 
-If you lose access (phone lost, number changed):
+**Phone lost or number changed (still have password):**
+1. Log in with password on a new device.
+2. Bind a new phone number (requires face scan to confirm identity).
 
+**Password forgotten (still have phone):**
+1. OTP to existing number + face scan → reset password.
+
+**Both lost (phone and password):**
 1. Re-verify with government ID through the same API.
 2. Complete a face scan matching your original verification.
-3. Bind a new phone number.
+3. Set new password, bind new phone number.
 
-This prevents someone from creating a second account under the guise of "recovery" — you must prove you're the same person.
+In all cases, you must prove you're the same person. A recycled SIM alone never grants access — the new SIM owner cannot log in without the password, and cannot reset the password without passing a face scan against the original verified identity.
 
 ## Age Threshold
 
