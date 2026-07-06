@@ -203,3 +203,17 @@ This is a starting proposal — the builder community will ratify or adjust the 
 ## Risk
 
 If the platform never generates revenue, the units are worth nothing. If it works, early builders are compensated well for the risk they took. The time-weighted multiplier ensures early contributors aren't diluted into irrelevance by later joiners.
+
+## Legal Status of Contributors
+
+Contributors are **volunteers contributing to an open-source project** — not employees, contractors, or workers-for-hire.
+
+- No employment relationship exists between contributors and the platform or its founder.
+- Units are speculative. They represent a potential future share of revenue that may never exist.
+- No one is promised payment, guaranteed compensation, or owed wages.
+- Contributors choose what to work on, when to work, and how much to contribute. There is no direction, schedule, or obligation.
+- Contributors can stop at any time with no consequence. Units earned remain theirs.
+
+This is the same model used by open-source projects that offer future equity or revenue share to early contributors (e.g., contributor agreements in cooperatively-governed projects). The key distinction from employment: there is no obligation to work, no guaranteed compensation, and no direction of work by an employer.
+
+If the platform later hires paid staff (from operations budget), those are separate employment relationships with proper contracts, labor law compliance, and guaranteed wages. The unit system described above is for voluntary contributors only.
