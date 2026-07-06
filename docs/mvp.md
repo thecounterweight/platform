@@ -16,7 +16,7 @@ The MVP ships in three milestones. Each one is independently useful and proves a
 
 One person, one phone number. OTP verification pins an account to a device. This is not the full identity system — it's enough to prevent duplicates and make every participant a real person with something to lose.
 
-Full government ID verification (DigiLocker, eIDAS) comes in Milestone 2 when the license is approved. The DigiLocker license process takes 3-6 months and runs in parallel with this build.
+Full government ID verification (DigiLocker, eIDAS) comes in Milestone 2 via a KYC provider (Digio, Signzy, IDfy, or similar) — no government license needed on our end.
 
 ### Discussion Boards + Chat
 
@@ -55,15 +55,15 @@ One person, one vote. Verified identity makes this viable — no sock puppets, n
 
 ---
 
-## Milestone 2: Identity Upgrade (when DigiLocker license is approved)
+## Milestone 2: Identity Upgrade (when Milestone 1 has traction)
 
 **Proves:** People will go through full government ID verification voluntarily.
 
-**Depends on:** DigiLocker/Aadhaar KUA license approval (3-6 month process, starts immediately).
+**Depends on:** Integration with a KYC provider (Digio, Signzy, IDfy, or similar). These companies already hold DigiLocker/Aadhaar eKYC licenses — we use their APIs. No government license needed on our end. Integration timeline: 2-4 weeks.
 
 ### Full Identity Verification
 
-Government ID API integration (DigiLocker in India, eIDAS in EU). Face scan for high-stakes actions. Non-reversible hash stored — no personal data retained.
+KYC provider handles government ID verification (DigiLocker in India via provider API, eIDAS in EU). Face scan for high-stakes actions. Non-reversible hash stored — no personal data retained.
 
 Existing phone-verified users are invited to upgrade. Three-tier access:
 - **Verified** — full government ID. Full platform access.
@@ -195,7 +195,7 @@ Builder compensation activates when revenue consistently exceeds operating costs
 1. Discussion boards launch with phone verification and multi-language UI.
 2. First ~1,000 users join. Community forms. Content is created.
 
-**Milestone 2 (when identity license is approved — runs in parallel):**
+**Milestone 2 (when Milestone 1 has traction):**
 3. Government ID verification goes live. Users upgrade from phone-verified to full-verified.
 
 **Milestone 3 (when affiliate APIs are approved):**

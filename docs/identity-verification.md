@@ -10,15 +10,17 @@ Every account on the platform must belong to a unique, real human. This is non-n
 
 ### Layer 1 — Government Identity Verification
 
-Most governments provide digital identity APIs to verified institutions:
+Verification is handled through existing KYC providers who already have government API access:
 
-- **India:** DigiLocker, Aadhaar eKYC
-- **EU:** eIDAS framework
-- **UK:** GOV.UK Verify
-- **US:** ID.me, state DMV integrations
-- **Others:** Added as the platform expands to each country
+- **India:** Digio, Signzy, IDfy, or similar — they hold DigiLocker/Aadhaar eKYC licenses. We use their APIs. No license needed on our end.
+- **EU:** eIDAS-compliant providers (Onfido, Jumio, etc.)
+- **UK:** GOV.UK Verify via authorized identity providers
+- **US:** ID.me, Persona, or similar
+- **Others:** Added as the platform expands — always through a licensed local provider
 
-The platform registers as a relying party in each jurisdiction and verifies users through these official APIs. This is the same mechanism airlines, banks, and fintech companies use.
+The platform does not hold a government API license directly. We integrate with providers who do. This removes the regulatory dependency — no 12-18 month license wait, no risk of denial. If one provider is unavailable, we switch to another.
+
+**Cost:** KYC providers charge ₹5-20 per verification in India, $1-3 elsewhere. Passed to the user as a one-time registration fee.
 
 **What this proves:** You are a real person with a government-issued identity. You are unique (no duplicate accounts).
 

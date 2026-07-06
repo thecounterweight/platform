@@ -103,7 +103,7 @@ export default function Home() {
           </div>
           {/* Milestone 2 */}
           <div className="mb-6">
-            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 2 — when identity license is approved</p>
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 2 — when Milestone 1 has traction</p>
             <div className="grid md:grid-cols-1 gap-3 max-w-sm mx-auto">
               <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
                 <p className="font-medium text-zinc-200 text-sm">Government ID Verification</p>
