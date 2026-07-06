@@ -12,14 +12,20 @@ When you contribute work — code, design, legal research, community moderation,
 
 Your payout share = your units / total units in the pool.
 
+### Formula
+
+`units = hours × complexity × (1 + sum of applicable bonuses)`
+
+Complexity reflects skill level required. Bonuses are additive (not multiplicative) — they stack by adding, not compounding. This prevents early contributors from accumulating disproportionate permanent control of the builder pool.
+
 ### Example
 
-- Engineer A designs the auth system architecture. 80 hours, highly complex (5x) + critical path (1.5x) = 80 × 5 × 1.5 = **600 units.**
-- Designer B creates the brand and landing page. 40 hours, standard (3x) = 40 × 3 = **120 units.**
-- Lawyer C researches US LLC law and writes legal docs. 30 hours, complex (4x) + first-of-kind (1.5x) = 30 × 4 × 1.5 = **180 units.**
-- Community manager D moderates Discord for 3 months. 120 hours, routine (2x) = 120 × 2 = **240 units.**
+- Engineer A designs the auth system architecture. 80 hours, highly complex (5x), Year 1 (+100%), first-10 (+100%), critical path (+50%) = 80 × 5 × (1 + 1 + 1 + 0.5) = 80 × 5 × 3.5 = **1,400 units.**
+- Designer B creates the brand and landing page. 40 hours, standard (3x), Year 1 (+100%), first-10 (+100%) = 40 × 3 × (1 + 1 + 1) = 40 × 3 × 3 = **360 units.**
+- Lawyer C researches US LLC law and writes legal docs. 30 hours, complex (4x), Year 1 (+100%), first-of-kind (+50%) = 30 × 4 × (1 + 1 + 0.5) = 30 × 4 × 2.5 = **300 units.**
+- Community manager D moderates Discord for 3 months. 120 hours, routine (2x), Year 1 (+100%) = 120 × 2 × (1 + 1) = 120 × 2 × 2 = **480 units.**
 
-Total pool: 1,140 units. Engineer A owns 53% of the builder pool. When revenue flows, they get 53% of the builder allocation.
+Total pool: 2,540 units. Engineer A owns 55% of the builder pool. When revenue flows, they get 55% of the builder allocation.
 
 ### Revenue Split
 
@@ -70,9 +76,9 @@ The increase from 30% to 40% at scale accommodates growth-stage investors who co
 
 ### Early Contributor Advantage
 
-The earlier you contribute, the more your units are worth relative to the total pool. When there are only 1,000 total units and you hold 200, that's 20%. When the pool grows to 100,000 units, your 200 is 0.2% — but the revenue has also grown massively.
+Early contributors benefit in two ways: (1) time and founding bonuses add +100-200% to their unit calculations, and (2) being early means a larger share of a smaller pool. When there are only 2,000 total units and you hold 400, that's 20%. When the pool grows to 100,000 units, your 400 is 0.4% — but the revenue has also grown massively.
 
-Early risk = early reward.
+Early risk = early reward. But the additive model ensures the ratio between early and late contributors stays in the 2-4x range for equivalent work — meaningful advantage without permanent dominance.
 
 ### What Counts as Contribution
 
@@ -110,9 +116,9 @@ All unit assignments are public forever. The standard 14-day challenge window ap
 
 Unit claims should pass a gut check: would this work cost roughly this much on the open market? If someone claims 50 hours of highly-complex work for something a freelancer would do in 10 hours at standard complexity, that's a flag. Not a hard rule — a reference point for peer reviewers.
 
-**Time-weighted multiplier reduces the incentive:**
+**Additive bonuses reduce the incentive to inflate:**
 
-The 3x Year 1 multiplier already rewards early builders disproportionately. The system accounts for early risk = early reward by design. This reduces the incentive to inflate units because being early is already structurally advantageous.
+The time and founding bonuses already reward early builders (up to +200%). The system accounts for early risk = early reward by design. This reduces the incentive to inflate complexity claims because being early is already structurally advantageous — and the additive model caps the maximum benefit.
 
 **Peer review is still required** — you can't assign units to yourself. Contribution quality matters, not just hours.
 
@@ -120,50 +126,51 @@ The 3x Year 1 multiplier already rewards early builders disproportionately. The 
 
 This is a starting framework. The builder community will ratify or adjust it.
 
-**Complexity levels:**
+**Complexity levels (the only multiplier — reflects skill level required):**
 
 | Level | Multiplier | Description |
 |-------|-----------|-------------|
 | Trivial | 1x | Typo fixes, formatting, simple config changes |
 | Routine | 2x | Basic docs, minor bug fixes, small UI tweaks following existing patterns |
 | Standard | 3x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
-| Complex | 4x | New feature design, integration across systems, legal research, non-trivial security work |
-| Highly complex | 5x | Payment systems, identity verification, complex legal structuring, cryptographic design |
-| Architectural | 6x | System-level design, defining interfaces between major components, data model design, infrastructure decisions |
-| Foundational | 7x | Platform-level architecture and technical vision, economic model design, decisions that constrain everything downstream and are expensive to reverse |
+| Complex | 4x | New feature design, integration across systems, legal research, non-trivial security work, architecture decisions |
+| Highly complex | 5x | Payment systems, identity verification, complex legal structuring, cryptographic design, platform-level architecture that constrains everything downstream |
 
-**Founding contributor bonus (stacks multiplicatively with complexity):**
+The 1x-5x range aligns with market rates: consulting firms bill 3-5x between analyst and partner; tech companies pay 3-4x between junior and principal. The cap at 5x prevents concentration while still meaningfully rewarding expertise.
 
-| Contributor number | Bonus multiplier | Effect |
-|-------------------|-----------------|--------|
-| First 10 contributors | 3x | All work earns triple. A 5x task done by contributor #4 earns 15x. |
-| Contributors 11-20 | 2x | All work earns double. A 5x task done by contributor #15 earns 10x. |
-| Contributors 21-50 | 1.5x | All work earns 1.5x. A 5x task done by contributor #35 earns 7.5x. |
-| After 50 | 1x (standard) | No founding bonus — standard multipliers only. |
+**Bonuses (additive — stack by adding percentages, not compounding):**
 
-This rewards showing up when nothing existed and risk was highest. The bonus is permanent for work done while you held that contributor number — it doesn't expire. Work done after contributor #50 joins doesn't retroactively change earlier assignments.
+| Factor | Bonus | When it applies |
+|--------|-------|-----------------|
+| Year 1 contributor | +100% | All work done in the platform's first year of development |
+| Year 2 contributor | +50% | All work done in year 2 |
+| Year 3 contributor | +25% | All work done in year 3 |
+| Year 4+ | +0% | Standard — no time bonus |
+| First 10 contributors | +100% | All work by the first 10 people to contribute |
+| Contributors 11-20 | +50% | All work by contributors 11-20 |
+| Contributors 21-50 | +25% | All work by contributors 21-50 |
+| After 50 | +0% | No founding bonus |
+| Critical path (blocks others) | +50% | Work that unblocks other contributors |
+| First-of-kind (no pattern to follow) | +50% | First implementation of a new system |
+| Ongoing maintenance | +50% (floor: complexity 3x minimum) | Monitoring, upgrades, incident response |
 
-**Additional multipliers (stack with complexity):**
+The maintenance floor exists because unglamorous work that keeps the platform alive is at least as valuable as building new things.
 
-| Factor | Multiplier |
-|--------|-----------|
-| Critical path (blocks others without it) | 1.5x |
-| First-of-kind (no existing pattern to follow) | 1.5x |
-| Ongoing maintenance (keeps systems running — monitoring, upgrades, incident response) | Floor: 3x minimum |
+**How bonuses combine:** Add all applicable bonus percentages, then multiply once.
 
-The maintenance floor exists because unglamorous work that keeps the platform alive is at least as valuable as building new things. Without it, the incentive is to build and move on, leaving systems to rot.
+`units = hours × complexity × (1 + sum of bonuses)`
 
-All multipliers stack. Examples:
+**Examples:**
 
-- 10 hours of fixing typos and formatting = 10 × 1 = **10 units**
-- 10 hours of writing documentation (routine) = 10 × 2 = **20 units**
-- 10 hours of implementing a feature following existing patterns (standard) = 10 × 3 = **30 units**
-- 20 hours of legal research for a new jurisdiction (complex + first-of-kind) = 20 × 4 × 1.5 = **120 units**
-- 15 hours of payment system design (highly complex + critical path) = 15 × 5 × 1.5 = **112.5 units**
-- 20 hours of defining the service communication layer (architectural + critical path) = 20 × 6 × 1.5 = **180 units**
-- 20 hours of platform architecture (foundational + critical path + first-of-kind) = 20 × 7 × 1.5 × 1.5 = **315 units**
+- 10 hours of fixing typos (trivial, Year 4, contributor #60): 10 × 1 × 1 = **10 units**
+- 10 hours of writing docs (routine, Year 2, contributor #30): 10 × 2 × (1 + 0.5 + 0.25) = 10 × 2 × 1.75 = **35 units**
+- 10 hours implementing a feature (standard, Year 1, contributor #8): 10 × 3 × (1 + 1 + 1) = 10 × 3 × 3 = **90 units**
+- 20 hours of legal research (complex, Year 1, contributor #5, first-of-kind): 20 × 4 × (1 + 1 + 1 + 0.5) = 20 × 4 × 3.5 = **280 units**
+- 15 hours of payment system design (highly complex, Year 1, contributor #3, critical path): 15 × 5 × (1 + 1 + 1 + 0.5) = 15 × 5 × 3.5 = **262.5 units**
 
-The key distinction between levels 4 and 5: level 4 requires deep expertise. Level 5 shapes what everyone else builds on top of — get it wrong and everything downstream is wrong.
+**Maximum possible multiplier:** 5 × (1 + 1 + 1 + 0.5 + 0.5) = 5 × 4 = **20x raw hours.** This is the absolute ceiling for a highly complex, Year 1, first-10, critical path, first-of-kind contribution. In practice, most strong early contributions will land at 10-15x.
+
+**Why additive and not multiplicative:** Multiplicative compounding (where each bonus multiplies every other) creates exponential concentration. Five early contributors could permanently own 80%+ of the builder pool. Additive bonuses reward early risk (2-4x advantage over later contributors) without creating an unchallengeable aristocracy. This aligns with worker cooperative norms (2:1 to 5:1 pay bands) while being more generous than pure egalitarianism.
 
 All assignments are public and challengeable for 14 days. If challenged, peer vote decides.
 
@@ -185,18 +192,20 @@ Written into the platform's constitution.
 
 The blockchain anchoring is infrastructure, not product. Contributors never interact with it. It exists so that no one — not a future maintainer, not a compromised account, not even GitHub going down — can erase or alter your recorded contributions.
 
-### Time-Weighted Multiplier
+### Time and Founding Bonuses
 
-Units earned earlier are worth more — because early builders took more risk.
+Time and founding bonuses are already factored into the unit formula above (they're part of the additive bonus sum). There is no separate post-hoc multiplier applied to units.
 
-| When earned | Multiplier on units |
-|-------------|-------------------|
-| Year 1 | 3x |
-| Year 2 | 2x |
-| Year 3 | 1.5x |
-| Year 4+ | 1x |
+Summary of timing advantage:
 
-So if you earn 100 units in year 1, they count as 300 in the pool. Someone earning 100 units in year 4 holds exactly 100. This protects early builders from being diluted into irrelevance as the pool grows.
+| When | Effective bonus on equivalent work |
+|------|-----------------------------------|
+| Year 1, first-10 contributor | +200% (3x effective) |
+| Year 1, contributor #15 | +150% (2.5x effective) |
+| Year 2, contributor #60 | +50% (1.5x effective) |
+| Year 4+, contributor #60 | +0% (1x — base rate) |
+
+This means a Year 1 first-10 contributor earning base 100 units gets 300 units. A Year 4 post-50 contributor doing the same work gets 100 units. Ratio: 3:1. This aligns with the Slicing Pie model (2x for unpaid pre-revenue work) and cooperative pay band norms (2:1 to 5:1).
 
 This is a starting proposal — the builder community will ratify or adjust the multipliers.
 

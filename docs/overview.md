@@ -61,10 +61,11 @@ Within the builders+investors share, investor portion is capped at 30% of total 
 
 ## How Contributors Get Paid
 
-Contributions are tracked. Units = hours × complexity multiplier × time bonus.
+Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 
-- Year 1 contributors get 3x multiplier on all units
-- Year 2 gets 2x, Year 3 gets 1.5x, Year 4+ gets 1x
+- Complexity: 1x-5x based on skill level required (aligned with market rate ratios)
+- Bonuses are additive: Year 1 (+100%), first-10 contributor (+100%), critical path (+50%), first-of-kind (+50%)
+- Maximum effective multiplier: 20x (absolute ceiling). Typical strong early contribution: 10-15x.
 - Revenue flows to contributors proportional to their share of total units
 - All assignments are public, challengeable, and require verifiable artifacts
 

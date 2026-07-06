@@ -122,7 +122,7 @@ I need lawyers. US LLC law, Indian company law, data protection. Any jurisdictio
 
 I need domain experts who can define what "quality" means in their field and volunteer as the first evaluators.
 
-Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Year one contributors earn 3x multiplied compensation. Details are in the docs — read them, decide if the terms are fair.
+Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors earn bonus units — additive, capped, market-aligned. Details are in the docs — read them, decide if the terms are fair.
 
 ---
 
