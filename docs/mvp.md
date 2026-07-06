@@ -1,18 +1,14 @@
 # MVP — What Gets Built First
 
-This is the minimum viable platform. The smallest thing that delivers real value and generates early revenue.
-
-Everything else in the vision comes after this works.
+The smallest thing that delivers real value and generates early revenue. Everything else comes after this works.
 
 ## Core Components
 
 ### 1. Identity Verification
 
-Every user is a verified real human. One person, one account.
+One person, one account. Three layers: government identity API (DigiLocker, eIDAS, etc.) proves you're real, face scan proves you're the account holder for high-stakes actions, OTP pins it to a device. User pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
 
-Three layers: government identity API (DigiLocker, eIDAS, etc.) proves you're real, face scan proves you're the account holder for high-stakes actions, OTP pins it to a device. The user pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
-
-The principle is non-negotiable. The implementation is a proposed design — open to improvement.
+The principle is non-negotiable. The implementation is open to improvement.
 
 ### 2. Discussion Boards + Chat
 
@@ -33,7 +29,7 @@ Verified identity makes this viable — one person, one flag. Serial false-flagg
 
 **Open design question:** How does the flag threshold scale with community size? A fixed number doesn't work — too high for small boards (harmful content stays up too long), too low for large boards (a few people can suppress speech). Likely percentage-based with a minimum floor, but the exact formula needs to be designed during implementation.
 
-This is the daily engagement layer. People come for the conversations.
+This is the daily engagement layer.
 
 ### 3. Marketplace (Reviews + Discovery)
 
@@ -72,9 +68,9 @@ Products are ranked by review activity and quality combined:
 2. Among reviewed products, rank by **aggregate score** = sum of all star ratings (e.g., 5 five-star reviews = 25, 3 four-star reviews = 12)
 3. Unreviewed products sorted by recency
 
-This rewards both quality (high stars) and engagement (many reviews). A well-reviewed product rises naturally. An unreviewed product sits at the bottom until someone reviews it — which incentivizes reviewing.
+Rewards both quality and engagement. Unreviewed products sit at the bottom until someone reviews them — which incentivizes reviewing.
 
-**Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms. No need to wait for scale.
+**Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms.
 
 **API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — seller commissions, talent pool fees, certification fees, sponsored slots, and identity layer fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers. Anti-monopoly laws (Competition Act 2002 in India, Article 102 TFEU in EU, Sherman Act in US) provide legal recourse against discriminatory termination of access.
 
@@ -87,7 +83,7 @@ Reviewers earn a share of affiliate commissions when their reviews drive clicks.
 3. **Peer-rated reviews** — Other verified buyers of the same product can rate any review as helpful, accurate, or misleading. This peer validation feeds directly into the reviewer's trust score. Gaming requires multiple verified purchasers to collude — far harder than creating fake accounts.
 4. **Trust score** — Anyone who bought a product can review it immediately. Commission and review weight grow as trust builds. Trust score is based on: peer ratings from other verified buyers, parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. Higher trust = higher commission share and more prominent placement. Misleading reviews tank your score.
 
-Net effect: you earn by being useful and accurate, not by selling. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
+You earn by being useful and accurate. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
 
 ## What's NOT in the MVP
 
@@ -169,4 +165,4 @@ Companies pay a fee to access pre-vetted, expert-certified professionals.
 
 **How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
 
-This is likely the strongest early revenue source post-MVP. Companies currently pay recruiters 15-25% of annual salary. The goal is to offer comparable vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
+Companies currently pay recruiters 15-25% of annual salary. The goal is comparable vetting quality at a fraction of the cost. The professional gets hired, the platform gets a fee, the certifier gets a share.

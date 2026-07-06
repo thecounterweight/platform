@@ -4,31 +4,29 @@ A community-governed platform where verified real people invest together, trade 
 
 ## Why This Scope
 
-This looks like many products. It's one system. The pieces reinforce each other — but they don't all need to exist on day one.
+Looks like many products. It's one system — the pieces reinforce each other, but they don't all need to exist on day one.
 
 **Load-bearing (must exist for the platform to function):**
 
 Identity → trusted reviews → marketplace → revenue → builders → more features
 
-**Amplifiers (strengthen the system, added when the foundation is solid):**
+**Amplifiers (added when the foundation is solid):**
 
 Certification → talent pool → more revenue → investment facilitation → collective purchasing → governance at scale → translation → federation
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each feature exists somewhere already. Affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums — all proven. Nowhere do they exist together, under community ownership, with one verified identity connecting them all. That's the gap.
+Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. All proven. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
 
-Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest. But it doesn't all ship at once.
-
-## What It Does (One Sentence Each)
+## What It Does
 
 | Module | What it does |
 |--------|-------------|
 | Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. |
 | Discussion | Threaded boards + chat. Every participant is a verified human. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
-| Certification | Domain experts evaluate and certify skills and product quality. Selected by community, not self-appointed. |
-| Talent Pool | Companies pay to access expert-certified professionals. Cheaper than recruiters, more reliable than LinkedIn. |
+| Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
+| Talent Pool | Companies pay to access expert-certified professionals. |
 | Investment | Communities back businesses via signed contracts. Revenue share or equity. Platform facilitates, doesn't manage. |
 | Collective Purchasing | Small shops pool demand, buy direct from manufacturers at bulk prices. Platform coordinates. |
 | Governance | One person, one vote on leadership and policy. Stake-weighted on investment decisions. Leaders removable via no-confidence (7-day discussion + 60% vote). |
@@ -40,7 +38,7 @@ Publicly owned infrastructure needs to cover communication, commerce, finance, a
 Day 1:    Affiliate commissions (reviews drive purchases on Amazon/Flipkart)
 Month 3:  Talent pool access fees (companies pay for certified professionals)
 Month 3:  Certification fees (candidates or sponsoring companies pay)
-Month 6+: Transaction fees (when on-platform payments activate)
+Month 6+: Seller commissions (when community sellers are added)
 Scale:    Collective purchasing operational fees
 ```
 
@@ -48,9 +46,9 @@ Revenue from affiliate commissions, talent pool access, and certification fees. 
 
 ## How Money Flows
 
-**Early stage:** Before revenue is healthy enough to support the full split, operations takes priority. Early revenue keeps infrastructure running and contributors retained. The full split activates once monthly revenue consistently covers operating costs with margin.
+**Early stage:** Operations takes priority. Early revenue keeps infrastructure running and contributors retained. The full split activates once monthly revenue consistently covers operating costs with margin.
 
-The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, but open to revision as we learn more. No timeline assumed. When revenue hits a threshold, the split adjusts:
+The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, open to revision.
 
 | Annual revenue | Builders + Investors | Operations | Community reinvestment |
 |---------------|---------------------|------------|----------------------|
@@ -59,11 +57,11 @@ The split changes as the platform grows. These ratios are a starting proposal �
 | $100M - $500M | 35% | 20% | 45% |
 | $500M+ | Community votes on the split |
 
-Within the builders+investors share, investor portion is capped at 30% of total revenue (under $20M) or 40% of total revenue ($20M+), and is time-bounded. The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk — early investors' share doesn't grow, the pool expands to include new participants.
+Within the builders+investors share, investor portion is capped at 30% of total revenue (under $20M) or 40% ($20M+), and is time-bounded.
 
 ## How Contributors Get Paid
 
-Every contribution is tracked. Units = hours × complexity multiplier × time bonus.
+Contributions are tracked. Units = hours × complexity multiplier × time bonus.
 
 - Year 1 contributors get 3x multiplier on all units
 - Year 2 gets 2x, Year 3 gets 1.5x, Year 4+ gets 1x
@@ -86,7 +84,7 @@ Every contribution is tracked. Units = hours × complexity multiplier × time bo
 
 ## Tech Stack (Proposed)
 
-- **Frontend:** Next.js (PWA — installable, push notifications, no app store gatekeepers)
+- **Frontend:** Next.js (PWA — installable, push notifications)
 - **Backend:** Modular monolith (clear boundaries, ships as one unit, splits later)
 - **Database:** PostgreSQL
 - **Cache:** Redis

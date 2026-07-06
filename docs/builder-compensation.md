@@ -1,10 +1,6 @@
 # Builder Compensation
 
-Every contribution is an investment of your skills. If revenue flows, you will be compensated.
-
-## How It Works
-
-Every contribution is tracked on a public ledger. When the platform generates revenue, a significant share goes directly to the people who built it.
+Contributions are tracked on a public ledger. When the platform generates revenue, a share goes to the people who built it.
 
 ### Contribution Units
 
@@ -177,7 +173,7 @@ In the early days, there's no cash. Your work is recorded from day one. The mome
 
 Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 30% first (at the under-$20M tier). The remaining 60% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
 
-This is designed to be structural — written into the platform's constitution and enforced by the open-source code itself.
+Written into the platform's constitution.
 
 ### How the Ledger Works
 
@@ -204,8 +200,6 @@ So if you earn 100 units in year 1, they count as 300 in the pool. Someone earni
 
 This is a starting proposal — the builder community will ratify or adjust the multipliers.
 
-## The Honest Truth
+## Risk
 
-This is a bet. If the platform never generates revenue, the units are worth nothing. That's the risk of being early.
-
-But if it works — early builders are compensated well for the risk they took. The time-weighted multiplier ensures that the people who showed up when nothing existed aren't drowned out by those who show up once it's safe. Early risk earns a permanent structural advantage.
+If the platform never generates revenue, the units are worth nothing. If it works, early builders are compensated well for the risk they took. The time-weighted multiplier ensures early contributors aren't diluted into irrelevance by later joiners.

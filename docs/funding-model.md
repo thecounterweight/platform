@@ -153,11 +153,11 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 **Note:** This applies to platform investors (people investing in the platform itself). It does NOT apply to community business investments (people backing a bakery or startup) — those positions can be sold to other members via the secondary market described in the [Investment Model](investment-model.md).
 
-## Why We Believe This Is Fair
+## Why This Structure
 
-- **For investors**: real returns tied to real revenue. Higher risk rounds get better terms. Democratic say in the terms themselves.
-- **For users**: the platform stays community-owned. No permanent extraction. Users have equal blocking power on any deal that's too generous to investors.
-- **For the platform**: capital flows in without giving up ownership. Time-bounded obligations mean the platform eventually runs fully self-sustaining.
+- **For investors**: returns tied to real revenue. Higher risk rounds get better terms. Say in the terms themselves.
+- **For users**: platform stays community-owned. Users have equal blocking power on any deal.
+- **For the platform**: capital flows in without giving up ownership. Time-bounded obligations mean it eventually runs self-sustaining.
 
 ## Revenue Share Ceiling
 
@@ -185,4 +185,4 @@ If existing rounds already consume the cap and a new round wants more, it doesn'
 
 ---
 
-*This is a starting point. The community discusses, debates, and shapes the final model together.*
+*Starting point. Open to discussion and revision.*

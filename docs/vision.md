@@ -2,9 +2,9 @@
 
 ## The Core Idea
 
-What if every person on a platform were a verified, unique human — and the platform were owned by those people collectively?
+Every person on the platform is a verified, unique human. The platform is owned by those people collectively.
 
-That's the foundation. One architectural decision — verified identity — enables a cascade of capabilities that aren't possible otherwise: trustable reviews, democratic governance, accountable investment, and moderation that actually works.
+That one decision — verified identity — enables trusted reviews, democratic governance, accountable investment, and moderation that works. The rest of this document describes what we build on top of it.
 
 ## What We're Building
 
@@ -12,100 +12,90 @@ A platform that enables collective action by design.
 
 ### The Platform
 
-An app where:
-
-- **Every person is real.** One account per human. Verified. You choose to speak as yourself or anonymously — but either way, the system knows it's a real person.
-- **You own your data.** No ads. No tracking. No selling to third parties. Opt-in analytics only. Full export and delete at any time. Open-source code so anyone can verify.
-- **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote. No CEO deciding what 2 billion people see.
-- **Communication is built in.** Discussion boards, group chat, video calls. Encrypted. Not scanned for ad targeting.
+- **Every person is real.** One account per human. Verified. You can speak as yourself or anonymously — the system knows it's a real person either way.
+- **You own your data.** Opt-in analytics only. Full export and delete at any time. Open-source code so anyone can verify.
+- **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote.
+- **Communication is built in.** Discussion boards, group chat, video calls. Encrypted.
 - **Money moves transparently.** Payments happen through existing rails (UPI, SEPA, bank transfers) — the platform records, not processes. Community investment pools are visible to all members. Personal transactions stay private.
-- **Translation is built in.** Post in any language, read in any language. Contextual, real-time. No one is excluded because of the language they were born into.
-- **Legal infrastructure is built in.** Every action that needs legal backing — investment deals, business funding agreements, revenue sharing contracts, employment terms, rental agreements, certification standards, governance decisions, dispute resolution — has templates designed by lawyers, processes to follow, and digital signatures. No one needs to hire a lawyer just to participate in the economy. Contracts are stored, timestamped, and enforceable.
+- **Translation is built in.** Post in any language, read in any language.
+- **Legal infrastructure is built in.** Investment deals, contracts, governance decisions, dispute resolution — templates designed by lawyers, processes to follow, digital signatures. Contracts are stored, timestamped, and enforceable.
 
 ### The Marketplace
 
-Not ads shoved in your face. A dedicated space you enter when YOU want to buy or sell.
+A dedicated space you enter when you want to buy or sell.
 
-- **Products from everywhere, reviews you can trust.** Products aggregated from major platforms via affiliate APIs — plus community sellers listing directly for free. Every review is from a verified real human with proof of purchase.
-- **No buyer fees.** Buyers never pay a platform fee. Sellers pay a small commission when a sale happens — the platform brought them the customer. Listing is free. Always.
-- **Community sellers list free.** Goods, services, skills, time. Listing costs nothing. Community sellers sit alongside aggregated products with the advantage of local trust and community backing.
-- **Community certification.** Expert evaluators — selected by the community — independently assess and certify quality. Products, services, and people's skills. A small artisan can get certified quality without paying for expensive ISO certification.
-- **Talent pool.** Experts evaluate and certify people's skills. Companies pay a fair fee to access pre-vetted professionals. Way less than a recruiter. Way more reliable than keyword-matching algorithms.
-- **Collective purchasing.** Shopkeepers need the same products. The platform aggregates demand and coordinates bulk orders direct from manufacturers. Participants pay manufacturers directly — the platform coordinates, never holds the money. Small shops get the same pricing power as Walmart or Reliance. They stay independent. They just don't get crushed on cost anymore.
+- **Products from everywhere, reviews you can trust.** Products aggregated from major platforms via affiliate APIs, plus community sellers listing directly for free. Reviews from verified humans with proof of purchase.
+- **No buyer fees.** Sellers pay a small commission when a sale happens — the platform brought them the customer. Listing is free.
+- **Community certification.** Expert evaluators — selected by the community — independently assess and certify quality. Products, services, and skills.
+- **Talent pool.** Experts evaluate and certify skills. Companies pay a fee to access pre-vetted professionals.
+- **Collective purchasing.** The platform aggregates demand from small shops and coordinates bulk orders direct from manufacturers. Participants pay manufacturers directly — the platform coordinates, never holds the money.
 
-### What Becomes Possible at Scale
+### At Scale
 
 With millions of verified people, transparent money, and democratic governance on the same platform:
 
-- **Community investment.** Pool money. Back businesses vetted by the community — local or global. Revenue share flows back. The community funds more businesses. Flywheel.
-- **Political power.** 5,000 organized, engaged people in a city who vote together on local issues are a serious voting block. Politicians have a reason to engage with you.
-- **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them. No waiting for the next election cycle — but enough friction to prevent mob-driven instability.
+- **Community investment.** Pool money. Back businesses vetted by the community. Revenue share flows back. The community funds more businesses.
+- **Political power.** 5,000 organized people in a city who vote together on local issues are a serious voting block.
+- **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them.
 
 ## How It Grows
 
 Small → large. Local → global.
 
-1. People join. They have a discussion space with real humans. Already better than existing platforms.
+1. People join. They have a discussion space with real humans.
 2. Marketplace activates. People buy and sell. Revenue flows. Builders get paid.
 3. Communities form around geography or interest. They start pooling resources.
 4. First businesses get funded. Returns flow back. More people join because it works.
 5. Political coordination emerges naturally once membership hits critical mass.
-6. Other communities see it working. They spin up their own. Connected to the network but sovereign in their own decisions.
+6. Other communities see it working. They spin up their own — connected to the network but sovereign.
 
 ## Why This Scope
 
-This is not ten separate products bolted together. It's one system where each piece strengthens the others. But it ships in phases — each phase generates the revenue and trust that funds the next.
+One system where each piece strengthens the others. Ships in phases — each phase generates the revenue and trust that funds the next.
 
-**Load-bearing (the MVP — must exist for the platform to function):**
+**Load-bearing (the MVP):**
 
-- **Identity** makes reviews trustworthy (verified humans, not bots)
-- **Trusted reviews** make the marketplace useful (people come for honest information)
-- **Marketplace** generates revenue from day one (affiliate commissions)
-- **Revenue** pays builders (who build more features)
+- Identity makes reviews trustworthy
+- Trusted reviews make the marketplace useful
+- Marketplace generates revenue from day one (affiliate commissions)
+- Revenue pays builders who build more features
 
 **Amplifiers (added when the foundation supports them):**
 
-- **Certification** creates the talent pool (experts verify skills)
-- **Talent pool** generates more revenue (companies pay for access)
-- **Established trust** makes investment facilitation possible (people know each other)
-- **Investment returns** attract more members (it visibly works)
-- **More members** make collective purchasing viable (critical mass)
+- Certification creates the talent pool
+- Talent pool generates more revenue
+- Established trust makes investment facilitation possible
+- Investment returns attract more members
+- More members make collective purchasing viable
 
 Each feature exists independently somewhere — affiliate review sites, angel networks, cooperatives, certification bodies, forums. All proven models. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
 
-Publicly owned infrastructure needs to cover communication, commerce, finance, and governance — because these are the systems people depend on daily and currently have no ownership over. Covering only one leaves people dependent on corporate platforms for the rest. But it doesn't all ship at once.
-
 ## Bigger Than One Platform
 
-The identity layer is open infrastructure. We provide the load-bearing services — verified identity, governance primitives, payment rails. Technically capable people host their own instances and build whatever they need on top.
+The identity layer is open infrastructure. If your service requires "every user is a provably real, unique human," you plug into this network.
 
-If your service requires "every user is a provably real, unique human," you plug into this network. No permission needed. No API key from a corporation that can revoke it.
-
-**If identity is open infrastructure, others can build:**
+**Others can build:**
 
 - **P2P lending** — real people, real reputations, enforceable contracts
-- **Freelance marketplaces** — portable reputation across instances, no 20% platform cut
+- **Freelance marketplaces** — portable reputation across instances
 - **Local classifieds** — every seller is verified and accountable
 - **Co-op management** — legitimate one-person-one-vote for any organization
 - **Mutual aid networks** — pool resources with people who are provably real
 - **Skill exchange** — teach and learn between verified humans
 - **Citizen journalism** — accountable sources, verifiable reporters
-- **Cooperative ownership** — fractional ownership of anything, governed democratically
 - **Whistleblowing** — verified (you're real) but anonymous (we don't reveal who)
 
-Each of these is someone else's project, running on their own server, using the shared identity network. The Counterweight doesn't control them. It just makes them possible by solving the hardest problem they all share: proving their users are real.
+Each of these is someone else's project, running on their own server, using the shared identity network.
 
-**Infrastructure isn't free to run.** Identity verification costs money. Storage costs money. Maintaining the network costs money. So:
+**Sustainability:**
 
-- **Community-serving instances** (mutual aid, co-op governance, skill exchange, whistleblowing, non-profits) — free. They strengthen the network. They don't extract from it.
-- **Revenue-generating instances** (freelance marketplaces, lending platforms, commercial classifieds) — pay a percentage of revenue back to the network. Proportional to what they extract. Small enough to never be extractive itself.
+- Community-serving instances (mutual aid, co-op governance, non-profits) — free.
+- Revenue-generating instances (freelance marketplaces, lending platforms) — pay a percentage of revenue back. Proportional to what they extract.
 
-The ceiling on that percentage is a constitutional bound — set in the principles, changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically by the community. Same governance pattern as investor caps and revenue splits.
-
-This is what could change for the tech world. An open, community-owned identity layer means any project that needs "every user is provably real" can plug in without building it from scratch. Trust by design becomes the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables.
+The ceiling on that percentage is a constitutional bound — changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically.
 
 ## What This Is Not
 
-There are no tokens, no NFTs, no speculation. No venture capital demanding growth at all costs. This is open-source, forkable, and designed for federation — no single entity controls it. People invest and expect returns. Parts of this will fail. We'll rebuild them.
+No tokens, no NFTs, no speculation. Open-source, forkable, designed for federation. People invest and expect returns. Parts of this will fail. We'll rebuild them.
 
-Blockchain may be used as infrastructure (anchoring the contribution ledger for immutability) — but never as a product feature, never as speculation, and never as something users need to understand or interact with.
+Blockchain may be used as infrastructure (anchoring the contribution ledger for immutability) — but never as a product feature and never as something users need to interact with.
