@@ -68,6 +68,8 @@ IT Rules 2021 (Intermediary Guidelines) additionally require:
 
 These obligations exist from the moment the platform hosts user-generated content. They are not optional and cannot be deferred to "when we have resources." The automated CSAM scanning must be integrated before the discussion boards go live.
 
+**What this means for Milestone 1 scope:** Discussion boards are not "just a forum." Legal compliance makes this heavier than it looks — PhotoDNA integration, a named grievance officer, SLA-bound complaint handling, and encrypted evidence preservation are all required before launch. This is real operational commitment from day one, not something that can be added later. Contributors should understand this going in.
+
 ---
 
 ## Milestone 2: Identity Upgrade (when Milestone 1 has traction)

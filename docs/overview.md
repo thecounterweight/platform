@@ -46,7 +46,7 @@ Milestones 1-2 generate no revenue — they build the community and trust. Reven
 
 ## How Money Flows
 
-**Early stage:** Operations takes priority. Early revenue keeps infrastructure running and contributors retained. The full split activates once monthly revenue consistently covers operating costs with margin.
+**Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes. See [Funding Model](funding-model.md) for full details.
 
 The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, open to revision.
 
