@@ -1,5 +1,4 @@
 import type { Metadata } from "next";
-import Script from "next/script";
 import { LedgerStats } from "@/components/LedgerStats";
 import { ContributeForm } from "@/components/ContributeForm";
 
@@ -11,8 +10,6 @@ export const metadata: Metadata = {
 export default function ContributePage() {
   return (
     <div className="flex flex-col min-h-screen">
-      <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="beforeInteractive" />
-
       <section className="max-w-3xl mx-auto px-6 pt-24 pb-16 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Contribute</h1>
         <p className="text-zinc-400 text-lg mb-8">

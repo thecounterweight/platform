@@ -1,6 +1,6 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useEffect } from "react";
 
 declare global {
   interface Window {
@@ -8,11 +8,30 @@ declare global {
   }
 }
 
+function loadRazorpayScript(): Promise<void> {
+  return new Promise((resolve, reject) => {
+    if (window.Razorpay) {
+      resolve();
+      return;
+    }
+    const script = document.createElement("script");
+    script.src = "https://checkout.razorpay.com/v1/checkout.js";
+    script.onload = () => resolve();
+    script.onerror = () => reject(new Error("Failed to load payment system"));
+    document.head.appendChild(script);
+  });
+}
+
 export function ContributeForm() {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
+  const [scriptLoaded, setScriptLoaded] = useState(false);
+
+  useEffect(() => {
+    loadRazorpayScript().then(() => setScriptLoaded(true));
+  }, []);
 
   async function handlePay() {
     const parsedAmount = parseFloat(amount);
@@ -62,10 +81,7 @@ export function ContributeForm() {
         },
       };
 
-      if (!window.Razorpay) {
-        throw new Error("Payment system is loading. Please try again in a moment.");
-      }
-
+      await loadRazorpayScript();
       const rzp = new window.Razorpay(options);
       rzp.open();
     } catch (err) {
@@ -123,10 +139,10 @@ export function ContributeForm() {
       {errorMsg && <p className="text-sm text-red-400">{errorMsg}</p>}
       <button
         onClick={handlePay}
-        disabled={status === "loading"}
+        disabled={status === "loading" || !scriptLoaded}
         className="w-full py-3 bg-zinc-100 text-zinc-900 font-medium rounded-lg hover:bg-white transition-colors disabled:opacity-50 disabled:cursor-not-allowed"
       >
-        {status === "loading" ? "Processing..." : "Contribute"}
+        {!scriptLoaded ? "Loading..." : status === "loading" ? "Processing..." : "Contribute"}
       </button>
       <p className="text-xs text-zinc-600 text-center">
         Processed securely via Razorpay. You&apos;ll see &quot;The Counterweight&quot; on your statement.
