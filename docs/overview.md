@@ -22,27 +22,27 @@ Each feature exists somewhere already — affiliate review sites, angel networks
 
 | Module | What it does |
 |--------|-------------|
-| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. Verification = LLC membership via Joinder Agreement = legal co-ownership. |
+| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. Full government ID verification (Milestone 2) = LLC membership via Joinder Agreement = legal co-ownership. |
 | Discussion | Threaded boards + chat. Every participant is a verified human. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
 | Talent Pool | Companies pay to access expert-certified professionals. |
-| Investment | Communities back businesses via signed contracts. Revenue share or equity. Platform facilitates, doesn't manage. |
+| Investment | Members back businesses individually via direct signed contracts. Revenue share or equity. Platform provides contract infrastructure, doesn't manage capital. |
 | Collective Purchasing | Small shops pool demand, buy direct from manufacturers at bulk prices. Platform coordinates. |
-| Governance | One person, one vote on leadership and policy. Stake-weighted on investment decisions. Leaders removable via no-confidence (7-day discussion + 60% vote). |
+| Governance | One person, one vote on leadership and policy. Individual investment decisions are each person's own. Leaders removable via no-confidence (7-day discussion + 60% vote). |
 | Payments | Money moves through existing rails (UPI, SEPA, bank transfer). Platform records, never holds or processes. |
 
 ## How It Makes Money
 
 ```
-Day 1:    Affiliate commissions (reviews drive purchases on Amazon/Flipkart)
-Month 3:  Talent pool access fees (companies pay for certified professionals)
-Month 3:  Certification fees (candidates or sponsoring companies pay)
-Month 6+: Seller commissions (when community sellers are added)
-Scale:    Collective purchasing operational fees
+Milestone 3:  Affiliate commissions (reviews drive purchases on Amazon/Flipkart)
+Phase 2:      Talent pool access fees (companies pay for certified professionals)
+Phase 2:      Certification fees (candidates or sponsoring companies pay)
+Phase 2:      Seller commissions (when community sellers are added)
+At scale:     Collective purchasing operational fees
 ```
 
-Revenue from affiliate commissions, talent pool access, and certification fees. Community-owned.
+Milestones 1-2 generate no revenue — they build the community and trust. Revenue starts at Milestone 3 (marketplace + affiliate APIs). Phase 2 features are funded by Milestone 3 revenue. Community-owned.
 
 ## How Money Flows
 
@@ -85,13 +85,14 @@ Contributions are tracked. Units = hours × complexity multiplier × time bonus.
 ## Tech Stack (Proposed)
 
 - **Frontend:** Next.js (PWA — installable, push notifications)
-- **Backend:** Modular monolith (clear boundaries, ships as one unit, splits later)
-- **Database:** PostgreSQL
-- **Cache:** Redis
-- **Message Broker:** NATS or RabbitMQ
-- **Search:** Meilisearch or Typesense
-- **Storage:** MinIO or Cloudflare R2
-- **Deployment:** Docker + Kubernetes (when scale warrants it)
+- **Backend:** Next.js API routes + standalone workers (TypeScript, modular monolith)
+- **Database:** PostgreSQL (single instance, schemas per module)
+- **Cache:** Redis (sessions, rate limiting, real-time presence)
+- **Background Jobs:** BullMQ (Redis-backed)
+- **Search:** Meilisearch or Typesense (added when marketplace launches)
+- **Storage:** Cloudflare R2 or MinIO (S3-compatible)
+- **Hosting:** Vercel (frontend) + Railway or Fly.io (workers/db)
+- **CI/CD:** GitHub Actions
 
 ## Read More
 

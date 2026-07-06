@@ -58,8 +58,8 @@ flowchart LR
         MOD[Basic Moderation]
     end
 
-    subgraph "Milestone 2 — Identity Upgrade (parallel license process)"
-        IDENTITY[Gov ID Verification — DigiLocker/eIDAS]
+    subgraph "Milestone 2 — Identity Upgrade (via KYC provider)"
+        IDENTITY[Gov ID Verification — via KYC provider API]
         TIERS[Three-tier Access]
     end
 

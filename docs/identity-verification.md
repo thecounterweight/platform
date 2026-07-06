@@ -174,7 +174,7 @@ In all cases, you must prove you're the same person. A recycled SIM alone never 
 ## Age Threshold
 
 - Community features (discussion, marketplace, reviews, certification): No platform-imposed age minimum.
-- Investment and contract features (backing businesses, pooled funds, signing agreements): 18+ or legal age of contract in the user's jurisdiction.
+- Investment and contract features (backing businesses, signing investment agreements): 18+ or legal age of contract in the user's jurisdiction.
 - Where local law imposes age restrictions on platform access (e.g., France requires parental consent for under-15 on social platforms), the platform complies with those requirements.
 
 Age is verified through the government ID layer during registration. Jurisdictional restrictions are applied based on the user's verified location.

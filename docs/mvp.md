@@ -160,7 +160,7 @@ You earn by being useful and accurate. Gaming requires consistently fooling buye
 | On-platform payments | Requires payment rail integration per country, compliance, dispute resolution |
 | Delivery/logistics | Massive infrastructure — let existing platforms handle this for now |
 | Collective purchasing | Needs critical mass of shopkeepers in same geography |
-| Community investment funds | Legal complexity, requires established trust and governance |
+| Community investment facilitation | Legal complexity, requires established trust and governance |
 | Political coordination | Emerges naturally once membership hits critical mass |
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
 | Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |
@@ -244,7 +244,7 @@ Domain experts interview and assess people's skills. Real evaluations by real ex
 
 ### Talent Pool
 
-Companies pay a fee to access pre-vetted, expert-certified professionals.
+Companies pay a fee to access expert-certified professionals.
 
 **How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
 

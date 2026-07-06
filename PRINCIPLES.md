@@ -12,9 +12,9 @@ The people who use this platform own it, govern it, and decide how it evolves. T
 
 One person, one voice — on governance, leadership, platform decisions, and politics. Regardless of wealth, origin, or connections.
 
-For investment decisions — which businesses to fund, how community capital is allocated — voting weight is proportional to your stake. If you have more money at risk, you get more say over how it's deployed. This prevents small coordinated groups from directing other people's money.
+For investment decisions — each person decides individually which businesses to back via direct contracts. Your money, your choice.
 
-Wealth never buys you power over people. But it does earn you proportional say over shared capital you contributed to.
+Wealth never buys you power over people. But your individual investment decisions are yours alone.
 
 ## 2. Everyone belongs, not just those with money
 
@@ -48,9 +48,9 @@ During the 7-day period, the leader continues routine operations but cannot make
 
 ## 6. We build businesses, not charities
 
-This is an investment vehicle. People put in money and expect returns. Charity runs out. Investment compounds.
+This is an economic engine. People back businesses directly and earn returns per their individual contracts. Charity runs out. Investment compounds.
 
-Communities fund businesses. Businesses grow. Returns flow back. The community funds more businesses. This cycle has to work economically or it doesn't work at all.
+Members fund businesses individually. Businesses grow. Returns flow to the members who backed them. Those members back more businesses. This cycle has to work economically or it doesn't work at all.
 
 ## 7. Knowledge flows freely
 
