@@ -34,12 +34,27 @@ Revenue-share agreements. Not equity. Not donations. Investors put money in, get
 - Operating Agreement amendments require 75% supermajority
 - Unamendable clauses: community ownership, one-person-one-vote for governance, anti-sale (mirroring Principles 0, 4, 9)
 
-**Later phases:**
-- When Indian UPI payment volume requires it → register an Indian entity (Section 8 or LLP) linked to the LLC by agreement
-- When operating in EU/UK → add local entity per jurisdiction
-- The Wyoming LLC remains the root entity in a federation model
+**Federation model (designed-in, executed later):**
 
-The principle: the entity exists to hold infrastructure and sign agreements. Members join via contract (Joinder). No individual owns it. No individual can sell it. Members govern it democratically.
+Start with one entity (Wyoming LLC). Add local entities only when a specific trigger forces it — not aspirationally, but because a payment processor, tax authority, or local law requires it.
+
+| Trigger | Action |
+|---------|--------|
+| Indian payment processor requires local entity | Register Indian Section 8 Company or LLP, linked to LLC by agreement |
+| Tax withholding on member distributions exceeds 15% for a jurisdiction | Add local entity in that jurisdiction to reduce withholding |
+| Local law requires platform registration (e.g., EU Digital Services Act) | Register local entity to comply |
+| Supermajority of members votes to restructure | Restructure as voted |
+
+**How federation works when activated:**
+- Each local entity handles jurisdiction-specific compliance (payments, tax, regulatory)
+- All entities are linked by inter-entity agreements ensuring: mutual recognition of members, shared governance rules, revenue pooling per the global formula
+- Members of any linked entity are recognized as members of the network
+- The Wyoming LLC remains the root governance entity unless a supermajority votes to restructure
+- No single local entity can unilaterally change terms or break from the network
+
+**The Operating Agreement includes this clause:** "The LLC may spawn subsidiary or sibling entities in other jurisdictions, linked by inter-entity agreements. Formation of new entities requires elected leadership approval. Dissolution of the root entity requires 90% supermajority."
+
+The principle: the entity exists to hold infrastructure and sign agreements. Members join via contract (Joinder). No individual owns it. No individual can sell it. Members govern it democratically. One entity now, federation when reality demands it.
 
 ## Revenue Authority — Who Decides Where Money Goes
 
