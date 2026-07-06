@@ -6,9 +6,9 @@
 
 ## 1. Opening (30 seconds)
 
-I'm proposing a platform. It's called The Counterweight. One architectural decision at the foundation could make trust work differently on the internet — and I can't build it alone.
+Should we build a utility platform that's owned by its users?
 
-This is a proposal. I think it could work. But first I want you to see the design and decide for yourself whether it's worth building.
+I'm proposing one. It's called The Counterweight. One architectural decision at the foundation — verified identity — makes trust work differently on the internet. I want to show you how it works and see if you want to build it with me.
 
 ---
 
