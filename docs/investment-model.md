@@ -192,7 +192,7 @@ Why the split: if you have ₹5 lakh at stake and someone has ₹500, it's not f
 
 - **No fixed amount.** Invest what you can, when you can.
 - **No minimum that prices people out.** Whether it's 500 rupees or 50,000 — you're a member with equal voice.
-- **Exit:** Sell your position to another member on the secondary market. No withdrawals from the pool — your money is invested, not sitting in a vault. You find a buyer, you're out.
+- **Exit:** Sell your position to another member on the secondary market. No withdrawals from the pool — your money is invested, not sitting in a vault. Liquidity depends on community size — at small scale, finding a buyer may take time or require accepting a discount.
 - **Returns:** Distributed periodically (quarterly or annually — community decides). Proportional to your contribution.
 
 ## Risk Disclosure
