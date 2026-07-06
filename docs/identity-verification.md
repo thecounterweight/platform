@@ -74,9 +74,31 @@ The platform knows you're real. Other users don't have to.
 
 This is pseudonymous participation with verified-human backing. You get privacy without enabling manipulation.
 
+## Verification = Membership
+
+Completing identity verification automatically makes you a member of The Counterweight Cooperative (or equivalent legal entity in your jurisdiction).
+
+**What happens at verification:**
+1. KYC provider confirms your identity
+2. You're shown: "By verifying, you become a member of The Counterweight Cooperative. This gives you one vote in governance decisions."
+3. You accept
+4. You're enrolled as a member with one share
+
+**What membership gives you:**
+- Legal co-ownership of the platform (one share in the cooperative)
+- One vote in all governance decisions (AGM, elections, amendments, no-confidence)
+- Right to stand for elected positions (moderator, safety team, community lead)
+- Right to receive surplus distribution if the cooperative ever distributes
+
+**Why this works:**
+- No separate "join the cooperative" process — verification IS joining
+- Every verified user is an owner by default
+- The cooperative's bylaws encode this: "All individuals who complete identity verification are automatically enrolled as members"
+- The ownership promise is legally real, not just words on a website
+
 ## Cost
 
-Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). The user pays the verification fee as a one-time cost during registration. This also serves as a minor friction barrier against frivolous account creation.
+Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). A nominal membership fee (₹10-100) is bundled into the same one-time payment. This covers: verification cost + one cooperative share. It also serves as a minor friction barrier against frivolous account creation.
 
 ## Account Recovery
 
