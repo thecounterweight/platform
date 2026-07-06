@@ -9,8 +9,8 @@ export default function Home() {
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">
           The Counterweight
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-zinc-500 italic">
-          Just a pebble trying to start an avalanche.
+        <p className="mt-4 text-lg md:text-xl text-zinc-400">
+          A platform where every user is a verified real person — and the users own it.
         </p>
         <p className="mt-6 text-xl md:text-2xl text-zinc-300 max-w-2xl">
           Publicly owned infrastructure. Community-governed. Open-source.
@@ -75,6 +75,61 @@ export default function Home() {
               is built in. One identity, one reputation, one stake in the community.
             </li>
           </ul>
+        </div>
+      </section>
+
+      {/* System architecture visual */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-8">The system</h2>
+        <div className="border border-zinc-800 rounded-lg p-6 md:p-8">
+          {/* Foundation */}
+          <div className="text-center mb-6">
+            <div className="inline-block px-6 py-3 bg-zinc-800 border border-zinc-700 rounded-lg">
+              <p className="font-semibold text-zinc-100">Verified Identity</p>
+              <p className="text-sm text-zinc-400 mt-1">One person, one account. Government ID + hash. Privacy-preserving.</p>
+            </div>
+            <p className="text-zinc-600 text-sm mt-2">foundation</p>
+          </div>
+          {/* Arrow */}
+          <div className="flex justify-center mb-6">
+            <div className="w-px h-8 bg-zinc-700"></div>
+          </div>
+          {/* MVP layer */}
+          <div className="grid md:grid-cols-3 gap-3 mb-6">
+            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+              <p className="font-medium text-zinc-200 text-sm">Discussion</p>
+              <p className="text-xs text-zinc-500 mt-1">Every voice is a real person</p>
+            </div>
+            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+              <p className="font-medium text-zinc-200 text-sm">Marketplace</p>
+              <p className="text-xs text-zinc-500 mt-1">Aggregated products, trusted reviews</p>
+            </div>
+            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+              <p className="font-medium text-zinc-200 text-sm">Revenue</p>
+              <p className="text-xs text-zinc-500 mt-1">Affiliate commissions from day one</p>
+            </div>
+          </div>
+          <p className="text-zinc-600 text-sm text-center mb-6">MVP — ships first</p>
+          {/* Arrow */}
+          <div className="flex justify-center mb-6">
+            <div className="w-px h-8 bg-zinc-700"></div>
+          </div>
+          {/* Phase 2 layer */}
+          <div className="grid md:grid-cols-4 gap-3 mb-2">
+            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+              <p className="font-medium text-zinc-300 text-xs">Certification</p>
+            </div>
+            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+              <p className="font-medium text-zinc-300 text-xs">Talent Pool</p>
+            </div>
+            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+              <p className="font-medium text-zinc-300 text-xs">Governance</p>
+            </div>
+            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+              <p className="font-medium text-zinc-300 text-xs">Investment</p>
+            </div>
+          </div>
+          <p className="text-zinc-600 text-sm text-center">phase 2 — funded by MVP revenue</p>
         </div>
       </section>
 
