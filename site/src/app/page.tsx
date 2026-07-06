@@ -81,7 +81,7 @@ export default function Home() {
         <div className="border border-zinc-800 rounded-lg p-6 md:p-8">
           {/* Milestone 1 */}
           <div className="mb-6">
-            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 1 — ships first (4-6 weeks)</p>
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 1 — ships first</p>
             <div className="grid md:grid-cols-3 gap-3">
               <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
                 <p className="font-medium text-zinc-200 text-sm">Phone/OTP Verification</p>

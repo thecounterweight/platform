@@ -10,7 +10,6 @@ The MVP ships in three milestones. Each one is independently useful and proves a
 
 **Proves:** People will use a discussion space where every participant is a verified real person.
 
-**Timeline:** 4-6 weeks with a small team.
 
 ### Verification (phone/OTP)
 
@@ -191,7 +190,7 @@ Builder compensation activates when revenue consistently exceeds operating costs
 
 ## How It Grows
 
-**Milestone 1 (ships first — 4-6 weeks):**
+**Milestone 1 (ships first):**
 1. Discussion boards launch with phone verification and multi-language UI.
 2. First ~1,000 users join. Community forms. Content is created.
 
