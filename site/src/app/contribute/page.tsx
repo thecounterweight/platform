@@ -1,5 +1,7 @@
 import type { Metadata } from "next";
+import Script from "next/script";
 import { LedgerStats } from "@/components/LedgerStats";
+import { ContributeForm } from "@/components/ContributeForm";
 
 export const metadata: Metadata = {
   title: "Contribute — The Counterweight",
@@ -9,6 +11,8 @@ export const metadata: Metadata = {
 export default function ContributePage() {
   return (
     <div className="flex flex-col min-h-screen">
+      <Script src="https://checkout.razorpay.com/v1/checkout.js" strategy="lazyOnload" />
+
       <section className="max-w-3xl mx-auto px-6 pt-24 pb-16 w-full">
         <h1 className="text-3xl md:text-4xl font-bold mb-4">Contribute</h1>
         <p className="text-zinc-400 text-lg mb-8">
@@ -16,6 +20,12 @@ export default function ContributePage() {
         </p>
 
         <LedgerStats />
+
+        {/* Payment form */}
+        <div className="border border-zinc-800 rounded-lg p-6 mb-8">
+          <h2 className="text-xl font-semibold mb-4">Make a contribution</h2>
+          <ContributeForm />
+        </div>
 
         {/* What this is */}
         <div className="border border-zinc-800 rounded-lg p-6 mb-8">
@@ -32,53 +42,6 @@ export default function ContributePage() {
             </ul>
             <p className="text-sm text-zinc-500">
               Only contribute what you can afford to lose entirely.
-            </p>
-          </div>
-        </div>
-
-        {/* How to pay */}
-        <div className="border border-zinc-800 rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">How to pay</h2>
-
-          {/* UPI */}
-          <div className="mb-6">
-            <h3 className="font-medium text-zinc-200 mb-2">UPI (India)</h3>
-            <div className="bg-zinc-900 rounded-lg p-4">
-              <p className="font-mono text-lg text-zinc-100 select-all">7340176100@ybl</p>
-              <p className="text-xs text-zinc-500 mt-2">Copy this UPI ID and pay any amount via any UPI app (GPay, PhonePe, Paytm, etc.)</p>
-            </div>
-          </div>
-
-          {/* Bank transfer */}
-          <div className="mb-6">
-            <h3 className="font-medium text-zinc-200 mb-2">Bank transfer (India / International)</h3>
-            <p className="text-sm text-zinc-400">
-              For larger amounts or international transfers, email{" "}
-              <a href="mailto:manojsihag888@gmail.com" className="text-zinc-200 underline hover:text-white">
-                manojsihag888@gmail.com
-              </a>{" "}
-              for bank details.
-            </p>
-          </div>
-        </div>
-
-        {/* After paying */}
-        <div className="border border-zinc-800 rounded-lg p-6 mb-8">
-          <h2 className="text-xl font-semibold mb-4">After paying</h2>
-          <div className="space-y-3 text-zinc-300 text-sm">
-            <p>Send the following to <a href="mailto:manojsihag888@gmail.com" className="text-zinc-200 underline hover:text-white">manojsihag888@gmail.com</a>:</p>
-            <ol className="list-decimal list-inside space-y-2">
-              <li>Your name (or pseudonym — your choice)</li>
-              <li>Amount contributed</li>
-              <li>Date of transaction</li>
-              <li>Transaction reference / screenshot</li>
-            </ol>
-            <p className="text-zinc-400 mt-4">
-              Within 48 hours, your contribution will be committed to the{" "}
-              <a href="https://github.com/thecounterweight/ledger" className="text-zinc-200 underline hover:text-white">
-                public ledger
-              </a>
-              {" "}— GPG-signed, tamper-evident, permanently archived.
             </p>
           </div>
         </div>
@@ -112,7 +75,7 @@ export default function ContributePage() {
                 <a href="https://github.com/thecounterweight/ledger" className="text-zinc-200 underline hover:text-white">
                   Public ledger
                 </a>{" "}
-                — every contribution and every expenditure, GPG-signed
+                — every contribution, GPG-signed and archived
               </li>
               <li>
                 <a href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md" className="text-zinc-200 underline hover:text-white">
@@ -124,12 +87,9 @@ export default function ContributePage() {
                 <a href="https://github.com/thecounterweight/platform/blob/main/docs/contribution-agreement-template.md" className="text-zinc-200 underline hover:text-white">
                   Contribution agreement
                 </a>{" "}
-                — what you&apos;re signing
+                — what you&apos;re agreeing to
               </li>
             </ul>
-            <p className="text-zinc-400 mt-3">
-              Verify it yourself. Clone the ledger repo. Check <code className="text-zinc-300">git log --show-signature</code>. The hash chain guarantees nothing has been altered.
-            </p>
           </div>
         </div>
 

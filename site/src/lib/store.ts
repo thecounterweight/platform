@@ -52,3 +52,33 @@ export async function getVisitorCount(): Promise<number> {
   const count = await redis.pfcount("unique_visitors");
   return count || 0;
 }
+
+// Contributions
+export interface Contribution {
+  name: string;
+  amount: number;
+  currency: string;
+  razorpayPaymentId: string;
+  razorpayOrderId: string;
+  timestamp: string;
+}
+
+export async function addContribution(contribution: Contribution): Promise<void> {
+  const redis = getRedis();
+  await redis.lpush("contributions", JSON.stringify(contribution));
+  await redis.incrbyfloat("contributions_total", contribution.amount);
+  await redis.incr("contributions_count");
+}
+
+export async function getContributions(): Promise<Contribution[]> {
+  const redis = getRedis();
+  const raw = await redis.lrange<Contribution>("contributions", 0, -1);
+  return raw || [];
+}
+
+export async function getContributionStats(): Promise<{ total: number; count: number }> {
+  const redis = getRedis();
+  const total = await redis.get<number>("contributions_total");
+  const count = await redis.get<number>("contributions_count");
+  return { total: total || 0, count: count || 0 };
+}
