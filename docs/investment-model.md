@@ -105,15 +105,18 @@ Start with revenue share. If the business hits agreed milestones (revenue target
 
 ### Legal structure
 
-This is not a securities offering. Here's why:
+The platform facilitates only what is legal in each jurisdiction. It does not define legality — local law does.
 
-- Pitches are only visible to verified community members, not the public.
-- No guaranteed returns are promised in any pitch. No "invest X and earn Y%" language.
-- Contracts are between specific named individuals — not between an entity and the public.
-- The platform facilitates but doesn't manage funds or recommend deals.
-- Interested parties initiate the contract, not the pitcher.
+**What the platform does:**
+- Provides contract templates and digital signing infrastructure
+- Records transactions transparently
+- Connects verified individuals who want to transact
 
-This is how angel networks and syndicates already work legally — a founder presents, interested parties self-select, contracts happen privately.
+**What the platform does not do:**
+- Pool capital or manage funds
+- Make investment decisions or recommend deals
+- Guarantee returns
+- Act as a broker, dealer, or investment advisor
 
 **Recommended structure by group size:**
 
@@ -126,7 +129,7 @@ This is how angel networks and syndicates already work legally — a founder pre
 
 The platform recommends appropriate contract templates based on pool size, capital amount, and jurisdiction. All contracts are transparent, auditable, and legally enforceable.
 
-**Legal reality:** Pooled investment may constitute a security in some jurisdictions regardless of how it's structured. The platform will not activate pooled investment (Path 1) in any country without jurisdiction-specific legal review confirming compliance. Direct deals between named individuals (Path 2) are the default — this is how angel investing already works legally. The platform facilitates the connection and provides contract infrastructure. It does not pool capital, manage funds, or make investment decisions.
+**Jurisdiction-specific activation:** Investment features activate country by country, only after legal review confirms compliance with local securities law, cooperative law, and financial regulations. Pooled investment (Path 1) requires explicit legal clearance per jurisdiction. Direct deals between named individuals (Path 2) are the default — contracts between named parties, initiated by the interested party, no public solicitation. The platform provides infrastructure. The parties make their own decisions.
 
 ### Why equity is harder than revenue share
 

@@ -46,6 +46,9 @@ export function Nav() {
         </Link>
         {/* Desktop nav */}
         <div className="hidden md:flex items-center gap-6 text-sm text-zinc-400">
+          <Link href="/contribute" className="hover:text-zinc-100 transition-colors">
+            Contribute
+          </Link>
           {/* Docs dropdown */}
           <div ref={dropdownRef} className="relative">
             <button
@@ -107,6 +110,13 @@ export function Nav() {
             </Link>
           ))}
           <div className="border-t border-zinc-800 pt-3 mt-3 space-y-3">
+            <Link
+              href="/contribute"
+              onClick={() => setMobileOpen(false)}
+              className="block text-sm text-zinc-400 hover:text-zinc-100 transition-colors"
+            >
+              Contribute
+            </Link>
             {externalLinks.map((link) => (
               <a
                 key={link.href}

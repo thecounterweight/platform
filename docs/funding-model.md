@@ -84,7 +84,50 @@ These are total voters across both blocks. If quorum isn't met, the vote doesn't
 
 **Transition trigger:** Once the platform has enough verified members to meet the quorum for a given round size, new funding rounds of that size must go through the bicameral voting process. The pre-quorum regime ends automatically when the membership threshold is met.
 
-## Early Capital (Pre-Quorum)
+## Early Capital (Pre-Entity)
+
+No legal entity exists yet. Contributions at this stage are structured as **risk capital** — not loans, not donations. Contributors knowingly put money toward building the platform with the understanding that it may fail entirely.
+
+**How it works:**
+
+1. Contributor sends money directly to the founder (UPI, bank transfer, or equivalent).
+2. Both parties sign a contribution agreement — amount, date, contributor identity, and terms.
+3. The agreement states: if the platform generates revenue, the contributor receives returns per governance-decided terms. If the platform fails, the contribution is lost.
+4. Every contribution and every expenditure is recorded in a public git repository (`thecounterweight/ledger`), GPG-signed, archived at Software Heritage and archive.org.
+
+**The contribution agreement guarantees:**
+- The contribution is recorded permanently and publicly
+- When the legal entity forms, it recognizes this contribution under its revenue-share framework
+- Terms (revenue share %, duration, cap) will be decided by the governance process described below, within constitutional bounds
+- Earlier contributors receive a time-held advantage over later contributors
+
+**What this is not:**
+- Not a loan — there is no repayment obligation, no interest, no maturity date
+- Not a donation — contributors have a conditional claim on future revenue
+- Not equity — no ownership of anything is transferred
+
+**The public ledger:**
+
+A git repository with the full financial history:
+- Every contribution: amount, date, contributor (name or pseudonym by their choice)
+- Every expenditure: amount, date, purpose
+- Running balance
+- All entries GPG-signed by the founder
+- Git hash chain makes the record tamper-evident — alter one entry and all subsequent hashes break
+- Archived externally (archive.org, Software Heritage) for redundancy
+
+Anyone can audit the full history at any time. No trust required — verify it yourself.
+
+**Risk disclosure:**
+- This is risk capital. If the platform fails, the contribution is lost entirely. The founder has no personal repayment obligation.
+- No entity exists yet to guarantee anything
+- Returns are conditional on the platform generating revenue
+- Specific terms have not been finalized and will be decided by democratic governance within constitutional bounds
+- Contributors should only contribute what they can afford to lose entirely
+
+## Early Capital (Pre-Quorum, Post-Entity)
+
+Once the legal entity is formed, it assumes all pre-entity obligations. New contributions go directly to the entity. The promissory notes convert to the entity's revenue-share framework.
 
 Anyone can contribute any amount, at any time. Every contribution is recorded permanently — amount, timestamp, contributor identity. The money goes to work immediately (infrastructure, development, operations).
 
@@ -173,6 +216,20 @@ These are hard caps — non-negotiable, not subject to vote.
 The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk. Early investors' share doesn't grow — the pool expands to include new participants. Per-investor returns are naturally diluted as more contributors join.
 
 If existing rounds already consume the cap and a new round wants more, it doesn't happen until cap space frees up. Since all deals are time-bounded, cap space opens naturally as earlier rounds expire. And hitting the cap implies significant revenue already exists — the platform should be self-sustaining from operations at that point, not dependent on new investment. The cap protects the platform's ability to pay builders and fund community programs.
+
+## Legal Compliance
+
+The platform facilitates only what is legal in each jurisdiction. Revenue-share agreements, investment rounds, and fund usage activate per country only after jurisdiction-specific legal review.
+
+The platform does not:
+- Act as a broker, dealer, or investment advisor
+- Pool capital or hold investor funds
+- Guarantee returns or promise specific yields
+- Solicit investment from the general public
+
+All agreements are between named, verified individuals. The platform provides contract infrastructure and transparent record-keeping. It is not a party to any investment agreement.
+
+If local law classifies any activity on the platform as a regulated financial service, that activity is paused in that jurisdiction until compliance is achieved or the feature is restructured.
 
 ## Open Questions
 

@@ -37,13 +37,21 @@ Board creators moderate. They can remove content and ban users from their board.
 
 **Moderation (scales with growth):**
 
-Two flag types:
-- **Regular flag** — Content accumulates flags from verified users. When threshold is reached, it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
-- **Urgent flag** — Goes directly to elected safety team for immediate action. For illegal content, doxxing, active threats. Safety team removes first, community reviews within 48 hours (confirms or reverses).
+Community vote system — any verified user can flag content, which opens a vote:
 
-Verified identity makes this viable — one person, one flag. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
+- **Upvote** — keep the content.
+- **Downvote** — remove it.
 
-**Open design question:** How does the flag threshold scale with community size? Likely percentage-based with a minimum floor, designed during implementation.
+Vote threshold before action is taken (minimum votes required):
+- Small boards (<100 members): 10 votes
+- Medium boards (100–1000 members): 3% of active members
+- Large boards (1000+ members): 1% of active members
+
+Once the threshold is reached: **60% downvotes = content removed.** 60% upvotes = flag dismissed, content stays. Consistent with the platform's governance majority rule.
+
+One person, one vote. Verified identity makes this viable — no sock puppets, no brigading with alt accounts.
+
+**Urgent flag** — For illegal content, doxxing, active threats. Goes directly to elected safety team for immediate removal. Community reviews within 48 hours (confirms or reverses the decision).
 
 ---
 
@@ -149,19 +157,31 @@ You earn by being useful and accurate. Gaming requires consistently fooling buye
 - Aggregated products (from Amazon, Flipkart, etc.) are pulled automatically via affiliate APIs — no manual listing needed.
 - Community seller listings (phase 2) — free to list, small commission on completed sales.
 
-## Revenue Model (MVP Phase)
+## Revenue Model
+
+**Milestone 1–2: No revenue. Runs lean.**
+
+Volunteer contributors. Minimal infrastructure costs (~₹5,000/month for hosting + OTP service). Funded by the founder or early supporters. This is the community-building phase — the product is the discussion platform, not the revenue.
+
+**Milestone 3 (early): Revenue starts, doesn't cover costs.**
+
+Affiliate commissions begin when users review products and click through. At small scale (5,000–10,000 users), this generates ₹1,000–5,000/month. Useful signal that the model works. Not enough to sustain anything.
+
+**Milestone 3 (at scale, 50K+ active users): Revenue covers infrastructure.**
+
+At this scale, affiliate click-throughs generate enough to cover hosting, OTP, and operational costs. The platform stops needing external support.
+
+**Phase 2: Revenue diversifies and compensates builders.**
 
 | Source | When it kicks in |
 |--------|-----------------|
-| Affiliate commissions (Amazon, Flipkart, etc.) | As soon as users review and click through to buy |
-
-**Phase 2 revenue (post-MVP):**
-
-| Source | When it kicks in |
-|--------|-----------------|
+| Affiliate commissions | Milestone 3 (meaningful at 50K+ users) |
 | Talent pool access fees (companies) | Once certified professionals exist |
-| Certification fees (small, from candidates or company-sponsored) | Once certifiers are active |
+| Certification fees | Once certifiers are active |
 | Seller commissions | When community sellers are added |
+| Identity layer fees | When commercial instances use the verification network |
+
+Builder compensation activates when revenue consistently exceeds operating costs. Until then, contributions are tracked and owed — paid retroactively when the money exists.
 
 ## Technical Approach
 
