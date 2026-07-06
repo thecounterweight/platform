@@ -8,7 +8,7 @@ const razorpay = new Razorpay({
 
 export async function POST(request: NextRequest) {
   try {
-    const { amount, name } = await request.json();
+    const { amount, name, hideAmount } = await request.json();
 
     if (!amount || amount < 1) {
       return NextResponse.json({ error: "Amount must be at least ₹1" }, { status: 400 });
@@ -23,6 +23,7 @@ export async function POST(request: NextRequest) {
       currency: "INR",
       notes: {
         contributor_name: name.trim(),
+        hide_amount: hideAmount ? "true" : "false",
         purpose: "Platform contribution",
       },
     });

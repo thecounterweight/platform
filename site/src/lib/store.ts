@@ -58,6 +58,7 @@ export interface Contribution {
   name: string;
   amount: number;
   currency: string;
+  hideAmount: boolean;
   razorpayPaymentId: string;
   razorpayOrderId: string;
   timestamp: string;

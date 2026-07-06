@@ -25,6 +25,7 @@ function loadRazorpayScript(): Promise<void> {
 export function ContributeForm() {
   const [name, setName] = useState("");
   const [amount, setAmount] = useState("");
+  const [hideAmount, setHideAmount] = useState(false);
   const [status, setStatus] = useState<"idle" | "loading" | "success" | "error">("idle");
   const [errorMsg, setErrorMsg] = useState("");
   const [scriptLoaded, setScriptLoaded] = useState(false);
@@ -51,7 +52,7 @@ export function ContributeForm() {
       const res = await fetch("/api/contribute", {
         method: "POST",
         headers: { "Content-Type": "application/json" },
-        body: JSON.stringify({ amount: parsedAmount, name: name.trim() }),
+        body: JSON.stringify({ amount: parsedAmount, name: name.trim(), hideAmount }),
       });
 
       if (!res.ok) {
@@ -136,6 +137,15 @@ export function ContributeForm() {
           className="w-full px-4 py-2 bg-zinc-900 border border-zinc-700 rounded-lg text-zinc-100 placeholder-zinc-600 focus:outline-none focus:border-zinc-500"
         />
       </div>
+      <label className="flex items-center gap-2 text-sm text-zinc-400 cursor-pointer">
+        <input
+          type="checkbox"
+          checked={hideAmount}
+          onChange={(e) => setHideAmount(e.target.checked)}
+          className="rounded border-zinc-700 bg-zinc-900"
+        />
+        Hide my amount from the public list
+      </label>
       {errorMsg && <p className="text-sm text-red-400">{errorMsg}</p>}
       <button
         onClick={handlePay}

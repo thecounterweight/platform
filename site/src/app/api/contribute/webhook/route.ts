@@ -31,6 +31,7 @@ export async function POST(request: NextRequest) {
         name: payment.notes?.contributor_name || "Anonymous",
         amount: payment.amount / 100, // Convert from paise to rupees
         currency: payment.currency,
+        hideAmount: payment.notes?.hide_amount === "true",
         razorpayPaymentId: payment.id,
         razorpayOrderId: payment.order_id,
         timestamp: new Date().toISOString(),
