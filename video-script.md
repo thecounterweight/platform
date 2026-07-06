@@ -18,9 +18,9 @@ The platform I'm proposing will be owned by its users. By design, not by promise
 
 What makes this possible is one architectural decision: every person on the platform is a verified, unique human being.
 
-Democratic governance on the internet has been extremely difficult because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. Decentralized social networks, federated protocols, blockchain projects — they solved communication, data portability, censorship resistance. But none of them solved the most fundamental question: is the person we're talking to real?
+Democratic governance on the internet has been extremely difficult because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. Decentralized social networks, federated protocols, blockchain projects — they solved communication, data portability, censorship resistance. They didn't focus on identity.
 
-That's what this platform solves first. And everything else follows from it.
+This platform focuses on identity first. And everything else follows from it.
 
 ---
 
