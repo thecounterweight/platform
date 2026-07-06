@@ -33,43 +33,20 @@ When the platform generates revenue (affiliate commissions, seller commissions, 
 
 **Before revenue is healthy:** The 60/30/10 split applies once revenue can meaningfully support all three pools. In the early stage — when revenue is minimal — operations takes priority. The goal is survival: keep infrastructure running, retain contributors, and build toward the threshold where the full split becomes meaningful. Early revenue goes primarily to operations until the platform is self-sustaining. Builder and investor payouts begin once operations are covered. The exact threshold where the full 60/30/10 activates is a governance decision — proposed as the point where monthly revenue consistently covers operating costs with margin.
 
-**The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, but open to revision as we learn more. No timeline is assumed. When revenue reaches a threshold, the corresponding split applies:**
+**The starting split:** 60% builders + investors | 30% operations | 10% community reinvestment.
 
-| Annual revenue | Builders + Investors | Operations | Community reinvestment |
-|---------------|---------------------|------------|----------------------|
-| Under $20M | 60% | 30% | 10% (reserve) |
-| $20M - $100M | 55% | 20% | 25% |
-| $100M - $500M | 35% | 20% | 45% |
-| $500M+ | Community votes on the split at this threshold |
+This is the initial formula, encoded in the constitutional documents. It activates once monthly revenue consistently covers operating costs. Before that, operations takes priority — the goal is survival first, distribution second.
 
-Operations can draw additional funds from community reinvestment if needed, with community approval. This ensures compliance, infrastructure, and security are never underfunded at any scale.
+**Key constraints:**
+- Operations takes priority until the platform is self-sustaining
+- Investors share from the builders+investors pool (time-bounded, capped at 30% of total revenue)
+- When investor agreements expire, their share flows back to builders
+- The split evolves as the platform grows — governance decides how, within constitutional bounds
 
-**Why these thresholds:**
-
-Building this platform requires cutting-edge work — distributed systems, identity verification, payment integration, ML, security, legal structuring across jurisdictions. The people doing this work are contributing their time without pay. The 60% pool stays until $20M because below that, builders are still being compensated for real opportunity cost and risk. Before investors come in, builders take this entire 60%. Once investors negotiate a share (capped at 30% of total revenue at this tier), builders still get at least 30% of total revenue. The higher operations budget (30%) at this stage reflects the reality that compliance, infrastructure, and security cost more relative to revenue when you're still scaling. At $20M+ they've been made whole and are earning well above market rate. The shift to community reinvestment begins when builders are genuinely wealthy from their contribution — not before.
-
-Beyond $500M, the community is large enough and mature enough to decide the split democratically. No pre-set formula locks in something that might not make sense at a scale we can't predict today.
-
-**Within the builders + investors share:**
-
-| Phase | Builders | Investors | Investor cap (of total revenue) |
-|-------|----------|-----------|-------------------------------|
-| Pre-investor (early revenue) | 100% of the pool | 0% | 0% |
-| Under $20M (active investor deal) | Min 50% of pool | Max 50% of pool | Max 30% of total revenue |
-| $20M+ (active investor deal) | Min 60% of pool | Max 40% of pool | Max 40% of total revenue |
-| After investor agreements expire | 100% of the pool | 0% | 0% |
-
-Operations takes priority until the platform is self-sustaining. Once operating costs are consistently covered, the 60/30/10 split activates and builders start getting paid. When investors come in (via the bicameral voting process described in the funding model), they share from the same pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
-
-**Investor caps scale with revenue:**
-- Under $20M: investors can take up to 50% of the pool, but never more than 30% of total revenue. This ensures builders always get at least 30% of total revenue at the early stage.
-- $20M+: investors can take up to 40% of the pool, capped at 40% of total revenue. At this stage the platform is proven and can attract capital on tighter terms for investors.
-
-The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk. Early investors' share doesn't grow — the pool expands to include new participants. Per-investor returns are naturally diluted as more contributors join.
+**At scale:** The community votes on the split. No pre-set formula can predict what makes sense at a scale we haven't reached. The constitutional constraint is that builders are never zeroed out and investors are always time-bounded — the specific percentages are a governance decision once the platform is mature enough to make it democratically.
 
 **Community reinvestment funds:**
 - Subsidized identity verification for low-income users
-- Grants for community-backed businesses
 - Infrastructure expansion to underserved regions
 - Reducing fees and costs across the board
 - Open-source development of adjacent tools

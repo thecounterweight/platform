@@ -48,16 +48,7 @@ Milestones 1-2 generate no revenue — they build the community and trust. Reven
 
 **Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes. See [Funding Model](funding-model.md) for full details.
 
-The split changes as the platform grows. These ratios are a starting proposal — informed by how cooperatives and open-source foundations handle similar splits, open to revision.
-
-| Annual revenue | Builders + Investors | Operations | Community reinvestment |
-|---------------|---------------------|------------|----------------------|
-| Under $20M | 60% | 30% | 10% |
-| $20M - $100M | 55% | 20% | 25% |
-| $100M - $500M | 35% | 20% | 45% |
-| $500M+ | Community votes on the split |
-
-Within the builders+investors share, investor portion is capped at 30% of total revenue (under $20M) or 40% ($20M+), and is time-bounded.
+**Starting split:** 60% builders + investors | 30% operations | 10% community reinvestment. Investor share is capped and time-bounded. At scale, governance decides the split — no pre-set formula locks in what doesn't make sense yet. See [Funding Model](funding-model.md) for full details.
 
 ## How Contributors Get Paid
 
