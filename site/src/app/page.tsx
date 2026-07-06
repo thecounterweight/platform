@@ -9,75 +9,69 @@ export default function Home() {
         <h1 className="text-4xl md:text-6xl font-bold tracking-tight max-w-4xl">
           The Counterweight
         </h1>
-        <p className="mt-4 text-lg md:text-xl text-zinc-400">
-          A platform where every user is a verified real person — and the users own it.
+        <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
+          A review and discussion platform where every participant is a verified real person.
+          No bots. No fake reviews. No one selling your attention.
         </p>
-        <p className="mt-6 text-xl md:text-2xl text-zinc-300 max-w-2xl">
-          Publicly owned infrastructure. Community-governed. Open-source.
-          Every user verified real. Every decision made democratically.
+        <p className="mt-6 text-base text-zinc-500 max-w-xl">
+          Community-owned. Open-source. Currently looking for builders.
         </p>
         <Counter />
       </section>
 
-      {/* The idea */}
+      {/* What it does */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">The core idea</h2>
+        <h2 className="text-2xl font-bold mb-6">What we&apos;re building</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            What if every person on a platform were a verified, unique human — and
-            the platform were owned by those people collectively?
-          </p>
-          <p>
-            One architectural decision — verified identity — enables a cascade of
-            capabilities that aren&apos;t possible otherwise: trustable reviews, democratic
-            governance, accountable investment, and moderation that actually works.
-          </p>
-        </div>
-      </section>
-
-      {/* What identity enables */}
-      <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What verified identity enables</h2>
-        <div className="space-y-4 text-zinc-300 text-lg">
-          <p>
-            Every person on the platform is a verified, unique human. One person,
-            one account. Proven via government ID APIs. Your raw ID number is never stored —
-            only an irreversible cryptographic hash for deduplication. Your data is your sovereignty, not ours.
-          </p>
-          <p>
-            That single architectural choice cascades:
+            A platform where every user is verified as a unique real human — and the users collectively own it.
           </p>
           <ul className="space-y-3 list-none">
             <li>
               <strong className="text-zinc-100">Trusted reviews.</strong>{" "}
-              Reviewers have proof of purchase and a reputation ranked by accuracy over time. One or two clearly-labeled sponsored slots — beyond that, the algorithm is influenced only by quality.
+              Every reviewer has proof of purchase and a reputation ranked by accuracy. No fake accounts, no paid reviews disguised as organic.
+            </li>
+            <li>
+              <strong className="text-zinc-100">Discussion boards.</strong>{" "}
+              Threaded conversations where every participant has something to lose. Moderation by community vote — not corporate policy.
             </li>
             <li>
               <strong className="text-zinc-100">Democratic governance.</strong>{" "}
-              Roles with power — moderators, community leads, project leads —
-              are elected and removable. 60% vote, 7-day discussion. Re-confirmed every 2 years.
+              Moderators and leads are elected and removable. 60% vote, 7-day discussion. No permanent admins.
             </li>
             <li>
-              <strong className="text-zinc-100">Accountable investment.</strong>{" "}
-              Communities back businesses via signed contracts between verified individuals.
-              Transactions recorded. The platform facilitates — it never holds your money.
-            </li>
-            <li>
-              <strong className="text-zinc-100">Fair builder compensation.</strong>{" "}
-              Contributions tracked on a public ledger. When revenue flows,
-              it flows to the people who built this — proportional and transparent.
-            </li>
-            <li>
-              <strong className="text-zinc-100">Effective moderation.</strong>{" "}
-              One identity, one reputation, one stake in the community. Accountability is structural.
+              <strong className="text-zinc-100">Builder compensation.</strong>{" "}
+              Contributions tracked on a public ledger. When revenue flows, it flows to the people who built this — proportional and transparent.
             </li>
           </ul>
         </div>
       </section>
 
-      {/* System architecture visual */}
+      {/* Why it works */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-8">The system</h2>
+        <h2 className="text-2xl font-bold mb-6">Why verified identity changes everything</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            One architectural decision — every user is a verified unique human — makes
+            things possible that aren&apos;t possible otherwise:
+          </p>
+          <p>
+            Democratic governance works because one person = one vote (no sock puppets).
+            Reviews are trustable because reviewers have a single reputation they can&apos;t reset.
+            Moderation works because getting banned means losing your only account.
+            Investment works because every party to a contract is a known, accountable person.
+          </p>
+          <p className="text-zinc-400">
+            Your raw ID number is never stored — only an irreversible cryptographic hash
+            for deduplication. You can participate under a pseudonym. The system knows
+            you&apos;re real; other users don&apos;t have to know who you are.
+          </p>
+        </div>
+      </section>
+
+      {/* What's being built now */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-8">What ships first</h2>
         <div className="border border-zinc-800 rounded-lg p-6 md:p-8">
           {/* Milestone 1 */}
           <div className="mb-6">
@@ -107,7 +101,7 @@ export default function Home() {
             <div className="grid md:grid-cols-1 gap-3 max-w-sm mx-auto">
               <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
                 <p className="font-medium text-zinc-200 text-sm">Government ID Verification</p>
-                <p className="text-xs text-zinc-500 mt-1">DigiLocker / eIDAS. Full verified identity.</p>
+                <p className="text-xs text-zinc-500 mt-1">Full verified identity via KYC provider</p>
               </div>
             </div>
           </div>
@@ -154,44 +148,46 @@ export default function Home() {
         </div>
       </section>
 
-      {/* Where we are */}
+      {/* Tech stack */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Where we are</h2>
-        <div className="space-y-4 text-zinc-300 text-lg">
-          <p>
-            Everything above is proposed, documented, and internally consistent as far as I can tell —
-            identity verification, payments, governance, investment model,
-            marketplace strategy, builder compensation. The design is open.
-            Ready to be challenged, broken, and rebuilt by the people who
-            will use it.
-          </p>
-          <p>
-            What gets built first: identity + discussion boards + marketplace
-            (aggregated products from existing platforms + verified reviews).
-            Revenue from day one via affiliate commissions.
-          </p>
-          <p>
-            The identity layer is open infrastructure. Anyone can run their own
-            instance — a lending platform, a freelance marketplace, a co-op
-            management tool, a local classifieds board. If it needs &quot;every
-            user is a real person,&quot; it plugs into the same network. Free for
-            community-serving projects. Revenue-generating services pay a
-            proportional fee back — sustaining the infrastructure without
-            extracting from it.
-          </p>
-          <p className="text-zinc-400">
-            This isn&apos;t a whitepaper waiting for funding. It&apos;s a scaffold and documentation waiting for contributors to build it.
+        <h2 className="text-2xl font-bold mb-6">Stack</h2>
+        <div className="text-zinc-300 text-lg space-y-2">
+          <p>Next.js (PWA) + TypeScript + PostgreSQL + Redis + BullMQ. Modular monolith — clear module boundaries, ships as one unit.</p>
+          <p className="text-zinc-400 text-base">
+            Full architecture doc in <a href="/docs/architecture-rfc" className="underline hover:text-zinc-200">the RFC</a>. Boring technology, deployable by one person.
           </p>
         </div>
       </section>
 
-      {/* Read more tiles */}
+      {/* Who's behind this */}
+      <section className="max-w-3xl mx-auto px-6 py-16">
+        <h2 className="text-2xl font-bold mb-6">Who&apos;s building this</h2>
+        <div className="flex items-start gap-4">
+          <div>
+            <p className="text-zinc-200 text-lg font-medium">Manoj Sihag</p>
+            <p className="text-zinc-400 text-base mt-1">
+              DevOps engineer building community infrastructure.
+            </p>
+            <a
+              href="https://github.com/manojsihag"
+              className="inline-block mt-2 text-sm text-zinc-400 underline hover:text-zinc-200"
+            >
+              GitHub
+            </a>
+          </div>
+        </div>
+        <p className="mt-6 text-zinc-400 text-base">
+          This is a one-person project looking for contributors. The design is documented, the scaffold is ready, the first issues are open.
+        </p>
+      </section>
+
+      {/* Read more */}
       <section className="max-w-3xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-6">Go deeper</h2>
         <div className="grid md:grid-cols-3 gap-4">
           <a href="/docs/overview" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">Start Here</h3>
-            <p className="text-sm text-zinc-400 mt-1">One-page overview of the entire system.</p>
+            <h3 className="font-semibold text-zinc-100">Overview</h3>
+            <p className="text-sm text-zinc-400 mt-1">The entire system in one page.</p>
           </a>
           <a href="/docs/mvp" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">The MVP</h3>
@@ -201,17 +197,17 @@ export default function Home() {
             <h3 className="font-semibold text-zinc-100">Get Paid</h3>
             <p className="text-sm text-zinc-400 mt-1">How builders earn. Early risk, early reward.</p>
           </a>
-          <a href="/docs/investment-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">Invest Together</h3>
-            <p className="text-sm text-zinc-400 mt-1">Communities back businesses via contracts.</p>
+          <a href="/docs/architecture-rfc" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Architecture</h3>
+            <p className="text-sm text-zinc-400 mt-1">Modular monolith. Boring tech. Ships fast.</p>
           </a>
-          <a href="/docs/funding-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
-            <h3 className="font-semibold text-zinc-100">Funding</h3>
-            <p className="text-sm text-zinc-400 mt-1">No VC. Terms decided democratically.</p>
+          <a href="/docs/identity-verification" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
+            <h3 className="font-semibold text-zinc-100">Identity</h3>
+            <p className="text-sm text-zinc-400 mt-1">How one-person-one-account works.</p>
           </a>
           <a href="/docs/principles" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Principles</h3>
-            <p className="text-sm text-zinc-400 mt-1">What we believe. What doesn&apos;t move.</p>
+            <p className="text-sm text-zinc-400 mt-1">What doesn&apos;t move.</p>
           </a>
         </div>
         <p className="mt-6 text-center">
@@ -221,10 +217,10 @@ export default function Home() {
         </p>
       </section>
 
-      {/* CTAs for different people */}
+      {/* Get involved */}
       <section className="max-w-3xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-6">Get involved</h2>
-        <div className="grid md:grid-cols-3 gap-4">
+        <div className="grid md:grid-cols-2 gap-4">
           <div className="border border-zinc-800 rounded-lg p-5">
             <h3 className="font-semibold text-zinc-100">Build</h3>
             <p className="text-sm text-zinc-400 mt-2">
@@ -238,21 +234,9 @@ export default function Home() {
             </a>
           </div>
           <div className="border border-zinc-800 rounded-lg p-5">
-            <h3 className="font-semibold text-zinc-100">Back it</h3>
+            <h3 className="font-semibold text-zinc-100">Challenge the design</h3>
             <p className="text-sm text-zinc-400 mt-2">
-              Read the funding model. Contribute when the platform is live.
-            </p>
-            <a
-              href="/docs/funding-model"
-              className="inline-block mt-3 text-sm text-zinc-100 underline hover:text-white"
-            >
-              Read the funding model
-            </a>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-5">
-            <h3 className="font-semibold text-zinc-100">Join the conversation</h3>
-            <p className="text-sm text-zinc-400 mt-2">
-              Ask questions. Poke holes. Shape the design.
+              Read the docs. Poke holes. Shape the architecture.
             </p>
             <a
               href="https://github.com/thecounterweight/platform/discussions"
@@ -268,7 +252,7 @@ export default function Home() {
       <section className="max-w-3xl mx-auto px-6 py-16 w-full">
         <h2 className="text-2xl font-bold mb-2">I&apos;m in</h2>
         <p className="text-zinc-400 mb-6">
-          Leave your name to show support. Email is optional — only used for launch updates, never shared.
+          Leave your name to follow the build. Email is optional — only used for launch updates, never shared.
         </p>
         <SignupForm />
       </section>
