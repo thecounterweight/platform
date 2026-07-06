@@ -50,41 +50,47 @@ flowchart LR
         INFRA[CI/CD + Staging]
     end
 
-    subgraph "MVP — Layer 1 (foundation)"
-        IDENTITY[Identity Verification]
+    subgraph "Milestone 1 — Verified Discussion"
+        PHONE[Phone/OTP Verification]
         DB[Database Schema]
-    end
-
-    subgraph "MVP — Layer 2 (requires identity)"
         DISCUSSION[Discussion Boards]
-        MARKETPLACE[Marketplace — Aggregated Products]
+        I18N[Multi-language UI]
+        MOD[Basic Moderation]
     end
 
-    subgraph "MVP — Layer 3 (requires marketplace)"
+    subgraph "Milestone 2 — Identity Upgrade (parallel license process)"
+        IDENTITY[Gov ID Verification — DigiLocker/eIDAS]
+        TIERS[Three-tier Access]
+    end
+
+    subgraph "Milestone 3 — Marketplace + Reviews"
+        MARKETPLACE[Product Aggregation]
         REVIEWS[Review System + Trust Score]
         AFFILIATE[Affiliate API Integration]
     end
 
-    subgraph "Phase 2 (requires MVP traction + revenue)"
+    subgraph "Phase 2 (requires revenue)"
         SELLERS[Community Seller Listings]
         CERTIFICATION[Skill Certification]
         TALENT[Talent Pool]
-        GOVERNANCE[Governance]
-        MODERATION[Elected Moderation]
+        GOVERNANCE[Elected Governance]
     end
 
     SCAFFOLD --> DB
     SCAFFOLD --> INFRA
-    DB --> IDENTITY
-    IDENTITY --> DISCUSSION
-    IDENTITY --> MARKETPLACE
+    DB --> PHONE
+    PHONE --> DISCUSSION
+    PHONE --> I18N
+    PHONE --> MOD
+    DISCUSSION --> IDENTITY
+    IDENTITY --> TIERS
+    TIERS --> MARKETPLACE
     MARKETPLACE --> REVIEWS
     MARKETPLACE --> AFFILIATE
     REVIEWS --> SELLERS
     REVIEWS --> CERTIFICATION
     CERTIFICATION --> TALENT
     REVIEWS --> GOVERNANCE
-    REVIEWS --> MODERATION
 ```
 
 ## Revenue Flow

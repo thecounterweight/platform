@@ -21,17 +21,17 @@ A platform where every user is a verified real person — and the users own it.
 │         (our platform)      │  │  (anyone can build on it)  │
 ├─────────────────────────────┤  ├────────────────────────────┤
 │                             │  │                            │
-│  ┌─────────┐ ┌──────────┐  │  │  P2P Lending               │
-│  │Discussion│ │Marketplace│  │  │  Freelance Marketplaces    │
-│  │Boards +  │ │Aggregated │  │  │  Local Classifieds         │
-│  │Chat      │ │Products + │  │  │  Co-op Management          │
-│  │          │ │Reviews    │  │  │  Mutual Aid Networks       │
-│  └─────────┘ └──────────┘  │  │  Citizen Journalism        │
-│                             │  │  Skill Exchange            │
-│  ┌─────────┐ ┌──────────┐  │  │  ...anything that needs    │
-│  │Cert. +  │ │Governance │  │  │  "every user is real"      │
-│  │Talent   │ │+ Invest.  │  │  │                            │
-│  └─────────┘ └──────────┘  │  │  Free for community use.   │
+│                             │  │  P2P Lending               │
+│  M1: Discussion + Phone/OTP │  │  Freelance Marketplaces    │
+│  M2: Gov ID (DigiLocker)    │  │  Local Classifieds         │
+│  M3: Marketplace + Reviews  │  │  Co-op Management          │
+│                             │  │  Mutual Aid Networks       │
+│  Then: Certification,       │  │  Citizen Journalism        │
+│        Talent Pool,         │  │  Skill Exchange            │
+│        Governance,          │  │  ...anything that needs    │
+│        Investment           │  │  "every user is real"      │
+│                             │  │                            │
+│                             │  │  Free for community use.   │
 │                             │  │  Revenue services pay a    │
 └─────────────────────────────┘  │  proportional fee back.    │
                                  └────────────────────────────┘

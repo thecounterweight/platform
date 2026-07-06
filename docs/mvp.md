@@ -2,24 +2,40 @@
 
 The smallest thing that delivers real value and generates early revenue. Everything else comes after this works.
 
-## Core Components
+The MVP ships in three milestones. Each one is independently useful and proves a specific thesis before the next begins.
 
-### 1. Identity Verification
+---
 
-One person, one account. Three layers: government identity API (DigiLocker, eIDAS, etc.) proves you're real, face scan proves you're the account holder for high-stakes actions, OTP pins it to a device. User pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
+## Milestone 1: Verified Discussion (ships first)
 
-The principle is non-negotiable. The implementation is open to improvement.
+**Proves:** People will use a discussion space where every participant is a verified real person.
 
-### 2. Discussion Boards + Chat
+**Timeline:** 4-6 weeks with a small team.
 
-Threaded discussion boards and group chat. Every participant is verified real.
+### Verification (phone/OTP)
+
+One person, one phone number. OTP verification pins an account to a device. This is not the full identity system — it's enough to prevent duplicates and make every participant a real person with something to lose.
+
+Full government ID verification (DigiLocker, eIDAS) comes in Milestone 2 when the license is approved. The DigiLocker license process takes 3-6 months and runs in parallel with this build.
+
+### Discussion Boards + Chat
+
+Threaded discussion boards and group chat. Every participant is phone-verified.
+
+### Multi-language UI
+
+i18n support — the interface works in Hindi, English, and whatever languages the first users need. This is not auto-translation between languages (that's a harder problem for later). Users post in whatever language they write; the UI chrome is localized.
 
 - Board creators moderate their boards initially (volunteer — builds reputation and trust)
 - As a board's community grows, members elect moderators democratically — removable via no-confidence (7-day discussion + 60% vote)
 - Once platform revenue is healthy, elected moderators are paid from operations budget
 - Group chat for real-time coordination within communities
 
-**Proposed moderation model (community can decide another approach later):**
+**Moderation (Milestone 1 — simple version):**
+
+Board creators moderate. They can remove content and ban users from their board. All actions are logged publicly. This is sufficient for the first 1,000 users.
+
+**Moderation (scales with growth):**
 
 Two flag types:
 - **Regular flag** — Content accumulates flags from verified users. When threshold is reached, it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
@@ -27,11 +43,38 @@ Two flag types:
 
 Verified identity makes this viable — one person, one flag. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
 
-**Open design question:** How does the flag threshold scale with community size? A fixed number doesn't work — too high for small boards (harmful content stays up too long), too low for large boards (a few people can suppress speech). Likely percentage-based with a minimum floor, but the exact formula needs to be designed during implementation.
+**Open design question:** How does the flag threshold scale with community size? Likely percentage-based with a minimum floor, designed during implementation.
 
-This is the daily engagement layer.
+---
 
-### 3. Marketplace (Reviews + Discovery)
+## Milestone 2: Identity Upgrade (when DigiLocker license is approved)
+
+**Proves:** People will go through full government ID verification voluntarily.
+
+**Depends on:** DigiLocker/Aadhaar KUA license approval (3-6 month process, starts immediately).
+
+### Full Identity Verification
+
+Government ID API integration (DigiLocker in India, eIDAS in EU). Face scan for high-stakes actions. Non-reversible hash stored — no personal data retained.
+
+Existing phone-verified users are invited to upgrade. Three-tier access:
+- **Verified** — full government ID. Full platform access.
+- **Phone-verified** — can discuss, can't review products or vote in governance.
+- **Unverified** — browse only.
+
+The user pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
+
+The principle is non-negotiable. The implementation is open to improvement.
+
+---
+
+## Milestone 3: Marketplace + Reviews (when affiliate APIs are approved)
+
+**Proves:** Verified reviews drive affiliate revenue.
+
+**Depends on:** Affiliate API approval from Amazon/Flipkart (requires existing site with traffic — which Milestones 1 and 2 provide).
+
+### Marketplace (Reviews + Discovery)
 
 A trusted review layer on top of existing platforms.
 
@@ -128,24 +171,29 @@ You earn by being useful and accurate. Gaming requires consistently fooling buye
 
 ## How It Grows
 
-**MVP (what ships first):**
+**Milestone 1 (ships first — 4-6 weeks):**
+1. Discussion boards launch with phone verification and multi-language UI.
+2. First ~1,000 users join. Community forms. Content is created.
 
-1. Discussion boards launch. People have a space where every participant is a verified real human.
-2. Marketplace activates with aggregated products. People review products. Affiliate revenue starts immediately.
+**Milestone 2 (when identity license is approved — runs in parallel):**
+3. Government ID verification goes live. Users upgrade from phone-verified to full-verified.
+
+**Milestone 3 (when affiliate APIs are approved):**
+4. Marketplace activates with aggregated products. Verified users review products. Affiliate revenue starts.
 
 **Phase 2 (funded by MVP revenue):**
+5. Skill certification starts. Domain experts evaluate people. Talent pool forms.
+6. Community sellers list alongside aggregated products.
+7. Companies start paying for talent access. Revenue diversifies.
+8. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
 
-3. Skill certification starts. Domain experts evaluate people. Talent pool forms.
-4. Community sellers list alongside aggregated products.
-5. Companies start paying for talent access. Revenue diversifies.
-6. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
+## What Success Looks Like
 
-## What Success Looks Like (MVP)
+**Milestone 1:** Active discussion communities. Real engagement. Users returning daily.
 
-- Active discussion communities with real engagement
-- A marketplace with enough aggregated listings to be browsable
-- Verified reviews driving affiliate clicks and commissions
-- Enough revenue to cover infrastructure costs and start paying builders
+**Milestone 2:** Majority of active users upgrade to full verification voluntarily.
+
+**Milestone 3:** Reviews driving affiliate clicks. Revenue covering infrastructure costs.
 
 ## Phase 2: Skill Certification + Talent Pool
 

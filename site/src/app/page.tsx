@@ -79,54 +79,78 @@ export default function Home() {
       <section className="max-w-3xl mx-auto px-6 py-16">
         <h2 className="text-2xl font-bold mb-8">The system</h2>
         <div className="border border-zinc-800 rounded-lg p-6 md:p-8">
-          {/* Foundation */}
-          <div className="text-center mb-6">
-            <div className="inline-block px-6 py-3 bg-zinc-800 border border-zinc-700 rounded-lg">
-              <p className="font-semibold text-zinc-100">Verified Identity</p>
-              <p className="text-sm text-zinc-400 mt-1">One person, one account. Government ID + hash. Privacy-preserving.</p>
+          {/* Milestone 1 */}
+          <div className="mb-6">
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 1 — ships first (4-6 weeks)</p>
+            <div className="grid md:grid-cols-3 gap-3">
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Phone/OTP Verification</p>
+                <p className="text-xs text-zinc-500 mt-1">One person, one account</p>
+              </div>
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Discussion Boards</p>
+                <p className="text-xs text-zinc-500 mt-1">Threaded, real-time, moderated</p>
+              </div>
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Multi-language UI</p>
+                <p className="text-xs text-zinc-500 mt-1">Hindi, English, more</p>
+              </div>
             </div>
-            <p className="text-zinc-600 text-sm mt-2">foundation</p>
           </div>
           {/* Arrow */}
           <div className="flex justify-center mb-6">
-            <div className="w-px h-8 bg-zinc-700"></div>
+            <div className="w-px h-6 bg-zinc-700"></div>
           </div>
-          {/* MVP layer */}
-          <div className="grid md:grid-cols-3 gap-3 mb-6">
-            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
-              <p className="font-medium text-zinc-200 text-sm">Discussion</p>
-              <p className="text-xs text-zinc-500 mt-1">Every voice is a real person</p>
-            </div>
-            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
-              <p className="font-medium text-zinc-200 text-sm">Marketplace</p>
-              <p className="text-xs text-zinc-500 mt-1">Aggregated products, trusted reviews</p>
-            </div>
-            <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
-              <p className="font-medium text-zinc-200 text-sm">Revenue</p>
-              <p className="text-xs text-zinc-500 mt-1">Affiliate commissions from day one</p>
+          {/* Milestone 2 */}
+          <div className="mb-6">
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 2 — when identity license is approved</p>
+            <div className="grid md:grid-cols-1 gap-3 max-w-sm mx-auto">
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Government ID Verification</p>
+                <p className="text-xs text-zinc-500 mt-1">DigiLocker / eIDAS. Full verified identity.</p>
+              </div>
             </div>
           </div>
-          <p className="text-zinc-600 text-sm text-center mb-6">MVP — ships first</p>
           {/* Arrow */}
           <div className="flex justify-center mb-6">
-            <div className="w-px h-8 bg-zinc-700"></div>
+            <div className="w-px h-6 bg-zinc-700"></div>
           </div>
-          {/* Phase 2 layer */}
-          <div className="grid md:grid-cols-4 gap-3 mb-2">
-            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
-              <p className="font-medium text-zinc-300 text-xs">Certification</p>
-            </div>
-            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
-              <p className="font-medium text-zinc-300 text-xs">Talent Pool</p>
-            </div>
-            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
-              <p className="font-medium text-zinc-300 text-xs">Governance</p>
-            </div>
-            <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
-              <p className="font-medium text-zinc-300 text-xs">Investment</p>
+          {/* Milestone 3 */}
+          <div className="mb-6">
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Milestone 3 — when affiliate APIs are approved</p>
+            <div className="grid md:grid-cols-2 gap-3 max-w-md mx-auto">
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Marketplace</p>
+                <p className="text-xs text-zinc-500 mt-1">Aggregated products + reviews</p>
+              </div>
+              <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
+                <p className="font-medium text-zinc-200 text-sm">Revenue</p>
+                <p className="text-xs text-zinc-500 mt-1">Affiliate commissions</p>
+              </div>
             </div>
           </div>
-          <p className="text-zinc-600 text-sm text-center">phase 2 — funded by MVP revenue</p>
+          {/* Arrow */}
+          <div className="flex justify-center mb-6">
+            <div className="w-px h-6 bg-zinc-700"></div>
+          </div>
+          {/* Phase 2 */}
+          <div>
+            <p className="text-zinc-500 text-xs uppercase tracking-wide mb-2">Phase 2 — funded by revenue</p>
+            <div className="grid md:grid-cols-4 gap-3">
+              <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+                <p className="font-medium text-zinc-300 text-xs">Certification</p>
+              </div>
+              <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+                <p className="font-medium text-zinc-300 text-xs">Talent Pool</p>
+              </div>
+              <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+                <p className="font-medium text-zinc-300 text-xs">Governance</p>
+              </div>
+              <div className="px-3 py-2 border border-zinc-800 rounded-lg text-center">
+                <p className="font-medium text-zinc-300 text-xs">Investment</p>
+              </div>
+            </div>
+          </div>
         </div>
       </section>
 
