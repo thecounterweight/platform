@@ -123,7 +123,7 @@ Rewards both quality and engagement. Unreviewed products sit at the bottom until
 
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms.
 
-**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — seller commissions, talent pool fees, certification fees, sponsored slots, and identity layer fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers. Anti-monopoly laws (Competition Act 2002 in India, Article 102 TFEU in EU, Sherman Act in US) provide legal recourse against discriminatory termination of access.
+**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — seller commissions, talent pool fees, certification fees, sponsored slots, and identity layer fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers.
 
 **Reviewer earnings:**
 
