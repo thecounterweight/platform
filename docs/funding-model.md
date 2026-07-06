@@ -21,7 +21,16 @@ The trust model (Patagonia, Signal, Mozilla) provides equivalent structural prot
 
 1. **Operating company** — Founded and owned by the founder. Normal corporate operations. Can raise capital, hire, sign contracts, hold bank accounts.
 2. **Irrevocable purpose trust** — Holds a golden share with veto power. The trust's purposes are defined at creation and cannot be changed by the founder, the company, or any future owner.
-3. **User-elected advisory board** — The trust must consult this board before exercising its veto. Gives users voice without giving them operational control.
+3. **User-elected advisory board** — Elected by verified users. The trust is bound to act on the board's recommendation when exercising its veto — this is not advisory in the "we'll consider it" sense. If the board says "veto this sale," the trust vetoes. If the board says "this doesn't violate the mission," the trust stands down. The trust deed encodes this obligation.
+
+**Who are the trustees:**
+
+The trust must be independent of the founder to have any credibility. Trustee selection:
+- **At formation:** 3 trustees — one institutional (law firm or university with relevant expertise), one from the first user-elected advisory board, one independent professional (e.g., retired judge, chartered accountant, or established non-profit director). The founder is explicitly excluded from trusteeship.
+- **Ongoing:** Trustees serve 5-year terms. Replacements are nominated by the remaining trustees and confirmed by the user-elected advisory board (majority vote). The founder cannot nominate or veto trustees.
+- **Removal:** A trustee can be removed for breach of duty by the other trustees unanimously, or by 75% supermajority of verified users.
+
+This is the most important structural decision — if the founder picks pliant trustees, the whole thing is theater. Institutional trustees (a law firm with reputational skin in the game, a university) provide independence that individuals alone cannot.
 
 **What the trust's golden share vetoes (irrevocable):**
 - Sale or acquisition of the company
@@ -41,20 +50,32 @@ The trust model (Patagonia, Signal, Mozilla) provides equivalent structural prot
 **What the founder retains:**
 - Operational authority (product, hiring, day-to-day decisions)
 - Ability to raise capital normally (investors buy equity in the operating company)
-- Right to compensation as a contributor (per the builder unit system)
+- Compensation as a contributor (per the builder unit system — same formula as everyone else, no special terms)
 - Subject to the constitutional constraints — cannot override the trust
+
+**Founder compensation constraint:**
+
+The founder earns builder units like any other contributor — same complexity scale, same additive bonuses. There is no separate founder salary, equity package, or special compensation mechanism. If the founder also performs operational work (CEO-equivalent), that work earns units at the appropriate complexity level through the same peer-review process as everyone else.
+
+The founder cannot unilaterally set their own compensation. Their unit claims are subject to the same public ledger, 14-day challenge window, and peer review as all contributors. The operations budget (which covers salaries once the platform hires staff) is governed by the constitutional formula and elected leadership approval for expenses above threshold.
+
+This is the difference between "founder-owned" and "founder-enriched." The founder has operational control to build the thing effectively. They do not have a special economic lane.
 
 **Anti-capture protections:**
 - Trust is irrevocable — founder cannot dissolve it or change its purposes
 - Golden share cannot be sold, transferred, or diluted
+- Founder is excluded from trusteeship
 - If the founder dies, goes bankrupt, or wants to sell — the trust vetoes any mission-violating transfer
 - Constitutional amendments require 75% supermajority of verified users
 - Unamendable clauses mirror Principles 0, 4, 9
+- Trustees are independent (institutional + user-elected + professional)
+- Advisory board recommendation binds the trust (not merely consultative)
 
 **What happens if the founder leaves:**
 - Company continues operating under whoever the board/members elect
 - Trust continues protecting the mission regardless
 - Golden share is held by the trust, not the founder personally
+- No disruption — the trust is independent of any individual
 
 **Federation model (designed-in, executed later):**
 

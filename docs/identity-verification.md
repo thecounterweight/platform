@@ -148,7 +148,7 @@ Completing identity verification grants you constitutional rights on the platfor
 - No separate "join" process — verification IS activation of rights
 - Every verified user has constitutional protections by default
 - Rights are in the Articles/OA, not the Terms of Service — they cannot be unilaterally revoked
-- An irrevocable purpose trust holds a golden share preventing sale, mission change, or removal of these rights
+- An irrevocable purpose trust holds a golden share preventing sale, mission change, or removal of these rights — trustees are independent of the founder, and the user-elected advisory board's recommendation binds the trust
 - International by design — no membership in a foreign entity required
 
 **Why not user ownership:**
