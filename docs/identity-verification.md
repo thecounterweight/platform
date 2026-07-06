@@ -138,6 +138,53 @@ The platform's value comes from verified identity — trusted reviews, one-perso
 
 **Path to full access:** As governments expand digital ID systems (India went from ~50% to ~95% Aadhaar coverage in a decade), more people gain access to full verification. The platform doesn't solve the ID gap — it works within it while remaining useful to those affected.
 
+## Optional Profile Data
+
+Verification only produces a pass/fail and a hash. No personal details are extracted or stored from the ID.
+
+Users can optionally share additional information to make the platform more useful:
+
+| Data | Why it's useful | Default |
+|------|----------------|---------|
+| Age / date of birth | Age-gated communities, content filtering | Not shared |
+| Location (city/state) | Local communities, collective purchasing, nearby sellers | Not shared |
+| Gender | Community context where relevant | Not shared |
+| Language preferences | i18n, content matching | Shared (set during signup) |
+
+**Rules:**
+- All optional data is user-provided, not extracted from verification
+- Users control who sees what (public, community-only, or private)
+- Can be changed or removed at any time
+- Never used for advertising or sold to third parties
+- Never required for core platform features (discussion, reviews, voting)
+
+The platform works fully without any optional data. Sharing is a user choice, not a platform requirement.
+
+## Data Protection Compliance (DPDPA 2023, GDPR)
+
+The platform does not process or store biometric data or government ID documents directly. KYC providers (Digio, Signzy, etc.) handle all identity document processing. They are the Data Processors for biometric/ID data and carry their own compliance burden.
+
+**What the platform stores:**
+- A non-reversible hash (for deduplication)
+- Verification status (pass/fail)
+- Timestamp
+- Optional profile data (only what the user explicitly provides)
+
+**What the platform does NOT store:**
+- Government ID numbers, documents, or images
+- Face scan data or biometric templates
+- Any data extracted from the ID document
+
+**Compliance requirements (implemented before Milestone 2 launch):**
+- Privacy policy on the site — what data is collected, why, how long it's retained, who processes it
+- Explicit consent at verification — users informed what's processed and by whom before proceeding
+- Data Fiduciary registration under DPDPA 2023 (required once handling user data at scale)
+- Data Processing Agreement with KYC provider
+- Right to erasure — users can request deletion of their account and associated data
+- In EU: GDPR compliance via eIDAS-compliant providers who handle their own DPIAs
+
+The KYC provider handles the heavy lifting (biometric processing, document verification, secure storage during processing). The platform's data footprint is minimal by design — we store the result, not the evidence.
+
 ## What This Is
 
 This is a proposed design. If someone contributes a better approach that achieves the same guarantees (one-human-one-account, privacy-preserving, scalable), we adopt it. The principle is fixed. The implementation is open to improvement.
