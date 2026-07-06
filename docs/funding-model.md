@@ -90,10 +90,9 @@ No legal entity exists yet. Contributions at this stage are structured as **risk
 
 **How it works:**
 
-1. Contributor sends money directly to the founder (UPI, bank transfer, or equivalent).
-2. Both parties sign a contribution agreement — amount, date, contributor identity, and terms.
-3. The agreement states: if the platform generates revenue, the contributor receives returns per governance-decided terms. If the platform fails, the contribution is lost.
-4. Every contribution and every expenditure is recorded in a public git repository (`thecounterweight/ledger`), GPG-signed, archived at Software Heritage and archive.org.
+1. Contributor pays via the platform's contribute page (UPI, card, netbanking via Razorpay).
+2. Payment is verified automatically and recorded in real-time.
+3. By contributing, they agree to the contribution agreement terms: if the platform generates revenue, the contributor receives returns per governance-decided terms. If the platform fails, the contribution is lost.
 
 **The contribution agreement guarantees:**
 - The contribution is recorded permanently and publicly
@@ -106,15 +105,9 @@ No legal entity exists yet. Contributions at this stage are structured as **risk
 - Not a donation — contributors have a conditional claim on future revenue
 - Not equity — no ownership of anything is transferred
 
-**The public ledger:**
+**Public record:**
 
-A git repository with the full financial history:
-- Every contribution: amount, date, contributor (name or pseudonym by their choice)
-- Every expenditure: amount, date, purpose
-- Running balance
-- All entries GPG-signed by the founder
-- Git hash chain makes the record tamper-evident — alter one entry and all subsequent hashes break
-- Archived externally (archive.org, Software Heritage) for redundancy
+All contributions are visible in real-time on the platform's contribute page — contributor name (or pseudonym), amount (unless hidden by contributor's choice), and timestamp. Total raised is always public. Payment processing handled by Razorpay — every transaction has an auditable trail.
 
 Anyone can audit the full history at any time. No trust required — verify it yourself.
 
@@ -127,7 +120,7 @@ Anyone can audit the full history at any time. No trust required — verify it y
 
 ## Early Capital (Pre-Quorum, Post-Entity)
 
-Once the legal entity is formed, it assumes all pre-entity obligations. New contributions go directly to the entity. The promissory notes convert to the entity's revenue-share framework.
+Once the legal entity is formed, it assumes all pre-entity obligations. New contributions go directly to the entity. Pre-entity contributions convert to the entity's revenue-share framework.
 
 Anyone can contribute any amount, at any time. Every contribution is recorded permanently — amount, timestamp, contributor identity. The money goes to work immediately (infrastructure, development, operations).
 

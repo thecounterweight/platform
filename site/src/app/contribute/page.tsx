@@ -69,10 +69,7 @@ export default function ContributePage() {
             <p>Everything is public:</p>
             <ul className="space-y-2">
               <li>
-                <a href="https://github.com/thecounterweight/ledger" className="text-zinc-200 underline hover:text-white">
-                  Public ledger
-                </a>{" "}
-                — every contribution, GPG-signed and archived
+                All contributions visible on this page in real-time
               </li>
               <li>
                 <a href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md" className="text-zinc-200 underline hover:text-white">
