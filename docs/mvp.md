@@ -52,6 +52,22 @@ One person, one vote. Verified identity makes this viable — no sock puppets, n
 
 **Urgent flag** — For illegal content, doxxing, active threats. Goes directly to elected safety team for immediate removal. Community reviews within 48 hours (confirms or reverses the decision).
 
+**Legal obligations (non-negotiable, from day one):**
+
+Indian IT Act (Section 67B) and POCSO Act require:
+- **CSAM detection:** Automated scanning of all user-uploaded images/videos using PhotoDNA or equivalent hash-matching service. Content matching known CSAM hashes is blocked immediately and never stored.
+- **Reporting:** Any detected CSAM must be reported to NCMEC (via CyberTipline) and Indian authorities (cybercrime.gov.in) within 24 hours.
+- **Preservation:** Evidence preserved for 90 days for law enforcement (stored encrypted, not accessible to platform staff).
+- **No community vote on illegal content.** CSAM, terrorism content, and court-ordered removals are not subject to the voting system. They are removed immediately and reported. This is a legal requirement, not a policy choice.
+
+IT Rules 2021 (Intermediary Guidelines) additionally require:
+- **Grievance officer** appointed and contact published on the platform.
+- **Acknowledgment** of content complaints within 24 hours.
+- **Resolution** of complaints within 15 days (72 hours for content affecting dignity/privacy).
+- **Monthly compliance report** (once the platform reaches 50 lakh users — not required initially but the infrastructure should be ready).
+
+These obligations exist from the moment the platform hosts user-generated content. They are not optional and cannot be deferred to "when we have resources." The automated CSAM scanning must be integrated before the discussion boards go live.
+
 ---
 
 ## Milestone 2: Identity Upgrade (when Milestone 1 has traction)

@@ -62,6 +62,7 @@ Each module:
 | Hosting | Vercel (frontend) + Railway or Fly.io (workers/db) | Low ops burden for a volunteer team. Migrate when scale warrants. |
 | CI/CD | GitHub Actions | Free for public repos. |
 | Monitoring | Uptime + error tracking (Sentry free tier) | Enough for early stage. Prometheus/Grafana when self-hosting. |
+| Content Safety | PhotoDNA or equivalent CSAM hash-matching | Legal obligation under IT Act Section 67B. Must be integrated before UGC goes live. |
 
 ### Design Principles
 
