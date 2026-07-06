@@ -238,15 +238,15 @@ export default function Home() {
             </a>
           </div>
           <div className="border border-zinc-800 rounded-lg p-5">
-            <h3 className="font-semibold text-zinc-100">Contribute</h3>
+            <h3 className="font-semibold text-zinc-100">Back it</h3>
             <p className="text-sm text-zinc-400 mt-2">
-              Any amount. Recorded permanently. Terms decided together.
+              Read the funding model. Contribute when the platform is live.
             </p>
             <a
-              href="/contribute"
+              href="/docs/funding-model"
               className="inline-block mt-3 text-sm text-zinc-100 underline hover:text-white"
             >
-              Contribute now
+              Read the funding model
             </a>
           </div>
           <div className="border border-zinc-800 rounded-lg p-5">
