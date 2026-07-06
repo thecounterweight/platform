@@ -64,11 +64,17 @@ export interface Contribution {
   timestamp: string;
 }
 
-export async function addContribution(contribution: Contribution): Promise<void> {
+export async function addContribution(contribution: Contribution): Promise<boolean> {
   const redis = getRedis();
+
+  // Deduplicate by payment ID
+  const added = await redis.sadd("contribution_ids", contribution.razorpayPaymentId);
+  if (!added) return false; // Already recorded
+
   await redis.lpush("contributions", JSON.stringify(contribution));
   await redis.incrbyfloat("contributions_total", contribution.amount);
   await redis.incr("contributions_count");
+  return true;
 }
 
 export async function getContributions(): Promise<Contribution[]> {
