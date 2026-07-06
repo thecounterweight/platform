@@ -1,4 +1,4 @@
-# Architecture RFC — v0.1
+# Architecture — v0.2
 
 **Status:** Open for discussion. This is a proposal, not a decision.
 
@@ -8,100 +8,122 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 
 ## What the System Needs to Do
 
-1. **Identity:** Verify unique humans without becoming a surveillance tool. One person, one account.
-2. **Discussion:** Posts, comments, voting (agree/disagree), topic communities. Real-time updates.
-3. **Marketplace:** Listings (goods/services), search, categories, verified reviews, expert certification, collective purchasing coordination.
+1. **Identity:** Verify unique humans via KYC providers. One person, one account.
+2. **Discussion:** Posts, comments, voting (upvote/downvote), topic communities. Real-time updates.
+3. **Marketplace:** Aggregated listings from major platforms, verified reviews, search, categories.
 4. **Payments:** Platform does not process money. It records transactions between verified parties who use existing rails (UPI, SEPA, ACH, direct bank transfer). See [Payments](payments.md).
 5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
-6. **Communication:** Discussion boards (threaded), group chat, voice/video calls. Encrypted.
-7. **Translation:** Built-in translation across content. Language should never be a barrier to participation.
-8. **Legal infrastructure:** Contract templates (investment, revenue sharing, employment, rental, partnerships), digital signatures, storage, dispute tracking, arbitration processes. Every feature that involves money or agreements needs legal backing built into the platform.
 
-## Non-Negotiable Requirements
+## Architecture: Modular Monolith
 
-Whatever architecture we choose must satisfy:
+One deployable unit. Clear internal module boundaries. Splits into services later if and when traffic and team size demand it.
 
-- **Horizontally scalable.** Add servers, handle more users. No single bottleneck.
-- **Federated-ready.** Communities can run sovereign instances that communicate with the network. No single server holds everything.
-- **Self-hostable.** Communities with technical capacity can deploy their own instance. The stack is complex — this isn't one-click deployment. But the option exists for those who want sovereignty over their data.
-- **No single point of failure.** Database replication, multi-region capability, graceful degradation.
-- **No vendor lock-in.** Every component can be swapped. No proprietary dependency that can be pulled from under us.
-- **Data sovereignty.** User data stays in their region unless explicitly moved.
-- **Open-source throughout.** Every component is auditable.
-- **Works globally.** No dependency on services that are unreliable or restricted in key regions.
+**Why monolith:**
+- Volunteer team — nobody wants to debug distributed systems for free
+- Simpler to develop, test, deploy, and operate
+- One database, one deployment pipeline, one thing to monitor
+- Module boundaries enforce separation without network overhead
+- When a module needs to become a service, the boundary is already clean
 
-## Proposed Architecture
+**When to split:** When a specific module has fundamentally different scaling needs AND you have a team to own it independently. Not before.
 
-### High-Level Overview
+### Module Structure
 
 ```
-Clients (Mobile App / Web App)
-         │
-         ▼
-    API Gateway (rate limiting, auth, routing)
-         │
-         ▼
-┌────────┬────────┬──────────┬──────────┬──────────┐
-│  Auth  │ Forum  │Marketplace│ Payments │Governance│  ← Independent services
-│Service │Service │  Service  │ Service  │ Service  │
-└───┬────┴───┬────┴────┬─────┴────┬─────┴────┬─────┘
-    │        │         │          │          │
-    ▼        ▼         ▼          ▼          ▼
-  [DB]     [DB]      [DB]       [DB]       [DB]      ← Isolated databases per service
+src/
+├── modules/
+│   ├── identity/       # Verification, auth, sessions, membership
+│   ├── discussion/     # Boards, threads, comments, chat, moderation
+│   ├── marketplace/    # Product aggregation, reviews, affiliate links
+│   ├── governance/     # Proposals, elections, voting, no-confidence
+│   └── shared/         # Common utilities, middleware, types
+├── api/                # Route handlers (thin — delegates to modules)
+├── db/                 # Schema, migrations (single database)
+└── workers/            # Background jobs (email, OTP, webhooks)
 ```
 
-### Proposed Stack
+Each module:
+- Owns its database tables (no cross-module table access)
+- Exposes a public API to other modules (function calls, not HTTP)
+- Can be extracted to a service later by replacing function calls with HTTP/messages
+
+### Stack
 
 | Layer | Technology | Why |
 |-------|-----------|-----|
-| Frontend (mobile) | React Native or Flutter | Cross-platform. One codebase, iOS + Android + Web. Large contributor pool. |
-| Frontend (web) | Next.js / React | Most contributors know React. SSR for SEO. |
-| API Gateway | Kong or Traefik | Open-source, proven, handles auth/rate-limiting/routing. |
-| Services | Node.js (TypeScript) or Go | TypeScript for speed of development and contributor familiarity. Go for performance-critical paths. |
-| Databases | PostgreSQL (per service) | Proven, open-source, scalable, excellent ecosystem. |
-| Message Broker | NATS or RabbitMQ | Event-driven communication between services. Decoupled. |
-| Cache | Redis | Fast reads, session management, rate limiting. |
-| Search | Meilisearch | Open-source, self-hostable, fast. For marketplace and forum search. |
-| Object Storage | MinIO (self-hosted) or Cloudflare R2 | S3-compatible. No vendor lock-in. |
-| Real-time | WebSocket service (Socket.io or custom) | Live updates for discussions, notifications. |
-| Translation | Self-hosted AI models or API integration | Open question — community to decide approach. |
-| Hosting | Starting with India (Oracle Cloud Mumbai, DigitalOcean Bangalore) + Cloudflare CDN. More regions added as the platform grows globally. | Data sovereignty, reliability, performance. |
+| Frontend | Next.js (PWA) | Installable, push notifications, no app store gatekeepers. Most contributors know React. |
+| Backend | Next.js API routes + standalone workers | One framework, one language (TypeScript), minimal ops burden. |
+| Database | PostgreSQL (single instance) | Proven, open-source, handles everything at this scale. |
+| Cache | Redis | Sessions, rate limiting, real-time presence. |
+| Search | Meilisearch or Typesense | Open-source, self-hostable, fast. Added when marketplace launches. |
+| Object Storage | Cloudflare R2 or MinIO | S3-compatible. Profile images, attachments. |
+| Real-time | WebSocket (via Socket.io or Ably) | Live updates for discussions and chat. |
+| Background Jobs | BullMQ (Redis-backed) | OTP delivery, webhook processing, affiliate sync. |
+| Hosting | Vercel (frontend) + Railway or Fly.io (workers/db) | Low ops burden for a volunteer team. Migrate when scale warrants. |
 | CI/CD | GitHub Actions | Free for public repos. |
-| Monitoring | Prometheus + Grafana | Open-source observability. |
+| Monitoring | Uptime + error tracking (Sentry free tier) | Enough for early stage. Prometheus/Grafana when self-hosting. |
 
-### Why Microservices (Not Monolith)
+### Design Principles
 
-For the MVP, a modular monolith might ship faster. But the architecture should be designed for eventual separation because:
+1. **Boring technology.** PostgreSQL, Redis, TypeScript. No exotic tools that shrink the contributor pool.
+2. **One way to do things.** One ORM, one auth pattern, one error handling approach. Documented in CONTRIBUTING.md.
+3. **No premature optimization.** Single database, single server, vertical scaling until it hurts. PostgreSQL handles millions of rows fine.
+4. **Module boundaries are real.** No importing from another module's internals. Public interface only. This is the future service boundary.
+5. **Deployable by one person.** `git push` → deployed. No Kubernetes, no Helm charts, no infrastructure team required.
 
-- Different services scale differently (marketplace traffic ≠ governance traffic)
-- Different teams can own different services
-- A community can self-host only the services they need
-- Failure isolation — marketplace going down shouldn't kill the discussion board
+### What's NOT in the initial architecture
 
-**Pragmatic approach:** Start as a modular monolith (clear module boundaries, separate databases) with the intent to split into services when team size and traffic demand it.
+| Capability | Why it waits |
+|-----------|-------------|
+| Microservices | No team to operate them. Module boundaries give the same separation without the ops cost. |
+| Federation | Not designed yet. Single instance first. |
+| Multi-region | One region (India) is enough until there's meaningful international traffic. |
+| Kubernetes | Overkill for a single monolith. Add when you have multiple services AND dedicated ops. |
+| API Gateway (Kong/Traefik) | Unnecessary with a monolith. Next.js middleware handles auth and rate limiting. |
+| Message broker (NATS/RabbitMQ) | BullMQ handles async jobs. Event-driven architecture added when modules actually need to decouple. |
+| Native mobile app | PWA first. Native when there are contributors for it. |
+| Self-hosted AI translation | Use external APIs if needed. Self-hosting ML models is ops-intensive. |
 
-**MVP scope:** See [MVP](mvp.md) for what gets built first. The MVP is a PWA (Progressive Web App) covering identity, discussion boards, chat, marketplace (listing + reviews only), skill certification, and talent pool.
+### Database Schema Principles
+
+- Single PostgreSQL database, schemas per module (`identity.*`, `discussion.*`, `marketplace.*`)
+- Modules reference each other only via user ID (the universal foreign key)
+- Migrations are module-scoped — each module owns its tables
+- No cross-schema JOINs in application code (query your own schema, call the other module's API for the rest)
+
+### Authentication & Sessions
+
+- Password + OTP (second factor on new devices)
+- Sessions stored in Redis, long-lived on trusted devices
+- JWT for API auth between frontend and backend (short-lived, refreshed via session)
+- Face scan triggers via KYC provider API for high-stakes actions
+
+### Future: Service Extraction Path
+
+When a module needs to become a service:
+
+1. Module already has a clean public API (function calls)
+2. Replace function calls with HTTP or gRPC
+3. Give it its own database (it already owns its schema)
+4. Deploy independently
+5. Add message queue between services if needed
+
+This is a 1-2 week migration per module — not a rewrite. The monolith structure makes this possible without planning for it prematurely.
 
 ## Open Questions (Need Community Input)
 
-1. **Identity verification:** Proposed design exists — government ID APIs + face scan + OTP. See [Identity Verification](identity-verification.md). Open questions remain: integration specifics per country, fallback for people without government ID, cost optimization at scale.
+1. **Hosting choice:** Vercel + Railway vs. a single VPS (Hetzner/DigitalOcean)? Managed services cost more but reduce ops. VPS is cheaper but needs someone maintaining it.
 
-2. **Federation protocol:** ActivityPub (Mastodon uses this)? Matrix protocol? Custom sync? How do sovereign instances discover and communicate with each other?
+2. **Real-time approach:** WebSocket via Socket.io (self-managed) vs. managed service (Ably, Pusher)? Cost vs. complexity tradeoff.
 
-3. **Translation approach:** Proposed: AI generates first pass (DeepL or Google Translate API), bilingual community members correct and improve — Wikipedia model. Machine-translated content flagged as such; community-verified translations get a badge. Critical content (contracts, governance proposals) requires human review before publishing. Casual content (chat, comments) tolerates rough translation. Open questions: which API provider, cost at scale, whether corrections can feed back to improve future translations.
+3. **Search timing:** Add Meilisearch from day one (marketplace needs it) or start with PostgreSQL full-text search and add dedicated search later?
 
-4. **Payment integration:** Proposed design exists — split approach using country-specific rails for marketplace, direct bank transfer for investment contracts. See [Payments](payments.md). Open questions: escrow for marketplace disputes, refund handling, country prioritization after India.
+4. **Mobile:** PWA-only or React Native in parallel? Depends entirely on contributor availability.
 
-5. **Moderation architecture:** Centralized rules + local enforcement? Fully local? How does moderation work across federated instances?
-
-6. **Mobile vs PWA vs both:** Native app gives better UX and push notifications but requires app store approval. PWA avoids gatekeepers but has iOS limitations.
-
-7. **Database per service vs shared database:** True isolation is cleaner but harder to query across services. What's the pragmatic balance for an early-stage project?
-
-## How to Contribute to This RFC
+## How to Contribute
 
 - **Disagree with something?** Open an issue titled `[Architecture] Your concern here`
 - **Have a counter-proposal?** Write it up and submit a PR to this file, or create a new doc in /docs
-- **Want to own a service?** Comment on the relevant issue. First qualified person to commit gets maintainer status for that module.
+- **Want to own a module?** Comment on the relevant issue. First qualified person to commit gets maintainer status for that module.
 
-This RFC will be ratified by contributor vote once enough people have weighed in. Until then, it's a living document.
+This document will be updated as decisions are made and contributors weigh in.
