@@ -1,6 +1,6 @@
 # The Counterweight — Video Script
 
-**Format:** Speaking to camera. ~20 minutes. Each sentence earns its place.
+**Format:** Speaking to camera. ~18 minutes.
 
 ---
 
@@ -8,19 +8,17 @@
 
 Should we build a utility platform that's owned by its users?
 
-I'm proposing one. It's called The Counterweight. One architectural decision at the foundation — verified identity — makes trust work differently on the internet. I want to show you how it works and see if you want to build it with me.
+I'm proposing one. It's called The Counterweight. I can't build it alone, so I want to show you the design and you can decide if it's worth building together.
 
 ---
 
-## 2. The Core Idea (3 minutes)
+## 2. The Core Idea (2 minutes)
 
-The platform I'm proposing will be owned by its users. Structurally — written into the constitution, the legal entity, and the governance model.
+The platform is owned by its users. Structurally — written into the constitution, the legal entity, the governance model.
 
-What makes this possible is one architectural decision: every person on the platform is a verified, unique human being. One person, one account. Proven via government ID APIs. We store only a non-reversible hash — a mathematical proof that you exist and that you haven't registered before. No personal data retained.
+What makes that work is one decision: every person on the platform is a verified, unique human. One person, one account. Proven via government ID APIs. We store a non-reversible hash — a mathematical proof that you exist and haven't registered before. No personal data retained.
 
-Your data is your sovereignty. We store the minimum needed to prove you're real. Everything else remains yours.
-
-Democratic governance on the internet has been extremely difficult because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. Decentralized social networks, federated protocols, blockchain projects — they solved communication, data portability, censorship resistance. They didn't focus on identity.
+Why does this matter? Democratic governance on the internet has been extremely difficult because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. Decentralized social networks, federated protocols, blockchain projects — they solved communication, data portability, censorship resistance. They didn't focus on identity.
 
 This platform does. The rest follows from it.
 
@@ -28,51 +26,49 @@ This platform does. The rest follows from it.
 
 ## 3. What We Build First (4 minutes)
 
-What does this enable?
+So what does verified identity actually enable?
 
 ### Discussion.
 
-You're talking to real people. You know it, they know it. You can still be anonymous — the system knows you're real, but others don't have to know who you are. But there's a stake behind every voice, and that changes the nature of conversation.
+You're talking to real people. You know it, they know it. You can still be anonymous — the system knows you're real, but others don't have to know who you are. There's a stake behind every voice.
 
-### Reviews — and how the platform sustains itself.
+### Reviews.
 
 If we're not selling data and not running ads, how does this platform sustain itself?
 
-We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can trust — because every reviewer has proof of purchase and a reputation that accumulates over time. When they click through and buy, we earn an affiliate commission. No on-platform payments to process. No inventory to manage.
+We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can trust — every reviewer has proof of purchase and a reputation that accumulates over time. When they click through and buy, we earn an affiliate commission.
 
-Reviewers are ranked by accuracy — how often their assessments align with actual buyer experience. Other verified buyers rate reviews as helpful, accurate, or misleading — so the best information rises naturally. There may be one or two clearly-labeled sponsored slots, but beyond that, the algorithm is influenced only by quality.
+Reviewers are ranked by accuracy — how often their assessments align with actual buyer experience. Other verified buyers rate reviews as helpful, accurate, or misleading — the best information rises naturally. Maybe one or two clearly-labeled sponsored slots, but the algorithm is influenced only by quality.
 
-### Revenue from day one.
+### The core loop.
 
-The marketplace aggregates products from Amazon, Flipkart, and other platforms via affiliate APIs. When someone buys through our links, we earn a commission. Same products. Better reviews. Revenue flows immediately. We get the funding to survive.
+Identity makes reviews trustable. Trustable reviews make the marketplace useful. The marketplace generates revenue. Revenue pays the people who build it. Each piece sustains the next.
 
-Community sellers list alongside aggregated products. Free to list. They pay a small commission only when a sale happens — the platform brought them the customer. Buyers never pay a platform fee.
+The marketplace aggregates products via affiliate APIs. When someone buys through our links, we earn a commission. Same products, better reviews. Revenue from day one.
 
-That's the core loop: identity makes reviews trustable, trustable reviews make the marketplace useful, the marketplace generates revenue, revenue pays the people who build it. Each piece sustains the next.
+Community sellers list alongside later. Free to list. They pay a small commission only when a sale happens. Buyers never pay a platform fee.
 
 ---
 
 ## 4. Funding (3 minutes)
 
-A platform like this needs to sustain itself without compromising its principles. Here's how.
+How do we raise money to build this.
 
-### How we raise money to build this.
+Anyone can invest any amount. Recorded permanently — amount, timestamp, identity. The money goes to work immediately: infrastructure, development, operations.
 
-Anyone can invest any amount. It's recorded permanently — amount, timestamp, identity. The money goes to work immediately: infrastructure, development, operations.
+What investors get is a time-bounded share of revenue. A percentage for a defined period, then it ends. The platform stays community-owned. Early investors take more risk, so they get better terms.
 
-What investors get is a time-bounded share of revenue — a percentage for a defined period, then it ends. The platform stays community-owned. Early investors take more risk, so they get structurally better terms.
+Once the platform has enough members, the terms of every funding round — percentage, duration, cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
 
-Once the platform has enough members, the terms of every funding round — the percentage, the duration, the cap — are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
-
-Early on, before governance is active, investors are protected by constitutional caps and a simple guarantee: if the two sides can't agree on terms, an independent body makes a binding decision based on evidence. No early investor gets left in limbo.
+Early on, before governance is active, investors are protected by constitutional caps. If the two sides can't agree on terms, an independent body makes a binding decision. No early investor gets left in limbo.
 
 The legal entity is a cooperative. Members govern it democratically. No individual or entity can acquire ownership that overrides the collective.
 
 ### How builders get paid.
 
-Every contribution is tracked on a public ledger — code, design, documentation, legal research, moderation. Early contributors take more risk, so they earn multiplied compensation. When revenue flows, it flows to the people who built this — proportional to what they contributed.
+Contributions are tracked on a public ledger — code, design, documentation, legal research, moderation. Early contributors take more risk, so they earn multiplied compensation. When revenue flows, it flows proportional to what you contributed.
 
-How revenue gets split — between builders, investors, operations, and community reinvestment — is written into the constitution. The ratios are decided democratically and protected by supermajority. The details are in the docs.
+The split between builders, investors, operations, and community reinvestment is written into the constitution. Ratios are decided democratically and protected by supermajority. Details are in the docs.
 
 ---
 
@@ -82,11 +78,11 @@ Once the foundation is working — identity, reviews, revenue — the same archi
 
 ### Governance.
 
-Roles with power — moderators, community leads, project leads — are elected and removable. Sixty percent vote, after a seven-day discussion period. Re-confirmed every two years. Power is always temporary and always accountable.
+Roles with power — moderators, community leads, project leads — are elected and removable. Sixty percent vote, seven-day discussion period. Re-confirmed every two years.
 
 ### Moderation.
 
-If someone gets banned, they've lost their only account. Their reviews, their reputation, their connections. The consequence is proportional because the identity is real.
+If someone gets banned, they've lost their only account. Reviews, reputation, connections. The consequence is proportional because the identity is real.
 
 ### Community investment.
 
@@ -96,15 +92,15 @@ The platform facilitates signed agreements between verified people. Transactions
 
 ## 6. The Ecosystem (2 minutes)
 
-Now here's where it gets bigger than one platform.
+This is where it gets bigger than one platform.
 
-The identity layer is open infrastructure. We provide the foundation — verified identity, governance primitives, payment rails. Anyone can build on top of it.
+The identity layer is open infrastructure. We provide the foundation — verified identity, governance primitives, payment rails. Anyone can build on top.
 
 If verified identity is a shared primitive, other people can build: peer-to-peer lending with enforceable contracts, freelance marketplaces with portable reputation, local classifieds where sellers are accountable, co-op governance tools, mutual aid networks, citizen journalism, anonymous whistleblowing.
 
-Each of these is someone else's project. Running on their own server. Using the shared identity network. We don't control them. We don't decide what gets built.
+Each of these is someone else's project. Running on their own server. Using the shared identity network. We don't control them.
 
-Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back to the network. The fee ceiling is a constitutional bound. The specific rate is decided democratically. The infrastructure sustains itself from the commercial value it enables.
+Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back. The fee ceiling is a constitutional bound. The specific rate is decided democratically.
 
 Any project that needs "every user is real" can plug in.
 
@@ -112,42 +108,40 @@ Any project that needs "every user is real" can plug in.
 
 ## 7. Where We Are (2 minutes)
 
-Everything I've described is proposed, documented, and internally consistent — as far as I can tell. Identity verification. Payments. Governance. Investment model. Marketplace strategy. Builder compensation. The ecosystem model. All of it is public, all of it is open, all of it is ready to be challenged.
+Everything I've described is proposed, documented, and internally consistent — as far as I can tell. Identity verification. Payments. Governance. Investment model. Marketplace strategy. Builder compensation. Ecosystem model. All public, all open, ready to be challenged.
 
-I've run four rounds of critical review against the entire system — looking for contradictions, legal risks, economic flaws, governance failures. I haven't found unresolved contradictions, but I'm one person. That's why this is open. The design questions that remain are implementation-level — they'll be resolved by the people who build each piece.
+I've reviewed the system multiple times — looking for contradictions, legal risks, economic flaws, governance failures. I haven't found unresolved contradictions, but I'm one person. That's why this is open. The design questions that remain are implementation-level — they'll be resolved by the people who build each piece.
 
-The code scaffold exists. Next.js, TypeScript, PostgreSQL, Prisma. Four modules — identity, marketplace, discussion, governance. API routes. Database schema. A contributor can clone the repo and start building today.
+The code scaffold exists. Next.js, TypeScript, PostgreSQL, Prisma. Identity, marketplace, discussion, governance modules. A contributor can clone the repo and start building today.
 
-I want to be straightforward. This is a proposal — an idea that I believe is strong enough to attract the people who can make it real. I could be wrong. The design is open. You can read every document, poke every hole, and tell me where it breaks.
+This is a proposal. I could be wrong about parts of it. The design is open — you can read every document, poke every hole, and tell me where it breaks.
 
 ---
 
 ## 8. What I Need (1.5 minutes)
 
-I need engineers. Backend, frontend, security, infrastructure. The problems here are hard and interesting — identity verification without surveillance, parameter-based review systems, real-time discussion at scale, affiliate API integration, trust score algorithms.
+I need engineers. Backend, frontend, security, infrastructure. The problems are interesting — identity verification without surveillance, parameter-based review systems, real-time discussion at scale, trust score algorithms.
 
 I need designers. Someone who can make a complex system feel simple. Mobile-first. Works on a cheap phone on a slow connection.
 
-I need lawyers. Securities law, cooperative law, data protection. Any jurisdiction. This platform will operate globally and it needs legal infrastructure designed in from the start.
+I need lawyers. Securities law, cooperative law, data protection. Any jurisdiction.
 
 I need economists. People who can stress-test the revenue model, the investor caps, the compensation structure.
 
-I need domain experts. People who can define what "quality" means in their field and volunteer as the first evaluators.
+I need domain experts who can define what "quality" means in their field and volunteer as the first evaluators.
 
-I also need people who just believe this should exist. Who'll leave their name and say — I'm in. Build this and I'll use it.
+I also need people who just believe this should exist. Who'll leave their name and say — I'm in.
 
-Contributions are tracked on a public ledger. When revenue flows, contributors get paid proportional to what they built. Early contributors take more risk and earn multiplied compensation. The details are in the docs.
-
----
-
-## 9. Close (1 minute)
-
-This is The Counterweight. Publicly owned infrastructure. Community-governed. Open-source. Verified identity at the foundation. Everything else built on top by the people who use it.
-
-If you think this should exist — the link is below. Read the docs. Break the design. Pick up an issue. Or just leave your name and say you're in.
-
-If you think this should exist — help us build it.
+Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors earn multiplied compensation. Details are in the docs.
 
 ---
 
-**Total estimated runtime at natural speaking pace: 18-22 minutes**
+## 9. Close (30 seconds)
+
+This is The Counterweight. Publicly owned infrastructure. Community-governed. Open-source. Verified identity at the foundation, everything else built on top by the people who use it.
+
+If you think this should exist — the link is below. Read the docs. Break the design. Or just leave your name.
+
+---
+
+**Estimated runtime: 16-18 minutes**
