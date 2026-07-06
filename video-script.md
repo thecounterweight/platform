@@ -110,7 +110,7 @@ Any project that needs "every user is real" can plug in.
 
 Everything I've described is proposed, documented, and internally consistent — as far as I can tell. Identity verification. Payments. Governance. Investment model. Marketplace strategy. Builder compensation. Ecosystem model. All public, all open, ready to be challenged.
 
-I've reviewed the system multiple times — looking for contradictions, legal risks, economic flaws, governance failures. I haven't found unresolved contradictions, but I'm one person. That's why this is open. The design questions that remain are implementation-level — they'll be resolved by the people who build each piece.
+I haven't found unresolved contradictions, but I'm one person. That's why this is open. The design questions that remain are implementation-level — they'll be resolved by the people who build each piece.
 
 The code scaffold exists. Next.js, TypeScript, PostgreSQL, Prisma. Identity, marketplace, discussion, governance modules. A contributor can clone the repo and start building today.
 
