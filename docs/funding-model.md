@@ -4,14 +4,78 @@
 
 Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-owned.
 
-**Legal entity:** A legal entity is required — something must sign contracts, hold the domain, and be the counterparty to revenue-share agreements. The entity will be a cooperative or equivalent (members collectively own it, no individual extracts equity). The specific structure is jurisdiction-dependent:
+**Legal entity:** A Wyoming LLC structured as a member-governed organization. The Operating Agreement (OA) encodes governance rules, revenue distribution, and anti-capture protections. Members join by signing a digital Joinder Agreement upon identity verification — this grants them membership, governance voting rights, and revenue-share rights.
 
-- **India:** Multi-State Cooperative Society (MSCS Act, 2002) or Nidhi Company (Section 406, Companies Act 2013)
-- **EU:** European Cooperative Society (SCE) or national cooperative forms
-- **US:** Cooperative corporation or LLC structured as cooperative
-- **Others:** Whatever local cooperative/mutual framework exists
+**Why a Wyoming LLC:**
+- International membership permitted (no citizenship/residency requirement)
+- Operating Agreement has full flexibility to encode one-person-one-vote, revenue formulas, and anti-sale clauses
+- Full legal personality — can own assets, sign contracts, hold bank accounts, limit liability
+- Costs ~$260/year (cheapest viable option)
+- Forms in 1-2 business days
+- No cap on number of members
 
-The principle: the entity exists to hold infrastructure and sign agreements. It has members, not shareholders. No individual owns it. No individual can sell it. Members govern it democratically. This needs legal validation per jurisdiction before launch.
+**What the Joinder Agreement grants each member:**
+- Membership in the LLC (legal co-ownership)
+- One vote in governance decisions (as defined in the OA)
+- Revenue-share rights (as defined in the OA)
+- Right to stand for elected positions
+- All rights activate automatically upon identity verification
+
+**What the Operating Agreement encodes (the constitution):**
+- Revenue split formula (see below)
+- Anti-acquisition clause — the LLC cannot be sold to any individual or entity
+- Transfer restrictions — membership is personal and non-transferable
+- Amendment process — changes to constitutional provisions require supermajority (75% of voting members)
+- Dispute resolution mechanism
+- Founder authority until first election (see Revenue Authority below)
+
+**Anti-capture protections in the OA:**
+- No individual or coordinated group can acquire majority control
+- Operating Agreement amendments require 75% supermajority
+- Unamendable clauses: community ownership, one-person-one-vote for governance, anti-sale (mirroring Principles 0, 4, 9)
+
+**Later phases:**
+- When Indian UPI payment volume requires it → register an Indian entity (Section 8 or LLP) linked to the LLC by agreement
+- When operating in EU/UK → add local entity per jurisdiction
+- The Wyoming LLC remains the root entity in a federation model
+
+The principle: the entity exists to hold infrastructure and sign agreements. Members join via contract (Joinder). No individual owns it. No individual can sell it. Members govern it democratically.
+
+## Revenue Authority — Who Decides Where Money Goes
+
+The revenue split formula is pre-defined in the Operating Agreement. Day-to-day spending decisions within that formula don't require member votes.
+
+**What's automatic (no vote needed):**
+- Revenue distribution per the formula (60/30/10 → 55/20/25 → 35/20/45 as revenue grows)
+- Operational spending within the "operations" pool (hosting, OTP, tools, compliance)
+- Builder payouts proportional to tracked units from the "builders" pool
+
+**What requires elected leadership approval:**
+- Any single expense above a threshold (proposed: $5,000 initially, adjusted by vote as revenue grows)
+- Hiring or contracting decisions
+- New partnership agreements
+- Vendor selection for major services
+
+**What requires member vote:**
+- Changes to the revenue split formula (75% supermajority)
+- Changes to the Operating Agreement (75% supermajority)
+- Spending from the "community reinvestment" pool (simple majority)
+- Capital allocation decisions above $50,000
+
+**Founder authority (pre-first-election):**
+Until the membership exceeds 1,000 verified members, the founding member has operational authority within the defined formula. This means:
+- Can make operational spending decisions within the operations pool
+- Can approve builder payouts per the unit system
+- Cannot change the formula, the OA, or constitutional provisions
+- Must publish monthly transparency reports (what was spent, where, why)
+
+Once membership exceeds 1,000, an elected board takes over operational authority. The founder becomes a regular member (or stands for election like anyone else). The transition is automatic — encoded in the OA, not discretionary.
+
+**Transparency (always, regardless of who has authority):**
+- All spending is published monthly
+- Revenue numbers are public and real-time
+- Any member can audit the full financial history at any time
+- No spending is secret, no decisions are private
 
 ## The Deal Structure
 

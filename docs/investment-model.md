@@ -207,13 +207,11 @@ We mitigate through: backing many businesses (not putting everything in one), ri
 
 ## Legal Structure (India — Proposed, Unvalidated)
 
-We are exploring:
+The primary entity is a **Wyoming LLC** (member-governed, international membership, Operating Agreement encodes all governance rules). Members join by signing a Joinder Agreement upon identity verification.
 
-- **Cooperative Society** (Multi-State Cooperative Societies Act, 2002) for governance
-- **Nidhi Company** (Companies Act 2013, Section 406) for the financial engine — accepts deposits from members, lends to members, no RBI license required
-- Both entities interlinked — members of one are members of the other
+For Indian operations (UPI payments, local compliance), a linked Indian entity (Section 8 Company or LLP) will be added when payment volume requires it. Additional per-jurisdiction entities are added as the platform expands internationally — all linked to the root LLC by inter-entity agreements.
 
-This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows Indian cooperative or securities law — this is one of the highest-value contributions you can make right now.
+This is a proposal, not a commitment. Legal validation is needed before any of this is final. If you're a lawyer who knows US LLC law, Indian company law, or international cooperative structures — this is one of the highest-value contributions you can make right now.
 
 ## Cross-Border Investment
 

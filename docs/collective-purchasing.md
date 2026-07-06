@@ -8,7 +8,7 @@ This is designed to address it.
 
 1. Shopkeepers on the platform list what products they need to stock.
 2. Platform aggregates demand across many shops in a region (or globally, where logistics allow).
-3. When aggregate demand hits manufacturer minimums, the platform coordinates a bulk order. Participants pay the manufacturer directly (via a shared cooperative account they control, or individual transfers against a single invoice — varies by jurisdiction and group size).
+3. When aggregate demand hits manufacturer minimums, the platform coordinates a bulk order. Participants pay the manufacturer directly (via individual transfers against a single invoice, or a shared group account they control — varies by jurisdiction and group size).
 4. Logistics partner delivers to individual shops.
 5. Platform charges an operational fee — proportional to order size, much less than distributor margins.
 

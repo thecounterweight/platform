@@ -129,29 +129,31 @@ This is pseudonymous participation with verified-human backing. You get privacy 
 
 ## Verification = Membership
 
-Completing identity verification automatically makes you a member of The Counterweight Cooperative (or equivalent legal entity in your jurisdiction).
+Completing identity verification automatically makes you a member of The Counterweight LLC (Wyoming, USA). You sign a digital Joinder Agreement as part of the verification flow — this is the legal contract that grants you membership.
 
 **What happens at verification:**
 1. KYC provider confirms your identity
-2. You're shown: "By verifying, you become a member of The Counterweight Cooperative. This gives you one vote in governance decisions."
-3. You accept
-4. You're enrolled as a member with one share
+2. You're shown the Joinder Agreement: "By signing, you become a member of The Counterweight LLC. This gives you one vote in governance decisions and a share of platform revenue."
+3. You sign digitally (enforceable under the US ESIGN Act)
+4. You're enrolled as a member
 
 **What membership gives you:**
-- Legal co-ownership of the platform (one share in the cooperative)
-- One vote in all governance decisions (AGM, elections, amendments, no-confidence)
+- Legal co-ownership of the platform (membership in the LLC)
+- One vote in all governance decisions (elections, amendments, no-confidence)
 - Right to stand for elected positions (moderator, safety team, community lead)
-- Right to receive surplus distribution if the cooperative ever distributes
+- Revenue-share rights as defined in the Operating Agreement
+- No citizenship or residency requirement — works for any nationality
 
 **Why this works:**
-- No separate "join the cooperative" process — verification IS joining
+- No separate "join" process — verification IS joining
 - Every verified user is an owner by default
-- The cooperative's bylaws encode this: "All individuals who complete identity verification are automatically enrolled as members"
-- The ownership promise is legally real, not just words on a website
+- The Operating Agreement encodes this: "All individuals who complete identity verification and sign the Joinder Agreement are automatically enrolled as members"
+- The ownership promise is legally real — enforced by Wyoming LLC law, not just words on a website
+- International by design — no FEMA restrictions, no per-country cooperative registration needed
 
 ## Cost
 
-Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). A nominal membership fee (₹10-100) is bundled into the same one-time payment. This covers: verification cost + one cooperative share. It also serves as a minor friction barrier against frivolous account creation.
+Identity verification APIs charge per check (₹5-20 in India, $1-3 elsewhere). A nominal membership fee (₹10-100) is bundled into the same one-time payment. This covers: verification cost + LLC membership enrollment. It also serves as a minor friction barrier against frivolous account creation.
 
 ## Account Recovery
 
