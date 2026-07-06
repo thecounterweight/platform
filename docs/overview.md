@@ -1,6 +1,6 @@
 # The Counterweight — Overview
 
-A community-governed platform where verified real people invest together, trade together, and govern together. No bots. No billionaire owners. No VC. Open-source.
+A community-governed platform where verified real people invest together, trade together, and govern together. Community-owned. Open-source.
 
 ## Why This Scope
 
@@ -25,7 +25,7 @@ Publicly owned infrastructure needs to cover communication, commerce, finance, a
 | Module | What it does |
 |--------|-------------|
 | Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. |
-| Discussion | Threaded boards + chat. Every participant is verified human. No bots, no manipulation. |
+| Discussion | Threaded boards + chat. Every participant is a verified human. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community, not self-appointed. |
 | Talent Pool | Companies pay to access expert-certified professionals. Cheaper than recruiters, more reliable than LinkedIn. |
@@ -44,7 +44,7 @@ Month 6+: Transaction fees (when on-platform payments activate)
 Scale:    Collective purchasing operational fees
 ```
 
-No ads. No data selling. No VC demanding growth at all costs.
+Revenue from affiliate commissions, talent pool access, and certification fees. Community-owned.
 
 ## How Money Flows
 

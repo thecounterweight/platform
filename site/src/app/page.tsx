@@ -14,37 +14,35 @@ export default function Home() {
         </p>
         <p className="mt-6 text-xl md:text-2xl text-zinc-300 max-w-2xl">
           Publicly owned infrastructure. Community-governed. Open-source.
-          No billionaire owners. No VC. No ads. No data mining.
+          Every user verified real. Every decision made democratically.
         </p>
         <Counter />
       </section>
 
-      {/* The problem */}
+      {/* The idea */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">The problem is structural</h2>
+        <h2 className="text-2xl font-bold mb-6">The core idea</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Every platform we use is owned by someone who profits from our attention,
-            our data, or both. Reviews are fake. Moderation is arbitrary. Governance
-            is whatever the founder decides today. We are the product — and our options are limited.
+            What if every person on a platform were a verified, unique human — and
+            the platform were owned by those people collectively?
           </p>
           <p>
-            This isn&apos;t fixable with better policies or nicer executives. The
-            incentive structure is the problem. If the platform is owned by capital,
-            its incentives will serve capital.
+            One architectural decision — verified identity — enables a cascade of
+            capabilities that aren&apos;t possible otherwise: trustable reviews, democratic
+            governance, accountable investment, and moderation that actually works.
           </p>
         </div>
       </section>
 
-      {/* One decision, everything follows */}
+      {/* What identity enables */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">One decision changes everything</h2>
+        <h2 className="text-2xl font-bold mb-6">What verified identity enables</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
             Every person on the platform is a verified, unique human. One person,
-            one account. No bots. No duplicates. No sock puppets. We prove this
-            via government ID APIs and store only a non-reversible hash — your
-            data is your sovereignty, not ours.
+            one account. Proven via government ID APIs. We store only a non-reversible
+            hash — your data is your sovereignty, not ours.
           </p>
           <p>
             That single architectural choice cascades:
@@ -53,29 +51,28 @@ export default function Home() {
             <li>
               <strong className="text-zinc-100">Reviews become trustable.</strong>{" "}
               Every reviewer is a real human with proof of purchase. Ranked by
-              accuracy over time. Results are ranked by quality, not money — with one or two clearly-labeled sponsored slots. Beyond that, the algorithm isn&apos;t influenced by who pays.
+              accuracy over time. One or two clearly-labeled sponsored slots — beyond that, the algorithm is influenced only by quality.
             </li>
             <li>
               <strong className="text-zinc-100">Governance becomes real.</strong>{" "}
               Every role with power — moderators, community leads, project leads —
               is elected by real people and removable by them. 60% vote, 7-day
-              discussion. Re-confirmed every 2 years. No permanent authority.
+              discussion. Re-confirmed every 2 years.
             </li>
             <li>
               <strong className="text-zinc-100">Investment becomes accountable.</strong>{" "}
-              Communities back businesses via signed contracts between named individuals.
+              Communities back businesses via signed contracts between verified individuals.
               Every transaction recorded. The platform facilitates — it never holds your money.
             </li>
             <li>
               <strong className="text-zinc-100">Builders get paid fairly.</strong>{" "}
               Every contribution tracked on a public ledger. When revenue flows,
-              it flows to the people who built this — proportional, transparent,
-              no middleman deciding who deserves what.
+              it flows to the people who built this — proportional, transparent.
             </li>
             <li>
-              <strong className="text-zinc-100">Moderation actually works.</strong>{" "}
-              When every account is a real person with something to lose, the
-              calculus of bad behavior changes. No disposable accounts. No bot armies.
+              <strong className="text-zinc-100">Moderation works differently.</strong>{" "}
+              When every account is a real person with a real history, accountability
+              is built in. One identity, one reputation, one stake in the community.
             </li>
           </ul>
         </div>
@@ -94,9 +91,8 @@ export default function Home() {
           </p>
           <p>
             What gets built first: identity + discussion boards + marketplace
-            (aggregated products from existing platforms + community sellers +
-            verified reviews). Revenue from day one via affiliate commissions.
-            No VC needed to survive.
+            (aggregated products from existing platforms + verified reviews).
+            Revenue from day one via affiliate commissions.
           </p>
           <p>
             The identity layer is open infrastructure. Anyone can run their own

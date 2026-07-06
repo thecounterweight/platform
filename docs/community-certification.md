@@ -1,22 +1,15 @@
 # Community Certification
 
-How quality gets verified by real experts instead of fake reviews and marketing claims.
+Independent quality verification by real domain experts, selected and accountable to the community.
 
-## The Problem
+## What This Enables
 
-Right now, you buy something online and you're trusting:
-- A product listing written by the seller (biased)
-- Reviews that might be fake, paid for, or written by bots
-- An algorithm that ranks by ad spend, not quality
+An accessible, independent quality signal for purchases and hiring decisions — built on verified identity and community trust.
 
-For hiring, you trust:
-- A resume that might be exaggerated
-- LinkedIn endorsements that mean nothing
-- Keyword-matching algorithms that miss good people
+- **For products:** An expert in the field evaluates quality against transparent criteria. Buyers see the certification alongside the listing.
+- **For hiring:** Domain experts assess skills directly. Companies access professionals whose abilities are independently verified — not self-reported.
 
-There's no widely accessible, independent quality signal for most online purchases and hiring decisions.
-
-## The Solution
+## How It Works
 
 Community-selected experts independently evaluate and certify products, services, and skills.
 

@@ -1,14 +1,10 @@
 # Vision
 
-## The Problem
+## The Core Idea
 
-The platforms we rely on are structurally misaligned with our interests.
+What if every person on a platform were a verified, unique human — and the platform were owned by those people collectively?
 
-Social media decides what you think. Shopping platforms bury small sellers and push you toward whoever pays for visibility. Middleman platforms take massive cuts for connecting a buyer to a seller. A handful of corporations control most of it — what you see, what you pay, who gets visibility.
-
-You can't trust a review, a comment, or a trending topic — because you never know what's real and what's a bot farm.
-
-The infrastructure is there. Billions of people, connected. The ability to organize, trade, fund, build. But all of it is controlled by entities whose profit incentives don't align with our collective wellbeing.
+That's the foundation. One architectural decision — verified identity — enables a cascade of capabilities that aren't possible otherwise: trustable reviews, democratic governance, accountable investment, and moderation that actually works.
 
 ## What We're Building
 
@@ -18,7 +14,7 @@ A platform that enables collective action by design.
 
 An app where:
 
-- **Every person is real.** One account per human. Verified. No bots, no sock puppets. You choose to speak as yourself or anonymously — but either way, the system and other users know it's a real person.
+- **Every person is real.** One account per human. Verified. You choose to speak as yourself or anonymously — but either way, the system knows it's a real person.
 - **You own your data.** No ads. No tracking. No selling to third parties. Opt-in analytics only. Full export and delete at any time. Open-source code so anyone can verify.
 - **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote. No CEO deciding what 2 billion people see.
 - **Communication is built in.** Discussion boards, group chat, video calls. Encrypted. Not scanned for ad targeting.
@@ -89,7 +85,7 @@ If your service requires "every user is a provably real, unique human," you plug
 
 - **P2P lending** — real people, real reputations, enforceable contracts
 - **Freelance marketplaces** — portable reputation across instances, no 20% platform cut
-- **Local classifieds** — no scams when every seller is verified and accountable
+- **Local classifieds** — every seller is verified and accountable
 - **Co-op management** — legitimate one-person-one-vote for any organization
 - **Mutual aid networks** — pool resources with people who are provably real
 - **Skill exchange** — teach and learn between verified humans
@@ -106,7 +102,7 @@ Each of these is someone else's project, running on their own server, using the 
 
 The ceiling on that percentage is a constitutional bound — set in the principles, changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically by the community. Same governance pattern as investor caps and revenue splits.
 
-This is what could change for the tech world. Today, every platform must solve identity independently — and most don't bother because surveillance is more profitable than verification. An open, community-owned identity layer provides an alternative path. It could make "trust by design" the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables — not from mining its users.
+This is what could change for the tech world. An open, community-owned identity layer means any project that needs "every user is provably real" can plug in without building it from scratch. Trust by design becomes the default rather than the exception. And the infrastructure sustains itself from the commercial value it enables.
 
 ## What This Is Not
 

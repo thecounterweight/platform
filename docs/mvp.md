@@ -29,7 +29,7 @@ Two flag types:
 - **Regular flag** — Content accumulates flags from verified users. When threshold is reached, it's automatically removed. Poster can appeal — appeal triggers a community vote to confirm or reverse.
 - **Urgent flag** — Goes directly to elected safety team for immediate action. For illegal content, doxxing, active threats. Safety team removes first, community reviews within 48 hours (confirms or reverses).
 
-Verified identity makes this viable — one person one flag, no brigading with fake accounts. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
+Verified identity makes this viable — one person, one flag. Serial false-flaggers lose flagging privileges. Downvotes reduce visibility but never remove content — only flags can remove.
 
 **Open design question:** How does the flag threshold scale with community size? A fixed number doesn't work — too high for small boards (harmful content stays up too long), too low for large boards (a few people can suppress speech). Likely percentage-based with a minimum floor, but the exact formula needs to be designed during implementation.
 
@@ -134,7 +134,7 @@ Net effect: you earn by being useful and accurate, not by selling. Gaming requir
 
 **MVP (what ships first):**
 
-1. Discussion boards launch. People have a space with verified real humans. No bots, no manipulation.
+1. Discussion boards launch. People have a space where every participant is a verified real human.
 2. Marketplace activates with aggregated products. People review products. Affiliate revenue starts immediately.
 
 **Phase 2 (funded by MVP revenue):**
