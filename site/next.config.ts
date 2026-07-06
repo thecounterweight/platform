@@ -9,7 +9,7 @@ const securityHeaders = [
   { key: "Permissions-Policy", value: "geolocation=(), microphone=(), camera=()" },
   {
     key: "Content-Security-Policy",
-    value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com https://static.cloudflareinsights.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.upstash.io https://challenges.cloudflare.com; frame-src https://challenges.cloudflare.com",
+    value: "default-src 'self'; script-src 'self' 'unsafe-inline' 'unsafe-eval' https://challenges.cloudflare.com https://static.cloudflareinsights.com https://checkout.razorpay.com; style-src 'self' 'unsafe-inline'; img-src 'self' data: https:; font-src 'self' https://fonts.gstatic.com; connect-src 'self' https://*.upstash.io https://challenges.cloudflare.com https://lumberjack.razorpay.com https://api.razorpay.com; frame-src https://challenges.cloudflare.com https://api.razorpay.com https://checkout.razorpay.com",
   },
 ];
 
