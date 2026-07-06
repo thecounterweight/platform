@@ -47,14 +47,14 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 
 1. Products aggregated from major platforms via affiliate APIs (Amazon Product Advertising API, Flipkart Affiliate API, etc.)
 2. Verified users review products — only real humans, verified purchase
-3. Community evaluators certify quality on top of reviews
+3. Peer-rated reviews surface the most helpful and accurate information
 4. Users click through to buy on the source platform
 
 **Why this works:**
 
 - Solves cold-start — marketplace is useful from day one without waiting for sellers
 - Reviews are trustworthy because every reviewer is a verified real human
-- Community certification adds an expert quality layer that no existing platform has
+- Peer-rated reviews add a quality layer that no existing platform has
 - Affiliate commissions generate revenue immediately (Amazon: 1-10%, Flipkart: 4-12%)
 
 **The progression:**
@@ -89,26 +89,12 @@ Reviewers earn a share of affiliate commissions when their reviews drive clicks.
 
 Net effect: you earn by being useful and accurate, not by selling. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
 
-### 4. Skill Certification
-
-Domain experts interview and assess people's skills. Real evaluations by real experts — not keyword-matching algorithms.
-
-- **Certifiers** are domain experts with demonstrable knowledge, experience, or skills. Provable credentials. They're recruited personally at first, community-elected later.
-- **Process:** Expert interviews the candidate, assesses their skill level, records the result on-platform.
-- **Certification interviews** happen via external video tools (Google Meet, Zoom) initially. On-platform video comes later.
-
-### 5. Talent Pool
-
-Companies pay a fee to access pre-vetted, expert-certified professionals.
-
-**How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
-
-This is likely the strongest early revenue source. Companies currently pay recruiters 15-25% of annual salary. The goal is to offer comparable vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
-
 ## What's NOT in the MVP
 
 | Feature | Why it waits |
 |---------|-------------|
+| Skill certification + Talent pool | Requires active community and certifiers — added once MVP has traction |
+| Community seller listings | Needs trust infrastructure and moderation in place first |
 | On-platform payments | Requires payment rail integration per country, compliance, dispute resolution |
 | Delivery/logistics | Massive infrastructure — let existing platforms handle this for now |
 | Collective purchasing | Needs critical mass of shopkeepers in same geography |
@@ -129,9 +115,14 @@ This is likely the strongest early revenue source. Companies currently pay recru
 | Source | When it kicks in |
 |--------|-----------------|
 | Affiliate commissions (Amazon, Flipkart, etc.) | As soon as users review and click through to buy |
-| Talent pool access fees (companies) | As soon as certified professionals exist |
+
+**Phase 2 revenue (post-MVP):**
+
+| Source | When it kicks in |
+|--------|-----------------|
+| Talent pool access fees (companies) | Once certified professionals exist |
 | Certification fees (small, from candidates or company-sponsored) | Once certifiers are active |
-| Seller commissions (phase 2) | When community sellers are added |
+| Seller commissions | When community sellers are added |
 
 ## Technical Approach
 
@@ -141,16 +132,41 @@ This is likely the strongest early revenue source. Companies currently pay recru
 
 ## How It Grows
 
+**MVP (what ships first):**
+
 1. Discussion boards launch. People have a space with verified real humans. No bots, no manipulation.
-2. Marketplace activates with aggregated products. People review and certify. Affiliate revenue starts immediately.
+2. Marketplace activates with aggregated products. People review products. Affiliate revenue starts immediately.
+
+**Phase 2 (funded by MVP revenue):**
+
 3. Skill certification starts. Domain experts evaluate people. Talent pool forms.
-4. Companies start paying for talent access. Revenue grows.
-5. Revenue funds the next phase — community seller listings, on-platform payments, collective purchasing, investment infrastructure.
+4. Community sellers list alongside aggregated products.
+5. Companies start paying for talent access. Revenue diversifies.
+6. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
 
 ## What Success Looks Like (MVP)
 
 - Active discussion communities with real engagement
-- A marketplace with enough listings to be browsable
-- At least 3-5 domains with active certifiers
-- Companies paying for talent pool access
+- A marketplace with enough aggregated listings to be browsable
+- Verified reviews driving affiliate clicks and commissions
 - Enough revenue to cover infrastructure costs and start paying builders
+
+## Phase 2: Skill Certification + Talent Pool
+
+Once the MVP has traction and revenue:
+
+### Skill Certification
+
+Domain experts interview and assess people's skills. Real evaluations by real experts — not keyword-matching algorithms.
+
+- **Certifiers** are domain experts with demonstrable knowledge, experience, or skills. Provable credentials. They're recruited personally at first, community-elected later.
+- **Process:** Expert interviews the candidate, assesses their skill level, records the result on-platform.
+- **Certification interviews** happen via external video tools (Google Meet, Zoom) initially. On-platform video comes later.
+
+### Talent Pool
+
+Companies pay a fee to access pre-vetted, expert-certified professionals.
+
+**How access works:** Companies see anonymized profiles — skills, certifications, experience level, domain. No personal contact details exposed. Contact happens through the platform. The professional chooses whether to respond. No bulk export, no scraping, no extracting the database.
+
+This is likely the strongest early revenue source post-MVP. Companies currently pay recruiters 15-25% of annual salary. The goal is to offer comparable vetting quality at a fraction of the cost. The certified professional gets hired. The platform gets a fee. The expert who certified them gets a share.
