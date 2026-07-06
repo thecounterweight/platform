@@ -6,7 +6,7 @@
 
 ## 1. Opening (30 seconds)
 
-I'm proposing a platform and a movement. It's called The Counterweight. One architectural decision at the foundation could make trust work differently on the internet — and I can't build it alone.
+I'm proposing a platform. It's called The Counterweight. One architectural decision at the foundation could make trust work differently on the internet — and I can't build it alone.
 
 This is a proposal. I think it could work. But first I want you to see the design and decide for yourself whether it's worth building.
 

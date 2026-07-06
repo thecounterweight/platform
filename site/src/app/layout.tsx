@@ -16,7 +16,7 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "The Counterweight",
   description:
-    "An open-source platform and movement where communities invest together, build businesses, and govern themselves. One person, one voice.",
+    "An open-source, community-owned platform where every user is a verified real person. Trusted reviews, democratic governance, fair compensation. One person, one voice.",
   manifest: "/manifest.json",
   openGraph: {
     title: "The Counterweight",

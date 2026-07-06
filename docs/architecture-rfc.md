@@ -65,7 +65,7 @@ Clients (Mobile App / Web App)
 | Object Storage | MinIO (self-hosted) or Cloudflare R2 | S3-compatible. No vendor lock-in. |
 | Real-time | WebSocket service (Socket.io or custom) | Live updates for discussions, notifications. |
 | Translation | Self-hosted AI models or API integration | Open question — community to decide approach. |
-| Hosting | Starting with India (Oracle Cloud Mumbai, DigitalOcean Bangalore) + Cloudflare CDN. More regions added as the movement grows globally. | Data sovereignty, reliability, performance. |
+| Hosting | Starting with India (Oracle Cloud Mumbai, DigitalOcean Bangalore) + Cloudflare CDN. More regions added as the platform grows globally. | Data sovereignty, reliability, performance. |
 | CI/CD | GitHub Actions | Free for public repos. |
 | Monitoring | Prometheus + Grafana | Open-source observability. |
 

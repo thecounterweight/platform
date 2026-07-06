@@ -12,7 +12,7 @@ The infrastructure is there. Billions of people, connected. The ability to organ
 
 ## What We're Building
 
-A platform and a movement. They reinforce each other.
+A platform that enables collective action by design.
 
 ### The Platform
 
@@ -37,7 +37,7 @@ Not ads shoved in your face. A dedicated space you enter when YOU want to buy or
 - **Talent pool.** Experts evaluate and certify people's skills. Companies pay a fair fee to access pre-vetted professionals. Way less than a recruiter. Way more reliable than keyword-matching algorithms.
 - **Collective purchasing.** Shopkeepers need the same products. The platform aggregates demand and coordinates bulk orders direct from manufacturers. Participants pay manufacturers directly — the platform coordinates, never holds the money. Small shops get the same pricing power as Walmart or Reliance. They stay independent. They just don't get crushed on cost anymore.
 
-### The Movement
+### What Becomes Possible at Scale
 
 What becomes possible when millions of verified real people have transparent money and democratic governance on the same platform:
 

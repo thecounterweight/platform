@@ -139,7 +139,7 @@ export function SignupForm() {
           <option value="domain-expert">Domain Expertise (evaluator)</option>
           <option value="translation">Translation</option>
           <option value="other">Other</option>
-          <option value="just-here">Just here for the movement</option>
+          <option value="just-here">Just here to support</option>
         </select>
       </div>
       {/* Honeypot — hidden from real users, bots fill it */}
