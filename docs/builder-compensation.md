@@ -53,7 +53,7 @@ Beyond $500M, the community is large enough and mature enough to decide the spli
 | $20M+ (active investor deal) | Min 60% of pool | Max 40% of pool | Max 40% of total revenue |
 | After investor agreements expire | 100% of the pool | 0% | 0% |
 
-Builders get paid first — from the earliest revenue. When investors come in (via the bicameral voting process described in the funding model), they share from the same pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
+Operations takes priority until the platform is self-sustaining. Once operating costs are consistently covered, the 60/30/10 split activates and builders start getting paid. When investors come in (via the bicameral voting process described in the funding model), they share from the same pool. Investor share is time-bounded — when their agreements expire, it all flows back to builders.
 
 **Investor caps scale with revenue:**
 - Under $20M: investors can take up to 50% of the pool, but never more than 30% of total revenue. This ensures builders always get at least 30% of total revenue at the early stage.
