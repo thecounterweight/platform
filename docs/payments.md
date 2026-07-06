@@ -77,7 +77,7 @@ For marketplace purchases where money has already moved:
 
 - Buyer and seller are both verified real humans.
 - The contract/receipt exists on the platform.
-- Dispute resolution follows the same process as any other contract dispute — community arbitration first, legal system as last resort. See [Investment Model](investment-model.md) for the dispute process.
+- Dispute resolution follows the same process as any other contract dispute — community mediation first, legal system as last resort. See [Investment Model](investment-model.md) for the dispute process.
 - For small marketplace disputes, buyer/seller reputation and community pressure usually resolve it. Persistent bad actors lose their verified status.
 
 ## Implementation Phases

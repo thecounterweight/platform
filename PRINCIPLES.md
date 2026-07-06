@@ -58,7 +58,7 @@ Experts don't just certify — they teach. Seniors mentor. The community invests
 
 ## 8. We resolve our own conflicts
 
-Fairly, transparently, and accessibly. Elected mediators. Structured process. Cheaper, faster, and more accessible than courts — built on trust relationships that already exist. Community arbitration doesn't replace legal rights — either party can go to court at any time. The goal is to make courts unnecessary for most disputes, not to prevent access to them.
+Fairly, transparently, and accessibly. Elected mediators. Structured process. Cheaper, faster, and more accessible than courts — built on trust relationships that already exist. Community mediation doesn't replace legal rights — either party can go to court at any time. The goal is to make courts unnecessary for most disputes, not to prevent access to them.
 
 ## 9. We don't hide from the dark side
 

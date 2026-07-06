@@ -159,8 +159,8 @@ The loss is absorbed by the pool (pooled model) or by the individual investors w
 Resolution layers, in order:
 
 1. **Direct resolution** — Parties talk it out. Most disputes end here.
-2. **Community arbitration** — Elected arbitrators mediate. Fast, free, accessible. This is a resolution mechanism, not a replacement for legal rights.
-3. **Legal system** — The agreement is a signed contract, enforceable in court. Either party can go to court at any time — community arbitration doesn't waive legal rights.
+2. **Community mediation** — Elected mediators facilitate resolution. Fast, free, accessible. This is a resolution mechanism, not a replacement for legal rights.
+3. **Legal system** — The agreement is a signed contract, enforceable in court. Either party can go to court at any time — community mediation doesn't waive legal rights.
 
 The goal is to resolve most disputes without courts (which are slow, expensive, and inaccessible to most people). But legal enforceability is never taken off the table.
 
