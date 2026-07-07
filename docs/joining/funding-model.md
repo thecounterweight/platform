@@ -2,7 +2,7 @@
 
 ## How We Raise Money
 
-Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-governed and structurally protected.
+Revenue-share agreements. Investors put money in, get a share of platform revenue for a fixed period, then it ends. No equity changes hands. The platform stays community-governed and structurally protected.
 
 **Legal entity:** A founder-owned company (initially LLC or Private Limited) with an irrevocable purpose trust holding a golden share. The trust structurally prevents sale, mission abandonment, or removal of user protections — regardless of who runs the company or who invests.
 
@@ -21,7 +21,7 @@ The trust model (Patagonia, Signal, Mozilla) provides equivalent structural prot
 
 1. **Operating company** — Founded and owned by the founder. Normal corporate operations. Can raise capital, hire, sign contracts, hold bank accounts.
 2. **Irrevocable purpose trust** — Holds a golden share with veto power. The trust's purposes are defined at creation and cannot be changed by the founder, the company, or any future owner.
-3. **User-elected advisory board** — Elected by verified users. The trust is bound to act on the board's recommendation when exercising its veto — this is not advisory in the "we'll consider it" sense. If the board says "veto this sale," the trust vetoes. If the board says "this doesn't violate the mission," the trust stands down. The trust deed encodes this obligation.
+3. **User-elected advisory board** — Elected by verified users. The trust is bound to act on the board's recommendation when exercising its veto. If the board says "veto this sale," the trust vetoes. If the board says "this doesn't violate the mission," the trust stands down. The trust deed encodes this obligation.
 
 ### Trust Structure
 
@@ -80,7 +80,7 @@ The founder earns builder units like any other contributor — same complexity s
 
 The founder cannot unilaterally set their own compensation. Their unit claims are subject to the same public ledger, 14-day challenge window, and peer review as all contributors. The operations budget (which covers salaries once the platform hires staff) is governed by the constitutional formula and elected leadership approval for expenses above threshold.
 
-This is the difference between "founder-owned" and "founder-enriched." The founder has operational control to build the thing effectively. They do not have a special economic lane.
+The founder has operational control to build effectively. They do not have a special economic lane.
 
 **Anti-capture protections:**
 - Trust is irrevocable — founder cannot dissolve it or change its purposes
@@ -199,7 +199,7 @@ Each block votes internally and produces a single position by **supermajority** 
 
 **Why blocks, not individual votes?**
 
-If it were a simple majority across everyone, investors could buy a handful of user votes to swing terms in their favor. By aggregating each side into a single block position, you can't game the other side. You have to convince your own block, and then negotiate with the other.
+If it were a simple majority across everyone, investors could buy a handful of user votes to swing terms in their favor. By aggregating each side into a single block position, gaming the other side requires convincing your own block first, then negotiating with the other.
 
 ## Deadlock
 

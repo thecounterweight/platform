@@ -33,7 +33,7 @@ Then:
 4. Branch, build, PR
 5. Your contribution is recorded on the public ledger from day one
 
-No meetings. No approval to start. Show up, do the work, get credited.
+No meetings or approval needed to start. Contributions are recorded on the public ledger from day one.
 
 ## Workstreams
 
@@ -97,7 +97,7 @@ flowchart LR
 
 **Skills needed:** Full-stack TypeScript, API integrations, search/filtering, UI/UX for e-commerce.
 
-**Key constraint:** Wilson score interval determines sort order — statistically sound, accounts for both rating quality and sample size. No paid placement. No algorithmic manipulation. The code must make this obvious and auditable.
+**Key constraint:** Wilson score interval determines sort order — statistically sound, accounts for both rating quality and sample size. Sort order is determined entirely by the algorithm — no paid placement, no manual overrides. The code must make this obvious and auditable.
 
 ### Discussion
 
@@ -178,7 +178,7 @@ You own a workstream. This means:
 - You review PRs in your workstream
 - You mentor newcomers — answer questions, unblock people
 - You make small architectural decisions (library choice, module structure)
-- You don't gatekeep. If someone shows up with good work, it gets merged.
+- You don't gatekeep — good work gets merged regardless of who wrote it.
 
 **How you become one:** Show up first. Do the most work. No appointment needed. If two people both want to lead, the one with more shipped contributions leads. If there's genuine disagreement, the community votes.
 
@@ -214,10 +214,10 @@ If you're experienced:
 - Write issues that teach. Include context: "this connects to X because Y"
 - Review with kindness. Explain the *why* behind requested changes.
 - Pair on hard problems. A 30-minute call saves days of frustration.
-- Break your expertise into transferable pieces. Don't just build — enable others to build.
+- Break your expertise into transferable pieces. Write docs, create examples, leave context in issues.
 
 If you're learning:
-- Claim `starter` issues. They're designed for you.
+- Claim `starter` issues — scoped small with clear context.
 - Ask questions in the issue thread — the answer helps the next person too
 - Your PR doesn't have to be perfect. That's what review is for.
 - "I'm stuck" is a valid message. Say it early.
@@ -251,7 +251,7 @@ Early contributors take more risk. They get multiplied units (up to 7x for the h
 - **Persistent decisions:** GitHub Discussions
 - **Video calls:** Jitsi Meet (links posted in Discord)
 
-Rule: chat on Discord, decide on GitHub. If a Discord conversation reaches a conclusion, someone writes it up as an issue or discussion post. Otherwise it's lost.
+Rule: chat on Discord, decide on GitHub. If a Discord conversation reaches a conclusion, someone writes it up as an issue or discussion post so it remains findable.
 
 ## Code of Conduct
 

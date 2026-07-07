@@ -55,7 +55,7 @@ This is the initial formula, encoded in the constitutional documents. It activat
 
 Early contributors benefit in two ways: (1) time and founding bonuses add +100-200% to their unit calculations, and (2) being early means a larger share of a smaller pool. When there are only 8,000 total units and you hold 5,600, that's 69%. When the pool grows to 500,000 units, your 5,600 is 1.1% — but the revenue has also grown massively.
 
-Early risk = early reward. The additive model ensures the ratio between early and late contributors doing equivalent work stays at ~4x — meaningful advantage without permanent dominance. But the complexity scale itself is generous regardless of timing: a specialist joining late still earns 30x raw hours.
+The additive model ensures the ratio between early and late contributors doing equivalent work stays at ~4x — meaningful advantage without permanent dominance. The complexity scale itself is generous regardless of timing: a specialist joining late still earns 30x raw hours.
 
 ### What Counts as Contribution
 
@@ -114,7 +114,7 @@ This is a starting framework. The builder community will ratify or adjust it.
 | Highly complex | 20x | Payment systems, identity verification, complex legal structuring, platform-level architecture that constrains everything downstream |
 | Specialist | 30x | ZK circuit design, cryptographic protocol implementation, formal verification, work requiring PhD-level expertise where <100 people globally are qualified |
 
-The complexity multiplier reflects what this work would cost on the open market — and then some. We are deliberately generous. Contributors don't get equity, don't get stock options, and take real risk that units may be worth nothing. The complexity scale compensates for all of that. A specialist joining in Year 4 with no bonuses still gets 30x — above market rate, because we value the work more than the market does.
+The complexity multiplier reflects what this work would cost on the open market. Contributors don't get equity or stock options, and take real risk that units may be worth nothing. The complexity scale compensates for that. A specialist joining in Year 4 with no bonuses still gets 30x — above market rate because it accounts for the risk of working without guaranteed compensation.
 
 **Bonuses (additive — stack by adding percentages, not compounding):**
 
@@ -149,7 +149,7 @@ The maintenance floor exists because unglamorous work that keeps the platform al
 
 **Maximum possible multiplier:** 30 × (1 + 1 + 1 + 0.5 + 0.5) = 30 × 4 = **120x raw hours.** This is the absolute ceiling for specialist-grade, Year 1, first-10, critical path, first-of-kind work. In practice, most strong early contributions land at 40-80x. A specialist joining late with no bonuses still gets 30x raw hours — deliberately above market rate.
 
-**Why this generous:** Contributors take real risk. Units might be worth nothing. There's no equity, no stock options, no secondary market. The complexity scale isn't "market rate" — it's "market rate + risk premium + generosity." If the platform succeeds, early builders are compensated like founders. If it fails, they lost their time — and the scale acknowledges that gamble honestly.
+**Why this generous:** Contributors take real risk — units might be worth nothing. There's no equity, no stock options, no secondary market. The complexity scale prices in the risk premium on top of market rate.
 
 **Why additive and not multiplicative:** Multiplicative compounding (where each bonus multiplies every other) creates exponential concentration. Five early contributors could permanently own 80%+ of the builder pool. Additive bonuses reward early risk (4x advantage over later contributors doing the same work) without creating an unchallengeable aristocracy.
 

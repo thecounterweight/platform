@@ -1,8 +1,6 @@
 # Contracts
 
-Verified identity + contract infrastructure = enforceable agreements between real people, without lawyers, without stamp paper, without the other party being a stranger.
-
-This is what verified identity unlocks beyond reviews and discussion. Every person on the platform is a known, accountable human. That makes contracts between them meaningful, enforceable, and cheap.
+Contract infrastructure for verified humans. Both parties are identified through government ID — this makes digital contracts legally enforceable under IT Act 2000 (India), ESIGN Act (US), and eIDAS (EU).
 
 ## What the Platform Provides
 
@@ -22,7 +20,7 @@ This is what verified identity unlocks beyond reviews and discussion. Every pers
 - Provide legal advice or recommend terms
 - Vet, evaluate, or perform due diligence on either party
 
-The platform is infrastructure. Like a notary — it verifies identity, witnesses the agreement, stores the document. It does not decide whether the agreement is wise.
+The platform verifies identity, witnesses the agreement, and stores the document. It does not decide whether the agreement is wise.
 
 ## Use Cases
 
@@ -50,7 +48,7 @@ Verified client hires a verified freelancer. Scope, deliverables, payment terms,
 
 Verified landlord and verified tenant. Monthly rent, deposit, maintenance responsibilities, notice period — digitally signed, stored immutably, legally enforceable.
 
-**Why this matters in India:** 90%+ of rental agreements are informal (verbal or unsigned photocopies). A digital, verified, legally enforceable rental agreement for ₹50-100 replaces a process that currently requires stamp paper, a notary visit, and ₹500-2,000.
+**India context:** 90%+ of rental agreements are informal (verbal or unsigned photocopies). A digital, verified, legally enforceable rental agreement for ₹50-100 replaces a process that currently requires stamp paper, a notary visit, and ₹500-2,000.
 
 **Example:** Tenant signs a 11-month rental agreement. Platform sends monthly payment reminders. Both parties have an immutable record if disputes arise.
 
@@ -124,7 +122,7 @@ flowchart TD
 
 ## Dispute Resolution (Structured ODR + Human Mediation)
 
-Online Dispute Resolution (ODR) infrastructure — not just "talk it out," but structured tooling that resolves most disputes without courts while preserving legal enforceability.
+Structured Online Dispute Resolution (ODR) infrastructure — guided negotiation, evidence submission, and escalation paths that resolve disputes without courts while preserving legal enforceability.
 
 **Resolution layers, in order:**
 
@@ -151,7 +149,7 @@ flowchart TD
     F -->|No| G[Legal System / Court]
 ```
 
-**Why structured ODR, not just "talk it out":**
+**Why structured ODR:**
 
 At scale (thousands of disputes/month), unstructured mediation doesn't work — mediators burn out, response times grow, quality varies. Structured ODR (the model used by eBay, Modria/Tyler Technologies, and the EU ODR platform) resolves 80%+ of disputes at layer 1 without human intervention.
 
@@ -359,4 +357,4 @@ When a template issue is reported:
 - **Stamp duty:** Where jurisdictions require stamp duty (state-dependent in India, varies globally), the platform integrates e-stamp procurement as part of the contract creation flow. Handled per-template, per-jurisdiction — template creators declare stamp duty requirements, platform facilitates payment through the relevant state portal. Cost passed to users. Not a platform-level design question — it's operational, handled case by case.
 - **Cross-border enforceability:** Enabled piece by piece, country-pair by country-pair, as legal research confirms mutual recognition of e-signatures. Aspirational goal — domestic-first, cross-border when and where we can.
 
-If you're a lawyer in any jurisdiction — template contribution is one of the highest-value things you can do. Paid per use, for as long as the template is active.
+Lawyers in any jurisdiction can contribute templates. Paid per use, for as long as the template is active.
