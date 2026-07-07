@@ -27,6 +27,9 @@ export default function Home() {
           <p>
             Every person on this platform is verified through government ID. One account per human.
             What you say here carries weight — because everyone knows a real person said it.
+            Your raw ID is never stored — only an irreversible hash for deduplication. No profiling,
+            no data sales, no ads. An irrevocable purpose trust makes this permanent — no future
+            leadership can change it.
           </p>
           <p>
             Discuss across languages — real-time neural translation means someone in Tamil Nadu and
