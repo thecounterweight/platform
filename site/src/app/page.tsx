@@ -10,31 +10,32 @@ export default function Home() {
           The Counterweight
         </h1>
         <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
-          A product review platform where every reviewer is a verified real human.
-          Structurally impossible to sell. Open-source.
+          A platform where every person is real, every voice is accountable,
+          and the structure makes it impossible to sell you out.
         </p>
         <p className="mt-6 text-base text-zinc-300 max-w-xl">
-          Reviews ranked by statistical accuracy. Real-time translation across languages.
-          Your data never sold. Your rights written into the constitution.
+          Verified identity. No data monetization. Constitutional rights for users.
+          Open-source.
         </p>
         <Counter />
       </section>
 
-      {/* The product */}
+      {/* What this is */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">The product</h2>
+        <h2 className="text-2xl font-bold mb-6">A space built on trust</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            You search for a product. You read reviews. Every person who wrote one is verified — government ID,
-            one account per person, no fakes. Reviews are structured (specific parameters like battery life,
-            build quality, value for money) and ranked by statistical accuracy, not engagement.
+            Every person on this platform is verified through government ID. One account per human.
+            What you say here carries weight — because everyone knows a real person said it.
           </p>
           <p>
-            Products aggregated from Amazon, Flipkart, and others. Real-time neural translation built in —
-            someone posts in Hindi, you read in English. No user content leaves our infrastructure.
+            Discuss across languages — real-time neural translation means someone in Tamil Nadu and
+            someone in Rajasthan are in the same conversation. Review products and your assessment is
+            tied to a reputation you build over years. Vote on decisions and no one has two accounts.
           </p>
           <p>
-            Revenue comes from affiliate commissions when users click through and buy. No ads. No data selling.
+            The platform sustains itself through affiliate commissions on product reviews. No ads.
+            No data selling. No engagement tricks. You are not the product.
           </p>
         </div>
       </section>
