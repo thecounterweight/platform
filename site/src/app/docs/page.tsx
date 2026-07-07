@@ -1,4 +1,4 @@
-import { getAllDocs } from "@/lib/docs";
+import { getDocsBySection } from "@/lib/docs";
 import Link from "next/link";
 import type { Metadata } from "next";
 
@@ -8,7 +8,7 @@ export const metadata: Metadata = {
 };
 
 export default function DocsIndex() {
-  const docs = getAllDocs();
+  const sections = getDocsBySection();
 
   return (
     <div className="max-w-3xl mx-auto px-6 py-16">
@@ -16,18 +16,23 @@ export default function DocsIndex() {
       <p className="text-zinc-400 mb-10">
         Everything is open. Read it, challenge it, improve it.
       </p>
-      <div className="space-y-4">
-        {docs.map((doc) => (
-          <Link
-            key={doc.slug}
-            href={`/docs/${doc.slug}`}
-            className="block border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors"
-          >
-            <h2 className="text-lg font-semibold text-zinc-100">{doc.title}</h2>
-            <p className="text-sm text-zinc-400 mt-1">{doc.description}</p>
-          </Link>
-        ))}
-      </div>
+      {sections.map((section) => (
+        <div key={section.label} className="mb-10">
+          <h2 className="text-sm font-medium text-zinc-500 uppercase tracking-wider mb-4">{section.label}</h2>
+          <div className="space-y-4">
+            {section.docs.map((doc) => (
+              <Link
+                key={doc.slug}
+                href={`/docs/${doc.slug}`}
+                className="block border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors"
+              >
+                <h3 className="text-lg font-semibold text-zinc-100">{doc.title}</h3>
+                <p className="text-sm text-zinc-400 mt-1">{doc.description}</p>
+              </Link>
+            ))}
+          </div>
+        </div>
+      ))}
     </div>
   );
 }

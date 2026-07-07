@@ -4,7 +4,7 @@
 
 We're building the alternative: a platform where every participant is a verified real human, and an irrevocable purpose trust makes it structurally impossible to sell, gut, or enshittify.
 
-→ [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/overview.md)
+→ [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/start-here/overview.md)
 
 ## What it does
 
@@ -40,7 +40,7 @@ Bonuses stack additively: Year 1 (+100%), first-10 contributor (+100%), critical
 
 Every contribution is recorded from day one on a public ledger. When revenue flows, it flows back to everyone who built this.
 
-→ [Builder Compensation](docs/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
+→ [Builder Compensation](docs/joining/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
 
 ## What ships first
 
@@ -85,25 +85,30 @@ Revenue starts at Milestone 3 (affiliate commissions). Each phase funds the next
 
 | You are... | Start with |
 |------------|-----------|
-| Curious about the idea | [Overview](docs/overview.md) — the entire system in one page |
+| Curious about the idea | [Overview](docs/start-here/overview.md) — the entire system in one page |
 | Ready to build | [Contributing](CONTRIBUTING.md) — pick an issue, ship code |
-| Interested in the vision | [Vision](docs/vision.md) — where this goes at scale |
-| Evaluating the architecture | [Architecture RFC](docs/architecture-rfc.md) — tear it apart |
+| Interested in the vision | [Vision](docs/start-here/vision.md) — where this goes at scale |
+| Evaluating the architecture | [Architecture RFC](docs/building/architecture-rfc.md) — tear it apart |
 
 ## Documentation
 
 | Document | Purpose |
 |----------|---------|
-| [Vision](docs/vision.md) | Full picture + ecosystem |
-| [MVP](docs/mvp.md) | What gets built first |
-| [Identity Verification](docs/identity-verification.md) | One person, one account + ZK proofs |
-| [Payments](docs/payments.md) | Money moves without platform holding it |
-| [Builder Compensation](docs/builder-compensation.md) | How contributors get paid (generously) |
-| [Contracts](docs/contracts.md) | Contract infrastructure for verified humans |
-| [Funding Model](docs/funding-model.md) | Purpose trust, no VC, terms decided democratically |
-| [Collective Purchasing](docs/collective-purchasing.md) | Bulk pricing for small shops |
-| [Community Certification](docs/community-certification.md) | Quality verified by experts |
-| [Architecture RFC](docs/architecture-rfc.md) | Technical design (open for debate) |
+| **Start Here** | |
+| [Overview](docs/start-here/overview.md) | The entire system in one page |
+| [Vision](docs/start-here/vision.md) | Full picture + ecosystem |
+| [MVP](docs/start-here/mvp.md) | What gets built first |
+| **Building** | |
+| [Identity Verification](docs/building/identity-verification.md) | One person, one account + ZK proofs |
+| [Payments](docs/building/payments.md) | Money moves without platform holding it |
+| [Contracts](docs/building/contracts.md) | Contract infrastructure for verified humans |
+| [Architecture RFC](docs/building/architecture-rfc.md) | Technical design (open for debate) |
+| **Joining** | |
+| [Builder Compensation](docs/joining/builder-compensation.md) | How contributors get paid (generously) |
+| [Funding Model](docs/joining/funding-model.md) | Purpose trust, no VC, terms decided democratically |
+| **Future** | |
+| [Collective Purchasing](docs/future/collective-purchasing.md) | Bulk pricing for small shops |
+| [Community Certification](docs/future/community-certification.md) | Quality verified by experts |
 
 ## Community
 

@@ -142,7 +142,7 @@ Existing phone-verified users are invited to upgrade. Three-tier access:
 - **Phone-verified** — can discuss, can't review products or vote in governance.
 - **Unverified** — browse only.
 
-The user pays the one-time verification fee. See [Identity Verification](identity-verification.md) for the full proposed design.
+The user pays the one-time verification fee. See [Identity Verification](../building/identity-verification.md) for the full proposed design.
 
 The principle is non-negotiable. The implementation is open to improvement.
 

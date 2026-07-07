@@ -11,7 +11,7 @@ You earn **30-120x your raw hours** in revenue-share units. No equity — delibe
 | 10 hrs architecting systems (complex) | 10 × 12 × 3.5 = 420 units |
 | 10 hrs designing ZK circuits (specialist) | 10 × 30 × 4 = 1,200 units |
 
-Full details: [Builder Compensation](docs/builder-compensation.md)
+Full details: [Builder Compensation](docs/joining/builder-compensation.md)
 
 ## 5-Minute Start
 
@@ -27,7 +27,7 @@ pnpm dev
 ```
 
 Then:
-1. Read the [one-page overview](docs/overview.md) — understand what this is
+1. Read the [one-page overview](docs/start-here/overview.md) — understand what this is
 2. Pick a workstream below that matches your skills
 3. Claim an [existing issue](https://github.com/thecounterweight/platform/issues) or propose one
 4. Branch, build, PR
@@ -54,7 +54,7 @@ flowchart LR
     I -->|high-stakes actions| C
 ```
 
-**What's decided:** Three-layer verification (government ID API + face scan for high-stakes + OTP). Non-reversible hash stored — no raw data. Three access tiers (verified/vouched/unverified). User pays verification fee. See [identity-verification.md](docs/identity-verification.md).
+**What's decided:** Three-layer verification (government ID API + face scan for high-stakes + OTP). Non-reversible hash stored — no raw data. Three access tiers (verified/vouched/unverified). User pays verification fee. See [identity-verification.md](docs/building/identity-verification.md).
 
 **What needs building:**
 - DigiLocker / Aadhaar eKYC sandbox integration (India)
@@ -84,7 +84,7 @@ flowchart LR
     E -->|sort by| L[Wilson Score Interval]
 ```
 
-**What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by Wilson score interval. EigenTrust graph propagation for reviewer trust scoring. Reviewer commission from affiliate revenue. See [mvp.md](docs/mvp.md).
+**What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by Wilson score interval. EigenTrust graph propagation for reviewer trust scoring. Reviewer commission from affiliate revenue. See [mvp.md](docs/start-here/mvp.md).
 
 **What needs building:**
 - Amazon Product Advertising API integration
@@ -112,7 +112,7 @@ flowchart LR
     G --> H[Public Action Log]
 ```
 
-**What's decided:** Threaded discussion boards. Real people only. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. Moderation via ML triage + community vote (humans always make the final decision). See [mvp.md](docs/mvp.md) moderation section.
+**What's decided:** Threaded discussion boards. Real people only. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. Moderation via ML triage + community vote (humans always make the final decision). See [mvp.md](docs/start-here/mvp.md) moderation section.
 
 **What needs building:**
 - Board/category CRUD
@@ -243,7 +243,7 @@ If you're learning:
 
 Every contribution is tracked on a public ledger. When revenue flows, contributors get paid proportional to what they built. Not just code — reviews, design, documentation, moderation, mentoring all count.
 
-Early contributors take more risk. They get multiplied units (up to 7x for the hardest foundational work). Read [Builder Compensation](docs/builder-compensation.md) for the full model.
+Early contributors take more risk. They get multiplied units (up to 7x for the hardest foundational work). Read [Builder Compensation](docs/joining/builder-compensation.md) for the full model.
 
 ## Communication
 

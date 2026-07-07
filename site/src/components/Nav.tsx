@@ -3,19 +3,39 @@
 import Link from "next/link";
 import { useState, useRef, useEffect } from "react";
 
-const docLinks = [
-  { href: "/docs/overview", label: "Start Here" },
-  { href: "/docs/vision", label: "Vision" },
-  { href: "/docs/mvp", label: "What's First" },
-  { href: "/docs/principles", label: "Principles" },
-  { href: "/docs/identity-verification", label: "Identity" },
-  { href: "/docs/payments", label: "Payments" },
-  { href: "/docs/architecture-rfc", label: "Architecture" },
-  { href: "/docs/builder-compensation", label: "Get Paid" },
-  { href: "/docs/contracts", label: "Contracts" },
-  { href: "/docs/funding-model", label: "Funding" },
-  { href: "/docs/community-certification", label: "Certification" },
-  { href: "/docs/collective-purchasing", label: "Bulk Buying" },
+const docSections = [
+  {
+    label: "Start Here",
+    links: [
+      { href: "/docs/overview", label: "Overview" },
+      { href: "/docs/vision", label: "Vision" },
+      { href: "/docs/mvp", label: "What's First" },
+      { href: "/docs/principles", label: "Principles" },
+    ],
+  },
+  {
+    label: "Building",
+    links: [
+      { href: "/docs/identity-verification", label: "Identity" },
+      { href: "/docs/payments", label: "Payments" },
+      { href: "/docs/architecture-rfc", label: "Architecture" },
+      { href: "/docs/contracts", label: "Contracts" },
+    ],
+  },
+  {
+    label: "Joining",
+    links: [
+      { href: "/docs/builder-compensation", label: "Get Paid" },
+      { href: "/docs/funding-model", label: "Funding" },
+    ],
+  },
+  {
+    label: "Future",
+    links: [
+      { href: "/docs/community-certification", label: "Certification" },
+      { href: "/docs/collective-purchasing", label: "Bulk Buying" },
+    ],
+  },
 ];
 
 const externalLinks = [
@@ -58,16 +78,21 @@ export function Nav() {
               </svg>
             </button>
             {docsOpen && (
-              <div className="absolute top-full right-0 mt-2 w-48 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl py-2">
-                {docLinks.map((link) => (
-                  <Link
-                    key={link.href}
-                    href={link.href}
-                    onClick={() => setDocsOpen(false)}
-                    className="block px-4 py-2 text-sm text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
-                  >
-                    {link.label}
-                  </Link>
+              <div className="absolute top-full right-0 mt-2 w-52 bg-zinc-900 border border-zinc-800 rounded-lg shadow-xl py-2">
+                {docSections.map((section) => (
+                  <div key={section.label}>
+                    <div className="px-4 pt-3 pb-1 text-xs font-medium text-zinc-500 uppercase tracking-wider">{section.label}</div>
+                    {section.links.map((link) => (
+                      <Link
+                        key={link.href}
+                        href={link.href}
+                        onClick={() => setDocsOpen(false)}
+                        className="block px-4 py-2 text-sm text-zinc-400 hover:text-zinc-100 hover:bg-zinc-800 transition-colors"
+                      >
+                        {link.label}
+                      </Link>
+                    ))}
+                  </div>
                 ))}
               </div>
             )}
@@ -95,16 +120,21 @@ export function Nav() {
       </div>
       {/* Mobile menu */}
       {mobileOpen && (
-        <div className="md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 space-y-3">
-          {docLinks.map((link) => (
-            <Link
-              key={link.href}
-              href={link.href}
-              onClick={() => setMobileOpen(false)}
-              className="block text-sm text-zinc-400 hover:text-zinc-100 transition-colors"
-            >
-              {link.label}
-            </Link>
+        <div className="md:hidden border-t border-zinc-800 bg-zinc-950 px-6 py-4 space-y-1">
+          {docSections.map((section) => (
+            <div key={section.label} className="py-2">
+              <div className="text-xs font-medium text-zinc-500 uppercase tracking-wider mb-2">{section.label}</div>
+              {section.links.map((link) => (
+                <Link
+                  key={link.href}
+                  href={link.href}
+                  onClick={() => setMobileOpen(false)}
+                  className="block py-1.5 text-sm text-zinc-400 hover:text-zinc-100 transition-colors"
+                >
+                  {link.label}
+                </Link>
+              ))}
+            </div>
           ))}
           <div className="border-t border-zinc-800 pt-3 mt-3 space-y-3">
             {externalLinks.map((link) => (

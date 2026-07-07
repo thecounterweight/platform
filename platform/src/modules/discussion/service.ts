@@ -9,7 +9,7 @@
  * - E2E encrypted DMs and group chat (MLS protocol)
  * - Real-time translation (NLLB/SeamlessM4T)
  *
- * See: /docs/mvp.md (discussion + moderation sections)
+ * See: /docs/start-here/mvp.md (discussion + moderation sections)
  *
  * TODO: This is a placeholder. The discussion workstream lead will
  * implement these features.

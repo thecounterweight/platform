@@ -54,9 +54,9 @@ Milestones 1-2 generate no revenue — they build the community and trust. Reven
 
 ## How Money Flows
 
-**Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes. See [Funding Model](funding-model.md) for full details.
+**Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes. See [Funding Model](../joining/funding-model.md) for full details.
 
-**Starting split:** 60% builders + investors | 30% operations | 10% community reinvestment. Investor share is capped and time-bounded. At scale, governance decides the split — no pre-set formula locks in what doesn't make sense yet. See [Funding Model](funding-model.md) for full details.
+**Starting split:** 60% builders + investors | 30% operations | 10% community reinvestment. Investor share is capped and time-bounded. At scale, governance decides the split — no pre-set formula locks in what doesn't make sense yet. See [Funding Model](../joining/funding-model.md) for full details.
 
 ## How Contributors Get Paid
 
@@ -70,7 +70,7 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 
 ## The System Diagram
 
-![System Diagram](assets/system-diagram.svg)
+![System Diagram](../assets/system-diagram.svg)
 
 [View full size](https://raw.githubusercontent.com/thecounterweight/platform/main/docs/assets/system-diagram.svg)
 
@@ -101,8 +101,8 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 
 - [Vision](vision.md) — the full picture
 - [MVP](mvp.md) — what gets built first
-- [Builder Compensation](builder-compensation.md) — how you get paid
-- [Identity Verification](identity-verification.md) — how one-person-one-account works
-- [Payments](payments.md) — how money moves
-- [Contracts](contracts.md) — contract infrastructure for verified humans
-- [Contributing](../CONTRIBUTING.md) — how to start
+- [Builder Compensation](../joining/builder-compensation.md) — how you get paid
+- [Identity Verification](../building/identity-verification.md) — how one-person-one-account works
+- [Payments](../building/payments.md) — how money moves
+- [Contracts](../building/contracts.md) — contract infrastructure for verified humans
+- [Contributing](../../CONTRIBUTING.md) — how to start

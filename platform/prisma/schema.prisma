@@ -14,7 +14,7 @@ datasource db {
 // ============================================================
 // IDENTITY MODULE
 // Owner: Identity workstream lead
-// Doc: /docs/identity-verification.md
+// Doc: /docs/building/identity-verification.md
 // ============================================================
 
 model User {
@@ -42,7 +42,7 @@ enum UserTier {
 // ============================================================
 // DISCUSSION MODULE
 // Owner: Discussion workstream lead
-// Doc: /docs/mvp.md (moderation section)
+// Doc: /docs/start-here/mvp.md (moderation section)
 // ============================================================
 
 model Post {
@@ -72,7 +72,7 @@ model Board {
 // ============================================================
 // MARKETPLACE MODULE
 // Owner: Marketplace workstream lead
-// Doc: /docs/mvp.md (marketplace section)
+// Doc: /docs/start-here/mvp.md (marketplace section)
 // ============================================================
 
 model Product {

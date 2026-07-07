@@ -342,7 +342,7 @@ Spending is transparent and publicly auditable. The community can see where ever
 
 **Early-stage priority:** The 60/30/10 revenue split activates once revenue can meaningfully support all three pools. Until then, early revenue goes primarily to operations — keeping infrastructure running and retaining contributors. Builder and investor payouts begin once operations are sustainably covered. The threshold where the full split activates is a governance decision, proposed as the point where monthly revenue consistently covers operating costs with margin.
 
-**Payment infrastructure:** Proposed design exists. Country-specific rails for marketplace (UPI, SEPA, ACH), direct bank transfer for investment contracts. The platform records transactions but does not process or hold money. See [Payments](payments.md).
+**Payment infrastructure:** Proposed design exists. Country-specific rails for marketplace (UPI, SEPA, ACH), direct bank transfer for investment contracts. The platform records transactions but does not process or hold money. See [Payments](../building/payments.md).
 
 ## What Investors Don't Get
 
@@ -351,7 +351,7 @@ Spending is transparent and publicly auditable. The community can see where ever
 - Governance power over platform operations, infrastructure, builder compensation, or feature decisions
 - The ability to sell or transfer their platform revenue-share position (prevents speculation on the platform's revenue stream)
 
-**Note:** This applies to platform investors (people investing in the platform itself). Community business contracts (people backing a bakery or startup via direct contracts) are separate — those positions are governed by the individual contract terms between the parties. See [Contracts](contracts.md).
+**Note:** This applies to platform investors (people investing in the platform itself). Community business contracts (people backing a bakery or startup via direct contracts) are separate — those positions are governed by the individual contract terms between the parties. See [Contracts](../building/contracts.md).
 
 ## Why This Structure
 

@@ -48,7 +48,7 @@ export default function ContributePage() {
           <h2 className="text-xl font-semibold mb-4">The agreement</h2>
           <div className="space-y-3 text-zinc-300 text-sm">
             <p>By contributing, you agree to the terms in the{" "}
-              <a href="https://github.com/thecounterweight/platform/blob/main/docs/contribution-agreement-template.md" className="text-zinc-200 underline hover:text-white">
+              <a href="https://github.com/thecounterweight/platform/blob/main/docs/joining/contribution-agreement-template.md" className="text-zinc-200 underline hover:text-white">
                 Contribution Agreement
               </a>. The key points:
             </p>
@@ -72,13 +72,13 @@ export default function ContributePage() {
                 All contributions visible on this page in real-time
               </li>
               <li>
-                <a href="https://github.com/thecounterweight/platform/blob/main/docs/funding-model.md" className="text-zinc-200 underline hover:text-white">
+                <a href="https://github.com/thecounterweight/platform/blob/main/docs/joining/funding-model.md" className="text-zinc-200 underline hover:text-white">
                   Funding model
                 </a>{" "}
                 — how terms are decided
               </li>
               <li>
-                <a href="https://github.com/thecounterweight/platform/blob/main/docs/contribution-agreement-template.md" className="text-zinc-200 underline hover:text-white">
+                <a href="https://github.com/thecounterweight/platform/blob/main/docs/joining/contribution-agreement-template.md" className="text-zinc-200 underline hover:text-white">
                   Contribution agreement
                 </a>{" "}
                 — what you&apos;re agreeing to

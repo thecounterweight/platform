@@ -9,7 +9,7 @@
  * - Affiliate link tracking and commission attribution
  * - Sort by aggregate score (sum of star ratings)
  *
- * See: /docs/mvp.md (marketplace section)
+ * See: /docs/start-here/mvp.md (marketplace section)
  *
  * TODO: This is a placeholder. The marketplace workstream lead will
  * implement these features.

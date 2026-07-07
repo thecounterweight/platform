@@ -8,7 +8,7 @@
  * - Tier assignment (verified / vouched / unverified)
  * - Account recovery
  *
- * See: /docs/identity-verification.md
+ * See: /docs/building/identity-verification.md
  *
  * TODO: This is a placeholder. The identity workstream lead will
  * implement verification flows here.
