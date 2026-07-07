@@ -135,17 +135,58 @@ These are non-negotiable platform commitments:
 | Liveness checks not retained | Liveness checks for high-stakes actions produce pass/fail. Biometric data is processed in real-time by the provider and discarded. |
 | Open-source verification logic | Anyone can audit exactly what data flows where. No black boxes. |
 
-## Anonymity vs Verification
+## Two Paths: Anonymous or Public Identity
 
-The platform knows you're real. Other users don't have to.
+The platform knows you're real. What others see is your choice.
 
-- You can post, comment, and participate under a pseudonym.
+### Path 1: Anonymous Participation
+
+- Post, comment, and participate under a pseudonym.
 - The system guarantees to others: "this is a verified unique human" — without revealing who.
-- You choose when to attach your real identity to your actions.
 - Contracts require real names (legal necessity). Community discussion does not.
 - Verified attributes (age bracket, district) can gate access to spaces without revealing your identity to other members.
 
 This is pseudonymous participation with verified-human backing. You get privacy without enabling manipulation.
+
+### Path 2: Public Profile — Citizen of the World
+
+You choose to show up as yourself. Not because you're forced to — because the profile you build becomes valuable.
+
+**What a public profile is:**
+
+A reputation ledger. Not a social media page. It accumulates from what you *do*, not what you claim.
+
+| What others see | How it's built |
+|-----------------|----------------|
+| Where you're from (granularity you choose: country, state, or city) | From your verified attributes |
+| How long you've been verified | Timestamp of verification |
+| Review accuracy (% of reviews rated helpful/accurate by peers) | Computed from peer ratings |
+| Trust score | EigenTrust graph propagation |
+| Communities you participate in | Your activity |
+| Skills you're certified in | Expert evaluations |
+| Contributions to the platform | Public ledger |
+
+**Why this matters:**
+
+"Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer" carries authority that a username never can. This is reputation you own — built through action, backed by verified identity, portable across the platform.
+
+**What a public profile is NOT:**
+- Not a social media feed (no likes, no followers, no vanity metrics)
+- Not mandatory (anonymous path has full access to all features)
+- Not a data extraction tool (profile shows what you choose, nothing is inferred)
+- Not performative (you can't pad it — every line comes from verifiable platform activity)
+
+**The incentive structure:**
+
+Anonymous users can do everything public users can. But public profiles accumulate *standing*. When someone from Rajasthan writes a review of a local electrician, or when a certified plumber answers a question — the credibility is visible and earned. Connections made on the platform (professional, community, geographic) compound over time.
+
+This is your profile as a citizen of a new kind of public space. Built on trust, not engagement metrics. People see a real person from a real place with a real track record.
+
+**Granularity controls:**
+- Location: choose country only, state, or city — change anytime
+- Real name: optional, can use first name only, or full name
+- Activity: choose which communities, certifications, and contributions are visible
+- Connections: mutual consent required — both parties agree to be publicly connected
 
 ## Verification = Constitutional Rights
 

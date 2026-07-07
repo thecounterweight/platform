@@ -16,7 +16,7 @@ A platform that enables collective action by design.
 
 ### The Platform
 
-- **Every person is real.** One account per human. Verified. You can speak as yourself or anonymously — the system knows it's a real person either way.
+- **Every person is real.** One account per human. Verified. You choose how to show up — anonymous (pseudonym, full privacy) or as yourself (public profile that accumulates reputation, connections, and standing). Either way, the system knows it's a real person.
 - **You own your data.** Opt-in attributes only (age bracket, district — categorical, never precise). Full export and delete at any time. Open-source code so anyone can verify. Zero-knowledge proofs let you prove things to external services without revealing data to them or to us.
 - **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote.
 - **Communication is built in.** Discussion boards, group chat, video calls. End-to-end encrypted (MLS protocol) — the platform cannot read your private messages, even under compulsion.
@@ -101,6 +101,16 @@ Each of these is someone else's project, running on their own server. The platfo
 The ceiling on that percentage is a constitutional bound — changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically.
 
 See [Identity Verification](identity-verification.md#identity-as-infrastructure-zero-knowledge-proofs) for the full technical architecture.
+
+## Your Profile as a Citizen of the World
+
+The platform offers two ways to exist. Anonymous participation: you're verified, you interact, no one knows who you are. Or you build a public profile — a reputation ledger that shows where you're from, what you've done, how trustworthy your contributions have been.
+
+This isn't social media. There are no followers, no likes, no engagement metrics. Your profile reflects *what you did* — reviews written, accuracy earned, skills certified, communities contributed to. It's your standing as a participant in a new kind of public space, built on trust.
+
+Someone seeing "verified user from Rajasthan, 2 years, 94% review accuracy, certified electrician" — that's authority earned through action, backed by verified identity. It's your portable reputation in the digital world.
+
+The anonymous path loses nothing in access. But the public path builds something that compounds — connections, standing, credibility. The incentive to show up as yourself isn't forced. It's natural.
 
 ## What This Is Not
 
