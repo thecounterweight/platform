@@ -6,78 +6,74 @@
 
 ## 1. What we're building (3 minutes)
 
-A product review platform where every reviewer is a verified real human.
+I'm Manoj Sihag. I'm proposing a platform where every person is verified as a unique real human — and the structure makes it impossible to sell, gut, or turn against its users.
 
-You search for a product. You read reviews. You know every person who wrote one is real — verified through government ID, one account per person, no fakes. Reviews are ranked by statistical accuracy, not by who posted first or who has the most followers. The math is transparent and auditable.
+It's called The Counterweight.
 
-I'm Manoj Sihag. I'm proposing this. It's called The Counterweight.
+Here's the problem. On the internet today, you don't know if the person you're talking to is real. You don't know if that review was written by a person or a bot farm. You don't know if the thousand people agreeing on something are a thousand people or one person with a thousand accounts. And the platforms that could fix this don't — because they profit from the noise.
 
-The problem is obvious — you've bought things based on five-star reviews and they were garbage. Everyone has. The platforms know it's happening. They don't fix it because engagement makes them money regardless of accuracy.
+So we build a space where identity is verified. One account per human. Government ID through a KYC provider, irreversible hash stored, raw data discarded. You exist here as a real person.
 
-So we build the alternative. Verified humans. Parameter-based reviews — not "great product 5 stars" but structured ratings on specific things: battery life, build quality, value for money. Peer-rated by other verified buyers of the same product. The best information surfaces naturally.
+What does that enable? Everything.
 
-The platform aggregates products from Amazon, Flipkart, and others via affiliate APIs. Users come for reviews they can trust. When they click through and buy, we earn a commission. That's the revenue model — simple, no ads, no data selling.
+Your voice carries weight — because people know a real person said it. You can discuss across languages — real-time neural translation means someone in Tamil Nadu and someone in Rajasthan are in the same conversation, reading each other natively. You can review products and your assessment is tied to a reputation you build over years, not a disposable username. You can vote on how the platform works — and no one gets two votes.
 
-Real-time translation is built in. Someone posts a review in Hindi, you read it in English. Self-hosted neural translation — no user content leaves our infrastructure. This means a single community across languages, not silos that never talk to each other.
+You choose how to show up. Anonymous — fully private, the system knows you're real but no one else does. Or you build a public profile. A reputation ledger. People see a verified person from Jaipur with 94% accuracy and 3 years on the platform. That's your profile as a citizen of the world — earned through action, not claims.
 
-You get two ways to exist on the platform. Anonymous — you're verified but no one sees who you are. Or you build a public profile. A reputation ledger. People see a real person from Rajasthan with 94% review accuracy and 2 years on the platform. That carries weight. It's your profile as a citizen of the world — built through action, not claims.
-
----
-
-## 2. What makes it structurally different (2 minutes)
-
-Three things.
-
-First — it can't be sold. An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. This is the Patagonia model. Proven, boring, works.
-
-Second — you have constitutional rights. Not Terms of Service that change on a Tuesday. Actual rights encoded in the company's legal documents. One vote in governance. Revenue share. The right to stand for elected positions. Legal standing to sue if the company violates its commitments. These rights activate the moment you verify.
-
-Third — your data is protected by design, not by policy. The platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. Your raw ID number is never kept. No profiling. No data monetization. The purpose trust makes this permanent — no future leadership can change it without triggering trustee intervention.
-
-If you opt in to sharing attributes — age bracket, location, language — they're categorical only. District, not address. Age bracket, not date of birth. Enough for features to work. Not enough to identify you. Revocable at any time.
+The platform sustains itself through affiliate commissions on product reviews. No ads. No data selling. No engagement tricks.
 
 ---
 
-## 3. What becomes possible on top (2 minutes)
+## 2. Your rights (2 minutes)
 
-The identity layer is open infrastructure. Once millions of people are verified, others can build on it.
+This isn't a Terms of Service that changes on a Tuesday. When you verify, you get constitutional rights — encoded in the company's legal documents.
 
-Zero-knowledge proofs. You generate a cryptographic proof on your device that says "I'm 18+" or "I'm a unique human" or "I'm in Maharashtra" — without revealing who you are. Third parties verify the proof mathematically. They never contact the platform. The platform never knows where you authenticated.
+One vote in governance. Revenue share when the platform earns. Right to stand for elected positions. Legal standing to sue if the company violates its commitments. These are in the Articles of Association, not a policy page.
 
-So someone builds a lending platform. They need to know their users are real and unique. They verify a ZK proof. Done. No data exchange. Someone builds a freelance marketplace. Portable reputation — prove your trust score without revealing your identity.
+Your data is protected by design. The platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization of your data. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
 
-P2P lending. Local classifieds where sellers are accountable. Co-op governance with legitimate one-person-one-vote. Citizen journalism where sources are provably real but anonymous.
+An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. No future leadership can monetize your data or sell the platform. The trust makes this permanent.
 
-Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back. That fee ceiling is a constitutional bound — 75% supermajority to change.
+This is the Patagonia model. Proven. Boring. Works.
+
+---
+
+## 3. User governed (1.5 minutes)
+
+Every verified user gets one vote. Verified identity makes this possible — no sock puppets, no brigading with alt accounts.
+
+Policies, features, moderation rules — decided by user vote. Leaders are elected and removable. No-confidence motion, 7-day discussion, 60% majority removes them. No permanent admins.
+
+Moderation works the same way. Content gets flagged. Community votes. ML classifiers help triage at scale — they prioritize what humans look at, they never make removal decisions. Humans always decide.
+
+Changes to the constitution require 75% supermajority. Your rights don't get stripped by a slim majority on a bad day.
+
+---
+
+## 4. What becomes possible on top (2 minutes)
+
+The identity layer is open infrastructure. Once millions of people are verified, others can build on it without anyone sharing data.
+
+Zero-knowledge proofs. You generate a cryptographic proof on your device that says "I'm 18+" or "I'm a unique human" or "I'm in Maharashtra." Third parties verify the proof mathematically. No data exchange. The platform never knows where you authenticated.
+
+So someone builds a lending platform — they verify a ZK proof that the borrower is real and unique. Someone builds a freelance marketplace — portable reputation without revealing identity. Local classifieds where sellers are accountable. Co-op governance with legitimate one-person-one-vote. Citizen journalism where sources are provably real but anonymous.
+
+Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee. That fee ceiling is a constitutional bound.
 
 The platform becomes infrastructure for trust on the internet. Not just one product — a layer that makes other products possible.
 
 ---
 
-## 4. User governed (1.5 minutes)
-
-Every verified user gets one vote. No one gets two. That's what verified identity makes possible — democratic governance without sock puppets.
-
-Features, policies, moderation rules — decided by user vote. Leaders are elected and removable. No-confidence motion, 7-day discussion, 60% majority removes them. No permanent admins.
-
-Moderation works the same way. Content gets flagged. Community votes. 60% decides. ML classifiers help triage at scale — they prioritize what humans look at, they never make removal decisions. Humans always decide.
-
-Changes to the constitution require 75% supermajority of verified users. That's a high bar by design. Your rights don't get stripped by a slim majority on a bad day.
-
-The governance isn't theoretical. It's the same structure from day one. Small community, same rules. Scales without changing the model.
-
----
-
 ## 5. Builders and close (1.5 minutes)
 
-Everything is documented, open-source, and ready to be challenged. Architecture, identity design, compensation model, funding model — all public on GitHub.
+Everything is documented, open-source, and ready to be challenged. Architecture, identity design, funding model — all public on GitHub.
 
-We need engineers. Backend, frontend, security, infrastructure. The problems are genuinely interesting — identity verification without surveillance, trust scoring that resists collusion, real-time translation across languages, end-to-end encrypted group messaging.
+We need engineers. Backend, frontend, security. The problems are interesting — identity verification without surveillance, trust scoring that resists collusion, real-time translation, end-to-end encrypted messaging.
 
-Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors earn significantly above market rate — compensates for the risk of being early. Full details are in the docs.
+Contributors get paid. Every contribution tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors earn significantly above market rate. Details are in the docs.
 
-I can't build this alone. If you think it should exist — the link is below. Read the docs. Break the design. Or start building.
+I can't build this alone. If you think this should exist — the link is below. Read the docs. Break the design. Or start building.
 
 ---
 
-**Estimated runtime: 10-11 minutes**
+**Estimated runtime: 10 minutes**
