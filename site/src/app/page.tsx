@@ -38,7 +38,7 @@ export default function Home() {
           </p>
           <p>
             The platform sustains itself through affiliate commissions on product reviews. No ads.
-            No data selling. No engagement tricks. You are not the product.
+            No data selling. No engagement tricks. No ads.
           </p>
         </div>
       </section>
@@ -58,7 +58,7 @@ export default function Home() {
             <h3 className="font-semibold text-zinc-100 mb-3">Public profile</h3>
             <p className="text-sm text-zinc-400">
               A reputation ledger. People see a real person from Rajasthan with 94% review accuracy
-              and 2 years on the platform. Built through action, not claims. Your profile as a citizen of the world.
+              and 2 years on the platform. Your profile as a citizen of the world — earned, not claimed.
             </p>
           </div>
         </div>
@@ -69,26 +69,27 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">Structural guarantees</h2>
         <div className="space-y-6">
           <div>
-            <h3 className="font-semibold text-zinc-100">Can&apos;t be sold. Ever.</h3>
+            <h3 className="font-semibold text-zinc-100">Can&apos;t be sold</h3>
             <p className="text-zinc-400 mt-1">
-              An irrevocable purpose trust holds a golden share. Independent trustees can veto any sale,
-              mission change, or removal of user protections. This isn&apos;t a promise — it&apos;s a legal structure.
+              An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can
+              veto any sale, mission change, or removal of user protections. Legally binding. Same structure
+              Patagonia uses.
             </p>
           </div>
           <div>
             <h3 className="font-semibold text-zinc-100">Constitutional rights</h3>
             <p className="text-zinc-400 mt-1">
-              Verification gives you legally enforceable rights. One vote in governance. Revenue share.
-              Right to stand for elected positions. Legal standing to sue if the company violates its commitments.
-              Not Terms of Service — actual constitutional protections.
+              Verification gives you legally enforceable rights encoded in the company&apos;s Articles of Association.
+              One vote in governance. Revenue share. Right to stand for elected positions. Legal standing to
+              sue if the company violates its commitments.
             </p>
           </div>
           <div>
-            <h3 className="font-semibold text-zinc-100">Data protection by design</h3>
+            <h3 className="font-semibold text-zinc-100">Your data stays yours</h3>
             <p className="text-zinc-400 mt-1">
-              Your raw ID number is never stored — only an irreversible hash for deduplication. No profiling.
+              Raw ID number never stored — only an irreversible hash for deduplication. No profiling.
               No data monetization. Optional attributes are categorical only (district not address, age bracket not DOB).
-              Revocable at any time. The purpose trust makes this permanent.
+              Revocable any time. The purpose trust prevents any future leadership from changing this.
             </p>
           </div>
           <div>
@@ -103,10 +104,10 @@ export default function Home() {
 
       {/* What becomes possible */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What becomes possible on top</h2>
+        <h2 className="text-2xl font-bold mb-6">The identity layer is open infrastructure</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            The identity layer is open infrastructure. Zero-knowledge proofs let you prove
+            Once millions of people are verified, others can build on it. Zero-knowledge proofs let you prove
             attributes (&ldquo;I&apos;m 18+&rdquo;, &ldquo;I&apos;m a unique human&rdquo;, &ldquo;I&apos;m in Maharashtra&rdquo;)
             to third-party services without revealing your identity. The platform never knows where you authenticate.
           </p>

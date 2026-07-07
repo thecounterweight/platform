@@ -10,15 +10,15 @@ I'm Manoj Sihag. I'm proposing a platform where every person is verified as a un
 
 It's called The Counterweight.
 
-Here's the problem. On the internet today, you don't know if the person you're talking to is real. You don't know if that review was written by a person or a bot farm. You don't know if the thousand people agreeing on something are a thousand people or one person with a thousand accounts. And the platforms that could fix this don't — because they profit from the noise.
+The problem is straightforward. On the internet today, you can't tell if the person you're talking to is real, if a review was written by a human or a bot farm, or if a thousand people agreeing on something are actually a thousand people. The platforms that could fix this profit from it staying broken.
 
 So we build a space where identity is verified. One account per human. Government ID through a KYC provider, irreversible hash stored, raw data discarded. You exist here as a real person.
 
-What does that enable? Everything.
+Once identity is real, a lot of things start working.
 
-Your voice carries weight — because people know a real person said it. You can discuss across languages — real-time neural translation means someone in Tamil Nadu and someone in Rajasthan are in the same conversation, reading each other natively. You can review products and your assessment is tied to a reputation you build over years, not a disposable username. You can vote on how the platform works — and no one gets two votes.
+Your voice carries weight — people know a real person said it. You can discuss across languages — real-time neural translation means someone in Tamil Nadu and someone in Rajasthan are in the same conversation, reading each other natively. You can review products and your assessment is tied to a reputation you build over years, not a disposable username. You can vote on how the platform works — and no one gets two votes.
 
-You choose how to show up. Anonymous — fully private, the system knows you're real but no one else does. Or you build a public profile. A reputation ledger. People see a verified person from Jaipur with 94% accuracy and 3 years on the platform. That's your profile as a citizen of the world — earned through action, not claims.
+You choose how to show up. Anonymous — fully private, the system knows you're real but no one else does. Or you build a public profile. A reputation ledger. People see a verified person from Jaipur with 94% accuracy and 3 years on the platform. That profile is yours — you built it by doing things, and it compounds over time.
 
 The platform sustains itself through affiliate commissions on product reviews. No ads. No data selling. No engagement tricks.
 
@@ -26,15 +26,13 @@ The platform sustains itself through affiliate commissions on product reviews. N
 
 ## 2. Your rights (2 minutes)
 
-This isn't a Terms of Service that changes on a Tuesday. When you verify, you get constitutional rights — encoded in the company's legal documents.
+When you verify, you get constitutional rights. Not a Terms of Service — rights encoded in the company's Articles of Association.
 
-One vote in governance. Revenue share when the platform earns. Right to stand for elected positions. Legal standing to sue if the company violates its commitments. These are in the Articles of Association, not a policy page.
+One vote in governance. Revenue share when the platform earns. Right to stand for elected positions. Legal standing to sue if the company violates its commitments.
 
-Your data is protected by design. The platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization of your data. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
+Your data: the platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
 
-An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. No future leadership can monetize your data or sell the platform. The trust makes this permanent.
-
-This is the Patagonia model. Proven. Boring. Works.
+An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. No future leadership can monetize your data or sell the platform. Same structure Patagonia uses.
 
 ---
 
@@ -60,7 +58,7 @@ So someone builds a lending platform — they verify a ZK proof that the borrowe
 
 Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee. That fee ceiling is a constitutional bound.
 
-The platform becomes infrastructure for trust on the internet. Not just one product — a layer that makes other products possible.
+At that point the platform is infrastructure. The identity layer is useful far beyond what we build on it ourselves.
 
 ---
 
