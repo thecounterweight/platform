@@ -6,7 +6,7 @@
 
 ## 1. What we're building (3 minutes)
 
-I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. An irrevocable purpose trust prevents the platform from being sold or having its user protections removed.
+I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. Your data cannot be monetized, sold, or repurposed. That restriction is written into the platform's constitution and enforced by an irrevocable purpose trust — no future leadership can change it.
 
 It's called The Counterweight.
 

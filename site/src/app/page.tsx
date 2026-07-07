@@ -11,10 +11,12 @@ export default function Home() {
         </h1>
         <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
           A platform where every user is verified through government ID.
-          One account per human. An irrevocable purpose trust prevents sale.
+          One account per human. Your data cannot be monetized, sold, or repurposed —
+          that restriction is written into the platform&apos;s constitution and enforced by an
+          irrevocable purpose trust. No future leadership can change it.
         </p>
         <p className="mt-6 text-base text-zinc-300 max-w-xl">
-          No data monetization. Constitutional rights for users. Open-source.
+          Constitutional rights for users. Open-source. Structurally impossible to sell.
         </p>
         <Counter />
       </section>
@@ -24,10 +26,10 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">What this is</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Every user is verified through a KYC provider (Digio, Signzy, or similar). The platform
-            stores an irreversible hash for deduplication — raw ID numbers are never kept. No profiling,
-            no data monetization. The purpose trust prevents any future leadership from changing these
-            data practices.
+            Data protection is a constitutional constraint, not a policy choice. The platform stores
+            an irreversible hash of your ID for deduplication — raw numbers are never kept. No profiling,
+            no monetization. The irrevocable purpose trust makes this permanent — no future CEO, board,
+            or acquirer can change it. Verification happens through a KYC provider (Digio, Signzy, or similar).
           </p>
           <p>
             Real-time neural translation (self-hosted, no user content leaves infrastructure) enables
