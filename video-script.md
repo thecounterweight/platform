@@ -1,137 +1,83 @@
 # The Counterweight — Video Script
 
-**Format:** Speaking to camera. ~18 minutes.
+**Format:** Speaking to camera. ~10 minutes.
 
 ---
 
-## 1. Opening (30 seconds)
+## 1. What we're building (3 minutes)
 
-Should we build a review and discussion platform that can never be sold, where every participant is a verified real person?
+A product review platform where every reviewer is a verified real human.
 
-I'm Manoj Sihag. I'm proposing one. It's called The Counterweight. I can't build it alone, so I want to show you the design and you can decide if it's worth building together.
+You search for a product. You read reviews. You know every person who wrote one is real — verified through government ID, one account per person, no fakes. Reviews are ranked by statistical accuracy, not by who posted first or who has the most followers. The math is transparent and auditable.
 
----
+I'm Manoj Sihag. I'm proposing this. It's called The Counterweight.
 
-## 2. The Problem (1.5 minutes)
+The problem is obvious — you've bought things based on five-star reviews and they were garbage. Everyone has. The platforms know it's happening. They don't fix it because engagement makes them money regardless of accuracy.
 
-You can't trust product reviews on the internet. Every major platform has a fake review problem — paid reviewers, bot accounts, sellers gaming the algorithm. You've experienced this. You buy something based on five-star reviews and it's garbage.
+So we build the alternative. Verified humans. Parameter-based reviews — not "great product 5 stars" but structured ratings on specific things: battery life, build quality, value for money. Peer-rated by other verified buyers of the same product. The best information surfaces naturally.
 
-Discussion platforms have a different problem — anonymous accounts, brigading, bot farms drowning out real people. You can't have a democratic vote when one person controls a thousand accounts.
+The platform aggregates products from Amazon, Flipkart, and others via affiliate APIs. Users come for reviews they can trust. When they click through and buy, we earn a commission. That's the revenue model — simple, no ads, no data selling.
 
-Both problems have the same root cause: platforms don't know if their users are real, unique humans. And the platforms that do know don't have any incentive to fix it — they make money from engagement, not from accuracy.
+Real-time translation is built in. Someone posts a review in Hindi, you read it in English. Self-hosted neural translation — no user content leaves our infrastructure. This means a single community across languages, not silos that never talk to each other.
 
----
-
-## 3. The Core Idea (2 minutes)
-
-What if every person on a platform were a verified, unique human — and the platform were owned by those people collectively?
-
-One architectural decision: every user verifies their identity through a government ID API. We compute an irreversible cryptographic hash — a mathematical proof that you exist and haven't registered before. Your raw ID number is never stored. You can still participate under a pseudonym.
-
-Why does this matter? Democratic governance on the internet has never worked because of Sybil attacks — one person creates a thousand accounts and outvotes everyone. We solve that at the identity layer.
-
-The company is founder-owned, but an irrevocable purpose trust holds a golden share — it can veto any sale, any mission change, any removal of user protections. Your rights are in the company's constitution, not a Terms of Service. You get one vote in governance and a share of platform revenue — structurally guaranteed.
-
-The rest follows from this.
+You get two ways to exist on the platform. Anonymous — you're verified but no one sees who you are. Or you build a public profile. A reputation ledger. People see a real person from Rajasthan with 94% review accuracy and 2 years on the platform. That carries weight. It's your profile as a citizen of the world — built through action, not claims.
 
 ---
 
-## 4. What We Build First (4 minutes)
+## 2. What makes it structurally different (2 minutes)
 
-### Discussion.
+Three things.
 
-You're talking to real people. You know it, they know it. You can still be anonymous — the system knows you're real, but others don't have to know who you are. There's a stake behind every voice.
+First — it can't be sold. An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. This is the Patagonia model. Proven, boring, works.
 
-Moderation by community vote — flag content, upvote or downvote, 60% majority decides. No corporate content team making opaque decisions. No permanent admins. Every moderator is elected and removable.
+Second — you have constitutional rights. Not Terms of Service that change on a Tuesday. Actual rights encoded in the company's legal documents. One vote in governance. Revenue share. The right to stand for elected positions. Legal standing to sue if the company violates its commitments. These rights activate the moment you verify.
 
-### Reviews.
+Third — your data is protected by design, not by policy. The platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. Your raw ID number is never kept. No profiling. No data monetization. The purpose trust makes this permanent — no future leadership can change it without triggering trustee intervention.
 
-If we're not selling data and not running ads, how does this platform sustain itself?
-
-We aggregate products from Amazon, Flipkart, and other platforms. Users come to us for reviews they can trust — every reviewer has proof of purchase and a reputation that accumulates over time. When they click through and buy, we earn an affiliate commission.
-
-Reviewers are ranked by accuracy — how often their assessments align with actual buyer experience. Other verified buyers rate reviews as helpful, accurate, or misleading. The best information rises naturally. Maybe one or two clearly-labeled sponsored slots, but the algorithm is influenced only by quality.
-
-### The core loop.
-
-Identity makes reviews trustable. Trustable reviews make the marketplace useful. The marketplace generates revenue. Revenue pays the people who build it. Each piece sustains the next.
+If you opt in to sharing attributes — age bracket, location, language — they're categorical only. District, not address. Age bracket, not date of birth. Enough for features to work. Not enough to identify you. Revocable at any time.
 
 ---
 
-## 5. Funding and Ownership (3 minutes)
+## 3. What becomes possible on top (2 minutes)
 
-The company is founded normally — but an irrevocable purpose trust holds a golden share. That trust's only job is to veto sale, mission change, or removal of user protections. This is the Patagonia model — proven, boring, and it actually works.
+The identity layer is open infrastructure. Once millions of people are verified, others can build on it.
 
-We explored making every user a legal co-owner — a million-member LLC. It doesn't work at scale. No precedent, tax nightmare, impossible to fund. So instead: the founder operates, the trust protects, users govern through elected positions and constitutional rights. Changes to the constitution require 75% supermajority of verified users.
+Zero-knowledge proofs. You generate a cryptographic proof on your device that says "I'm 18+" or "I'm a unique human" or "I'm in Maharashtra" — without revealing who you are. Third parties verify the proof mathematically. They never contact the platform. The platform never knows where you authenticated.
 
-Anyone can invest any amount. What investors get is a time-bounded share of revenue. A percentage for a defined period, then it ends. The platform stays structurally protected — it can't be sold regardless of who invests. Early investors take more risk, so they get better terms.
+So someone builds a lending platform. They need to know their users are real and unique. They verify a ZK proof. Done. No data exchange. Someone builds a freelance marketplace. Portable reputation — prove your trust score without revealing your identity.
 
-Once the platform has enough members, the terms of every funding round are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
+P2P lending. Local classifieds where sellers are accountable. Co-op governance with legitimate one-person-one-vote. Citizen journalism where sources are provably real but anonymous.
 
-### How builders get paid.
+Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back. That fee ceiling is a constitutional bound — 75% supermajority to change.
 
-Contributions are tracked on a public ledger — code, design, documentation, legal research, moderation. Early contributors get multiplied compensation. When revenue flows, it flows proportional to what you contributed.
-
-The revenue split between builders, investors, operations, and community reinvestment is defined in the Operating Agreement. Ratios change as revenue grows — more goes to community reinvestment at scale. Details are in the docs.
+The platform becomes infrastructure for trust on the internet. Not just one product — a layer that makes other products possible.
 
 ---
 
-## 6. What Becomes Possible Next (3 minutes)
+## 4. User governed (1.5 minutes)
 
-Once the foundation is working — identity, reviews, revenue — the same architecture enables more.
+Every verified user gets one vote. No one gets two. That's what verified identity makes possible — democratic governance without sock puppets.
 
-### Skill certification.
+Features, policies, moderation rules — decided by user vote. Leaders are elected and removable. No-confidence motion, 7-day discussion, 60% majority removes them. No permanent admins.
 
-Domain experts interview and assess people's skills. Real evaluations by real experts — not keyword-matching algorithms. Companies pay to access certified professionals. The talent pool becomes a revenue stream that funds everything else.
+Moderation works the same way. Content gets flagged. Community votes. 60% decides. ML classifiers help triage at scale — they prioritize what humans look at, they never make removal decisions. Humans always decide.
 
-### Collective purchasing.
+Changes to the constitution require 75% supermajority of verified users. That's a high bar by design. Your rights don't get stripped by a slim majority on a bad day.
 
-Small shops pool demand, buy direct from manufacturers at bulk prices. The platform coordinates. Participants save 15-20% on inventory costs. This is the stickiest feature — once shopkeepers are saving real money, they don't leave.
-
-### Contract infrastructure.
-
-Verified identity makes contracts between strangers enforceable. Business funding, freelancer agreements, rental contracts, P2P loans — all signed digitally by verified parties, stored immutably, with dispute resolution built in. The platform never holds your money — it makes it possible for people to trust each other enough to transact directly. Think of it as a notary layer for the internet.
-
-### The ecosystem.
-
-The identity layer is open infrastructure. Anyone can build on top: lending platforms, freelance marketplaces with portable reputation, local classifieds where sellers are accountable, co-op governance tools.
-
-Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee back.
+The governance isn't theoretical. It's the same structure from day one. Small community, same rules. Scales without changing the model.
 
 ---
 
-## 7. Where We Are (2 minutes)
+## 5. Builders and close (1.5 minutes)
 
-Everything I've described is documented, open, and ready to be challenged. Identity verification. Payments. Governance. Investment model. Marketplace strategy. Builder compensation. Architecture. All public.
+Everything is documented, open-source, and ready to be challenged. Architecture, identity design, compensation model, funding model — all public on GitHub.
 
-The landing page is live. The documentation is complete. No platform code is written yet — that's what we're looking for builders to do.
+We need engineers. Backend, frontend, security, infrastructure. The problems are genuinely interesting — identity verification without surveillance, trust scoring that resists collusion, real-time translation across languages, end-to-end encrypted group messaging.
 
-The tech stack: Next.js, TypeScript, PostgreSQL, Redis, BullMQ. Modular monolith — clear module boundaries, one deployable unit. Boring technology that works. A contributor can clone the repo and start building today.
+Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors earn significantly above market rate — compensates for the risk of being early. Full details are in the docs.
 
-I've done a comprehensive review of the design — legal risks, technical gaps, business model stress tests. Twenty-one issues found and addressed. The remaining open questions are documented. This is honest about what it doesn't know.
-
----
-
-## 8. What I Need (1.5 minutes)
-
-I need engineers. Backend, frontend, security, infrastructure. The problems are interesting — identity verification without surveillance, parameter-based review systems, real-time discussion at scale, CSAM scanning obligations, face deduplication.
-
-I need designers. Someone who can make a complex system feel simple. Mobile-first. Works on a cheap phone on a slow connection.
-
-I need lawyers. Purpose trust structuring, Indian company law, data protection. Any jurisdiction.
-
-I need domain experts who can define what "quality" means in their field and volunteer as the first evaluators.
-
-Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors earn 30-120x their raw hours — deliberately above market rate because there's no equity. We compensate like founders, not employees. Details are in the docs — read them, decide if the terms are fair.
+I can't build this alone. If you think it should exist — the link is below. Read the docs. Break the design. Or start building.
 
 ---
 
-## 9. Close (30 seconds)
-
-This is The Counterweight. A review and discussion platform where every user is real and every user is an owner. Open-source. Documented. Looking for builders.
-
-If you think this should exist — the link is below. Read the docs. Break the design. Or just leave your name.
-
----
-
-**Estimated runtime: 16-18 minutes**
+**Estimated runtime: 10-11 minutes**
