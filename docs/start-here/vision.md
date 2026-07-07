@@ -34,13 +34,13 @@ A dedicated space you enter when you want to buy or sell.
 - **Talent pool.** Experts evaluate and certify skills. Companies pay a fee to access expert-certified professionals.
 - **Collective purchasing.** The platform aggregates demand from small shops and coordinates bulk orders direct from manufacturers. Participants pay manufacturers directly — the platform coordinates, never holds the money.
 
-### At Scale
+### At Scale (conditional on reaching sufficient membership)
 
-With millions of verified people, transparent money, and democratic governance on the same platform:
+If the platform reaches millions of verified members, additional capabilities become feasible:
 
-- **Contracts between real people.** Business funding, freelancer agreements, rental contracts, loans — all enforceable because both parties are verified. Revenue flows, disputes are resolvable, and every agreement has a paper trail.
-- **Political coordination.** Verified members in the same geography can coordinate on local issues — the identity layer confirms they're actually residents.
-- **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them.
+- **Contracts between verified parties.** Business funding, freelancer agreements, rental contracts, loans — enforceable because both parties are identified. Requires contract infrastructure (Phase 2).
+- **Political coordination.** Verified members in the same geography can coordinate on local issues — the identity layer confirms residency. Requires sufficient density per geography.
+- **Bottom-up governance.** Communities choose leaders via one-person-one-vote. No-confidence motion, 7-day discussion, 60% majority removes them.
 
 ## How It Grows
 
@@ -55,24 +55,9 @@ Small → large. Local → global.
 
 ## Why This Scope
 
-One system where each piece strengthens the others. Ships in phases — each phase generates the revenue and trust that funds the next.
+Ships in phases — each phase generates the revenue and trust that funds the next. The load-bearing path: identity → reviews → marketplace → revenue → more features. Amplifiers (certification, talent pool, contracts, collective purchasing) are added when the foundation supports them.
 
-**Load-bearing (the MVP):**
-
-- Identity makes reviews trustworthy
-- Trusted reviews make the marketplace useful
-- Marketplace generates revenue from day one (affiliate commissions)
-- Revenue pays builders who build more features
-
-**Amplifiers (added when the foundation supports them):**
-
-- Certification creates the talent pool
-- Talent pool generates more revenue
-- Established trust makes contract infrastructure viable (business funding, P2P lending, freelance)
-- Contract revenue attracts more members
-- More members make collective purchasing viable
-
-Each feature exists independently somewhere — affiliate review sites, angel networks, cooperatives, certification bodies, forums. All proven models. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
+See [Overview](overview.md#why-this-scope) for the full breakdown. The hypothesis is that combining these features under one verified identity and governance structure creates more value than they produce separately.
 
 ## Bigger Than One Platform
 
@@ -104,13 +89,9 @@ See [Identity Verification](../building/identity-verification.md#identity-as-inf
 
 ## Your Profile as a Citizen of the World
 
-The platform offers two ways to exist. Anonymous participation: you're verified, you interact, no one knows who you are. Or you build a public profile — a reputation ledger that shows where you're from, what you've done, how trustworthy your contributions have been.
+Two paths: anonymous (pseudonymous, full access, full privacy) or public profile (reputation ledger — location, review accuracy, trust score, certifications, time on platform). Both paths have full feature access. The public profile accumulates from platform activity.
 
-No followers, no likes, no engagement metrics. Your profile reflects what you did — reviews written, accuracy earned, skills certified, communities contributed to.
-
-"Verified user from Rajasthan, 2 years, 94% review accuracy, certified electrician" — that carries weight because it's backed by verified identity and observable history.
-
-The anonymous path has full access. The public path compounds over time — connections, standing, credibility.
+See [Identity Verification — Two Paths](../building/identity-verification.md#two-paths-anonymous-or-public-identity) for the full design.
 
 ## What This Is Not
 

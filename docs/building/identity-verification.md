@@ -171,7 +171,7 @@ A reputation ledger. It accumulates from what you *do* on the platform.
 "Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer" — that carries weight a username never will. It's backed by verified identity and observable history.
 
 **What a public profile is NOT:**
-- Not a social media feed (no likes, no followers, no vanity metrics)
+- Not a social media feed
 - Not mandatory (anonymous path has full access to all features)
 - Not a data extraction tool (profile shows what you choose, nothing is inferred)
 - Not performative (you can't pad it — every line comes from verifiable platform activity)

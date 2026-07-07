@@ -36,7 +36,7 @@ Early contributors earn **30-120x their raw hours** in revenue-share units. No e
 
 Bonuses stack additively: Year 1 (+100%), first-10 contributor (+100%), critical path (+50%), first-of-kind (+50%). Maximum ceiling: 120x.
 
-Every contribution is recorded from day one on a public ledger. When revenue flows, it flows back to everyone who built this.
+Every contribution is recorded from day one on a public ledger. Revenue distributes proportional to recorded units.
 
 → [Builder Compensation](docs/joining/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
 
@@ -86,7 +86,7 @@ Revenue starts at Milestone 3 (affiliate commissions). Each phase funds the next
 | Curious about the idea | [Overview](docs/start-here/overview.md) — the entire system in one page |
 | Ready to build | [Contributing](CONTRIBUTING.md) — pick an issue, ship code |
 | Interested in the vision | [Vision](docs/start-here/vision.md) — where this goes at scale |
-| Evaluating the architecture | [Architecture RFC](docs/building/architecture-rfc.md) — tear it apart |
+| Evaluating the architecture | [Architecture RFC](docs/building/architecture-rfc.md) — technical design, open for critique |
 
 ## Documentation
 

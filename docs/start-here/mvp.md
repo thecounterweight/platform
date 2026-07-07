@@ -73,7 +73,7 @@ Vote threshold before action is taken (minimum votes required):
 
 Once the threshold is reached: **60% downvotes = content removed.** 60% upvotes = flag dismissed, content stays. Consistent with the platform's governance majority rule.
 
-One person, one vote. Verified identity makes this viable — no sock puppets, no brigading with alt accounts.
+One person, one vote. Verified identity prevents sybil attacks on the voting system — each account requires a unique government ID.
 
 3. **Feedback loop** — Outcomes of human votes retrain the ML models. False positives reduce confidence; confirmed violations increase it. The system gets better over time without ever making autonomous decisions.
 
