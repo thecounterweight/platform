@@ -28,13 +28,13 @@ Threaded discussion boards and group chat. Every participant is phone-verified.
 - Key transparency log: users can verify their keys haven't been tampered with
 
 **Why E2E, not just TLS:**
-A platform that promises privacy but can read your DMs is making a promise it can break. Under government pressure, data breaches, or rogue employees — if the platform CAN read messages, eventually someone WILL. E2E makes this architecturally impossible, not just policy-impossible. This is consistent with the ZK proof philosophy: design systems where trust is mathematical, not institutional.
+If the platform can read messages, eventually someone will — government pressure, data breaches, rogue employees. E2E makes it architecturally impossible. The platform can't hand over what it can't read.
 
 ### Multi-language (UI + Real-Time Translation)
 
 i18n support — the interface works in Hindi, English, and whatever languages the first users need. UI chrome is localized from day one.
 
-**Real-time content translation** ships with Milestone 1. A user posts in Hindi; another reads it in English. This is not optional polish — without it, language communities become silos that never cross-pollinate, defeating the purpose of a single verified-identity platform.
+**Real-time content translation** ships with Milestone 1. A user posts in Hindi; another reads it in English. Without this, language communities become silos that never interact — and the platform is functionally several separate platforms sharing a database.
 
 **How it works:**
 - Neural machine translation (NLLB-200 or SeamlessM4T, self-hosted) translates posts and comments on demand
@@ -43,7 +43,7 @@ i18n support — the interface works in Hindi, English, and whatever languages t
 - Latency target: <500ms for cached translations, <2s for new content
 - Self-hosted models (not API calls to Google/DeepL) — no user content leaves platform infrastructure
 
-**Why this is hard and why we do it anyway:** Self-hosting translation models is operationally complex (GPU inference, model updates, quality monitoring). The alternative — language silos — makes the platform functionally multiple separate platforms sharing a database. A verified-identity community that can't communicate across languages isn't one community.
+**Why self-host:** Operationally complex (GPU inference, model updates, quality monitoring). But the alternative is sending all user content to Google or DeepL — which breaks the "no user data leaves our infrastructure" guarantee.
 
 - Board creators moderate their boards initially (volunteer — builds reputation and trust)
 - As a board's community grows, members elect moderators democratically — removable via no-confidence (7-day discussion + 60% vote)

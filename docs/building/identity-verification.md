@@ -146,15 +146,15 @@ The platform knows you're real. What others see is your choice.
 - Contracts require real names (legal necessity). Community discussion does not.
 - Verified attributes (age bracket, district) can gate access to spaces without revealing your identity to other members.
 
-This is pseudonymous participation with verified-human backing. You get privacy without enabling manipulation.
+Pseudonymous participation with verified-human backing. Privacy without enabling manipulation.
 
 ### Path 2: Public Profile — Citizen of the World
 
-You choose to show up as yourself. Not because you're forced to — because the profile you build becomes valuable.
+You can also choose to show up as yourself. The profile you build over time becomes useful.
 
 **What a public profile is:**
 
-A reputation ledger. Not a social media page. It accumulates from what you *do*, not what you claim.
+A reputation ledger. It accumulates from what you *do* on the platform.
 
 | What others see | How it's built |
 |-----------------|----------------|
@@ -168,7 +168,7 @@ A reputation ledger. Not a social media page. It accumulates from what you *do*,
 
 **Why this matters:**
 
-"Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer" carries authority that a username never can. This is reputation you own — built through action, backed by verified identity, portable across the platform.
+"Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer" — that carries weight a username never will. It's backed by verified identity and observable history.
 
 **What a public profile is NOT:**
 - Not a social media feed (no likes, no followers, no vanity metrics)
@@ -178,9 +178,7 @@ A reputation ledger. Not a social media page. It accumulates from what you *do*,
 
 **The incentive structure:**
 
-Anonymous users can do everything public users can. But public profiles accumulate *standing*. When someone from Rajasthan writes a review of a local electrician, or when a certified plumber answers a question — the credibility is visible and earned. Connections made on the platform (professional, community, geographic) compound over time.
-
-This is your profile as a citizen of a new kind of public space. Built on trust, not engagement metrics. People see a real person from a real place with a real track record.
+Anonymous users have full access. Public profiles accumulate *standing*. When someone from Rajasthan writes a review of a local electrician, or when a certified plumber answers a question — the credibility is visible. Connections (professional, community, geographic) compound over time.
 
 **Granularity controls:**
 - Location: choose country only, state, or city — change anytime

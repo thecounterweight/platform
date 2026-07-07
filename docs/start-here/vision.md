@@ -6,13 +6,13 @@ You can't trust anything online. Reviews are fake. Platforms get sold and gutted
 
 ## The Core Idea
 
-Every person on the platform is a verified, unique human. The platform is structurally prevented from being sold, captured, or stripped of user protections — guaranteed by an irrevocable purpose trust, not just a promise.
+Every person on the platform is a verified, unique human. An irrevocable purpose trust prevents the platform from being sold, captured, or stripped of user protections — legally binding, same structure Patagonia uses.
 
-That one decision — verified identity — enables trusted reviews, democratic governance, enforceable contracts between strangers, and moderation that actually works. The rest of this document describes what we build on top of it.
+Verified identity is what makes the rest work. Trusted reviews, democratic governance, enforceable contracts between strangers, moderation without permanent admins — all of that depends on knowing every account belongs to one real person.
 
 ## What We're Building
 
-A platform that enables collective action by design.
+A platform where verified people can organize, transact, and govern collectively.
 
 ### The Platform
 
@@ -100,17 +100,17 @@ Each of these is someone else's project, running on their own server. The platfo
 
 The ceiling on that percentage is a constitutional bound — changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically.
 
-See [Identity Verification](identity-verification.md#identity-as-infrastructure-zero-knowledge-proofs) for the full technical architecture.
+See [Identity Verification](../building/identity-verification.md#identity-as-infrastructure-zero-knowledge-proofs) for the full technical architecture.
 
 ## Your Profile as a Citizen of the World
 
 The platform offers two ways to exist. Anonymous participation: you're verified, you interact, no one knows who you are. Or you build a public profile — a reputation ledger that shows where you're from, what you've done, how trustworthy your contributions have been.
 
-This isn't social media. There are no followers, no likes, no engagement metrics. Your profile reflects *what you did* — reviews written, accuracy earned, skills certified, communities contributed to. It's your standing as a participant in a new kind of public space, built on trust.
+No followers, no likes, no engagement metrics. Your profile reflects what you did — reviews written, accuracy earned, skills certified, communities contributed to.
 
-Someone seeing "verified user from Rajasthan, 2 years, 94% review accuracy, certified electrician" — that's authority earned through action, backed by verified identity. It's your portable reputation in the digital world.
+"Verified user from Rajasthan, 2 years, 94% review accuracy, certified electrician" — that carries weight because it's backed by verified identity and observable history.
 
-The anonymous path loses nothing in access. But the public path builds something that compounds — connections, standing, credibility. The incentive to show up as yourself isn't forced. It's natural.
+The anonymous path has full access. The public path compounds over time — connections, standing, credibility.
 
 ## What This Is Not
 

@@ -6,9 +6,9 @@ Every review you read might be fake. Every platform you join will eventually be 
 
 ## The Solution
 
-A platform where every participant is a verified real human. Structurally prevented from being sold or captured — guaranteed by an irrevocable purpose trust, not a promise. Open-source.
+A platform where every participant is a verified real human. An irrevocable purpose trust prevents it from being sold or captured — legally binding. Open-source.
 
-That one decision — verified identity — makes trusted reviews possible, democratic governance viable, and contracts between strangers enforceable. Everything else follows from it.
+Verified identity is what makes the rest work — trusted reviews, democratic governance, enforceable contracts between strangers. Everything else builds on that.
 
 ## Why This Scope
 
