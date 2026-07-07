@@ -6,29 +6,29 @@
 
 ## 1. What we're building (3 minutes)
 
-I'm Manoj Sihag. I'm proposing a platform where every person is verified as a unique real human — and the structure makes it impossible to sell, gut, or turn against its users.
+I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. An irrevocable purpose trust prevents the platform from being sold or having its user protections removed.
 
 It's called The Counterweight.
 
-The problem is straightforward. On the internet today, you can't tell if the person you're talking to is real, if a review was written by a human or a bot farm, or if a thousand people agreeing on something are actually a thousand people. The platforms that could fix this profit from it staying broken.
+The problem: platforms don't verify that their users are real. Fake reviews, bot accounts, and sybil attacks are trivial to execute. Democratic governance on platforms has never worked because one person can control thousands of accounts. The platforms that could fix this have no incentive to — their revenue models don't require accuracy.
 
-So we build a space where identity is verified. One account per human. Government ID through a KYC provider, irreversible hash stored, raw data discarded. You exist here as a real person.
+So we verify identity. One account per human. Government ID through a KYC provider, irreversible hash stored for deduplication, raw data discarded immediately.
 
-Once identity is real, a lot of things start working.
+What verified identity enables: reviews tied to persistent reputations that can't be reset. One-person-one-vote governance. Moderation where getting banned is a real cost. Contracts between parties who are both identified and accountable.
 
-Your voice carries weight — people know a real person said it. You can discuss across languages — real-time neural translation means someone in Tamil Nadu and someone in Rajasthan are in the same conversation, reading each other natively. You can review products and your assessment is tied to a reputation you build over years, not a disposable username. You can vote on how the platform works — and no one gets two votes.
+Real-time neural translation (self-hosted, no user content leaves infrastructure) means cross-language discussion works — someone in Tamil Nadu and someone in Rajasthan read each other natively.
 
-You choose how to show up. Anonymous — fully private, the system knows you're real but no one else does. Or you build a public profile. A reputation ledger. People see a verified person from Jaipur with 94% accuracy and 3 years on the platform. That profile is yours — you built it by doing things, and it compounds over time.
+You choose how to exist on the platform. Anonymous — verified but pseudonymous, full access. Or you build a public profile: a reputation ledger showing location, review accuracy, trust score, certifications, time on platform. Granularity you control.
 
-The platform sustains itself through affiliate commissions on product reviews. No ads. No data selling. No engagement tricks.
+Revenue comes from affiliate commissions on product reviews. No ads. No data selling.
 
 ---
 
 ## 2. Your rights (2 minutes)
 
-When you verify, you get constitutional rights. Not a Terms of Service — rights encoded in the company's Articles of Association.
+Verification grants constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page.
 
-One vote in governance. Revenue share when the platform earns. Right to stand for elected positions. Legal standing to sue if the company violates its commitments.
+Specifically: one vote in governance, revenue share when the platform earns, right to stand for elected positions, legal standing to sue if the company violates its commitments.
 
 Your data: the platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
 
@@ -38,13 +38,13 @@ An irrevocable purpose trust holds a golden share. Independent trustees — not 
 
 ## 3. User governed (1.5 minutes)
 
-Every verified user gets one vote. Verified identity makes this possible — no sock puppets, no brigading with alt accounts.
+Every verified user gets one vote. Verified identity prevents sybil attacks on governance — one person cannot create multiple accounts to outvote others.
 
-Policies, features, moderation rules — decided by user vote. Leaders are elected and removable. No-confidence motion, 7-day discussion, 60% majority removes them. No permanent admins.
+Policies, features, moderation rules — decided by user vote. Leaders are elected and removable via no-confidence motion (7-day discussion, 60% majority). No permanent admins.
 
-Moderation works the same way. Content gets flagged. Community votes. ML classifiers help triage at scale — they prioritize what humans look at, they never make removal decisions. Humans always decide.
+Moderation: content gets flagged, community votes on removal. ML classifiers triage at scale (prioritize what humans review) but never make removal decisions autonomously.
 
-Changes to the constitution require 75% supermajority. Your rights don't get stripped by a slim majority on a bad day.
+Constitutional changes require 75% supermajority.
 
 ---
 
@@ -66,11 +66,11 @@ At that point the platform is infrastructure. The identity layer is useful far b
 
 Everything is documented, open-source, and ready to be challenged. Architecture, identity design, funding model — all public on GitHub.
 
-We need engineers. Backend, frontend, security. The problems are interesting — identity verification without surveillance, trust scoring that resists collusion, real-time translation, end-to-end encrypted messaging.
+We need engineers — backend, frontend, security. The open problems: identity verification without storing personal data, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
 
-Contributors get paid. Every contribution tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors earn significantly above market rate. Details are in the docs.
+Contributors get paid. Contributions tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors get higher multipliers to compensate for risk. Full compensation model is in the docs.
 
-I can't build this alone. If you think this should exist — the link is below. Read the docs. Break the design. Or start building.
+I can't build this alone. The link is below. Read the docs, break the design, or start building.
 
 ---
 

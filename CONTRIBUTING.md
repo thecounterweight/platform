@@ -2,7 +2,7 @@
 
 ## Why build this
 
-You earn **30-120x your raw hours** in revenue-share units. No equity — deliberately more generous to compensate for risk. Every hour you put in now is recorded, multiplied, and paid when revenue flows. If you're early and skilled, you're compensated like a founder.
+You earn **30-120x your raw hours** in revenue-share units. No equity — higher multipliers compensate for the risk of being early. Hours are recorded, multiplied by complexity and timing bonuses, and paid when revenue flows.
 
 | Your work | What you earn (Year 1, first-10 contributor) |
 |-----------|----------------------------------------------|

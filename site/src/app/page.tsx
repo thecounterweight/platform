@@ -10,35 +10,32 @@ export default function Home() {
           The Counterweight
         </h1>
         <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
-          A platform where every person is real, every voice is accountable,
-          and the structure makes it impossible to sell you out.
+          A platform where every user is verified through government ID.
+          One account per human. An irrevocable purpose trust prevents sale.
         </p>
         <p className="mt-6 text-base text-zinc-300 max-w-xl">
-          Verified identity. No data monetization. Constitutional rights for users.
-          Open-source.
+          No data monetization. Constitutional rights for users. Open-source.
         </p>
         <Counter />
       </section>
 
       {/* What this is */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">A space built on trust</h2>
+        <h2 className="text-2xl font-bold mb-6">What this is</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Every person on this platform is verified through government ID. One account per human.
-            What you say here carries weight — because everyone knows a real person said it.
-            Your raw ID is never stored — only an irreversible hash for deduplication. No profiling,
-            no data sales, no ads. An irrevocable purpose trust makes this permanent — no future
-            leadership can change it.
+            Every user is verified through a KYC provider (Digio, Signzy, or similar). The platform
+            stores an irreversible hash for deduplication — raw ID numbers are never kept. No profiling,
+            no data monetization. The purpose trust prevents any future leadership from changing these
+            data practices.
           </p>
           <p>
-            Discuss across languages — real-time neural translation means someone in Tamil Nadu and
-            someone in Rajasthan are in the same conversation. Review products and your assessment is
-            tied to a reputation you build over years. Vote on decisions and no one has two accounts.
+            Real-time neural translation (self-hosted, no user content leaves infrastructure) enables
+            cross-language discussion. Product reviews are tied to persistent verified identities and
+            ranked by statistical accuracy (Wilson score interval). Governance operates on one-person-one-vote.
           </p>
           <p>
-            The platform sustains itself through affiliate commissions on product reviews. No ads.
-            No data selling. No engagement tricks. No ads.
+            Revenue comes from affiliate commissions on product reviews. No ads. No data selling.
           </p>
         </div>
       </section>
@@ -57,8 +54,8 @@ export default function Home() {
           <div className="border border-zinc-800 rounded-lg p-6">
             <h3 className="font-semibold text-zinc-100 mb-3">Public profile</h3>
             <p className="text-sm text-zinc-400">
-              A reputation ledger. People see a real person from Rajasthan with 94% review accuracy
-              and 2 years on the platform. Your profile as a citizen of the world — earned, not claimed.
+              A reputation ledger — location, review accuracy, trust score, certifications, time on platform.
+              Accumulates from activity. Granularity you control.
             </p>
           </div>
         </div>

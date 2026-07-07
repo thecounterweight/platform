@@ -1,32 +1,30 @@
 # The Counterweight
 
-**Every review you read might be fake. Every platform you join will eventually be sold.**
-
-We're building the alternative: a platform where every participant is a verified real human, and an irrevocable purpose trust makes it structurally impossible to sell, gut, or enshittify.
+A platform where every user is verified through government ID — one account per human. An irrevocable purpose trust prevents sale or mission change (same mechanism as Patagonia, legally binding, independent trustees).
 
 → [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/start-here/overview.md)
 
 ## What it does
 
-- **Trusted reviews.** Every reviewer is a verified human with proof of purchase. Ranked by statistical accuracy (Wilson score), not gaming. Trust propagates through a graph — fake review rings can't bootstrap credibility.
-- **Discussion without bots.** Threaded boards where every participant is a real person with one account. End-to-end encrypted private messaging.
-- **Real-time translation.** Post in Hindi, read in English. Self-hosted neural translation — no user content leaves our infrastructure.
-- **Can't be sold. Ever.** An irrevocable purpose trust holds a golden share. Independent trustees (not the founder) can veto any sale, mission change, or removal of user protections.
+- **Verified reviews.** Every reviewer is verified through government ID. Ranked by Wilson score interval (statistical accuracy). Trust scoring via EigenTrust graph propagation — colluding accounts amplify low-trust signals, not high-trust ones.
+- **Discussion.** Threaded boards where every participant has one verified account. E2E encrypted private messaging (MLS protocol).
+- **Real-time translation.** Self-hosted neural translation (NLLB-200/SeamlessM4T). No user content leaves infrastructure.
+- **Purpose trust.** An irrevocable purpose trust holds a golden share. Independent trustees can veto sale, mission change, or removal of user protections.
 
-## Why verified identity changes everything
+## Why verified identity
 
-One architectural decision makes things possible that aren't possible otherwise:
+Verified identity is the dependency for:
 
-- Reviews are trustable because reviewers have a single reputation they can't reset
-- Governance works because one person = one vote (no sock puppets)
-- Moderation works because getting banned means losing your only account
-- Contracts work because every party is a known, accountable person
+- **Reviews** — reviewers have one persistent reputation. Can't create a fresh account after being flagged.
+- **Governance** — one person, one vote. Sybil attacks are prevented at the identity layer.
+- **Moderation** — banning is meaningful when each person has one account.
+- **Contracts** — both parties are identified and legally accountable.
 
-Your raw ID is never stored — only an irreversible cryptographic hash. You can participate under a pseudonym. Zero-knowledge proofs let you prove attributes to external services without revealing who you are.
+Data handling: raw ID numbers are never stored. The platform keeps an HMAC (irreversible without a secret key stored separately in HSM). Pseudonymous participation is supported. Zero-knowledge proofs allow proving attributes to external services without revealing identity data.
 
 ## For builders
 
-Early contributors earn **30-120x their raw hours** in revenue-share units. No equity, but deliberately more generous than equity to compensate for the risk.
+Early contributors earn **30-120x their raw hours** in revenue-share units. No equity — higher multipliers compensate for the risk of being early.
 
 | Complexity | Multiplier | Example |
 |-----------|-----------|---------|

@@ -2,13 +2,15 @@
 
 ## The Problem
 
-Every review you read might be fake. Every platform you join will eventually be sold, gutted, or enshittified. You have no vote, no recourse, and no way to know if the person you're talking to is real.
+Platforms don't verify that their users are real. This makes fake reviews, bot accounts, and sybil attacks trivial. Platforms that could fix this have no financial incentive to — engagement-based revenue models don't require accuracy.
+
+Separately, platforms can be sold or have their policies changed unilaterally. Users have no structural recourse.
 
 ## The Solution
 
-A platform where every participant is a verified real human. An irrevocable purpose trust prevents it from being sold or captured — legally binding. Open-source.
+A platform where every participant is verified through government ID — one account per human. An irrevocable purpose trust prevents sale or mission change (legally binding, same mechanism as Patagonia). Open-source.
 
-Verified identity is what makes the rest work — trusted reviews, democratic governance, enforceable contracts between strangers. Everything else builds on that.
+Verified identity is the foundation. Reviews become trustable when reviewers can't create disposable accounts. Governance becomes viable when one person equals one vote. Contracts become enforceable when both parties are identified.
 
 ## Why This Scope
 
@@ -24,7 +26,7 @@ Certification → talent pool → more revenue → contract infrastructure → c
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. All proven. Nowhere do they exist together, under community governance, with one verified identity connecting them all.
+Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. The hypothesis is that combining them under one verified identity and governance structure creates more value than they produce separately.
 
 ## What It Does
 

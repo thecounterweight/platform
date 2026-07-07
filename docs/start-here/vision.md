@@ -2,13 +2,13 @@
 
 ## The Problem
 
-You can't trust anything online. Reviews are fake. Platforms get sold and gutted. The person you're arguing with might be a bot — or five bots. You have no vote in the rules, no recourse when they change, and no way to take your reputation elsewhere when the platform dies.
+Platforms don't verify identity. This makes fake reviews, bot farms, and sybil attacks cheap to execute. Democratic governance on platforms has never worked because one person can control thousands of accounts. Platforms can be sold — users have no structural say in that decision.
 
 ## The Core Idea
 
-Every person on the platform is a verified, unique human. An irrevocable purpose trust prevents the platform from being sold, captured, or stripped of user protections — legally binding, same structure Patagonia uses.
+Every person on the platform is verified through government ID. One account per human. An irrevocable purpose trust prevents sale or mission change (same mechanism as Patagonia — legally binding, independent trustees).
 
-Verified identity is what makes the rest work. Trusted reviews, democratic governance, enforceable contracts between strangers, moderation without permanent admins — all of that depends on knowing every account belongs to one real person.
+Verified identity is the dependency for everything else. Reviews are trustable when reviewers have one persistent reputation. Governance works when one person equals one vote. Moderation works when getting banned costs something. Contracts are enforceable when both parties are identified.
 
 ## What We're Building
 
@@ -39,19 +39,19 @@ A dedicated space you enter when you want to buy or sell.
 With millions of verified people, transparent money, and democratic governance on the same platform:
 
 - **Contracts between real people.** Business funding, freelancer agreements, rental contracts, loans — all enforceable because both parties are verified. Revenue flows, disputes are resolvable, and every agreement has a paper trail.
-- **Political power.** 5,000 organized people in a city who vote together on local issues are a serious voting block.
+- **Political coordination.** Verified members in the same geography can coordinate on local issues — the identity layer confirms they're actually residents.
 - **Bottom-up governance.** Communities choose leaders. Leaders serve at the pleasure of the people. No-confidence motion, 7-day discussion, 60% majority removes them.
 
 ## How It Grows
 
 Small → large. Local → global.
 
-1. People join. They have a discussion space with real humans.
-2. Marketplace activates. People buy and sell. Revenue flows. Builders get paid.
-3. Communities form around geography or interest. Members start backing businesses directly.
-4. First businesses get funded. Returns flow back. More people join because it works.
-5. Political coordination emerges naturally once membership hits critical mass.
-6. Other communities see it working. They spin up their own — connected to the network but sovereign.
+1. Discussion and reviews launch. Users join, content is created.
+2. Marketplace activates. Affiliate revenue starts.
+3. Communities form around geography or interest.
+4. Contract infrastructure enables direct business funding between verified parties.
+5. At sufficient membership density, political coordination becomes feasible.
+6. Federation — other instances can connect to the identity layer.
 
 ## Why This Scope
 
