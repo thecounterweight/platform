@@ -1,6 +1,14 @@
 # The Counterweight — Overview
 
-A community-governed platform where verified real people invest together, trade together, and govern together. Structurally protected from sale or capture. Open-source.
+## The Problem
+
+Every review you read might be fake. Every platform you join will eventually be sold, gutted, or enshittified. You have no vote, no recourse, and no way to know if the person you're talking to is real.
+
+## The Solution
+
+A platform where every participant is a verified real human. Structurally prevented from being sold or captured — guaranteed by an irrevocable purpose trust, not a promise. Open-source.
+
+That one decision — verified identity — makes trusted reviews possible, democratic governance viable, and contracts between strangers enforceable. Everything else follows from it.
 
 ## Why This Scope
 
@@ -12,18 +20,18 @@ Identity → trusted reviews → marketplace → revenue → builders → more f
 
 **Amplifiers (added when the foundation is solid):**
 
-Certification → talent pool → more revenue → contract infrastructure → collective purchasing → governance at scale → translation → federation
+Certification → talent pool → more revenue → contract infrastructure → collective purchasing → governance at scale → federation
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. All proven. Nowhere do they exist together, under community ownership, with one verified identity connecting them all.
+Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. All proven. Nowhere do they exist together, under community governance, with one verified identity connecting them all.
 
 ## What It Does
 
 | Module | What it does |
 |--------|-------------|
-| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving. Full government ID verification (Milestone 2) = constitutional rights activation (governance vote, revenue share, legal standing). |
-| Discussion | Threaded boards + chat. Every participant is a verified human. |
+| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving — only an irreversible HMAC stored. Opt-in verified attributes (age bracket, district) for platform features. ZK proofs for ecosystem use (prove attributes to third parties without revealing data). Full verification = constitutional rights (governance vote, revenue share, legal standing). |
+| Discussion | Threaded boards + chat. Every participant is a verified human. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
 | Talent Pool | Companies pay to access expert-certified professionals. |
@@ -54,9 +62,9 @@ Milestones 1-2 generate no revenue — they build the community and trust. Reven
 
 Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 
-- Complexity: 1x-5x based on skill level required (aligned with market rate ratios)
+- Complexity: 1x-30x based on skill level required (deliberately above market rate — compensates for no equity and risk of units being worth nothing)
 - Bonuses are additive: Year 1 (+100%), first-10 contributor (+100%), critical path (+50%), first-of-kind (+50%)
-- Maximum effective multiplier: 20x (absolute ceiling). Typical strong early contribution: 10-15x.
+- Maximum effective multiplier: 120x (absolute ceiling). Typical strong early contribution: 40-80x.
 - Revenue flows to contributors proportional to their share of total units
 - All assignments are public, challengeable, and require verifiable artifacts
 
@@ -83,7 +91,10 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 - **Background Jobs:** BullMQ (Redis-backed)
 - **Search:** Meilisearch or Typesense (added when marketplace launches)
 - **Storage:** Cloudflare R2 or MinIO (S3-compatible)
-- **Hosting:** Vercel (frontend) + Railway or Fly.io (workers/db)
+- **Hosting:** Vercel (frontend) + Railway or Fly.io (workers/db) + GPU instance (translation/ML inference)
+- **Translation:** NLLB-200 or SeamlessM4T (self-hosted, GPU inference)
+- **Trust Engine:** EigenTrust graph propagation (reviewer trust scoring)
+- **E2E Encryption:** MLS protocol (RFC 9420) for DMs and group chat
 - **CI/CD:** GitHub Actions
 
 ## Read More

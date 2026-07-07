@@ -1,53 +1,94 @@
 # The Counterweight
 
-A platform where every user is a verified real person — and the users own it.
+**Every review you read might be fake. Every platform you join will eventually be sold.**
 
-**One architectural decision — verified identity — enables trusted reviews, democratic governance, accountable investment, and fair compensation.**
+We're building the alternative: a platform where every participant is a verified real human, and an irrevocable purpose trust makes it structurally impossible to sell, gut, or enshittify.
 
 → [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/overview.md)
 
-## The System
+## What it does
+
+- **Trusted reviews.** Every reviewer is a verified human with proof of purchase. Ranked by statistical accuracy (Wilson score), not gaming. Trust propagates through a graph — fake review rings can't bootstrap credibility.
+- **Discussion without bots.** Threaded boards where every participant is a real person with one account. End-to-end encrypted private messaging.
+- **Real-time translation.** Post in Hindi, read in English. Self-hosted neural translation — no user content leaves our infrastructure.
+- **Can't be sold. Ever.** An irrevocable purpose trust holds a golden share. Independent trustees (not the founder) can veto any sale, mission change, or removal of user protections.
+
+## Why verified identity changes everything
+
+One architectural decision makes things possible that aren't possible otherwise:
+
+- Reviews are trustable because reviewers have a single reputation they can't reset
+- Governance works because one person = one vote (no sock puppets)
+- Moderation works because getting banned means losing your only account
+- Contracts work because every party is a known, accountable person
+
+Your raw ID is never stored — only an irreversible cryptographic hash. You can participate under a pseudonym. Zero-knowledge proofs let you prove attributes to external services without revealing who you are.
+
+## For builders
+
+Early contributors earn **30-120x their raw hours** in revenue-share units. No equity, but deliberately more generous than equity to compensate for the risk.
+
+| Complexity | Multiplier | Example |
+|-----------|-----------|---------|
+| Routine | 3x | Docs, minor fixes |
+| Standard | 7x | Feature implementation |
+| Complex | 12x | Architecture, integrations |
+| Highly complex | 20x | Payment systems, identity |
+| Specialist | 30x | ZK circuits, crypto protocols |
+
+Bonuses stack additively: Year 1 (+100%), first-10 contributor (+100%), critical path (+50%), first-of-kind (+50%). Maximum ceiling: 120x.
+
+Every contribution is recorded from day one on a public ledger. When revenue flows, it flows back to everyone who built this.
+
+→ [Builder Compensation](docs/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
+
+## What ships first
+
+```
+Milestone 1:  Discussion boards + phone verification + real-time translation + E2E encrypted chat
+Milestone 2:  Government ID verification + verified attributes
+Milestone 3:  Marketplace + trusted reviews + affiliate revenue
+Phase 2:      Certification, talent pool, contracts, collective purchasing, ZK proofs for ecosystem
+```
+
+Revenue starts at Milestone 3 (affiliate commissions). Each phase funds the next.
+
+## The system
 
 ```
 ┌─────────────────────────────────────────────────────────────┐
 │                    VERIFIED IDENTITY                         │
 │         One person, one account. Privacy-preserving.         │
-│                    (open infrastructure)                      │
-└──────────┬──────────────────────────────────┬───────────────┘
-           │                                  │
-           ▼                                  ▼
+│         ZK proofs for ecosystem. Open infrastructure.        │
+└──────────┬──────────────────────────────────────┬───────────┘
+           │                                      │
+           ▼                                      ▼
 ┌─────────────────────────────┐  ┌────────────────────────────┐
 │      THE COUNTERWEIGHT      │  │     OPEN ECOSYSTEM         │
 │         (our platform)      │  │  (anyone can build on it)  │
 ├─────────────────────────────┤  ├────────────────────────────┤
 │                             │  │                            │
-│                             │  │  P2P Lending               │
-│  M1: Discussion + Phone/OTP │  │  Freelance Marketplaces    │
-│  M2: Gov ID (DigiLocker)    │  │  Local Classifieds         │
-│  M3: Marketplace + Reviews  │  │  Co-op Management          │
-│                             │  │  Mutual Aid Networks       │
-│  Then: Certification,       │  │  Citizen Journalism        │
-│        Talent Pool,         │  │  Skill Exchange            │
-│        Governance,          │  │  ...anything that needs    │
-│        Investment           │  │  "every user is real"      │
+│  Discussion + Translation   │  │  P2P Lending               │
+│  Marketplace + Reviews      │  │  Freelance Marketplaces    │
+│  E2E Encrypted Messaging    │  │  Local Classifieds         │
+│  Contracts + ODR            │  │  Co-op Management          │
+│  Certification + Talent     │  │  Mutual Aid Networks       │
+│  Democratic Governance      │  │  Citizen Journalism        │
 │                             │  │                            │
-│                             │  │  Free for community use.   │
-│                             │  │  Revenue services pay a    │
-└─────────────────────────────┘  │  proportional fee back.    │
+│                             │  │  Verify via ZK proofs —    │
+│                             │  │  platform never knows      │
+└─────────────────────────────┘  │  where you authenticate.   │
                                  └────────────────────────────┘
 ```
 
-## What This Is
+## Start here
 
-A platform where identity verification is open infrastructure. Anyone can build on it — freelance marketplaces, lending platforms, co-op tools, local classifieds. If it needs "every user is a real person," it plugs into this network.
-
-We're building the foundation. The ecosystem builds everything else.
-
-## Start Here
-
-1. [Overview](docs/overview.md) — the entire system in one page
-2. [Contributing](CONTRIBUTING.md) — pick a workstream, start building
-3. [Principles](PRINCIPLES.md) — what doesn't move
+| You are... | Start with |
+|------------|-----------|
+| Curious about the idea | [Overview](docs/overview.md) — the entire system in one page |
+| Ready to build | [Contributing](CONTRIBUTING.md) — pick an issue, ship code |
+| Interested in the vision | [Vision](docs/vision.md) — where this goes at scale |
+| Evaluating the architecture | [Architecture RFC](docs/architecture-rfc.md) — tear it apart |
 
 ## Documentation
 
@@ -55,11 +96,11 @@ We're building the foundation. The ecosystem builds everything else.
 |----------|---------|
 | [Vision](docs/vision.md) | Full picture + ecosystem |
 | [MVP](docs/mvp.md) | What gets built first |
-| [Identity Verification](docs/identity-verification.md) | One person, one account |
+| [Identity Verification](docs/identity-verification.md) | One person, one account + ZK proofs |
 | [Payments](docs/payments.md) | Money moves without platform holding it |
-| [Builder Compensation](docs/builder-compensation.md) | How contributors get paid |
+| [Builder Compensation](docs/builder-compensation.md) | How contributors get paid (generously) |
 | [Contracts](docs/contracts.md) | Contract infrastructure for verified humans |
-| [Funding Model](docs/funding-model.md) | No VC, terms decided democratically |
+| [Funding Model](docs/funding-model.md) | Purpose trust, no VC, terms decided democratically |
 | [Collective Purchasing](docs/collective-purchasing.md) | Bulk pricing for small shops |
 | [Community Certification](docs/community-certification.md) | Quality verified by experts |
 | [Architecture RFC](docs/architecture-rfc.md) | Technical design (open for debate) |

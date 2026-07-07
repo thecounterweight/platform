@@ -20,12 +20,12 @@ Complexity reflects skill level required. Bonuses are additive (not multiplicati
 
 ### Example
 
-- Engineer A designs the auth system architecture. 80 hours, highly complex (5x), Year 1 (+100%), first-10 (+100%), critical path (+50%) = 80 × 5 × (1 + 1 + 1 + 0.5) = 80 × 5 × 3.5 = **1,400 units.**
-- Designer B creates the brand and landing page. 40 hours, standard (3x), Year 1 (+100%), first-10 (+100%) = 40 × 3 × (1 + 1 + 1) = 40 × 3 × 3 = **360 units.**
-- Lawyer C researches purpose trust structuring and writes legal docs. 30 hours, complex (4x), Year 1 (+100%), first-of-kind (+50%) = 30 × 4 × (1 + 1 + 0.5) = 30 × 4 × 2.5 = **300 units.**
-- Community manager D moderates Discord for 3 months. 120 hours, routine (2x), Year 1 (+100%) = 120 × 2 × (1 + 1) = 120 × 2 × 2 = **480 units.**
+- Engineer A designs the auth system architecture. 80 hours, highly complex (20x), Year 1 (+100%), first-10 (+100%), critical path (+50%) = 80 × 20 × (1 + 1 + 1 + 0.5) = 80 × 20 × 3.5 = **5,600 units.**
+- Designer B creates the brand and landing page. 40 hours, standard (7x), Year 1 (+100%), first-10 (+100%) = 40 × 7 × (1 + 1 + 1) = 40 × 7 × 3 = **840 units.**
+- Lawyer C researches purpose trust structuring and writes legal docs. 30 hours, complex (12x), Year 1 (+100%), first-of-kind (+50%) = 30 × 12 × (1 + 1 + 0.5) = 30 × 12 × 2.5 = **900 units.**
+- Community manager D moderates Discord for 3 months. 120 hours, routine (3x), Year 1 (+100%) = 120 × 3 × (1 + 1) = 120 × 3 × 2 = **720 units.**
 
-Total pool: 2,540 units. Engineer A owns 55% of the builder pool. When revenue flows, they get 55% of the builder allocation.
+Total pool: 8,060 units. Engineer A owns 69% of the builder pool. When revenue flows, they get 69% of the builder allocation.
 
 ### Revenue Split
 
@@ -53,9 +53,9 @@ This is the initial formula, encoded in the constitutional documents. It activat
 
 ### Early Contributor Advantage
 
-Early contributors benefit in two ways: (1) time and founding bonuses add +100-200% to their unit calculations, and (2) being early means a larger share of a smaller pool. When there are only 2,000 total units and you hold 400, that's 20%. When the pool grows to 100,000 units, your 400 is 0.4% — but the revenue has also grown massively.
+Early contributors benefit in two ways: (1) time and founding bonuses add +100-200% to their unit calculations, and (2) being early means a larger share of a smaller pool. When there are only 8,000 total units and you hold 5,600, that's 69%. When the pool grows to 500,000 units, your 5,600 is 1.1% — but the revenue has also grown massively.
 
-Early risk = early reward. But the additive model ensures the ratio between early and late contributors stays in the 2-4x range for equivalent work — meaningful advantage without permanent dominance.
+Early risk = early reward. The additive model ensures the ratio between early and late contributors doing equivalent work stays at ~4x — meaningful advantage without permanent dominance. But the complexity scale itself is generous regardless of timing: a specialist joining late still earns 30x raw hours.
 
 ### What Counts as Contribution
 
@@ -103,17 +103,18 @@ The time and founding bonuses already reward early builders (up to +200%). The s
 
 This is a starting framework. The builder community will ratify or adjust it.
 
-**Complexity levels (the only multiplier — reflects skill level required):**
+**Complexity levels (the only multiplier — reflects market rate of the skill required):**
 
 | Level | Multiplier | Description |
 |-------|-----------|-------------|
 | Trivial | 1x | Typo fixes, formatting, simple config changes |
-| Routine | 2x | Basic docs, minor bug fixes, small UI tweaks following existing patterns |
-| Standard | 3x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
-| Complex | 4x | New feature design, integration across systems, legal research, non-trivial security work, architecture decisions |
-| Highly complex | 5x | Payment systems, identity verification, complex legal structuring, cryptographic design, platform-level architecture that constrains everything downstream |
+| Routine | 3x | Basic docs, minor bug fixes, small UI tweaks following existing patterns |
+| Standard | 7x | Feature implementation following existing patterns, regular design work, moderate bug fixes |
+| Complex | 12x | New feature design, integration across systems, legal research, non-trivial security work, architecture decisions |
+| Highly complex | 20x | Payment systems, identity verification, complex legal structuring, platform-level architecture that constrains everything downstream |
+| Specialist | 30x | ZK circuit design, cryptographic protocol implementation, formal verification, work requiring PhD-level expertise where <100 people globally are qualified |
 
-The 1x-5x range aligns with market rates: consulting firms bill 3-5x between analyst and partner; tech companies pay 3-4x between junior and principal. The cap at 5x prevents concentration while still meaningfully rewarding expertise.
+The complexity multiplier reflects what this work would cost on the open market — and then some. We are deliberately generous. Contributors don't get equity, don't get stock options, and take real risk that units may be worth nothing. The complexity scale compensates for all of that. A specialist joining in Year 4 with no bonuses still gets 30x — above market rate, because we value the work more than the market does.
 
 **Bonuses (additive — stack by adding percentages, not compounding):**
 
@@ -129,7 +130,7 @@ The 1x-5x range aligns with market rates: consulting firms bill 3-5x between ana
 | After 50 | +0% | No founding bonus |
 | Critical path (blocks others) | +50% | Work that unblocks other contributors |
 | First-of-kind (no pattern to follow) | +50% | First implementation of a new system |
-| Ongoing maintenance | +50% (floor: complexity 3x minimum) | Monitoring, upgrades, incident response |
+| Ongoing maintenance | +50% (floor: complexity 7x minimum) | Monitoring, upgrades, incident response |
 
 The maintenance floor exists because unglamorous work that keeps the platform alive is at least as valuable as building new things.
 
@@ -140,14 +141,17 @@ The maintenance floor exists because unglamorous work that keeps the platform al
 **Examples:**
 
 - 10 hours of fixing typos (trivial, Year 4, contributor #60): 10 × 1 × 1 = **10 units**
-- 10 hours of writing docs (routine, Year 2, contributor #30): 10 × 2 × (1 + 0.5 + 0.25) = 10 × 2 × 1.75 = **35 units**
-- 10 hours implementing a feature (standard, Year 1, contributor #8): 10 × 3 × (1 + 1 + 1) = 10 × 3 × 3 = **90 units**
-- 20 hours of legal research (complex, Year 1, contributor #5, first-of-kind): 20 × 4 × (1 + 1 + 1 + 0.5) = 20 × 4 × 3.5 = **280 units**
-- 15 hours of payment system design (highly complex, Year 1, contributor #3, critical path): 15 × 5 × (1 + 1 + 1 + 0.5) = 15 × 5 × 3.5 = **262.5 units**
+- 10 hours of writing docs (routine, Year 2, contributor #30): 10 × 3 × (1 + 0.5 + 0.25) = 10 × 3 × 1.75 = **52.5 units**
+- 10 hours implementing a feature (standard, Year 1, contributor #8): 10 × 7 × (1 + 1 + 1) = 10 × 7 × 3 = **210 units**
+- 20 hours of legal research (complex, Year 1, contributor #5, first-of-kind): 20 × 12 × (1 + 1 + 1 + 0.5) = 20 × 12 × 3.5 = **840 units**
+- 15 hours of payment system design (highly complex, Year 1, contributor #3, critical path): 15 × 20 × (1 + 1 + 1 + 0.5) = 15 × 20 × 3.5 = **1,050 units**
+- 10 hours of ZK circuit design (specialist, Year 1, contributor #2, critical path, first-of-kind): 10 × 30 × (1 + 1 + 1 + 0.5 + 0.5) = 10 × 30 × 4 = **1,200 units**
 
-**Maximum possible multiplier:** 5 × (1 + 1 + 1 + 0.5 + 0.5) = 5 × 4 = **20x raw hours.** This is the absolute ceiling for a highly complex, Year 1, first-10, critical path, first-of-kind contribution. In practice, most strong early contributions will land at 10-15x.
+**Maximum possible multiplier:** 30 × (1 + 1 + 1 + 0.5 + 0.5) = 30 × 4 = **120x raw hours.** This is the absolute ceiling for specialist-grade, Year 1, first-10, critical path, first-of-kind work. In practice, most strong early contributions land at 40-80x. A specialist joining late with no bonuses still gets 30x raw hours — deliberately above market rate.
 
-**Why additive and not multiplicative:** Multiplicative compounding (where each bonus multiplies every other) creates exponential concentration. Five early contributors could permanently own 80%+ of the builder pool. Additive bonuses reward early risk (2-4x advantage over later contributors) without creating an unchallengeable aristocracy. This aligns with worker cooperative norms (2:1 to 5:1 pay bands) while being more generous than pure egalitarianism.
+**Why this generous:** Contributors take real risk. Units might be worth nothing. There's no equity, no stock options, no secondary market. The complexity scale isn't "market rate" — it's "market rate + risk premium + generosity." If the platform succeeds, early builders are compensated like founders. If it fails, they lost their time — and the scale acknowledges that gamble honestly.
+
+**Why additive and not multiplicative:** Multiplicative compounding (where each bonus multiplies every other) creates exponential concentration. Five early contributors could permanently own 80%+ of the builder pool. Additive bonuses reward early risk (4x advantage over later contributors doing the same work) without creating an unchallengeable aristocracy.
 
 All assignments are public and challengeable for 14 days. If challenged, peer vote decides.
 
@@ -182,7 +186,7 @@ Summary of timing advantage:
 | Year 2, contributor #60 | +50% (1.5x effective) |
 | Year 4+, contributor #60 | +0% (1x — base rate) |
 
-This means a Year 1 first-10 contributor earning base 100 units gets 300 units. A Year 4 post-50 contributor doing the same work gets 100 units. Ratio: 3:1. This aligns with the Slicing Pie model (2x for unpaid pre-revenue work) and cooperative pay band norms (2:1 to 5:1).
+This means a Year 1 first-10 contributor earning base 100 units gets 300 units. A Year 4 post-50 contributor doing the same work gets 100 units. Ratio: 3:1. The timing bonus rewards risk. The complexity scale rewards skill. Both are generous — combined, they make this competitive with startup founding equity.
 
 This is a starting proposal — the builder community will ratify or adjust the multipliers.
 

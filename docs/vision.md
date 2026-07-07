@@ -1,10 +1,14 @@
 # Vision
 
+## The Problem
+
+You can't trust anything online. Reviews are fake. Platforms get sold and gutted. The person you're arguing with might be a bot — or five bots. You have no vote in the rules, no recourse when they change, and no way to take your reputation elsewhere when the platform dies.
+
 ## The Core Idea
 
 Every person on the platform is a verified, unique human. The platform is structurally prevented from being sold, captured, or stripped of user protections — guaranteed by an irrevocable purpose trust, not just a promise.
 
-That one decision — verified identity — enables trusted reviews, democratic governance, accountable investment, and moderation that works. The rest of this document describes what we build on top of it.
+That one decision — verified identity — enables trusted reviews, democratic governance, enforceable contracts between strangers, and moderation that actually works. The rest of this document describes what we build on top of it.
 
 ## What We're Building
 
@@ -13,9 +17,9 @@ A platform that enables collective action by design.
 ### The Platform
 
 - **Every person is real.** One account per human. Verified. You can speak as yourself or anonymously — the system knows it's a real person either way.
-- **You own your data.** Opt-in analytics only. Full export and delete at any time. Open-source code so anyone can verify.
+- **You own your data.** Opt-in attributes only (age bracket, district — categorical, never precise). Full export and delete at any time. Open-source code so anyone can verify. Zero-knowledge proofs let you prove things to external services without revealing data to them or to us.
 - **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote.
-- **Communication is built in.** Discussion boards, group chat, video calls. Encrypted.
+- **Communication is built in.** Discussion boards, group chat, video calls. End-to-end encrypted (MLS protocol) — the platform cannot read your private messages, even under compulsion.
 - **Money moves transparently.** Payments happen through existing rails (UPI, SEPA, bank transfers) — the platform records, not processes. All investment contracts are visible to all members. Personal transactions stay private.
 - **Translation is built in.** Post in any language, read in any language.
 - **Legal infrastructure is built in.** Contracts of any type — business funding, rental, freelance, partnership, loans. Templates designed by lawyers, digital signatures, immutable storage. Contracts are timestamped and legally enforceable.
@@ -72,27 +76,31 @@ Each feature exists independently somewhere — affiliate review sites, angel ne
 
 ## Bigger Than One Platform
 
-The identity layer is open infrastructure. If your service requires "every user is a provably real, unique human," you plug into this network.
+The identity layer is open infrastructure — but privacy-preserving. Third-party services can verify that a user is real, unique, and meets specific criteria without the platform sharing any data or even knowing which services the user authenticates with.
+
+**How it works:** Zero-knowledge proofs. Users generate cryptographic proofs on their own device that prove attributes ("I'm 18+", "I'm a unique human", "I'm in this city") without revealing the underlying data. Third parties verify the proof mathematically — no API call to the platform, no data exchange, no surveillance.
 
 **Others can build:**
 
-- **P2P lending** — real people, real reputations, enforceable contracts
-- **Freelance marketplaces** — portable reputation across instances
-- **Local classifieds** — every seller is verified and accountable
-- **Co-op management** — legitimate one-person-one-vote for any organization
-- **Mutual aid networks** — pool resources with people who are provably real
-- **Skill exchange** — teach and learn between verified humans
-- **Citizen journalism** — accountable sources, verifiable reporters
-- **Whistleblowing** — verified (you're real) but anonymous (we don't reveal who)
+- **P2P lending** — verify "real person, 18+, unique" without learning who they are
+- **Freelance marketplaces** — portable reputation proofs across instances
+- **Local classifieds** — verify "seller is in this district" without revealing their address
+- **Co-op management** — legitimate one-person-one-vote for any organization (Semaphore-based anonymous group membership)
+- **Mutual aid networks** — verify "real person in this geography" without identity disclosure
+- **Skill exchange** — prove certification level without revealing name
+- **Citizen journalism** — verified (provably real) but anonymous (ZK proof reveals nothing beyond "unique human")
+- **Whistleblowing** — prove insider status without revealing identity
 
-Each of these is someone else's project, running on their own server, using the shared identity network.
+Each of these is someone else's project, running on their own server. The platform issues cryptographic credentials; third parties verify ZK proofs. The platform never knows where users authenticate.
 
 **Sustainability:**
 
-- Community-serving instances (mutual aid, co-op governance, non-profits) — free.
-- Revenue-generating instances (freelance marketplaces, lending platforms) — pay a percentage of revenue back. Proportional to what they extract.
+- Community-serving instances (mutual aid, co-op governance, non-profits) — verify proofs for free.
+- Revenue-generating instances (freelance marketplaces, lending platforms) — pay a proportional fee for credential infrastructure.
 
 The ceiling on that percentage is a constitutional bound — changeable only by 75% supermajority. The specific rate within that ceiling is decided democratically.
+
+See [Identity Verification](identity-verification.md#identity-as-infrastructure-zero-knowledge-proofs) for the full technical architecture.
 
 ## What This Is Not
 

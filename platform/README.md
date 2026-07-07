@@ -31,10 +31,14 @@ src/
 ├── app/              # Next.js App Router (pages + API routes)
 │   └── api/          # REST endpoints
 ├── modules/          # Business logic, organized by workstream
-│   ├── identity/     # User verification, tiers, account management
-│   ├── discussion/   # Boards, posts, threading, moderation
-│   ├── marketplace/  # Products, reviews, affiliate tracking
-│   └── governance/   # Proposals, voting, elections (deferred)
+│   ├── identity/     # Verification, auth, sessions, ZK credentials
+│   ├── discussion/   # Boards, posts, chat (E2E encrypted), moderation
+│   ├── marketplace/  # Products, reviews, affiliate tracking, trust scoring
+│   ├── governance/   # Proposals, voting, elections (deferred)
+│   ├── contracts/    # Templates, signing, storage, reminders, ODR (phase 2)
+│   ├── translation/  # Self-hosted neural MT (NLLB/SeamlessM4T) (milestone 1)
+│   ├── moderation/   # ML triage, community vote, anti-brigading (milestone 1)
+│   └── trust/        # EigenTrust graph computation, collusion detection (milestone 3)
 ├── lib/              # Shared utilities (db client, etc.)
 └── generated/        # Prisma client (gitignored, auto-generated)
 

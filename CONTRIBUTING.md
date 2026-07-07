@@ -1,11 +1,36 @@
 # Contributing
 
-## 5-Minute Orientation
+## Why build this
 
+You earn **30-120x your raw hours** in revenue-share units. No equity — deliberately more generous to compensate for risk. Every hour you put in now is recorded, multiplied, and paid when revenue flows. If you're early and skilled, you're compensated like a founder.
+
+| Your work | What you earn (Year 1, first-10 contributor) |
+|-----------|----------------------------------------------|
+| 10 hrs fixing docs (routine) | 10 × 3 × 3 = 90 units |
+| 10 hrs building features (standard) | 10 × 7 × 3 = 210 units |
+| 10 hrs architecting systems (complex) | 10 × 12 × 3.5 = 420 units |
+| 10 hrs designing ZK circuits (specialist) | 10 × 30 × 4 = 1,200 units |
+
+Full details: [Builder Compensation](docs/builder-compensation.md)
+
+## 5-Minute Start
+
+```bash
+git clone https://github.com/thecounterweight/platform.git
+cd platform/platform
+pnpm install
+cp .env.example .env  # Add your PostgreSQL connection string
+pnpm prisma generate
+pnpm prisma migrate dev
+pnpm dev
+# Open http://localhost:3000
+```
+
+Then:
 1. Read the [one-page overview](docs/overview.md) — understand what this is
 2. Pick a workstream below that matches your skills
-3. Claim an existing issue or propose one
-4. Fork, branch, build, PR
+3. Claim an [existing issue](https://github.com/thecounterweight/platform/issues) or propose one
+4. Branch, build, PR
 5. Your contribution is recorded on the public ledger from day one
 
 No meetings. No approval to start. Show up, do the work, get credited.
@@ -56,10 +81,10 @@ flowchart LR
     I --> J[Trust Score]
     G --> K[Reviewer Paid]
     J --> K
-    E -->|sort by| L[Aggregate Score — sum of stars]
+    E -->|sort by| L[Wilson Score Interval]
 ```
 
-**What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by aggregate score. Reviewer commission from affiliate revenue. See [mvp.md](docs/mvp.md).
+**What's decided:** Aggregated products from Amazon/Flipkart via affiliate APIs + community sellers listing free. Reviews from verified humans only, parameter-based ratings, ranked by Wilson score interval. EigenTrust graph propagation for reviewer trust scoring. Reviewer commission from affiliate revenue. See [mvp.md](docs/mvp.md).
 
 **What needs building:**
 - Amazon Product Advertising API integration
@@ -72,7 +97,7 @@ flowchart LR
 
 **Skills needed:** Full-stack TypeScript, API integrations, search/filtering, UI/UX for e-commerce.
 
-**Key constraint:** Aggregate score (sum of star ratings) determines sort order. No paid placement. No algorithmic manipulation. The code must make this obvious and auditable.
+**Key constraint:** Wilson score interval determines sort order — statistically sound, accounts for both rating quality and sample size. No paid placement. No algorithmic manipulation. The code must make this obvious and auditable.
 
 ### Discussion
 
@@ -87,7 +112,7 @@ flowchart LR
     G --> H[Public Action Log]
 ```
 
-**What's decided:** Threaded discussion boards. Real people only. Moderation via two-flag system (community flags + moderator action). See [mvp.md](docs/mvp.md) moderation section.
+**What's decided:** Threaded discussion boards. Real people only. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. Moderation via ML triage + community vote (humans always make the final decision). See [mvp.md](docs/mvp.md) moderation section.
 
 **What needs building:**
 - Board/category CRUD

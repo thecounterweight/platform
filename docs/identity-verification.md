@@ -101,6 +101,25 @@ One phone number per account at registration. OTP is a second factor, not the pr
 
 To game the system you would need: a real government ID + a face that matches it + a unique phone number — per account. This is effectively one-human-one-account.
 
+### Verification Layers
+
+```mermaid
+graph TD
+    L1[Layer 1: Government ID<br/>via KYC provider] -->|proves| U[Uniqueness]
+    L2[Layer 2: Face scan<br/>liveness check] -->|proves| H[Current holder = registered person]
+    L3[Layer 3: OTP<br/>second factor] -->|prevents| B[Bot-scale attacks]
+
+    U --> C[Combined guarantee]
+    H --> C
+    B --> C
+    C --> R[Real government ID +<br/>matching face +<br/>unique phone =<br/>one-human-one-account]
+
+    style L1 fill:#bfb,stroke:#333
+    style L2 fill:#bbf,stroke:#333
+    style L3 fill:#fdb,stroke:#333
+    style R fill:#f9f,stroke:#333
+```
+
 ## Privacy Guarantees
 
 These are non-negotiable platform commitments:
@@ -109,7 +128,7 @@ These are non-negotiable platform commitments:
 |-----------|---------------|
 | No storage of raw documents | The platform verifies and discards. No passport scans, no Aadhaar numbers stored. Raw ID numbers are processed in memory and immediately discarded after HMAC computation. |
 | No selling or sharing | Identity data never leaves the platform. Never sold to third parties. Never used for advertising. |
-| No profiling | Verification is a yes/no gate. The platform doesn't store your address, age, gender, or anything beyond "verified: yes." |
+| No profiling from verification | Verification itself is a yes/no gate — nothing is extracted from your ID beyond the HMAC. Attributes (age bracket, district, gender) are only stored if you explicitly opt in later. |
 | Minimum data principle | Only an HMAC (keyed hash) of your ID number is stored — enough to prevent duplicate accounts, nothing more. The raw number is never persisted. |
 | Non-reversible storage | Even if the database leaks, no one can reverse the HMAC to your ID number without the secret key (stored separately in HSM/secrets manager). |
 | Face data: platform never stores | For face-dedup users, the KYC provider maintains face embeddings for 1:N matching. The platform receives only pass/fail — no biometric data touches our systems. |
@@ -123,7 +142,8 @@ The platform knows you're real. Other users don't have to.
 - You can post, comment, and participate under a pseudonym.
 - The system guarantees to others: "this is a verified unique human" — without revealing who.
 - You choose when to attach your real identity to your actions.
-- Investment contracts require real names (legal necessity). Community discussion does not.
+- Contracts require real names (legal necessity). Community discussion does not.
+- Verified attributes (age bracket, district) can gate access to spaces without revealing your identity to other members.
 
 This is pseudonymous participation with verified-human backing. You get privacy without enabling manipulation.
 
@@ -202,27 +222,146 @@ The platform's value comes from verified identity — trusted reviews, one-perso
 
 **Path to full access:** As governments expand digital ID systems (India went from ~50% to ~95% Aadhaar coverage in a decade), more people gain access to full verification. The platform doesn't solve the ID gap — it works within it while remaining useful to those affected.
 
-## Optional Profile Data
+## Verified Attributes (Opt-In)
 
-Verification produces a pass/fail and allows the platform to compute a deduplication HMAC. No personal details are extracted or stored from the ID. The raw ID number is processed in memory and immediately discarded — only the irreversible HMAC is retained.
+Verification produces a pass/fail and a deduplication HMAC. Nothing else is extracted from your ID. But users can opt in to sharing categorical attributes that make the platform more useful — enabling features like geo-fenced voting, identity-gated communities, and age-appropriate spaces.
 
-Users can optionally share additional information to make the platform more useful:
+### What Gets Stored (Only If You Opt In)
 
-| Data | Why it's useful | Default |
-|------|----------------|---------|
-| Age / date of birth | Age-gated communities, content filtering | Not shared |
-| Location (city/state) | Local communities, collective purchasing, nearby sellers | Not shared |
-| Gender | Community context where relevant | Not shared |
-| Language preferences | i18n, content matching | Shared (set during signup) |
+| Attribute | Granularity | What's stored | What's NOT stored |
+|-----------|-------------|---------------|-------------------|
+| Age | Bracket (18-25, 26-35, etc.) | Age bracket only | Date of birth, exact age |
+| Location | District / city | District name | Street address, pin code, GPS |
+| Gender | Category | Self-declared gender | — |
+| Language | Languages spoken | Language list | — |
 
-**Rules:**
-- All optional data is user-provided, not extracted from verification
-- Users control who sees what (public, community-only, or private)
-- Can be changed or removed at any time
-- Never used for advertising or sold to third parties
-- Never required for core platform features (discussion, reviews, voting)
+**Key principles:**
+- **Categorical, not precise.** District not address. Age bracket not DOB. Enough for the feature to work, not enough to identify you.
+- **Opt-in, not extracted.** Attributes are never pulled from your government ID during verification. You provide them separately, after verification, if you choose to.
+- **Revocable.** Remove any attribute at any time. Immediate deletion, not just hidden.
+- **Never exported.** Attributes are used on-platform only. No API exposes them to third parties. No advertising, no profiling, no data sales.
+- **Purpose-trust protected.** The irrevocable purpose trust prevents any future leadership from changing these data practices — selling data would violate the trust deed and trigger trustee intervention.
 
-The platform works fully without any optional data. Sharing is a user choice, not a platform requirement.
+### What This Enables
+
+- **Geo-fenced governance** — Vote in decisions that affect your district/city
+- **Identity-gated communities** — Women-only spaces, age-appropriate boards (verified, not self-claimed)
+- **Collective purchasing** — Group nearby shopkeepers without revealing exact locations
+- **Localized marketplace** — Surface relevant sellers and products
+- **Age compliance** — Enforce jurisdiction-specific age restrictions without storing DOB
+
+### Hard Boundaries (Never Stored, Never Asked)
+
+These attributes are NEVER collected, stored, or derived — regardless of user consent:
+
+- **Caste**
+- **Religion**
+- **Political affiliation**
+- **Sexual orientation**
+- **Health status / disability**
+- **Income / financial status**
+
+No feature on this platform will ever require these. If a use case seems to need them, the use case is redesigned or rejected. This is a constitutional constraint — encoded in the trust deed, not just a policy decision.
+
+### Data Trust Guarantees
+
+| Guarantee | How it's enforced |
+|-----------|-------------------|
+| Open-source attribute logic | Anyone can audit exactly what's stored and how it's used |
+| Third-party audits | Annual independent audit of data practices (published publicly) |
+| Cryptographic deletion proofs | When you revoke an attribute, the platform generates a verifiable proof of deletion |
+| Purpose trust protection | Trust deed explicitly prohibits selling, sharing, or monetizing user attributes — trustees can block any attempt |
+| No derived profiling | The platform never combines attributes to build user profiles or segments |
+
+## Identity as Infrastructure (Zero-Knowledge Proofs)
+
+The platform's identity layer becomes useful beyond the platform itself — without compromising privacy.
+
+### The Problem
+
+External services (lending platforms, freelance marketplaces, co-ops) need to verify that a user is real, unique, and has certain attributes. Traditional approaches: (a) share raw data with third parties (privacy violation), or (b) the third party calls back to the platform to verify (the platform sees who authenticates where — surveillance).
+
+### The Solution: ZK Proofs Generated On-Device
+
+Zero-knowledge proofs let users prove attributes to third parties without revealing the underlying data, and without the platform knowing which third parties they authenticate with.
+
+**How it works:**
+
+1. User has verified attributes stored on-platform (age bracket, district, etc.)
+2. User downloads a cryptographic credential to their device (signed by the platform)
+3. When a third-party service needs proof (e.g., "this person is 18+"), the user's device generates a ZK proof locally
+4. The third party verifies the proof cryptographically — no need to contact the platform
+5. The platform never knows which third parties the user authenticated with (unlinkability)
+
+**What can be proved without revealing:**
+
+| Third party needs to know | What's revealed | What's NOT revealed |
+|---------------------------|-----------------|---------------------|
+| "User is 18+" | True/false | Exact age, DOB, name |
+| "User is in Maharashtra" | True/false | District, address |
+| "User is a unique human" | True/false | Identity, any personal data |
+| "User has 4+ star trust score" | True/false | Exact score, review history |
+
+### Building Blocks
+
+- **Anon Aadhaar** — ZK proofs over Aadhaar QR codes (already implemented by PSE/Ethereum Foundation for Indian identity)
+- **Semaphore** — Anonymous group membership proofs (prove "I'm in this group" without revealing which member)
+- **circom / snarkjs** — Circuit compiler and prover for custom attribute proofs
+- **On-device proving** — Proofs generated on user's phone/laptop. Platform servers never involved in proof generation.
+
+### Architecture
+
+```mermaid
+sequenceDiagram
+    participant P as Platform
+    participant D as User Device
+    participant T as Third Party
+
+    P->>D: Issues cryptographic credential
+    Note over P,D: Credential signed by platform,<br/>stored on device
+
+    D->>D: Generates ZK proof locally
+    Note over D: Proof created on-device,<br/>no raw data leaves
+
+    D->>T: Sends ZK proof
+    Note over D,T: Only proof transmitted,<br/>not underlying data
+
+    T->>T: Verifies proof mathematically
+    Note over T: No need to contact platform
+
+    Note over P: Platform never knows<br/>where user authenticates
+    Note over T: Third party never<br/>learns user identity
+```
+
+### Phased Rollout
+
+| Phase | What | When |
+|-------|------|------|
+| Milestone 2 | Verified attributes on-platform (opt-in, categorical) | With identity verification launch |
+| Phase 2 | ZK credential issuance + on-device proof generation | When core platform is stable |
+| Phase 2+ | Ecosystem SDK for third parties to verify proofs | After internal ZK infrastructure is proven |
+
+### Ecosystem Revenue
+
+- Community-serving instances (mutual aid, co-ops, non-profits) verify proofs for free
+- Revenue-generating instances (lending platforms, freelance marketplaces) pay a proportional fee
+- Fee ceiling is a constitutional bound (75% supermajority to change)
+- The platform earns revenue from the identity layer without ever seeing or selling user data
+
+### Why This Is Hard (And Why We Build It Anyway)
+
+ZK proof infrastructure is complex — circuit design, trusted setup ceremonies, mobile-optimized provers, credential revocation. This is not a weekend project.
+
+But the alternative is worse: either we don't provide identity as infrastructure (limiting the platform's value), or we provide it by sharing data with third parties (violating our privacy commitments). ZK proofs are the only architecture that satisfies both goals simultaneously.
+
+We build this incrementally. Internal attributes first (simple, immediate value). ZK infrastructure when the team and revenue can support it. The design is ready — the implementation follows the platform's growth.
+
+### Open Questions
+
+- Credential revocation: what happens to issued credentials when a user revokes an attribute? (Likely: short-lived credentials with periodic refresh)
+- Trusted setup: use existing ceremony (Hermez, Zcash) or run platform-specific? (Likely: reuse existing)
+- Mobile performance: ZK proof generation on mid-range Android phones (target: <3 seconds)
+- Offline proving: can proofs be generated without internet? (Desirable but not required for v1)
 
 ## Data Protection Compliance (DPDPA 2023, GDPR)
 

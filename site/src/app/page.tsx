@@ -10,11 +10,12 @@ export default function Home() {
           The Counterweight
         </h1>
         <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
-          A review and discussion platform where every participant is a verified real person.
-          No bots. No fake reviews. No one selling your attention.
+          Every review you read might be fake. Every platform you join will eventually be sold.
+          We&apos;re building the alternative.
         </p>
-        <p className="mt-6 text-base text-zinc-500 max-w-xl">
-          Structurally protected from sale or capture. Open-source. Currently looking for builders.
+        <p className="mt-6 text-base text-zinc-300 max-w-xl">
+          Every participant is a verified real human. An irrevocable purpose trust makes it
+          structurally impossible to sell, gut, or enshittify. Open-source. Looking for builders.
         </p>
         <Counter />
       </section>
@@ -40,8 +41,8 @@ export default function Home() {
               Moderators and leads are elected and removable. 60% vote, 7-day discussion. No permanent admins.
             </li>
             <li>
-              <strong className="text-zinc-100">Builder compensation.</strong>{" "}
-              Contributions tracked on a public ledger. When revenue flows, it flows to the people who built this — proportional and transparent.
+              <strong className="text-zinc-100">Builders earn 30-120x.</strong>{" "}
+              Contributions tracked on a public ledger. Generous compensation — deliberately above market rate because there&apos;s no equity. Early builders are paid like founders.
             </li>
           </ul>
         </div>
@@ -86,8 +87,8 @@ export default function Home() {
                 <p className="text-xs text-zinc-500 mt-1">Threaded, real-time, moderated</p>
               </div>
               <div className="px-4 py-3 border border-zinc-700 rounded-lg text-center">
-                <p className="font-medium text-zinc-200 text-sm">Multi-language UI</p>
-                <p className="text-xs text-zinc-500 mt-1">Hindi, English, more</p>
+                <p className="font-medium text-zinc-200 text-sm">Real-time Translation</p>
+                <p className="text-xs text-zinc-500 mt-1">Post in any language, read in yours</p>
               </div>
             </div>
           </div>

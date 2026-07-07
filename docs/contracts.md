@@ -96,13 +96,77 @@ Small businesses hiring employees. Salary, role, notice period, non-compete (whe
 6. Platform sends reminders per contract terms (payment dates, milestones, expiry)
 7. If disputes arise → mediation infrastructure available
 
-## Dispute Resolution
+### Template Lifecycle
 
-Resolution layers, in order:
+```mermaid
+flowchart TD
+    A[Creator drafts template] --> B[Peer review<br/>risk-tiered]
+    B --> C[Listed on platform]
+    C --> D[Users sign contracts]
+    D --> E[Post-signing feedback]
+    E -->|quality signals| A
 
-1. **Direct resolution** — Parties talk it out. Most disputes end here.
-2. **Community mediation** — Elected mediators facilitate resolution. Fast, free, accessible. This is a resolution mechanism, not a replacement for legal rights.
-3. **Legal system** — The agreement is a signed contract, enforceable in court. Either party can go to court at any time — community mediation doesn't waive legal rights.
+    C --> F{Legal change detected?}
+    F -->|Yes| G[Flag template]
+    G --> H{Creator updates<br/>within 30 days?}
+    H -->|Yes| B
+    H -->|No| I[Delisted]
+
+    C --> J{Flaw reported?}
+    J -->|Yes| K[Flag template]
+    K --> L[Peer review]
+    L --> M{Confirmed?}
+    M -->|Yes| N[Delist + notify users]
+    N --> O[Creator patches]
+    O --> B
+    M -->|No| C
+```
+
+## Dispute Resolution (Structured ODR + Human Mediation)
+
+Online Dispute Resolution (ODR) infrastructure — not just "talk it out," but structured tooling that resolves most disputes without courts while preserving legal enforceability.
+
+**Resolution layers, in order:**
+
+1. **Structured negotiation (automated)** — The platform guides both parties through a structured process: gather each side's statement, identify points of agreement/disagreement, suggest resolution ranges based on similar past cases (anonymized precedent database). Many disputes resolve here because the structure forces clarity. No human mediator needed.
+
+2. **Assisted mediation** — If negotiation fails, elected mediators step in with full case context already organized. The system surfaces relevant precedent, contract terms, and payment history — mediators focus on judgment, not information gathering. Fast, accessible, free for the first attempt.
+
+3. **Legal system** — The agreement is a signed contract, enforceable in court. Either party can go to court at any time — platform mediation doesn't waive legal rights.
+
+### ODR Flow
+
+```mermaid
+flowchart TD
+    A[Dispute Filed] --> B[Structured Negotiation]
+    B --> B1[Gather statements from both parties]
+    B1 --> B2[Identify agreement/disagreement points]
+    B2 --> B3[Suggest resolution ranges]
+    B3 --> C{Resolved?}
+    C -->|Yes| D[Done]
+    C -->|No| E[Assisted Mediation]
+    E --> E1[Human mediator with full context]
+    E1 --> F{Resolved?}
+    F -->|Yes| D
+    F -->|No| G[Legal System / Court]
+```
+
+**Why structured ODR, not just "talk it out":**
+
+At scale (thousands of disputes/month), unstructured mediation doesn't work — mediators burn out, response times grow, quality varies. Structured ODR (the model used by eBay, Modria/Tyler Technologies, and the EU ODR platform) resolves 80%+ of disputes at layer 1 without human intervention.
+
+**What the system does:**
+- Collects structured statements from both parties (guided questions, not freeform)
+- Identifies contract terms relevant to the dispute
+- Surfaces anonymized outcomes from similar past disputes ("in 73% of similar cases, the resolution was...")
+- Suggests settlement ranges both parties can accept/reject
+- Escalates to human mediator only when structured negotiation fails
+- Tracks mediator quality (resolution rate, satisfaction, time-to-resolution)
+
+**What the system does NOT do:**
+- Make binding decisions (humans decide, always)
+- Replace legal rights (court is always available)
+- Use AI to "judge" who is right (it organizes information, not adjudicate)
 
 The goal is to resolve most disputes without courts (which are slow, expensive, and inaccessible to most people). But legal enforceability is never taken off the table.
 
@@ -187,11 +251,112 @@ Contract infrastructure is Phase 2 — it requires:
 
 It does not ship with the MVP. The MVP (discussion + reviews) builds the community and trust. Contracts activate when the identity layer is solid and templates are ready.
 
+## Template System
+
+### How Template Creators Get Paid
+
+Lawyers and domain experts create contract templates. They earn per usage — every time someone signs a contract using their template, the creator gets paid.
+
+**Payment model:**
+- Creator sets their per-use fee (within platform guidelines based on complexity tier)
+- Fee is included in the contract creation cost paid by users
+- Platform takes a small operational cut (covers hosting, signing infrastructure, storage)
+- Creator earns for the lifetime of the template (as long as it remains listed and current)
+
+**Credential requirements:**
+- Verified identity (same platform system as everyone)
+- Demonstrable legal qualification (bar membership, law degree, or equivalent domain expertise)
+- Jurisdiction declaration (which jurisdictions this template covers)
+- No anonymous template creation
+
+### Template Liability
+
+Three parties, clear responsibilities:
+
+| Party | Role | Liability |
+|-------|------|-----------|
+| **Platform** | Infrastructure — hosts, distributes, collects fees | No liability for template content. Platform is infrastructure (like DocuSign doesn't guarantee document content). Explicit disclaimers on every template. |
+| **Template creator** | Professional work product for compensation | Professional liability for flawed templates. Covered by their professional indemnity insurance. Creator accepts liability terms when listing. |
+| **Users** | Choose template, negotiate terms, sign | Caveat emptor — but with guardrails (plain-language summaries, cooling-off periods, peer-reviewed templates). |
+
+**Platform's duty:** Disclaimers on every template ("this is infrastructure, not legal advice"), version tracking, notification if a flaw is discovered, maintenance reserve for orphaned templates.
+
+### Risk Tiering
+
+Different contract types carry different risk. Review rigor scales accordingly:
+
+| Tier | Examples | Peer reviewers required | Creator credentials |
+|------|----------|------------------------|---------------------|
+| Low-risk | NDA, simple service agreement, receipt | 1 qualified reviewer | Legal background or domain expertise |
+| Medium-risk | Rental, freelancer, partnership | 2 qualified reviewers | Practicing lawyer in declared jurisdiction |
+| High-risk | Equity, P2P lending, cross-border, co-ownership | 3 qualified reviewers | Specialist in domain + jurisdiction. Mandatory plain-language summary. |
+
+### Quality Control
+
+**Before listing:**
+- Peer review by qualified professionals (number depends on risk tier)
+- Plain-language summary required (reviewed separately from legal text)
+- Jurisdiction tagging with specific applicability declarations
+- Mandatory fields validation rules defined by creator
+
+**Ongoing quality signals:**
+- **Usage analytics** — where users abandon filling in a template, which clauses get modified most often. Signals confusion or poor drafting. Visible to creator.
+- **Modification tracking** — if 40%+ of users change the same clause, the template needs updating. Platform surfaces this to creator.
+- **Post-signing feedback** — "Did this contract work as expected?" collected 6 months after signing. Low scores trigger peer re-review.
+
+**Maintenance requirements:**
+- **Legal change monitoring** — when a relevant law changes (new rent control act, IT Act amendment, RBI circular), affected templates are auto-flagged. Creator has 30 days to update or template is delisted.
+- **Sunset rule** — templates expire after 2 years without re-certification. Laws change. A 2024 template shouldn't be used in 2027 without someone confirming it's still valid.
+- **Orphan protection** — if a creator disappears (dies, delists, becomes unreachable), platform uses maintenance reserve (10-15% of template fees) to fund a replacement professional to patch or maintain the template. Affected users are notified.
+
+### Flaw Discovery Process
+
+When a template issue is reported:
+
+1. Template is flagged (visible to new users considering it)
+2. Creator is notified — has 7 days to respond
+3. Peer review panel assesses whether the flaw is real
+4. If confirmed: template is delisted for new contracts, creator patches it, patched version goes through re-review
+5. All users who signed contracts using the flawed version are notified with an explanation of the issue and its practical impact
+6. Template only relisted after peer review confirms the fix
+
+### User Protection
+
+**Cooling-off period (high-risk contracts only):**
+- Lending, equity, cross-border: 48-hour window after signing where either party can withdraw without penalty
+- Standard in consumer protection law (EU has 14 days for distance contracts)
+- Prevents pressure-signing and impulse decisions on high-stakes agreements
+- Low-risk contracts (service agreements, NDAs) have no cooling-off — parties need fast execution
+
+**Signing safeguards:**
+- Platform refuses to process if critical fields are blank or contradictory
+- Contracts above ₹1 lakh require face scan re-confirmation before signing (prevents account compromise from creating binding obligations)
+- Plain-language summary must be acknowledged ("I understand what this contract does") before signing high-risk templates
+
+**No self-dealing:**
+- Template creator cannot be a party to contracts using their own template (conflict of interest)
+- Prevents creators from designing templates that favour one side and then being that side
+
+### Multi-Language Templates
+
+- Templates can exist in multiple languages with legal equivalence declared by the creator
+- Legal text must be human-translated by a qualified professional (not neural MT — legal precision matters)
+- Platform's translation layer handles UI chrome around the template, but the contract text itself is professional translation only
+- If parties sign in different languages, the governing language is declared in the template (standard international contract practice)
+
+### Versioning
+
+- Every template is versioned (v1.0, v1.1, v2.0, etc.)
+- Signed contracts reference the exact version used — immutable
+- When a new version is published, existing contracts are unaffected
+- Users of older versions are notified if a newer version fixes known issues
+- Version history is public — anyone can see what changed and why
+
 ## Open Questions
 
-- **Template governance:** Who reviews and approves templates? Proposal: lawyer-contributors earn builder units for template creation; community flags issues; templates are versioned and jurisdiction-tagged.
-- **Liability:** If a template has a flaw and parties lose money, who is liable? Proposal: templates come with explicit disclaimers; the platform is infrastructure, not a law firm.
-- **Regulation at scale:** At what point does contract volume trigger regulatory requirements (e.g., lending platform registration for P2P loans)? Needs jurisdiction-by-jurisdiction research.
-- **Fee structure:** Exact fees per contract type need market research. The principle (cost + small margin) is set; the numbers are not.
+- **Regulation at scale:** The platform hosts templates and records contracts — it doesn't match, solicit, or recommend. P2P lending as a regulated activity (RBI NBFC-P2P, FCA authorization) is an ecosystem-level concern for third parties building on the ZK identity layer, not for the contract infrastructure itself. Same distinction as DocuSign hosting loan documents without being a lender. Worth monitoring, but likely not a platform risk.
+- **Fee structure:** Exact per-use fees per complexity tier need market research. The principle (creator sets fee within guidelines, platform takes operational cut) is set; the specific ranges are not.
+- **Stamp duty:** Where jurisdictions require stamp duty (state-dependent in India, varies globally), the platform integrates e-stamp procurement as part of the contract creation flow. Handled per-template, per-jurisdiction — template creators declare stamp duty requirements, platform facilitates payment through the relevant state portal. Cost passed to users. Not a platform-level design question — it's operational, handled case by case.
+- **Cross-border enforceability:** Enabled piece by piece, country-pair by country-pair, as legal research confirms mutual recognition of e-signatures. Aspirational goal — domestic-first, cross-border when and where we can.
 
-If you're a lawyer in any jurisdiction — template contribution is one of the highest-value things you can do right now.
+If you're a lawyer in any jurisdiction — template contribution is one of the highest-value things you can do. Paid per use, for as long as the template is active.

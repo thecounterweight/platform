@@ -16,12 +16,12 @@ export const viewport: Viewport = {
 export const metadata: Metadata = {
   title: "The Counterweight",
   description:
-    "An open-source, community-owned platform where every user is a verified real person. Trusted reviews, democratic governance, fair compensation. One person, one voice.",
+    "A review and discussion platform where every participant is a verified real person. Structurally protected from sale or capture. Trusted reviews, democratic governance, generous builder compensation.",
   manifest: "/manifest.json",
   openGraph: {
     title: "The Counterweight",
     description:
-      "Communities investing together. Businesses built by the people they serve. A platform owned by its users.",
+      "Every review you read might be fake. Every platform you join will eventually be sold. We're building the alternative.",
     type: "website",
     url: "https://thecounterweight.org",
     siteName: "The Counterweight",
@@ -30,7 +30,7 @@ export const metadata: Metadata = {
     card: "summary_large_image",
     title: "The Counterweight",
     description:
-      "Communities investing together. A platform owned by its users.",
+      "Every review might be fake. Every platform gets sold. We're building the alternative.",
   },
   robots: {
     index: true,
@@ -55,7 +55,7 @@ export default function RootLayout({
               name: "The Counterweight",
               url: "https://thecounterweight.org",
               description:
-                "An open-source platform where communities invest together, build businesses, and govern themselves.",
+                "A review and discussion platform where every participant is a verified real person. Structurally protected from sale. Open-source.",
               sameAs: [
                 "https://github.com/thecounterweight/platform",
                 "https://reddit.com/r/TheCounterweight",

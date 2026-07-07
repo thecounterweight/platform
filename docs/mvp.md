@@ -17,13 +17,33 @@ One phone number per account at registration. Password is the primary auth; OTP 
 
 Full government ID verification (DigiLocker, eIDAS) comes in Milestone 2 via a KYC provider (Digio, Signzy, IDfy, or similar) — no government license needed on our end.
 
-### Discussion Boards + Chat
+### Discussion Boards + Chat (E2E Encrypted)
 
 Threaded discussion boards and group chat. Every participant is phone-verified.
 
-### Multi-language UI
+**End-to-end encryption for private communication:**
+- DMs and private group chats use the **MLS protocol** (RFC 9420) — the platform cannot read private messages, even under compulsion
+- Public discussion boards remain unencrypted (content is public by nature)
+- Group key management scales to large groups without O(n²) message overhead (MLS tree structure)
+- Key transparency log: users can verify their keys haven't been tampered with
 
-i18n support — the interface works in Hindi, English, and whatever languages the first users need. This is not auto-translation between languages (that's a harder problem for later). Users post in whatever language they write; the UI chrome is localized.
+**Why E2E, not just TLS:**
+A platform that promises privacy but can read your DMs is making a promise it can break. Under government pressure, data breaches, or rogue employees — if the platform CAN read messages, eventually someone WILL. E2E makes this architecturally impossible, not just policy-impossible. This is consistent with the ZK proof philosophy: design systems where trust is mathematical, not institutional.
+
+### Multi-language (UI + Real-Time Translation)
+
+i18n support — the interface works in Hindi, English, and whatever languages the first users need. UI chrome is localized from day one.
+
+**Real-time content translation** ships with Milestone 1. A user posts in Hindi; another reads it in English. This is not optional polish — without it, language communities become silos that never cross-pollinate, defeating the purpose of a single verified-identity platform.
+
+**How it works:**
+- Neural machine translation (NLLB-200 or SeamlessM4T, self-hosted) translates posts and comments on demand
+- Original language always preserved and visible — translation is a layer, not a replacement
+- Users flag bad translations → feeds back into model quality
+- Latency target: <500ms for cached translations, <2s for new content
+- Self-hosted models (not API calls to Google/DeepL) — no user content leaves platform infrastructure
+
+**Why this is hard and why we do it anyway:** Self-hosting translation models is operationally complex (GPU inference, model updates, quality monitoring). The alternative — language silos — makes the platform functionally multiple separate platforms sharing a database. A verified-identity community that can't communicate across languages isn't one community.
 
 - Board creators moderate their boards initially (volunteer — builds reputation and trust)
 - As a board's community grows, members elect moderators democratically — removable via no-confidence (7-day discussion + 60% vote)
@@ -34,12 +54,17 @@ i18n support — the interface works in Hindi, English, and whatever languages t
 
 Board creators moderate. They can remove content and ban users from their board. All actions are logged publicly. This is sufficient for the first 1,000 users.
 
-**Moderation (scales with growth):**
+**Moderation (scales with growth — ML triage + human decision):**
 
-Community vote system — any verified user can flag content, which opens a vote:
+At scale, pure human voting doesn't work — flagging fatigue, slow response to novel harm, coordinated downvote attacks. The solution: ML classifiers triage content, humans make final decisions.
 
-- **Upvote** — keep the content.
-- **Downvote** — remove it.
+**How it works:**
+
+1. **ML triage layer** — Lightweight classifiers (fine-tuned on community norms, not generic hate-speech models) score content in real-time. Content above a threshold is auto-flagged for human review. Content is never auto-removed by ML alone (except CSAM — legal mandate).
+
+2. **Community vote** — Flagged content (by ML or by users) opens a community vote:
+   - **Upvote** — keep the content.
+   - **Downvote** — remove it.
 
 Vote threshold before action is taken (minimum votes required):
 - Small boards (<100 members): 10 votes
@@ -50,7 +75,37 @@ Once the threshold is reached: **60% downvotes = content removed.** 60% upvotes 
 
 One person, one vote. Verified identity makes this viable — no sock puppets, no brigading with alt accounts.
 
+3. **Feedback loop** — Outcomes of human votes retrain the ML models. False positives reduce confidence; confirmed violations increase it. The system gets better over time without ever making autonomous decisions.
+
+**Why ML triage, not ML moderation:** The platform's principle is that humans govern. ML handles the triage problem (10,000 posts/day, 3 moderators can't read them all) without making removal decisions. It's a priority queue, not an authority.
+
 **Urgent flag** — For illegal content, doxxing, active threats. Goes directly to elected safety team for immediate removal. Community reviews within 48 hours (confirms or reverses the decision).
+
+**Anti-brigading:** Coordinated downvote detection (graph analysis on voting patterns). If 50 accounts that never interact with a board suddenly vote together, that's flagged for safety team review before the vote executes.
+
+### Moderation Pipeline
+
+```mermaid
+flowchart TD
+    A[Content posted] --> B[ML triage classifier scores]
+    B --> C{Above threshold?}
+    C -->|No| D[Published - no action]
+    C -->|Yes| E[Flagged for community vote]
+    E --> F{Vote reaches threshold}
+    F --> G{Result?}
+    G -->|60% downvote| H[Removed]
+    G -->|60% upvote| I[Stays]
+
+    A --> J{Urgent flag?}
+    J -->|Yes| K[Safety team immediate removal]
+    K --> L[Community review within 48h]
+    L -->|Confirmed| H
+    L -->|Reversed| I
+
+    H -->|outcome| M[Retrain ML classifier]
+    I -->|outcome| M
+    M -->|improved scoring| B
+```
 
 **Legal obligations (non-negotiable, from day one):**
 
@@ -130,13 +185,18 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 
 **Default sort order:**
 
-Products are ranked by review activity and quality combined:
+Products are ranked using a **Wilson score interval** (lower bound of confidence interval for the true rating):
 
 1. Reviewed products always appear above unreviewed products
-2. Among reviewed products, rank by **aggregate score** = sum of all star ratings (e.g., 5 five-star reviews = 25, 3 four-star reviews = 12)
+2. Among reviewed products, rank by Wilson score — this accounts for both rating quality AND sample size. A product with 3 five-star reviews does NOT outrank a product with 50 reviews averaging 4.3 stars. The math penalizes low sample sizes automatically.
 3. Unreviewed products sorted by recency
 
-Rewards both quality and engagement. Unreviewed products sit at the bottom until someone reviews them — which incentivizes reviewing.
+**Why Wilson score, not sum/average:**
+- Simple average: 5 stars from 2 reviews beats 4.3 from 200 reviews. Wrong.
+- Sum of ratings: favours volume regardless of quality. Also wrong.
+- Wilson score: "What's the lowest rating this product probably has, given the data?" — statistically sound, deterministic, no ML black box. Used by Reddit (for comments), Yelp, and Stack Overflow.
+
+The formula is transparent, documented, and produces the same result for anyone who runs it. No personalization, no hidden weights.
 
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms.
 
@@ -149,9 +209,42 @@ Reviewers earn a share of affiliate commissions when their reviews drive clicks.
 1. **Parameter-based reviews** — Each product category has specific parameters (e.g., phone: battery, camera, build, value for money). Reviewers must rate and justify each parameter. Vague "great product!" reviews don't qualify for commission.
 2. **Commission on clicks, not sentiment** — Positive or negative doesn't matter. A detailed "don't buy this" review earns the same as a positive one. The incentive is usefulness, not positivity.
 3. **Peer-rated reviews** — Other verified buyers of the same product can rate any review as helpful, accurate, or misleading. This peer validation feeds directly into the reviewer's trust score. Gaming requires multiple verified purchasers to collude — far harder than creating fake accounts.
-4. **Trust score** — Anyone who bought a product can review it immediately. Commission and review weight grow as trust builds. Trust score is based on: peer ratings from other verified buyers, parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. Higher trust = higher commission share and more prominent placement. Misleading reviews tank your score.
+4. **Trust score (graph-based propagation)** — Anyone who bought a product can review it immediately. Commission and review weight grow as trust builds. Trust is computed using **EigenTrust-style graph propagation** — ratings from already-trusted users carry more weight than ratings from new/untrusted users. This makes review rings and reciprocal rating schemes ineffective (colluding accounts amplify each other's low-trust signals, not high-trust ones).
+
+   **Inputs:** peer ratings from other verified buyers, parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. **Computation:** iterative trust propagation over the reviewer-rates-reviewer graph, converging to a global trust vector. Higher trust = higher commission share and more prominent placement. Misleading reviews tank your score — and because trust propagates, tanking one account's score reduces the weight of every account that endorsed it.
 
 You earn by being useful and accurate. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
+
+### EigenTrust Propagation
+
+```mermaid
+graph LR
+    A[Reviewer A] -->|rates B's review| B[Reviewer B]
+    B -->|trust score influences<br/>weight of ratings| P[Product Ratings]
+    B -->|rates C positively| C[Reviewer C]
+
+    subgraph "Trusted path"
+        B -->|B is trusted| C
+        C -->|C gets trust boost| P
+    end
+
+    subgraph "Untrusted path"
+        X[Untrusted Account] -->|endorses| Y[Untrusted Account]
+        Y -->|endorses| Z[Untrusted Account]
+        X -.->|low weight| P
+        Y -.->|low weight| P
+        Z -.->|low weight| P
+    end
+
+    style X fill:#fbb,stroke:#333
+    style Y fill:#fbb,stroke:#333
+    style Z fill:#fbb,stroke:#333
+    style A fill:#bfb,stroke:#333
+    style B fill:#bfb,stroke:#333
+    style C fill:#bfb,stroke:#333
+```
+
+Colluding rings of untrusted accounts amplify low-trust signals, not high-trust ones. Mutual endorsement among untrusted accounts does not bootstrap credibility — it reinforces their low weight in the global trust vector.
 
 ## What's NOT in the MVP
 
@@ -166,7 +259,7 @@ You earn by being useful and accurate. Gaming requires consistently fooling buye
 | Political coordination | Emerges naturally once membership hits critical mass |
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
 | Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |
-| Translation | Complex AI problem — add once core platform is stable |
+| Translation between users (perfect quality) | Self-hosted neural MT ships with Milestone 1. Quality improves continuously via user feedback. |
 | Federation | Single instance first — federation is a goal, not yet designed |
 
 ## Marketplace Listing Policy

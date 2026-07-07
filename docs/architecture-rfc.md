@@ -8,11 +8,13 @@ If you're a senior engineer and you can do better — please do. Open an issue, 
 
 ## What the System Needs to Do
 
-1. **Identity:** Verify unique humans via KYC providers. One person, one account.
-2. **Discussion:** Posts, comments, voting (upvote/downvote), topic communities. Real-time updates.
-3. **Marketplace:** Aggregated listings from major platforms, verified reviews, search, categories.
-4. **Payments:** Platform does not process money. It records transactions between verified parties who use existing rails (UPI, SEPA, ACH, direct bank transfer). See [Payments](payments.md).
-5. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
+1. **Identity:** Verify unique humans via KYC providers. One person, one account. Opt-in verified attributes. ZK proof credential issuance for ecosystem use.
+2. **Discussion:** Posts, comments, voting (upvote/downvote), topic communities. Real-time updates. E2E encrypted DMs and group chat (MLS protocol). Real-time neural translation across languages.
+3. **Marketplace:** Aggregated listings from major platforms, verified reviews, search, categories. Wilson score ranking. EigenTrust-based reviewer trust propagation.
+4. **Contracts:** Template library, digital signing, immutable storage, payment tracking, reminders. Structured ODR for dispute resolution.
+5. **Moderation:** ML triage classifiers (community-norm-trained) flag content for human vote. Anti-brigading graph analysis. CSAM hash-matching (legal mandate).
+6. **Payments:** Platform does not process money. It records transactions between verified parties who use existing rails (UPI, SEPA, ACH, direct bank transfer). See [Payments](payments.md).
+7. **Governance:** Proposals, voting, elections, no-confidence motions, transparent decision logs.
 
 ## Architecture: Modular Monolith
 
@@ -32,14 +34,18 @@ One deployable unit. Clear internal module boundaries. Splits into services late
 ```
 src/
 ├── modules/
-│   ├── identity/       # Verification, auth, sessions, membership
-│   ├── discussion/     # Boards, threads, comments, chat, moderation
-│   ├── marketplace/    # Product aggregation, reviews, affiliate links
+│   ├── identity/       # Verification, auth, sessions, membership, ZK credentials
+│   ├── discussion/     # Boards, threads, comments, chat (E2E encrypted), moderation
+│   ├── marketplace/    # Product aggregation, reviews, affiliate links, trust scoring
 │   ├── governance/     # Proposals, elections, voting, no-confidence
+│   ├── contracts/      # Templates, signing, storage, reminders, ODR engine
+│   ├── translation/    # Self-hosted neural MT (NLLB/SeamlessM4T), quality feedback
+│   ├── moderation/     # ML triage classifiers, community vote orchestration, anti-brigading
+│   ├── trust/          # EigenTrust graph computation, reviewer scoring, collusion detection
 │   └── shared/         # Common utilities, middleware, types
 ├── api/                # Route handlers (thin — delegates to modules)
 ├── db/                 # Schema, migrations (single database)
-└── workers/            # Background jobs (email, OTP, webhooks)
+└── workers/            # Background jobs (email, OTP, webhooks, translation, trust recompute)
 ```
 
 Each module:
@@ -63,6 +69,12 @@ Each module:
 | CI/CD | GitHub Actions | Free for public repos. |
 | Monitoring | Uptime + error tracking (Sentry free tier) | Enough for early stage. Prometheus/Grafana when self-hosting. |
 | Content Safety | PhotoDNA or equivalent CSAM hash-matching | Legal obligation under IT Act Section 67B. Must be integrated before UGC goes live. |
+| Translation | NLLB-200 or SeamlessM4T (self-hosted) | Real-time neural translation. Self-hosted = no user content leaves infrastructure. GPU inference required. |
+| Moderation ML | Fine-tuned classifiers (community norms) | Triage layer — flags content for human review. Never auto-removes (except CSAM). Retrained on community vote outcomes. |
+| Trust Engine | EigenTrust-style graph propagation | Iterative trust scoring over reviewer graph. Resists review rings and collusion. |
+| E2E Encryption | MLS protocol (RFC 9420) | DMs and group chat are end-to-end encrypted. Platform cannot read private messages. Public boards remain unencrypted (content is public). |
+| Dispute Resolution | Structured ODR engine | Guided negotiation, precedent surfacing, resolution range suggestions. Escalates to human mediators only when needed. |
+| ZK Proofs | circom/snarkjs + Semaphore | On-device proof generation for ecosystem identity. Phase 2 infrastructure. |
 
 ### Design Principles
 
@@ -83,7 +95,6 @@ Each module:
 | API Gateway (Kong/Traefik) | Unnecessary with a monolith. Next.js middleware handles auth and rate limiting. |
 | Message broker (NATS/RabbitMQ) | BullMQ handles async jobs. Event-driven architecture added when modules actually need to decouple. |
 | Native mobile app | PWA first. Native when there are contributors for it. |
-| Self-hosted AI translation | Use external APIs if needed. Self-hosting ML models is ops-intensive. |
 
 ### Database Schema Principles
 

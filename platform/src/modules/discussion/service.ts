@@ -5,7 +5,9 @@
  * - Boards (create, list)
  * - Posts (create, read, thread)
  * - Voting (one person, one vote — requires verified identity)
- * - Moderation (two-flag system: community flags → mod queue → action)
+ * - Moderation (ML triage → community vote → human decision)
+ * - E2E encrypted DMs and group chat (MLS protocol)
+ * - Real-time translation (NLLB/SeamlessM4T)
  *
  * See: /docs/mvp.md (discussion + moderation sections)
  *
@@ -48,3 +50,5 @@ export async function getPostsByBoard(boardId: string) {
 // export async function flagPost(postId: string, userId: string, reason: string) {}
 // export async function getModQueue() {}
 // export async function moderatePost(postId: string, action: 'remove' | 'dismiss') {}
+// export async function translateContent(content: string, targetLang: string) {}
+// export async function triggerMLTriage(postId: string) {}

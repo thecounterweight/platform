@@ -6,7 +6,7 @@
 
 ## 1. Opening (30 seconds)
 
-Should we build a review and discussion platform that's owned by its users?
+Should we build a review and discussion platform that can never be sold, where every participant is a verified real person?
 
 I'm Manoj Sihag. I'm proposing one. It's called The Counterweight. I can't build it alone, so I want to show you the design and you can decide if it's worth building together.
 
@@ -64,7 +64,7 @@ The company is founded normally — but an irrevocable purpose trust holds a gol
 
 We explored making every user a legal co-owner — a million-member LLC. It doesn't work at scale. No precedent, tax nightmare, impossible to fund. So instead: the founder operates, the trust protects, users govern through elected positions and constitutional rights. Changes to the constitution require 75% supermajority of verified users.
 
-Anyone can invest any amount. What investors get is a time-bounded share of revenue. A percentage for a defined period, then it ends. The platform stays community-owned. Early investors take more risk, so they get better terms.
+Anyone can invest any amount. What investors get is a time-bounded share of revenue. A percentage for a defined period, then it ends. The platform stays structurally protected — it can't be sold regardless of who invests. Early investors take more risk, so they get better terms.
 
 Once the platform has enough members, the terms of every funding round are decided by a bicameral vote. Investors and users each get equal say. Both sides must agree or the round doesn't happen.
 
@@ -122,7 +122,7 @@ I need lawyers. Purpose trust structuring, Indian company law, data protection. 
 
 I need domain experts who can define what "quality" means in their field and volunteer as the first evaluators.
 
-Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors earn bonus units — additive, capped, market-aligned. Details are in the docs — read them, decide if the terms are fair.
+Contributions are tracked. When revenue flows, contributors get paid proportional to what they built. Early contributors earn 30-120x their raw hours — deliberately above market rate because there's no equity. We compensate like founders, not employees. Details are in the docs — read them, decide if the terms are fair.
 
 ---
 

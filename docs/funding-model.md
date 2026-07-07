@@ -2,7 +2,7 @@
 
 ## How We Raise Money
 
-Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-owned.
+Revenue-share agreements. Not equity. Not donations. Investors put money in, get a share of platform revenue for a fixed period, then it ends. The platform stays community-governed and structurally protected.
 
 **Legal entity:** A founder-owned company (initially LLC or Private Limited) with an irrevocable purpose trust holding a golden share. The trust structurally prevents sale, mission abandonment, or removal of user protections — regardless of who runs the company or who invests.
 
@@ -22,6 +22,27 @@ The trust model (Patagonia, Signal, Mozilla) provides equivalent structural prot
 1. **Operating company** — Founded and owned by the founder. Normal corporate operations. Can raise capital, hire, sign contracts, hold bank accounts.
 2. **Irrevocable purpose trust** — Holds a golden share with veto power. The trust's purposes are defined at creation and cannot be changed by the founder, the company, or any future owner.
 3. **User-elected advisory board** — Elected by verified users. The trust is bound to act on the board's recommendation when exercising its veto — this is not advisory in the "we'll consider it" sense. If the board says "veto this sale," the trust vetoes. If the board says "this doesn't violate the mission," the trust stands down. The trust deed encodes this obligation.
+
+### Trust Structure
+
+```mermaid
+graph TD
+    OC[Operating Company<br/>founder-owned]
+    IPT[Irrevocable Purpose Trust<br/>holds golden share]
+    UEAB[User-Elected Advisory Board<br/>elected by verified users]
+    T[Trustees<br/>3 independent: institutional,<br/>user-elected board member,<br/>professional]
+
+    IPT -->|golden share veto| OC
+    UEAB -->|binding recommendation| IPT
+    T -->|govern| IPT
+
+    OC -.-|founder excluded| IPT
+
+    style IPT fill:#f9f,stroke:#333
+    style UEAB fill:#bbf,stroke:#333
+    style OC fill:#bfb,stroke:#333
+    style T fill:#fdb,stroke:#333
+```
 
 **Who are the trustees:**
 
@@ -70,6 +91,30 @@ This is the difference between "founder-owned" and "founder-enriched." The found
 - Unamendable clauses mirror Principles 0, 4, 9
 - Trustees are independent (institutional + user-elected + professional)
 - Advisory board recommendation binds the trust (not merely consultative)
+
+**Trust jurisdiction:**
+
+The trust is formed in a jurisdiction with strong, battle-tested purpose trust law — likely Jersey, Cayman, or BVI (decades of case law, well-understood by courts). The operating company remains Indian. This is standard for protective structures — the trust's legal home is wherever it's most defensible, not necessarily where the company operates. Indian trust law (Indian Trusts Act 1882) is designed for beneficiary trusts, not purpose trusts — using it would mean untested legal territory.
+
+**Trustee vacancy and continuity:**
+
+- **Staggered terms:** Trustees serve 5-year terms offset by 2 years. All three can never expire simultaneously.
+- **Resignation takes effect only when replacement is seated.** An outgoing trustee cannot abandon the role — they remain until a successor is confirmed by the advisory board. This is standard trust deed language.
+- **Fallback appointor:** If all trustees are simultaneously incapacitated (death, legal incapacity), the trust deed names an institutional fallback appointor (e.g., the Law Society of the trust jurisdiction, or a named university) who must appoint replacement trustees within 30 days.
+- **Automatic freeze:** If trustee count drops below 2 for any reason, all company decisions above routine operations (>$5,000, any structural change, any hiring) are frozen until replacements are seated. The company can keep the lights on but cannot make material decisions.
+
+**Advisory board before 10,000 members:**
+
+The binding advisory board mechanism activates at 10,000 verified members (the first election). Before that threshold:
+
+- The trust exists from day one with independent trustees
+- Trustees exercise independent judgment on whether to deploy the golden share veto
+- No advisory board exists to bind their decision — trustees act on their own assessment of whether an action violates the trust's purposes
+- The founder has no special authority over the trust at any point — trustees are always independent of the founder
+- Once 10,000 members is reached, the first advisory board election happens within 90 days
+- After that election, the binding mechanism activates — trustees must follow board recommendations
+
+This is an honest gap: pre-10K, the trust is less constrained (trustees act independently rather than being bound by user recommendation). The mitigation is that trustees are institutional and professional — their reputational incentive is to be conservative, not permissive. And the gap closes automatically at 10K.
 
 **What happens if the founder leaves:**
 - Company continues operating under whoever the board/members elect
@@ -311,7 +356,7 @@ Spending is transparent and publicly auditable. The community can see where ever
 ## Why This Structure
 
 - **For investors**: returns tied to real revenue. Higher risk rounds get better terms. Say in the terms themselves.
-- **For users**: platform stays community-owned. Users have equal blocking power on any deal.
+- **For users**: platform stays structurally protected. Users have equal blocking power on any deal.
 - **For the platform**: capital flows in without giving up ownership. Time-bounded obligations mean it eventually runs self-sustaining.
 
 ## Revenue Share Ceiling
