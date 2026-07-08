@@ -6,13 +6,13 @@
 
 ## 1. What we're building (3 minutes)
 
-I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. Your data cannot be monetized, sold, or repurposed. That restriction is written into the platform's constitution and enforced by an irrevocable purpose trust — no future leadership can change it.
+I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. Your identity data never reaches our servers. It stays on your device. The platform cannot misuse data it never received — and an irrevocable purpose trust makes this architecture permanent.
 
 It's called The Counterweight.
 
 The problem: the internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts.
 
-So we verify identity. One account per human. Government ID through a KYC provider, irreversible hash stored for deduplication, raw data discarded immediately.
+So we verify identity. One account per human. A KYC provider verifies you and issues a signed credential directly to your device. The platform receives only an irreversible deduplication hash — your identity data never touches our servers.
 
 What verified identity enables: reviews tied to persistent reputations that can't be reset. One-person-one-vote governance. Moderation where getting banned is a real cost. Contracts between parties who are both identified and accountable.
 
@@ -30,9 +30,9 @@ Verification grants constitutional rights — encoded in the company's Articles 
 
 Specifically: one vote in governance, right to stand for elected positions, legal standing to sue if the company violates its commitments.
 
-Your data: the platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
+Your data: identity information never reaches platform servers. It lives on your device in a signed credential from the KYC provider — tamper-proof, under your control. The platform stores only a deduplication hash. When a feature needs to verify an attribute — age bracket, district — your app presents a signed claim from the credential. The platform checks the signature, doesn't store the result. Stateless verification.
 
-An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. No future leadership can monetize your data or sell the platform. Same structure Patagonia uses.
+An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. The architecture already prevents data misuse (we don't have it), and the trust ensures no future leadership can change that architecture. Same structure Patagonia uses.
 
 ---
 

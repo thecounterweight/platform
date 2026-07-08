@@ -11,9 +11,9 @@ export default function Home() {
         </h1>
         <p className="mt-4 text-lg md:text-xl text-zinc-400 max-w-2xl">
           A platform where every user is verified through government ID.
-          One account per human. Your data cannot be monetized, sold, or repurposed —
-          that restriction is written into the platform&apos;s constitution and enforced by an
-          irrevocable purpose trust. No future leadership can change it.
+          One account per human. Your identity data never reaches our servers —
+          it stays on your device. The platform cannot misuse data it never received.
+          An irrevocable purpose trust makes this architecture permanent.
         </p>
         <p className="mt-6 text-base text-zinc-300 max-w-xl">
           Constitutional rights for users. Open-source. Structurally impossible to sell.
@@ -87,9 +87,10 @@ export default function Home() {
           <div>
             <h3 className="font-semibold text-zinc-100">Your data stays yours</h3>
             <p className="text-zinc-400 mt-1">
-              Raw ID number never stored — only an irreversible hash for deduplication. No profiling.
-              No data monetization. Optional attributes are categorical only (district not address, age bracket not DOB).
-              Revocable any time. The purpose trust prevents any future leadership from changing this.
+              Identity data never reaches our servers. The KYC provider issues a signed credential
+              directly to your device — only an irreversible deduplication hash is sent to the platform.
+              Attributes (district, age bracket) stay on-device and are presented only when you choose.
+              The platform cannot misuse data it never received.
             </p>
           </div>
           <div>

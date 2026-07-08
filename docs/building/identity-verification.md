@@ -8,35 +8,51 @@ Every account on the platform must belong to a unique, real human. This is non-n
 
 ## Proposed Design (Three Layers)
 
-### Layer 1 — Government Identity Verification
+### Layer 1 — Government Identity Verification (Device-Local)
 
-Verification is handled through existing KYC providers who already have government API access:
+Verification is handled through existing KYC providers who already have government API access. The critical design choice: **identity data stays on the user's device. The platform never receives raw identity information.**
 
-- **India:** Digio, Signzy, IDfy, or similar — they hold DigiLocker/Aadhaar eKYC licenses. We use their APIs. No license needed on our end.
-- **EU:** eIDAS-compliant providers (Onfido, Jumio, etc.)
+**How it works:**
+
+1. User initiates verification from the app
+2. KYC provider verifies the user's identity (Aadhaar eKYC, passport scan, etc.)
+3. Provider issues a **signed credential** directly to the user's device — containing verified attributes (name, age bracket, district, etc.) and a unique deduplication hash
+4. The credential is cryptographically signed by the provider — the user cannot modify it without invalidating the signature
+5. Only the provider-signed **deduplication hash** is sent to the platform server — for one-account-per-human enforcement
+6. All other identity data remains on-device, never transmitted to the platform
+
+**Providers:**
+
+- **India:** Digio, Signzy, IDfy — they hold DigiLocker/Aadhaar eKYC licenses. DigiLocker already issues signed credentials to user devices. Aadhaar offline KYC produces a signed XML on the user's device.
+- **EU:** eIDAS 2.0 Digital Identity Wallet — built on exactly this model (credentials issued to device, selective disclosure to verifiers)
 - **UK:** GOV.UK Verify via authorized identity providers
 - **US:** ID.me, Persona, or similar
 - **Others:** Added as the platform expands — always through a licensed local provider
 
 The platform does not hold a government API license directly. We integrate with providers who do. This removes the regulatory dependency — no 12-18 month license wait, no risk of denial. If one provider is unavailable, we switch to another.
 
+**Why providers support this:** Regulators are actively pushing this model (GDPR, India's DPDPA). Providers prefer it because it reduces their liability — they issue the credential and exit the loop.
+
 **Cost:** KYC providers charge ₹5-20 per verification in India, $1-3 elsewhere. Passed to the user as a one-time registration fee.
 
-**What this proves:** You are a real person with a government-issued identity. You are unique (no duplicate accounts).
+**What this proves:** You are a real person with a government-issued identity. You are unique (no duplicate accounts). The platform proved this without ever seeing your identity data.
 
 ### Deduplication — How "One Person, One Account" Actually Works
 
-The one-account guarantee requires detecting if someone has already registered. Different strategies for different situations:
+The one-account guarantee requires detecting if someone has already registered. The platform needs exactly one piece of information: a unique, irreversible identifier per person. Nothing else.
 
-**Primary (India — 95% of users): HMAC of Aadhaar number**
+**Primary (India — 95% of users): Provider-computed HMAC of Aadhaar number**
 
-1. User verifies via KYC provider (Digio/Signzy). Provider returns the Aadhaar number as part of verification.
-2. Platform immediately computes HMAC-SHA256(server_secret_key, aadhaar_number).
-3. Raw Aadhaar number is discarded — never stored, never logged.
-4. The HMAC is checked against existing records. Match = duplicate account attempt, rejected.
+1. User verifies via KYC provider (Digio/Signzy) — provider confirms identity.
+2. **Provider computes** HMAC-SHA256(platform_secret_key, aadhaar_number) as part of credential issuance.
+3. The HMAC is included in the signed credential sent to the user's device, and separately transmitted to the platform server.
+4. Platform checks the HMAC against existing records. Match = duplicate account attempt, rejected.
 5. No match = new user, HMAC stored.
+6. The raw Aadhaar number never leaves the provider's system. The platform never sees it.
 
-Why HMAC and not plain hash: Aadhaar is 12 digits (10^12 possibilities) — a plain SHA-256 hash is brute-forceable in hours. HMAC with a secret key means the hash cannot be reversed without the key. Key is stored in a hardware security module (HSM) or secrets manager, separate from the database.
+**Key exchange for HMAC computation:** The platform provides a public key to the KYC provider. The provider uses a derived shared secret (via ECDH or similar) to compute the HMAC. This ensures the platform can verify the HMAC's correctness without ever handling the raw ID number.
+
+Why HMAC and not plain hash: Aadhaar is 12 digits (10^12 possibilities) — a plain SHA-256 hash is brute-forceable in hours. HMAC with a secret key means the hash cannot be reversed without the key.
 
 **Fallback (no Aadhaar, international users): Face deduplication (1:N matching)**
 
@@ -56,7 +72,7 @@ The platform never stores face embeddings or biometric templates. The KYC provid
 
 **International expansion:** Each country gets a primary dedup ID where one exists (SSN in US, National Insurance number in UK, BSN in Netherlands). Face dedup is the universal fallback for countries without a single dominant identifier.
 
-**Provider switching (primary path):** The HMAC is stored in your database, computed with your key. If you switch KYC providers, deduplication continues working — the HMAC doesn't depend on which provider verified the user. Only face-dedup users are affected by provider changes.
+**Provider switching (primary path):** The HMAC is stored in the platform's database, computed with the platform's key. If you switch KYC providers, deduplication continues working — the HMAC doesn't depend on which provider verified the user. Only face-dedup users are affected by provider changes.
 
 ### Layer 2 — Face Scan (Liveness Check)
 
@@ -122,17 +138,18 @@ graph TD
 
 ## Privacy Guarantees
 
-These are non-negotiable platform commitments:
+These are non-negotiable platform commitments — and they are architecturally enforced, not just policy. The platform cannot misuse identity data because it never receives it.
 
 | Guarantee | What it means |
 |-----------|---------------|
-| No storage of raw documents | The platform verifies and discards. No passport scans, no Aadhaar numbers stored. Raw ID numbers are processed in memory and immediately discarded after HMAC computation. |
-| No selling or sharing | Identity data never leaves the platform. Never sold to third parties. Never used for advertising. |
-| No profiling from verification | Verification itself is a yes/no gate — nothing is extracted from your ID beyond the HMAC. Attributes (age bracket, district, gender) are only stored if you explicitly opt in later. |
-| Minimum data principle | Only an HMAC (keyed hash) of your ID number is stored — enough to prevent duplicate accounts, nothing more. The raw number is never persisted. |
-| Non-reversible storage | Even if the database leaks, no one can reverse the HMAC to your ID number without the secret key (stored separately in HSM/secrets manager). |
+| Identity data never reaches the platform | Raw identity information (name, ID number, address, DOB) stays on the user's device. The platform receives only a deduplication hash — computed by the KYC provider, irreversible, containing no personal information. |
+| No selling or sharing | There is nothing to sell. The platform holds a hash and a pass/fail status. No identity data exists on platform servers. |
+| No profiling from verification | Verification produces a hash for dedup and a pass/fail. Attributes (age bracket, district, gender) live on-device and are presented only when the user chooses to prove them. |
+| Minimum data principle | The platform stores: one HMAC per user (for dedup), verification status (pass/fail), timestamp. Nothing else. |
+| Non-reversible storage | Even if the database leaks, no one can reverse the HMAC to an ID number without the key derivation secret (stored separately in HSM/secrets manager). |
 | Face data: platform never stores | For face-dedup users, the KYC provider maintains face embeddings for 1:N matching. The platform receives only pass/fail — no biometric data touches our systems. |
 | Liveness checks not retained | Liveness checks for high-stakes actions produce pass/fail. Biometric data is processed in real-time by the provider and discarded. |
+| Device-local credentials | The signed credential on your device is the source of truth. If you delete it, re-verification with the KYC provider reissues it. The platform has no copy. |
 | Open-source verification logic | Anyone can audit exactly what data flows where. No black boxes. |
 
 ## Two Paths: Anonymous or Public Identity
@@ -260,14 +277,14 @@ The platform's value comes from verified identity — trusted reviews, one-perso
 
 **Path to full access:** As governments expand digital ID systems (India went from ~50% to ~95% Aadhaar coverage in a decade), more people gain access to full verification. The platform doesn't solve the ID gap — it works within it while remaining useful to those affected.
 
-## Verified Attributes (Opt-In)
+## Verified Attributes (Opt-In, Device-Local)
 
-Verification produces a pass/fail and a deduplication HMAC. Nothing else is extracted from your ID. But users can opt in to sharing categorical attributes that make the platform more useful — enabling features like geo-fenced voting, identity-gated communities, and age-appropriate spaces.
+The signed credential on your device contains verified attributes (age bracket, district, etc.). These stay on-device by default. When a platform feature requires an attribute (geo-fenced voting, age-gated communities), your app presents a signed proof from the credential — the platform verifies the provider's signature without ever storing the underlying data.
 
-### What Gets Stored (Only If You Opt In)
+### What's In the Credential (On Your Device)
 
-| Attribute | Granularity | What's stored | What's NOT stored |
-|-----------|-------------|---------------|-------------------|
+| Attribute | Granularity | What's in the credential | What's NOT in the credential |
+|-----------|-------------|--------------------------|------------------------------|
 | Age | Bracket (18-25, 26-35, etc.) | Age bracket only | Date of birth, exact age |
 | Location | District / city | District name | Street address, pin code, GPS |
 | Gender | Category | Self-declared gender | — |
@@ -275,10 +292,11 @@ Verification produces a pass/fail and a deduplication HMAC. Nothing else is extr
 
 **Key principles:**
 - **Categorical, not precise.** District not address. Age bracket not DOB. Enough for the feature to work, not enough to identify you.
-- **Opt-in, not extracted.** Attributes are never pulled from your government ID during verification. You provide them separately, after verification, if you choose to.
-- **Revocable.** Remove any attribute at any time. Immediate deletion, not just hidden.
-- **Never exported.** Attributes are used on-platform only. No API exposes them to third parties. No advertising, no profiling, no data sales.
-- **Purpose-trust protected.** The irrevocable purpose trust prevents any future leadership from changing these data practices — selling data would violate the trust deed and trigger trustee intervention.
+- **Device-local by default.** Attributes stay on your device. When a feature needs verification (e.g., geo-fenced voting), your app presents a signed claim — the platform checks the provider's signature, not a stored copy.
+- **Nothing cached server-side.** The platform verifies the signed claim in real-time. It does not store the result. Each verification is stateless.
+- **Revocable.** Delete the credential from your device. Re-verification issues a fresh one. The platform has no copy to retain.
+- **Never exported.** No API exposes attributes to third parties. No advertising, no profiling, no data sales.
+- **Purpose-trust protected.** The irrevocable purpose trust prevents any future leadership from changing these data practices — the architecture enforces it (data doesn't exist server-side), and the trust deed provides legal enforcement on top.
 
 ### What This Enables
 
@@ -325,11 +343,12 @@ Zero-knowledge proofs let users prove attributes to third parties without reveal
 
 **How it works:**
 
-1. User has verified attributes stored on-platform (age bracket, district, etc.)
-2. User downloads a cryptographic credential to their device (signed by the platform)
-3. When a third-party service needs proof (e.g., "this person is 18+"), the user's device generates a ZK proof locally
-4. The third party verifies the proof cryptographically — no need to contact the platform
-5. The platform never knows which third parties the user authenticated with (unlinkability)
+1. User already has a signed credential on their device (issued during verification — the same credential used for on-platform attribute proofs)
+2. When a third-party service needs proof (e.g., "this person is 18+"), the user's device generates a ZK proof locally from the credential
+3. The third party verifies the proof cryptographically — no need to contact the platform
+4. The platform never knows which third parties the user authenticated with (unlinkability)
+
+The device-local credential architecture means ZK proofs for third parties require no additional infrastructure — the credential is already there.
 
 **What can be proved without revealing:**
 
@@ -403,29 +422,34 @@ We build this incrementally. Internal attributes first (simple, immediate value)
 
 ## Data Protection Compliance (DPDPA 2023, GDPR)
 
-The platform does not process or store biometric data or government ID documents directly. KYC providers (Digio, Signzy, etc.) handle all identity document processing. They are the Data Processors for biometric/ID data and carry their own compliance burden.
+The platform does not process, receive, or store identity data. KYC providers (Digio, Signzy, etc.) handle all identity document processing and issue signed credentials directly to the user's device. The platform's server never sees raw identity information.
 
 **What the platform stores:**
-- HMAC of the primary ID number (for deduplication — irreversible without the secret key, which is stored separately in HSM)
+- HMAC of the primary ID number (for deduplication — computed by the KYC provider, irreversible without the key derivation secret stored in HSM)
 - Verification status (pass/fail)
 - Timestamp
-- Optional profile data (only what the user explicitly provides)
 
 **What the platform does NOT store:**
-- Raw government ID numbers (processed in memory, discarded immediately after HMAC computation)
+- Raw government ID numbers — never transmitted to platform servers
 - Government ID documents or images
 - Face scan data or biometric templates (provider retains these for face-dedup users only)
+- Verified attributes (age, district, gender) — these live on-device in the signed credential
 - Any other data extracted from the ID document
+
+**What lives on the user's device:**
+- Signed credential from KYC provider containing verified attributes
+- Credential is tamper-proof (provider's cryptographic signature invalidates on modification)
+- User controls when and to whom attribute claims are presented
 
 **Compliance requirements (implemented before Milestone 2 launch):**
 - Privacy policy on the site — what data is collected, why, how long it's retained, who processes it
 - Explicit consent at verification — users informed what's processed and by whom before proceeding
 - Data Fiduciary registration under DPDPA 2023 (required once handling user data at scale)
 - Data Processing Agreement with KYC provider
-- Right to erasure — users can request deletion of their account and associated data
+- Right to erasure — users can request deletion of their account and associated HMAC
 - In EU: GDPR compliance via eIDAS-compliant providers who handle their own DPIAs
 
-The KYC provider handles the heavy lifting (biometric processing, document verification, secure storage during processing). The platform's data footprint is minimal by design — we store the result, not the evidence.
+The platform's data footprint is near-zero by architecture. There is no identity data to breach, sell, or misuse — because it was never received.
 
 ## What This Is
 
