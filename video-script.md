@@ -28,7 +28,7 @@ Revenue comes from affiliate commissions on product reviews. No ads. No data sel
 
 Verification grants constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page.
 
-Specifically: one vote in governance, revenue share when the platform earns, right to stand for elected positions, legal standing to sue if the company violates its commitments.
+Specifically: one vote in governance, right to stand for elected positions, legal standing to sue if the company violates its commitments.
 
 Your data: the platform stores an irreversible hash of your ID — enough to prevent duplicates, nothing more. No profiling. No monetization. If you opt in to sharing attributes — age bracket, district, language — they're categorical only. District, not address. Age bracket, not date of birth. Revocable any time.
 

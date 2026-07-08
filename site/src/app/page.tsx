@@ -80,7 +80,7 @@ export default function Home() {
             <h3 className="font-semibold text-zinc-100">Constitutional rights</h3>
             <p className="text-zinc-400 mt-1">
               Verification gives you legally enforceable rights encoded in the company&apos;s Articles of Association.
-              One vote in governance. Revenue share. Right to stand for elected positions. Legal standing to
+              One vote in governance. Right to stand for elected positions. Legal standing to
               sue if the company violates its commitments.
             </p>
           </div>

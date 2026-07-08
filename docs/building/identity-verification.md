@@ -199,7 +199,6 @@ Completing identity verification grants you constitutional rights on the platfor
 **What verification gives you:**
 - One vote in all governance decisions (elections, amendments, no-confidence)
 - Right to stand for elected positions (moderator, safety team, community lead)
-- Revenue-share rights as defined in the constitutional documents
 - Legal standing to sue if the company violates its constitutional commitments
 - No citizenship or residency requirement — works for any nationality
 

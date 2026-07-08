@@ -62,7 +62,6 @@ This is the most important structural decision — if the founder picks pliant t
 
 **What the constitutional documents guarantee users (enforceable — in Articles/OA, not just ToS):**
 - One person, one vote in governance elections
-- Revenue-share rights (as defined in the constitution)
 - Right to stand for elected positions
 - Data sovereignty (export, delete, no sale to third parties)
 - Transparency of all financial and governance decisions
