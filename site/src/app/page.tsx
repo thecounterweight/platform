@@ -130,7 +130,7 @@ export default function Home() {
         <div className="text-zinc-300 text-lg space-y-2">
           <p>Next.js (PWA) + TypeScript + PostgreSQL + Redis + BullMQ. Modular monolith — clear module boundaries, ships as one unit.</p>
           <p className="text-zinc-400 text-base">
-            Full architecture doc in <a href="/docs/architecture-rfc" className="underline hover:text-zinc-200">the RFC</a>. Boring technology, deployable by one person.
+            Full architecture doc in <a href="/docs/architecture-rfc" className="underline hover:text-zinc-200">the RFC</a>. Standard infrastructure. No novel technology. One engineer can deploy and operate it through early growth.
           </p>
         </div>
       </section>
