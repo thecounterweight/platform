@@ -10,7 +10,7 @@ I'm Manoj Sihag. I'm proposing a platform where every user is verified through g
 
 It's called The Counterweight.
 
-The problem: platforms don't verify that their users are real. Fake reviews, bot accounts, and sybil attacks are trivial to execute. Democratic governance on platforms has never worked because one person can control thousands of accounts. The platforms that could fix this have no incentive to — their revenue models don't require accuracy.
+The problem: the internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts.
 
 So we verify identity. One account per human. Government ID through a KYC provider, irreversible hash stored for deduplication, raw data discarded immediately.
 

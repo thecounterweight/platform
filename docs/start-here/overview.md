@@ -2,7 +2,7 @@
 
 ## The Problem
 
-Platforms don't verify that their users are real. This makes fake reviews, bot accounts, and sybil attacks trivial. Platforms that could fix this have no financial incentive to — engagement-based revenue models don't require accuracy.
+The internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity.
 
 Separately, platforms can be sold or have their policies changed unilaterally. Users have no structural recourse.
 

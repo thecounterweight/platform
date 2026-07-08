@@ -2,7 +2,7 @@
 
 ## The Problem
 
-Platforms don't verify identity. This makes fake reviews, bot farms, and sybil attacks cheap to execute. Democratic governance on platforms has never worked because one person can control thousands of accounts. Platforms can be sold — users have no structural say in that decision.
+The internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts. Platforms can be sold — users have no structural say in that decision.
 
 ## The Core Idea
 
