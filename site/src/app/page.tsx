@@ -154,7 +154,7 @@ export default function Home() {
         </div>
         <p className="mt-6 text-zinc-400 text-base">
           One-person project looking for contributors. Design documented, scaffold ready, issues open.
-          Contributors earn 30-120x their hours in revenue-share units — details in the{" "}
+          Contributors earn revenue-share units proportional to time and complexity — details in the{" "}
           <a href="/docs/builder-compensation" className="underline hover:text-zinc-200">compensation docs</a>.
         </p>
       </section>
