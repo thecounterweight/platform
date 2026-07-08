@@ -26,18 +26,19 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">What this is</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Data protection is a constitutional constraint, not a policy choice. The platform stores
-            an irreversible hash of your ID for deduplication — raw numbers are never kept. No profiling,
-            no monetization. The irrevocable purpose trust makes this permanent — no future CEO, board,
-            or acquirer can change it. Verification happens through a KYC provider (Digio, Signzy, or similar).
+            Verified people discussing, reviewing products, governing the platform, and entering
+            enforceable contracts with each other. Every review is tied to a persistent identity
+            that can&apos;t be reset — ranked by statistical accuracy (Wilson score interval), not
+            popularity or recency.
           </p>
           <p>
-            Real-time neural translation (self-hosted, no user content leaves infrastructure) enables
-            cross-language discussion. Product reviews are tied to persistent verified identities and
-            ranked by statistical accuracy (Wilson score interval). Governance operates on one-person-one-vote.
+            Real-time neural translation (self-hosted — no user content leaves infrastructure) means
+            someone posting in Tamil and someone reading in Hindi see each other natively. No language
+            silos.
           </p>
           <p>
-            Revenue comes from affiliate commissions on product reviews. No ads. No data selling.
+            Governance operates on one-person-one-vote. Revenue comes from affiliate commissions on
+            product reviews. No ads.
           </p>
         </div>
       </section>
