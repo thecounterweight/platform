@@ -21,96 +21,90 @@ export default function Home() {
         <Counter />
       </section>
 
-      {/* What this is */}
+      {/* What you do here */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">What this is</h2>
+        <h2 className="text-2xl font-bold mb-6">What you do here</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Verified people discussing, reviewing products, governing the platform, and entering
-            enforceable contracts with each other. Every review is tied to a persistent identity
-            that can&apos;t be reset — ranked by statistical accuracy (Wilson score interval), not
-            popularity or recency.
+            Once verified, you&apos;re in a space where every person is real. No bots. No fake accounts.
+            Every interaction is with a verified human.
           </p>
           <p>
-            Real-time neural translation (self-hosted — no user content leaves infrastructure) means
-            someone posting in Tamil and someone reading in Hindi see each other natively. No language
-            silos.
+            You choose how to show up. Anonymous — verified but pseudonymous, full access, full privacy.
+            Or you build a public profile: a reputation ledger showing where you&apos;re from, review accuracy,
+            trust score, certifications, time on platform. Granularity you control — change what&apos;s visible
+            any time.
           </p>
           <p>
-            Governance operates on one-person-one-vote. Revenue comes from affiliate commissions on
-            product reviews. No ads.
+            You read and write public content. You discuss. You organize. Real-time neural translation
+            (self-hosted — no user content leaves our infrastructure) means someone posting in Tamil and
+            someone reading in Hindi see each other natively. No language silos.
           </p>
         </div>
       </section>
 
-      {/* Two paths */}
+      {/* Marketplace */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Your identity, your choice</h2>
-        <div className="grid md:grid-cols-2 gap-6">
-          <div className="border border-zinc-800 rounded-lg p-6">
-            <h3 className="font-semibold text-zinc-100 mb-3">Anonymous</h3>
-            <p className="text-sm text-zinc-400">
-              You&apos;re verified but no one sees who you are. Full access, full privacy.
-              The system guarantees you&apos;re a real person — without revealing which one.
-            </p>
-          </div>
-          <div className="border border-zinc-800 rounded-lg p-6">
-            <h3 className="font-semibold text-zinc-100 mb-3">Public profile</h3>
-            <p className="text-sm text-zinc-400">
-              A reputation ledger — location, review accuracy, trust score, certifications, time on platform.
-              Accumulates from activity. Granularity you control.
-            </p>
-          </div>
+        <h2 className="text-2xl font-bold mb-6">How we make money</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            We have a marketplace. Products aggregated from different sources — major platforms via
+            affiliate APIs, plus community sellers listing directly.
+          </p>
+          <p>
+            You review products either with proof of purchase, or as an expert after reading the published
+            material. Reviews are tied to your persistent identity — you can&apos;t reset your reputation
+            and start over.
+          </p>
+          <p>
+            When someone buys based on your recommendation, they can rate your review — with proof of
+            purchase. We calculate a score based on how helpful you&apos;ve been to the community over time.
+            You get paid proportionally. People whose recommendations consistently help others earn more.
+            The algorithm is open-source, the scores are auditable.
+          </p>
+          <p>
+            We earn affiliate commissions on purchases made through the platform. No ads. No data selling.
+          </p>
         </div>
       </section>
 
-      {/* Structural guarantees */}
+      {/* User ownership */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Structural guarantees</h2>
-        <div className="space-y-6">
-          <div>
-            <h3 className="font-semibold text-zinc-100">Can&apos;t be sold</h3>
-            <p className="text-zinc-400 mt-1">
-              An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can
-              veto any sale, mission change, or removal of user protections. Legally binding. Same structure
-              Patagonia uses.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-zinc-100">Constitutional rights</h3>
-            <p className="text-zinc-400 mt-1">
-              Verification gives you legally enforceable rights encoded in the company&apos;s Articles of Association.
-              One vote in governance. Right to stand for elected positions. Legal standing to
-              sue if the company violates its commitments.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-zinc-100">Your data stays yours</h3>
-            <p className="text-zinc-400 mt-1">
-              Identity data never reaches our servers. The KYC provider issues a signed credential
-              directly to your device. Your phone and our server jointly compute a deduplication hash —
-              neither side sees the other&apos;s secret (OPRF protocol, RFC 9497). Attributes stay on-device.
-              The platform cannot misuse data it never received.
-            </p>
-          </div>
-          <div>
-            <h3 className="font-semibold text-zinc-100">User governed</h3>
-            <p className="text-zinc-400 mt-1">
-              One person, one vote. Moderators elected and removable. 60% majority, 7-day discussion.
-              No permanent admins. Constitutional changes require 75% supermajority.
-            </p>
-          </div>
+        <h2 className="text-2xl font-bold mb-6">You govern this</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            One person, one vote. Policies, features, moderation rules — decided by user vote.
+            Leaders are elected and removable via no-confidence motion (7-day discussion, 60% majority).
+            No permanent admins. Constitutional changes require 75% supermajority.
+          </p>
+          <p>
+            Verification gives you legally enforceable rights encoded in the company&apos;s Articles of
+            Association. One vote in governance. Right to stand for elected positions. Legal standing to
+            sue if the company violates its commitments.
+          </p>
+          <p>
+            An irrevocable purpose trust holds a golden share. Independent trustees — not the founder —
+            can veto any sale, any mission change, any removal of user protections. No future leadership
+            can change the architecture or sell the platform. Same structure Patagonia uses.
+          </p>
+          <p className="text-zinc-400">
+            Users don&apos;t hold equity — no one does. The trust structure gives you equivalent
+            structural protection without requiring you to be a shareholder of an entity you&apos;d
+            never meaningfully control.
+          </p>
         </div>
       </section>
 
       {/* What becomes possible */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">The identity layer is open infrastructure</h2>
+        <h2 className="text-2xl font-bold mb-6">What becomes possible on top</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Once millions of people are verified, others can build on it. Zero-knowledge proofs let you prove
-            attributes (&ldquo;I&apos;m 18+&rdquo;, &ldquo;I&apos;m a unique human&rdquo;, &ldquo;I&apos;m in Maharashtra&rdquo;)
-            to third-party services without revealing your identity. The platform never knows where you authenticate.
+            Once millions of people are verified, the identity layer becomes open infrastructure.
+            Zero-knowledge proofs let you prove attributes (&ldquo;I&apos;m 18+&rdquo;,
+            &ldquo;I&apos;m a unique human&rdquo;, &ldquo;I&apos;m in Maharashtra&rdquo;)
+            to third-party services without revealing your identity. The platform never knows
+            where you authenticate.
           </p>
           <div className="grid md:grid-cols-2 gap-3 text-sm text-zinc-400">
             <div className="border border-zinc-800 rounded-lg px-4 py-3">P2P lending with verified borrowers</div>
@@ -118,47 +112,30 @@ export default function Home() {
             <div className="border border-zinc-800 rounded-lg px-4 py-3">Local classifieds with accountable sellers</div>
             <div className="border border-zinc-800 rounded-lg px-4 py-3">Co-op governance with real one-person-one-vote</div>
             <div className="border border-zinc-800 rounded-lg px-4 py-3">Citizen journalism with verified sources</div>
-            <div className="border border-zinc-800 rounded-lg px-4 py-3">Mutual aid networks by geography</div>
+            <div className="border border-zinc-800 rounded-lg px-4 py-3">Contracts between verified parties</div>
           </div>
           <p className="text-zinc-400 text-base">
-            Community-serving projects verify proofs for free. Revenue-generating services pay a proportional fee.
+            Community-serving projects use the identity layer free. Revenue-generating services pay a
+            proportional fee. That fee ceiling is a constitutional bound.
           </p>
         </div>
       </section>
 
-      {/* Tech */}
+      {/* Builders */}
       <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Stack</h2>
-        <div className="text-zinc-300 text-lg space-y-2">
-          <p>Next.js (PWA) + TypeScript + PostgreSQL + Redis + BullMQ. Modular monolith — clear module boundaries, ships as one unit.</p>
-          <p className="text-zinc-400 text-base">
-            Full architecture doc in <a href="/docs/architecture-rfc" className="underline hover:text-zinc-200">the RFC</a>. Standard infrastructure. No novel technology. One engineer can deploy and operate it through early growth.
+        <h2 className="text-2xl font-bold mb-6">How it gets built</h2>
+        <div className="space-y-4 text-zinc-300 text-lg">
+          <p>
+            Open-source. Everything is documented — architecture, identity design, funding model,
+            compensation. All public on GitHub.
+          </p>
+          <p>
+            Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows,
+            it flows proportional to what you built. Complexity of work is accounted for. Early contributors
+            get higher multipliers to compensate for risk. Details in the{" "}
+            <a href="/docs/builder-compensation" className="underline hover:text-zinc-200">compensation docs</a>.
           </p>
         </div>
-      </section>
-
-      {/* Who */}
-      <section className="max-w-3xl mx-auto px-6 py-16">
-        <h2 className="text-2xl font-bold mb-6">Who&apos;s building this</h2>
-        <div className="flex items-start gap-4">
-          <div>
-            <p className="text-zinc-200 text-lg font-medium">Manoj Sihag</p>
-            <p className="text-zinc-400 text-base mt-1">
-              DevOps engineer building community infrastructure.
-            </p>
-            <a
-              href="https://github.com/manojsihag"
-              className="inline-block mt-2 text-sm text-zinc-400 underline hover:text-zinc-200"
-            >
-              GitHub
-            </a>
-          </div>
-        </div>
-        <p className="mt-6 text-zinc-400 text-base">
-          One-person project looking for contributors. Design documented, scaffold ready, issues open.
-          Contributors earn revenue-share units proportional to time and complexity — details in the{" "}
-          <a href="/docs/builder-compensation" className="underline hover:text-zinc-200">compensation docs</a>.
-        </p>
       </section>
 
       {/* Go deeper */}
@@ -179,7 +156,7 @@ export default function Home() {
           </a>
           <a href="/docs/architecture-rfc" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Architecture</h3>
-            <p className="text-sm text-zinc-400 mt-1">Modular monolith. Boring tech. Ships fast.</p>
+            <p className="text-sm text-zinc-400 mt-1">Technical design — open for debate.</p>
           </a>
           <a href="/docs/funding-model" className="border border-zinc-800 rounded-lg p-5 hover:border-zinc-600 transition-colors block">
             <h3 className="font-semibold text-zinc-100">Funding</h3>
