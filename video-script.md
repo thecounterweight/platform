@@ -4,74 +4,72 @@
 
 ---
 
-## 1. What we're building (3 minutes)
+## 1. The problem (1.5 minutes)
 
-I'm Manoj Sihag. I'm proposing a platform where every user is verified through government ID — one account per human. Your identity data never reaches our servers. It stays on your device. The platform cannot misuse data it never received — and an irrevocable purpose trust makes this architecture permanent.
+I'm Manoj Sihag. I'm building a platform called The Counterweight.
 
-It's called The Counterweight.
+The internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity.
 
-The problem: the internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts.
+So we verify identity. Every user is verified through government ID. One account per human.
 
-So we verify identity. One account per human. A KYC provider verifies you and issues a signed credential directly to your device. Your phone and our server then jointly compute a deduplication hash — using a protocol where the server never sees your ID number and your phone never sees the key. The platform stores only that hash. Your identity data never touches our servers.
-
-What verified identity enables: reviews tied to persistent reputations that can't be reset. One-person-one-vote governance. Moderation where getting banned is a real cost. Contracts between parties who are both identified and accountable.
-
-Real-time neural translation (self-hosted, no user content leaves infrastructure) means cross-language discussion works — someone in Tamil Nadu and someone in Rajasthan read each other natively.
-
-You choose how to exist on the platform. Anonymous — verified but pseudonymous, full access. Or you build a public profile: a reputation ledger showing location, review accuracy, trust score, certifications, time on platform. Granularity you control.
-
-Revenue comes from affiliate commissions on product reviews. No ads. No data selling.
+Your identity data never reaches our servers. A KYC provider verifies you and issues a signed credential directly to your device. Your phone and our server jointly compute a deduplication hash using a protocol where the server never sees your ID number and your phone never sees the key. The platform stores only that hash. There is no identity database to breach, sell, or misuse — and an irrevocable purpose trust makes this architecture permanent.
 
 ---
 
-## 2. Your rights (2 minutes)
+## 2. What you do here (2.5 minutes)
 
-Verification grants constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page.
+Once verified, you're in a space where every person is real. No bots. No fake accounts. Every interaction is with a verified human.
 
-Specifically: one vote in governance, right to stand for elected positions, legal standing to sue if the company violates its commitments.
+You choose how to show up. Anonymous — verified but pseudonymous, full access, full privacy. Or you build a public profile: a reputation ledger showing where you're from, review accuracy, trust score, certifications, time on platform. Granularity you control — change what's visible any time.
 
-Your data: identity information never reaches platform servers. It lives on your device in a signed credential from the KYC provider — tamper-proof, under your control. The platform stores only a deduplication hash, computed jointly by your phone and the server through a cryptographic protocol where neither side sees the other's secret. When a feature needs to verify an attribute — age bracket, district — your app presents a signed claim from the credential. The platform checks the signature, doesn't store the result.
+You read and write public content. You discuss. You organize. Real-time neural translation (self-hosted — no user content leaves our infrastructure) means someone posting in Tamil and someone reading in Hindi see each other natively. No language silos.
 
-An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. The architecture already prevents data misuse (we don't have it), and the trust ensures no future leadership can change that architecture. Same structure Patagonia uses.
+Governance operates on one-person-one-vote. Policies, features, moderation rules — decided by user vote. Leaders are elected and removable. No permanent admins. Constitutional changes require 75% supermajority.
+
+Verification also grants you constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page. One vote in governance. Right to stand for elected positions. Legal standing to sue if the company violates its commitments. An irrevocable purpose trust holds a golden share — independent trustees can veto any sale, any mission change, any removal of user protections. Same structure Patagonia uses.
 
 ---
 
-## 3. User governed (1.5 minutes)
+## 3. How we make money (2.5 minutes)
 
-Every verified user gets one vote. Verified identity prevents sybil attacks on governance — one person cannot create multiple accounts to outvote others.
+We have a marketplace. Products aggregated from different sources — major platforms via affiliate APIs, plus community sellers listing directly.
 
-Policies, features, moderation rules — decided by user vote. Leaders are elected and removable via no-confidence motion (7-day discussion, 60% majority). No permanent admins.
+You review products either with proof of purchase, or as an expert after reading the published material about the product. Reviews are tied to your persistent identity — you can't reset your reputation and start over.
 
-Moderation: content gets flagged, community votes on removal. ML classifiers triage at scale (prioritize what humans review) but never make removal decisions autonomously.
+When someone buys based on your recommendation, they can rate your review — again with proof of purchase. We calculate a score based on how helpful you've been to the community over time (Wilson score interval — statistically sound, accounts for both accuracy and sample size).
 
-Constitutional changes require 75% supermajority.
+You get paid proportionally to that score. People whose recommendations consistently help others earn more. People whose reviews are inaccurate or unhelpful earn less. The system is transparent — the algorithm is open-source, the scores are auditable.
+
+We earn affiliate commissions on purchases made through the platform. No ads. No data selling. Revenue flows from the actual value the marketplace creates — connecting buyers with trustworthy recommendations from verified humans.
+
+Other revenue streams at scale: talent pool (expert-certified professionals, companies pay to access), certification fees, and identity layer fees from third-party services.
 
 ---
 
 ## 4. What becomes possible on top (2 minutes)
 
-The identity layer is open infrastructure. Once millions of people are verified, others can build on it without anyone sharing data.
+Once millions of people are verified, the identity layer becomes open infrastructure. Others can build on it without anyone sharing data.
 
 Zero-knowledge proofs. You generate a cryptographic proof on your device that says "I'm 18+" or "I'm a unique human" or "I'm in Maharashtra." Third parties verify the proof mathematically. No data exchange. The platform never knows where you authenticated.
 
-So someone builds a lending platform — they verify a ZK proof that the borrower is real and unique. Someone builds a freelance marketplace — portable reputation without revealing identity. Local classifieds where sellers are accountable. Co-op governance with legitimate one-person-one-vote. Citizen journalism where sources are provably real but anonymous.
+Someone builds a lending platform — they verify a ZK proof that the borrower is real and unique. Someone builds a freelance marketplace — portable reputation without revealing identity. Local classifieds where sellers are accountable. Co-op governance with legitimate one-person-one-vote. Citizen journalism where sources are provably real but anonymous.
 
-Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee. That fee ceiling is a constitutional bound.
+Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee. That fee ceiling is a constitutional bound — changeable only by 75% supermajority.
 
-At that point the platform is infrastructure. The identity layer is useful far beyond what we build on it ourselves.
+Contracts between verified parties also become possible — business funding, freelancer agreements, rental contracts. Both parties are identified and accountable. Legally enforceable digital signatures.
 
 ---
 
-## 5. Builders and close (1.5 minutes)
+## 5. How it gets built (1.5 minutes)
 
-Everything is documented, open-source, and ready to be challenged. Architecture, identity design, funding model — all public on GitHub.
+This is open-source. Everything is documented — architecture, identity design, funding model, compensation — all public on GitHub.
 
-We need engineers — backend, frontend, security. The open problems: identity verification without storing personal data, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
+We need people who can build it. Engineers — backend, frontend, security, cryptography. Designers. Legal contributors. The open problems are real: OPRF-based identity verification, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
 
-Contributors get paid. Contributions tracked on a public ledger. When revenue flows, it flows proportional to what you built. Early contributors get higher multipliers to compensate for risk. Full compensation model is in the docs.
+Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows, it flows proportional to what you built. Complexity of work is accounted for — a specialist implementing ZK circuits earns more per hour than a simple bug fix. Early contributors get higher multipliers to compensate for the risk of building before there's revenue. Full compensation model is in the docs.
 
 I can't build this alone. The link is below. Read the docs, break the design, or start building.
 
 ---
 
-**Estimated runtime: 10 minutes**
+**Estimated runtime: ~10 minutes**
