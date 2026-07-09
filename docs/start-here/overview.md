@@ -26,7 +26,7 @@ Certification → talent pool → more revenue → contract infrastructure → c
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. The hypothesis is that combining them under one verified identity and governance structure creates more value than they produce separately.
+Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. Combining them under one verified identity and governance structure is what makes the individual pieces trustable. A review platform without verified identity is just another review platform. Governance without verified identity is vulnerable to sybil attacks. The identity layer is what makes each piece work.
 
 ## What It Does
 
@@ -34,7 +34,7 @@ Each feature exists somewhere already — affiliate review sites, angel networks
 |--------|-------------|
 | Identity | Government ID + face scan + OTP = one real person per account. Identity data stays on your device (signed credential from KYC provider). Platform stores only a deduplication hash computed via OPRF — never sees raw identity data. Two paths: anonymous (pseudonym, full privacy) or public profile (reputation ledger — where you're from, what you've done, trust score, certifications). Opt-in verified attributes. ZK proofs for ecosystem. Full verification = constitutional rights. |
 | Discussion | Threaded boards + chat. Every participant is a verified human. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. |
-| Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
+| Marketplace | Products aggregated from major platforms (affiliate APIs) + community sellers listing directly. You review with proof of purchase or as an expert. Others who buy based on your recommendation rate it — with proof of purchase. Platform calculates a helpfulness score over time. You get paid proportionally. Revenue comes from affiliate commissions. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
 | Talent Pool | Companies pay to access expert-certified professionals. |
 | Contracts | Enforceable agreements between verified humans — business funding, freelancer agreements, rental contracts, loans, partnerships. Platform provides templates, signing, storage, and dispute resolution. |

@@ -6,7 +6,7 @@ The internet is filling up with generated content, fake accounts, and bot intera
 
 ## The Core Idea
 
-Every person on the platform is verified through government ID. One account per human. An irrevocable purpose trust prevents sale or mission change (same mechanism as Patagonia — legally binding, independent trustees).
+Every person on the platform is verified through government ID. One account per human. Identity data never reaches platform servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change (same mechanism as Patagonia — legally binding, independent trustees).
 
 Verified identity is the dependency for everything else. Reviews are trustable when reviewers have one persistent reputation. Governance works when one person equals one vote. Moderation works when getting banned costs something. Contracts are enforceable when both parties are identified.
 
@@ -17,7 +17,7 @@ A platform where verified people can organize, transact, and govern collectively
 ### The Platform
 
 - **Every person is real.** One account per human. Verified. You choose how to show up — anonymous (pseudonym, full privacy) or as yourself (public profile that accumulates reputation, connections, and standing). Either way, the system knows it's a real person.
-- **You own your data.** Opt-in attributes only (age bracket, district — categorical, never precise). Full export and delete at any time. Open-source code so anyone can verify. Zero-knowledge proofs let you prove things to external services without revealing data to them or to us.
+- **Your data stays on your device.** Identity data never reaches platform servers — a signed credential from the KYC provider lives on your phone. Attributes (age bracket, district — categorical, never precise) are verified statelessly from that credential when needed. Full export and delete at any time. Open-source code so anyone can verify. Zero-knowledge proofs let you prove things to external services without revealing data to them or to us.
 - **You govern the platform.** Features, policies, moderation — decided by user vote. One person, one vote.
 - **Communication is built in.** Discussion boards, group chat, video calls. End-to-end encrypted (MLS protocol) — the platform cannot read your private messages, even under compulsion.
 - **Money moves transparently.** Payments happen through existing rails (UPI, SEPA, bank transfers) — the platform records, not processes. All investment contracts are visible to all members. Personal transactions stay private.
@@ -57,7 +57,7 @@ Small → large. Local → global.
 
 Ships in phases — each phase generates the revenue and trust that funds the next. The load-bearing path: identity → reviews → marketplace → revenue → more features. Amplifiers (certification, talent pool, contracts, collective purchasing) are added when the foundation supports them.
 
-See [Overview](overview.md#why-this-scope) for the full breakdown. The hypothesis is that combining these features under one verified identity and governance structure creates more value than they produce separately.
+See [Overview](overview.md#why-this-scope) for the full breakdown. The identity layer is what makes each individual piece trustable — without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts have no accountability.
 
 ## Bigger Than One Platform
 
