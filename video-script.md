@@ -62,7 +62,7 @@ Contracts between verified parties also become possible — business funding, fr
 
 ## 5. How it gets built (1.5 minutes)
 
-This is open-source. Everything is documented — architecture, identity design, funding model, compensation — all public on GitHub.
+This is open-source. The proposed architecture, identity design, funding model, and compensation are all public on GitHub. These are starting points — open to being rewritten.
 
 We need people who can build it. Engineers — backend, frontend, security, cryptography. Designers. Legal contributors. Open problems: OPRF-based identity verification, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
 

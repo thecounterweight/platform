@@ -126,8 +126,8 @@ export default function Home() {
         <h2 className="text-2xl font-bold mb-6">How it gets built</h2>
         <div className="space-y-4 text-zinc-300 text-lg">
           <p>
-            Open-source. Everything is documented — architecture, identity design, funding model,
-            compensation. All public on GitHub.
+            Open-source. Proposed architecture, identity design, funding model, and compensation
+            are all public on GitHub. These are starting points — open to being rewritten.
           </p>
           <p>
             Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows,
