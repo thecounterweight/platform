@@ -76,11 +76,12 @@ Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
 
 [View full size](https://raw.githubusercontent.com/thecounterweight/platform/main/docs/assets/system-diagram.svg)
 
-## What's Built vs What's Planned
+## Current Status
+
+Nothing is built yet. The platform exists as design and documentation only.
 
 | Status | Component |
 |--------|-----------|
-| Live | Landing page + signup (thecounterweight.org) |
 | Designed | Identity verification, payments, contracts, certification, marketplace strategy |
 | Not started | All platform code (backend, frontend, mobile) |
 
