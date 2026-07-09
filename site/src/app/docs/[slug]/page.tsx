@@ -43,14 +43,15 @@ export default async function DocPage({ params }: Props) {
           components={{
             img: ({ src, alt }) => {
               const srcStr = typeof src === "string" ? src : "";
-              if (srcStr.startsWith("assets/") && srcStr.endsWith(".svg")) {
-                const svgContent = getAsset(srcStr.replace("assets/", ""));
+              const assetMatch = srcStr.match(/(?:\.\.\/)*assets\/(.+)/);
+              if (assetMatch && srcStr.endsWith(".svg")) {
+                const svgContent = getAsset(assetMatch[1]);
                 if (svgContent) {
                   return <div className="w-full rounded-lg border border-zinc-700 overflow-hidden" dangerouslySetInnerHTML={{ __html: svgContent }} />;
                 }
               }
-              const resolvedSrc = srcStr.startsWith("assets/")
-                ? `/images/${srcStr.replace("assets/", "")}`
+              const resolvedSrc = assetMatch
+                ? `/images/${assetMatch[1]}`
                 : srcStr;
               return <img src={resolvedSrc} alt={alt || ""} className="w-full h-auto rounded-lg border border-zinc-700" />;
             },
