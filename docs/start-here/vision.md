@@ -2,7 +2,7 @@
 
 ## The Problem
 
-The internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts. Platforms can be sold — users have no structural say in that decision.
+Most of the internet is not real people. Bots, generated content, and fake accounts are cheaper to create than to detect. Platforms profit from the engagement regardless — there's no business case for fixing it. Democratic governance on platforms has never worked because one person can control thousands of accounts. And when a platform does accumulate real users, it can be sold or have its policies rewritten overnight. Users have no structural power to prevent either.
 
 ## The Core Idea
 
