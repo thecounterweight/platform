@@ -135,7 +135,7 @@ These obligations exist from the moment the platform hosts user-generated conten
 
 ### Full Identity Verification
 
-KYC provider handles government ID verification (DigiLocker in India via provider API, eIDAS in EU). Face scan for high-stakes actions. HMAC of ID number stored for deduplication (irreversible without secret key) — raw ID numbers processed in memory and immediately discarded, no personal data retained.
+KYC provider verifies identity and issues a signed credential directly to the user's device (DigiLocker in India, eIDAS in EU). Identity data never reaches platform servers. Deduplication hash computed via OPRF — phone and server jointly produce the hash without the server seeing the ID number or the phone seeing the key. Face scan for high-stakes actions.
 
 Existing phone-verified users are invited to upgrade. Three-tier access:
 - **Verified** — full government ID. Full platform access.

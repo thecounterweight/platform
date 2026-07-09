@@ -32,7 +32,7 @@ Each feature exists somewhere already — affiliate review sites, angel networks
 
 | Module | What it does |
 |--------|-------------|
-| Identity | Government ID + face scan + OTP = one real person per account. Privacy-preserving — only an irreversible HMAC stored. Two paths: anonymous (pseudonym, full privacy) or public profile (reputation ledger — where you're from, what you've done, trust score, certifications). Opt-in verified attributes. ZK proofs for ecosystem. Full verification = constitutional rights. |
+| Identity | Government ID + face scan + OTP = one real person per account. Identity data stays on your device (signed credential from KYC provider). Platform stores only a deduplication hash computed via OPRF — never sees raw identity data. Two paths: anonymous (pseudonym, full privacy) or public profile (reputation ledger — where you're from, what you've done, trust score, certifications). Opt-in verified attributes. ZK proofs for ecosystem. Full verification = constitutional rights. |
 | Discussion | Threaded boards + chat. Every participant is a verified human. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. |
 | Marketplace | Products aggregated from Amazon/Flipkart + community sellers. Reviews from verified humans only. Reviewers earn commission. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |

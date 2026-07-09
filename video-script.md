@@ -36,7 +36,7 @@ We have a marketplace. Products aggregated from different sources — major plat
 
 You review products either with proof of purchase, or as an expert after reading the published material about the product. Reviews are tied to your persistent identity — you can't reset your reputation and start over.
 
-When someone buys based on your recommendation, they can rate your review — again with proof of purchase. We calculate a score based on how helpful you've been to the community over time (Wilson score interval — statistically sound, accounts for both accuracy and sample size).
+When someone buys based on your recommendation, they can rate your review — again with proof of purchase. We calculate a score based on how helpful you've been to the community over time — statistically ranked by accuracy, not popularity or recency.
 
 You get paid proportionally to that score. People whose recommendations consistently help others earn more. People whose reviews are inaccurate or unhelpful earn less. The system is transparent — the algorithm is open-source, the scores are auditable.
 
