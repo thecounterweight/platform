@@ -88,9 +88,9 @@ export default function Home() {
             can change the architecture or sell the platform. Same structure Patagonia uses.
           </p>
           <p className="text-zinc-400">
-            Users don&apos;t hold equity — no one does. The trust structure gives you equivalent
-            structural protection without requiring you to be a shareholder of an entity you&apos;d
-            never meaningfully control.
+            Users don&apos;t hold equity — no one does. You control the entity through governance
+            (vote, elect, remove leaders) and the trust structure prevents anyone from overriding
+            that control.
           </p>
         </div>
       </section>

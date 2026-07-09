@@ -240,7 +240,7 @@ Completing identity verification grants you constitutional rights on the platfor
 - International by design — no membership in a foreign entity required
 
 **Why not user ownership:**
-We explored making every user a legal co-owner (member-governed LLC). It doesn't work at scale — no precedent for million-member LLCs, tax filing nightmare (K-1s for every member), near-impossible to raise capital, FEMA ambiguity for Indian members. The trust model (proven by Patagonia, Signal, Mozilla) gives users equivalent structural protection without requiring them to be shareholders of an entity they'd never meaningfully control.
+We explored making every user a legal co-owner (member-governed LLC). It doesn't work at scale — no precedent for million-member LLCs, tax filing nightmare (K-1s for every member), near-impossible to raise capital, FEMA ambiguity for Indian members. The trust model (proven by Patagonia, Signal, Mozilla) gives users real control (vote, elect, remove leaders) through governance rights, while the trust prevents anyone — including the founder — from overriding that control. Same outcome as ownership, without the legal complexity of million-member shareholding.
 
 ## Cost
 
