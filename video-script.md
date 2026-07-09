@@ -12,7 +12,7 @@ It's called The Counterweight.
 
 The problem: the internet is filling up with generated content, fake accounts, and bot interactions. It's increasingly difficult to know whether the person you're reading, reviewing, or transacting with is real. Platforms have no incentive to fix this — engagement-based revenue models don't distinguish between real and synthetic activity. Democratic governance on platforms has never worked because one person can control thousands of accounts.
 
-So we verify identity. One account per human. A KYC provider verifies you and issues a signed credential directly to your device. The platform receives only an irreversible deduplication hash — your identity data never touches our servers.
+So we verify identity. One account per human. A KYC provider verifies you and issues a signed credential directly to your device. Your phone and our server then jointly compute a deduplication hash — using a protocol where the server never sees your ID number and your phone never sees the key. The platform stores only that hash. Your identity data never touches our servers.
 
 What verified identity enables: reviews tied to persistent reputations that can't be reset. One-person-one-vote governance. Moderation where getting banned is a real cost. Contracts between parties who are both identified and accountable.
 
@@ -30,7 +30,7 @@ Verification grants constitutional rights — encoded in the company's Articles 
 
 Specifically: one vote in governance, right to stand for elected positions, legal standing to sue if the company violates its commitments.
 
-Your data: identity information never reaches platform servers. It lives on your device in a signed credential from the KYC provider — tamper-proof, under your control. The platform stores only a deduplication hash. When a feature needs to verify an attribute — age bracket, district — your app presents a signed claim from the credential. The platform checks the signature, doesn't store the result. Stateless verification.
+Your data: identity information never reaches platform servers. It lives on your device in a signed credential from the KYC provider — tamper-proof, under your control. The platform stores only a deduplication hash, computed jointly by your phone and the server through a cryptographic protocol where neither side sees the other's secret. When a feature needs to verify an attribute — age bracket, district — your app presents a signed claim from the credential. The platform checks the signature, doesn't store the result.
 
 An irrevocable purpose trust holds a golden share. Independent trustees — not the founder — can veto any sale, any mission change, any removal of user protections. The architecture already prevents data misuse (we don't have it), and the trust ensures no future leadership can change that architecture. Same structure Patagonia uses.
 

@@ -88,8 +88,8 @@ export default function Home() {
             <h3 className="font-semibold text-zinc-100">Your data stays yours</h3>
             <p className="text-zinc-400 mt-1">
               Identity data never reaches our servers. The KYC provider issues a signed credential
-              directly to your device — only an irreversible deduplication hash is sent to the platform.
-              Attributes (district, age bracket) stay on-device and are presented only when you choose.
+              directly to your device. Your phone and our server jointly compute a deduplication hash —
+              neither side sees the other&apos;s secret (OPRF protocol, RFC 9497). Attributes stay on-device.
               The platform cannot misuse data it never received.
             </p>
           </div>

@@ -41,16 +41,32 @@ The platform does not hold a government API license directly. We integrate with 
 
 The one-account guarantee requires detecting if someone has already registered. The platform needs exactly one piece of information: a unique, irreversible identifier per person. Nothing else.
 
-**Primary (India — 95% of users): Provider-computed HMAC of Aadhaar number**
+**Primary (India — 95% of users): OPRF-based deduplication**
 
-1. User verifies via KYC provider (Digio/Signzy) — provider confirms identity.
-2. **Provider computes** HMAC-SHA256(platform_secret_key, aadhaar_number) as part of credential issuance.
-3. The HMAC is included in the signed credential sent to the user's device, and separately transmitted to the platform server.
-4. Platform checks the HMAC against existing records. Match = duplicate account attempt, rejected.
-5. No match = new user, HMAC stored.
-6. The raw Aadhaar number never leaves the provider's system. The platform never sees it.
+The hash is computed jointly by the phone and the server using an Oblivious Pseudo-Random Function (OPRF, RFC 9497). Neither side sees the other's secret:
 
-**Key exchange for HMAC computation:** The platform provides a public key to the KYC provider. The provider uses a derived shared secret (via ECDH or similar) to compute the HMAC. This ensures the platform can verify the HMAC's correctness without ever handling the raw ID number.
+1. User verifies via KYC provider — provider issues signed credential containing Aadhaar number to the user's device.
+2. Phone reads the Aadhaar number from the credential and **blinds** it (multiplies by a random factor `r` known only to the phone).
+3. Phone sends the blinded value to the platform server. The server sees a random-looking value — cannot derive the ID number from it.
+4. Server applies the HMAC key (stored in HSM) to the blinded value, returns the evaluated result.
+5. Phone **unblinds** the result (removes `r`) to produce the final hash. The phone never learned the key.
+6. Phone sends the final hash to the server for dedup check.
+7. Server checks the hash against existing records. Match = duplicate, rejected. No match = new user, hash stored.
+
+**What each party sees:**
+- Server: a random blinded value (step 3) + the final hash (step 6). Cannot link them without the blinding factor `r`, which never leaves the phone.
+- Phone: the evaluated blinded result (step 4) + the final hash (step 5). Cannot compute hashes for other IDs without the server's key.
+
+**Why not let the KYC provider compute the hash:** Creates dependency on the provider for a core security function. Provider switching becomes complex. The platform should control its own dedup logic.
+
+**Security properties:**
+- Raw ID number never leaves the device
+- HMAC key never leaves the HSM
+- The blinding factor `r` is random per-session and never transmitted
+- No logs, memory dumps, or in-transit exposure of raw identity numbers
+- Brute-force resistance: same as any HMAC — 10^12 Aadhaar space protected by HSM-stored key with access controls and audit logs
+
+**Implementation:** Libraries exist for OPRF in Rust, Go, and JavaScript (based on RFC 9497). Used in production by Apple (Private Set Intersection), Cloudflare (Privacy Pass), and in the OPAQUE password protocol.
 
 Why HMAC and not plain hash: Aadhaar is 12 digits (10^12 possibilities) — a plain SHA-256 hash is brute-forceable in hours. HMAC with a secret key means the hash cannot be reversed without the key.
 
@@ -72,7 +88,7 @@ The platform never stores face embeddings or biometric templates. The KYC provid
 
 **International expansion:** Each country gets a primary dedup ID where one exists (SSN in US, National Insurance number in UK, BSN in Netherlands). Face dedup is the universal fallback for countries without a single dominant identifier.
 
-**Provider switching (primary path):** The HMAC is stored in the platform's database, computed with the platform's key. If you switch KYC providers, deduplication continues working — the HMAC doesn't depend on which provider verified the user. Only face-dedup users are affected by provider changes.
+**Provider switching (primary path):** The HMAC is computed by the phone + server (via OPRF) using the platform's key. The KYC provider is only involved in issuing the credential — not in hash computation. Switching providers has zero impact on deduplication. Only face-dedup users are affected by provider changes.
 
 ### Layer 2 — Face Scan (Liveness Check)
 
