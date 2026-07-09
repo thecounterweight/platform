@@ -6,7 +6,7 @@ How money moves on the platform without the platform becoming a payment processo
 
 The platform does not hold, route, or process money. It verifies identities, facilitates contracts, and records that transactions happened. Money moves between verified parties through existing infrastructure.
 
-This means: no money transmission license needed. No funds held in escrow. No regulatory burden of being a payment processor.
+Result: no money transmission license needed, no funds held in escrow, no regulatory burden of being a payment processor.
 
 ## The Split Approach
 
@@ -38,7 +38,7 @@ How it works:
 4. Receiving party confirms receipt on the platform.
 5. Platform records the transaction as complete.
 
-The money never touches the platform. This is how angel investments, property deals, and large B2B transactions already work.
+The money never touches the platform. Same flow as angel investments, property deals, and large B2B transactions.
 
 ### Cross-Border
 
@@ -59,17 +59,17 @@ Cross-border investment contracts are direct transfers — the platform provides
 | Dispute resolution | Parties involved | Shared fee covering mediator coordination and process management |
 | Collective purchasing | Nobody | Small coordination fee covers operations and generates revenue |
 
-Buyers never pay a platform fee. Sellers pay a small commission when a sale completes — the platform brought them the customer. Businesses receiving investment capital pay a facilitation fee that covers legal infrastructure and generates a small revenue stream. Dispute resolution fees are shared by the parties involved. Collective purchasing coordination covers its own operational costs and generates a small revenue stream.
+Buyers never pay a platform fee. Sellers pay a small commission when a sale completes. Businesses receiving investment capital pay a facilitation fee covering legal infrastructure. Dispute resolution fees are shared by the parties involved. Collective purchasing coordination covers its own operational costs.
 
 All fees follow the same rubric: calculate what it costs to build and maintain the component, then add a small margin on top. Specific percentages will be determined by research into actual operational costs — not set arbitrarily. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
 
-## Why This Works
+## Why this architecture
 
 - **No money held = no money transmission license.** The platform is a contract and identity layer, not a payment processor.
-- **KYC already handled.** The three-layer identity verification (government ID + face scan + OTP) satisfies any processor's KYC requirements. See [Identity Verification](identity-verification.md).
-- **AML is a software problem.** With verified identities on both sides, transaction monitoring for suspicious patterns (rapid cycling, unusual amounts) is straightforward.
-- **Cheapest possible cost per country.** No single expensive processor forced on everyone. Each country uses its own near-free infrastructure.
-- **Large amounts pay nothing.** The transactions where fees hurt most (₹2 lakh investment, ₹50 lakh business funding) go direct bank-to-bank. Zero intermediary.
+- **KYC already handled.** Three-layer identity verification (government ID + face scan + OTP) satisfies any processor's KYC requirements. See [Identity Verification](identity-verification.md).
+- **AML is a software problem.** Verified identities on both sides make transaction monitoring for suspicious patterns (rapid cycling, unusual amounts) straightforward.
+- **Cheapest possible cost per country.** Each country uses its own near-free infrastructure. No single expensive processor forced on everyone.
+- **Large amounts go direct.** Investment-scale transactions (₹2 lakh, ₹50 lakh) move bank-to-bank with zero intermediary.
 
 ## What About Disputes?
 
