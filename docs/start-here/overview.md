@@ -6,9 +6,9 @@ You can't tell what's real on the internet anymore. We fix that.
 
 ## The Solution
 
-A platform where every participant is verified through government ID — one account per human. An irrevocable purpose trust prevents sale or mission change (legally binding, same mechanism as Patagonia). Open-source.
+Every user is verified through government ID. One account per human. Your identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically.
 
-Verified identity is the foundation. Reviews become trustable when reviewers can't create disposable accounts. Governance becomes viable when one person equals one vote. Contracts become enforceable when both parties are identified.
+Verified identity enables everything else: trusted reviews (persistent reputation, can't start over), one-person-one-vote governance, enforceable contracts between identified parties, moderation where bans have real cost.
 
 ## Why This Scope
 
