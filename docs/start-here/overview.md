@@ -16,7 +16,7 @@ It's one system. The pieces reinforce each other, but they ship in phases.
 
 **Load-bearing (must exist for the platform to function):**
 
-Identity → trusted reviews → marketplace → revenue → builders → more features
+Identity → discussion → trusted reviews → marketplace → revenue → builders → more features
 
 **Amplifiers (added when the foundation is solid):**
 
