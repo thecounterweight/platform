@@ -2,7 +2,7 @@
 
 ## The Problem
 
-Most of the internet is not real people. Bots, generated content, and fake accounts are cheaper to create than to detect. Platforms profit from the engagement regardless — there's no business case for fixing it. Democratic governance on platforms has never worked because one person can control thousands of accounts. And when a platform does accumulate real users, it can be sold or have its policies rewritten overnight. Users have no structural power to prevent either.
+You can't tell what's real on the internet anymore. We fix that.
 
 ## The Core Idea
 

@@ -8,7 +8,7 @@
 
 I'm Manoj Sihag. I'm building a platform called The Counterweight.
 
-Most of the internet is not real people. Bots, generated content, and fake accounts are cheaper to create than to detect. Platforms profit from the engagement regardless — there's no business case for fixing it.
+You can't tell what's real on the internet anymore. We fix that.
 
 So we verify identity. Every user is verified through government ID. One account per human.
 
