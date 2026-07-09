@@ -107,7 +107,7 @@ flowchart TD
     M -->|improved scoring| B
 ```
 
-**Legal obligations (non-negotiable, from day one):**
+**Legal obligations (required before launch):**
 
 Indian IT Act (Section 67B) and POCSO Act require:
 - **CSAM detection:** Automated scanning of all user-uploaded images/videos using PhotoDNA or equivalent hash-matching service. Content matching known CSAM hashes is blocked immediately and never stored.
@@ -123,7 +123,7 @@ IT Rules 2021 (Intermediary Guidelines) additionally require:
 
 These obligations exist from the moment the platform hosts user-generated content. They are not optional and cannot be deferred to "when we have resources." The automated CSAM scanning must be integrated before the discussion boards go live.
 
-**What this means for Milestone 1 scope:** Discussion boards are not "just a forum." Legal compliance makes this heavier than it looks — PhotoDNA integration, a named grievance officer, SLA-bound complaint handling, and encrypted evidence preservation are all required before launch. This is real operational commitment from day one, not something that can be added later. Contributors should understand this going in.
+**What this means for Milestone 1 scope:** Legal compliance adds significant work — PhotoDNA integration, a named grievance officer, SLA-bound complaint handling, and encrypted evidence preservation are all required before the discussion boards go live. Contributors should understand this going in.
 
 ---
 
@@ -144,7 +144,7 @@ Existing phone-verified users are invited to upgrade. Three-tier access:
 
 The user pays the one-time verification fee. See [Identity Verification](../building/identity-verification.md) for the full proposed design.
 
-The principle is non-negotiable. The implementation is open to improvement.
+One-person-one-account is non-negotiable. The implementation details are open to improvement.
 
 ---
 

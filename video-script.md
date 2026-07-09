@@ -64,7 +64,7 @@ Contracts between verified parties also become possible — business funding, fr
 
 This is open-source. Everything is documented — architecture, identity design, funding model, compensation — all public on GitHub.
 
-We need people who can build it. Engineers — backend, frontend, security, cryptography. Designers. Legal contributors. The open problems are real: OPRF-based identity verification, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
+We need people who can build it. Engineers — backend, frontend, security, cryptography. Designers. Legal contributors. Open problems: OPRF-based identity verification, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
 
 Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows, it flows proportional to what you built. Complexity of work is accounted for — a specialist implementing ZK circuits earns more per hour than a simple bug fix. Early contributors get higher multipliers to compensate for the risk of building before there's revenue. Full compensation model is in the docs.
 

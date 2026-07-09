@@ -51,7 +51,7 @@ The trust must be independent of the founder to have any credibility. Trustee se
 - **Ongoing:** Trustees serve 5-year terms. Replacements are nominated by the remaining trustees and confirmed by the user-elected advisory board (majority vote). The founder cannot nominate or veto trustees.
 - **Removal:** A trustee can be removed for breach of duty by the other trustees unanimously, or by 75% supermajority of verified users.
 
-This is the most important structural decision — if the founder picks pliant trustees, the whole thing is theater. Institutional trustees (a law firm with reputational skin in the game, a university) provide independence that individuals alone cannot.
+Trustee selection determines whether the trust structure has teeth. Institutional trustees (a law firm with reputational stake, a university) provide independence that individuals alone cannot.
 
 **What the trust's golden share vetoes (irrevocable):**
 - Sale or acquisition of the company
@@ -113,7 +113,7 @@ The binding advisory board mechanism activates at 10,000 verified members (the f
 - Once 10,000 members is reached, the first advisory board election happens within 90 days
 - After that election, the binding mechanism activates — trustees must follow board recommendations
 
-This is an honest gap: pre-10K, the trust is less constrained (trustees act independently rather than being bound by user recommendation). The mitigation is that trustees are institutional and professional — their reputational incentive is to be conservative, not permissive. And the gap closes automatically at 10K.
+Pre-10K gap: the trust is less constrained (trustees act independently rather than being bound by user recommendation). Institutional trustees have reputational incentive to be conservative. The gap closes at 10K when the advisory board election activates the binding mechanism.
 
 **What happens if the founder leaves:**
 - Company continues operating under whoever the board/members elect
@@ -138,7 +138,7 @@ Start with one entity. Add local entities only when a specific trigger forces it
 - The root entity remains the governance parent unless a supermajority votes to restructure
 - No single local entity can unilaterally change terms or break from the network
 
-The principle: the entity exists to build and operate the platform. The trust exists to prevent the entity from betraying its users. Users govern through elected positions and constitutional rights — not through direct ownership of a legal entity they'd never meaningfully control anyway.
+The entity builds and operates the platform. The trust prevents the entity from acting against user interests. Users govern through elected positions and constitutional rights — direct ownership of a legal entity doesn't scale to millions of members.
 
 ## Revenue Authority — Who Decides Where Money Goes
 

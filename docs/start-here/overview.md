@@ -14,7 +14,7 @@ Verified identity is the foundation. Reviews become trustable when reviewers can
 
 ## Why This Scope
 
-Looks like many products. It's one system — the pieces reinforce each other, but they don't all need to exist on day one.
+It's one system. The pieces reinforce each other, but they ship in phases.
 
 **Load-bearing (must exist for the platform to function):**
 

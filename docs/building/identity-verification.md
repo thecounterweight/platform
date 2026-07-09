@@ -154,7 +154,7 @@ graph TD
 
 ## Privacy Guarantees
 
-These are non-negotiable platform commitments — and they are architecturally enforced, not just policy. The platform cannot misuse identity data because it never receives it.
+The platform never receives identity data. These guarantees are enforced by architecture, not policy alone.
 
 | Guarantee | What it means |
 |-----------|---------------|
@@ -199,15 +199,12 @@ A reputation ledger. It accumulates from what you *do* on the platform.
 | Skills you're certified in | Expert evaluations |
 | Contributions to the platform | Public ledger |
 
-**Why this matters:**
+**Example:** "Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer." Backed by verified identity and observable history.
 
-"Verified user from Jaipur, Rajasthan — 2 years on platform, 94% review accuracy, certified solar installer" — that carries weight a username never will. It's backed by verified identity and observable history.
-
-**What a public profile is NOT:**
-- Not a social media feed
-- Not mandatory (anonymous path has full access to all features)
-- Not a data extraction tool (profile shows what you choose, nothing is inferred)
-- Not performative (you can't pad it — every line comes from verifiable platform activity)
+**Constraints:**
+- Anonymous path has full access to all features — public profile is optional
+- Profile shows what you choose, nothing is inferred
+- Every line comes from verifiable platform activity — cannot be padded
 
 **The incentive structure:**
 

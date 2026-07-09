@@ -65,7 +65,7 @@ flowchart LR
 
 **Skills needed:** Backend (Node.js/TypeScript), cryptography basics, government API integration, security mindset.
 
-**Key constraint:** Privacy is non-negotiable. If your design requires storing personal data, it's wrong. Start over.
+**Key constraint:** Identity data stays on the user's device. Any design that requires storing personal data on the server needs to be rethought.
 
 ### Marketplace
 

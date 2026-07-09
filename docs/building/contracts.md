@@ -11,16 +11,11 @@ Contract infrastructure for verified humans. Both parties are identified through
 5. **Reminders** — Payment due dates, contract expiry, renewal notices, milestone deadlines.
 6. **Dispute resolution** — Mediation infrastructure (see below). Does not replace legal rights.
 
-## What the Platform Does NOT Do
+## Platform scope
 
-- Hold money or process payments (that's UPI/bank transfer/existing rails)
-- Enforce contracts (that's the legal system)
-- Guarantee performance or returns
-- Act as a party to any contract
-- Provide legal advice or recommend terms
-- Vet, evaluate, or perform due diligence on either party
+The platform verifies identity, witnesses the agreement, and stores the document.
 
-The platform verifies identity, witnesses the agreement, and stores the document. It does not decide whether the agreement is wise.
+Payments move through existing rails (UPI, bank transfer). Contract enforcement is the legal system's job. The platform is not a party to any contract, does not provide legal advice, and does not perform due diligence on either party.
 
 ## Use Cases
 
