@@ -47,7 +47,7 @@ Community-serving projects use the identity layer free. Revenue-generating servi
 
 ## For builders
 
-Open-source. Every contribution tracked on a public ledger. When revenue flows, it flows proportional to what you built. Complexity is accounted for — specialist work earns more per hour than routine fixes. Early contributors get higher multipliers to compensate for risk.
+Open-source. Every contribution tracked on a public ledger. Revenue distributes proportional to what you built. Complexity is accounted for — specialist work earns more per hour than routine fixes. Early contributors get higher multipliers to compensate for risk.
 
 → [Builder Compensation](docs/joining/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
 

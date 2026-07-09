@@ -66,7 +66,7 @@ This is open-source. The proposed architecture, identity design, funding model, 
 
 We need people who can build it. Engineers — backend, frontend, security, cryptography. Designers. Legal contributors. Open problems: OPRF-based identity verification, trust scoring that resists collusion, real-time translation, end-to-end encrypted group messaging.
 
-Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows, it flows proportional to what you built. Complexity of work is accounted for — a specialist implementing ZK circuits earns more per hour than a simple bug fix. Early contributors get higher multipliers to compensate for the risk of building before there's revenue. Full compensation model is in the docs.
+Contributors get paid. Every contribution is tracked on a public ledger. Revenue distributes proportional to what you built. Complexity of work is accounted for — a specialist implementing ZK circuits earns more per hour than a simple bug fix. Early contributors get higher multipliers to compensate for the risk of building before there's revenue. Full compensation model is in the docs.
 
 I can't build this alone. The link is below. Read the docs, break the design, or start building.
 

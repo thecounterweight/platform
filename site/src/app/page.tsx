@@ -130,8 +130,8 @@ export default function Home() {
             are all public on GitHub. These are starting points — open to being rewritten.
           </p>
           <p>
-            Contributors get paid. Every contribution is tracked on a public ledger. When revenue flows,
-            it flows proportional to what you built. Complexity of work is accounted for. Early contributors
+            Contributors get paid. Every contribution is tracked on a public ledger. Revenue distributes
+            proportional to what you built. Complexity of work is accounted for. Early contributors
             get higher multipliers to compensate for risk. Details in the{" "}
             <a href="/docs/builder-compensation" className="underline hover:text-zinc-200">compensation docs</a>.
           </p>
