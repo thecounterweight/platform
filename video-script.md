@@ -20,7 +20,7 @@ Your identity data never reaches our servers. A KYC provider verifies you and is
 
 Once verified, you're in a space where every person is real. No bots. No fake accounts. Every interaction is with a verified human.
 
-You choose how to show up. Anonymous — verified but pseudonymous, full access, full privacy. Or you build a public profile: a reputation ledger showing where you're from, review accuracy, trust score, certifications, time on platform. Granularity you control — change what's visible any time.
+You choose how to show up. Anonymous — verified but pseudonymous, full access, full privacy. Or you build a public profile: where you're from, what you've contributed, certifications you've earned, communities you belong to. Accumulates over time. Granularity you control — change what's visible any time.
 
 You read and write public content. You discuss. You organize. Real-time neural translation (self-hosted — no user content leaves our infrastructure) means someone posting in Tamil and someone reading in Hindi see each other natively. No language silos.
 

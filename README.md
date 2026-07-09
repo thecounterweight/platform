@@ -8,7 +8,7 @@ A platform where every user is verified through government ID — one account pe
 
 Every person is verified. No bots. No fake accounts. You interact only with real people.
 
-You choose how to show up — anonymous (pseudonymous, full privacy) or public profile (reputation ledger showing where you're from, review accuracy, trust score, certifications). Full access either way.
+You choose how to show up — anonymous (pseudonymous, full privacy) or public profile (where you're from, what you've contributed, certifications, communities). Full access either way.
 
 You read and write public content. You discuss. You organize. Real-time neural translation (self-hosted, no user content leaves infrastructure) means cross-language participation works natively.
 

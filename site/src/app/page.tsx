@@ -31,9 +31,9 @@ export default function Home() {
           </p>
           <p>
             You choose how to show up. Anonymous — verified but pseudonymous, full access, full privacy.
-            Or you build a public profile: a reputation ledger showing where you&apos;re from, review accuracy,
-            trust score, certifications, time on platform. Granularity you control — change what&apos;s visible
-            any time.
+            Or you build a public profile: where you&apos;re from, what you&apos;ve contributed,
+            certifications you&apos;ve earned, communities you belong to. Accumulates over time.
+            Granularity you control — change what&apos;s visible any time.
           </p>
           <p>
             You read and write public content. You discuss. You organize. Real-time neural translation
