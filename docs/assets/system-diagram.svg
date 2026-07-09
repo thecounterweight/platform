@@ -38,7 +38,7 @@
   <text x="685" y="150" text-anchor="middle" font-size="9" fill="#666">Voting + Elections</text>
 
   <rect x="60" y="175" width="130" height="50" rx="8" fill="#fff" stroke="#d0d7e8" stroke-width="1"/>
-  <text x="125" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Legal Contracts</text>
+  <text x="125" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Contracts</text>
   <text x="125" y="213" text-anchor="middle" font-size="9" fill="#666">Templates + Signing</text>
 
   <rect x="200" y="175" width="130" height="50" rx="8" fill="#fff" stroke="#d0d7e8" stroke-width="1"/>
@@ -46,8 +46,8 @@
   <text x="265" y="213" text-anchor="middle" font-size="9" fill="#666">Certified Professionals</text>
 
   <rect x="340" y="175" width="130" height="50" rx="8" fill="#fff" stroke="#d0d7e8" stroke-width="1"/>
-  <text x="405" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Contracts</text>
-  <text x="405" y="213" text-anchor="middle" font-size="9" fill="#666">Verified Parties</text>
+  <text x="405" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Payments</text>
+  <text x="405" y="213" text-anchor="middle" font-size="9" fill="#666">UPI, SEPA, Bank Transfer</text>
 
   <rect x="480" y="175" width="130" height="50" rx="8" fill="#fff" stroke="#d0d7e8" stroke-width="1"/>
   <text x="545" y="198" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Collective Buying</text>
