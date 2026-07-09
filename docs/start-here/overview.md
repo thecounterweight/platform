@@ -8,7 +8,9 @@ You can't tell what's real on the internet anymore. We fix that.
 
 Every user is verified through government ID. One account per human. Your identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically.
 
-Verified identity enables everything else: trusted reviews (persistent reputation, can't start over), one-person-one-vote governance, enforceable contracts between identified parties, moderation where bans have real cost.
+**What the platform does:** Discussion, product reviews with a marketplace, contracts between verified parties, democratic governance, real-time translation across languages, end-to-end encrypted messaging. All built on verified identity — every participant is a real, unique human.
+
+**What verified identity enables:** Trusted reviews (persistent reputation, can't start over). One-person-one-vote governance. Enforceable contracts between identified parties. Moderation where bans have real cost.
 
 ## Why This Scope
 
@@ -24,7 +26,7 @@ Certification → talent pool → more revenue → contract infrastructure → c
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each feature exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. Combining them under one verified identity and governance structure is what makes the individual pieces trustable. A review platform without verified identity is just another review platform. Governance without verified identity is vulnerable to sybil attacks. The identity layer is what makes each piece work.
+Each of these features exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. The identity layer is what makes each piece trustable. Without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts have no accountability.
 
 ## What It Does
 
