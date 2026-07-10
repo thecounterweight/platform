@@ -1,6 +1,8 @@
 # The Counterweight
 
-A platform where every user is verified through government ID — one account per human. Your identity data never reaches our servers. An irrevocable purpose trust prevents sale or mission change.
+You can't tell what's real on the internet anymore. We fix that.
+
+Every user is verified through government ID — one account per human. Identity data never reaches our servers. An irrevocable purpose trust prevents sale or mission change.
 
 → [Website](https://thecounterweight.org) · [Contributing](CONTRIBUTING.md) · [Overview](docs/start-here/overview.md)
 
@@ -10,46 +12,19 @@ Every person is verified. No bots. No fake accounts. You interact only with real
 
 You choose how to show up — anonymous (pseudonymous, full privacy) or public profile (where you're from, what you've contributed, certifications, communities). Full access either way.
 
-You read and write public content. You discuss. You organize. Real-time neural translation (self-hosted, no user content leaves infrastructure) means cross-language participation works natively.
+Discussion, real-time translation across languages (self-hosted, no user content leaves our infrastructure), E2E encrypted messaging. Governance on one-person-one-vote — elected leaders, removable leaders, no permanent admins.
 
-## How it makes money
+## How we make money
 
 A marketplace. Products aggregated from major platforms via affiliate APIs, plus community sellers listing directly.
 
-You review with proof of purchase or as an expert. Others who bought based on your recommendation rate it — with proof of purchase. We calculate a score based on how helpful you've been. You get paid proportionally. We earn affiliate commissions. No ads. No data selling.
-
-## You govern this
-
-One person, one vote. Policies, features, moderation rules — decided by user vote. Leaders elected and removable. No permanent admins. Constitutional changes require 75% supermajority.
-
-Verification gives you legally enforceable rights encoded in the company's Articles of Association. One vote in governance. Right to stand for elected positions. Legal standing to sue if the company violates its commitments.
-
-An irrevocable purpose trust holds a golden share. Independent trustees can veto any sale, mission change, or removal of user protections. Same structure Patagonia uses.
+You review with proof of purchase or as an expert. Others who bought based on your recommendation rate it — with proof of purchase. We calculate a helpfulness score over time. Reviewers get paid proportionally. We earn affiliate commissions. No ads. No data selling.
 
 ## Identity architecture
 
-Identity data stays on your device. A KYC provider verifies you and issues a signed credential directly to your phone. Your phone and our server jointly compute a deduplication hash via OPRF (RFC 9497) — the server never sees your ID number, your phone never sees the key. The platform stores only that hash. There is no identity database to breach.
+Identity data stays on your device. A KYC provider verifies you and issues a signed credential directly to your phone. Your phone and our server jointly compute a deduplication hash via OPRF (RFC 9497) — the server never sees your ID number, your phone never sees the key. There is no identity database to breach.
 
-Pseudonymous participation supported. Attributes (age bracket, district) stay on-device and are verified statelessly when needed. Zero-knowledge proofs allow proving attributes to external services without revealing identity data — the platform never knows where you authenticate.
-
-## What becomes possible on top
-
-Once millions are verified, the identity layer becomes open infrastructure. Others build on it:
-
-- P2P lending with verified borrowers
-- Freelance marketplaces with portable reputation
-- Local classifieds with accountable sellers
-- Co-op governance with real one-person-one-vote
-- Citizen journalism with verified sources
-- Contracts between identified, accountable parties
-
-Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee (ceiling is a constitutional bound).
-
-## For builders
-
-Open-source. Every contribution tracked on a public ledger. Revenue distributes proportional to what you built. Complexity is accounted for — specialist work earns more per hour than routine fixes. Early contributors get higher multipliers to compensate for risk.
-
-→ [Builder Compensation](docs/joining/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
+An irrevocable purpose trust holds a golden share. Independent trustees can veto any sale, mission change, or removal of user protections.
 
 ## What ships first
 
@@ -60,7 +35,13 @@ Milestone 3:  Marketplace + trusted reviews + affiliate revenue
 Phase 2:      Certification, talent pool, contracts, collective purchasing, ZK proofs for ecosystem
 ```
 
-Revenue starts at Milestone 3 (affiliate commissions). Each phase funds the next.
+Revenue starts at Milestone 3. Each phase funds the next.
+
+## For builders
+
+Open-source. Every contribution tracked on a public ledger. Revenue distributes proportional to what you built. Early contributors get higher multipliers to compensate for risk.
+
+→ [Builder Compensation](docs/joining/builder-compensation.md) · [Open Issues](https://github.com/thecounterweight/platform/issues)
 
 ## Start here
 
@@ -99,4 +80,4 @@ Revenue starts at Milestone 3 (affiliate commissions). Each phase funds the next
 
 ## License
 
-AGPL-3.0 — fork it, modify it, run your own instance. But keep it open-source. No proprietary forks.
+AGPL-3.0 — fork it, modify it, run your own instance. Keep it open-source.

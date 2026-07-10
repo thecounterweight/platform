@@ -6,7 +6,7 @@ You can't tell what's real on the internet anymore. We fix that.
 
 ## The Solution
 
-Every user is verified through government ID. One account per human. Your identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically.
+Every user is verified through government ID. One account per human. Identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically.
 
 **What the platform does:** Discussion, product reviews with a marketplace, contracts between verified parties, democratic governance, real-time translation across languages, end-to-end encrypted messaging. All built on verified identity — every participant is a real, unique human.
 
@@ -26,20 +26,20 @@ Certification → talent pool → more revenue → contract infrastructure → c
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each of these features exists somewhere already — affiliate review sites, angel networks, cooperatives, certification bodies, discussion forums. The identity layer is what makes each piece trustable. Without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts have no accountability.
+Each of these features exists somewhere already — affiliate review sites, cooperatives, certification bodies, discussion forums. The identity layer is what makes each piece trustable. Without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts have no accountability.
 
 ## What It Does
 
 | Module | What it does |
 |--------|-------------|
-| Identity | Government ID + face scan + OTP = one real person per account. Identity data stays on your device (signed credential from KYC provider). Platform stores only a deduplication hash computed via OPRF — never sees raw identity data. Two paths: anonymous (pseudonym, full privacy) or public profile (reputation ledger — where you're from, what you've done, trust score, certifications). Opt-in verified attributes. ZK proofs for ecosystem. Full verification = constitutional rights. |
+| Identity | Government ID + face scan + OTP = one real person per account. Identity data stays on your device (signed credential from KYC provider). Platform stores only a deduplication hash computed via OPRF — never sees raw identity data. Two paths: anonymous (pseudonym, full privacy) or public profile (where you're from, what you've contributed, certifications, communities). ZK proofs for ecosystem. |
 | Discussion | Threaded boards + chat. Every participant is a verified human. E2E encrypted DMs (MLS protocol). Real-time neural translation across languages. |
 | Marketplace | Products aggregated from major platforms (affiliate APIs) + community sellers listing directly. You review with proof of purchase or as an expert. Others who buy based on your recommendation rate it — with proof of purchase. Platform calculates a helpfulness score over time. You get paid proportionally. Revenue comes from affiliate commissions. |
 | Certification | Domain experts evaluate and certify skills and product quality. Selected by community. |
 | Talent Pool | Companies pay to access expert-certified professionals. |
 | Contracts | Enforceable agreements between verified humans — business funding, freelancer agreements, rental contracts, loans, partnerships. Platform provides templates, signing, storage, and dispute resolution. |
 | Collective Purchasing | Small shops pool demand, buy direct from manufacturers at bulk prices. Platform coordinates. |
-| Governance | One person, one vote on leadership and policy. Individual investment decisions are each person's own. Leaders removable via no-confidence (7-day discussion + 60% vote). |
+| Governance | One person, one vote on leadership and policy. Leaders removable via no-confidence (7-day discussion + 60% vote). |
 | Payments | Money moves through existing rails (UPI, SEPA, bank transfer). Platform records, never holds or processes. |
 
 ## How It Makes Money
@@ -52,29 +52,25 @@ Phase 2:      Seller commissions (when community sellers are added)
 At scale:     Collective purchasing operational fees
 ```
 
-Milestones 1-2 generate no revenue — they build the community and trust. Revenue starts at Milestone 3 (marketplace + affiliate APIs). Phase 2 features are funded by Milestone 3 revenue. Community-owned.
+Milestones 1-2 generate no revenue — they build the community and trust. Revenue starts at Milestone 3 (marketplace + affiliate APIs). Phase 2 features are funded by Milestone 3 revenue.
 
 ## How Money Flows
 
-**Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes. See [Funding Model](../joining/funding-model.md) for full details.
+**Early stage (pre-quorum):** The founder has operational authority within the defined formula. Anyone can contribute capital as risk capital — recorded permanently, recognized under governance-decided terms when revenue flows. The full bicameral voting process activates once membership hits 10,000 verified members. Until then, early funding operates under constitutional bounds with founder authority and independent-body oversight on disputes.
 
-**Starting split:** 60% builders + investors | 30% operations | 10% community reinvestment. Investor share is capped and time-bounded. At scale, governance decides the split — no pre-set formula locks in what doesn't make sense yet. See [Funding Model](../joining/funding-model.md) for full details.
+**Starting split:** 60% builders + investors | 30% operations | 10% community reinvestment. Investor share is capped and time-bounded. At scale, governance decides the split.
+
+See [Funding Model](../joining/funding-model.md) for full details.
 
 ## How Contributors Get Paid
 
-Contributions are tracked. Units = hours × complexity × (1 + sum of bonuses).
+Contributions are tracked on a public ledger. Revenue distributes proportional to what you built. Complexity and timing are accounted for — early contributors get higher multipliers to compensate for risk.
 
-- Complexity: 1x-30x based on skill level required (deliberately above market rate — compensates for no equity and risk of units being worth nothing)
-- Bonuses are additive: Year 1 (+100%), first-10 contributor (+100%), critical path (+50%), first-of-kind (+50%)
-- Maximum effective multiplier: 120x (absolute ceiling). Typical strong early contribution: 40-80x.
-- Revenue flows to contributors proportional to their share of total units
-- All assignments are public, challengeable, and require verifiable artifacts
+See [Builder Compensation](../joining/builder-compensation.md) for the full formula.
 
 ## The System Diagram
 
 ![System Diagram](../assets/system-diagram.svg)
-
-[View full size](https://raw.githubusercontent.com/thecounterweight/platform/main/docs/assets/system-diagram.svg)
 
 ## Current Status
 
@@ -102,9 +98,9 @@ Nothing is built yet. The platform exists as design and documentation only.
 
 ## Read More
 
-- [Vision](vision.md) — the full picture
+- [Vision](vision.md) — where this goes at scale
 - [MVP](mvp.md) — what gets built first
-- [Builder Compensation](../joining/builder-compensation.md) — how you get paid
+- [Builder Compensation](../joining/builder-compensation.md) — how contributors get paid
 - [Identity Verification](../building/identity-verification.md) — how one-person-one-account works
 - [Payments](../building/payments.md) — how money moves
 - [Contracts](../building/contracts.md) — contract infrastructure for verified humans
