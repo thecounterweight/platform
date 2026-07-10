@@ -10,7 +10,7 @@ Discussions are shaped by bots and sockpuppets. Moderation is arbitrary — the 
 
 Every person on the platform is verified through government ID. One account per human. Identity data never reaches platform servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change.
 
-Verified identity is the dependency for everything else. Reviews are trustable when reviewers have one persistent reputation. Governance works when one person equals one vote. Moderation works when getting banned costs something. Contracts are enforceable when both parties are identified.
+Verified identity is the dependency for everything else. You can have meaningful discussions. Reviews you can trust. One-person-one-vote governance. Moderation that works. Enforceable contracts.
 
 ## What We're Building
 
