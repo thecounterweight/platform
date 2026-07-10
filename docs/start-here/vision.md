@@ -4,9 +4,9 @@
 
 You can't tell what's real on the internet anymore. We fix that.
 
-Reviews are written by people who never bought the product. Discussions are shaped by bots and sockpuppets. Governance in online communities is whoever got there first. Moderation is arbitrary — the platform is both the government and the judge. Your data gets sold, your content gets harvested, and you have no structural say in any of it.
+Discussions are shaped by bots and sockpuppets. Moderation is arbitrary — the platform is both the government and the judge. Your data gets sold, your content gets harvested, and you have no structural say in any of it.
 
-Every platform that tried to fix parts of this eventually sold out, pivoted, or got acquired. The incentive structure made it inevitable. We're building something where selling out is architecturally impossible.
+Platforms without structural protection against sale will eventually sell when the price is right. We're building something where that's architecturally impossible.
 
 ## The Core Idea
 
