@@ -26,7 +26,7 @@ Certification → talent pool → more revenue → contract infrastructure → c
 
 The load-bearing pieces launch together as the MVP. Each amplifier is added when the previous phase generates the revenue and trust to support it.
 
-Each of these features exists somewhere already — affiliate review sites, cooperatives, certification bodies, discussion forums. The identity layer is what makes each piece trustable. Without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts have no accountability.
+Each of these features exists somewhere already — affiliate review sites, cooperatives, certification bodies, discussion forums. The identity layer is what makes each piece trustable. Without it, reviews are gameable, governance is vulnerable to sybil attacks, and contracts are expensive to enforce with gaps that both sides exploit.
 
 ## What It Does
 
