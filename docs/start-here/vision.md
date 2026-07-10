@@ -6,8 +6,6 @@ You can't tell what's real on the internet anymore. We fix that.
 
 Discussions are shaped by bots and sockpuppets. Moderation is arbitrary — the platform is both the government and the judge. Your data gets sold, your content gets harvested, and you have no structural say in any of it.
 
-Platforms without structural protection against sale will eventually sell when the price is right. We're building something where that's architecturally impossible.
-
 ## The Core Idea
 
 Every person on the platform is verified through government ID. One account per human. Identity data never reaches platform servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change (same mechanism as Patagonia — legally binding, independent trustees).
