@@ -16,10 +16,11 @@ Verification is handled through existing KYC providers who already have governme
 
 1. User initiates verification from the app
 2. KYC provider verifies the user's identity (Aadhaar eKYC, passport scan, etc.)
-3. Provider issues a **signed credential** directly to the user's device — containing verified attributes (name, age bracket, district, etc.) and a unique deduplication hash
+3. Provider issues a **signed credential** directly to the user's device — containing verified attributes (name, age bracket, district, etc.) and the raw identity number
 4. The credential is cryptographically signed by the provider — the user cannot modify it without invalidating the signature
-5. Only the provider-signed **deduplication hash** is sent to the platform server — for one-account-per-human enforcement
-6. All other identity data remains on-device, never transmitted to the platform
+5. The phone and our server jointly compute a **deduplication hash** via OPRF — the server never sees the ID number, the phone never sees the key
+6. Only the final hash is sent to the platform server — for one-account-per-human enforcement
+7. All identity data remains on-device, never transmitted to the platform
 
 **Providers:**
 
