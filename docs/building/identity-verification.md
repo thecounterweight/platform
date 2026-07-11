@@ -22,17 +22,15 @@ Verification is handled through existing KYC providers who already have governme
 6. Only the final hash is sent to the platform server — for one-account-per-human enforcement
 7. All identity data remains on-device, never transmitted to the platform
 
-**Providers:**
+**What exists today vs what we'd build:**
 
-- **India:** Digio, Signzy, IDfy — they hold DigiLocker/Aadhaar eKYC licenses. DigiLocker already issues signed credentials to user devices. Aadhaar offline KYC produces a signed XML on the user's device.
-- **EU:** eIDAS 2.0 Digital Identity Wallet — built on exactly this model (credentials issued to device, selective disclosure to verifiers)
-- **UK:** GOV.UK Verify via authorized identity providers
-- **US:** ID.me, Persona, or similar
-- **Others:** Added as the platform expands — always through a licensed local provider
+- **India (DigiLocker, Aadhaar offline KYC):** Already issues signed documents/XML directly to the user's device. This is government infrastructure — we can use it directly. No negotiation needed.
+- **EU (eIDAS 2.0):** Digital Identity Wallets are built on exactly this model — credentials issued to device, selective disclosure to verifiers. Rolling out now.
+- **Commercial KYC providers (Digio, Signzy, IDfy, ID.me, Persona):** Standard flow returns verification results to the company, not the user's device. We'd need to negotiate a custom integration where they issue the credential to the user instead of to us. Technically possible — they already have the verification pipeline, just a different delivery endpoint.
 
-The platform does not hold a government API license directly. We integrate with providers who do. This removes the regulatory dependency — no 12-18 month license wait, no risk of denial. If one provider is unavailable, we switch to another.
+**Starting point:** India launches on DigiLocker/Aadhaar offline (already supports device-local credentials). EU launches on eIDAS wallets. Other jurisdictions start with commercial providers under a negotiated device-local flow, or fall back to a model where the provider verifies and we receive only a pass/fail + dedup-eligible identifier (not full identity data).
 
-**Why providers support this:** Regulators are actively pushing this model (GDPR, India's DPDPA). Providers prefer it because it reduces their liability — they issue the credential and exit the loop.
+The platform does not hold a government API license directly. We integrate with providers who do — no 12-18 month license wait, no risk of denial.
 
 **Cost:** KYC providers charge ₹5-20 per verification in India, $1-3 elsewhere. Passed to the user as a one-time registration fee.
 
