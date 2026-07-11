@@ -141,7 +141,7 @@ The platform never receives identity data. These guarantees are enforced by arch
 
 | Guarantee | What it means |
 |-----------|---------------|
-| Identity data never reaches the platform | Raw identity information (name, ID number, address, DOB) stays on the user's device. The platform receives only a deduplication hash — computed by the KYC provider, irreversible, containing no personal information. |
+| Identity data never reaches the platform | Raw identity information (name, ID number, address, DOB) stays on the user's device. The platform receives only a deduplication hash — computed jointly by the phone and server via OPRF, irreversible, containing no personal information. |
 | No selling or sharing | There is nothing to sell. The platform holds a hash and a pass/fail status. No identity data exists on platform servers. |
 | No profiling from verification | Verification produces a hash for dedup and a pass/fail. Attributes (age bracket, district, gender) live on-device and are presented only when the user chooses to prove them. |
 | Minimum data principle | The platform stores: one HMAC per user (for dedup), verification status (pass/fail), timestamp. Nothing else. |
@@ -421,7 +421,7 @@ We build this incrementally. Internal attributes first (simple, immediate value)
 The platform does not process, receive, or store identity data. KYC providers (Digio, Signzy, etc.) handle all identity document processing and issue signed credentials directly to the user's device. The platform's server never sees raw identity information.
 
 **What the platform stores:**
-- HMAC of the primary ID number (for deduplication — computed by the KYC provider, irreversible without the key derivation secret stored in HSM)
+- HMAC of the primary ID number (for deduplication — computed jointly by phone and server via OPRF, irreversible without the server's key stored in HSM)
 - Verification status (pass/fail)
 - Timestamp
 
