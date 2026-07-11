@@ -8,8 +8,6 @@ We can't have genuine discussions we trust. We can't organize without it turning
 
 ## The Core Idea
 
-We fix that.
-
 Every person on the platform is verified through government ID. One account per human. Identity data never reaches platform servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change.
 
 Verified identity is the dependency for everything else. You can have meaningful discussions. Reviews you can trust. One-person-one-vote governance. Moderation that works. Enforceable contracts.
