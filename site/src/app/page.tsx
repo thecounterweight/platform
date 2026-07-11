@@ -16,7 +16,7 @@ export default function Home() {
           An irrevocable purpose trust makes this architecture permanent.
         </p>
         <p className="mt-6 text-base text-zinc-300 max-w-xl">
-          Constitutional rights for users. Open-source. Governed democratically.
+          Constitutional rights for users. Open-source. Governed democratically by its users.
         </p>
         <Counter />
       </section>

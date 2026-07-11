@@ -6,7 +6,7 @@ The internet is filled to the brim with bots. We fix that.
 
 ## The Solution
 
-Every user is verified through government ID. One account per human. Identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically.
+Every user is verified through government ID. One account per human. Identity data never reaches our servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change. Open-source. Governed democratically by its users.
 
 **What the platform does:** Discussion, product reviews with a marketplace, contracts between verified parties, democratic governance, real-time translation across languages, end-to-end encrypted messaging. All built on verified identity — every participant is a real, unique human.
 
