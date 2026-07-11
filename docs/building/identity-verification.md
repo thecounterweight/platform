@@ -78,16 +78,15 @@ For users verifying with non-Aadhaar documents (Voter ID, Passport, PAN, interna
 3. Match found = duplicate account attempt, rejected.
 4. No match = new user, enrolled in provider's face registry.
 
-The platform never stores face embeddings or biometric templates. The KYC provider maintains the face registry and performs dedup checks — returning only pass/fail to the platform. This creates provider lock-in for these users (face embeddings aren't portable between providers), but since Aadhaar-based dedup covers 95% of Indian users, the lock-in affects only edge cases.
+The platform never stores face embeddings or biometric templates. The KYC provider maintains the face registry and performs dedup checks — returning only pass/fail to the platform.
 
-**Why not use one method for everyone:**
-- HMAC-of-ID-number is simpler, cheaper, provider-portable, and privacy-preserving — but requires a single universal ID number per country.
-- Face dedup works across any document type but is more expensive (₹2-5 per 1:N check), creates provider lock-in, and depends on third-party biometric storage.
-- The combination gives robust coverage: primary method is portable and cheap, fallback handles edge cases.
+**Known limitation:** This creates provider dependency. The face registry lives with the provider — if we switch providers or they shut down, dedup continuity for these users breaks. We can't self-host the registry without storing biometric data on our servers (contradicts the architecture). This is acceptable because face dedup is a bridge, not the target state.
+
+**Upgrade path:** Users who verified via face dedup can upgrade to OPRF-based dedup at any time once they have a supported ID (Aadhaar, SSN, etc.). Their account transitions to the standard mechanism and they're no longer dependent on the face registry. The goal is to move as many users as possible onto OPRF-based dedup over time.
 
 **International expansion:** Each country gets a primary dedup ID where one exists (SSN in US, National Insurance number in UK, BSN in Netherlands). Face dedup is the universal fallback for countries without a single dominant identifier.
 
-**Provider switching (primary path):** The HMAC is computed by the phone + server (via OPRF) using the platform's key. The KYC provider is only involved in issuing the credential — not in hash computation. Switching providers has zero impact on deduplication. Only face-dedup users are affected by provider changes.
+**Provider switching (primary path):** The OPRF hash is computed by the phone + server using the platform's key. The KYC provider is only involved in issuing the credential — not in hash computation. Switching providers has zero impact on OPRF-based deduplication. Only face-dedup users are affected by provider changes.
 
 ### Layer 2 — Face Scan (Liveness Check)
 
