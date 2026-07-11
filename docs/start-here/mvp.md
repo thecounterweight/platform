@@ -206,7 +206,7 @@ The formula is transparent, documented, and produces the same result for anyone 
 
 The platform earns affiliate commissions on all purchases. Reviewers get paid from that pool based on helpfulness.
 
-- **Proof of purchase required.** You can only review what you bought. When you buy something, you tell us which reviews influenced your decision — those reviewers earn from it.
+- **Proof of purchase required.** You can only review what you bought. Subject matter experts can also review based on publicly available material (specs, documentation, teardowns). When you buy something, you tell us which reviews influenced your decision — those reviewers earn from it.
 - **Parameter-based reviews.** Each product category has specific parameters (phone: battery, camera, build, value for money). You rate and justify each. Vague reviews don't qualify.
 - **Helpfulness score.** Verified buyers rate reviews as helpful or misleading. Your score accumulates over time. Higher score = larger share of the commission pool.
 - **Negative reviews earn too.** If your "don't buy this" review is rated helpful by people who read it, you earn. Payment is tied to usefulness, not to whether someone clicked buy.
