@@ -201,7 +201,6 @@ The formula is transparent, documented, and produces the same result for anyone 
 
 **Revenue from day one:** Affiliate commissions when users click through and purchase on source platforms.
 
-**API dependency risk:** Affiliate API access is granted at the provider's discretion. The platform's revenue model does not depend on any single provider long-term — seller commissions, talent pool fees, certification fees, sponsored slots, and identity layer fees are independent revenue streams. If a provider terminates access, the platform continues with remaining providers and community sellers.
 
 **Reviewer earnings:**
 
