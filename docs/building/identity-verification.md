@@ -133,22 +133,7 @@ To game the system you would need: a real government ID + a face that matches it
 
 ### Verification Layers
 
-```mermaid
-graph TD
-    L1[Layer 1: Government ID<br/>via KYC provider] -->|proves| U[Uniqueness]
-    L2[Layer 2: Face scan<br/>liveness check] -->|proves| H[Current holder = registered person]
-    L3[Layer 3: OTP<br/>second factor] -->|prevents| B[Bot-scale attacks]
-
-    U --> C[Combined guarantee]
-    H --> C
-    B --> C
-    C --> R[Real government ID +<br/>matching face +<br/>unique phone =<br/>one-human-one-account]
-
-    style L1 fill:#bfb,stroke:#333
-    style L2 fill:#bbf,stroke:#333
-    style L3 fill:#fdb,stroke:#333
-    style R fill:#f9f,stroke:#333
-```
+![Verification Layers](../assets/verification-layers.svg)
 
 ## Privacy Guarantees
 
