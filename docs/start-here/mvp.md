@@ -165,16 +165,17 @@ Products from major platforms (Amazon, Flipkart, etc.) are pulled via their offi
 **How it works:**
 
 1. Products aggregated from major platforms via affiliate APIs (Amazon Product Advertising API, Flipkart Affiliate API, etc.)
-2. Verified users review products — only real humans, verified purchase
-3. Peer-rated reviews surface the most helpful and accurate information
-4. Users click through to buy on the source platform
+2. Verified users review products with proof of purchase — you can only review what you actually bought
+3. Others who buy based on your recommendation rate your review — also with proof of purchase
+4. Peer-rated reviews surface the most helpful and accurate information
+5. Users click through to buy on the source platform
 
 **Why this works:**
 
 - Solves cold-start — marketplace is useful from day one without waiting for sellers
-- Reviews are trustworthy because every reviewer is a verified real human
-- Peer-rated reviews add a quality layer that no existing platform has
-- Affiliate commissions generate revenue immediately (Amazon: 1-10%, Flipkart: 4-12%)
+- Proof of purchase on both sides: reviewers prove they bought it, raters prove they bought it based on the review
+- Every reviewer is a verified human with one persistent reputation — can't reset and start over
+- Affiliate commissions generate revenue (Amazon: 1-10%, Flipkart: 4-12%)
 
 **The progression:**
 
