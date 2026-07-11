@@ -39,7 +39,7 @@ i18n support — the interface works in Hindi, English, and whatever languages t
 **How it works:**
 - Neural machine translation (NLLB-200 or SeamlessM4T, self-hosted) translates posts and comments on demand
 - Original language always preserved and visible — translation is a layer, not a replacement
-- Users flag bad translations → feeds back into model quality
+- Users flag bad translations → verified bilinguals can correct them directly
 - Latency target: <500ms for cached translations, <2s for new content
 - Self-hosted models (not API calls to Google/DeepL) — no user content leaves platform infrastructure
 
