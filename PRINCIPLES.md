@@ -44,21 +44,15 @@ This isn't bureaucracy — it's preventing mob-driven instability while keeping 
 
 During the 7-day period, the leader continues routine operations but cannot make irreversible decisions — no appointments, no rule changes, no removals, no financial decisions above routine thresholds. This prevents damage without fully paralyzing operations.
 
-## 6. We build businesses, not charities
+## 6. Knowledge flows freely
 
-This is an economic engine. People back businesses directly and earn returns per their individual contracts. Charity runs out. Investment compounds.
+Experts don't just certify — they teach. Seniors mentor. Access to knowledge shouldn't depend on how much you can pay for it.
 
-Members fund businesses individually. Businesses grow. Returns flow to the members who backed them. Those members back more businesses. This cycle has to work economically or it doesn't work at all.
-
-## 7. Knowledge flows freely
-
-Experts don't just certify — they teach. Seniors mentor. The community invests in growing its people, not just its money. Access to knowledge shouldn't depend on how much you can pay for it.
-
-## 8. We resolve our own conflicts
+## 7. We resolve our own conflicts
 
 Fairly, transparently, and accessibly. Elected mediators. Structured process. Cheaper, faster, and more accessible than courts — built on trust relationships that already exist. Community mediation doesn't replace legal rights — either party can go to court at any time. The goal is to make courts unnecessary for most disputes, not to prevent access to them.
 
-## 9. We don't hide from the dark side
+## 8. We don't hide from the dark side
 
 This platform will not be used to traffic humans. Will not shelter predators. Will not enable violence. Will not facilitate money laundering. Will not be a marketplace for contraband.
 
@@ -66,21 +60,21 @@ Those lines don't move. They're not subject to community vote. They are foundati
 
 How we enforce them without becoming a surveillance machine — that's a design problem we solve together. But the lines themselves are fixed.
 
-## 10. Borders are a problem to solve, not a reason to stop
+## 9. Borders are a problem to solve, not a reason to stop
 
-A person in Rajasthan should be able to invest in a community business in Nairobi. That's the goal. The reality: foreign exchange laws (FEMA in India, Capital Markets Act in Kenya, and equivalents everywhere) restrict cross-border retail investment in unregistered businesses. The platform starts with domestic investment only. Cross-border activates country-pair by country-pair, only where local law permits. We solve it incrementally — not by ignoring the law, but by finding legal paths in each jurisdiction. "It's too hard" is not a reason to stop. "It's currently illegal" is a reason to do the legal work first.
+A person in Rajasthan should be able to enter a contract with someone in Nairobi. The reality: foreign exchange laws and local regulations restrict cross-border transactions. The platform starts domestic. Cross-border activates country-pair by country-pair, only where local law permits. We solve it incrementally — not by ignoring the law, but by finding legal paths in each jurisdiction. "It's too hard" is not a reason to stop. "It's currently illegal" is a reason to do the legal work first.
 
-## 11. The platform adapts to communities. Not the other way around.
+## 10. The platform adapts to communities. Not the other way around.
 
 Every community is different. Different cultures, languages, needs, governance styles. The platform is infrastructure — like roads. What you build on it is yours.
 
-## 12. Each generation owns its future
+## 11. Each generation owns its future
 
 No decision is permanent if the people living under it want to change it. The system evolves. Future members aren't bound by choices they had no part in making.
 
-**Exception:** Principles 0 (user ownership), 4 (data sovereignty), and 9 (hard ethical lines) are foundational constraints. They cannot be amended or overridden by any vote, regardless of majority. Everything else — including the governance model, investment structure, and this amendment process itself — can be changed by future members.
+**Exception:** Principles 0 (user ownership), 4 (data sovereignty), and 8 (hard ethical lines) are foundational constraints. They cannot be amended or overridden by any vote, regardless of majority. Everything else — including the governance model and this amendment process itself — can be changed by future members.
 
-## 13. The people build the system
+## 12. The people build the system
 
 These principles are the only thing decided in advance. The governance structure, contract infrastructure, platform architecture, moderation system — all designed by the people who show up.
 
@@ -88,4 +82,4 @@ The best ideas will come from people we haven't met yet.
 
 ---
 
-*This document is version 0.1. Amendments require 75% approval with at least 15% of all verified members participating (delegated votes count toward quorum). Principles 0, 4, and 9 are unamendable. Everything else is hard to change on purpose — but changeable.*
+*This document is version 0.1. Amendments require 75% approval with at least 15% of all verified members participating (delegated votes count toward quorum). Principles 0, 4, and 8 are unamendable. Everything else is hard to change on purpose — but changeable.*
