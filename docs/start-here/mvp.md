@@ -204,47 +204,13 @@ The formula is transparent, documented, and produces the same result for anyone 
 
 **Reviewer earnings:**
 
-Reviewers earn a share of affiliate commissions when their reviews drive clicks. Guardrails against gaming:
+The platform earns affiliate commissions on all purchases. Reviewers get paid from that pool based on helpfulness.
 
-1. **Parameter-based reviews** — Each product category has specific parameters (e.g., phone: battery, camera, build, value for money). Reviewers must rate and justify each parameter. Vague "great product!" reviews don't qualify for commission.
-2. **Commission on clicks, not sentiment** — Positive or negative doesn't matter. A detailed "don't buy this" review earns the same as a positive one. The incentive is usefulness, not positivity.
-3. **Peer-rated reviews** — Other verified buyers of the same product can rate any review as helpful, accurate, or misleading. This peer validation feeds directly into the reviewer's trust score. Gaming requires multiple verified purchasers to collude — far harder than creating fake accounts.
-4. **Trust score (graph-based propagation)** — Anyone who bought a product can review it immediately. Commission and review weight grow as trust builds. Trust is computed using **EigenTrust-style graph propagation** — ratings from already-trusted users carry more weight than ratings from new/untrusted users. This makes review rings and reciprocal rating schemes ineffective (colluding accounts amplify each other's low-trust signals, not high-trust ones).
-
-   **Inputs:** peer ratings from other verified buyers, parameter accuracy vs buyer feedback, return rates of recommended products, consistency over time. **Computation:** iterative trust propagation over the reviewer-rates-reviewer graph, converging to a global trust vector. Higher trust = higher commission share and more prominent placement. Misleading reviews tank your score — and because trust propagates, tanking one account's score reduces the weight of every account that endorsed it.
-
-You earn by being useful and accurate. Gaming requires consistently fooling buyers on specific measurable parameters — which tanks your trust score after a few attempts.
-
-### EigenTrust Propagation
-
-```mermaid
-graph LR
-    A[Reviewer A] -->|rates B's review| B[Reviewer B]
-    B -->|trust score influences<br/>weight of ratings| P[Product Ratings]
-    B -->|rates C positively| C[Reviewer C]
-
-    subgraph "Trusted path"
-        B -->|B is trusted| C
-        C -->|C gets trust boost| P
-    end
-
-    subgraph "Untrusted path"
-        X[Untrusted Account] -->|endorses| Y[Untrusted Account]
-        Y -->|endorses| Z[Untrusted Account]
-        X -.->|low weight| P
-        Y -.->|low weight| P
-        Z -.->|low weight| P
-    end
-
-    style X fill:#fbb,stroke:#333
-    style Y fill:#fbb,stroke:#333
-    style Z fill:#fbb,stroke:#333
-    style A fill:#bfb,stroke:#333
-    style B fill:#bfb,stroke:#333
-    style C fill:#bfb,stroke:#333
-```
-
-Colluding rings of untrusted accounts amplify low-trust signals, not high-trust ones. Mutual endorsement among untrusted accounts does not bootstrap credibility — it reinforces their low weight in the global trust vector.
+- **Proof of purchase required.** You can only review what you bought. When you buy something, you tell us which reviews influenced your decision — those reviewers earn from it.
+- **Parameter-based reviews.** Each product category has specific parameters (phone: battery, camera, build, value for money). You rate and justify each. Vague reviews don't qualify.
+- **Helpfulness score.** Verified buyers rate reviews as helpful or misleading. Your score accumulates over time. Higher score = larger share of the commission pool.
+- **Negative reviews earn too.** If your "don't buy this" review is rated helpful by people who read it, you earn. Payment is tied to usefulness, not to whether someone clicked buy.
+- **Trust propagation.** Ratings from already-trusted users carry more weight (EigenTrust-style graph propagation). Colluding accounts amplify each other's low-trust signals, not high-trust ones.
 
 ## What's NOT in the MVP
 
