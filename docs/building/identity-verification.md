@@ -364,27 +364,7 @@ The device-local credential architecture means ZK proofs for third parties requi
 
 ### Architecture
 
-```mermaid
-sequenceDiagram
-    participant P as Platform
-    participant D as User Device
-    participant T as Third Party
-
-    P->>D: Issues cryptographic credential
-    Note over P,D: Credential signed by platform,<br/>stored on device
-
-    D->>D: Generates ZK proof locally
-    Note over D: Proof created on-device,<br/>no raw data leaves
-
-    D->>T: Sends ZK proof
-    Note over D,T: Only proof transmitted,<br/>not underlying data
-
-    T->>T: Verifies proof mathematically
-    Note over T: No need to contact platform
-
-    Note over P: Platform never knows<br/>where user authenticates
-    Note over T: Third party never<br/>learns user identity
-```
+![ZK Proof Flow](../assets/zk-proof-flow.svg)
 
 ### Phased Rollout
 
