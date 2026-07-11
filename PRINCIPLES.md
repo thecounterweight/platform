@@ -12,11 +12,7 @@ We explored user-owned models (member-governed LLC, cooperative) but found them 
 
 ## 1. Every person matters equally
 
-One person, one voice — on governance, leadership, platform decisions, and politics. Regardless of wealth, origin, or connections.
-
-For investment decisions — each person decides individually which businesses to back via direct contracts. Your money, your choice.
-
-Wealth never buys you power over people. But your individual investment decisions are yours alone.
+One person, one voice — on governance, leadership, platform decisions, and politics. Regardless of wealth, origin, or connections. Money doesn't translate into governance power here.
 
 ## 2. Everyone belongs, not just those with money
 

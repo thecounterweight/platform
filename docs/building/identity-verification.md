@@ -4,7 +4,7 @@ How we ensure one person = one account without compromising privacy.
 
 ## The Requirement
 
-Every account on the platform must belong to a unique, real human. This is non-negotiable — voting, investment, certification, and community trust all depend on it.
+Every account on the platform must belong to a unique, real human. This is non-negotiable — voting, contracts, certification, and community trust all depend on it.
 
 ## Proposed Design (Three Layers)
 
@@ -92,7 +92,7 @@ The platform never stores face embeddings or biometric templates. The KYC provid
 
 ### Layer 2 — Face Scan (Liveness Check)
 
-For high-stakes actions (voting, large investments, governance decisions), communities can require a face scan that matches the government ID photo.
+For high-stakes actions (voting, large contracts, governance decisions), communities can require a face scan that matches the government ID photo.
 
 - Proves the person performing the action is the verified account holder
 - Prevents account selling to bot farms
@@ -115,7 +115,7 @@ One phone number per account at registration. OTP is a second factor, not the pr
 - Primary auth: password or passkey (set at registration)
 - Second factor: OTP on new devices only
 - Sessions: long-lived on trusted devices — no OTP required for every login
-- Sensitive actions (voting, investment, governance): face scan (Layer 2)
+- Sensitive actions (voting, contracts, governance): face scan (Layer 2)
 
 **SIM recycling / swap protection:**
 - Login from new device requires password + OTP (not OTP alone)
@@ -265,7 +265,7 @@ In all cases, you must prove you're the same person. A recycled SIM alone never 
 ## Age Threshold
 
 - Community features (discussion, marketplace, reviews, certification): No platform-imposed age minimum.
-- Investment and contract features (backing businesses, signing investment agreements): 18+ or legal age of contract in the user's jurisdiction.
+- Contract features (business funding, freelancer agreements, loans): 18+ or legal age of contract in the user's jurisdiction.
 - Where local law imposes age restrictions on platform access (e.g., France requires parental consent for under-15 on social platforms), the platform complies with those requirements.
 
 Age is verified through the government ID layer during registration. Jurisdictional restrictions are applied based on the user's verified location.
@@ -278,13 +278,13 @@ An estimated 850 million people globally lack government-issued ID. The platform
 
 | Tier | Requirement | Can do | Cannot do |
 |------|-------------|--------|-----------|
-| Verified | Government ID + OTP | Everything — review, vote, invest, sell, certify, govern | — |
-| Vouched | N verified members vouch + OTP | Discussion, chat, browse marketplace, buy (not sell) | Review, vote, invest, sell, certify, govern |
+| Verified | Government ID + OTP | Everything — review, vote, contract, sell, certify, govern | — |
+| Vouched | N verified members vouch + OTP | Discussion, chat, browse marketplace, buy (not sell) | Review, vote, contract, sell, certify, govern |
 | Unverified | Email/phone only | Browse, read, search | Participate in any way that requires trust |
 
 **Why three tiers:**
 
-The platform's value comes from verified identity — trusted reviews, one-person-one-vote, no bots. Weakening this weakens everything. But reading, browsing, and buying don't require the same trust guarantees as reviewing, voting, or investing. People without ID can still benefit from the platform. They just can't do things that require others to trust their uniqueness.
+The platform's value comes from verified identity — trusted reviews, one-person-one-vote, no bots. Weakening this weakens everything. But reading, browsing, and buying don't require the same trust guarantees as reviewing, voting, or signing contracts. People without ID can still benefit from the platform. They just can't do things that require others to trust their uniqueness.
 
 **Vouched tier:** If N verified members (community decides the threshold — likely 3-5) personally vouch for someone, that person gains limited participation rights. This isn't full verification — it's a social trust layer. Vouchers are accountable: if the vouched person turns out to be a duplicate or bot, vouchers lose reputation.
 

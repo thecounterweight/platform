@@ -224,7 +224,7 @@ The platform earns affiliate commissions on all purchases. Reviewers get paid fr
 | Contract infrastructure (business funding, rentals, loans) | Requires verified identity layer and lawyer-reviewed templates |
 | Political coordination | Emerges naturally once membership hits critical mass |
 | Video calls (on-platform) | Use external tools initially — build later when we have the team |
-| Legal infrastructure (contracts, templates, dispute resolution) | Critical for investment and business funding phases — built when those features activate |
+| Legal infrastructure (contracts, templates, dispute resolution) | Critical for contract features — built when those activate |
 | Translation between users (perfect quality) | Self-hosted neural MT ships with Milestone 1. Quality improves continuously via user feedback. |
 | Federation | Single instance first — federation is a goal, not yet designed |
 
@@ -281,7 +281,7 @@ Builder compensation activates when revenue consistently exceeds operating costs
 5. Skill certification starts. Domain experts evaluate people. Talent pool forms.
 6. Community sellers list alongside aggregated products.
 7. Companies start paying for talent access. Revenue diversifies.
-8. Revenue funds the next phase — on-platform payments, collective purchasing, investment infrastructure.
+8. Revenue funds the next phase — on-platform payments, collective purchasing, contract infrastructure.
 
 ## What Success Looks Like
 
