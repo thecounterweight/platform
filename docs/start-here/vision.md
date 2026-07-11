@@ -2,11 +2,13 @@
 
 ## The Problem
 
-The internet is filled to the brim with bots. We fix that.
+The internet is filled to the brim with bots.
 
 We can't have genuine discussions we trust. We can't organize without it turning into a mob. Moderation is arbitrary — the platform is both the government and the judge. Our data gets sold, our content gets harvested, and we have no structural say in any of it.
 
 ## The Core Idea
+
+We fix that.
 
 Every person on the platform is verified through government ID. One account per human. Identity data never reaches platform servers — it stays on your device. An irrevocable purpose trust prevents sale or mission change.
 

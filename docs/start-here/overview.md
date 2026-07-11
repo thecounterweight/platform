@@ -2,7 +2,7 @@
 
 ## The Problem
 
-The internet is filled to the brim with bots. We fix that.
+The internet is filled to the brim with bots.
 
 ## The Solution
 
