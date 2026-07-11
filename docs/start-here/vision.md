@@ -2,7 +2,7 @@
 
 ## The Problem
 
-You can't tell what's real on the internet anymore. We fix that.
+The internet is filled to the brim with bots. We fix that.
 
 Discussions are shaped by bots and sockpuppets. Moderation is arbitrary — the platform is both the government and the judge. Our data gets sold, our content gets harvested, and we have no structural say in any of it.
 

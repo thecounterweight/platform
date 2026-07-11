@@ -8,7 +8,7 @@
 
 I'm Manoj Sihag. I'm building a platform called The Counterweight.
 
-You can't tell what's real on the internet anymore. We fix that.
+The internet is filled to the brim with bots. We fix that.
 
 So we verify identity. Every user is verified through government ID. One account per human.
 

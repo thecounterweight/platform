@@ -2,7 +2,7 @@
 
 ## The Problem
 
-You can't tell what's real on the internet anymore. We fix that.
+The internet is filled to the brim with bots. We fix that.
 
 ## The Solution
 

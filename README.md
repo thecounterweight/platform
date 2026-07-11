@@ -1,6 +1,6 @@
 # The Counterweight
 
-You can't tell what's real on the internet anymore. We fix that.
+The internet is filled to the brim with bots. We fix that.
 
 Every user is verified through government ID — one account per human. Identity data never reaches our servers. An irrevocable purpose trust prevents sale or mission change.
 
