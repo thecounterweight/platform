@@ -90,7 +90,7 @@ Each module:
 |-----------|-------------|
 | Microservices | No team to operate them. Module boundaries give the same separation without the ops cost. |
 | Federation | Not designed yet. Single instance first. |
-| Multi-region | One region (India) is enough until there's meaningful international traffic. |
+| Multi-region deployment | Platform serves global users from day one. Additional deployment regions (for lower latency) added when user density in a geography justifies the ops cost. |
 | Kubernetes | Overkill for a single monolith. Add when you have multiple services AND dedicated ops. |
 | API Gateway (Kong/Traefik) | Unnecessary with a monolith. Next.js middleware handles auth and rate limiting. |
 | Message broker (NATS/RabbitMQ) | BullMQ handles async jobs. Event-driven architecture added when modules actually need to decouple. |
