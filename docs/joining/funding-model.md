@@ -354,19 +354,6 @@ The increase from 30% to 40% at scale accommodates growth-stage investors who co
 
 If existing rounds already consume the cap and a new round wants more, it doesn't happen until cap space frees up. Since all deals are time-bounded, cap space opens naturally as earlier rounds expire. And hitting the cap implies significant revenue already exists — the platform should be self-sustaining from operations at that point, not dependent on new investment. The cap protects the platform's ability to pay builders and fund community programs.
 
-## Legal Compliance
-
-The platform facilitates only what is legal in each jurisdiction. Revenue-share agreements, investment rounds, and fund usage activate per country only after jurisdiction-specific legal review.
-
-The platform does not:
-- Act as a broker, dealer, or investment advisor
-- Pool capital or hold investor funds
-- Guarantee returns or promise specific yields
-- Solicit investment from the general public
-
-All agreements are between named, verified individuals. The platform provides contract infrastructure and transparent record-keeping. It is not a party to any investment agreement.
-
-If local law classifies any activity on the platform as a regulated financial service, that activity is paused in that jurisdiction until compliance is achieved or the feature is restructured.
 
 ## Open Questions
 
