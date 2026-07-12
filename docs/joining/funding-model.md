@@ -25,24 +25,7 @@ The trust model (Patagonia, Signal, Mozilla) provides equivalent structural prot
 
 ### Trust Structure
 
-```mermaid
-graph TD
-    OC[Operating Company<br/>founder-owned]
-    IPT[Irrevocable Purpose Trust<br/>holds golden share]
-    UEAB[User-Elected Advisory Board<br/>elected by verified users]
-    T[Trustees<br/>3 independent: institutional,<br/>user-elected board member,<br/>professional]
-
-    IPT -->|golden share veto| OC
-    UEAB -->|binding recommendation| IPT
-    T -->|govern| IPT
-
-    OC -.-|founder excluded| IPT
-
-    style IPT fill:#f9f,stroke:#333
-    style UEAB fill:#bbf,stroke:#333
-    style OC fill:#bfb,stroke:#333
-    style T fill:#fdb,stroke:#333
-```
+![Trust Structure](../assets/trust-structure.svg)
 
 **Who are the trustees:**
 
