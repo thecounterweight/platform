@@ -126,33 +126,6 @@ The goal is to resolve most disputes without courts (which are slow, expensive, 
 
 Fees are set at actual infrastructure cost + small margin. All fees are public, comparable across jurisdictions, and adjustable by governance vote.
 
-## Business Funding — Additional Details
-
-Business funding contracts deserve additional detail because they carry more risk than service or rental agreements.
-
-### Deal structures for business funding
-
-**Revenue share (default, simplest)**
-
-Business pays X% of revenue for Y years, capped at Z total return. No ownership changes hands. Works for most small businesses. Available everywhere from day one.
-
-**Equity (for registered businesses)**
-
-Individual backers sign equity contracts directly with the registered company. Requires: valuation agreement, legal structuring per jurisdiction, defined exit mechanism in the contract.
-
-**Convertible (hybrid)**
-
-Start with revenue share. If the business hits agreed milestones, converts to equity at a pre-agreed valuation. Lower risk early, upside later.
-
-### Risk disclosure (business funding only)
-
-Business funding carries real risk. Not every business will succeed.
-
-- The loss is absorbed by the individual who signed the contract. No debt to the business founder — the backer took that risk knowingly.
-- Do not put money into business funding contracts that you cannot afford to lose.
-- Positions are illiquid until the business pays out per contract terms.
-- The platform does not guarantee returns, vet businesses, or recommend deals.
-
 ### Platform scope
 
 The platform provides contract infrastructure. It is agnostic to contract type — freelancer agreements, rental contracts, loans, service agreements all use the same signing and storage system.
