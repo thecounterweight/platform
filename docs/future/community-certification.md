@@ -42,7 +42,7 @@ Community-selected experts independently evaluate and certify products, services
 
 **Early stage (before certification revenue flows):**
 
-Evaluators volunteer. They define certification criteria for their field, conduct the first assessments, and build the credibility that makes the system trustworthy. This is how they establish reputation — the community sees who does rigorous, fair evaluations.
+Evaluators accrue builder units like any other contributor. They define certification criteria for their field, conduct the first assessments, and build the credibility that makes the system trustworthy. Same formula applies: hours × complexity × bonuses.
 
 **Once certification fees flow:**
 
@@ -51,7 +51,7 @@ Evaluators volunteer. They define certification criteria for their field, conduc
 - Higher-complexity evaluations (e.g., certifying a manufacturing process vs. certifying a jar of honey) pay proportionally more.
 - For skill certifications, the fee can also be covered by the hiring company as part of their talent pool access fee.
 
-Early evaluators who volunteered when there was no pay built the standards everyone else follows. Their reputation is what makes the system credible.
+Early evaluators who built the standards when there was no direct pay earned units for that work. Their reputation is what makes the system credible.
 
 ## Preventing Corruption
 
@@ -94,7 +94,7 @@ Evaluator pools organized by domain:
 
 ## Getting Started
 
-We need expert volunteers in every domain willing to:
+We need experts in every domain willing to:
 1. Help define certification criteria for their field
 2. Be among the first evaluators
 3. Help design the evaluation process for their domain
