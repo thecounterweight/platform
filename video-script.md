@@ -12,7 +12,7 @@ The internet is filled to the brim with bots. We fix that.
 
 So we verify identity. Every user is verified through government ID. One account per human.
 
-Your identity data never reaches our servers. A KYC provider verifies you and issues a signed credential directly to your device. Your phone and our server jointly compute a deduplication hash using a protocol where the server never sees your ID number and your phone never sees the key. The platform stores only that hash. There is no identity database to breach, sell, or misuse — and an irrevocable purpose trust makes this architecture permanent.
+Your identity data never reaches our servers. You verify through a KYC provider on your device — the platform receives only a cryptographic proof that you're real and unique. Your phone and our server jointly compute a deduplication hash using a protocol where the server never sees your ID number and your phone never sees the key. The platform stores only that hash. There is no identity database to breach, sell, or misuse — and an irrevocable purpose trust makes this architecture permanent.
 
 ---
 
@@ -26,7 +26,7 @@ You read and write public content. You discuss. You organize. Real-time neural t
 
 Governance operates on one-person-one-vote. Policies, features, moderation rules — decided by user vote. Leaders are elected and removable. No permanent admins. Constitutional changes require 75% supermajority.
 
-Verification also grants you constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page. One vote in governance. Right to stand for elected positions. Legal standing to sue if the company violates its commitments. An irrevocable purpose trust holds a golden share — independent trustees can veto any sale, any mission change, any removal of user protections. Same structure Patagonia uses.
+Verification also grants you constitutional rights — encoded in the company's Articles of Association, not a Terms of Service page. One vote in governance. Right to stand for elected positions. Legal standing to sue if the company violates its commitments. An irrevocable purpose trust holds a golden share — independent trustees can veto any sale, any mission change, any removal of user protections. Similar to the structure Patagonia and Signal use.
 
 ---
 
@@ -36,7 +36,7 @@ We have a marketplace. Products aggregated from different sources — major plat
 
 You review products either with proof of purchase, or as an expert after reading the published material about the product. Reviews are tied to your persistent identity — you can't reset your reputation and start over.
 
-When someone buys based on your recommendation, they can rate your review — again with proof of purchase. We calculate a score based on how helpful you've been to the community over time — statistically ranked by accuracy, not popularity or recency.
+When someone buys based on your recommendation, they can rate your review — again with proof of purchase. We calculate a score based on how helpful you've been over time — ranked by how often your reviews actually helped someone make a good purchase decision.
 
 You get paid proportionally to that score. People whose recommendations consistently help others earn more. People whose reviews are inaccurate or unhelpful earn less. The system is transparent — the algorithm is open-source, the scores are auditable.
 
@@ -56,7 +56,7 @@ Someone builds a lending platform — they verify a ZK proof that the borrower i
 
 Community-serving projects use the identity layer free. Revenue-generating services pay a proportional fee. That fee ceiling is a constitutional bound — changeable only by 75% supermajority.
 
-Contracts between verified parties also become possible — business funding, freelancer agreements, rental contracts. Both parties are identified and accountable. Legally enforceable digital signatures.
+Contracts between verified parties also become possible — freelancer agreements, rental contracts, loans, services. Both parties are identified and accountable. Legally enforceable digital signatures.
 
 ---
 
