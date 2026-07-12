@@ -81,9 +81,11 @@ All these roles are elected, accountable, and removable via no-confidence (7-day
 
 Every unit claim must correspond to visible output. Code has git commits and PRs. Design has files and mockups. Legal has documents produced. Strategy has written proposals and documented decisions. You cannot claim hours without corresponding artifacts.
 
-**Permanently public, retroactively challengeable:**
+**Permanently public, time-bounded challenges:**
 
-All unit assignments are public forever. The standard 14-day challenge window applies to current members, but new builders who join later can challenge historical assignments at any time during their first year. If the community later determines early assignments were inflated, they vote to adjust. Nothing is ever permanently locked in.
+All unit assignments are public forever. Any member can challenge an assignment within 90 days of it being recorded. After 90 days, the assignment is final — the community cannot vote to reduce it retroactively.
+
+**Exception:** Fraud (fabricated artifacts, claimed hours not worked, misrepresented complexity) can be challenged at any time with no expiry. This requires evidence of misrepresentation, not just disagreement about whether the work was worth that much.
 
 **Market-rate sanity check:**
 
