@@ -91,9 +91,6 @@ All unit assignments are public forever. Any member can challenge an assignment 
 
 Unit claims should pass a gut check: would this work cost roughly this much on the open market? If someone claims 50 hours of highly-complex work for something a freelancer would do in 10 hours at standard complexity, that's a flag. Not a hard rule — a reference point for peer reviewers.
 
-**Additive bonuses reduce the incentive to inflate:**
-
-The time and founding bonuses already reward early builders (up to +200%). The system accounts for early risk = early reward by design. This reduces the incentive to inflate complexity claims because being early is already structurally advantageous — and the additive model caps the maximum benefit.
 
 **Peer review is still required** — you can't assign units to yourself. Contribution quality matters, not just hours.
 
