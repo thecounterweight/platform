@@ -67,17 +67,13 @@ The additive model ensures the ratio between early and late contributors doing e
 - PR reviews and quality assurance
 - Strategic work (partnerships, fundraising, outreach)
 
-### What Doesn't Earn Builder Units
+### Community roles (moderation, evaluation, mediation)
 
-Some roles create value but aren't platform-building work. They follow a different path:
+Before revenue, these roles earn units like any other contribution. Moderating discussions, defining certification standards, mediating disputes — it's real work that makes the platform viable. Same formula applies: hours × complexity × bonuses.
 
-**Moderators** — Volunteer early. Build reputation and trust through demonstrated good work. Once platform revenue is healthy, the community elects paid moderators from the operations budget. No shortcuts — you earn the role, the community decides who deserves it.
+Once revenue flows and these become paid positions (from operations budget or per-assessment fees), they stop accruing units and get compensated directly instead. No double compensation — but early volunteers aren't penalized for doing non-code work.
 
-**Evaluators/Certifiers** — Volunteer early to establish credibility and define certification criteria for their field. Once certification fees flow, they're paid per assessment. Early evaluators built the standards everyone else follows.
-
-**Dispute mediators** — Same pattern. Volunteer early, demonstrate fairness and judgement. Paid per case from operations budget once revenue supports it.
-
-All these roles are elected, accountable, and removable via no-confidence (7-day discussion + 60% vote). The incentive: volunteer now → build reputation → community elects you → paid position once revenue flows.
+All these roles are elected, accountable, and removable via no-confidence (7-day discussion + 60% vote).
 
 ### What Prevents Gaming
 
