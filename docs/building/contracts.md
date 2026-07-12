@@ -29,7 +29,7 @@ Verified client hires a verified freelancer. Scope, deliverables, payment terms,
 
 Verified landlord and verified tenant. Monthly rent, deposit, maintenance responsibilities, notice period — digitally signed, stored immutably, legally enforceable.
 
-**India context:** 90%+ of rental agreements are informal (verbal or unsigned photocopies). A digital, verified, legally enforceable rental agreement for ₹50-100 replaces a process that currently requires stamp paper, a notary visit, and ₹500-2,000.
+**Why this matters:** Sign from your phone in 5 minutes. Both parties verified. Immutable record if disputes arise. No notary visit, no physical paperwork.
 
 **Example:** Tenant signs a 11-month rental agreement. Platform sends monthly payment reminders. Both parties have an immutable record if disputes arise.
 
