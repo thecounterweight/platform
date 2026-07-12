@@ -19,20 +19,6 @@ Payments move through existing rails (UPI, bank transfer). Contract enforcement 
 
 ## Use Cases
 
-### Business Funding (Revenue Share)
-
-A person has a business idea. They present their plan. Interested community members reach out, evaluate, and choose to back them via a signed revenue share contract.
-
-Business pays X% of revenue for Y years, capped at Z total return. No ownership changes hands. Simple, low legal complexity. After the agreement period ends, the business is fully independent.
-
-**Example:** A local carpenter needs ₹2 lakh for better equipment. Three community members each put in ₹66,000 via separate revenue share contracts — 5% of revenue for 3 years, capped at 1.5x return. Simple. Done.
-
-### Business Funding (Equity)
-
-For registered businesses (Private Ltd, LLP). Individual backers each sign equity contracts directly with the company. More complex — requires valuation agreement, legal structuring per jurisdiction, defined exit mechanism.
-
-**Example:** A community grocery store registers as a Private Ltd. 50 people each invest ₹20,000 via individual equity contracts. Each owns their proportional share per company law.
-
 ### Freelancer Agreements
 
 Verified client hires a verified freelancer. Scope, deliverables, payment terms, IP ownership — all in a signed contract. No ghosting (you're a real person with a reputation), no payment disputes without a trail.
@@ -202,16 +188,17 @@ Business funding carries real risk. Not every business will succeed.
 - Positions are illiquid until the business pays out per contract terms.
 - The platform does not guarantee returns, vet businesses, or recommend deals.
 
-### Why the platform is not an investment platform
+### Platform scope
 
-The platform provides contract infrastructure. People can use that infrastructure to fund businesses — just as they can use it to sign rental agreements or freelancer contracts. The platform is agnostic to contract type.
+The platform provides contract infrastructure. It is agnostic to contract type — freelancer agreements, rental contracts, loans, service agreements all use the same signing and storage system.
 
-This distinction matters legally:
-- The platform does not solicit investment or match investors with businesses
-- The platform does not pool capital (SEBI CIS risk)
-- The platform does not recommend, vet, or perform due diligence (SEBI Investment Adviser risk)
-- The platform does not operate a marketplace for investment positions (stock exchange function)
-- A business posting a pitch is the same infrastructure as a freelancer posting availability — the platform connects verified people, they decide what contracts to sign
+What the platform does not do:
+- Does not solicit, recommend, or match parties for any type of deal
+- Does not pool capital or hold funds
+- Does not vet, perform due diligence, or guarantee outcomes
+- Does not operate a marketplace for financial positions
+
+Verified people decide what contracts to sign. The platform provides the infrastructure — templates, signing, storage, dispute resolution.
 
 ### Cross-border contracts
 
