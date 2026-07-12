@@ -152,7 +152,7 @@ All assignments are public and challengeable for 14 days. If challenged, peer vo
 
 ### Before Revenue Exists
 
-In the early days, there's no cash. Your work is recorded from day one. The moment revenue starts flowing, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.
+There's no cash yet. Your work is recorded from day one. When revenue comes, it flows back to everyone who helped build — including those who showed up when it was just an idea and a repo.
 
 Early-stage infrastructure (hosting, APIs, domains) is funded by early investor capital — that's operational runway, separate from the revenue split. Once revenue exists, operations takes its 30% first (at the under-$20M tier). The remaining 60% goes to the builders + investors pool (see sub-split table above). Before any investors come in, builders get 100% of this pool. The platform keeps the lights on before distributing to anyone.
 
