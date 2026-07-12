@@ -23,7 +23,7 @@ Use the cheapest country-specific rail available:
 | US | ACH | $0.20-0.50 flat |
 | Others | Best available local rail | Varies |
 
-For countries where only card processors (Stripe, Razorpay) are available, use them. On a small purchase, 2% is a few rupees — not ideal, but not the 15-30% that existing platforms take.
+For countries where only card processors (Stripe, Razorpay) are available, use them.
 
 Buyers pay only what the payment rail charges — no platform fee. Sellers pay a small commission on completed sales.
 
