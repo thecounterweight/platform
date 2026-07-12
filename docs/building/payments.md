@@ -27,7 +27,7 @@ For countries where only card processors (Stripe, Razorpay) are available, use t
 
 Buyers pay only what the payment rail charges — no platform fee. Sellers pay a small commission on completed sales.
 
-### Large Transactions (Investment Contracts, Business Funding)
+### Large Transactions (Contracts, Business Funding)
 
 Direct bank transfer between parties. Zero processing fee.
 
@@ -38,16 +38,16 @@ How it works:
 4. Receiving party confirms receipt on the platform.
 5. Platform records the transaction as complete.
 
-The money never touches the platform. Same flow as angel investments, property deals, and large B2B transactions.
+The money never touches the platform. Same flow as property deals, freelancer payments, and large B2B transactions.
 
 ### Cross-Border
 
 | Type | Recommended rail | Cost |
 |------|-----------------|------|
 | Small marketplace purchase | Wise, or local equivalent | 0.5-1.5% |
-| Large investment contract | International wire or Wise | User chooses their own method |
+| Large contract | International wire or Wise | User chooses their own method |
 
-Cross-border investment contracts are direct transfers — the platform provides the contract and identity verification, the parties choose how to move the money.
+Cross-border contracts are direct transfers — the platform provides the contract and identity verification, the parties choose how to move the money.
 
 ## What the Platform Charges
 
@@ -59,7 +59,7 @@ Cross-border investment contracts are direct transfers — the platform provides
 | Dispute resolution | Parties involved | Shared fee covering mediator coordination and process management |
 | Collective purchasing | Nobody | Small coordination fee covers operations and generates revenue |
 
-Buyers never pay a platform fee. Sellers pay a small commission when a sale completes. Businesses receiving investment capital pay a facilitation fee covering legal infrastructure. Dispute resolution fees are shared by the parties involved. Collective purchasing coordination covers its own operational costs.
+Buyers never pay a platform fee. Sellers pay a small commission when a sale completes. Large contracts pay a facilitation fee covering legal infrastructure. Dispute resolution fees are shared by the parties involved. Collective purchasing coordination covers its own operational costs.
 
 All fees follow the same rubric: calculate what it costs to build and maintain the component, then add a small margin on top. Specific percentages will be determined by research into actual operational costs — not set arbitrarily. Revenue also comes from affiliate commissions, sponsored slots, certification fees, talent pool access fees, and proportional fees from commercial instances using the identity layer.
 
@@ -83,7 +83,7 @@ For marketplace purchases where money has already moved:
 ## Implementation Phases
 
 1. **MVP:** No on-platform payments. Marketplace is listing + reviews only. Buyers contact sellers directly.
-2. **Phase 2:** Integrate country-specific rails for marketplace (UPI first for India). Direct bank transfer for investment contracts (just recording, no processing).
+2. **Phase 2:** Integrate country-specific rails for marketplace (UPI first for India). Direct bank transfer for large contracts (just recording, no processing).
 3. **Phase 3:** Cross-border marketplace payments via Wise API or equivalent. Expand rail integrations to more countries.
 
 ## Open Questions
