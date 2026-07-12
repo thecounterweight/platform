@@ -93,20 +93,7 @@ Structured Online Dispute Resolution (ODR) infrastructure — guided negotiation
 
 ### ODR Flow
 
-```mermaid
-flowchart TD
-    A[Dispute Filed] --> B[Structured Negotiation]
-    B --> B1[Gather statements from both parties]
-    B1 --> B2[Identify agreement/disagreement points]
-    B2 --> B3[Suggest resolution ranges]
-    B3 --> C{Resolved?}
-    C -->|Yes| D[Done]
-    C -->|No| E[Assisted Mediation]
-    E --> E1[Human mediator with full context]
-    E1 --> F{Resolved?}
-    F -->|Yes| D
-    F -->|No| G[Legal System / Court]
-```
+![ODR Flow](../assets/odr-flow.svg)
 
 **Why structured ODR:**
 
