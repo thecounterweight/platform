@@ -333,7 +333,6 @@ Spending is transparent and publicly auditable. The community can see where ever
 - Governance power over platform operations, infrastructure, builder compensation, or feature decisions
 - The ability to sell or transfer their platform revenue-share position (prevents speculation on the platform's revenue stream)
 
-**Note:** This applies to platform investors (people investing in the platform itself). Community business contracts (people backing a bakery or startup via direct contracts) are separate — those positions are governed by the individual contract terms between the parties. See [Contracts](../building/contracts.md).
 
 ## Why This Structure
 
