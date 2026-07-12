@@ -109,7 +109,7 @@ This is a starting framework. The builder community will ratify or adjust it.
 | Highly complex | 20x | Payment systems, identity verification, complex legal structuring, platform-level architecture that constrains everything downstream |
 | Specialist | 30x | ZK circuit design, cryptographic protocol implementation, formal verification, work requiring PhD-level expertise where <100 people globally are qualified |
 
-The complexity multiplier reflects what this work would cost on the open market. Contributors don't get equity or stock options, and take real risk that units may be worth nothing. The complexity scale compensates for that. A specialist joining in Year 4 with no bonuses still gets 30x — above market rate because it accounts for the risk of working without guaranteed compensation.
+The complexity multiplier reflects what this work would cost on the open market. Contributors take real risk — units might be worth nothing. The multiplier compensates for that risk on top of the skill requirement.
 
 **Bonuses (additive — stack by adding percentages, not compounding):**
 
