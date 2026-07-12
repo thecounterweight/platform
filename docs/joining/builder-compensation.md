@@ -148,7 +148,7 @@ The maintenance floor exists because unglamorous work that keeps the platform al
 
 **Why additive and not multiplicative:** Multiplicative compounding (where each bonus multiplies every other) creates exponential concentration. Five early contributors could permanently own 80%+ of the builder pool. Additive bonuses reward early risk (4x advantage over later contributors doing the same work) without creating an unchallengeable aristocracy.
 
-All assignments are public and challengeable for 14 days. If challenged, peer vote decides.
+All assignments are public and challengeable for 90 days. If challenged, peer vote decides.
 
 ### Before Revenue Exists
 

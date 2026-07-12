@@ -54,7 +54,7 @@ i18n support — the interface works in Hindi, English, and whatever languages t
 
 Board creators moderate. They can remove content and ban users from their board. All actions are logged publicly. This is sufficient for the first 1,000 users.
 
-**Moderation (scales with growth — ML triage + human decision):**
+**Moderation (post-1,000 users — ML triage + human decision):**
 
 At scale, pure human voting doesn't work — flagging fatigue, slow response to novel harm, coordinated downvote attacks. The solution: ML classifiers triage content, humans make final decisions.
 
@@ -237,7 +237,7 @@ The platform earns affiliate commissions on all purchases. Reviewers get paid fr
 
 **Milestone 1–2: No revenue. Runs lean.**
 
-Volunteer contributors. Minimal infrastructure costs (~₹5,000/month for hosting + OTP service). Funded by the founder or early supporters. This is the community-building phase — the product is the discussion platform, not the revenue.
+Volunteer contributors. Minimal infrastructure costs — hosting, OTP service, and GPU inference for translation. Funded by the founder or early supporters. This is the community-building phase — the product is the discussion platform, not the revenue.
 
 **Milestone 3 (early): Revenue starts, doesn't cover costs.**
 

@@ -72,7 +72,7 @@ Every community is different. Different cultures, languages, needs, governance s
 
 No decision is permanent if the people living under it want to change it. The system evolves. Future members aren't bound by choices they had no part in making.
 
-**Exception:** Principles 0 (user ownership), 4 (data sovereignty), and 8 (hard ethical lines) are foundational constraints. They cannot be amended or overridden by any vote, regardless of majority. Everything else — including the governance model and this amendment process itself — can be changed by future members.
+**Exception:** Principles 0 (structural protection), 4 (data sovereignty), and 8 (hard ethical lines) are foundational constraints. They cannot be amended or overridden by any vote, regardless of majority. Everything else — including the governance model and this amendment process itself — can be changed by future members.
 
 ## 12. The people build the system
 

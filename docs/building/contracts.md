@@ -97,7 +97,7 @@ Structured Online Dispute Resolution (ODR) infrastructure — guided negotiation
 
 **Why structured ODR:**
 
-At scale (thousands of disputes/month), unstructured mediation doesn't work — mediators burn out, response times grow, quality varies. Structured ODR (the model used by eBay, Modria/Tyler Technologies, and the EU ODR platform) resolves 80%+ of disputes at layer 1 without human intervention.
+At scale (thousands of disputes/month), unstructured mediation doesn't work — mediators burn out, response times grow, quality varies. Structured ODR (the model used by eBay and Modria/Tyler Technologies) resolves 80%+ of disputes at layer 1 without human intervention.
 
 **What the system does:**
 - Collects structured statements from both parties (guided questions, not freeform)

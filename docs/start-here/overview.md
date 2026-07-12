@@ -2,7 +2,7 @@
 
 ## The Problem
 
-The internet is filled to the brim with bots.
+You can't tell who's real online. Bots, sockpuppets, and fake accounts poison discussions, reviews, and governance.
 
 ## The Solution
 
