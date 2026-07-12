@@ -145,7 +145,7 @@ The revenue split formula is pre-defined in the Operating Agreement. Day-to-day 
 - Capital allocation decisions above $50,000
 
 **Founder authority (pre-first-election):**
-Until the membership exceeds 1,000 verified members, the founding member has operational authority within the defined formula. This means:
+Until the platform is self-sustaining, the founding member has operational authority within the defined formula. This means:
 - Can make operational spending decisions within the operations pool
 - Can approve builder payouts per the unit system
 - Cannot change the formula, the OA, or constitutional provisions
