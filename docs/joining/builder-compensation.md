@@ -39,7 +39,7 @@ This is the initial formula, encoded in the constitutional documents. It activat
 
 **Key constraints:**
 - Operations takes priority until the platform is self-sustaining
-- Investors share from the builders+investors pool (time-bounded, capped at 30% of total revenue)
+- Investors share from the builders+investors pool (time-bounded, capped at 30% under $20M revenue, 40% at $20M+)
 - When investor agreements expire, their share flows back to builders
 - The split evolves as the platform grows — governance decides how, within constitutional bounds
 
