@@ -151,7 +151,7 @@ Until the membership exceeds 1,000 verified members, the founding member has ope
 - Cannot change the formula, the OA, or constitutional provisions
 - Must publish monthly transparency reports (what was spent, where, why)
 
-Once membership exceeds 1,000, an elected board takes over operational authority. The founder becomes a regular member (or stands for election like anyone else). The transition is automatic — encoded in the OA, not discretionary.
+Once the platform is self-sustaining (revenue consistently covers operating costs), an elected board takes over governance authority — setting direction, approving policy changes, and overseeing the mission. The founder retains operational authority (running day-to-day) until the board votes otherwise. This separates "who sets direction" from "who runs things." The transition is automatic — encoded in the OA, not discretionary. The founder can stand for any elected position like any other member.
 
 **Transparency (always, regardless of who has authority):**
 - All spending is published monthly
