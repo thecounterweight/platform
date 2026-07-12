@@ -77,29 +77,7 @@ Small businesses hiring employees. Salary, role, notice period, non-compete (whe
 
 ### Template Lifecycle
 
-```mermaid
-flowchart TD
-    A[Creator drafts template] --> B[Peer review<br/>risk-tiered]
-    B --> C[Listed on platform]
-    C --> D[Users sign contracts]
-    D --> E[Post-signing feedback]
-    E -->|quality signals| A
-
-    C --> F{Legal change detected?}
-    F -->|Yes| G[Flag template]
-    G --> H{Creator updates<br/>within 30 days?}
-    H -->|Yes| B
-    H -->|No| I[Delisted]
-
-    C --> J{Flaw reported?}
-    J -->|Yes| K[Flag template]
-    K --> L[Peer review]
-    L --> M{Confirmed?}
-    M -->|Yes| N[Delist + notify users]
-    N --> O[Creator patches]
-    O --> B
-    M -->|No| C
-```
+![Template Lifecycle](../assets/template-lifecycle.svg)
 
 ## Dispute Resolution (Structured ODR + Human Mediation)
 

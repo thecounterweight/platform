@@ -1,0 +1,86 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" font-family="system-ui, -apple-system, sans-serif">
+  <defs>
+    <marker id="arrow" markerWidth="10" markerHeight="7" refX="10" refY="3.5" orient="auto">
+      <polygon points="0 0, 10 3.5, 0 7" fill="#666"/>
+    </marker>
+  </defs>
+
+  <!-- Main flow (top row) -->
+  <rect x="40" y="30" width="140" height="45" rx="8" fill="#e8f0fe" stroke="#4a86c8" stroke-width="1.5"/>
+  <text x="110" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Creator drafts</text>
+
+  <rect x="230" y="30" width="140" height="45" rx="8" fill="#e8f0fe" stroke="#4a86c8" stroke-width="1.5"/>
+  <text x="300" y="50" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Peer review</text>
+  <text x="300" y="65" text-anchor="middle" font-size="9" fill="#666">(risk-tiered)</text>
+
+  <rect x="420" y="30" width="140" height="45" rx="8" fill="#bfb" stroke="#333" stroke-width="1.5"/>
+  <text x="490" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Listed on platform</text>
+
+  <rect x="610" y="30" width="140" height="45" rx="8" fill="#e8f0fe" stroke="#4a86c8" stroke-width="1.5"/>
+  <text x="680" y="57" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Users sign contracts</text>
+
+  <!-- Arrows main flow -->
+  <line x1="180" y1="52" x2="227" y2="52" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="370" y1="52" x2="417" y2="52" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <line x1="560" y1="52" x2="607" y2="52" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Feedback loop back to creator -->
+  <rect x="610" y="110" width="140" height="40" rx="8" fill="#fff" stroke="#d0d7e8" stroke-width="1"/>
+  <text x="680" y="134" text-anchor="middle" font-size="10" fill="#333">Post-signing feedback</text>
+  <line x1="680" y1="75" x2="680" y2="107" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <!-- Curved arrow back -->
+  <path d="M 610 130 C 400 130, 200 100, 110 78" fill="none" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)" stroke-dasharray="4,3"/>
+  <text x="370" y="118" text-anchor="middle" font-size="9" fill="#666">quality signals</text>
+
+  <!-- Legal change branch (left side) -->
+  <rect x="340" y="200" width="160" height="40" rx="20" fill="#fff3e0" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="420" y="224" text-anchor="middle" font-size="10" fill="#8a5a00">Legal change detected?</text>
+  <line x1="490" y1="75" x2="490" y2="170" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="490" y1="170" x2="420" y2="197" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="340" y="270" width="160" height="40" rx="8" fill="#fff" stroke="#f5a623" stroke-width="1"/>
+  <text x="420" y="294" text-anchor="middle" font-size="10" fill="#333">Flag template</text>
+  <line x1="420" y1="240" x2="420" y2="267" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="435" y="258" font-size="9" fill="#666">Yes</text>
+
+  <rect x="340" y="340" width="160" height="40" rx="20" fill="#fff3e0" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="420" y="358" text-anchor="middle" font-size="10" fill="#8a5a00">Creator updates</text>
+  <text x="420" y="371" text-anchor="middle" font-size="9" fill="#8a5a00">within 30 days?</text>
+  <line x1="420" y1="310" x2="420" y2="337" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Yes - back to peer review -->
+  <path d="M 340 360 C 280 360, 280 52, 228 52" fill="none" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="270" y="355" font-size="9" fill="#666">Yes</text>
+
+  <!-- No - delisted -->
+  <rect x="540" y="340" width="100" height="40" rx="8" fill="#fbb" stroke="#333" stroke-width="1.5"/>
+  <text x="590" y="364" text-anchor="middle" font-size="11" font-weight="600" fill="#333">Delisted</text>
+  <line x1="500" y1="360" x2="537" y2="360" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="518" y="353" font-size="9" fill="#666">No</text>
+
+  <!-- Flaw reported branch (right side) -->
+  <rect x="570" y="200" width="140" height="40" rx="20" fill="#fff3e0" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="640" y="224" text-anchor="middle" font-size="10" fill="#8a5a00">Flaw reported?</text>
+  <line x1="520" y1="75" x2="520" y2="170" stroke="#666" stroke-width="1" stroke-dasharray="3,3"/>
+  <line x1="520" y1="170" x2="600" y2="197" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <rect x="570" y="270" width="140" height="40" rx="8" fill="#fff" stroke="#f5a623" stroke-width="1"/>
+  <text x="640" y="294" text-anchor="middle" font-size="10" fill="#333">Peer review</text>
+  <line x1="640" y1="240" x2="640" y2="267" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="655" y="258" font-size="9" fill="#666">Yes</text>
+
+  <rect x="570" y="340" width="140" height="40" rx="20" fill="#fff3e0" stroke="#f5a623" stroke-width="1.5"/>
+  <text x="640" y="364" text-anchor="middle" font-size="10" fill="#8a5a00">Confirmed?</text>
+  <line x1="640" y1="310" x2="640" y2="337" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+
+  <!-- Confirmed Yes - delist + notify -->
+  <rect x="570" y="420" width="140" height="45" rx="8" fill="#fbb" stroke="#333" stroke-width="1"/>
+  <text x="640" y="440" text-anchor="middle" font-size="10" fill="#333">Delist + notify users</text>
+  <text x="640" y="455" text-anchor="middle" font-size="9" fill="#666">Creator patches → peer review</text>
+  <line x1="640" y1="380" x2="640" y2="417" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="655" y="400" font-size="9" fill="#666">Yes</text>
+
+  <!-- Confirmed No - back to listed -->
+  <path d="M 710 360 C 750 360, 750 52, 562 52" fill="none" stroke="#666" stroke-width="1.5" marker-end="url(#arrow)"/>
+  <text x="735" y="355" font-size="9" fill="#666">No</text>
+</svg>
