@@ -349,7 +349,6 @@ Investor share is capped at two levels:
 | Under $20M | 30% |
 | $20M+ | 40% |
 
-These are hard caps — non-negotiable, not subject to vote.
 
 The increase from 30% to 40% at scale accommodates growth-stage investors who contribute larger capital at lower risk. Early investors' share doesn't grow — the pool expands to include new participants. Per-investor returns are naturally diluted as more contributors join.
 
