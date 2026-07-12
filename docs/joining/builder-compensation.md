@@ -55,7 +55,7 @@ This is the initial formula, encoded in the constitutional documents. It activat
 
 Early contributors benefit in two ways: (1) time and founding bonuses add +100-200% to their unit calculations, and (2) being early means a larger share of a smaller pool. When there are only 8,000 total units and you hold 5,600, that's 69%. When the pool grows to 500,000 units, your 5,600 is 1.1% — but the revenue has also grown massively.
 
-The additive model ensures the ratio between early and late contributors doing equivalent work stays at ~4x — meaningful advantage without permanent dominance. The complexity scale itself is generous regardless of timing: a specialist joining late still earns 30x raw hours.
+The additive model ensures the ratio between early and late contributors doing equivalent work stays at ~4x — meaningful advantage without permanent dominance. The complexity scale compensates for risk regardless of timing: a specialist joining late still earns 30x raw hours, and we'll adjust multipliers to stay above market rate.
 
 ### What Counts as Contribution
 
