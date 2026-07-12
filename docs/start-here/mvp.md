@@ -85,27 +85,7 @@ One person, one vote. Verified identity prevents sybil attacks on the voting sys
 
 ### Moderation Pipeline
 
-```mermaid
-flowchart TD
-    A[Content posted] --> B[ML triage classifier scores]
-    B --> C{Above threshold?}
-    C -->|No| D[Published - no action]
-    C -->|Yes| E[Flagged for community vote]
-    E --> F{Vote reaches threshold}
-    F --> G{Result?}
-    G -->|60% downvote| H[Removed]
-    G -->|60% upvote| I[Stays]
-
-    A --> J{Urgent flag?}
-    J -->|Yes| K[Safety team immediate removal]
-    K --> L[Community review within 48h]
-    L -->|Confirmed| H
-    L -->|Reversed| I
-
-    H -->|outcome| M[Retrain ML classifier]
-    I -->|outcome| M
-    M -->|improved scoring| B
-```
+![Moderation Pipeline](../assets/moderation-pipeline.svg)
 
 **Legal obligations (required before launch):**
 

@@ -45,11 +45,13 @@ Open-source. Every contribution tracked on a public ledger. Revenue distributes 
 
 ## Start here
 
+**Reading order:** [Vision](docs/start-here/vision.md) (why) → [Overview](docs/start-here/overview.md) (what) → [MVP](docs/start-here/mvp.md) (how/when)
+
 | You are... | Start with |
 |------------|-----------|
-| Curious about the idea | [Overview](docs/start-here/overview.md) — the entire system in one page |
+| Curious about the idea | [Vision](docs/start-here/vision.md) — the problem and the core idea |
+| Want the full picture | [Overview](docs/start-here/overview.md) — the entire system in one page |
 | Ready to build | [Contributing](CONTRIBUTING.md) — pick an issue, ship code |
-| Interested in the vision | [Vision](docs/start-here/vision.md) — where this goes at scale |
 | Evaluating the architecture | [Architecture RFC](docs/building/architecture-rfc.md) — technical design, open for critique |
 
 ## Documentation
