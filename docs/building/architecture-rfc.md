@@ -49,9 +49,9 @@ src/
 ```
 
 Each module:
-- Owns its database tables (no cross-module table access)
+- Owns its database tables by default. Shared tables are allowed when they genuinely simplify things — no artificial abstraction layers to enforce separation that doesn't help.
 - Exposes a public API to other modules (function calls, not HTTP)
-- Can be extracted to a service later by replacing function calls with HTTP/messages
+- Extracted to separate services only when there's a real reason — not preemptively
 
 ### Stack
 
