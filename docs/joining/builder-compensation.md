@@ -142,7 +142,7 @@ The maintenance floor exists because unglamorous work that keeps the platform al
 - 15 hours of payment system design (highly complex, Year 1, contributor #3, critical path): 15 × 20 × (1 + 1 + 1 + 0.5) = 15 × 20 × 3.5 = **1,050 units**
 - 10 hours of ZK circuit design (specialist, Year 1, contributor #2, critical path, first-of-kind): 10 × 30 × (1 + 1 + 1 + 0.5 + 0.5) = 10 × 30 × 4 = **1,200 units**
 
-**Maximum possible multiplier:** 30 × (1 + 1 + 1 + 0.5 + 0.5) = 30 × 4 = **120x raw hours.** This is the absolute ceiling for specialist-grade, Year 1, first-10, critical path, first-of-kind work. In practice, most strong early contributions land at 40-80x. A specialist joining late with no bonuses still gets 30x raw hours — deliberately above market rate.
+**Maximum possible multiplier:** 30 × (1 + 1 + 1 + 0.5 + 0.5) = 30 × 4 = **120x raw hours.** This is the absolute ceiling for specialist-grade, Year 1, first-10, critical path, first-of-kind work. In practice, most strong early contributions land at 40-80x. A specialist joining late with no bonuses still gets 30x raw hours — we'll adjust the multipliers to ensure they stay above market rate.
 
 **Why this generous:** Contributors take real risk — units might be worth nothing. There's no equity, no stock options, no secondary market. The complexity scale prices in the risk premium on top of market rate.
 
