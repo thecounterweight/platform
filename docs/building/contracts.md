@@ -118,7 +118,7 @@ The goal is to resolve most disputes without courts (which are slow, expensive, 
 
 | Service | Fee | Who pays |
 |---------|-----|----------|
-| Contract creation + signing | ₹50-200 per contract (varies by complexity) | Split between parties or paid by initiator |
+| Contract creation + signing | Per contract (governance decides pricing) | Split between parties or paid by initiator |
 | Storage + reminders | Free (included in creation fee) | — |
 | Template access | Free (community-contributed) | — |
 | Dispute mediation | Small fee per case | Split between parties |
